@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+		android:layout_weight=".70"
+	    android:background="@color/white"
+	    >
+	    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/spell_list_name"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:paddingLeft="6dp"
+		    android:textSize="20dp"
+		    android:textStyle="bold"
+		    android:background="@color/white"
+		    android:textColor="@color/black"
+		    />
+		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/spell_list_school"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:paddingLeft="6dp"
+			android:textSize="14dp"
+			android:background="@color/white"
+			android:textColor="@color/black"
+			/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+		android:layout_weight=".30"
+	    android:background="@color/white"
+	    >
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    android:background="@color/white"
+		    >
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+				android:background="@color/white"
+				android:textColor="@color/black"
+			    android:textStyle="bold"
+				android:text="Description: "
+				/>
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		        android:id="@+id/spell_list_description"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+				android:textSize="14dp"
+				android:background="@color/white"
+				android:textColor="@color/black"
+				/>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    android:background="@color/white"
+		    >
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		        android:id="@+id/spell_list_qualities"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+				android:textSize="14dp"
+				android:background="@color/white"
+				android:textColor="@color/black"
+			    android:textStyle="bold"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
