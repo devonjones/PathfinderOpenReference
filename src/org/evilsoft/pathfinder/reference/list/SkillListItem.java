@@ -1,4 +1,4 @@
-package org.evilsoft.pathfinder.reference;
+package org.evilsoft.pathfinder.reference.list;
 
 public class SkillListItem {
 	private int section_id;

@@ -7,6 +7,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.SkillAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
+
 import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.util.Log;

@@ -5,6 +5,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbHelper;
+import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
+import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbHelper;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;

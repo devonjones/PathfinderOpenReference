@@ -1,9 +1,9 @@
-package org.evilsoft.pathfinder.reference;
+package org.evilsoft.pathfinder.reference.list;
 
-public class ClassListItem {
+public class RaceListItem {
 	private int section_id;
 	private String name;
-	private String description;
+	private String raceType;
 
 	public int getSectionId() {
 		return section_id;
@@ -21,11 +21,11 @@ public class ClassListItem {
 		this.name = name;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getRaceType() {
+		return raceType;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setRaceType(String raceType) {
+		this.raceType = raceType;
 	}
 }

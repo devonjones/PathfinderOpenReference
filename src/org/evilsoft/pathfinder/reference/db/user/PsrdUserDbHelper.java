@@ -1,14 +1,14 @@
-package org.evilsoft.pathfinder.reference;
+package org.evilsoft.pathfinder.reference.db.user;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class PsrdUserDbHelper extends SQLiteOpenHelper {
-	private static final String DATABASE_NAME = "psrd_user_db";
+	private static final String DATABASE_NAME = "psrd_user.db";
 	private static final int DATABASE_VERSION = 1;
 
-	PsrdUserDbHelper(Context context) {
+	public PsrdUserDbHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 
@@ -16,6 +16,7 @@ public class PsrdUserDbHelper extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		db.execSQL(createCollectionTable());
 		db.execSQL(createCollectionEntryTable());
+		db.execSQL(createPsrdDbVersionTable());
 	}
 
 	@Override
@@ -40,6 +41,14 @@ public class PsrdUserDbHelper extends SQLiteOpenHelper {
 		sb.append(" section_id INTEGER,");
 		sb.append(" name TEXT,");
 		sb.append(" path TEXT");
+		sb.append(")");
+		return sb.toString();
+	}
+
+	private String createPsrdDbVersionTable() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("CREATE TABLE psrd_db_version(");
+		sb.append(" version INTEGER");
 		sb.append(")");
 		return sb.toString();
 	}

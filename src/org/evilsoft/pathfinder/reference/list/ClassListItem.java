@@ -1,6 +1,6 @@
-package org.evilsoft.pathfinder.reference;
+package org.evilsoft.pathfinder.reference.list;
 
-public class RuleListItem {
+public class ClassListItem {
 	private int section_id;
 	private String name;
 	private String description;

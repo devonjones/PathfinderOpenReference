@@ -2,6 +2,22 @@ package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
 
+import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.RaceAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.SkillAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
+import org.evilsoft.pathfinder.reference.list.ClassListAdapter;
+import org.evilsoft.pathfinder.reference.list.FeatListAdapter;
+import org.evilsoft.pathfinder.reference.list.MonsterListAdapter;
+import org.evilsoft.pathfinder.reference.list.RaceListAdapter;
+import org.evilsoft.pathfinder.reference.list.RuleListAdapter;
+import org.evilsoft.pathfinder.reference.list.SkillListAdapter;
+import org.evilsoft.pathfinder.reference.list.SpellListAdapter;
+
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;

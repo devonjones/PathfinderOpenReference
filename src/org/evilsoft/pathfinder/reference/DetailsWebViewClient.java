@@ -3,6 +3,8 @@ package org.evilsoft.pathfinder.reference;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+
 import android.app.Activity;
 import android.content.res.AssetManager;
 import android.os.Build;

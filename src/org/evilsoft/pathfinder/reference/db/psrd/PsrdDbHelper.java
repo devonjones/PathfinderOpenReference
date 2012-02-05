@@ -1,4 +1,4 @@
-package org.evilsoft.pathfinder.reference;
+package org.evilsoft.pathfinder.reference.db.psrd;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
