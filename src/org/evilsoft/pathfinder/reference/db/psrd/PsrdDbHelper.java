@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
+
 import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,6 +17,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	// The Android's default system path of your application database.
 	private static String DB_PATH = "/data/data/org.evilsoft.pathfinder.reference/databases/";
 	private static String DB_NAME = "psrd.db";
+	private static final Integer VERSION = 1;
 	private SQLiteDatabase db;
 	private final Context context;
 
@@ -23,36 +26,48 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		this.context = context;
 	}
 
-	public void createDataBase() throws IOException {
+	public void createDataBase(PsrdUserDbAdapter userDbAdapter) throws IOException {
 		boolean dbExists = checkDatabase();
 		if (dbExists) {
-			// do nothing - database already exists
-		} else {
-			// By calling this method and empty database will be created into
-			// the default system path
-			// of your application so we are going to be able to overwrite that
-			// database with our database.
-			this.getReadableDatabase();
-			try {
-				copyDatabase();
-			} catch (IOException e) {
-				throw new Error("Error copying database");
+			Integer currVersion = userDbAdapter.getPsrdDbVersion();
+			if(VERSION > currVersion) {
+				buildDatabase();
+				userDbAdapter.updatePsrdDbVersion(VERSION);
 			}
+			else {
+				// do nothing - database already exists and is of the right version
+			}
+		} else {
+			buildDatabase();
+			userDbAdapter.updatePsrdDbVersion(VERSION);
+		}
+	}
+	
+	private void buildDatabase() {
+		// By calling this method and empty database will be created into
+		// the default system path
+		// of your application so we are going to be able to overwrite that
+		// database with our database.
+		this.getReadableDatabase();
+		try {
+			copyDatabase();
+		} catch (IOException e) {
+			throw new Error("Error copying database");
 		}
 	}
 
 	private boolean checkDatabase() {
-		SQLiteDatabase checkDB = null;
+		SQLiteDatabase checkDb = null;
 		try {
 			String myPath = DB_PATH + DB_NAME;
-			checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
+			checkDb = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.NO_LOCALIZED_COLLATORS);
 		} catch (SQLiteException e) {
 			// database does't exist yet.
 		}
-		if (checkDB != null) {
-			checkDB.close();
+		if (checkDb != null) {
+			checkDb.close();
 		}
-		return checkDB != null ? true : false;
+		return checkDb != null ? true : false;
 	}
 
 	/**

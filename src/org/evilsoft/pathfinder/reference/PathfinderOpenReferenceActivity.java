@@ -12,11 +12,10 @@ import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbHelper;
 import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
-import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbHelper;
+import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -29,7 +28,7 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener {
 	private static final String TAG = "PathfinderOpenReferenceActivity";
 	private PsrdDbAdapter dbAdapter;
-	private PsrdUserDbHelper userDbAdapter;
+	private PsrdUserDbAdapter userDbAdapter;
 	private List<HashMap<String, Object>> subjects;
 	private List<ArrayList<HashMap<String, Object>>> children;
 
@@ -37,18 +36,17 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		userDbAdapter = new PsrdUserDbAdapter(this.getApplicationContext());
+		userDbAdapter.open();
 		PsrdDbHelper dbh = new PsrdDbHelper(this.getApplicationContext());
 		try {
-			dbh.createDataBase();
+			dbh.createDataBase(userDbAdapter);
 		} catch (IOException e) {
 			e.printStackTrace();
 			throw new RuntimeException(e);
 		}
 		dbAdapter = new PsrdDbAdapter(this);
 		dbAdapter.open();
-		userDbAdapter = new PsrdUserDbHelper(this.getApplicationContext());
-		SQLiteDatabase usld = userDbAdapter.getWritableDatabase();
-		usld.close();
 
 		boolean useTitleFeature = false;
 		if (getWindow().getContainer() == null) {
@@ -194,6 +192,9 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		super.onDestroy();
 		if (dbAdapter != null) {
 			dbAdapter.close();
+		}
+		if (userDbAdapter != null) {
+			userDbAdapter.close();
 		}
 	}
 }
