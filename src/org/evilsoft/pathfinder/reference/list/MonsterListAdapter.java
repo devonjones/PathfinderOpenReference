@@ -2,8 +2,6 @@ package org.evilsoft.pathfinder.reference.list;
 
 import org.evilsoft.pathfinder.reference.DisplayListAdapter;
 import org.evilsoft.pathfinder.reference.R;
-import org.evilsoft.pathfinder.reference.R.id;
-import org.evilsoft.pathfinder.reference.R.layout;
 
 import android.content.Context;
 import android.database.Cursor;
