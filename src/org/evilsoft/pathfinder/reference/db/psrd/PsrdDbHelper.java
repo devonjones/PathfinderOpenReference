@@ -53,6 +53,8 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 			copyDatabase();
 		} catch (IOException e) {
 			throw new Error("Error copying database");
+		} finally {
+			this.close();
 		}
 	}
 
