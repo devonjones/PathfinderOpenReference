@@ -23,6 +23,7 @@ public class PsrdUserDbAdapter {
 
 	public void close() {
 		dbHelper.close();
+		database.close();
 	}
 
 	public Integer getPsrdDbVersion() {
