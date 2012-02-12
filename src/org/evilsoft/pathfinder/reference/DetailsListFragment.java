@@ -15,6 +15,7 @@ import org.evilsoft.pathfinder.reference.list.FeatListAdapter;
 import org.evilsoft.pathfinder.reference.list.MonsterListAdapter;
 import org.evilsoft.pathfinder.reference.list.RaceListAdapter;
 import org.evilsoft.pathfinder.reference.list.RuleListAdapter;
+import org.evilsoft.pathfinder.reference.list.SearchListAdapter;
 import org.evilsoft.pathfinder.reference.list.SkillListAdapter;
 import org.evilsoft.pathfinder.reference.list.SpellListAdapter;
 
@@ -94,6 +95,9 @@ public class DetailsListFragment extends ListFragment implements OnItemClickList
 				curs = sa.fetchSpellList(spellClass);
 			}
 			currentListAdapter = new SpellListAdapter(getActivity().getApplicationContext(), curs, false);
+		} else if (parts[2].equals("Search")) {
+			Cursor curs = dbAdapter.search(parts[parts.length - 1]);
+			currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), curs);
 		} else {
 			ArrayList<String> list = new ArrayList<String>();
 			for (int i = 0; i < 6; i++) {

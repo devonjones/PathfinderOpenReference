@@ -22,7 +22,9 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.AutoCompleteTextView;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 
 public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener {
@@ -55,6 +57,9 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		setContentView(R.layout.main);
 		if (useTitleFeature) {
 			getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title);
+			AutoCompleteTextView searchAc = (AutoCompleteTextView) findViewById(R.id.searchAc);
+			ImageButton searchButton = (ImageButton) findViewById(R.id.imageSearch);
+			new AutoCompleteHandler(this.getApplicationContext(), this, dbAdapter, searchAc, searchButton);
 		}
 	}
 

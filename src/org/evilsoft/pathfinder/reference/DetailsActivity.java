@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Window;
+import android.widget.AutoCompleteTextView;
+import android.widget.ImageButton;
 
 public class DetailsActivity extends FragmentActivity {
 	private PsrdDbAdapter dbAdapter;
@@ -23,6 +25,9 @@ public class DetailsActivity extends FragmentActivity {
 		setContentView(R.layout.details);
 		if (useTitleFeature) {
 			getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title);
+			AutoCompleteTextView searchAc = (AutoCompleteTextView) findViewById(R.id.searchAc);
+			ImageButton searchButton = (ImageButton) findViewById(R.id.imageSearch);
+			new AutoCompleteHandler(this.getApplicationContext(), this, dbAdapter, searchAc, searchButton);
 		}
 		Intent launchingIntent = getIntent();
 		String newUri = launchingIntent.getData().toString();
@@ -37,6 +42,9 @@ public class DetailsActivity extends FragmentActivity {
 
 	public static String buildDetailsListUri(String uri) {
 		String[] parts = uri.split("\\/");
+		if(parts[2].equals("Search")) {
+			return uri;
+		}
 		StringBuffer sb = new StringBuffer();
 		for (int i = 0; i < parts.length - 1; i++) {
 			if (i != 0) {

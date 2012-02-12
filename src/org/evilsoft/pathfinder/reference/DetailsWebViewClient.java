@@ -42,6 +42,18 @@ public class DetailsWebViewClient extends WebViewClient {
 		if (this.path.size() > 3) {
 			HashMap<String, String> parent = path.get(1);
 			String newUrl = SectionRenderer.swapUrl(this.url, parent.get("name"), parent.get("id"));
+			String[] parts = newUrl.split("\\/");
+			if (parts[2].equals("Search")) {
+				parts[2] = "Rules";
+				StringBuffer sb = new StringBuffer();
+				for (int i = 0; i < parts.length; i++) {
+					if (i != 0) {
+						sb.append("/");
+					}
+					sb.append(parts[i]);
+				}
+				newUrl = sb.toString();
+			}
 			shouldOverrideUrlLoading(view, newUrl);
 		}
 	}
@@ -50,6 +62,9 @@ public class DetailsWebViewClient extends WebViewClient {
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
 		Log.e(TAG, newUrl);
 		String[] parts = newUrl.split("\\/");
+		if (parts[2].equals("Search") && parts.length < 5) {
+			return false;
+		}
 		if (parts[0].toLowerCase().equals("pfsrd:")) {
 			this.url = newUrl;
 			Log.e(TAG, parts[parts.length - 1]);
@@ -92,6 +107,8 @@ public class DetailsWebViewClient extends WebViewClient {
 		} else if (parts[2].startsWith("Rules")) {
 			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Races")) {
+			html = sa.render(parts[parts.length - 1], newUrl);
+		} else if (parts[2].equals("Search")) {
 			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Skills")) {
 			html = sa.render(parts[parts.length - 1], newUrl);

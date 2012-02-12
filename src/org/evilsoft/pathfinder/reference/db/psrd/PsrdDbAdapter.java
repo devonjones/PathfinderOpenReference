@@ -157,4 +157,68 @@ public class PsrdDbAdapter {
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
+
+	public Cursor autocomplete(String constraint) {
+		List<String> args = new ArrayList<String>();
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT section_id as _id, name, count(*) as cnt");
+		sb.append(" FROM sections");
+		sb.append(" WHERE parent_id != 1");
+		sb.append("  AND parent_id IS NOT NULL");
+		if(constraint != null) {
+			sb.append("  AND name like ?");
+			args.add(constraint + '%');
+		}
+		sb.append(" GROUP BY name");
+		sb.append(" ORDER BY name");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+	
+	public Integer countSearchArticles(String constraint) {
+		List<String> args = new ArrayList<String>();
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT count(*)");
+		sb.append(" FROM sections");
+		sb.append(" WHERE parent_id != 1");
+		sb.append("  AND parent_id IS NOT NULL");
+		if(constraint != null) {
+			sb.append("  AND name like ?");
+			args.add(constraint + '%');
+		}
+		String sql = sb.toString();
+		Cursor c = database.rawQuery(sql, toStringArray(args));
+		c.moveToFirst();
+		return c.getInt(0);
+	}
+
+	public Cursor getSingleSearchArticle(String constraint) {
+		List<String> args = new ArrayList<String>();
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT *");
+		sb.append(" FROM sections");
+		sb.append(" WHERE name like ?");
+		sb.append(" LIMIT 1");
+		args.add(constraint + '%');
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+	
+	public Cursor search(String constraint) {
+		List<String> args = new ArrayList<String>();
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT s.section_id, s.name, s.type, s.subtype, p.name");
+		sb.append(" FROM sections s");
+		sb.append("  INNER JOIN sections p");
+		sb.append("   ON s.parent_id = p.section_id");
+		sb.append(" WHERE s.parent_id != 1");
+		sb.append("  AND s.parent_id IS NOT NULL");
+		if(constraint != null) {
+			sb.append("  AND s.name like ?");
+			args.add(constraint + '%');
+		}
+		sb.append(" ORDER BY s.name, s.section_id");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
 }
