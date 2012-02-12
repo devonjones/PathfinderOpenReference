@@ -14,10 +14,9 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class PsrdDbHelper extends SQLiteOpenHelper {
-	// The Android's default system path of your application database.
 	private static String DB_PATH = "/data/data/org.evilsoft.pathfinder.reference/databases/";
 	private static String DB_NAME = "psrd.db";
-	private static final Integer VERSION = 1;
+	private static final Integer VERSION = 3;
 	private SQLiteDatabase db;
 	private final Context context;
 
