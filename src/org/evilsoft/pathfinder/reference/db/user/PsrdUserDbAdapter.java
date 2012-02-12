@@ -64,13 +64,5 @@ public class PsrdUserDbAdapter {
 		ContentValues values = new ContentValues();
 		values.put("version", version);
 		database.update("psrd_db_version", values, null, null);
-		//StringBuffer sb = new StringBuffer();
-		//sb.append("UPDATE psrd_db_version");
-		//sb.append(" SET version = ?");
-		//String sql = sb.toString();
-		//String[] selectionArgs = new String[1];
-		//selectionArgs[0] = version.toString();
-		//Cursor c = database.rawQuery(sql, selectionArgs);
-		//c.close();
 	}
 }
