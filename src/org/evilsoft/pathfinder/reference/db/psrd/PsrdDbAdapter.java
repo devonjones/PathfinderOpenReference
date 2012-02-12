@@ -167,7 +167,7 @@ public class PsrdDbAdapter {
 		sb.append("  AND parent_id IS NOT NULL");
 		if(constraint != null) {
 			sb.append("  AND name like ?");
-			args.add(constraint + '%');
+			args.add('%' + constraint + '%');
 		}
 		sb.append(" GROUP BY name");
 		sb.append(" ORDER BY name");
@@ -184,7 +184,7 @@ public class PsrdDbAdapter {
 		sb.append("  AND parent_id IS NOT NULL");
 		if(constraint != null) {
 			sb.append("  AND name like ?");
-			args.add(constraint + '%');
+			args.add('%' + constraint + '%');
 		}
 		String sql = sb.toString();
 		Cursor c = database.rawQuery(sql, toStringArray(args));
@@ -199,7 +199,7 @@ public class PsrdDbAdapter {
 		sb.append(" FROM sections");
 		sb.append(" WHERE name like ?");
 		sb.append(" LIMIT 1");
-		args.add(constraint + '%');
+		args.add('%' + constraint + '%');
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
@@ -215,7 +215,7 @@ public class PsrdDbAdapter {
 		sb.append("  AND s.parent_id IS NOT NULL");
 		if(constraint != null) {
 			sb.append("  AND s.name like ?");
-			args.add(constraint + '%');
+			args.add('%' + constraint + '%');
 		}
 		sb.append(" ORDER BY s.name, s.section_id");
 		String sql = sb.toString();
