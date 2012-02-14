@@ -28,11 +28,6 @@ public class DetailsViewFragment extends Fragment {
 				client.back(viewer);
 			}
 		});
-		star.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-
-			}
-		});
 		return v;
 	}
 
@@ -45,4 +40,8 @@ public class DetailsViewFragment extends Fragment {
 		super.onDestroy();
 		client.onDestroy();
 	}
+
+    public void setCharacter(long itemId) {
+        client.setCharacter(itemId);
+    }
 }
