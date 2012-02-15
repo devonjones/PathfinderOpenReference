@@ -161,16 +161,14 @@ public class PsrdDbAdapter {
 	public Cursor autocomplete(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id as _id, name, count(*) as cnt");
-		sb.append(" FROM sections");
-		sb.append(" WHERE parent_id != 1");
-		sb.append("  AND parent_id IS NOT NULL");
+		sb.append("SELECT section_id as _id, search_name AS name, count(*) as cnt");
+		sb.append(" FROM section_index");
 		if(constraint != null) {
-			sb.append("  AND name like ?");
+			sb.append(" WHERE search_name like ?");
 			args.add('%' + constraint + '%');
 		}
-		sb.append(" GROUP BY name");
-		sb.append(" ORDER BY name");
+		sb.append(" GROUP BY search_name");
+		sb.append(" ORDER BY search_name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
@@ -179,11 +177,9 @@ public class PsrdDbAdapter {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT count(*)");
-		sb.append(" FROM sections");
-		sb.append(" WHERE parent_id != 1");
-		sb.append("  AND parent_id IS NOT NULL");
+		sb.append(" FROM section_index");
 		if(constraint != null) {
-			sb.append("  AND name like ?");
+			sb.append(" WHERE search_name like ?");
 			args.add('%' + constraint + '%');
 		}
 		String sql = sb.toString();
@@ -195,9 +191,11 @@ public class PsrdDbAdapter {
 	public Cursor getSingleSearchArticle(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT *");
-		sb.append(" FROM sections");
-		sb.append(" WHERE name like ?");
+		sb.append("SELECT s.*");
+		sb.append(" FROM sections s");
+		sb.append("  INNER JOIN section_index i");
+		sb.append("   ON i.section_id = s.section_id");
+		sb.append(" WHERE i.search_name like ?");
 		sb.append(" LIMIT 1");
 		args.add('%' + constraint + '%');
 		String sql = sb.toString();
@@ -211,13 +209,13 @@ public class PsrdDbAdapter {
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN sections p");
 		sb.append("   ON s.parent_id = p.section_id");
-		sb.append(" WHERE s.parent_id != 1");
-		sb.append("  AND s.parent_id IS NOT NULL");
+		sb.append("  INNER JOIN section_index i");
+		sb.append("   ON i.section_id = s.section_id");
 		if(constraint != null) {
-			sb.append("  AND s.name like ?");
+			sb.append(" WHERE i.search_name like ?");
 			args.add('%' + constraint + '%');
 		}
-		sb.append(" ORDER BY s.name, s.section_id");
+		sb.append(" ORDER BY i.search_name, s.section_id");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
