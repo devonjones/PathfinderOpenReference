@@ -27,42 +27,42 @@ public class AutoCompleteHandler implements SimpleCursorAdapter.CursorToStringCo
 	protected FragmentActivity activity;
 	protected PsrdDbAdapter dbAdapter;
 	protected AutoCompleteTextView searchAc;
-    final static int[] to = new int[] { android.R.id.text1 };
-    final static String[] from = new String[] { "name", "cnt" };
-    
-    public AutoCompleteHandler(Context context, FragmentActivity activity, PsrdDbAdapter dbAdapter, AutoCompleteTextView searchAc, ImageButton searchButton) {
-    	this.context = context;
-    	this.activity = activity;
-    	this.dbAdapter = dbAdapter;
-    	this.searchAc = searchAc;
+	final static int[] to = new int[] { android.R.id.text1 };
+	final static String[] from = new String[] { "name", "cnt" };
+	
+	public AutoCompleteHandler(Context context, FragmentActivity activity, PsrdDbAdapter dbAdapter, AutoCompleteTextView searchAc, ImageButton searchButton) {
+		this.context = context;
+		this.activity = activity;
+		this.dbAdapter = dbAdapter;
+		this.searchAc = searchAc;
 		searchAc.setAdapter(getSearchCursorAdapter());
 		searchAc.setOnItemClickListener(this);
 		searchAc.setOnKeyListener(this);
 		searchButton.setOnClickListener(this);
-    }
-
-    public CursorAdapter getSearchCursorAdapter() {
-        SimpleCursorAdapter adapter =
-        		new SimpleCursorAdapter(this.context,
-        				android.R.layout.simple_dropdown_item_1line, null,
-        				from, to);
-        adapter.setCursorToStringConverter(this);
-        adapter.setFilterQueryProvider(this);
-        return adapter;
 	}
 
-    @Override
+	public CursorAdapter getSearchCursorAdapter() {
+		SimpleCursorAdapter adapter =
+				new SimpleCursorAdapter(this.context,
+						android.R.layout.simple_dropdown_item_1line, null,
+						from, to);
+		adapter.setCursorToStringConverter(this);
+		adapter.setFilterQueryProvider(this);
+		return adapter;
+	}
+
+	@Override
 	public CharSequence convertToString(Cursor cursor) {
-        final int columnIndex = cursor.getColumnIndexOrThrow(from[0]);
-        final String str = cursor.getString(columnIndex);
-        return str;
+		final int columnIndex = cursor.getColumnIndexOrThrow(from[0]);
+		final String str = cursor.getString(columnIndex);
+		return str;
 	}
 
 	@Override
 	public Cursor runQuery(CharSequence constraint) {
-        Cursor cursor = this.dbAdapter.autocomplete(
-                (constraint != null ? constraint.toString() : null));
-        return cursor;
+		Cursor cursor = this.dbAdapter.autocomplete(
+				(constraint != null ? constraint.toString() : null));
+		return cursor;
 	}
 
 	@Override
@@ -82,7 +82,7 @@ public class AutoCompleteHandler implements SimpleCursorAdapter.CursorToStringCo
 			return true;
 		}
 		return false;
-    }
+	}
 
 	public void search() {
 		hideKeyboard();
@@ -155,8 +155,8 @@ public class AutoCompleteHandler implements SimpleCursorAdapter.CursorToStringCo
 	}
 
 	public void hideKeyboard() {
-	    InputMethodManager mgr = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
-	    mgr.toggleSoftInput(0, 0);
+		InputMethodManager mgr = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+		mgr.toggleSoftInput(0, 0);
 	}
 }
 
