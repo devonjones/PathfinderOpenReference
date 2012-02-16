@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -161,7 +162,9 @@ public class PsrdDbAdapter {
 	public Cursor autocomplete(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id as _id, search_name AS name, count(*) as cnt");
+		sb.append("SELECT section_id as _id,");
+		sb.append("  search_name AS " + SearchManager.SUGGEST_COLUMN_TEXT_1 + ",");
+		sb.append("  search_name AS " + SearchManager.SUGGEST_COLUMN_QUERY);
 		sb.append(" FROM section_index");
 		if(constraint != null) {
 			sb.append(" WHERE search_name like ?");

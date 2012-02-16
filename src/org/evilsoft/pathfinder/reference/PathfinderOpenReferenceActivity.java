@@ -14,17 +14,20 @@ import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.widget.AutoCompleteTextView;
 import android.widget.ExpandableListView;
-import android.widget.ImageButton;
+import android.widget.SearchView;
 
 public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener {
@@ -49,18 +52,20 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		}
 		dbAdapter = new PsrdDbAdapter(this);
 		dbAdapter.open();
-
-		boolean useTitleFeature = false;
-		if (getWindow().getContainer() == null) {
-			useTitleFeature = requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-		}
 		setContentView(R.layout.main);
-		if (useTitleFeature) {
-			getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title);
-			AutoCompleteTextView searchAc = (AutoCompleteTextView) findViewById(R.id.searchAc);
-			ImageButton searchButton = (ImageButton) findViewById(R.id.imageSearch);
-			new AutoCompleteHandler(this.getApplicationContext(), this, dbAdapter, searchAc, searchButton);
-		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		super.onCreateOptionsMenu(menu);
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.main_menu, menu);
+		MenuItem searchItem = menu.findItem(R.id.menu_search);
+		SearchView searchView = (SearchView) searchItem.getActionView();
+		searchView.setIconifiedByDefault(false);
+		SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+		searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+		return true;
 	}
 
 	public List<HashMap<String, Object>> createGroupList() {
