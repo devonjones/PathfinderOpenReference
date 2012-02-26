@@ -54,6 +54,18 @@ public abstract class Renderer {
 	public String renderBody() {
 		StringBuffer sb = new StringBuffer();
 		if (body != null) {
+			int index = body.indexOf("img src=");
+			if(index > 0) {
+				String start = body.substring(0, index);
+				String end = body.substring(index + 7);
+				int quote = end.indexOf('"');
+				end = end.substring(quote + 1);
+				quote = end.indexOf('"');
+				String link = end.substring(0, quote);
+				String[] parts = link.split("/");
+				end = end.substring(quote);
+				body = start + "img src=\"file:///assets/" + parts[parts.length - 1] + end;
+			}
 			sb.append(body);
 		}
 		if (depth >= 3) {
