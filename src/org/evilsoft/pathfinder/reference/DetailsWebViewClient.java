@@ -115,6 +115,8 @@ public class DetailsWebViewClient extends WebViewClient {
 			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Spells")) {
 			html = sa.render(parts[parts.length - 1], newUrl);
+		} else if (parts[2].equals("Ogl")) {
+			html = sa.render(parts[parts.length - 1], newUrl);
 		} else {
 			html = "<H1>" + newUrl + "</H1>";
 		}

@@ -1,7 +1,5 @@
 package org.evilsoft.pathfinder.reference;
 
-import java.util.ArrayList;
-
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
@@ -98,13 +96,6 @@ public class DetailsListFragment extends ListFragment implements OnItemClickList
 		} else if (parts[2].equals("Search")) {
 			Cursor curs = dbAdapter.search(parts[parts.length - 1]);
 			currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), curs);
-		} else {
-			ArrayList<String> list = new ArrayList<String>();
-			for (int i = 0; i < 6; i++) {
-				list.add(newUrl);
-			}
-			currentListAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.list_item,
-					list);
 		}
 		setListAdapter(currentListAdapter);
 	}

@@ -106,10 +106,23 @@ public class PsrdDbAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(parentId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, name");
+		sb.append("SELECT section_id, name, type, subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
 		sb.append(" ORDER BY name");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+
+	public Cursor fetchSectionByParentIdAndName(String parentId, String name) {
+		List<String> args = new ArrayList<String>();
+		args.add(parentId);
+		args.add(name);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT section_id, name, type, subtype");
+		sb.append(" FROM sections");
+		sb.append(" WHERE parent_id = ?");
+		sb.append("  AND name = ?");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}

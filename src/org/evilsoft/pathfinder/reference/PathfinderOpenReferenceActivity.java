@@ -30,7 +30,8 @@ import android.widget.ExpandableListView;
 import android.widget.SearchView;
 
 public class PathfinderOpenReferenceActivity extends FragmentActivity implements
-		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener {
+		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener
+		{
 	private static final String TAG = "PathfinderOpenReferenceActivity";
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
@@ -68,6 +69,22 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		return true;
 	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case R.id.menu_ogl:
+				Cursor curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
+				curs.moveToFirst();
+				String sectionId = curs.getString(0);
+				Intent showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
+				startActivity(showContent);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
+
 	public List<HashMap<String, Object>> createGroupList() {
 		ArrayList<HashMap<String, Object>> result = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = dbAdapter.fetchSectionByParentId("1");
@@ -79,10 +96,13 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		while (has_next) {
 			String section_id = curs.getString(0);
 			String name = curs.getString(1);
-			child = new HashMap<String, Object>();
-			child.put("sectionName", name);
-			child.put("id", section_id);
-			result.add(child);
+			String type = curs.getString(2);
+			if(type.equals("list")) {
+				child = new HashMap<String, Object>();
+				child.put("sectionName", name);
+				child.put("id", section_id);
+				result.add(child);
+			}
 			has_next = curs.moveToNext();
 		}
 		this.subjects = result;

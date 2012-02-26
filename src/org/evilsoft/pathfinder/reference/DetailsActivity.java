@@ -7,6 +7,7 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
@@ -109,7 +110,7 @@ public class DetailsActivity extends FragmentActivity {
 
 	public static String buildDetailsListUri(String uri) {
 		String[] parts = uri.split("\\/");
-		if(parts[2].equals("Search")) {
+		if(parts.length <= 3) {
 			return uri;
 		}
 		StringBuffer sb = new StringBuffer();
@@ -133,6 +134,11 @@ public class DetailsActivity extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
+			case R.id.menu_ogl:
+				Intent showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Ogl"));
+				startActivity(showContent);
+				return true;
 			case android.R.id.home:
 				// app icon in action bar clicked; go home
 				Intent intent = new Intent(this, PathfinderOpenReferenceActivity.class);
