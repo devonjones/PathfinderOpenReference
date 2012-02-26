@@ -114,11 +114,12 @@ public class PsrdDbAdapter {
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
-	public Cursor fetchFullSection(String section_id) {
+	public Cursor fetchFullSection(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
+		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT node.section_id, node.lft, node.rgt, node.parent_id, node.type, node.subtype, node.name, node.abbrev, node.source, node.description, node.body");
+		sb.append("SELECT node.section_id, node.lft, node.rgt, node.parent_id, node.type,");
+		sb.append("  node.subtype, node.name, node.abbrev, node.source, node.description, node.body");
 		sb.append(" FROM sections AS node, sections AS parent");
 		sb.append(" WHERE node.lft BETWEEN parent.lft AND parent.rgt");
 		sb.append("  AND parent.section_id = ?");
@@ -137,23 +138,76 @@ public class PsrdDbAdapter {
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
-	public Cursor getAfflictionDetails(String section_id) {
+	public Cursor getAfflictionDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
+		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT contracted, save, onset, frequency, effect, initial_effect, secondary_effect, cure");
+		sb.append("SELECT contracted, save, onset, frequency, effect, initial_effect, ");
+		sb.append("  secondary_effect,cure");
 		sb.append(" FROM affliction_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
-	public Cursor getAnimalCompanionDetails(String section_id) {
+	public Cursor getAnimalCompanionDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
+		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT ac, attack, ability_scores, special_qualities, special_attacks, size, speed, level");
+		sb.append("SELECT ac, attack, ability_scores, special_qualities, special_attacks, ");
+		sb.append("  size, speed, level");
 		sb.append(" FROM animal_companion_details");
+		sb.append(" WHERE section_id = ?");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+
+	public Cursor getItemDetails(String sectionId) {
+		List<String> args = new ArrayList<String>();
+		args.add(sectionId);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT item_details_id, slot, cl, price, weight, requirements, skill, ");
+		sb.append("  cr_increase, cost");
+		sb.append(" FROM item_details");
+		sb.append(" WHERE section_id = ?");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+
+	public Cursor getSettlementDetails(String sectionId) {
+		List<String> args = new ArrayList<String>();
+		args.add(sectionId);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT alignment, settlement_type, size, corruption, crime, economy, law, ");
+		sb.append("  lore, society, qualities, danger, disadvantages, government, ");
+		sb.append("  population, base_value, purchase_limit, spellcasting, ");
+		sb.append("  minor_items, medium_items, major_items");
+		sb.append(" FROM settlement_details");
+		sb.append(" WHERE section_id = ?");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+
+	public Cursor getTrapDetails(String sectionId) {
+		List<String> args = new ArrayList<String>();
+		args.add(sectionId);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT trap_details_id, trap_type, perception, disable_device, duration, effect, trigger, reset");
+		sb.append(" FROM trap_details");
+		sb.append(" WHERE section_id = ?");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+
+	public Cursor getVehicleDetails(String sectionId) {
+		List<String> args = new ArrayList<String>();
+		args.add(sectionId);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT size, vehicle_type, squares, cost, ac, hardness, hp, base_save, ");
+		sb.append("  maximum_speed, acceleration, cmb, cmd, ramming_damage, propulsion, ");
+		sb.append("  driving_check, forward_facing, driving_device, driving_space, decks, ");
+		sb.append("  deck, weapons, crew, passengers");
+		sb.append(" FROM vehicle_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));

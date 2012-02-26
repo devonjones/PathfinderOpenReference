@@ -30,13 +30,13 @@
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
             <meta-data android:name="android.app.searchable"
+                   android:authorities="org.evilsoft.pathfinder.reference.SearchProvider"
                    android:resource="@xml/searchable"/>
         </activity>
         <provider
             android:exported="false"
             android:name="org.evilsoft.pathfinder.reference.SearchProvider"
             android:authorities="org.evilsoft.pathfinder.reference.SearchProvider"
-            >
-        </provider>
+            />
     </application>
 </manifest>

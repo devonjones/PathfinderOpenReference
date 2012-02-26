@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.render.SectionRenderer;
 
 import android.app.Activity;
 import android.content.res.AssetManager;
@@ -41,7 +42,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	public void back(WebView view) {
 		if (this.path.size() > 3) {
 			HashMap<String, String> parent = path.get(1);
-			String newUrl = SectionRenderer.swapUrl(this.url, parent.get("name"), parent.get("id"));
+			String newUrl = RenderFarm.swapUrl(this.url, parent.get("name"), parent.get("id"));
 			String[] parts = newUrl.split("\\/");
 			if (parts[2].equals("Search")) {
 				parts[2] = "Rules";
@@ -89,7 +90,7 @@ public class DetailsWebViewClient extends WebViewClient {
 			DetailsListFragment list = (DetailsListFragment) act.getSupportFragmentManager().findFragmentById(
 					R.id.details_list_fragment);
 			HashMap<String, String> parent = path.get(1);
-			String updateUrl = SectionRenderer.swapUrl(this.url, parent.get("name"), parent.get("id"));
+			String updateUrl = RenderFarm.swapUrl(this.url, parent.get("name"), parent.get("id"));
 			list.updateUrl(updateUrl);
 		}
 	}
@@ -97,7 +98,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	public boolean renderPfsrd(WebView view, String newUrl) {
 		String[] parts = newUrl.split("\\/");
 		String html;
-		SectionRenderer sa = new SectionRenderer(dbAdapter, assets, title);
+		RenderFarm sa = new RenderFarm(dbAdapter, assets, title);
 		if (parts[2].equals("Classes")) {
 			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Feats")) {
