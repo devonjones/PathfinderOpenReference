@@ -166,7 +166,7 @@ public class PsrdDbAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT item_details_id, slot, cl, price, weight, requirements, skill, ");
+		sb.append("SELECT aura, slot, cl, price, weight, requirements, skill, ");
 		sb.append("  cr_increase, cost");
 		sb.append(" FROM item_details");
 		sb.append(" WHERE section_id = ?");
@@ -192,7 +192,7 @@ public class PsrdDbAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT trap_details_id, trap_type, perception, disable_device, duration, effect, trigger, reset");
+		sb.append("SELECT cr, trap_type, perception, disable_device, duration, effect, trigger, reset");
 		sb.append(" FROM trap_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();

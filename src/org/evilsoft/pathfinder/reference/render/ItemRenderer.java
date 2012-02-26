@@ -23,7 +23,7 @@ public class ItemRenderer extends StatBlockRenderer {
 		//1: slot, 2: cl, 3: price, 4: weight, 5: requirements, 6: skill, 7: cr_increase, 8: cost
 		boolean has_next = curs.moveToFirst();
 		if (has_next) {
-			sb.append(addField("Aura", ""));
+			sb.append(addField("Aura", curs.getString(1), false));
 			sb.append(addField("CL", curs.getString(2)));
 			sb.append(addField("Slot", curs.getString(1), false));
 			sb.append(addField("Price", curs.getString(3), false));
