@@ -62,6 +62,9 @@ public class DetailsWebViewClient extends WebViewClient {
 	@Override
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
 		Log.e(TAG, newUrl);
+		if(newUrl.startsWith("http://")) {
+			newUrl = "pfsrd://" + newUrl.substring(14);
+		}
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].equals("Search") && parts.length < 5) {
 			return false;
@@ -120,16 +123,16 @@ public class DetailsWebViewClient extends WebViewClient {
 		} else {
 			html = "<H1>" + newUrl + "</H1>";
 		}
-		if (Build.VERSION.SDK_INT <= 10) {
-			view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8", this.oldUrl);
-			view.setWebViewClient(this);
-			view.scrollTo(0, 0);
-		} else {
-			view.loadData(html, "text/html", "UTF-8");
-			view.scrollTo(0, 0);
-			view.reload();
-			view.scrollTo(0, 0);
-		}
+		//if (Build.VERSION.SDK_INT <= 10) {
+		view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8", this.oldUrl);
+		view.setWebViewClient(this);
+		view.scrollTo(0, 0);
+		//} else {
+		//	view.loadData(html, "text/html", "UTF-8");
+		//	view.scrollTo(0, 0);
+		//	view.reload();
+		//	view.scrollTo(0, 0);
+		//}
 
 		this.oldUrl = newUrl;
 		return true;

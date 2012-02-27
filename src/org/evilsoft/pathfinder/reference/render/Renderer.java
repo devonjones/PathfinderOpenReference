@@ -64,7 +64,7 @@ public abstract class Renderer {
 				String link = end.substring(0, quote);
 				String[] parts = link.split("/");
 				end = end.substring(quote);
-				body = start + "img src=\"file:///assets/" + parts[parts.length - 1] + end;
+				body = start + "img src=" + '"' + "file:///android_asset/" + parts[parts.length - 1] + end;
 			}
 			sb.append(body);
 		}
@@ -122,7 +122,7 @@ public abstract class Renderer {
 			sb.append("\n");
 			sb.append(tags[0]);
 			if (depth >= 1) {
-				sb.append("<a href=\"");
+				sb.append("<a href=\"http://");
 				sb.append(newUri);
 				sb.append("\">");
 			}
