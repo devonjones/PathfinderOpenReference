@@ -110,7 +110,7 @@ public class DetailsActivity extends FragmentActivity {
 
 	public static String buildDetailsListUri(String uri) {
 		String[] parts = uri.split("\\/");
-		if(parts.length <= 3) {
+		if(parts[2].equals("Search")) {
 			return uri;
 		}
 		StringBuffer sb = new StringBuffer();
