@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
@@ -42,9 +43,9 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		userDbAdapter = new PsrdUserDbAdapter(this.getApplicationContext());
+		userDbAdapter = new PsrdUserDbAdapter(getApplicationContext());
 		userDbAdapter.open();
-		PsrdDbHelper dbh = new PsrdDbHelper(this.getApplicationContext());
+		PsrdDbHelper dbh = new PsrdDbHelper(getApplicationContext());
 		try {
 			dbh.createDataBase(userDbAdapter);
 		} catch (IOException e) {
@@ -131,8 +132,19 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 			} else if (sectionName.equals("Monsters")) {
 				MonsterAdapter ma = new MonsterAdapter(dbAdapter);
 				result.add(ma.createMonsterTypeList());
+			} else if (sectionName.equals("Characters")) {
+				PsrdUserDbAdapter userDbAdapter = new PsrdUserDbAdapter(getApplicationContext());
+				CharacterAdapter ca = new CharacterAdapter(userDbAdapter);
+				ArrayList<HashMap<String, Object>> charList = ca.createCharacterList();
+
+				HashMap<String, Object> adder = new HashMap<String, Object>();
+				adder.put("id", 0);
+				adder.put("specificName", getString(R.string.add_character));
+				charList.add(adder);
+
+				result.add(charList);
 			} else {
-				result.add(new ArrayList<HashMap<String, Object>>());
+			    
 			}
 		}
 		this.children = result;

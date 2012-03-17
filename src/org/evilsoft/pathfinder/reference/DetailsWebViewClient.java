@@ -2,10 +2,9 @@ package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
+import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.render.SectionRenderer;
-
 import android.app.Activity;
 import android.content.res.AssetManager;
 import android.os.Build;
@@ -27,6 +26,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	private ImageButton back;
 	private String url;
 	private String oldUrl;
+	private long currentCharacter;
 	ArrayList<HashMap<String, String>> path;
 
 	public DetailsWebViewClient(Activity act, TextView title, ImageButton back, ImageButton star) {
@@ -62,7 +62,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	@Override
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
 		Log.e(TAG, newUrl);
-		if(newUrl.startsWith("http://")) {
+		if (newUrl.startsWith("http://")) {
 			newUrl = "pfsrd://" + newUrl.substring(14);
 		}
 		String[] parts = newUrl.split("\\/");
@@ -87,11 +87,11 @@ public class DetailsWebViewClient extends WebViewClient {
 	public void reloadList(String newUrl) {
 		// [{id=10751, name=Ability Scores}, {id=10701, name=Getting Started},
 		// {id=10700, name=Rules: Core Rulebook}, {id=1, name=PFSRD}]
-		Log.e(TAG, newUrl);
+		Log.e("url", newUrl);
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].startsWith("Rules")) {
 			DetailsListFragment list = (DetailsListFragment) act.getSupportFragmentManager().findFragmentById(
-					R.id.details_list_fragment);
+			        R.id.details_list_fragment);
 			HashMap<String, String> parent = path.get(1);
 			String updateUrl = RenderFarm.swapUrl(this.url, parent.get("name"), parent.get("id"));
 			list.updateUrl(updateUrl);
@@ -123,24 +123,44 @@ public class DetailsWebViewClient extends WebViewClient {
 		} else {
 			html = "<H1>" + newUrl + "</H1>";
 		}
-		//if (Build.VERSION.SDK_INT <= 10) {
+		// if (Build.VERSION.SDK_INT <= 10) {
 		view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8", this.oldUrl);
 		view.setWebViewClient(this);
 		view.scrollTo(0, 0);
-		//} else {
-		//	view.loadData(html, "text/html", "UTF-8");
-		//	view.scrollTo(0, 0);
-		//	view.reload();
-		//	view.scrollTo(0, 0);
-		//}
+		// } else {
+		// view.loadData(html, "text/html", "UTF-8");
+		// view.scrollTo(0, 0);
+		// view.reload();
+		// view.scrollTo(0, 0);
+		// }
+
+		refreshStarButtonState();
+		star.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				CharacterAdapter.toggleEntryStar(act, currentCharacter, path, title.getText().toString(), url);
+				refreshStarButtonState();
+			}
+		});
 
 		this.oldUrl = newUrl;
 		return true;
+	}
+
+	private void refreshStarButtonState() {
+		boolean starred = CharacterAdapter.entryIsStarred(act, currentCharacter, path, title.getText().toString());
+		star.setPressed(starred);
+		star.setImageResource(starred ? android.R.drawable.btn_star_big_on : android.R.drawable.btn_star_big_off);
 	}
 
 	public void onDestroy() {
 		if (dbAdapter != null) {
 			dbAdapter.close();
 		}
+	}
+
+	public void setCharacter(long itemId) {
+		currentCharacter = itemId;
+		refreshStarButtonState();
 	}
 }

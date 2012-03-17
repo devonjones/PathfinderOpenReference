@@ -16,4 +16,10 @@
         <item name="android:windowTitleSize">50dip</item>
         <item name="android:windowTitleBackgroundStyle">@style/BlackTitleTheme</item>
     </style>
+
+    <string name="add_character">Add new character…</string>
+    <string name="character_entry_title">New Character</string>
+    <string name="character_entry_text">What\'s the name of your character?</string>
+    <string name="character_entry_success">Added new character.</string>
+    <string name="character_entry_failure">Couldn\'t add character!</string>
 </resources>
