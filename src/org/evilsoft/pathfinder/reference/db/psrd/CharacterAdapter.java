@@ -55,8 +55,7 @@ public class CharacterAdapter {
 		return userDbAdapter.database.rawQuery(sql.toString(), new String[] { characterId });
 	}
 
-	public static void toggleEntryStar(Context context, long characterId, ArrayList<HashMap<String, String>> path, String title,
-	        String url) {
+	public static void toggleEntryStar(Context context, long characterId, ArrayList<HashMap<String, String>> path, String title, String url) {
 		if (CharacterAdapter.entryIsStarred(context, characterId, path, title)) {
 			CharacterAdapter.unstar(context, characterId, path, title, url);
 		} else {
@@ -77,7 +76,7 @@ public class CharacterAdapter {
 			sql.append("   AND name = ?");
 
 			Cursor curs = userDbAdapter.database.rawQuery(sql.toString(), new String[] { Long.toString(characterId),
-			        path.get(0).get("id"), title });
+				path.get(0).get("id"), title });
 
 			return curs.moveToFirst();
 		} finally {
@@ -96,8 +95,7 @@ public class CharacterAdapter {
 		}
 	}
 
-	private static void unstar(Context context, long characterId, ArrayList<HashMap<String, String>> path, String title,
-	        String url) {
+	private static void unstar(Context context, long characterId, ArrayList<HashMap<String, String>> path, String title, String url) {
 		PsrdUserDbAdapter userDbAdapter = new PsrdUserDbAdapter(context);
 
 		try {

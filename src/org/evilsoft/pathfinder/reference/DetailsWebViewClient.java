@@ -140,9 +140,11 @@ public class DetailsWebViewClient extends WebViewClient {
 	}
 
 	private void refreshStarButtonState() {
-		boolean starred = CharacterAdapter.entryIsStarred(act, currentCharacter, path, title.getText().toString());
-		star.setPressed(starred);
-		star.setImageResource(starred ? android.R.drawable.btn_star_big_on : android.R.drawable.btn_star_big_off);
+		if (path != null) {
+			boolean starred = CharacterAdapter.entryIsStarred(act, currentCharacter, path, title.getText().toString());
+			star.setPressed(starred);
+			star.setImageResource(starred ? android.R.drawable.btn_star_big_on : android.R.drawable.btn_star_big_off);
+		}
 	}
 
 	public void onDestroy() {
