@@ -108,17 +108,17 @@ public class SectionViewFragment extends ListFragment implements OnItemClickList
 				currentListAdapter = new MonsterListAdapter(getActivity().getApplicationContext(), curs, true);
 			}
 		} else if (parts[2].equals("Characters")) {
-		    if (parts.length > 4) {
-		        // I believe it's safe to test against the name because the keyboard doesn't allow typing an ellipsis character
-		        if (parts[parts.length - 1].equals(getString(R.string.add_character))) {
-		            showNewCharacterDialog();
-		        } else {
-    		        // We have a character name and can search on it
-    		        CharacterAdapter ca = new CharacterAdapter(userDbAdapter);
-    		        Cursor curs = ca.fetchCharacterEntries(parts[parts.length - 1]);
-    		        currentListAdapter = new CharacterListAdapter(getActivity(), curs, parts[3]);
-		        }
-		    }
+			if (parts.length > 4) {
+				// I believe it's safe to test against the name because the keyboard doesn't allow typing an ellipsis character
+				if (parts[parts.length - 1].equals(getString(R.string.add_character))) {
+					showNewCharacterDialog();
+				} else {
+					// We have a character name and can search on it
+					CharacterAdapter ca = new CharacterAdapter(userDbAdapter);
+					Cursor curs = ca.fetchCharacterEntries(parts[parts.length - 1]);
+					currentListAdapter = new CharacterListAdapter(getActivity(), curs, parts[3]);
+				}
+			}
 		} else {
 			ArrayList<String> list = new ArrayList<String>();
 			for (int i = 0; i < 6; i++) {
@@ -131,48 +131,45 @@ public class SectionViewFragment extends ListFragment implements OnItemClickList
 	}
 
 	private void showNewCharacterDialog() {
-	    AlertDialog.Builder alert =
-	        Integer.parseInt(android.os.Build.VERSION.SDK) < 11 ?
-	            new AlertDialog.Builder(getActivity()) :
-	            new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_LIGHT);
+		AlertDialog.Builder alert =
+				Integer.parseInt(android.os.Build.VERSION.SDK) < 11 ?
+						new AlertDialog.Builder(getActivity()) :
+							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_LIGHT);
 
-        final EditText edit = new EditText(alert.getContext());
-	    edit.setSingleLine(true);
+		final EditText edit = new EditText(alert.getContext());
+		edit.setSingleLine(true);
 
-        alert.setTitle(R.string.character_entry_title)
-             .setMessage(R.string.character_entry_text)
-             .setView(edit)
-             .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    PsrdUserDbAdapter db = new PsrdUserDbAdapter(getActivity());
+		alert.setTitle(R.string.character_entry_title)
+			.setMessage(R.string.character_entry_text)
+			.setView(edit)
+			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					PsrdUserDbAdapter db = new PsrdUserDbAdapter(getActivity());
 
-                    try {
-                        db.open();
-                        if (db.addCharacter(edit.getText().toString())) {
-                            Toast.makeText(getActivity(), R.string.character_entry_success, Toast.LENGTH_SHORT).show();
-                            // TODO: Figure out a way to make this refresh the list!
-                        } else {
-                            Toast.makeText(getActivity(), R.string.character_entry_failure, Toast.LENGTH_SHORT).show();
-                        }
-                    } finally {
-                        db.close();
-                    }
-                }
-            })
-            .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {}
-            })
-            .show();
-    }
+					try {
+						db.open();
+						if (db.addCharacter(edit.getText().toString())) {
+							Toast.makeText(getActivity(), R.string.character_entry_success, Toast.LENGTH_SHORT).show();
+							// TODO: Figure out a way to make this refresh the list!
+						} else {
+							Toast.makeText(getActivity(), R.string.character_entry_failure, Toast.LENGTH_SHORT).show();
+						}
+					} finally {
+						db.close();
+					}
+				}
+			}).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {}
+			}).show();
+	}
 
-    @Override
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setListAdapter(ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.top_titles,
 				R.layout.list_item));
 		dbAdapter = new PsrdDbAdapter(getActivity().getApplicationContext());
 		dbAdapter.open();
-		
 		userDbAdapter = new PsrdUserDbAdapter(getActivity());
 		userDbAdapter.open();
 	}
@@ -184,22 +181,20 @@ public class SectionViewFragment extends ListFragment implements OnItemClickList
 			dbAdapter.close();
 		}
 		if (userDbAdapter != null) {
-		    userDbAdapter.close();
+			userDbAdapter.close();
 		}
 	}
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-	    Intent showContent = new Intent(getActivity().getApplicationContext(), DetailsActivity.class);
-
-	    String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
+		Intent showContent = new Intent(getActivity().getApplicationContext(), DetailsActivity.class);
+		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
 		DisplayListAdapter a = (DisplayListAdapter) parent.getAdapter();
 		if (a.getClass().equals(CharacterListAdapter.class)) {
-		    CharacterListItem item = (CharacterListItem) a.getItem(position);
-		    uri = item.getUrl();
-		    showContent.putExtra("currentCharacter", item.getCharacterId());
+			CharacterListItem item = (CharacterListItem) a.getItem(position);
+			uri = item.getUrl();
+			showContent.putExtra("currentCharacter", item.getCharacterId());
 		}
-
 		Log.e(TAG, uri);
 		showContent.setData(Uri.parse(uri));
 		startActivity(showContent);

@@ -3,6 +3,7 @@ package org.evilsoft.pathfinder.reference;
 import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
+
 import android.app.ActionBar;
 import android.app.SearchManager;
 import android.content.Context;
@@ -11,12 +12,11 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
+import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.SearchView;
-import android.widget.SimpleCursorAdapter;
 
 public class DetailsActivity extends FragmentActivity {
 	private PsrdDbAdapter dbAdapter;
@@ -30,9 +30,10 @@ public class DetailsActivity extends FragmentActivity {
 		setContentView(R.layout.details);
 
 		Intent launchingIntent = getIntent();
-		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager().findFragmentById(
-		        R.id.details_view_fragment);
-		DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager().findFragmentById(R.id.details_list_fragment);
+		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
+				.findFragmentById(R.id.details_view_fragment);
+		DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
+				.findFragmentById(R.id.details_list_fragment);
 		String newUri;
 		if (Intent.ACTION_SEARCH.equals(launchingIntent.getAction())) {
 			String query = launchingIntent.getStringExtra(SearchManager.QUERY);
@@ -55,12 +56,12 @@ public class DetailsActivity extends FragmentActivity {
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 		CharacterAdapter ca = new CharacterAdapter(new PsrdUserDbAdapter(this));
 		SimpleCursorAdapter sca = new SimpleCursorAdapter(
-			this,
-			android.R.layout.simple_spinner_dropdown_item,
-			ca.fetchCharacterList(), // this returns a cursor and won't be requeried automatically!
-			new String[] { "name" },
-			new int[] { android.R.id.text1 },
-			0);
+				this,
+				android.R.layout.simple_spinner_dropdown_item,
+				ca.fetchCharacterList(), // this returns a cursor and won't be required automatically!
+				new String[] { "name" },
+				new int[] { android.R.id.text1 },
+				0);
 		action.setListNavigationCallbacks(sca, new ActionBar.OnNavigationListener() {
 			public boolean onNavigationItemSelected(int itemPosition, long itemId) {
 				viewer.setCharacter(itemId);
@@ -124,6 +125,8 @@ public class DetailsActivity extends FragmentActivity {
 		return sb.toString();
 	}
 
+
+
 	public static String buildDetailsListUri(String uri) {
 		String[] parts = uri.split("\\/");
 		if (parts[2].equals("Search")) {
@@ -150,19 +153,19 @@ public class DetailsActivity extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-		case R.id.menu_ogl:
-			Intent showContent = new Intent(getApplicationContext(), DetailsActivity.class);
-			showContent.setData(Uri.parse("pfsrd://Ogl"));
-			startActivity(showContent);
-			return true;
-		case android.R.id.home:
-			// app icon in action bar clicked; go home
-			Intent intent = new Intent(this, PathfinderOpenReferenceActivity.class);
-			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-			startActivity(intent);
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
+			case R.id.menu_ogl:
+				Intent showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Ogl"));
+				startActivity(showContent);
+				return true;
+			case android.R.id.home:
+				// app icon in action bar clicked; go home
+				Intent intent = new Intent(this, PathfinderOpenReferenceActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(intent);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
 	}
 }

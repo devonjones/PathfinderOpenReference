@@ -41,7 +41,7 @@ public class DetailsViewFragment extends Fragment {
 		client.onDestroy();
 	}
 
-    public void setCharacter(long itemId) {
-        client.setCharacter(itemId);
-    }
+	public void setCharacter(long itemId) {
+		client.setCharacter(itemId);
+	}
 }

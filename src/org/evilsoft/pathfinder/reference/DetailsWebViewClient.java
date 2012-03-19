@@ -2,12 +2,12 @@ package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
 import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-import org.evilsoft.pathfinder.reference.render.SectionRenderer;
+
 import android.app.Activity;
 import android.content.res.AssetManager;
-import android.os.Build;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
@@ -87,11 +87,11 @@ public class DetailsWebViewClient extends WebViewClient {
 	public void reloadList(String newUrl) {
 		// [{id=10751, name=Ability Scores}, {id=10701, name=Getting Started},
 		// {id=10700, name=Rules: Core Rulebook}, {id=1, name=PFSRD}]
-		Log.e("url", newUrl);
+		Log.e(TAG, newUrl);
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].startsWith("Rules")) {
 			DetailsListFragment list = (DetailsListFragment) act.getSupportFragmentManager().findFragmentById(
-			        R.id.details_list_fragment);
+					R.id.details_list_fragment);
 			HashMap<String, String> parent = path.get(1);
 			String updateUrl = RenderFarm.swapUrl(this.url, parent.get("name"), parent.get("id"));
 			list.updateUrl(updateUrl);
@@ -123,16 +123,9 @@ public class DetailsWebViewClient extends WebViewClient {
 		} else {
 			html = "<H1>" + newUrl + "</H1>";
 		}
-		// if (Build.VERSION.SDK_INT <= 10) {
 		view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8", this.oldUrl);
 		view.setWebViewClient(this);
 		view.scrollTo(0, 0);
-		// } else {
-		// view.loadData(html, "text/html", "UTF-8");
-		// view.scrollTo(0, 0);
-		// view.reload();
-		// view.scrollTo(0, 0);
-		// }
 
 		refreshStarButtonState();
 		star.setOnClickListener(new View.OnClickListener() {
@@ -142,7 +135,6 @@ public class DetailsWebViewClient extends WebViewClient {
 				refreshStarButtonState();
 			}
 		});
-
 		this.oldUrl = newUrl;
 		return true;
 	}
