@@ -20,17 +20,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.SearchView;
 
-public class PathfinderOpenReferenceActivity extends FragmentActivity implements
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+
+public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity implements
 		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener
 		{
 	private static final String TAG = "PathfinderOpenReferenceActivity";
@@ -60,13 +62,16 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		MenuInflater inflater = getMenuInflater();
+		MenuInflater inflater = this.getSupportMenuInflater();
 		inflater.inflate(R.menu.main_menu, menu);
-		MenuItem searchItem = menu.findItem(R.id.menu_search);
-		SearchView searchView = (SearchView) searchItem.getActionView();
-		searchView.setIconifiedByDefault(false);
-		SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-		searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+		if (Build.VERSION.SDK_INT >= 11) {
+			MenuItem searchItem = menu.findItem(R.id.menu_search);
+			searchItem.setVisible(true);
+			SearchView searchView = (SearchView) searchItem.getActionView();
+			searchView.setIconifiedByDefault(false);
+			SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+			searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+		}
 		return true;
 	}
 
@@ -90,9 +95,11 @@ public class PathfinderOpenReferenceActivity extends FragmentActivity implements
 		ArrayList<HashMap<String, Object>> result = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = dbAdapter.fetchSectionByParentId("1");
 		HashMap<String, Object> child = new HashMap<String, Object>();
-		child.put("sectionName", "Characters");
-		child.put("id", "0");
-		result.add(child);
+		if (Build.VERSION.SDK_INT >= 11) {
+			child.put("sectionName", "Characters");
+			child.put("id", "0");
+			result.add(child);
+		}
 		boolean has_next = curs.moveToFirst();
 		while (has_next) {
 			String section_id = curs.getString(0);

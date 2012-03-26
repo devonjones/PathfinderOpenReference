@@ -20,7 +20,6 @@ import org.evilsoft.pathfinder.reference.list.SpellListAdapter;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +27,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 
-public class DetailsListFragment extends ListFragment implements OnItemClickListener {
+import com.actionbarsherlock.app.SherlockListFragment;
+
+public class DetailsListFragment extends SherlockListFragment implements OnItemClickListener {
 	private static final String TAG = "DetailsListFragment";
 	private PsrdDbAdapter dbAdapter;
 	private String currentUrl;

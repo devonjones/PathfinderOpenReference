@@ -4,21 +4,23 @@ import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
-import android.app.ActionBar;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.SimpleCursorAdapter;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.widget.SearchView;
 
-public class DetailsActivity extends FragmentActivity {
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+
+public class DetailsActivity extends SherlockFragmentActivity {
 	private PsrdDbAdapter dbAdapter;
 
 	@Override
@@ -51,7 +53,7 @@ public class DetailsActivity extends FragmentActivity {
 		list.updateUrl(uri);
 
 		// Set up action bar
-		ActionBar action = this.getActionBar();
+		ActionBar action = this.getSupportActionBar();
 		action.setDisplayHomeAsUpEnabled(true);
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 		CharacterAdapter ca = new CharacterAdapter(new PsrdUserDbAdapter(this));
@@ -80,13 +82,16 @@ public class DetailsActivity extends FragmentActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		MenuInflater inflater = getMenuInflater();
+		MenuInflater inflater = this.getSupportMenuInflater();
 		inflater.inflate(R.menu.main_menu, menu);
-		MenuItem searchItem = menu.findItem(R.id.menu_search);
-		SearchView searchView = (SearchView) searchItem.getActionView();
-		searchView.setIconifiedByDefault(false);
-		SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-		searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+		if (Build.VERSION.SDK_INT >= 11) {
+			MenuItem searchItem = menu.findItem(R.id.menu_search);
+			searchItem.setVisible(true);
+			SearchView searchView = (SearchView) searchItem.getActionView();
+			searchView.setIconifiedByDefault(false);
+			SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+			searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+		}
 		return true;
 	}
 

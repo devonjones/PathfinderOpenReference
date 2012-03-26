@@ -2,9 +2,10 @@ package org.evilsoft.pathfinder.reference;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 
-public class SectionViewActivity extends FragmentActivity {
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+
+public class SectionViewActivity extends SherlockFragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -242,7 +242,7 @@ public class PsrdDbAdapter {
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
-	
+
 	public Integer countSearchArticles(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();

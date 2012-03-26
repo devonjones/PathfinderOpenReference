@@ -2,7 +2,6 @@ package org.evilsoft.pathfinder.reference;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Gravity;
@@ -19,7 +18,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class ExpandableListFragment extends Fragment implements OnCreateContextMenuListener,
+import com.actionbarsherlock.app.SherlockFragment;
+
+public class ExpandableListFragment extends SherlockFragment implements OnCreateContextMenuListener,
 		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener,
 		ExpandableListView.OnGroupCollapseListener, ExpandableListView.OnGroupExpandListener {
 	static final int INTERNAL_EMPTY_ID = 0x00ff0001;
