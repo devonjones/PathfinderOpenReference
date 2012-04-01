@@ -17,9 +17,15 @@
         <item name="android:windowTitleBackgroundStyle">@style/BlackTitleTheme</item>
     </style>
 
-    <string name="add_character">Add new character…</string>
-    <string name="character_entry_title">New Character</string>
-    <string name="character_entry_text">What\'s the name of your character?</string>
-    <string name="character_entry_success">Added new character.</string>
-    <string name="character_entry_failure">Couldn\'t add character!</string>
+    <string name="add_collection">Add new collection…</string>
+    <string name="collection_entry_title">New Collection</string>
+    <string name="collection_entry_text">What\'s the name of your new collection/character?</string>
+    <string name="collection_entry_success">Added new collection.</string>
+    <string name="collection_entry_failure">Couldn\'t add collection!</string>
+
+    <string name="del_collection">Remove collection…</string>
+    <string name="del_collection_entry_title">Remove Collection</string>
+    <string name="del_collection_entry_text">Select collection to remove.</string>
+    <string name="del_collection_entry_success">Removed collection.</string>
+    <string name="del_collection_entry_failure">Couldn\'t remove collection!</string>
 </resources>

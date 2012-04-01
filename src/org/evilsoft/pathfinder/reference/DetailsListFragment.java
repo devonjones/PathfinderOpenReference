@@ -35,6 +35,40 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 	private String currentUrl;
 	private BaseAdapter currentListAdapter;
 
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setListAdapter(ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.top_titles,
+				R.layout.list_item));
+		openDb();
+	}
+
+	private void openDb() {
+		if (dbAdapter == null) {
+			dbAdapter = new PsrdDbAdapter(this.getActivity().getApplicationContext());
+		}
+		if (dbAdapter.isClosed()) {
+			dbAdapter.open();
+		}
+	}
+
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		if (dbAdapter != null) {
+			dbAdapter.close();
+		}
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
+		Log.e(TAG, uri);
+		DetailsViewFragment viewer = (DetailsViewFragment) this.getActivity().getSupportFragmentManager()
+				.findFragmentById(R.id.details_view_fragment);
+		viewer.updateUrl(uri);
+	}
+
 	public void updateUrl(String newUrl) {
 		this.getListView().setOnItemClickListener(this);
 		this.getListView().setCacheColorHint(Color.WHITE);
@@ -99,31 +133,5 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 			currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), curs);
 		}
 		setListAdapter(currentListAdapter);
-	}
-
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setListAdapter(ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.top_titles,
-				R.layout.list_item));
-		dbAdapter = new PsrdDbAdapter(getActivity().getApplicationContext());
-		dbAdapter.open();
-	}
-
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-		if (dbAdapter != null) {
-			dbAdapter.close();
-		}
-	}
-
-	@Override
-	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
-		Log.e(TAG, uri);
-		DetailsViewFragment viewer = (DetailsViewFragment) this.getActivity().getSupportFragmentManager()
-				.findFragmentById(R.id.details_view_fragment);
-		viewer.updateUrl(uri);
 	}
 }

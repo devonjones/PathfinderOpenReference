@@ -14,21 +14,9 @@ public class CharacterAdapter {
 		this.userDbAdapter = userDbAdapter;
 	}
 
-	public void closeDb() {
-		if (userDbAdapter != null) {
-			userDbAdapter.close();
-		}
-	}
-
-	public Cursor fetchCharacterList() {
-		String sql = "SELECT collection_id AS _id, name FROM collections";
-		userDbAdapter.open();
-		return userDbAdapter.database.rawQuery(sql, new String[] {});
-	}
-
 	public ArrayList<HashMap<String, Object>> createCharacterList() {
 		ArrayList<HashMap<String, Object>> charList = new ArrayList<HashMap<String, Object>>();
-		Cursor curs = fetchCharacterList();
+		Cursor curs = userDbAdapter.fetchCharacterList();
 		HashMap<String, Object> child;
 
 		boolean hasNext = curs.moveToFirst();
@@ -40,8 +28,6 @@ public class CharacterAdapter {
 			charList.add(child);
 			hasNext = curs.moveToNext();
 		}
-
-		userDbAdapter.close();
 		return charList;
 	}
 

@@ -30,13 +30,12 @@ public class DetailsWebViewClient extends WebViewClient {
 	ArrayList<HashMap<String, String>> path;
 
 	public DetailsWebViewClient(Activity act, TextView title, ImageButton back, ImageButton star) {
-		dbAdapter = new PsrdDbAdapter(act.getApplicationContext());
-		dbAdapter.open();
 		this.act = (FragmentActivity) act;
 		this.title = title;
 		this.back = back;
 		this.star = star;
 		assets = act.getApplicationContext().getAssets();
+		openDb();
 	}
 
 	public void back(WebView view) {
@@ -144,6 +143,15 @@ public class DetailsWebViewClient extends WebViewClient {
 			boolean starred = CharacterAdapter.entryIsStarred(act, currentCharacter, path, title.getText().toString());
 			star.setPressed(starred);
 			star.setImageResource(starred ? android.R.drawable.btn_star_big_on : android.R.drawable.btn_star_big_off);
+		}
+	}
+
+	private void openDb() {
+		if (dbAdapter == null) {
+			dbAdapter = new PsrdDbAdapter(act.getApplicationContext());
+		}
+		if (dbAdapter.isClosed()) {
+			dbAdapter.open();
 		}
 	}
 

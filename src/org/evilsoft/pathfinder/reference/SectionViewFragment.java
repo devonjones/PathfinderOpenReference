@@ -47,6 +47,55 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 	private String currentUrl;
 	private BaseAdapter currentListAdapter;
 
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setListAdapter(ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.top_titles,
+				R.layout.list_item));
+		openDb();
+	}
+
+	private void openDb() {
+		if (userDbAdapter == null) {
+			userDbAdapter = new PsrdUserDbAdapter(this.getActivity().getApplicationContext());
+		}
+		if (userDbAdapter.isClosed()) {
+			userDbAdapter.open();
+		}
+		if (dbAdapter == null) {
+			dbAdapter = new PsrdDbAdapter(this.getActivity().getApplicationContext());
+		}
+		if (dbAdapter.isClosed()) {
+			dbAdapter.open();
+		}
+	}
+
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		if (dbAdapter != null) {
+			dbAdapter.close();
+		}
+		if (userDbAdapter != null) {
+			userDbAdapter.close();
+		}
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		Intent showContent = new Intent(getActivity().getApplicationContext(), DetailsActivity.class);
+		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
+		DisplayListAdapter a = (DisplayListAdapter) parent.getAdapter();
+		if (a.getClass().equals(CharacterListAdapter.class)) {
+			CharacterListItem item = (CharacterListItem) a.getItem(position);
+			uri = item.getUrl();
+			showContent.putExtra("currentCharacter", item.getCharacterId());
+		}
+		Log.e(TAG, uri);
+		showContent.setData(Uri.parse(uri));
+		startActivity(showContent);
+	}
+
 	public void updateUrl(String newUrl) {
 		Log.e(TAG, newUrl);
 		this.getListView().setOnItemClickListener(this);
@@ -108,13 +157,15 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 				}
 				currentListAdapter = new MonsterListAdapter(getActivity().getApplicationContext(), curs, true);
 			}
-		} else if (parts[2].equals("Characters")) {
+		} else if (parts[2].equals("Bookmarks")) {
 			if (parts.length > 4) {
 				// I believe it's safe to test against the name because the keyboard doesn't allow typing an ellipsis character
-				if (parts[parts.length - 1].equals(getString(R.string.add_character))) {
-					showNewCharacterDialog();
+				if (parts[parts.length - 1].equals(getString(R.string.add_collection))) {
+					showNewCollectionDialog();
+				} else if (parts[parts.length - 1].equals(getString(R.string.del_collection))) {
+					showDelCollectionDialog();
 				} else {
-					// We have a character name and can search on it
+					// We have a collection name and can search on it
 					CharacterAdapter ca = new CharacterAdapter(userDbAdapter);
 					Cursor curs = ca.fetchCharacterEntries(parts[parts.length - 1]);
 					currentListAdapter = new CharacterListAdapter(getActivity(), curs, parts[3]);
@@ -131,32 +182,27 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 		setListAdapter(currentListAdapter);
 	}
 
-	private void showNewCharacterDialog() {
+	private void showNewCollectionDialog() {
 		AlertDialog.Builder alert =
-				Integer.parseInt(android.os.Build.VERSION.SDK) < 11 ?
+				android.os.Build.VERSION.SDK_INT < 11 ?
 						new AlertDialog.Builder(getActivity()) :
 							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_LIGHT);
 
-		final EditText edit = new EditText(alert.getContext());
+		final EditText edit = new EditText(this.getActivity().getApplicationContext());
 		edit.setSingleLine(true);
 
-		alert.setTitle(R.string.character_entry_title)
-			.setMessage(R.string.character_entry_text)
+		alert.setTitle(R.string.collection_entry_title)
+			.setMessage(R.string.collection_entry_text)
 			.setView(edit)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
-					PsrdUserDbAdapter db = new PsrdUserDbAdapter(getActivity());
-
-					try {
-						db.open();
-						if (db.addCharacter(edit.getText().toString())) {
-							Toast.makeText(getActivity(), R.string.character_entry_success, Toast.LENGTH_SHORT).show();
-							// TODO: Figure out a way to make this refresh the list!
-						} else {
-							Toast.makeText(getActivity(), R.string.character_entry_failure, Toast.LENGTH_SHORT).show();
-						}
-					} finally {
-						db.close();
+					if (userDbAdapter.addCollection(edit.getText().toString())) {
+						Toast.makeText(getActivity(), R.string.collection_entry_success, Toast.LENGTH_SHORT).show();
+						SectionListFragment list = (SectionListFragment) getActivity().getSupportFragmentManager().findFragmentById(
+								R.id.section_list_fragment);
+						list.refresh(dbAdapter, userDbAdapter);
+					} else {
+						Toast.makeText(getActivity(), R.string.collection_entry_failure, Toast.LENGTH_SHORT).show();
 					}
 				}
 			}).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -164,40 +210,37 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 			}).show();
 	}
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setListAdapter(ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.top_titles,
-				R.layout.list_item));
-		dbAdapter = new PsrdDbAdapter(getActivity().getApplicationContext());
-		dbAdapter.open();
-		userDbAdapter = new PsrdUserDbAdapter(getActivity());
-		userDbAdapter.open();
-	}
+	private void showDelCollectionDialog() {
+		AlertDialog.Builder builder =
+				android.os.Build.VERSION.SDK_INT < 11 ?
+						new AlertDialog.Builder(getActivity()) :
+							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_LIGHT);
 
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-		if (dbAdapter != null) {
-			dbAdapter.close();
+		Cursor curs = userDbAdapter.fetchCharacterList();
+		final ArrayList<String> characterList = new ArrayList<String>();
+		boolean hasNext = curs.moveToFirst();
+		while (hasNext) {
+			characterList.add(curs.getString(1));
+			hasNext = curs.moveToNext();
 		}
-		if (userDbAdapter != null) {
-			userDbAdapter.close();
-		}
-	}
-
-	@Override
-	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		Intent showContent = new Intent(getActivity().getApplicationContext(), DetailsActivity.class);
-		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
-		DisplayListAdapter a = (DisplayListAdapter) parent.getAdapter();
-		if (a.getClass().equals(CharacterListAdapter.class)) {
-			CharacterListItem item = (CharacterListItem) a.getItem(position);
-			uri = item.getUrl();
-			showContent.putExtra("currentCharacter", item.getCharacterId());
-		}
-		Log.e(TAG, uri);
-		showContent.setData(Uri.parse(uri));
-		startActivity(showContent);
+		String[] items = characterList.toArray(new String[characterList.size()]);
+		builder.setTitle(R.string.del_collection_entry_title);
+		builder.setItems(items, new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				if (userDbAdapter.delCollection(characterList.get(which)) > 0) {
+					Toast.makeText(getActivity(), R.string.del_collection_entry_success, Toast.LENGTH_SHORT).show();
+					SectionListFragment list = (SectionListFragment) getActivity().getSupportFragmentManager().findFragmentById(
+							R.id.section_list_fragment);
+					list.refresh(dbAdapter, userDbAdapter);
+				} else {
+					Toast.makeText(getActivity(), R.string.del_collection_entry_failure, Toast.LENGTH_SHORT).show();
+				}
+			}
+		});
+		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {}
+		});
+		AlertDialog alert = builder.create();
+		alert.show();
 	}
 }

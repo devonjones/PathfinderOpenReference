@@ -15,6 +15,7 @@ public class PsrdUserDbHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		db.execSQL(createCollectionTable());
+		db.execSQL(addDefaultCollection());
 		db.execSQL(createCollectionEntryTable());
 		db.execSQL(createPsrdDbVersionTable());
 	}
@@ -30,6 +31,13 @@ public class PsrdUserDbHelper extends SQLiteOpenHelper {
 		sb.append(" collection_id INTEGER PRIMARY KEY,");
 		sb.append(" name TEXT");
 		sb.append(")");
+		return sb.toString();
+	}
+
+	public String addDefaultCollection() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("INSERT INTO collections");
+		sb.append(" (name) VALUES ('default')");
 		return sb.toString();
 	}
 

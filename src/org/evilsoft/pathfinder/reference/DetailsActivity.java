@@ -1,18 +1,20 @@
 package org.evilsoft.pathfinder.reference;
 
-import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
@@ -22,12 +24,13 @@ import com.actionbarsherlock.view.MenuItem;
 
 public class DetailsActivity extends SherlockFragmentActivity {
 	private PsrdDbAdapter dbAdapter;
+	private PsrdUserDbAdapter userDbAdapter;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		dbAdapter = new PsrdDbAdapter(this);
-		dbAdapter.open();
+		setScreenOrientation();
+		openDb();
 
 		setContentView(R.layout.details);
 
@@ -56,11 +59,10 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		ActionBar action = this.getSupportActionBar();
 		action.setDisplayHomeAsUpEnabled(true);
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
-		CharacterAdapter ca = new CharacterAdapter(new PsrdUserDbAdapter(this));
 		SimpleCursorAdapter sca = new SimpleCursorAdapter(
 				this,
 				android.R.layout.simple_spinner_dropdown_item,
-				ca.fetchCharacterList(), // this returns a cursor and won't be required automatically!
+				userDbAdapter.fetchCharacterList(), // this returns a cursor and won't be required automatically!
 				new String[] { "name" },
 				new int[] { android.R.id.text1 },
 				0);
@@ -70,8 +72,6 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				return true;
 			}
 		});
-
-		ca.closeDb();
 
 		String characterId = launchingIntent.getStringExtra("currentCharacter");
 		if (characterId != null) {
@@ -147,11 +147,47 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		return sb.toString();
 	}
 
+	private void setScreenOrientation() {
+		if (Build.VERSION.SDK_INT >= 11) {
+			int smallest = getResources().getConfiguration().screenWidthDp;
+			if (getResources().getConfiguration().screenHeightDp < smallest) {
+				smallest = getResources().getConfiguration().screenHeightDp;
+			}
+			if (smallest >= 750) {
+				if ((getResources().getConfiguration().screenLayout
+						& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
+					Toast.makeText(this, "XXLarge screen",Toast.LENGTH_LONG).show();
+					setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+					return;
+				}
+			}
+		}
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+	}
+
+	private void openDb() {
+		if (userDbAdapter == null) {
+			userDbAdapter = new PsrdUserDbAdapter(this.getApplicationContext());
+		}
+		if (userDbAdapter.isClosed()) {
+			userDbAdapter.open();
+		}
+		if (dbAdapter == null) {
+			dbAdapter = new PsrdDbAdapter(this.getApplicationContext());
+		}
+		if (dbAdapter.isClosed()) {
+			dbAdapter.open();
+		}
+	}
+
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 		if (dbAdapter != null) {
 			dbAdapter.close();
+		}
+		if (userDbAdapter != null) {
+			userDbAdapter.close();
 		}
 	}
 

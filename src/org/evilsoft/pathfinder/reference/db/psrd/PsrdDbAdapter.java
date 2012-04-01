@@ -16,6 +16,7 @@ public class PsrdDbAdapter {
 	public SQLiteDatabase database;
 	private PsrdDbHelper dbHelper;
 	private static final String TAG = "PsrdDbAdapter";
+	private boolean closed = true;
 
 	public PsrdDbAdapter(Context context) {
 		this.context = context;
@@ -24,11 +25,19 @@ public class PsrdDbAdapter {
 	public PsrdDbAdapter open() throws SQLException {
 		dbHelper = new PsrdDbHelper(context);
 		database = dbHelper.openDatabase();
+		closed = false;
 		return this;
 	}
 
 	public void close() {
 		dbHelper.close();
+		dbHelper = null;
+		database = null;
+		closed = true;
+	}
+
+	public boolean isClosed() {
+		return closed;
 	}
 
 	public Cursor fetchSectionByType(String sectionType) {
