@@ -3,3 +3,6 @@ This program is an android app for displaying rules fomr the [Paizo Pathfinder O
 
 # Dependancies #
 In order to build this project, you will need to have [ActionBarSherlock][http://actionbarsherlock.com/] configured according to the ActionBarSherlock site.
+
+# Download #
+You can downlad the current development version [here][http://bit.ly/GYdanb], the app is not available on the google play market yet.
