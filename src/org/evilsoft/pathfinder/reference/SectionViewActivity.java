@@ -5,7 +5,6 @@ import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 
@@ -33,7 +32,6 @@ public class SectionViewActivity extends SherlockFragmentActivity {
 			if (smallest >= 750) {
 				if ((getResources().getConfiguration().screenLayout
 						& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
-					Toast.makeText(this, "XXLarge screen",Toast.LENGTH_LONG).show();
 					setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
 					return;
 				}

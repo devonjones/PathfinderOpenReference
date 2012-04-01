@@ -37,6 +37,10 @@ public class PsrdUserDbAdapter {
 	}
 
 	public boolean addCollection(String name) {
+		Integer colId = selectCollectionId(name);
+		if (colId != null) {
+			return false;
+		}
 		ContentValues cv = new ContentValues();
 		cv.put("name", name);
 		return database.insert("collections", null, cv) > -1;

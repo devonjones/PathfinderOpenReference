@@ -14,7 +14,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
@@ -61,7 +60,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 		SimpleCursorAdapter sca = new SimpleCursorAdapter(
 				this,
-				android.R.layout.simple_spinner_dropdown_item,
+				R.layout.actionbar_spinner,
 				userDbAdapter.fetchCharacterList(), // this returns a cursor and won't be required automatically!
 				new String[] { "name" },
 				new int[] { android.R.id.text1 },
@@ -156,7 +155,6 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			if (smallest >= 750) {
 				if ((getResources().getConfiguration().screenLayout
 						& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
-					Toast.makeText(this, "XXLarge screen",Toast.LENGTH_LONG).show();
 					setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
 					return;
 				}

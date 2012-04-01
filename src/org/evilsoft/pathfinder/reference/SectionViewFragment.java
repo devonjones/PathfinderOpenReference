@@ -186,7 +186,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 		AlertDialog.Builder alert =
 				android.os.Build.VERSION.SDK_INT < 11 ?
 						new AlertDialog.Builder(getActivity()) :
-							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_LIGHT);
+							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK);
 
 		final EditText edit = new EditText(this.getActivity().getApplicationContext());
 		edit.setSingleLine(true);
@@ -214,7 +214,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 		AlertDialog.Builder builder =
 				android.os.Build.VERSION.SDK_INT < 11 ?
 						new AlertDialog.Builder(getActivity()) :
-							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_LIGHT);
+							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK);
 
 		Cursor curs = userDbAdapter.fetchCharacterList();
 		final ArrayList<String> characterList = new ArrayList<String>();
