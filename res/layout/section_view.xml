@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    android:name="org.evilsoft.pathfinder.reference.SectionViewFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/section_view_fragment"
-    android:layout_weight="80">
+	android:name="org.evilsoft.pathfinder.reference.SectionViewFragment"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/section_view_fragment"
+	android:layout_weight="80">
 </fragment>
