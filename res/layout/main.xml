@@ -45,20 +45,8 @@
 		android:layout_height="match_parent"
 		android:orientation="vertical"
 		android:layout_weight="80"
+		android:background="@color/white"
+		android:id="@+id/section_view_layout"
 		>
-		<fragment
-			android:name="org.evilsoft.pathfinder.reference.SectionViewFragment"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/section_view_fragment"
-			>
-		</fragment>
-		<TextView
-			android:id="@+id/colorbuffer4"
-			android:text=" "
-			android:layout_width="match_parent"
-			android:layout_height="fill_parent"
-			android:background="@color/white"
-			/>
 	</LinearLayout>
 </LinearLayout>

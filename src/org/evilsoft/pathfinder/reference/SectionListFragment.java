@@ -4,11 +4,11 @@ import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.ExpandableListView;
 
@@ -60,20 +60,32 @@ public class SectionListFragment extends ExpandableListFragment implements
 		expListAdapter.refresh(dbAdapter, userDbAdapter);
 	}
 
+	private void updateFragment(String uri) {
+		Fragment frag = this.getActivity().getSupportFragmentManager().findFragmentByTag("viewer");
+		if (SectionViewFragment.class.isInstance(frag)) {
+			((SectionViewFragment)frag).updateUrl(uri);
+		}
+		else {
+			FragmentTransaction ft = this.getActivity().getSupportFragmentManager().beginTransaction();
+			SectionViewFragment viewer = new SectionViewFragment(uri);
+			ft.replace(R.id.section_view_layout, viewer, "viewer");
+			ft.commit();
+		}
+	}
+
 	@Override
 	public boolean onChildClick(ExpandableListView elv, View v, int groupPosition, int childPosition, long id) {
 		String uri = getUri(groupPosition, childPosition);
-		SectionViewFragment viewer = (SectionViewFragment) this.getActivity().getSupportFragmentManager().findFragmentById(
-				R.id.section_view_fragment);
+		updateFragment(uri);
+		//SectionViewFragment viewer = (SectionViewFragment) this.getActivity().getSupportFragmentManager().findFragmentById(R.id.section_view_fragment);
+		//if (viewer == null || !viewer.isInLayout()) {
+		//	Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
 
-		if (viewer == null || !viewer.isInLayout()) {
-			Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
-
-			showContent.setData(Uri.parse(uri));
-			startActivity(showContent);
-		} else {
-			viewer.updateUrl(uri);
-		}
+		//	showContent.setData(Uri.parse(uri));
+		//	startActivity(showContent);
+		//} else {
+		//	viewer.updateUrl(uri);
+		//}
 		return false;
 	}
 
@@ -82,17 +94,16 @@ public class SectionListFragment extends ExpandableListFragment implements
 		String sectionName = (String)expListAdapter.getGroup(groupPosition);
 		String sectionId = expListAdapter.getPfGroupId(groupPosition);
 		String uri = "pfsrd://" + sectionName + "/" + sectionId;
-		SectionViewFragment viewer = (SectionViewFragment) this.getActivity().getSupportFragmentManager().findFragmentById(
-				R.id.section_view_fragment);
+		updateFragment(uri);
+		//SectionViewFragment viewer = (SectionViewFragment) this.getActivity().getSupportFragmentManager().findFragmentById(R.id.section_view_fragment);
+		//if (viewer == null || !viewer.isInLayout()) {
+		//	Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
 
-		if (viewer == null || !viewer.isInLayout()) {
-			Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
-
-			showContent.setData(Uri.parse(uri));
-			startActivity(showContent);
-		} else {
-			viewer.updateUrl(uri);
-		}
+		//	showContent.setData(Uri.parse(uri));
+		//	startActivity(showContent);
+		//} else {
+		//viewer.updateUrl(uri);
+		//}
 		return false;
 	}
 

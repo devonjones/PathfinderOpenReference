@@ -15,6 +15,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.widget.SearchView;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
@@ -42,6 +43,18 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 		}
 		openDb();
 		setContentView(R.layout.main);
+		addDynamicFragment();
+	}
+
+	public void addDynamicFragment() {
+		Cursor curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
+		curs.moveToFirst();
+		String sectionId = curs.getString(0);
+		curs.close();
+		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+		DetailsViewFragment viewer = new DetailsViewFragment("pfsrd://Ogl/" + sectionId);
+		ft.replace(R.id.section_view_layout, viewer, "viewer");
+		ft.commit();
 	}
 
 	@Override
@@ -62,12 +75,23 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		Cursor curs;
+		String sectionId;
+		Intent showContent;
 		switch (item.getItemId()) {
 			case R.id.menu_ogl:
-				Cursor curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
+				curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
 				curs.moveToFirst();
-				String sectionId = curs.getString(0);
-				Intent showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+				sectionId = curs.getString(0);
+				showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
+				startActivity(showContent);
+				return true;
+			case R.id.menu_cul:
+				curs = dbAdapter.fetchSectionByParentIdAndName("1", "Community Use License");
+				curs.moveToFirst();
+				sectionId = curs.getString(0);
+				showContent = new Intent(getApplicationContext(), DetailsActivity.class);
 				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
 				startActivity(showContent);
 				return true;

@@ -46,6 +46,16 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 	private PsrdUserDbAdapter userDbAdapter;
 	private String currentUrl;
 	private BaseAdapter currentListAdapter;
+	private String startUrl;
+
+	public SectionViewFragment() {
+		super();
+	}
+
+	public SectionViewFragment(String startUrl) {
+		super();
+		this.startUrl = startUrl;
+	}
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -53,6 +63,12 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 		setListAdapter(ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.top_titles,
 				R.layout.list_item));
 		openDb();
+	}
+
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		if (this.startUrl != null) {
+			updateUrl(startUrl);
+		}
 	}
 
 	private void openDb() {

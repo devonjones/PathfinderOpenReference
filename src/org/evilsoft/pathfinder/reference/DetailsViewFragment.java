@@ -14,6 +14,16 @@ import com.actionbarsherlock.app.SherlockFragment;
 public class DetailsViewFragment extends SherlockFragment {
 	private WebView viewer;
 	private DetailsWebViewClient client;
+	private String startUrl;
+
+	public DetailsViewFragment() {
+		super();
+	}
+	
+	public DetailsViewFragment(String newUrl) {
+		super();
+		this.startUrl = newUrl;
+	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,6 +40,12 @@ public class DetailsViewFragment extends SherlockFragment {
 			}
 		});
 		return v;
+	}
+
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		if (this.startUrl != null) {
+			updateUrl(this.startUrl);
+		}
 	}
 
 	public void updateUrl(String newUrl) {
