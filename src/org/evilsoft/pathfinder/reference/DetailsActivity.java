@@ -6,8 +6,6 @@ import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
@@ -28,17 +26,12 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setScreenOrientation();
 		openDb();
 
-		setContentView(R.layout.details);
-
 		Intent launchingIntent = getIntent();
-		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
-				.findFragmentById(R.id.details_view_fragment);
-		DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
-				.findFragmentById(R.id.details_list_fragment);
+
 		String newUri;
+		boolean showList = false; //Phone only
 		if (Intent.ACTION_SEARCH.equals(launchingIntent.getAction())) {
 			String query = launchingIntent.getStringExtra(SearchManager.QUERY);
 			int count = dbAdapter.countSearchArticles(query);
@@ -46,18 +39,48 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				newUri = buildSearchUrl(query);
 			} else {
 				newUri = "pfsrd://Search/" + query;
+				showList = true;
 			}
 		} else {
 			newUri = launchingIntent.getData().toString();
 		}
-		viewer.updateUrl(newUri);
-		String uri = buildDetailsListUri(newUri);
-		list.updateUrl(uri);
 
 		// Set up action bar
 		ActionBar action = this.getSupportActionBar();
 		action.setDisplayHomeAsUpEnabled(true);
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+
+		if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
+			setContentView(R.layout.details);
+			setUpList(newUri);
+			setUpViewer(newUri, action);
+		} else {
+			if(showList) {
+				setContentView(R.layout.details_phone_list);
+				setUpList(newUri);
+			} else {
+				setContentView(R.layout.details_phone);
+				setUpViewer(newUri, action);
+			}
+		}
+
+		String characterId = launchingIntent.getStringExtra("currentCharacter");
+		if (characterId != null) {
+			action.setSelectedNavigationItem(Integer.parseInt(characterId) - 1);
+		}
+	}
+
+	private void setUpList(String newUri) {
+		DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
+				.findFragmentById(R.id.details_list_fragment);
+		String uri = buildDetailsListUri(newUri);
+		list.updateUrl(uri);
+	}
+
+	private void setUpViewer(String newUri, ActionBar action) {
+		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
+				.findFragmentById(R.id.details_view_fragment);
+		viewer.updateUrl(newUri);
 		SimpleCursorAdapter sca = new SimpleCursorAdapter(
 				this,
 				R.layout.actionbar_spinner,
@@ -71,11 +94,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				return true;
 			}
 		});
-
-		String characterId = launchingIntent.getStringExtra("currentCharacter");
-		if (characterId != null) {
-			action.setSelectedNavigationItem(Integer.parseInt(characterId) - 1);
-		}
+		
 	}
 
 	@Override
@@ -129,8 +148,6 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		return sb.toString();
 	}
 
-
-
 	public static String buildDetailsListUri(String uri) {
 		String[] parts = uri.split("\\/");
 		if (parts[2].equals("Search")) {
@@ -144,23 +161,6 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			sb.append(parts[i]);
 		}
 		return sb.toString();
-	}
-
-	private void setScreenOrientation() {
-		if (Build.VERSION.SDK_INT >= 11) {
-			int smallest = getResources().getConfiguration().screenWidthDp;
-			if (getResources().getConfiguration().screenHeightDp < smallest) {
-				smallest = getResources().getConfiguration().screenHeightDp;
-			}
-			if (smallest >= 750) {
-				if ((getResources().getConfiguration().screenLayout
-						& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
-					setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
-					return;
-				}
-			}
-		}
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 	}
 
 	private void openDb() {

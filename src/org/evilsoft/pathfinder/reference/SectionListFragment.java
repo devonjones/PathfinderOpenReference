@@ -4,8 +4,10 @@ import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -76,34 +78,33 @@ public class SectionListFragment extends ExpandableListFragment implements
 	@Override
 	public boolean onChildClick(ExpandableListView elv, View v, int groupPosition, int childPosition, long id) {
 		String uri = getUri(groupPosition, childPosition);
-		updateFragment(uri);
-		//SectionViewFragment viewer = (SectionViewFragment) this.getActivity().getSupportFragmentManager().findFragmentById(R.id.section_view_fragment);
-		//if (viewer == null || !viewer.isInLayout()) {
-		//	Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
+		if(PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
+			updateFragment(uri);
+		} else {
+			Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
 
-		//	showContent.setData(Uri.parse(uri));
-		//	startActivity(showContent);
-		//} else {
-		//	viewer.updateUrl(uri);
-		//}
+			showContent.setData(Uri.parse(uri));
+			startActivity(showContent);
+		}
 		return false;
 	}
 
 	@Override
 	public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+		if(expListAdapter.getChildrenCount(groupPosition) != 0) {
+			return false;
+		}
 		String sectionName = (String)expListAdapter.getGroup(groupPosition);
 		String sectionId = expListAdapter.getPfGroupId(groupPosition);
 		String uri = "pfsrd://" + sectionName + "/" + sectionId;
-		updateFragment(uri);
-		//SectionViewFragment viewer = (SectionViewFragment) this.getActivity().getSupportFragmentManager().findFragmentById(R.id.section_view_fragment);
-		//if (viewer == null || !viewer.isInLayout()) {
-		//	Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
+		if(PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
+			updateFragment(uri);
+		} else {
+			Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
 
-		//	showContent.setData(Uri.parse(uri));
-		//	startActivity(showContent);
-		//} else {
-		//viewer.updateUrl(uri);
-		//}
+			showContent.setData(Uri.parse(uri));
+			startActivity(showContent);
+		}
 		return false;
 	}
 

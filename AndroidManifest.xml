@@ -44,5 +44,6 @@
             android:name="org.evilsoft.pathfinder.reference.SearchProvider"
             android:authorities="org.evilsoft.pathfinder.reference.SearchProvider"
             />
+        <activity android:name=".SectionViewActivity" android:theme="@style/Theme.Sherlock" android:label="@string/app_name"></activity>
     </application>
 </manifest>

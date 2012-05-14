@@ -6,16 +6,18 @@ import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbHelper;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
+import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Display;
+import android.view.WindowManager;
 import android.widget.SearchView;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
@@ -27,11 +29,39 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
 
+	public static boolean isTabletLayout(Activity act) {
+		int smallest;
+		if (Build.VERSION.SDK_INT >= 11) {
+			smallest = act.getResources().getConfiguration().screenWidthDp;
+			if (act.getResources().getConfiguration().screenHeightDp < smallest) {
+				smallest = act.getResources().getConfiguration().screenHeightDp;
+			}
+		}
+		else {
+			Display display = ((WindowManager) act.getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
+			smallest = display.getWidth();
+			if (display.getHeight() < smallest) {
+				smallest = display.getHeight();
+			}
+		}
+
+		if ((act.getResources().getConfiguration().screenLayout
+				& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
+			if (smallest >= 750) {
+				return true;
+			}
+			if(act.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setScreenOrientation();
+		//setScreenOrientation();
 		PsrdDbHelper dbh = new PsrdDbHelper(this.getApplicationContext());
 		userDbAdapter = new PsrdUserDbAdapter(this.getApplicationContext());
 		userDbAdapter.open();
@@ -42,8 +72,12 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 			throw new RuntimeException(e);
 		}
 		openDb();
-		setContentView(R.layout.main);
-		addDynamicFragment();
+		if(isTabletLayout(this)) {
+			setContentView(R.layout.main);
+			addDynamicFragment();
+		} else {
+			setContentView(R.layout.main_phone);
+		}
 	}
 
 	public void addDynamicFragment() {
@@ -98,23 +132,6 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 			default:
 				return super.onOptionsItemSelected(item);
 		}
-	}
-
-	private void setScreenOrientation() {
-		if (Build.VERSION.SDK_INT >= 11) {
-			int smallest = getResources().getConfiguration().screenWidthDp;
-			if (getResources().getConfiguration().screenHeightDp < smallest) {
-				smallest = getResources().getConfiguration().screenHeightDp;
-			}
-			if (smallest >= 750) {
-				if ((getResources().getConfiguration().screenLayout
-						& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
-					setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
-					return;
-				}
-			}
-		}
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 	}
 
 	private void openDb() {

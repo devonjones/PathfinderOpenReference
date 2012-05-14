@@ -88,7 +88,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		// {id=10700, name=Rules: Core Rulebook}, {id=1, name=PFSRD}]
 		Log.e(TAG, newUrl);
 		String[] parts = newUrl.split("\\/");
-		if (parts[2].startsWith("Rules")) {
+		if (parts[2].startsWith("Rules") && PathfinderOpenReferenceActivity.isTabletLayout(act)) {
 			DetailsListFragment list = (DetailsListFragment) act.getSupportFragmentManager().findFragmentById(
 					R.id.details_list_fragment);
 			HashMap<String, String> parent = path.get(1);

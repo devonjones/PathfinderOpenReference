@@ -17,8 +17,10 @@ import org.evilsoft.pathfinder.reference.list.SearchListAdapter;
 import org.evilsoft.pathfinder.reference.list.SkillListAdapter;
 import org.evilsoft.pathfinder.reference.list.SpellListAdapter;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -64,9 +66,16 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
 		Log.e(TAG, uri);
-		DetailsViewFragment viewer = (DetailsViewFragment) this.getActivity().getSupportFragmentManager()
+		if(PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
+			DetailsViewFragment viewer = (DetailsViewFragment) this.getActivity().getSupportFragmentManager()
 				.findFragmentById(R.id.details_view_fragment);
-		viewer.updateUrl(uri);
+			viewer.updateUrl(uri);
+		} else {
+			Intent showContent = new Intent(this.getActivity().getApplicationContext(), DetailsActivity.class);
+
+			showContent.setData(Uri.parse(uri));
+			startActivity(showContent);
+		}
 	}
 
 	public void updateUrl(String newUrl) {
