@@ -6,8 +6,8 @@
 
     <uses-sdk android:targetSdkVersion="14" android:minSdkVersion="8" />
     <supports-screens
-        android:smallScreens="false"
-        android:normalScreens="false"
+        android:smallScreens="true"
+        android:normalScreens="true"
         android:largeScreens="true"
         android:xlargeScreens="true"
         />

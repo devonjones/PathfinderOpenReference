@@ -16,7 +16,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class PsrdDbHelper extends SQLiteOpenHelper {
 	private static String DB_PATH = "/data/data/org.evilsoft.pathfinder.reference/databases/";
 	private static String DB_NAME = "psrd.db";
-	private static final Integer VERSION = 55559;
+	private static final Integer VERSION = 55560;
 	private SQLiteDatabase db;
 	private final Context context;
 
