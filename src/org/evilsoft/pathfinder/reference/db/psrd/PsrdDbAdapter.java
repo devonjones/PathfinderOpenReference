@@ -44,7 +44,7 @@ public class PsrdDbAdapter {
 		return fetchSectionByType(sectionType, null);
 	}
 
-	public String[] toStringArray(List<String> input) {
+	public static String[] toStringArray(List<String> input) {
 		String[] retarr = new String[input.size()];
 		for (int i = 0; i < input.size(); i++) {
 			retarr[i] = input.get(i);
@@ -77,9 +77,9 @@ public class PsrdDbAdapter {
 	public ArrayList<HashMap<String, String>> getPath(String sectionId) {
 		ArrayList<HashMap<String, String>> path = new ArrayList<HashMap<String, String>>();
 		Cursor curs = fetchSection(sectionId);
-		Log.e(TAG, sectionId);
+		Log.d(TAG, sectionId);
 		boolean has_rows = curs.moveToFirst();
-		Log.e(TAG, ((Boolean) has_rows).toString());
+		Log.d(TAG, ((Boolean) has_rows).toString());
 		if (has_rows) {
 			String parentId = curs.getString(1);
 			HashMap<String, String> element = new HashMap<String, String>();

@@ -1,5 +1,6 @@
 package org.evilsoft.pathfinder.reference;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +40,11 @@ public class DetailsViewFragment extends SherlockFragment {
 				client.back(viewer);
 			}
 		});
+		viewer.getSettings().setSupportZoom(true);
+		viewer.getSettings().setBuiltInZoomControls(true);
+		if (Build.VERSION.SDK_INT >= 11) {
+			viewer.getSettings().setDisplayZoomControls(false);
+		}
 		return v;
 	}
 

@@ -23,9 +23,7 @@ public class SectionListFragment extends ExpandableListFragment implements
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
-		openDb();
 		expListAdapter = new SectionExpandableListAdapter(getActivity().getApplicationContext());
-		expListAdapter.refresh(dbAdapter, userDbAdapter);
 		setListAdapter(expListAdapter);
 	}
 
@@ -46,16 +44,24 @@ public class SectionListFragment extends ExpandableListFragment implements
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
 		openDb();
+		refresh(dbAdapter, userDbAdapter);
+		super.onCreate(savedInstanceState);
 	}
 
+	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		getExpandableListView().setCacheColorHint(Color.WHITE);
 		getExpandableListView().setGroupIndicator(new ColorDrawable(Color.TRANSPARENT));
 		getExpandableListView().setOnChildClickListener(this);
 		getExpandableListView().setOnGroupClickListener(this);
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+		refresh(dbAdapter, userDbAdapter);
 	}
 
 	public void refresh(PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {

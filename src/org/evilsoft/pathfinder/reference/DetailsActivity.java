@@ -1,11 +1,17 @@
 package org.evilsoft.pathfinder.reference;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
@@ -20,6 +26,7 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 
 public class DetailsActivity extends SherlockFragmentActivity {
+	public static final String PREFS_NAME = "psrd.prefs";
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
 
@@ -50,24 +57,40 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		action.setDisplayHomeAsUpEnabled(true);
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 
+		List<Integer> collectionList = new ArrayList<Integer>();
 		if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 			setContentView(R.layout.details);
 			setUpList(newUri);
-			setUpViewer(newUri, action);
+			collectionList = setUpViewer(newUri, action);
 		} else {
 			if(showList) {
 				setContentView(R.layout.details_phone_list);
 				setUpList(newUri);
 			} else {
 				setContentView(R.layout.details_phone);
-				setUpViewer(newUri, action);
+				collectionList = setUpViewer(newUri, action);
 			}
 		}
 
-		String characterId = launchingIntent.getStringExtra("currentCharacter");
-		if (characterId != null) {
-			action.setSelectedNavigationItem(Integer.parseInt(characterId) - 1);
+		Integer collectionId = getCurrentCollection(collectionList);
+		if (collectionId != null) {
+			action.setSelectedNavigationItem(collectionId);
 		}
+	}
+
+	private Integer getCurrentCollection(List<Integer> collectionList) {
+		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+		Integer collectionId = settings.getInt("collectionId", ca.fetchFirstCollectionId());
+		if(!ca.collectionExists(collectionId.toString())) {
+			collectionId = ca.fetchFirstCollectionId();
+		}
+		for(int i = 0; i < collectionList.size(); i++) {
+			if(collectionId == collectionList.get(i)) {
+				return i;
+			}
+		}
+		return null;
 	}
 
 	private void setUpList(String newUri) {
@@ -77,24 +100,37 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		list.updateUrl(uri);
 	}
 
-	private void setUpViewer(String newUri, ActionBar action) {
+	private List<Integer> setUpViewer(String newUri, ActionBar action) {
 		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.details_view_fragment);
 		viewer.updateUrl(newUri);
+		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+		Cursor curs = ca.fetchCollectionList();
+		ArrayList<Integer> retList = new ArrayList<Integer>();
+		boolean has_next = curs.moveToFirst();
+		while (has_next) {
+			retList.add(curs.getInt(0));
+			has_next = curs.moveToNext();
+		}
+		curs.moveToFirst();
 		SimpleCursorAdapter sca = new SimpleCursorAdapter(
 				this,
 				R.layout.actionbar_spinner,
-				userDbAdapter.fetchCharacterList(), // this returns a cursor and won't be required automatically!
+				curs, // this returns a cursor and won't be required automatically!
 				new String[] { "name" },
 				new int[] { android.R.id.text1 },
 				0);
 		action.setListNavigationCallbacks(sca, new ActionBar.OnNavigationListener() {
 			public boolean onNavigationItemSelected(int itemPosition, long itemId) {
 				viewer.setCharacter(itemId);
+				SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+				SharedPreferences.Editor editor = settings.edit();
+				editor.putInt("collectionId", ((Long)itemId).intValue());
+				editor.commit();
 				return true;
 			}
 		});
-		
+		return retList;
 	}
 
 	@Override
@@ -106,7 +142,12 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			MenuItem searchItem = menu.findItem(R.id.menu_search);
 			searchItem.setVisible(true);
 			SearchView searchView = (SearchView) searchItem.getActionView();
-			searchView.setIconifiedByDefault(false);
+			if(PathfinderOpenReferenceActivity.isTabletLayout(this)) {
+				searchView.setIconifiedByDefault(false);
+			}
+			else {
+				searchView.setIconifiedByDefault(true);
+			}
 			SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
 			searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
 		}

@@ -32,7 +32,7 @@ public class FeatAdapter {
 		sb.append(" WHERE section_id = ?");
 		sb.append(" ORDER BY feat_type_description");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchFeatsByType(String feat_type) {
@@ -45,7 +45,7 @@ public class FeatAdapter {
 		sb.append("  AND ft.feat_type = ?");
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchFeatList() {
@@ -75,7 +75,7 @@ public class FeatAdapter {
 		sb.append(" WHERE s.type = 'feat'");
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public ArrayList<HashMap<String, Object>> createFeatTypeList() {

@@ -3,8 +3,9 @@ package org.evilsoft.pathfinder.reference;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
+import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
 import android.content.res.AssetManager;
@@ -19,6 +20,7 @@ import android.widget.TextView;
 public class DetailsWebViewClient extends WebViewClient {
 	private static final String TAG = "DetailsWebViewClient";
 	private PsrdDbAdapter dbAdapter;
+	private PsrdUserDbAdapter userDbAdapter;
 	private FragmentActivity act;
 	private AssetManager assets;
 	private TextView title;
@@ -26,7 +28,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	private ImageButton back;
 	private String url;
 	private String oldUrl;
-	private long currentCharacter;
+	private long currentCollection;
 	ArrayList<HashMap<String, String>> path;
 
 	public DetailsWebViewClient(Activity act, TextView title, ImageButton back, ImageButton star) {
@@ -60,7 +62,7 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	@Override
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
-		Log.e(TAG, newUrl);
+		Log.i(TAG, newUrl);
 		if (newUrl.startsWith("http://")) {
 			newUrl = "pfsrd://" + newUrl.substring(14);
 		}
@@ -70,7 +72,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		}
 		if (parts[0].toLowerCase().equals("pfsrd:")) {
 			this.url = newUrl;
-			Log.e(TAG, parts[parts.length - 1]);
+			Log.d(TAG, parts[parts.length - 1]);
 			this.path = dbAdapter.getPath(parts[parts.length - 1]);
 			if (path.size() <= 3) {
 				this.back.setVisibility(View.INVISIBLE);
@@ -86,7 +88,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	public void reloadList(String newUrl) {
 		// [{id=10751, name=Ability Scores}, {id=10701, name=Getting Started},
 		// {id=10700, name=Rules: Core Rulebook}, {id=1, name=PFSRD}]
-		Log.e(TAG, newUrl);
+		Log.i(TAG, newUrl);
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].startsWith("Rules") && PathfinderOpenReferenceActivity.isTabletLayout(act)) {
 			DetailsListFragment list = (DetailsListFragment) act.getSupportFragmentManager().findFragmentById(
@@ -111,6 +113,8 @@ public class DetailsWebViewClient extends WebViewClient {
 			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Races")) {
 			html = sa.render(parts[parts.length - 1], newUrl);
+		} else if (parts[2].equals("Bookmarks")) {
+			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Search")) {
 			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Skills")) {
@@ -130,7 +134,8 @@ public class DetailsWebViewClient extends WebViewClient {
 		star.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				CharacterAdapter.toggleEntryStar(act, currentCharacter, path, title.getText().toString(), url);
+				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+				ca.toggleEntryStar(currentCollection, path, title.getText().toString(), url);
 				refreshStarButtonState();
 			}
 		});
@@ -140,13 +145,20 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	private void refreshStarButtonState() {
 		if (path != null) {
-			boolean starred = CharacterAdapter.entryIsStarred(act, currentCharacter, path, title.getText().toString());
+			CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+			boolean starred = ca.entryIsStarred(currentCollection, path, title.getText().toString());
 			star.setPressed(starred);
 			star.setImageResource(starred ? android.R.drawable.btn_star_big_on : android.R.drawable.btn_star_big_off);
 		}
 	}
 
 	private void openDb() {
+		if (userDbAdapter == null) {
+			userDbAdapter = new PsrdUserDbAdapter(act.getApplicationContext());
+		}
+		if (userDbAdapter.isClosed()) {
+			userDbAdapter.open();
+		}
 		if (dbAdapter == null) {
 			dbAdapter = new PsrdDbAdapter(act.getApplicationContext());
 		}
@@ -159,10 +171,13 @@ public class DetailsWebViewClient extends WebViewClient {
 		if (dbAdapter != null) {
 			dbAdapter.close();
 		}
+		if (userDbAdapter != null) {
+			userDbAdapter.close();
+		}
 	}
 
 	public void setCharacter(long itemId) {
-		currentCharacter = itemId;
+		currentCollection = itemId;
 		refreshStarButtonState();
 	}
 }

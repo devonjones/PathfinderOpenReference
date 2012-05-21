@@ -34,7 +34,7 @@ public class ClassAdapter {
 		sb.append("   AND subtype = ?");
 		sb.append(" ORDER BY name");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public ArrayList<HashMap<String, Object>> createClassTypeList() {

@@ -20,7 +20,7 @@ public class SkillAdapter {
 		sb.append(" FROM skill_attributes");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchSkillList() {

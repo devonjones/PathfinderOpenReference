@@ -22,7 +22,7 @@ public class RuleAdapter {
 		sb.append(" WHERE parent_id = ?");
 		sb.append(" ORDER BY section_id");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public ArrayList<HashMap<String, Object>> createRuleList(String parentId) {

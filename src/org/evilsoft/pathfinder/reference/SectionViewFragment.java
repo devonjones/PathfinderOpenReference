@@ -2,7 +2,6 @@ package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
 
-import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
@@ -11,10 +10,10 @@ import org.evilsoft.pathfinder.reference.db.psrd.RaceAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.SkillAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
+import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
-import org.evilsoft.pathfinder.reference.list.CharacterListAdapter;
-import org.evilsoft.pathfinder.reference.list.CharacterListItem;
 import org.evilsoft.pathfinder.reference.list.ClassListAdapter;
+import org.evilsoft.pathfinder.reference.list.CollectionItemListAdapter;
 import org.evilsoft.pathfinder.reference.list.FeatListAdapter;
 import org.evilsoft.pathfinder.reference.list.MonsterListAdapter;
 import org.evilsoft.pathfinder.reference.list.RaceListAdapter;
@@ -47,6 +46,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 	private String currentUrl;
 	private BaseAdapter currentListAdapter;
 	private String startUrl;
+	private boolean empty = false;
 
 	public SectionViewFragment() {
 		super();
@@ -99,21 +99,18 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		if(empty) {
+			return;
+		}
 		Intent showContent = new Intent(getActivity().getApplicationContext(), DetailsActivity.class);
 		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
-		DisplayListAdapter a = (DisplayListAdapter) parent.getAdapter();
-		if (a.getClass().equals(CharacterListAdapter.class)) {
-			CharacterListItem item = (CharacterListItem) a.getItem(position);
-			uri = item.getUrl();
-			showContent.putExtra("currentCharacter", item.getCharacterId());
-		}
-		Log.e(TAG, uri);
+		Log.d(TAG, uri);
 		showContent.setData(Uri.parse(uri));
 		startActivity(showContent);
 	}
 
 	public void updateUrl(String newUrl) {
-		Log.e(TAG, newUrl);
+		Log.i(TAG, newUrl);
 		this.getListView().setOnItemClickListener(this);
 		this.getListView().setCacheColorHint(Color.WHITE);
 		currentUrl = newUrl;
@@ -182,18 +179,26 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 					showDelCollectionDialog();
 				} else {
 					// We have a collection name and can search on it
-					CharacterAdapter ca = new CharacterAdapter(userDbAdapter);
-					Cursor curs = ca.fetchCharacterEntries(parts[parts.length - 1]);
-					currentListAdapter = new CharacterListAdapter(getActivity(), curs, parts[3]);
+					CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+					Cursor curs = ca.fetchCollectionEntries(parts[parts.length - 1]);
+					currentListAdapter = new CollectionItemListAdapter(getActivity(), curs);
 				}
 			}
 		} else {
 			ArrayList<String> list = new ArrayList<String>();
-			for (int i = 0; i < 6; i++) {
-				list.add(newUrl);
-			}
+			list.add(newUrl);
 			currentListAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.list_item,
 					list);
+		}
+		if (currentListAdapter != null && currentListAdapter.isEmpty()) {
+			empty = true;
+			ArrayList<String> list = new ArrayList<String>();
+			list.add("(Empty List)");
+			currentListAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.list_item,
+					list);
+		}
+		else {
+			empty = false;
 		}
 		setListAdapter(currentListAdapter);
 	}
@@ -212,17 +217,18 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 			.setView(edit)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
-					if (userDbAdapter.addCollection(edit.getText().toString())) {
+					CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+					if (ca.addCollection(edit.getText().toString())) {
 						Toast.makeText(getActivity(), R.string.collection_entry_success, Toast.LENGTH_SHORT).show();
-						SectionListFragment list = (SectionListFragment) getActivity().getSupportFragmentManager().findFragmentById(
-								R.id.section_list_fragment);
-						list.refresh(dbAdapter, userDbAdapter);
 					} else {
 						Toast.makeText(getActivity(), R.string.collection_entry_failure, Toast.LENGTH_SHORT).show();
 					}
+					refreshCollection();
 				}
 			}).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-				public void onClick(DialogInterface dialog, int which) {}
+				public void onClick(DialogInterface dialog, int which) {
+					refreshCollection();
+				}
 			}).show();
 	}
 
@@ -232,7 +238,8 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 						new AlertDialog.Builder(getActivity()) :
 							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK);
 
-		Cursor curs = userDbAdapter.fetchCharacterList();
+		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+		Cursor curs = ca.fetchCollectionList();
 		final ArrayList<String> characterList = new ArrayList<String>();
 		boolean hasNext = curs.moveToFirst();
 		while (hasNext) {
@@ -243,20 +250,32 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 		builder.setTitle(R.string.del_collection_entry_title);
 		builder.setItems(items, new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
-				if (userDbAdapter.delCollection(characterList.get(which)) > 0) {
+				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+				if (ca.delCollection(characterList.get(which)) > 0) {
 					Toast.makeText(getActivity(), R.string.del_collection_entry_success, Toast.LENGTH_SHORT).show();
-					SectionListFragment list = (SectionListFragment) getActivity().getSupportFragmentManager().findFragmentById(
-							R.id.section_list_fragment);
-					list.refresh(dbAdapter, userDbAdapter);
 				} else {
 					Toast.makeText(getActivity(), R.string.del_collection_entry_failure, Toast.LENGTH_SHORT).show();
 				}
+				refreshCollection();
 			}
 		});
 		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int which) {}
+			public void onClick(DialogInterface dialog, int which) {
+				refreshCollection();
+			}
 		});
 		AlertDialog alert = builder.create();
 		alert.show();
+	}
+
+	private void refreshCollection() {
+		if(PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
+			SectionListFragment list = (SectionListFragment) getActivity().getSupportFragmentManager().findFragmentById(
+					R.id.section_list_fragment);
+			list.refresh(dbAdapter, userDbAdapter);
+		} else {
+			Intent showContent = new Intent(getActivity().getApplicationContext(), PathfinderOpenReferenceActivity.class);
+			startActivity(showContent);
+		}
 	}
 }

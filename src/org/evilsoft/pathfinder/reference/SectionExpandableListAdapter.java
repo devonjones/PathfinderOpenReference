@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import org.evilsoft.pathfinder.reference.db.psrd.CharacterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
+import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.content.Context;
@@ -159,7 +159,7 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		ArrayList<List<HashMap<String, Object>>> result = new ArrayList<List<HashMap<String, Object>>>();
 		for (int i = 0; i < subjects.size(); ++i) {
 			HashMap<String, Object> sub = subjects.get(i);
-			Log.e(TAG, sub.get("sectionName").toString());
+			Log.d(TAG, sub.get("sectionName").toString());
 			String sectionName = sub.get("sectionName").toString();
 			String id = sub.get("id").toString();
 			if (sectionName.equals("Feats")) {
@@ -178,7 +178,7 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 				MonsterAdapter ma = new MonsterAdapter(dbAdapter);
 				result.add(ma.createMonsterTypeList());
 			} else if (sectionName.equals("Bookmarks")) {
-				CharacterAdapter ca = new CharacterAdapter(userDbAdapter);
+				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
 				ArrayList<HashMap<String, Object>> charList = ca.createCharacterList();
 
 				HashMap<String, Object> adder = new HashMap<String, Object>();

@@ -1,6 +1,6 @@
 package org.evilsoft.pathfinder.reference.list;
 
-public class CharacterListItem {
+public class CollectionListItem {
 	private String name;
 	private String description;
 	private String url;

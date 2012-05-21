@@ -25,7 +25,7 @@ public class MonsterAdapter {
 		sb.append(" WHERE s.parent_id = ?");
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchMonstersByType(String creatureType) {
@@ -39,7 +39,7 @@ public class MonsterAdapter {
 		sb.append("  AND cd.creature_type = ?");
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchMonsterTypes() {
@@ -67,7 +67,7 @@ public class MonsterAdapter {
 		sb.append(" FROM creature_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor getCreatureSpells(String sectionId) {
@@ -78,7 +78,7 @@ public class MonsterAdapter {
 		sb.append(" FROM creature_spells");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, dbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public ArrayList<HashMap<String, Object>> createMonsterTypeList() {

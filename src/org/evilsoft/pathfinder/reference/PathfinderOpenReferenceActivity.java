@@ -1,9 +1,6 @@
 package org.evilsoft.pathfinder.reference;
 
-import java.io.IOException;
-
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbHelper;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
@@ -15,7 +12,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
 import android.view.Display;
 import android.view.WindowManager;
 import android.widget.SearchView;
@@ -61,34 +57,12 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//setScreenOrientation();
-		PsrdDbHelper dbh = new PsrdDbHelper(this.getApplicationContext());
-		userDbAdapter = new PsrdUserDbAdapter(this.getApplicationContext());
-		userDbAdapter.open();
-		try {
-			dbh.createDataBase(userDbAdapter);
-		} catch (IOException e) {
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
 		openDb();
 		if(isTabletLayout(this)) {
 			setContentView(R.layout.main);
-			addDynamicFragment();
 		} else {
 			setContentView(R.layout.main_phone);
 		}
-	}
-
-	public void addDynamicFragment() {
-		Cursor curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
-		curs.moveToFirst();
-		String sectionId = curs.getString(0);
-		curs.close();
-		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-		DetailsViewFragment viewer = new DetailsViewFragment("pfsrd://Ogl/" + sectionId);
-		ft.replace(R.id.section_view_layout, viewer, "viewer");
-		ft.commit();
 	}
 
 	@Override
@@ -100,7 +74,12 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 			MenuItem searchItem = menu.findItem(R.id.menu_search);
 			searchItem.setVisible(true);
 			SearchView searchView = (SearchView) searchItem.getActionView();
-			searchView.setIconifiedByDefault(false);
+			if(PathfinderOpenReferenceActivity.isTabletLayout(this)) {
+				searchView.setIconifiedByDefault(false);
+			}
+			else {
+				searchView.setIconifiedByDefault(true);
+			}
 			SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
 			searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
 		}

@@ -1,5 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
+import java.util.ArrayList;
+
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
@@ -36,6 +38,7 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 	private PsrdDbAdapter dbAdapter;
 	private String currentUrl;
 	private BaseAdapter currentListAdapter;
+	private boolean empty = false;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -64,8 +67,11 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		if(empty) {
+			return;
+		}
 		String uri = currentUrl + "/" + currentListAdapter.getItemId(position);
-		Log.e(TAG, uri);
+		Log.d(TAG, uri);
 		if(PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
 			DetailsViewFragment viewer = (DetailsViewFragment) this.getActivity().getSupportFragmentManager()
 				.findFragmentById(R.id.details_view_fragment);
@@ -138,8 +144,20 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 			}
 			currentListAdapter = new SpellListAdapter(getActivity().getApplicationContext(), curs, false);
 		} else if (parts[2].equals("Search")) {
-			Cursor curs = dbAdapter.search(parts[parts.length - 1]);
-			currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), curs);
+			if (parts.length == 4) {
+				Cursor curs = dbAdapter.search(parts[3]);
+				currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), curs);
+				if (currentListAdapter.isEmpty()) {
+					empty = true;
+					ArrayList<String> list = new ArrayList<String>();
+					list.add("(No Results)");
+					currentListAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.list_item,
+							list);
+				}
+			}
+		}
+		else {
+			empty = false;
 		}
 		setListAdapter(currentListAdapter);
 	}
