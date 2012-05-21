@@ -132,27 +132,31 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	}
 
 	public List<HashMap<String, Object>> createGroupList(PsrdDbAdapter dbAdapter) {
-		ArrayList<HashMap<String, Object>> result = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = dbAdapter.fetchSectionByParentId("1");
-		HashMap<String, Object> child = new HashMap<String, Object>();
-		child.put("sectionName", "Bookmarks");
-		child.put("id", "0");
-		result.add(child);
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			String section_id = curs.getString(0);
-			String name = curs.getString(1);
-			String type = curs.getString(2);
-			if(type.equals("list")) {
-				child = new HashMap<String, Object>();
-				child.put("sectionName", name);
-				child.put("id", section_id);
-				result.add(child);
+		try {
+			ArrayList<HashMap<String, Object>> result = new ArrayList<HashMap<String, Object>>();
+			HashMap<String, Object> child = new HashMap<String, Object>();
+			child.put("sectionName", "Bookmarks");
+			child.put("id", "0");
+			result.add(child);
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				String section_id = curs.getString(0);
+				String name = curs.getString(1);
+				String type = curs.getString(2);
+				if(type.equals("list")) {
+					child = new HashMap<String, Object>();
+					child.put("sectionName", name);
+					child.put("id", section_id);
+					result.add(child);
+				}
+				has_next = curs.moveToNext();
 			}
-			has_next = curs.moveToNext();
+			this.subjects = result;
+			return result;
+		} finally {
+			curs.close();
 		}
-		this.subjects = result;
-		return result;
 	}
 
 	public List<List<HashMap<String, Object>>> createChildList(PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {

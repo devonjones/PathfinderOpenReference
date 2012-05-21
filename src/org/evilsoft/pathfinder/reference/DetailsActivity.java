@@ -1,7 +1,6 @@
 package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
@@ -29,6 +28,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	public static final String PREFS_NAME = "psrd.prefs";
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
+	private List<Cursor> cursorList = new ArrayList<Cursor>();
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -106,6 +106,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		viewer.updateUrl(newUri);
 		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
 		Cursor curs = ca.fetchCollectionList();
+		cursorList.add(curs);
 		ArrayList<Integer> retList = new ArrayList<Integer>();
 		boolean has_next = curs.moveToFirst();
 		while (has_next) {
@@ -155,36 +156,40 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	}
 
 	public String buildSearchUrl(String searchText) {
-		Cursor c = dbAdapter.getSingleSearchArticle(searchText);
-		c.moveToFirst();
-		String sectionId = c.getString(0);
-		String type = c.getString(1);
-		String parentId = c.getString(5);
 		StringBuffer sb = new StringBuffer();
-		sb.append("pfsrd://");
-		if (type.equals("feat")) {
-			sb.append("Feats/0/All Feats/");
-			sb.append(sectionId);
-		} else if (type.equals("skill")) {
-			sb.append("Skills/");
-			sb.append(sectionId);
-		} else if (type.equals("class")) {
-			sb.append("Classes/");
-			sb.append(sectionId);
-		} else if (type.equals("creature")) {
-			sb.append("Monsters/0/All Monsters/");
-			sb.append(sectionId);
-		} else if (type.equals("race")) {
-			sb.append("Races/");
-			sb.append(sectionId);
-		} else if (type.equals("spell")) {
-			sb.append("Spells/0/All/");
-			sb.append(sectionId);
-		} else {
-			sb.append("Rules/");
-			sb.append(parentId);
-			sb.append("/");
-			sb.append(sectionId);
+		Cursor c = dbAdapter.getSingleSearchArticle(searchText);
+		try {
+			c.moveToFirst();
+			String sectionId = c.getString(0);
+			String type = c.getString(1);
+			String parentId = c.getString(5);
+			sb.append("pfsrd://");
+			if (type.equals("feat")) {
+				sb.append("Feats/0/All Feats/");
+				sb.append(sectionId);
+			} else if (type.equals("skill")) {
+				sb.append("Skills/");
+				sb.append(sectionId);
+			} else if (type.equals("class")) {
+				sb.append("Classes/");
+				sb.append(sectionId);
+			} else if (type.equals("creature")) {
+				sb.append("Monsters/0/All Monsters/");
+				sb.append(sectionId);
+			} else if (type.equals("race")) {
+				sb.append("Races/");
+				sb.append(sectionId);
+			} else if (type.equals("spell")) {
+				sb.append("Spells/0/All/");
+				sb.append(sectionId);
+			} else {
+				sb.append("Rules/");
+				sb.append(parentId);
+				sb.append("/");
+				sb.append(sectionId);
+			}
+		} finally {
+			c.close();
 		}
 		return sb.toString();
 	}
@@ -222,6 +227,11 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+		for (Cursor curs : cursorList) {
+			if(!curs.isClosed()) {
+				curs.close();
+			}
+		}
 		if (dbAdapter != null) {
 			dbAdapter.close();
 		}

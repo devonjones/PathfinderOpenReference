@@ -79,32 +79,40 @@ public class FeatAdapter {
 	}
 
 	public ArrayList<HashMap<String, Object>> createFeatTypeList() {
-		ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = fetchFeatTypes();
-		HashMap<String, Object> child = new HashMap<String, Object>();
-		child.put("specificName", "All Feats");
-		child.put("id", "All Feats");
-		secList.add(child);
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			String featType = curs.getString(0);
-			child = new HashMap<String, Object>();
-			child.put("specificName", featType);
-			child.put("id", featType);
+		try {
+			ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
+			HashMap<String, Object> child = new HashMap<String, Object>();
+			child.put("specificName", "All Feats");
+			child.put("id", "All Feats");
 			secList.add(child);
-			has_next = curs.moveToNext();
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				String featType = curs.getString(0);
+				child = new HashMap<String, Object>();
+				child.put("specificName", featType);
+				child.put("id", featType);
+				secList.add(child);
+				has_next = curs.moveToNext();
+			}
+			return secList;
+		} finally {
+			curs.close();
 		}
-		return secList;
 	}
 
 	public String renderFeatTypeDescription(String section_id) {
-		StringBuffer sb = new StringBuffer();
 		Cursor curs = fetchFeatTypeDescriptionForSection(section_id);
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			sb.append(curs.getString(0));
-			has_next = curs.moveToNext();
+		try {
+			StringBuffer sb = new StringBuffer();
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				sb.append(curs.getString(0));
+				has_next = curs.moveToNext();
+			}
+			return sb.toString();
+		} finally {
+			curs.close();
 		}
-		return sb.toString();
 	}
 }

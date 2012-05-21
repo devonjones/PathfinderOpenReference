@@ -26,31 +26,39 @@ public class MonsterRenderer extends StatBlockRenderer {
 	@Override
 	public String renderTitle() {
 		Cursor curs = this.getMonsterAdapter().getCreatureDetails(sectionId);
-		boolean has_next = curs.moveToFirst();
-		String title = name;
-		if (has_next) {
-			String cr = curs.getString(3);
-			if (cr != null) {
-				title = title + " (CR " + cr + ")";
+		try {
+			boolean has_next = curs.moveToFirst();
+			String title = name;
+			if (has_next) {
+				String cr = curs.getString(3);
+				if (cr != null) {
+					title = title + " (CR " + cr + ")";
+				}
 			}
+			return renderStatBlockTitle(title, newUri, top);
+		} finally {
+			curs.close();
 		}
-		return renderStatBlockTitle(title, newUri, top);
 	}
 
 	@Override
 	public String renderDetails() {
-		StringBuffer sb = new StringBuffer();
 		Cursor curs = this.getMonsterAdapter().getCreatureDetails(sectionId);
-		boolean has_next = curs.moveToFirst();
-		if (has_next) {
-			sb.append(renderCreatureHeader(curs, desc, source, newUri, top));
-			sb.append(renderCreatureDefense(curs));
-			sb.append(renderCreatureOffense(curs));
-			sb.append(renderCreatureSpells(sectionId));
-			sb.append(renderCreatureStatistics(curs));
-			sb.append(renderCreatureEcology(curs));
+		try {
+			StringBuffer sb = new StringBuffer();
+			boolean has_next = curs.moveToFirst();
+			if (has_next) {
+				sb.append(renderCreatureHeader(curs, desc, source, newUri, top));
+				sb.append(renderCreatureDefense(curs));
+				sb.append(renderCreatureOffense(curs));
+				sb.append(renderCreatureSpells(sectionId));
+				sb.append(renderCreatureStatistics(curs));
+				sb.append(renderCreatureEcology(curs));
+			}
+			return sb.toString();
+		} finally {
+			curs.close();
 		}
-		return sb.toString();
 	}
 
 	public String renderDescription() {
@@ -135,15 +143,19 @@ public class MonsterRenderer extends StatBlockRenderer {
 	}
 
 	private String renderCreatureSpells(String sectionId) {
-		StringBuffer sb = new StringBuffer();
 		Cursor curs = this.getMonsterAdapter().getCreatureSpells(sectionId);
 		// 0:name, 1:body
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			sb.append(addField(curs.getString(0), curs.getString(1)));
-			has_next = curs.moveToNext();
+		try {
+			StringBuffer sb = new StringBuffer();
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				sb.append(addField(curs.getString(0), curs.getString(1)));
+				has_next = curs.moveToNext();
+			}
+			return sb.toString();
+		} finally {
+			curs.close();
 		}
-		return sb.toString();
 	}
 
 	private String renderCreatureStatistics(Cursor curs) {

@@ -38,20 +38,24 @@ public class ClassAdapter {
 	}
 
 	public ArrayList<HashMap<String, Object>> createClassTypeList() {
-		ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = fetchClassTypes();
-		HashMap<String, Object> child = new HashMap<String, Object>();
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			String classType = curs.getString(0);
-			String classTitle = classType.substring(0, 1).toUpperCase() + classType.substring(1) + " Classes";
-			child = new HashMap<String, Object>();
-			child.put("specificName", classTitle);
-			child.put("id", classType);
-			secList.add(child);
-			has_next = curs.moveToNext();
+		try {
+			ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
+			HashMap<String, Object> child = new HashMap<String, Object>();
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				String classType = curs.getString(0);
+				String classTitle = classType.substring(0, 1).toUpperCase() + classType.substring(1) + " Classes";
+				child = new HashMap<String, Object>();
+				child.put("specificName", classTitle);
+				child.put("id", classType);
+				secList.add(child);
+				has_next = curs.moveToNext();
+			}
+			return secList;
+		} finally {
+			curs.close();
 		}
-		return secList;
 	}
 
 	public static String classTypeFromTitle(String title) {

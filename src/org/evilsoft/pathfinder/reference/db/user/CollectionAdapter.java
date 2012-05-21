@@ -19,33 +19,45 @@ public class CollectionAdapter {
 	}
 
 	public ArrayList<HashMap<String, Object>> createCharacterList() {
-		ArrayList<HashMap<String, Object>> charList = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = fetchCollectionList();
-		HashMap<String, Object> child;
-
-		boolean hasNext = curs.moveToFirst();
-		while (hasNext) {
-			child = new HashMap<String, Object>();
-			child.put("id", curs.getString(0));
-			child.put("specificName", curs.getString(1));
-			charList.add(child);
-			hasNext = curs.moveToNext();
+		try {
+			ArrayList<HashMap<String, Object>> charList = new ArrayList<HashMap<String, Object>>();
+			HashMap<String, Object> child;
+	
+			boolean hasNext = curs.moveToFirst();
+			while (hasNext) {
+				child = new HashMap<String, Object>();
+				child.put("id", curs.getString(0));
+				child.put("specificName", curs.getString(1));
+				charList.add(child);
+				hasNext = curs.moveToNext();
+			}
+			return charList;
+		} finally {
+			curs.close();
 		}
-		return charList;
 	}
 
 	public Integer fetchFirstCollectionId() {
 		Cursor c = fetchFirstCollection();
-		c.moveToFirst();
-		return c.getInt(0);
+		try {
+			c.moveToFirst();
+			return c.getInt(0);
+		} finally {
+			c.close();
+		}
 	}
 
 	public Boolean collectionExists(String collectionId) {
 		Cursor c = fetchCollection(collectionId);
-		if (c.getCount() > 0) {
-			return true;
+		try {
+			if (c.getCount() > 0) {
+				return true;
+			}
+			return false;
+		} finally {
+			c.close();
 		}
-		return false;
 	}
 
 	public boolean addCollection(String name) {
@@ -107,7 +119,11 @@ public class CollectionAdapter {
 		sql.append("   AND section_id = ?");
 		sql.append("   AND name = ?");
 		Cursor curs = userDbAdapter.database.rawQuery(sql.toString(), PsrdDbAdapter.toStringArray(args));
-		return curs.moveToFirst();
+		try {
+			return curs.moveToFirst();
+		} finally {
+			curs.close();
+		}
 	}
 
 	public void star(long characterId, String sectionId, String name, String url) throws SQLException {

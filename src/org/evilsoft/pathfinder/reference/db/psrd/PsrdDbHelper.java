@@ -18,6 +18,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class PsrdDbHelper extends SQLiteOpenHelper {
 	private static String DB_PATH = "/data/data/org.evilsoft.pathfinder.reference/databases/";
 	private static String DB_NAME = "psrd.db";
+	private static int DB_CHUNKS = 17;
 	private static final Integer VERSION = 55561;
 	private SQLiteDatabase db;
 	private final Context context;
@@ -27,7 +28,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		this.context = context;
 	}
 
-	public void createDataBase(PsrdUserDbAdapter userDbAdapter) throws IOException, LimitedSpaceException {
+	public void createDatabase(PsrdUserDbAdapter userDbAdapter) throws IOException, LimitedSpaceException {
 		boolean dbExists = checkDatabase();
 		if (dbExists) {
 			Integer currVersion = userDbAdapter.getPsrdDbVersion();
@@ -68,16 +69,29 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		return checkDb != null ? true : false;
 	}
 
-	private void checkDatabaseSize() throws IOException, LimitedSpaceException {
-		InputStream sizeInput = context.getAssets().open(DB_NAME);
-		long size = 0;
-		
-		byte[] ibuffer = new byte[1024];
-		int length;
-		while ((length = sizeInput.read(ibuffer)) > 0) {
-			size += length;
+	private String getFileName(String base, int chunk) {
+		StringBuffer sb = new StringBuffer();
+		sb.append(base);
+		sb.append(".");
+		if (chunk < 10) {
+			sb.append("0");
 		}
-		sizeInput.close();
+		sb.append(chunk);
+		return sb.toString();
+	}
+
+	private void checkDatabaseSize() throws IOException, LimitedSpaceException {
+		long size = 0;
+		for (int chunk = 0; chunk < DB_CHUNKS; chunk++) {
+			InputStream sizeInput = context.getAssets().open(getFileName(DB_NAME, chunk));
+			
+			byte[] ibuffer = new byte[1024];
+			int length;
+			while ((length = sizeInput.read(ibuffer)) > 0) {
+				size += length;
+			}
+			sizeInput.close();
+		}
 
 		long buffer = (long) (size * 0.1);
 		long free = AvailableSpaceHandler.getExternalAvailableSpaceInBytes();
@@ -96,26 +110,20 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private void copyDatabase() throws LimitedSpaceException, IOException {
 		checkDatabaseSize();
 
-		// Open your local db as the input stream
-		InputStream myInput = context.getAssets().open(DB_NAME);
-
-		// Path to the just created empty db
 		String outFileName = DB_PATH + DB_NAME;
+		OutputStream out = new FileOutputStream(outFileName);
 
-		// Open the empty db as the output stream
-		OutputStream myOutput = new FileOutputStream(outFileName);
-
-		// transfer bytes from the inputfile to the outputfile
-		byte[] buffer = new byte[1024];
-		int length;
-		while ((length = myInput.read(buffer)) > 0) {
-			myOutput.write(buffer, 0, length);
+		for (int chunk = 0; chunk < DB_CHUNKS; chunk++) {
+			InputStream in = context.getAssets().open(getFileName(DB_NAME, chunk));
+			byte[] buffer = new byte[1024];
+			int length;
+			while ((length = in.read(buffer)) > 0) {
+				out.write(buffer, 0, length);
+			}
+			in.close();
 		}
-
-		// Close the streams
-		myOutput.flush();
-		myOutput.close();
-		myInput.close();
+		out.flush();
+		out.close();
 	}
 
 	public SQLiteDatabase openDatabase() throws SQLException {

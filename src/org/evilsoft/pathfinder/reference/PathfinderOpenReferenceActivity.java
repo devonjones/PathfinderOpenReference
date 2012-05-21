@@ -88,28 +88,34 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		Cursor curs;
+		Cursor curs = null;
 		String sectionId;
 		Intent showContent;
-		switch (item.getItemId()) {
-			case R.id.menu_ogl:
-				curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
-				curs.moveToFirst();
-				sectionId = curs.getString(0);
-				showContent = new Intent(getApplicationContext(), DetailsActivity.class);
-				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
-				startActivity(showContent);
-				return true;
-			case R.id.menu_cul:
-				curs = dbAdapter.fetchSectionByParentIdAndName("1", "Community Use License");
-				curs.moveToFirst();
-				sectionId = curs.getString(0);
-				showContent = new Intent(getApplicationContext(), DetailsActivity.class);
-				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
-				startActivity(showContent);
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
+		try {
+			switch (item.getItemId()) {
+				case R.id.menu_ogl:
+					curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
+					curs.moveToFirst();
+					sectionId = curs.getString(0);
+					showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
+					startActivity(showContent);
+					return true;
+				case R.id.menu_cul:
+					curs = dbAdapter.fetchSectionByParentIdAndName("1", "Community Use License");
+					curs.moveToFirst();
+					sectionId = curs.getString(0);
+					showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
+					startActivity(showContent);
+					return true;
+				default:
+					return super.onOptionsItemSelected(item);
+			}
+		} finally {
+			if (curs != null) {
+				curs.close();
+			}
 		}
 	}
 

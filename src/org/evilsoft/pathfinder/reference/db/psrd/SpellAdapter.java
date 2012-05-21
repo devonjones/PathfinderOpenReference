@@ -86,21 +86,25 @@ public class SpellAdapter {
 	}
 
 	public ArrayList<HashMap<String, Object>> createSpellClassList() {
-		ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = fetchSpellClasses();
-		HashMap<String, Object> child = new HashMap<String, Object>();
-		child.put("specificName", "All");
-		child.put("id", "All");
-		secList.add(child);
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			String spellClass = curs.getString(0);
-			child = new HashMap<String, Object>();
-			child.put("specificName", spellClass);
-			child.put("id", spellClass);
+		try {
+			ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
+			HashMap<String, Object> child = new HashMap<String, Object>();
+			child.put("specificName", "All");
+			child.put("id", "All");
 			secList.add(child);
-			has_next = curs.moveToNext();
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				String spellClass = curs.getString(0);
+				child = new HashMap<String, Object>();
+				child.put("specificName", spellClass);
+				child.put("id", spellClass);
+				secList.add(child);
+				has_next = curs.moveToNext();
+			}
+			return secList;
+		} finally {
+			curs.close();
 		}
-		return secList;
 	}
 }

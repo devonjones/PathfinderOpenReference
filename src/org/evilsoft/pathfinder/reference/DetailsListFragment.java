@@ -1,6 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
@@ -36,6 +37,7 @@ import com.actionbarsherlock.app.SherlockListFragment;
 public class DetailsListFragment extends SherlockListFragment implements OnItemClickListener {
 	private static final String TAG = "DetailsListFragment";
 	private PsrdDbAdapter dbAdapter;
+	private List<Cursor> cursorList = new ArrayList<Cursor>();
 	private String currentUrl;
 	private BaseAdapter currentListAdapter;
 	private boolean empty = false;
@@ -60,6 +62,11 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+		for (Cursor curs : cursorList) {
+			if(!curs.isClosed()) {
+				curs.close();
+			}
+		}
 		if (dbAdapter != null) {
 			dbAdapter.close();
 		}
@@ -96,6 +103,7 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 			ClassAdapter ca = new ClassAdapter(dbAdapter);
 			String id = parts[parts.length - 1];
 			Cursor curs = ca.fetchClassList(id);
+			cursorList.add(curs);
 			currentListAdapter = new ClassListAdapter(getActivity().getApplicationContext(), curs);
 		} else if (parts[2].equals("Feats")) {
 			if (parts.length > 4) {
@@ -107,16 +115,19 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 				} else {
 					curs = fa.fetchFeatList(featType);
 				}
+				cursorList.add(curs);
 				currentListAdapter = new FeatListAdapter(getActivity().getApplicationContext(), curs, false);
 			}
 		} else if (parts[2].equals("Races")) {
 			RaceAdapter ra = new RaceAdapter(dbAdapter);
 			Cursor curs = ra.fetchRaceList();
+			cursorList.add(curs);
 			currentListAdapter = new RaceListAdapter(getActivity().getApplicationContext(), curs);
 		} else if (parts[2].startsWith("Rules")) {
 			RuleAdapter ra = new RuleAdapter(dbAdapter);
 			String ruleId = parts[parts.length - 1];
 			Cursor curs = ra.fetchRuleList(ruleId);
+			cursorList.add(curs);
 			currentListAdapter = new RuleListAdapter(getActivity().getApplicationContext(), curs);
 		} else if (parts[2].equals("Monsters")) {
 			MonsterAdapter ma = new MonsterAdapter(dbAdapter);
@@ -128,10 +139,12 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 			} else {
 				curs = ma.fetchMonstersByType(monsterId);
 			}
+			cursorList.add(curs);
 			currentListAdapter = new MonsterListAdapter(getActivity().getApplicationContext(), curs, false);
 		} else if (parts[2].equals("Skills")) {
 			SkillAdapter sa = new SkillAdapter(dbAdapter);
 			Cursor curs = sa.fetchSkillList();
+			cursorList.add(curs);
 			currentListAdapter = new SkillListAdapter(getActivity().getApplicationContext(), curs, false);
 		} else if (parts[2].equals("Spells")) {
 			SpellAdapter sa = new SpellAdapter(dbAdapter);
@@ -142,10 +155,12 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 			} else {
 				curs = sa.fetchSpellList(spellClass);
 			}
+			cursorList.add(curs);
 			currentListAdapter = new SpellListAdapter(getActivity().getApplicationContext(), curs, false);
 		} else if (parts[2].equals("Search")) {
 			if (parts.length == 4) {
 				Cursor curs = dbAdapter.search(parts[3]);
+				cursorList.add(curs);
 				currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), curs);
 				if (currentListAdapter.isEmpty()) {
 					empty = true;

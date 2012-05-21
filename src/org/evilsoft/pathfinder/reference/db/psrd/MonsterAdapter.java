@@ -82,22 +82,26 @@ public class MonsterAdapter {
 	}
 
 	public ArrayList<HashMap<String, Object>> createMonsterTypeList() {
-		ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = fetchMonsterTypes();
-		HashMap<String, Object> child = new HashMap<String, Object>();
-		child.put("specificName", "All Monsters");
-		child.put("id", "All Monsters");
-		secList.add(child);
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			String creatureType = curs.getString(0);
-			child = new HashMap<String, Object>();
-			child.put("specificName", titleCase(creatureType));
-			child.put("id", creatureType);
+		try {
+			ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
+			HashMap<String, Object> child = new HashMap<String, Object>();
+			child.put("specificName", "All Monsters");
+			child.put("id", "All Monsters");
 			secList.add(child);
-			has_next = curs.moveToNext();
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				String creatureType = curs.getString(0);
+				child = new HashMap<String, Object>();
+				child.put("specificName", titleCase(creatureType));
+				child.put("id", creatureType);
+				secList.add(child);
+				has_next = curs.moveToNext();
+			}
+			return secList;
+		} finally {
+			curs.close();
 		}
-		return secList;
 	}
 
 	private String titleCase(String name) {

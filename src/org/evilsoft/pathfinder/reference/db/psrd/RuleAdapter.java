@@ -26,19 +26,23 @@ public class RuleAdapter {
 	}
 
 	public ArrayList<HashMap<String, Object>> createRuleList(String parentId) {
-		ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
 		Cursor curs = fetchRuleList(parentId);
-		HashMap<String, Object> child = new HashMap<String, Object>();
-		boolean has_next = curs.moveToFirst();
-		while (has_next) {
-			String ruleId = curs.getString(0);
-			String ruleName = curs.getString(1);
-			child = new HashMap<String, Object>();
-			child.put("specificName", ruleName);
-			child.put("id", ruleId);
-			secList.add(child);
-			has_next = curs.moveToNext();
+		try {
+			ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
+			HashMap<String, Object> child = new HashMap<String, Object>();
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				String ruleId = curs.getString(0);
+				String ruleName = curs.getString(1);
+				child = new HashMap<String, Object>();
+				child.put("specificName", ruleName);
+				child.put("id", ruleId);
+				secList.add(child);
+				has_next = curs.moveToNext();
+			}
+			return secList;
+		} finally {
+			curs.close();
 		}
-		return secList;
 	}
 }

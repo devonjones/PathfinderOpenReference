@@ -22,32 +22,36 @@ public class AbilityRenderer extends Renderer {
 	}
 
 	public String abilityName(String name, String sectionId) {
-		StringBuffer sb = new StringBuffer();
-		sb.append(name);
-		boolean fields = false;
 		Cursor curs = dbAdapter.getAbilityTypes(sectionId);
-		boolean has_next = curs.moveToFirst();
-		String comma = "";
-		while (has_next) {
-			sb.append(comma);
-			if (fields != true) {
-				sb.append(" (");
-				comma = ", ";
-				fields = true;
+		try {
+			StringBuffer sb = new StringBuffer();
+			sb.append(name);
+			boolean fields = false;
+			boolean has_next = curs.moveToFirst();
+			String comma = "";
+			while (has_next) {
+				sb.append(comma);
+				if (fields != true) {
+					sb.append(" (");
+					comma = ", ";
+					fields = true;
+				}
+				String type = curs.getString(0);
+				if (type.equals("Extraordinary")) {
+					sb.append("Ex");
+				} else if (type.equals("Supernatural")) {
+					sb.append("Su");
+				} else if (type.equals("Spell-Like")) {
+					sb.append("Sp");
+				}
+				has_next = curs.moveToNext();
 			}
-			String type = curs.getString(0);
-			if (type.equals("Extraordinary")) {
-				sb.append("Ex");
-			} else if (type.equals("Supernatural")) {
-				sb.append("Su");
-			} else if (type.equals("Spell-Like")) {
-				sb.append("Sp");
+			if (fields) {
+				sb.append(")");
 			}
-			has_next = curs.moveToNext();
+			return sb.toString();
+		} finally {
+			curs.close();
 		}
-		if (fields) {
-			sb.append(")");
-		}
-		return sb.toString();
 	}
 }

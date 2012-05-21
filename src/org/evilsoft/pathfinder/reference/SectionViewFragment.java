@@ -1,6 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
@@ -43,6 +44,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 	private static final String TAG = "SectionViewFragment";
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
+	private List<Cursor> cursorList = new ArrayList<Cursor>();
 	private String currentUrl;
 	private BaseAdapter currentListAdapter;
 	private String startUrl;
@@ -89,6 +91,11 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+		for (Cursor curs : cursorList) {
+			if(!curs.isClosed()) {
+				curs.close();
+			}
+		}
 		if (dbAdapter != null) {
 			dbAdapter.close();
 		}
@@ -119,6 +126,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 			ClassAdapter ca = new ClassAdapter(dbAdapter);
 			String id = parts[parts.length - 1];
 			Cursor curs = ca.fetchClassList(id);
+			cursorList.add(curs);
 			currentListAdapter = new ClassListAdapter(getActivity().getApplicationContext(), curs);
 		} else if (parts[2].equals("Feats")) {
 			if (parts.length > 4) {
@@ -130,22 +138,26 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 				} else {
 					curs = fa.fetchFeatList(featType);
 				}
+				cursorList.add(curs);
 				currentListAdapter = new FeatListAdapter(getActivity().getApplicationContext(), curs, true);
 			}
 		} else if (parts[2].equals("Races")) {
 			RaceAdapter ra = new RaceAdapter(dbAdapter);
 			Cursor curs = ra.fetchRaceList();
+			cursorList.add(curs);
 			currentListAdapter = new RaceListAdapter(getActivity().getApplicationContext(), curs);
 		} else if (parts[2].startsWith("Rules")) {
 			if (parts.length > 4) {
 				RuleAdapter ra = new RuleAdapter(dbAdapter);
 				String ruleId = parts[parts.length - 1];
 				Cursor curs = ra.fetchRuleList(ruleId);
+				cursorList.add(curs);
 				currentListAdapter = new RuleListAdapter(getActivity().getApplicationContext(), curs);
 			}
 		} else if (parts[2].equals("Skills")) {
 			SkillAdapter sa = new SkillAdapter(dbAdapter);
 			Cursor curs = sa.fetchSkillList();
+			cursorList.add(curs);
 			currentListAdapter = new SkillListAdapter(getActivity().getApplicationContext(), curs, true);
 		} else if (parts[2].equals("Spells")) {
 			SpellAdapter sa = new SpellAdapter(dbAdapter);
@@ -156,6 +168,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 			} else {
 				curs = sa.fetchSpellList(spellClass);
 			}
+			cursorList.add(curs);
 			currentListAdapter = new SpellListAdapter(getActivity().getApplicationContext(), curs, true);
 		} else if (parts[2].equals("Monsters")) {
 			if (parts.length > 4) {
@@ -168,6 +181,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 				} else {
 					curs = ma.fetchMonstersByType(monsterId);
 				}
+				cursorList.add(curs);
 				currentListAdapter = new MonsterListAdapter(getActivity().getApplicationContext(), curs, true);
 			}
 		} else if (parts[2].equals("Bookmarks")) {
@@ -181,6 +195,7 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 					// We have a collection name and can search on it
 					CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
 					Cursor curs = ca.fetchCollectionEntries(parts[parts.length - 1]);
+					cursorList.add(curs);
 					currentListAdapter = new CollectionItemListAdapter(getActivity(), curs);
 				}
 			}
@@ -233,39 +248,43 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 	}
 
 	private void showDelCollectionDialog() {
-		AlertDialog.Builder builder =
-				android.os.Build.VERSION.SDK_INT < 11 ?
-						new AlertDialog.Builder(getActivity()) :
-							new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK);
-
 		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
 		Cursor curs = ca.fetchCollectionList();
-		final ArrayList<String> characterList = new ArrayList<String>();
-		boolean hasNext = curs.moveToFirst();
-		while (hasNext) {
-			characterList.add(curs.getString(1));
-			hasNext = curs.moveToNext();
-		}
-		String[] items = characterList.toArray(new String[characterList.size()]);
-		builder.setTitle(R.string.del_collection_entry_title);
-		builder.setItems(items, new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int which) {
-				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-				if (ca.delCollection(characterList.get(which)) > 0) {
-					Toast.makeText(getActivity(), R.string.del_collection_entry_success, Toast.LENGTH_SHORT).show();
-				} else {
-					Toast.makeText(getActivity(), R.string.del_collection_entry_failure, Toast.LENGTH_SHORT).show();
+		try {
+			AlertDialog.Builder builder =
+					android.os.Build.VERSION.SDK_INT < 11 ?
+							new AlertDialog.Builder(getActivity()) :
+								new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_DARK);
+
+			final ArrayList<String> characterList = new ArrayList<String>();
+			boolean hasNext = curs.moveToFirst();
+			while (hasNext) {
+				characterList.add(curs.getString(1));
+				hasNext = curs.moveToNext();
+			}
+			String[] items = characterList.toArray(new String[characterList.size()]);
+			builder.setTitle(R.string.del_collection_entry_title);
+			builder.setItems(items, new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+					if (ca.delCollection(characterList.get(which)) > 0) {
+						Toast.makeText(getActivity(), R.string.del_collection_entry_success, Toast.LENGTH_SHORT).show();
+					} else {
+						Toast.makeText(getActivity(), R.string.del_collection_entry_failure, Toast.LENGTH_SHORT).show();
+					}
+					refreshCollection();
 				}
-				refreshCollection();
-			}
-		});
-		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int which) {
-				refreshCollection();
-			}
-		});
-		AlertDialog alert = builder.create();
-		alert.show();
+			});
+			builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					refreshCollection();
+				}
+			});
+			AlertDialog alert = builder.create();
+			alert.show();
+		} finally {
+			curs.close();
+		}
 	}
 
 	private void refreshCollection() {

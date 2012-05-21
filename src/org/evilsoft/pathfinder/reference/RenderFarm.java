@@ -94,8 +94,12 @@ public class RenderFarm {
 
 	public String render(String sectionId, String uri) {
 		Cursor curs = this.dbAdapter.fetchFullSection(sectionId);
-		renderPath = new ArrayList<Renderer>();
-		return renderSection(curs, uri);
+		try {
+			renderPath = new ArrayList<Renderer>();
+			return renderSection(curs, uri);
+		} finally {
+			curs.close();
+		}
 	}
 
 	public String renderSection(Cursor curs, String uri) {

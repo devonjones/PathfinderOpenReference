@@ -25,7 +25,7 @@ public class StartActivity extends Activity {
 		userDbAdapter.open();
 		boolean cont = true;
 		try {
-			dbh.createDataBase(userDbAdapter);
+			dbh.createDatabase(userDbAdapter);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		} catch (LimitedSpaceException e) {

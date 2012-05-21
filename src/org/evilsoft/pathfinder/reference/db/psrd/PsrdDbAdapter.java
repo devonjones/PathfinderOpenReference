@@ -75,28 +75,36 @@ public class PsrdDbAdapter {
 	}
 
 	public ArrayList<HashMap<String, String>> getPath(String sectionId) {
-		ArrayList<HashMap<String, String>> path = new ArrayList<HashMap<String, String>>();
 		Cursor curs = fetchSection(sectionId);
-		Log.d(TAG, sectionId);
-		boolean has_rows = curs.moveToFirst();
-		Log.d(TAG, ((Boolean) has_rows).toString());
-		if (has_rows) {
-			String parentId = curs.getString(1);
-			HashMap<String, String> element = new HashMap<String, String>();
-			element.put("id", curs.getString(0));
-			element.put("name", curs.getString(2));
-			path.add(element);
-			while (parentId != null) {
-				Cursor curs2 = fetchSection(parentId);
-				curs2.moveToFirst();
-				parentId = curs2.getString(1);
-				element = new HashMap<String, String>();
-				element.put("id", curs2.getString(0));
-				element.put("name", curs2.getString(2));
+		try {
+			ArrayList<HashMap<String, String>> path = new ArrayList<HashMap<String, String>>();
+			Log.d(TAG, sectionId);
+			boolean has_rows = curs.moveToFirst();
+			Log.d(TAG, ((Boolean) has_rows).toString());
+			if (has_rows) {
+				String parentId = curs.getString(1);
+				HashMap<String, String> element = new HashMap<String, String>();
+				element.put("id", curs.getString(0));
+				element.put("name", curs.getString(2));
 				path.add(element);
+				while (parentId != null) {
+					Cursor curs2 = fetchSection(parentId);
+					try {
+						curs2.moveToFirst();
+						parentId = curs2.getString(1);
+						element = new HashMap<String, String>();
+						element.put("id", curs2.getString(0));
+						element.put("name", curs2.getString(2));
+						path.add(element);
+					} finally {
+						curs2.close();
+					}
+				}
 			}
+			return path;
+		} finally {
+			curs.close();
 		}
-		return path;
 	}
 
 	public Cursor fetchSection(String sectionId) {
@@ -263,8 +271,12 @@ public class PsrdDbAdapter {
 		}
 		String sql = sb.toString();
 		Cursor c = database.rawQuery(sql, toStringArray(args));
-		c.moveToFirst();
-		return c.getInt(0);
+		try {
+			c.moveToFirst();
+			return c.getInt(0);
+		} finally {
+			c.close();
+		}
 	}
 
 	public Cursor getSingleSearchArticle(String constraint) {
