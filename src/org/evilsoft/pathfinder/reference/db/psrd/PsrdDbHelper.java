@@ -12,7 +12,6 @@ import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
 import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class PsrdDbHelper extends SQLiteOpenHelper {
@@ -60,7 +59,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		try {
 			String myPath = DB_PATH + DB_NAME;
 			checkDb = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.NO_LOCALIZED_COLLATORS);
-		} catch (SQLiteException e) {
+		} catch (Exception e) {
 			// database does't exist yet.
 		}
 		if (checkDb != null) {
