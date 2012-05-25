@@ -4,11 +4,12 @@ import android.os.Environment;
 import android.os.StatFs;
 
 /**
- * This class is designed to get available space in external storage of android. 
+ * This class is designed to get available space in various storage of android. 
  * It contains methods which provide you the available space in different units e.g
- * bytes, KB, MB, GB. OR you can get the number of available blocks on external storage.
+ * bytes, KB, MB, GB. OR you can get the number of available blocks in storage.
  *
- * From: http://stackoverflow.com/questions/2941552/android-sd-card-free-space
+ * Based on the implementation at:
+ *   http://stackoverflow.com/questions/2941552/android-sd-card-free-space
  */
 public class AvailableSpaceHandler {
 
@@ -31,15 +32,21 @@ public class AvailableSpaceHandler {
 	 * @return Number of bytes available on external storage
 	 */
 	public static long getExternalAvailableSpaceInBytes() {
-		long availableSpace = -1L;
-		try {
-			StatFs stat = new StatFs(Environment.getExternalStorageDirectory().getPath());
-			availableSpace = (long) stat.getAvailableBlocks() * (long) stat.getBlockSize();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		return availableSpace;
+		return getAvailableSpaceInBytes(Environment.getExternalStorageDirectory().getPath());
+	}
+	
+	/**
+	 * @return Number of bytes available on external storage
+	 */
+	public static long getInternalAvailableSpaceInBytes() {	
+		return getAvailableSpaceInBytes(Environment.getDataDirectory().getPath());
+	}
+	
+	/**
+	 * @return Number of kilobytes available on internal storage
+	 */
+	public static long getInternalAvailableSpaceInKB() {
+		return getInternalAvailableSpaceInBytes() / SIZE_KB;
 	}
 	
 	/**
@@ -48,11 +55,26 @@ public class AvailableSpaceHandler {
 	public static long getExternalAvailableSpaceInKB() {
 		return getExternalAvailableSpaceInBytes() / SIZE_KB;
 	}
+	
+	/**
+	 * @return Number of megabytes available on internal storage
+	 */
+	public static long getInternalAvailableSpaceInMB() {
+		return getInternalAvailableSpaceInBytes() / SIZE_MB;
+	}
+	
 	/**
 	 * @return Number of megabytes available on external storage
 	 */
 	public static long getExternalAvailableSpaceInMB() {
 		return getExternalAvailableSpaceInBytes() / SIZE_MB;
+	}
+	
+	/**
+	 * @return gigabytes of bytes available on internal storage
+	 */
+	public static long getInternalAvailableSpaceInGB() {
+		return getInternalAvailableSpaceInBytes() / SIZE_GB;
 	}
 	
 	/**
@@ -63,12 +85,28 @@ public class AvailableSpaceHandler {
 	}
 	
 	/**
+	 * @return Total number of available blocks on internal storage
+	 */
+	public static long getInternalStorageAvailableBlocks() {
+		return getAvailableSpaceInBlocks(Environment.getDataDirectory().getPath());
+	}
+	
+	/**
 	 * @return Total number of available blocks on external storage
 	 */
 	public static long getExternalStorageAvailableBlocks() {
+		return getAvailableSpaceInBlocks(Environment.getExternalStorageDirectory().getPath());
+	}
+	
+	public static long getAvailableSpaceInBytes(String path) {
+		StatFs stat = new StatFs(path);
+		return getAvailableSpaceInBlocks(path) * (long) stat.getBlockSize();
+	}
+	
+	public static long getAvailableSpaceInBlocks(String path) {
 		long availableBlocks = -1L;
 		try {
-			StatFs stat = new StatFs(Environment.getExternalStorageDirectory().getPath());
+			StatFs stat = new StatFs(path);
 			availableBlocks = stat.getAvailableBlocks();
 		} catch (Exception e) {
 			e.printStackTrace();
