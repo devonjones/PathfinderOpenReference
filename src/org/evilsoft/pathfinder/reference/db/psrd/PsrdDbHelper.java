@@ -1,5 +1,6 @@
 package org.evilsoft.pathfinder.reference.db.psrd;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,9 +14,11 @@ import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Environment;
 
 public class PsrdDbHelper extends SQLiteOpenHelper {
-	private static String DB_PATH = "/data/data/org.evilsoft.pathfinder.reference/databases/";
+	private final String DB_FILENAME;
+	private final String DB_PATH;
 	private static String DB_NAME = "psrd.db";
 	private static int DB_CHUNKS = 17;
 	private static final Integer VERSION = 55561;
@@ -25,6 +28,11 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	public PsrdDbHelper(Context context) {
 		super(context, DB_NAME, null, 1);
 		this.context = context;
+		
+		manageDatabase();
+		
+		this.DB_PATH = dbPath();
+		this.DB_FILENAME = DB_PATH + File.separator + DB_NAME;
 	}
 
 	public void createDatabase(PsrdUserDbAdapter userDbAdapter) throws IOException, LimitedSpaceException {
@@ -57,7 +65,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private boolean checkDatabase() {
 		SQLiteDatabase checkDb = null;
 		try {
-			String myPath = DB_PATH + DB_NAME;
+			String myPath = DB_FILENAME;
 			checkDb = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.NO_LOCALIZED_COLLATORS);
 		} catch (Exception e) {
 			// database does't exist yet.
@@ -93,7 +101,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		}
 
 		long buffer = (long) (size * 0.1);
-		long free = AvailableSpaceHandler.getExternalAvailableSpaceInBytes();
+		long free = AvailableSpaceHandler.getAvailableSpaceInBytes(DB_PATH);
 		if (size + buffer > free) {
 			throw new LimitedSpaceException("Not enough free space.", size + buffer);
 		}
@@ -109,7 +117,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private void copyDatabase() throws LimitedSpaceException, IOException {
 		checkDatabaseSize();
 
-		String outFileName = DB_PATH + DB_NAME;
+		String outFileName = DB_FILENAME;
 		OutputStream out = new FileOutputStream(outFileName);
 
 		for (int chunk = 0; chunk < DB_CHUNKS; chunk++) {
@@ -127,9 +135,53 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 
 	public SQLiteDatabase openDatabase() throws SQLException {
 		// Open the database
-		String myPath = DB_PATH + DB_NAME;
+		String myPath = DB_FILENAME;
 		db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.NO_LOCALIZED_COLLATORS);
 		return db;
+	}
+	
+	/**
+	 * Looks for the database in local storage as well as something that looks like
+	 * an SD card (though it may not really be one).  A best-case option for managing
+	 * the database is implemented:
+	 * 
+	 * 1. See if the SD card is available (mounted)
+	 * 2. if so, see if the DB exists on local storage
+	 * 3. if so delete the copy in local storage.
+	 * 
+	 * @return false indicates a problem deleting a file
+	 */
+	private boolean manageDatabase() {
+		File dbFile;
+		
+		// Step 1, see if there is an SD card mounted
+		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+			// Step 2, see if the DB exists on local storage
+			dbFile = new File(context.getFilesDir(), DB_NAME);
+			if(dbFile.exists()) {
+				// Step 3, delete the copy on local storage
+				return dbFile.delete();
+			}
+		}
+		return true;
+	}
+	
+	/**
+	 * Returns the path for the database being used.
+	 * SD card storage is preferred over internal storage.
+	 * 
+	 * @return absolute path and filename for the database
+	 */
+	private String dbPath() {
+		String dbPath;
+		
+		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+			dbPath = context.getExternalFilesDir(null).getAbsolutePath();
+		} else {
+			dbPath = context.getFilesDir().getAbsolutePath();
+		}
+		
+		return dbPath;
 	}
 
 	@Override
