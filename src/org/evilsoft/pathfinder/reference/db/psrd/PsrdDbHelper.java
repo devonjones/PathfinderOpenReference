@@ -29,10 +29,10 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		super(context, DB_NAME, null, 1);
 		this.context = context;
 		
-		manageDatabase();
+		File db = manageDatabase();
 		
-		this.DB_PATH = dbPath();
-		this.DB_FILENAME = DB_PATH + File.separator + DB_NAME;
+		this.DB_PATH = db.getParent();
+		this.DB_FILENAME = db.getAbsolutePath();
 	}
 
 	public void createDatabase(PsrdUserDbAdapter userDbAdapter) throws IOException, LimitedSpaceException {
@@ -106,6 +106,22 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 			throw new LimitedSpaceException("Not enough free space.", size + buffer);
 		}
 	}
+	
+	private long calcDatabaseSize() throws IOException {
+		long size = 0;
+		for (int chunk = 0; chunk < DB_CHUNKS; chunk++) {
+			InputStream sizeInput = context.getAssets().open(getFileName(DB_NAME, chunk));
+			
+			byte[] ibuffer = new byte[1024];
+			int length;
+			while ((length = sizeInput.read(ibuffer)) > 0) {
+				size += length;
+			}
+			sizeInput.close();
+		}
+
+		return size + (long)(size * 0.1);
+	}
 
 	/**
 	 * Copies your database from your local assets-folder to the just created
@@ -151,39 +167,66 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	 * 
 	 * @return false indicates a problem deleting a file
 	 */
-	private boolean manageDatabase() {
-		File dbFile;
+	
+
+	/**
+	 * Determines an appropriate location for the reference database.
+	 * 
+	 * 1. Is external storage available (mounted)
+	 * 2. if so, does the db already exist?
+	 * 3. if not, is there space for the database here?
+	 * 4. failing the availability of external storage, sort out the location for internal storage
+	 * 5. if the database is destined for external storage, but exists internally, delete internal copy
+	 * 
+	 * @return file pointing to where the database is destined to exist
+	 */
+	private File manageDatabase() {
+		File tmpFile, retFile = null;
+		long dbSize, free;
 		
-		// Step 1, see if there is an SD card mounted
+		// see if external storage is mounted
 		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-			// Step 2, see if the DB exists on local storage
-			dbFile = new File(context.getFilesDir(), DB_NAME);
-			if(dbFile.exists()) {
-				// Step 3, delete the copy on local storage
-				return dbFile.delete();
+			tmpFile = new File(context.getExternalFilesDir(null).getAbsolutePath(), DB_NAME);
+			if(tmpFile.exists()) {
+				// db alread exists
+				retFile = tmpFile;
+			} else {
+				// see if there is enough space to hold the db on external storage
+				free = AvailableSpaceHandler.getAvailableSpaceInBytes(tmpFile.getParent());
+
+				try {
+					dbSize = calcDatabaseSize();
+				} catch (IOException e) {
+					// unable to calculate database size
+					// proper exception handling for this will take place when the db is created
+					dbSize = 0;
+				}
+				
+				if(dbSize < free) {
+					retFile = tmpFile;
+				}
 			}
 		}
-		return true;
-	}
-	
-	/**
-	 * Returns the path for the database being used.
-	 * SD card storage is preferred over internal storage.
-	 * 
-	 * @return absolute path and filename for the database
-	 */
-	private String dbPath() {
-		String dbPath;
 		
-		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-			dbPath = context.getExternalFilesDir(null).getAbsolutePath();
-		} else {
-			dbPath = context.getFilesDir().getAbsolutePath();
+		// check internal storage
+		tmpFile = new File(context.getFilesDir().getAbsolutePath(), DB_NAME);
+		// see if the db exists on internal storage
+		if(tmpFile.exists()) {
+			if(null != retFile) {
+				// if the db is on internal *and* external storage, delete the internal storage copy
+				tmpFile.delete();
+			}
 		}
 		
-		return dbPath;
+		// if we got this far with retFile undefined, there either isn't external storage
+		// or insufficient space there.  default to internal storage
+		if(null == retFile) {
+			retFile = tmpFile;
+		}
+		
+		return retFile;
 	}
-
+	
 	@Override
 	public synchronized void close() {
 		if (db != null) {
