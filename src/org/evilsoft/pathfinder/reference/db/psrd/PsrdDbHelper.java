@@ -157,19 +157,6 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	}
 	
 	/**
-	 * Looks for the database in local storage as well as something that looks like
-	 * an SD card (though it may not really be one).  A best-case option for managing
-	 * the database is implemented:
-	 * 
-	 * 1. See if the SD card is available (mounted)
-	 * 2. if so, see if the DB exists on local storage
-	 * 3. if so delete the copy in local storage.
-	 * 
-	 * @return false indicates a problem deleting a file
-	 */
-	
-
-	/**
 	 * Determines an appropriate location for the reference database.
 	 * 
 	 * 1. Is external storage available (mounted)

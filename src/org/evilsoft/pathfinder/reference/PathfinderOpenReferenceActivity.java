@@ -12,6 +12,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
 import android.widget.SearchView;
@@ -22,33 +23,38 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 
 public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
+	private static final String TAG = "PathfinderOpenReferenceActivity";
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
 
 	public static boolean isTabletLayout(Activity act) {
 		int smallest;
-		if (Build.VERSION.SDK_INT >= 11) {
-			smallest = act.getResources().getConfiguration().screenWidthDp;
-			if (act.getResources().getConfiguration().screenHeightDp < smallest) {
-				smallest = act.getResources().getConfiguration().screenHeightDp;
+		try {
+			if (Build.VERSION.SDK_INT >= 11) {
+				smallest = act.getResources().getConfiguration().screenWidthDp;
+				if (act.getResources().getConfiguration().screenHeightDp < smallest) {
+					smallest = act.getResources().getConfiguration().screenHeightDp;
+				}
 			}
-		}
-		else {
-			Display display = ((WindowManager) act.getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
-			smallest = display.getWidth();
-			if (display.getHeight() < smallest) {
-				smallest = display.getHeight();
+			else {
+				Display display = ((WindowManager) act.getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
+				smallest = display.getWidth();
+				if (display.getHeight() < smallest) {
+					smallest = display.getHeight();
+				}
 			}
-		}
-
-		if ((act.getResources().getConfiguration().screenLayout
-				& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
-			if (smallest >= 750) {
-				return true;
+	
+			if ((act.getResources().getConfiguration().screenLayout
+					& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
+				if (smallest >= 750) {
+					return true;
+				}
+				if(act.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+					return true;
+				}
 			}
-			if(act.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-				return true;
-			}
+		} catch (Exception e) {
+			Log.e(TAG, "isTabletLayout failed with exception", e);
 		}
 		return false;
 	}
