@@ -5,6 +5,7 @@ import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.net.Uri;
 
 public class SearchProvider extends ContentProvider {
@@ -22,7 +23,13 @@ public class SearchProvider extends ContentProvider {
 			dbAdapter = new PsrdDbAdapter(getContext());
 			dbAdapter.open();
 		}
-		Cursor c = dbAdapter.autocomplete(uri.getLastPathSegment());
+		
+		Cursor c = null;
+		try {
+			c = dbAdapter.autocomplete(uri.getLastPathSegment());
+		} catch(NullPointerException e) {
+			
+		}
 		return c;
 	}
 
