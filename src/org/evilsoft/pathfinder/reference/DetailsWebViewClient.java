@@ -64,7 +64,8 @@ public class DetailsWebViewClient extends WebViewClient {
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
 		Log.i(TAG, newUrl);
 		if (newUrl.startsWith("http://")) {
-			newUrl = "pfsrd://" + newUrl.substring(14);
+			newUrl = newUrl.replace("http://pfsrd://", "pfsrd://"); //Gingerbread-
+			newUrl = newUrl.replace("http://pfsrd//", "pfsrd://"); //Honeycomb+
 		}
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].equals("Search") && parts.length < 5) {
