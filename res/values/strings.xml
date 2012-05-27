@@ -28,4 +28,5 @@
     <string name="del_collection_entry_text">Select collection to remove.</string>
     <string name="del_collection_entry_success">Removed collection.</string>
     <string name="del_collection_entry_failure">Couldn\'t remove collection!</string>
+    <string name="search_settings_description">Masterwork Tools: Pathfinder Open Reference</string>
 </resources>

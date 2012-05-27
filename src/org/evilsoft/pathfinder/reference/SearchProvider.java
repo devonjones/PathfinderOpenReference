@@ -1,6 +1,11 @@
 package org.evilsoft.pathfinder.reference;
 
+import java.io.IOException;
+
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbHelper;
+import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
+import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -18,11 +23,35 @@ public class SearchProvider extends ContentProvider {
 	@Override
 	public Cursor query(Uri uri, String[] projection, String selection,
 			String[] selectionArgs, String sortOrder) {
-		if(dbAdapter == null) {
-			dbAdapter = new PsrdDbAdapter(getContext());
-			dbAdapter.open();
+
+		PsrdDbHelper dbh = new PsrdDbHelper(getContext());
+		PsrdUserDbAdapter userDbAdapter = new PsrdUserDbAdapter(getContext());
+		userDbAdapter.open();
+		boolean cont = true;
+		try {
+			dbh.createDatabase(userDbAdapter);
+		} catch (IOException e) {
+			cont = false;
+		} catch (LimitedSpaceException e) {
+			// ignoring the big warning message that would normally accompany an out of space
+			// issue with database creation.  This is due to the fact that this code is
+			// called from global search and the use case for that error is a bit wonky
+			cont = false;
+		} finally {
+			userDbAdapter.close();
 		}
-		Cursor c = dbAdapter.autocomplete(uri.getLastPathSegment());
+		
+		Cursor c = null;
+		
+		if(cont) {
+			if(dbAdapter == null) {
+				dbAdapter = new PsrdDbAdapter(getContext());
+				dbAdapter.open();
+			}
+			
+			c = dbAdapter.autocomplete(uri.getLastPathSegment());
+		}
+		
 		return c;
 	}
 
