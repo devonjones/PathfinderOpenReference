@@ -12,7 +12,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteException;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -34,14 +33,8 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		openDb();
 		
-		// TODO: This needs more work
-		try {
-			openDb();
-		} catch(SQLiteException e) {
-			return;
-		}
-
 		Intent launchingIntent = getIntent();
 
 		String newUri;
