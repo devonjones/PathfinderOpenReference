@@ -17,6 +17,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Environment;
 
 public class PsrdDbHelper extends SQLiteOpenHelper {
+	private static String OLD_DB_PATH = "/data/data/org.evilsoft.pathfinder.reference/databases/";
+	
 	private final String DB_FILENAME;
 	private final String DB_PATH;
 	private static String DB_NAME = "psrd.db";
@@ -170,6 +172,11 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private File manageDatabase() {
 		File tmpFile, retFile = null;
 		long dbSize, free;
+		
+		// Look for old databases that may still exist, delete them in found
+		tmpFile = new File(OLD_DB_PATH, DB_NAME);
+		if(tmpFile.exists())
+			tmpFile.delete();
 		
 		// see if external storage is mounted
 		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
