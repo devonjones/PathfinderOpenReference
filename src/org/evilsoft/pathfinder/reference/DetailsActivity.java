@@ -34,7 +34,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		openDb();
-
+		
 		Intent launchingIntent = getIntent();
 
 		String newUri;
