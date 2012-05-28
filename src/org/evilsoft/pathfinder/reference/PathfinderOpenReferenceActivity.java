@@ -37,24 +37,27 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 				}
 			}
 			else {
-				Display display = ((WindowManager) act.getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
+				Display display = ((WindowManager) act
+						.getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
 				smallest = display.getWidth();
 				if (display.getHeight() < smallest) {
 					smallest = display.getHeight();
 				}
 			}
-	
+
 			if ((act.getResources().getConfiguration().screenLayout
-					& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
+			& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
 				if (smallest >= 750) {
 					return true;
 				}
-				if(act.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+				if (act.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
 					return true;
 				}
 			}
 		} catch (Exception e) {
 			Log.e(TAG, "isTabletLayout failed with exception", e);
+		} catch (NoSuchFieldError nsfe) {
+			Log.e(TAG, "isTabletLayout failed with exception", nsfe);
 		}
 		return false;
 	}
@@ -64,7 +67,7 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		openDb();
-		if(isTabletLayout(this)) {
+		if (isTabletLayout(this)) {
 			setContentView(R.layout.main);
 		} else {
 			setContentView(R.layout.main_phone);
@@ -80,14 +83,15 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 			MenuItem searchItem = menu.findItem(R.id.menu_search);
 			searchItem.setVisible(true);
 			SearchView searchView = (SearchView) searchItem.getActionView();
-			if(PathfinderOpenReferenceActivity.isTabletLayout(this)) {
+			if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 				searchView.setIconifiedByDefault(false);
 			}
 			else {
 				searchView.setIconifiedByDefault(true);
 			}
 			SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-			searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+			searchView.setSearchableInfo(searchManager
+					.getSearchableInfo(getComponentName()));
 		}
 		return true;
 	}
@@ -103,15 +107,18 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 					curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
 					curs.moveToFirst();
 					sectionId = curs.getString(0);
-					showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+					showContent = new Intent(getApplicationContext(),
+							DetailsActivity.class);
 					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
 					startActivity(showContent);
 					return true;
 				case R.id.menu_cul:
-					curs = dbAdapter.fetchSectionByParentIdAndName("1", "Community Use License");
+					curs = dbAdapter.fetchSectionByParentIdAndName("1",
+							"Community Use License");
 					curs.moveToFirst();
 					sectionId = curs.getString(0);
-					showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+					showContent = new Intent(getApplicationContext(),
+							DetailsActivity.class);
 					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
 					startActivity(showContent);
 					return true;
