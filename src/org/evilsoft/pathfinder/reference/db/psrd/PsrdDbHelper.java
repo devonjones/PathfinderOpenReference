@@ -18,7 +18,7 @@ import android.os.Environment;
 
 public class PsrdDbHelper extends SQLiteOpenHelper {
 	private static String OLD_DB_PATH = "/data/data/org.evilsoft.pathfinder.reference/databases/";
-	
+
 	private final String DB_FILENAME;
 	private final String DB_PATH;
 	private static String DB_NAME = "psrd.db";
@@ -30,18 +30,19 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	public PsrdDbHelper(Context context) {
 		super(context, DB_NAME, null, 1);
 		this.context = context;
-		
+
 		File db = manageDatabase();
-		
+
 		this.DB_PATH = db.getParent();
 		this.DB_FILENAME = db.getAbsolutePath();
 	}
 
-	public void createDatabase(PsrdUserDbAdapter userDbAdapter) throws IOException, LimitedSpaceException {
+	public void createDatabase(PsrdUserDbAdapter userDbAdapter)
+			throws IOException, LimitedSpaceException {
 		boolean dbExists = checkDatabase();
 		if (dbExists) {
 			Integer currVersion = userDbAdapter.getPsrdDbVersion();
-			if(VERSION > currVersion) {
+			if (VERSION > currVersion) {
 				buildDatabase();
 				userDbAdapter.updatePsrdDbVersion(VERSION);
 			}
@@ -50,7 +51,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 			userDbAdapter.updatePsrdDbVersion(VERSION);
 		}
 	}
-	
+
 	private void buildDatabase() throws IOException, LimitedSpaceException {
 		// By calling this method and empty database will be created into
 		// the default system path
@@ -68,7 +69,8 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		SQLiteDatabase checkDb = null;
 		try {
 			String myPath = DB_FILENAME;
-			checkDb = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.NO_LOCALIZED_COLLATORS);
+			checkDb = SQLiteDatabase.openDatabase(myPath, null,
+					SQLiteDatabase.NO_LOCALIZED_COLLATORS);
 		} catch (Exception e) {
 			// database does't exist yet.
 		}
@@ -92,8 +94,9 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private void checkDatabaseSize() throws IOException, LimitedSpaceException {
 		long size = 0;
 		for (int chunk = 0; chunk < DB_CHUNKS; chunk++) {
-			InputStream sizeInput = context.getAssets().open(getFileName(DB_NAME, chunk));
-			
+			InputStream sizeInput = context.getAssets().open(
+					getFileName(DB_NAME, chunk));
+
 			byte[] ibuffer = new byte[1024];
 			int length;
 			while ((length = sizeInput.read(ibuffer)) > 0) {
@@ -105,15 +108,17 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		long buffer = (long) (size * 0.1);
 		long free = AvailableSpaceHandler.getAvailableSpaceInBytes(DB_PATH);
 		if (size + buffer > free) {
-			throw new LimitedSpaceException("Not enough free space.", size + buffer);
+			throw new LimitedSpaceException(
+					"Not enough free space.", size + buffer);
 		}
 	}
-	
+
 	private long calcDatabaseSize() throws IOException {
 		long size = 0;
 		for (int chunk = 0; chunk < DB_CHUNKS; chunk++) {
-			InputStream sizeInput = context.getAssets().open(getFileName(DB_NAME, chunk));
-			
+			InputStream sizeInput = context.getAssets().open(
+					getFileName(DB_NAME, chunk));
+
 			byte[] ibuffer = new byte[1024];
 			int length;
 			while ((length = sizeInput.read(ibuffer)) > 0) {
@@ -122,15 +127,16 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 			sizeInput.close();
 		}
 
-		return size + (long)(size * 0.1);
+		return size + (long) (size * 0.1);
 	}
 
 	/**
 	 * Copies your database from your local assets-folder to the just created
 	 * empty database in the system folder, from where it can be accessed and
 	 * handled. This is done by transferring bytestream.
-	 * @throws LimitedSpaceException 
-	 * @throws IOException 
+	 * 
+	 * @throws LimitedSpaceException
+	 * @throws IOException
 	 * */
 	private void copyDatabase() throws LimitedSpaceException, IOException {
 		checkDatabaseSize();
@@ -139,7 +145,8 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		OutputStream out = new FileOutputStream(outFileName);
 
 		for (int chunk = 0; chunk < DB_CHUNKS; chunk++) {
-			InputStream in = context.getAssets().open(getFileName(DB_NAME, chunk));
+			InputStream in = context.getAssets().open(
+					getFileName(DB_NAME, chunk));
 			byte[] buffer = new byte[1024];
 			int length;
 			while ((length = in.read(buffer)) > 0) {
@@ -154,73 +161,82 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	public SQLiteDatabase openDatabase() throws SQLException {
 		// Open the database
 		String myPath = DB_FILENAME;
-		db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.NO_LOCALIZED_COLLATORS);
+		db = SQLiteDatabase.openDatabase(myPath, null,
+				SQLiteDatabase.NO_LOCALIZED_COLLATORS);
 		return db;
 	}
-	
+
 	/**
 	 * Determines an appropriate location for the reference database.
 	 * 
-	 * 1. Is external storage available (mounted)
-	 * 2. if so, does the db already exist?
-	 * 3. if not, is there space for the database here?
-	 * 4. failing the availability of external storage, sort out the location for internal storage
-	 * 5. if the database is destined for external storage, but exists internally, delete internal copy
+	 * 1. Is external storage available (mounted) 2. if so, does the db already
+	 * exist? 3. if not, is there space for the database here? 4. failing the
+	 * availability of external storage, sort out the location for internal
+	 * storage 5. if the database is destined for external storage, but exists
+	 * internally, delete internal copy
 	 * 
 	 * @return file pointing to where the database is destined to exist
 	 */
 	private File manageDatabase() {
 		File tmpFile, retFile = null;
 		long dbSize, free;
-		
+
 		// Look for old databases that may still exist, delete them in found
 		tmpFile = new File(OLD_DB_PATH, DB_NAME);
-		if(tmpFile.exists())
+		if (tmpFile.exists()) {
 			tmpFile.delete();
-		
+		}
+
 		// see if external storage is mounted
-		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-			tmpFile = new File(context.getExternalFilesDir(null).getAbsolutePath(), DB_NAME);
-			if(tmpFile.exists()) {
-				// db alread exists
+		if (Environment.getExternalStorageState().equals(
+				Environment.MEDIA_MOUNTED)) {
+			tmpFile = new File(context.getExternalFilesDir(null)
+					.getAbsolutePath(), DB_NAME);
+			if (tmpFile.exists()) {
+				// db already exists
 				retFile = tmpFile;
 			} else {
-				// see if there is enough space to hold the db on external storage
-				free = AvailableSpaceHandler.getAvailableSpaceInBytes(tmpFile.getParent());
+				// see if there is enough space to hold the db on external
+				// storage
+				free = AvailableSpaceHandler.getAvailableSpaceInBytes(tmpFile
+						.getParent());
 
 				try {
 					dbSize = calcDatabaseSize();
 				} catch (IOException e) {
 					// unable to calculate database size
-					// proper exception handling for this will take place when the db is created
+					// proper exception handling for this will take place when
+					// the db is created
 					dbSize = 0;
 				}
-				
-				if(dbSize < free) {
+
+				if (dbSize < free) {
 					retFile = tmpFile;
 				}
 			}
 		}
-		
+
 		// check internal storage
 		tmpFile = new File(context.getFilesDir().getAbsolutePath(), DB_NAME);
 		// see if the db exists on internal storage
-		if(tmpFile.exists()) {
-			if(null != retFile) {
-				// if the db is on internal *and* external storage, delete the internal storage copy
+		if (tmpFile.exists()) {
+			if (null != retFile) {
+				// if the db is on internal *and* external storage, delete the
+				// internal storage copy
 				tmpFile.delete();
 			}
 		}
-		
-		// if we got this far with retFile undefined, there either isn't external storage
-		// or insufficient space there.  default to internal storage
-		if(null == retFile) {
+
+		// if we got this far with retFile undefined, there either isn't
+		// external storage
+		// or insufficient space there. default to internal storage
+		if (null == retFile) {
 			retFile = tmpFile;
 		}
-		
+
 		return retFile;
 	}
-	
+
 	@Override
 	public synchronized void close() {
 		if (db != null) {

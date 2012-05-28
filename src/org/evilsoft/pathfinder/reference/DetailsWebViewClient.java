@@ -31,7 +31,8 @@ public class DetailsWebViewClient extends WebViewClient {
 	private long currentCollection;
 	ArrayList<HashMap<String, String>> path;
 
-	public DetailsWebViewClient(Activity act, TextView title, ImageButton back, ImageButton star) {
+	public DetailsWebViewClient(Activity act, TextView title, ImageButton back,
+			ImageButton star) {
 		this.act = (FragmentActivity) act;
 		this.title = title;
 		this.back = back;
@@ -43,7 +44,8 @@ public class DetailsWebViewClient extends WebViewClient {
 	public void back(WebView view) {
 		if (this.path.size() > 3) {
 			HashMap<String, String> parent = path.get(1);
-			String newUrl = RenderFarm.swapUrl(this.url, parent.get("name"), parent.get("id"));
+			String newUrl = RenderFarm.swapUrl(this.url, parent.get("name"),
+					parent.get("id"));
 			String[] parts = newUrl.split("\\/");
 			if (parts[2].equals("Search")) {
 				parts[2] = "Rules";
@@ -64,8 +66,8 @@ public class DetailsWebViewClient extends WebViewClient {
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
 		Log.i(TAG, newUrl);
 		if (newUrl.startsWith("http://")) {
-			newUrl = newUrl.replace("http://pfsrd://", "pfsrd://"); //Gingerbread-
-			newUrl = newUrl.replace("http://pfsrd//", "pfsrd://"); //Honeycomb+
+			newUrl = newUrl.replace("http://pfsrd://", "pfsrd://"); // Gingerbread-
+			newUrl = newUrl.replace("http://pfsrd//", "pfsrd://"); // Honeycomb+
 		}
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].equals("Search") && parts.length < 5) {
@@ -91,11 +93,14 @@ public class DetailsWebViewClient extends WebViewClient {
 		// {id=10700, name=Rules: Core Rulebook}, {id=1, name=PFSRD}]
 		Log.i(TAG, newUrl);
 		String[] parts = newUrl.split("\\/");
-		if (parts[2].startsWith("Rules") && PathfinderOpenReferenceActivity.isTabletLayout(act)) {
-			DetailsListFragment list = (DetailsListFragment) act.getSupportFragmentManager().findFragmentById(
-					R.id.details_list_fragment);
+		if (parts[2].startsWith("Rules")
+				&& PathfinderOpenReferenceActivity.isTabletLayout(act)) {
+			DetailsListFragment list = (DetailsListFragment) act
+					.getSupportFragmentManager().findFragmentById(
+							R.id.details_list_fragment);
 			HashMap<String, String> parent = path.get(1);
-			String updateUrl = RenderFarm.swapUrl(this.url, parent.get("name"), parent.get("id"));
+			String updateUrl = RenderFarm.swapUrl(
+					this.url, parent.get("name"), parent.get("id"));
 			list.updateUrl(updateUrl);
 		}
 	}
@@ -127,7 +132,8 @@ public class DetailsWebViewClient extends WebViewClient {
 		} else {
 			html = "<H1>" + newUrl + "</H1>";
 		}
-		view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8", this.oldUrl);
+		view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8",
+				this.oldUrl);
 		view.setWebViewClient(this);
 		view.scrollTo(0, 0);
 
@@ -136,7 +142,8 @@ public class DetailsWebViewClient extends WebViewClient {
 			@Override
 			public void onClick(View v) {
 				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-				ca.toggleEntryStar(currentCollection, path, title.getText().toString(), url);
+				ca.toggleEntryStar(currentCollection, path, title.getText()
+						.toString(), url);
 				refreshStarButtonState();
 			}
 		});
@@ -147,9 +154,11 @@ public class DetailsWebViewClient extends WebViewClient {
 	private void refreshStarButtonState() {
 		if (path != null) {
 			CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-			boolean starred = ca.entryIsStarred(currentCollection, path, title.getText().toString());
+			boolean starred = ca.entryIsStarred(currentCollection, path, title
+					.getText().toString());
 			star.setPressed(starred);
-			star.setImageResource(starred ? android.R.drawable.btn_star_big_on : android.R.drawable.btn_star_big_off);
+			star.setImageResource(starred ? android.R.drawable.btn_star_big_on
+					: android.R.drawable.btn_star_big_off);
 		}
 	}
 

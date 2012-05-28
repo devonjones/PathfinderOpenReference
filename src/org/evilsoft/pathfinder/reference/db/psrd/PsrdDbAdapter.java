@@ -247,10 +247,11 @@ public class PsrdDbAdapter {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id as _id,");
-		sb.append("  search_name AS " + SearchManager.SUGGEST_COLUMN_TEXT_1 + ",");
+		sb.append("  search_name AS " + SearchManager.SUGGEST_COLUMN_TEXT_1
+				+ ",");
 		sb.append("  search_name AS " + SearchManager.SUGGEST_COLUMN_QUERY);
 		sb.append(" FROM section_index");
-		if(constraint != null) {
+		if (constraint != null) {
 			sb.append(" WHERE search_name like ?");
 			args.add('%' + constraint + '%');
 		}
@@ -265,7 +266,7 @@ public class PsrdDbAdapter {
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT count(*)");
 		sb.append(" FROM section_index");
-		if(constraint != null) {
+		if (constraint != null) {
 			sb.append(" WHERE search_name like ?");
 			args.add('%' + constraint + '%');
 		}
@@ -292,7 +293,7 @@ public class PsrdDbAdapter {
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
-	
+
 	public Cursor search(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
@@ -302,7 +303,7 @@ public class PsrdDbAdapter {
 		sb.append("   ON s.parent_id = p.section_id");
 		sb.append("  INNER JOIN section_index i");
 		sb.append("   ON i.section_id = s.section_id");
-		if(constraint != null) {
+		if (constraint != null) {
 			sb.append(" WHERE i.search_name like ?");
 			args.add('%' + constraint + '%');
 		}

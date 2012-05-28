@@ -34,11 +34,11 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		openDb();
-		
+
 		Intent launchingIntent = getIntent();
 
 		String newUri;
-		boolean showList = false; //Phone only
+		boolean showList = false; // Phone only
 		if (Intent.ACTION_SEARCH.equals(launchingIntent.getAction())) {
 			String query = launchingIntent.getStringExtra(SearchManager.QUERY);
 			int count = dbAdapter.countSearchArticles(query);
@@ -63,7 +63,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			setUpList(newUri);
 			collectionList = setUpViewer(newUri, action);
 		} else {
-			if(showList) {
+			if (showList) {
 				setContentView(R.layout.details_phone_list);
 				setUpList(newUri);
 			} else {
@@ -81,12 +81,13 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	private Integer getCurrentCollection(List<Integer> collectionList) {
 		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-		Integer collectionId = settings.getInt("collectionId", ca.fetchFirstCollectionId());
-		if(!ca.collectionExists(collectionId.toString())) {
+		Integer collectionId = settings.getInt(
+				"collectionId", ca.fetchFirstCollectionId());
+		if (!ca.collectionExists(collectionId.toString())) {
 			collectionId = ca.fetchFirstCollectionId();
 		}
-		for(int i = 0; i < collectionList.size(); i++) {
-			if(collectionId == collectionList.get(i)) {
+		for (int i = 0; i < collectionList.size(); i++) {
+			if (collectionId == collectionList.get(i)) {
 				return i;
 			}
 		}
@@ -117,20 +118,24 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		SimpleCursorAdapter sca = new SimpleCursorAdapter(
 				this,
 				R.layout.actionbar_spinner,
-				curs, // this returns a cursor and won't be required automatically!
+				curs,
 				new String[] { "name" },
 				new int[] { android.R.id.text1 },
 				0);
-		action.setListNavigationCallbacks(sca, new ActionBar.OnNavigationListener() {
-			public boolean onNavigationItemSelected(int itemPosition, long itemId) {
-				viewer.setCharacter(itemId);
-				SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putInt("collectionId", ((Long)itemId).intValue());
-				editor.commit();
-				return true;
-			}
-		});
+		action.setListNavigationCallbacks(sca,
+				new ActionBar.OnNavigationListener() {
+					public boolean onNavigationItemSelected(
+							int itemPosition, long itemId) {
+						viewer.setCharacter(itemId);
+						SharedPreferences settings = getSharedPreferences(
+								PREFS_NAME, 0);
+						SharedPreferences.Editor editor = settings.edit();
+						editor.putInt(
+								"collectionId", ((Long) itemId).intValue());
+						editor.commit();
+						return true;
+					}
+				});
 		return retList;
 	}
 
@@ -143,14 +148,16 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			MenuItem searchItem = menu.findItem(R.id.menu_search);
 			searchItem.setVisible(true);
 			SearchView searchView = (SearchView) searchItem.getActionView();
-			if(PathfinderOpenReferenceActivity.isTabletLayout(this)) {
+			if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 				searchView.setIconifiedByDefault(false);
 			}
 			else {
 				searchView.setIconifiedByDefault(true);
 			}
-			SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-			searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+			SearchManager searchManager = (SearchManager) getSystemService(
+					Context.SEARCH_SERVICE);
+			searchView.setSearchableInfo(
+					searchManager.getSearchableInfo(getComponentName()));
 		}
 		return true;
 	}
@@ -228,7 +235,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	protected void onDestroy() {
 		super.onDestroy();
 		for (Cursor curs : cursorList) {
-			if(!curs.isClosed()) {
+			if (!curs.isClosed()) {
 				curs.close();
 			}
 		}
@@ -244,13 +251,15 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.menu_ogl:
-				Intent showContent = new Intent(getApplicationContext(), DetailsActivity.class);
+				Intent showContent = new Intent(getApplicationContext(),
+						DetailsActivity.class);
 				showContent.setData(Uri.parse("pfsrd://Ogl"));
 				startActivity(showContent);
 				return true;
 			case android.R.id.home:
 				// app icon in action bar clicked; go home
-				Intent intent = new Intent(this, PathfinderOpenReferenceActivity.class);
+				Intent intent = new Intent(this,
+						PathfinderOpenReferenceActivity.class);
 				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				startActivity(intent);
 				return true;

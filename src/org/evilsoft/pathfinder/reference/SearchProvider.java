@@ -33,25 +33,26 @@ public class SearchProvider extends ContentProvider {
 		} catch (IOException e) {
 			cont = false;
 		} catch (LimitedSpaceException e) {
-			// ignoring the big warning message that would normally accompany an out of space
-			// issue with database creation.  This is due to the fact that this code is
-			// called from global search and the use case for that error is a bit wonky
+			// ignoring the big warning message that would normally accompany an
+			// out of space issue with database creation. This is due to the
+			// fact that this code is called from global search and the use case
+			// for that error is a bit wonky
 			cont = false;
 		} finally {
 			userDbAdapter.close();
 		}
-		
+
 		Cursor c = null;
-		
-		if(cont) {
-			if(dbAdapter == null) {
+
+		if (cont) {
+			if (dbAdapter == null) {
 				dbAdapter = new PsrdDbAdapter(getContext());
 				dbAdapter.open();
 			}
-			
+
 			c = dbAdapter.autocomplete(uri.getLastPathSegment());
 		}
-		
+
 		return c;
 	}
 
