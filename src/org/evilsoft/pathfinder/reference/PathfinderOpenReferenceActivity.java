@@ -30,7 +30,7 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 	public static boolean isTabletLayout(Activity act) {
 		int smallest;
 		try {
-			if (Build.VERSION.SDK_INT >= 11) {
+			if (Build.VERSION.SDK_INT >= 13) {
 				smallest = act.getResources().getConfiguration().screenWidthDp;
 				if (act.getResources().getConfiguration().screenHeightDp < smallest) {
 					smallest = act.getResources().getConfiguration().screenHeightDp;
