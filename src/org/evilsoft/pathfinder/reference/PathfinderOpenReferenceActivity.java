@@ -46,7 +46,7 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 			}
 
 			if ((act.getResources().getConfiguration().screenLayout
-			& Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE) {
+			& Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_LARGE) {
 				if (smallest >= 750) {
 					return true;
 				}
