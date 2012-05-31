@@ -12,6 +12,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.database.CursorIndexOutOfBoundsException;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -81,14 +82,17 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	private Integer getCurrentCollection(List<Integer> collectionList) {
 		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-		Integer collectionId = settings.getInt(
-				"collectionId", ca.fetchFirstCollectionId());
-		if (!ca.collectionExists(collectionId.toString())) {
-			collectionId = ca.fetchFirstCollectionId();
-		}
-		for (int i = 0; i < collectionList.size(); i++) {
-			if (collectionId == collectionList.get(i)) {
-				return i;
+		Integer defaultColId = ca.fetchFirstCollectionId();
+		if(defaultColId != null) {
+			Integer collectionId = settings.getInt(
+					"collectionId", defaultColId);
+			if (!ca.collectionExists(collectionId.toString())) {
+				collectionId = ca.fetchFirstCollectionId();
+			}
+			for (int i = 0; i < collectionList.size(); i++) {
+				if (collectionId == collectionList.get(i)) {
+					return i;
+				}
 			}
 		}
 		return null;

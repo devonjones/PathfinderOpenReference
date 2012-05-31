@@ -8,6 +8,7 @@ import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.database.CursorIndexOutOfBoundsException;
 import android.database.SQLException;
 import android.util.Log;
 
@@ -43,6 +44,8 @@ public class CollectionAdapter {
 		try {
 			c.moveToFirst();
 			return c.getInt(0);
+		} catch(CursorIndexOutOfBoundsException cioobe) {
+			return null;
 		} finally {
 			c.close();
 		}
