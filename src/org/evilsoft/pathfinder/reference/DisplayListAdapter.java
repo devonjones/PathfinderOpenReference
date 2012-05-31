@@ -7,7 +7,6 @@ import android.widget.BaseAdapter;
 public abstract class DisplayListAdapter extends BaseAdapter {
 	protected Cursor c;
 	protected Context context;
-	protected int currIndex = -1;
 
 	public DisplayListAdapter(Context context, Cursor c) {
 		this.c = c;
@@ -33,16 +32,7 @@ public abstract class DisplayListAdapter extends BaseAdapter {
 	}
 
 	public void moveCursor(int index) {
-		if (index == 0) {
-			c.moveToFirst();
-		} else if (index + 1 == currIndex) {
-			c.moveToPrevious();
-		} else if (index - 1 == currIndex) {
-			c.moveToNext();
-		} else {
-			c.moveToPosition(index);
-		}
-		currIndex = index;
+		c.moveToPosition(index);
 	}
 
 	public abstract Object buildItem(Cursor c);
