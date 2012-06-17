@@ -28,12 +28,13 @@ public class TrapRenderer extends StatBlockRenderer {
 			curs.close();
 		}
 	}
-	
+
 	@Override
 	public String renderDetails() {
 		Cursor curs = dbAdapter.getTrapDetails(sectionId);
-		//0: cr, 1: trap_type, 2: perception, 3: disable_device, 4: duration, 5: effect,
-		//6: trigger, 7: reset
+		// 0: cr, 1: trap_type, 2: perception, 3: disable_device, 4: duration,
+		// 5: effect,
+		// 6: trigger, 7: reset
 		try {
 			StringBuffer sb = new StringBuffer();
 			boolean has_next = curs.moveToFirst();
@@ -57,5 +58,15 @@ public class TrapRenderer extends StatBlockRenderer {
 		} finally {
 			curs.close();
 		}
+	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
 	}
 }

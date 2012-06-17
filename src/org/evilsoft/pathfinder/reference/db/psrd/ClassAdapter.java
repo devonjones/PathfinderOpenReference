@@ -13,6 +13,18 @@ public class ClassAdapter {
 		this.dbAdapter = dbAdapter;
 	}
 
+	public Cursor fetchClassDetails(String section_id) {
+		List<String> args = new ArrayList<String>();
+		args.add(section_id);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT alignment, hit_die");
+		sb.append(" FROM class_details");
+		sb.append(" WHERE section_id = ?");
+		String sql = sb.toString();
+		return dbAdapter.database.rawQuery(sql,
+				PsrdDbAdapter.toStringArray(args));
+	}
+
 	public Cursor fetchClassTypes() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT DISTINCT subtype");
@@ -34,7 +46,8 @@ public class ClassAdapter {
 		sb.append("   AND subtype = ?");
 		sb.append(" ORDER BY name");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql,
+				PsrdDbAdapter.toStringArray(args));
 	}
 
 	public ArrayList<HashMap<String, Object>> createClassTypeList() {
@@ -45,7 +58,8 @@ public class ClassAdapter {
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
 				String classType = curs.getString(0);
-				String classTitle = classType.substring(0, 1).toUpperCase() + classType.substring(1) + " Classes";
+				String classTitle = classType.substring(0, 1).toUpperCase()
+						+ classType.substring(1) + " Classes";
 				child = new HashMap<String, Object>();
 				child.put("specificName", classTitle);
 				child.put("id", classType);

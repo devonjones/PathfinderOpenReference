@@ -15,6 +15,7 @@ public class AfflictionRenderer extends StatBlockRenderer {
 	public String renderTitle() {
 		return renderStatBlockTitle(name, newUri, top);
 	}
+
 	@Override
 	public String renderDetails() {
 		Cursor curs = dbAdapter.getAfflictionDetails(sectionId);
@@ -43,5 +44,15 @@ public class AfflictionRenderer extends StatBlockRenderer {
 		} finally {
 			curs.close();
 		}
+	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
 	}
 }

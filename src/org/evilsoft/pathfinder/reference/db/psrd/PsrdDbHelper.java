@@ -23,7 +23,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private final String DB_PATH;
 	private static String DB_NAME = "psrd.db";
 	private static int DB_CHUNKS = 17;
-	private static final Integer VERSION = 55561;
+	private static final Integer VERSION = 55562;
 	private SQLiteDatabase db;
 	private final Context context;
 

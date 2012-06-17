@@ -18,9 +18,15 @@ public abstract class Renderer {
 	public boolean suppressNextTitle;
 
 	public abstract String renderTitle();
+
 	public abstract String renderDetails();
 
-	public String render(Cursor curs, String newUri, int depth, boolean top, boolean suppressTitle) {
+	public abstract String renderFooter();
+
+	public abstract String renderHeader();
+
+	public String render(Cursor curs, String newUri, int depth, boolean top,
+			boolean suppressTitle) {
 		this.newUri = newUri;
 		this.depth = depth;
 		this.top = top;
@@ -35,9 +41,11 @@ public abstract class Renderer {
 		if (suppressTitle == false) {
 			sb.append(renderTitle());
 		}
+		sb.append(renderHeader());
 		sb.append(renderDetails());
 		sb.append(renderDescription());
 		sb.append(renderBody());
+		sb.append(renderFooter());
 		return sb.toString();
 	}
 
@@ -55,7 +63,7 @@ public abstract class Renderer {
 		StringBuffer sb = new StringBuffer();
 		if (body != null) {
 			int index = body.indexOf("img src=");
-			if(index > 0) {
+			if (index > 0) {
 				String start = body.substring(0, index);
 				String end = body.substring(index + 7);
 				int quote = end.indexOf('"');
@@ -64,7 +72,8 @@ public abstract class Renderer {
 				String link = end.substring(0, quote);
 				String[] parts = link.split("/");
 				end = end.substring(quote);
-				body = start + "img src=" + '"' + "file:///android_asset/" + parts[parts.length - 1] + end;
+				body = start + "img src=" + '"' + "file:///android_asset/"
+						+ parts[parts.length - 1] + end;
 			}
 			sb.append(body);
 		}
@@ -111,7 +120,8 @@ public abstract class Renderer {
 		return sb.toString();
 	}
 
-	public String renderTitle(String title, String newUri, int depth, boolean top) {
+	public String renderTitle(String title, String newUri, int depth,
+			boolean top) {
 		if (top) {
 			return "";
 		}

@@ -65,7 +65,8 @@ public class MonsterRenderer extends StatBlockRenderer {
 		return "";
 	}
 
-	private String renderCreatureHeader(Cursor curs, String desc, String source, String newUri, boolean top) {
+	private String renderCreatureHeader(Cursor curs, String desc,
+			String source, String newUri, boolean top) {
 		// 0:sex, 1:super_race, 2:level, 3:cr, 4:xp, 5:alignment, 6:size,
 		// 7:creature_type, 8:creature_subtype, 9:init, 10:senses, 11:aura,
 		StringBuffer sb = new StringBuffer();
@@ -192,5 +193,15 @@ public class MonsterRenderer extends StatBlockRenderer {
 		sb.append(addField("Organization", curs.getString(45)));
 		sb.append(addField("Treasure", curs.getString(46)));
 		return sb.toString();
+	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
 	}
 }

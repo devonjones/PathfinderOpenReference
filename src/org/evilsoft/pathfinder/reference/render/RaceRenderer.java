@@ -19,4 +19,14 @@ public class RaceRenderer extends Renderer {
 	public String renderDetails() {
 		return "";
 	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
+	}
 }

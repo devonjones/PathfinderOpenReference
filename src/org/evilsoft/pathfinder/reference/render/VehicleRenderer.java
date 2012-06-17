@@ -28,14 +28,17 @@ public class VehicleRenderer extends StatBlockRenderer {
 			curs.close();
 		}
 	}
-	
+
 	@Override
 	public String renderDetails() {
 		Cursor curs = dbAdapter.getVehicleDetails(sectionId);
-		//0: size, 1: vehicle_type, 2: squares, 3: cost, 4: ac, 5: hardness, 6: hp, 7: base_save,
-		//8: maximum_speed, 9: acceleration, 10: cmb, 11: cmd, 12: ramming_damage, 13: propulsion,
-		//14: driving_check, 15: forward_facing, 16: driving_device, 17: driving_space, 18: decks,
-		//19: deck, 20: weapons, 21: crew, 22: passengers
+		// 0: size, 1: vehicle_type, 2: squares, 3: cost, 4: ac, 5: hardness, 6:
+		// hp, 7: base_save,
+		// 8: maximum_speed, 9: acceleration, 10: cmb, 11: cmd, 12:
+		// ramming_damage, 13: propulsion,
+		// 14: driving_check, 15: forward_facing, 16: driving_device, 17:
+		// driving_space, 18: decks,
+		// 19: deck, 20: weapons, 21: crew, 22: passengers
 		try {
 			StringBuffer sb = new StringBuffer();
 			boolean has_next = curs.moveToFirst();
@@ -80,5 +83,15 @@ public class VehicleRenderer extends StatBlockRenderer {
 		} finally {
 			curs.close();
 		}
+	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
 	}
 }

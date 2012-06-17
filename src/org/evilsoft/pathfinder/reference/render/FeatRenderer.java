@@ -34,4 +34,14 @@ public class FeatRenderer extends Renderer {
 		sb.append("<BR>");
 		return sb.toString();
 	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
+	}
 }

@@ -15,14 +15,16 @@ public class SettlementRenderer extends StatBlockRenderer {
 	public String renderTitle() {
 		return renderStatBlockTitle(name, newUri, top);
 	}
-	
+
 	@Override
 	public String renderDetails() {
 		Cursor curs = dbAdapter.getSettlementDetails(sectionId);
-		//0: alignment, 1: settlement_type, 2: size, 3: corruption, 4: crime, 5: economy, 6: law,
-		//7: lore, 8: society, 9: qualities, 10: danger, 11: disadvantages, 12: government,
-		//13: population, 14: base_value, 15: purchase_limit, 16: spellcasting,
-		//17: minor_items, 18: medium_items, 19: major_items
+		// 0: alignment, 1: settlement_type, 2: size, 3: corruption, 4: crime,
+		// 5: economy, 6: law,
+		// 7: lore, 8: society, 9: qualities, 10: danger, 11: disadvantages, 12:
+		// government,
+		// 13: population, 14: base_value, 15: purchase_limit, 16: spellcasting,
+		// 17: minor_items, 18: medium_items, 19: major_items
 		try {
 			StringBuffer sb = new StringBuffer();
 			boolean has_next = curs.moveToFirst();
@@ -51,7 +53,8 @@ public class SettlementRenderer extends StatBlockRenderer {
 				sb.append(addField("Qualities", curs.getString(9)));
 				sb.append(addField("Danger", curs.getString(10), false));
 				sb.append(addField("Disadvantages", curs.getString(11)));
-				//TODO: Marketplace and Demographics reversed due to child rendering
+				// TODO: Marketplace and Demographics reversed due to child
+				// rendering
 				sb.append(renderStatBlockBreaker("Marketplace"));
 				sb.append(addField("Base Value", curs.getString(14), false));
 				sb.append(addField("Purchase Limit", curs.getString(15), false));
@@ -68,5 +71,15 @@ public class SettlementRenderer extends StatBlockRenderer {
 		} finally {
 			curs.close();
 		}
+	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
 	}
 }

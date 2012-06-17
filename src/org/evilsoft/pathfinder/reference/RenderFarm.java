@@ -11,6 +11,7 @@ import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.render.AbilityRenderer;
 import org.evilsoft.pathfinder.reference.render.AfflictionRenderer;
 import org.evilsoft.pathfinder.reference.render.AnimalCompanionRenderer;
+import org.evilsoft.pathfinder.reference.render.ClassRenderer;
 import org.evilsoft.pathfinder.reference.render.FeatRenderer;
 import org.evilsoft.pathfinder.reference.render.ItemRenderer;
 import org.evilsoft.pathfinder.reference.render.MonsterRenderer;
@@ -37,7 +38,8 @@ public class RenderFarm {
 	private TextView title;
 	private List<Renderer> renderPath;
 
-	public RenderFarm(PsrdDbAdapter dbAdapter, AssetManager assets, TextView title) {
+	public RenderFarm(PsrdDbAdapter dbAdapter, AssetManager assets,
+			TextView title) {
 		this.dbAdapter = dbAdapter;
 		this.assets = assets;
 		this.title = title;
@@ -50,6 +52,8 @@ public class RenderFarm {
 			return new AfflictionRenderer(this.dbAdapter);
 		} else if (type.equals("animal_companion")) {
 			return new AnimalCompanionRenderer(this.dbAdapter);
+		} else if (type.equals("class")) {
+			return new ClassRenderer(this.dbAdapter);
 		} else if (type.equals("creature")) {
 			return new MonsterRenderer(this.dbAdapter);
 		} else if (type.equals("feat")) {
@@ -132,7 +136,8 @@ public class RenderFarm {
 		return sb.toString();
 	}
 
-	public int getDepth(HashMap<Integer, Integer> depthMap, int section_id, int parent_id, int depth) {
+	public int getDepth(HashMap<Integer, Integer> depthMap, int section_id,
+			int parent_id, int depth) {
 		if (depthMap.containsKey(parent_id)) {
 			depth = depthMap.get(parent_id) + 1;
 			depthMap.put(section_id, depth);
@@ -142,12 +147,14 @@ public class RenderFarm {
 		return depth;
 	}
 
-	public String renderSectionText(Cursor curs, String title, int depth, String uri, boolean top) {
+	public String renderSectionText(Cursor curs, String title, int depth,
+			String uri, boolean top) {
 		String id = curs.getString(0);
 		String type = curs.getString(4);
 		String newUri = swapUrl(uri, title, id);
 		Renderer renderer = getRenderer(type);
-		String text = renderer.render(curs, newUri, depth, top, suppressTitle());
+		String text = renderer
+				.render(curs, newUri, depth, top, suppressTitle());
 		renderPath.add(renderer);
 		return text;
 	}

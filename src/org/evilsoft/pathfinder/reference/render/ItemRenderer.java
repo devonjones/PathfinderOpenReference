@@ -15,11 +15,12 @@ public class ItemRenderer extends StatBlockRenderer {
 	public String renderTitle() {
 		return renderStatBlockTitle(name, newUri, top);
 	}
-	
+
 	@Override
 	public String renderDetails() {
 		Cursor curs = dbAdapter.getItemDetails(sectionId);
-		//1: slot, 2: cl, 3: price, 4: weight, 5: requirements, 6: skill, 7: cr_increase, 8: cost
+		// 1: slot, 2: cl, 3: price, 4: weight, 5: requirements, 6: skill, 7:
+		// cr_increase, 8: cost
 		try {
 			StringBuffer sb = new StringBuffer();
 			boolean has_next = curs.moveToFirst();
@@ -29,7 +30,8 @@ public class ItemRenderer extends StatBlockRenderer {
 				sb.append(addField("Slot", curs.getString(1), false));
 				sb.append(addField("Price", curs.getString(3), false));
 				sb.append(addField("Weight", curs.getString(4)));
-				//TODO: Construction and Description reversed due to child rendering
+				// TODO: Construction and Description reversed due to child
+				// rendering
 				sb.append(renderStatBlockBreaker("Construction"));
 				sb.append(addField("Requirements", curs.getString(5), false));
 				sb.append(addField("Skill", curs.getString(6), false));
@@ -42,5 +44,15 @@ public class ItemRenderer extends StatBlockRenderer {
 		} finally {
 			curs.close();
 		}
+	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
 	}
 }

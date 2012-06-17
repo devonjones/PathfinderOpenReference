@@ -54,4 +54,14 @@ public class AbilityRenderer extends Renderer {
 			curs.close();
 		}
 	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
+	}
 }

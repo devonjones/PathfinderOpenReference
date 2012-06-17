@@ -1,7 +1,7 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.SkillAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.SkillAdapter;
 
 import android.database.Cursor;
 
@@ -57,5 +57,15 @@ public class SkillRenderer extends Renderer {
 		} finally {
 			curs.close();
 		}
+	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
 	}
 }

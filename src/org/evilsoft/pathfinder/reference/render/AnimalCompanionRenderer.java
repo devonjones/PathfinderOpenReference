@@ -56,4 +56,14 @@ public class AnimalCompanionRenderer extends StatBlockRenderer {
 			curs.close();
 		}
 	}
+
+	@Override
+	public String renderFooter() {
+		return "";
+	}
+
+	@Override
+	public String renderHeader() {
+		return "";
+	}
 }
