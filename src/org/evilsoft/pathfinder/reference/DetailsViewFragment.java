@@ -20,20 +20,24 @@ public class DetailsViewFragment extends SherlockFragment {
 	public DetailsViewFragment() {
 		super();
 	}
-	
+
 	public DetailsViewFragment(String newUrl) {
 		super();
 		this.startUrl = newUrl;
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.details_view, container, false);
 		TextView title = (TextView) v.findViewById(R.id.display_title);
 		ImageButton back = (ImageButton) v.findViewById(R.id.display_back);
 		ImageButton star = (ImageButton) v.findViewById(R.id.display_star);
+		ImageButton contentError = (ImageButton) v
+				.findViewById(R.id.content_error);
 		viewer = (WebView) v.findViewById(R.id.display_webview);
-		client = new DetailsWebViewClient(getActivity(), title, back, star);
+		client = new DetailsWebViewClient(getActivity(), title, back, star,
+				contentError);
 		viewer.setWebViewClient(client);
 		back.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {

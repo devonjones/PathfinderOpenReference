@@ -24,6 +24,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	private FragmentActivity act;
 	private AssetManager assets;
 	private TextView title;
+	private ImageButton contentError;
 	private ImageButton star;
 	private ImageButton back;
 	private String url;
@@ -32,11 +33,12 @@ public class DetailsWebViewClient extends WebViewClient {
 	ArrayList<HashMap<String, String>> path;
 
 	public DetailsWebViewClient(Activity act, TextView title, ImageButton back,
-			ImageButton star) {
+			ImageButton star, ImageButton contentError) {
 		this.act = (FragmentActivity) act;
 		this.title = title;
 		this.back = back;
 		this.star = star;
+		this.contentError = contentError;
 		assets = act.getApplicationContext().getAssets();
 		openDb();
 	}
@@ -147,6 +149,8 @@ public class DetailsWebViewClient extends WebViewClient {
 				refreshStarButtonState();
 			}
 		});
+		contentError.setOnClickListener(new ContentErrorReporter(this.act,
+				path, title.getText().toString()));
 		this.oldUrl = newUrl;
 		return true;
 	}
