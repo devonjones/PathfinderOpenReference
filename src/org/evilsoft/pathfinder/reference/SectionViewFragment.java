@@ -3,6 +3,7 @@ package org.evilsoft.pathfinder.reference;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
@@ -106,6 +107,13 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("SectionViewFragment.onItemClick: position:");
+		sb.append(position);
+		sb.append(", id:");
+		sb.append(id);
+		ErrorReporter e = ErrorReporter.getInstance();
+		e.putCustomData("LastClick", sb.toString());
 		if(empty) {
 			return;
 		}
@@ -118,6 +126,8 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 
 	public void updateUrl(String newUrl) {
 		Log.i(TAG, newUrl);
+		ErrorReporter e = ErrorReporter.getInstance();
+		e.putCustomData("LastSectionViewUrl", newUrl);
 		this.getListView().setOnItemClickListener(this);
 		this.getListView().setCacheColorHint(Color.WHITE);
 		currentUrl = newUrl;
@@ -232,6 +242,11 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 			.setView(edit)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
+					StringBuffer sb = new StringBuffer();
+					sb.append("SectionViewFragment.showNewCollectionDialog.onClick: OK: which:");
+					sb.append(which);
+					ErrorReporter e = ErrorReporter.getInstance();
+					e.putCustomData("LastClick", sb.toString());
 					CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
 					if (ca.addCollection(edit.getText().toString())) {
 						Toast.makeText(getActivity(), R.string.collection_entry_success, Toast.LENGTH_SHORT).show();
@@ -242,6 +257,8 @@ public class SectionViewFragment extends SherlockListFragment implements OnItemC
 				}
 			}).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
+					ErrorReporter e = ErrorReporter.getInstance();
+					e.putCustomData("LastClick", "SectionViewFragment.showNewCollectionDialog.onClick: Cancel");
 					refreshCollection();
 				}
 			}).show();

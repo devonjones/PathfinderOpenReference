@@ -1,5 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
+import org.acra.ErrorReporter;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -41,6 +43,8 @@ public class DetailsViewFragment extends SherlockFragment {
 		viewer.setWebViewClient(client);
 		back.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
+				ErrorReporter e = ErrorReporter.getInstance();
+				e.putCustomData("LastClick", "DetailsViewFragment.onCreateView.onClick");
 				client.back(viewer);
 			}
 		});

@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference;
 
 import java.io.IOException;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbHelper;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 import org.evilsoft.pathfinder.reference.utils.AvailableSpaceHandler;
@@ -39,6 +40,8 @@ public class StartActivity extends Activity {
 				.setCancelable(false)
 				.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
+						ErrorReporter e = ErrorReporter.getInstance();
+						e.putCustomData("LastClick", "StartActivity.onCreate.onClick: Ok");
 						StartActivity.this.finish();
 					}
 				});

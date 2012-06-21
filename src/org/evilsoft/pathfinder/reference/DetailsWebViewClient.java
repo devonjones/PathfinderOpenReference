@@ -3,6 +3,7 @@ package org.evilsoft.pathfinder.reference;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
@@ -67,6 +68,8 @@ public class DetailsWebViewClient extends WebViewClient {
 	@Override
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
 		Log.i(TAG, newUrl);
+		ErrorReporter e = ErrorReporter.getInstance();
+		e.putCustomData("LastWebViewUrl", newUrl);
 		if (newUrl.startsWith("http://")) {
 			newUrl = newUrl.replace("http://pfsrd://", "pfsrd://"); // Gingerbread-
 			newUrl = newUrl.replace("http://pfsrd//", "pfsrd://"); // Honeycomb+

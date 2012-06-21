@@ -3,6 +3,7 @@ package org.evilsoft.pathfinder.reference;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
@@ -74,6 +75,13 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("DetailsListFragment.onItemClick: position:");
+		sb.append(position);
+		sb.append(", id:");
+		sb.append(id);
+		ErrorReporter e = ErrorReporter.getInstance();
+		e.putCustomData("LastClick", sb.toString());
 		if(empty) {
 			return;
 		}
@@ -92,6 +100,8 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 	}
 
 	public void updateUrl(String newUrl) {
+		ErrorReporter e = ErrorReporter.getInstance();
+		e.putCustomData("LastDetailsListUrl", newUrl);
 		this.getListView().setOnItemClickListener(this);
 		this.getListView().setCacheColorHint(Color.WHITE);
 		if (currentUrl == newUrl) {

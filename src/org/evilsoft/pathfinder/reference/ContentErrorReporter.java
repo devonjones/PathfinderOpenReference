@@ -41,6 +41,7 @@ public class ContentErrorReporter implements View.OnClickListener {
 						e.putCustomData("IdPath", renderIdPath());
 						e.putCustomData("Title", title);
 						e.putCustomData("UserComment", value.toString());
+						e.putCustomData("LastClick", "ContentErrorReporter.onClick: Ok");
 						e.handleException(null);
 					}
 				});
@@ -48,7 +49,8 @@ public class ContentErrorReporter implements View.OnClickListener {
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog,
 							int whichButton) {
-						// Do nothing.
+						ErrorReporter e = ErrorReporter.getInstance();
+						e.putCustomData("LastClick", "ContentErrorReporter.onClick: Cancel");
 					}
 				});
 		alert.show();
