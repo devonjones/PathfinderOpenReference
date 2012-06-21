@@ -31,18 +31,10 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 		int smallest;
 		try {
 			if (Build.VERSION.SDK_INT >= 13) {
-				smallest = act.getResources().getConfiguration().screenWidthDp;
-				if (act.getResources().getConfiguration().screenHeightDp < smallest) {
-					smallest = act.getResources().getConfiguration().screenHeightDp;
-				}
+				smallest = getSmallestDimension(act);
 			}
 			else {
-				Display display = ((WindowManager) act
-						.getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
-				smallest = display.getWidth();
-				if (display.getHeight() < smallest) {
-					smallest = display.getHeight();
-				}
+				smallest = getSmallestDimensionDeprecated(act);
 			}
 
 			if ((act.getResources().getConfiguration().screenLayout
@@ -60,6 +52,25 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 			Log.e(TAG, "isTabletLayout failed with exception", nsfe);
 		}
 		return false;
+	}
+
+	public static int getSmallestDimension(Activity act) {
+		int smallest = act.getResources().getConfiguration().screenWidthDp;
+		if (act.getResources().getConfiguration().screenHeightDp < smallest) {
+			smallest = act.getResources().getConfiguration().screenHeightDp;
+		}
+		return smallest;
+	}
+
+	@SuppressWarnings("deprecation")
+	public static int getSmallestDimensionDeprecated(Activity act) {
+		Display display = ((WindowManager) act
+				.getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
+		int smallest = display.getWidth();
+		if (display.getHeight() < smallest) {
+			smallest = display.getHeight();
+		}
+		return smallest;
 	}
 
 	/** Called when the activity is first created. */
