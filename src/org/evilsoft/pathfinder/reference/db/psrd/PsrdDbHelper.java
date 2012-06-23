@@ -6,11 +6,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 import org.evilsoft.pathfinder.reference.utils.AvailableSpaceHandler;
 import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -23,7 +25,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private final String DB_PATH;
 	private static String DB_NAME = "psrd.db";
 	private static int DB_CHUNKS = 17;
-	private static final Integer VERSION = 55562;
+	private static final Integer VERSION = 55564;
 	private SQLiteDatabase db;
 	private final Context context;
 
@@ -53,6 +55,11 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	}
 
 	private void buildDatabase() throws IOException, LimitedSpaceException {
+		buildDatabase(true);
+	}
+
+	private void buildDatabase(boolean retry) throws IOException,
+			LimitedSpaceException {
 		// By calling this method and empty database will be created into
 		// the default system path
 		// of your application so we are going to be able to overwrite that
@@ -63,6 +70,12 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		} finally {
 			this.close();
 		}
+		if (retry) {
+			boolean dbExists = checkDatabase();
+			if (dbExists == false) {
+				buildDatabase(false);
+			}
+		}
 	}
 
 	private boolean checkDatabase() {
@@ -71,8 +84,10 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 			String myPath = DB_FILENAME;
 			checkDb = SQLiteDatabase.openDatabase(myPath, null,
 					SQLiteDatabase.NO_LOCALIZED_COLLATORS);
+			testDb(checkDb);
 		} catch (Exception e) {
-			// database does't exist yet.
+			// database does't exist yet, or is broken.
+			checkDb = null;
 		}
 		if (checkDb != null) {
 			checkDb.close();
@@ -188,32 +203,41 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		}
 
 		// see if external storage is mounted
-		if (Environment.getExternalStorageState().equals(
-				Environment.MEDIA_MOUNTED)) {
-			tmpFile = new File(context.getExternalFilesDir(null)
-					.getAbsolutePath(), DB_NAME);
-			if (tmpFile.exists()) {
-				// db already exists
-				retFile = tmpFile;
-			} else {
-				// see if there is enough space to hold the db on external
-				// storage
-				free = AvailableSpaceHandler.getAvailableSpaceInBytes(tmpFile
-						.getParent());
-
-				try {
-					dbSize = calcDatabaseSize();
-				} catch (IOException e) {
-					// unable to calculate database size
-					// proper exception handling for this will take place when
-					// the db is created
-					dbSize = 0;
-				}
-
-				if (dbSize < free) {
+		try {
+			if (Environment.getExternalStorageState().equals(
+					Environment.MEDIA_MOUNTED)) {
+				tmpFile = new File(context.getExternalFilesDir(null)
+						.getAbsolutePath(), DB_NAME);
+				if (tmpFile.exists()) {
+					// db already exists
 					retFile = tmpFile;
+				} else {
+					// see if there is enough space to hold the db on external
+					// storage
+					free = AvailableSpaceHandler
+							.getAvailableSpaceInBytes(tmpFile
+									.getParent());
+
+					try {
+						dbSize = calcDatabaseSize();
+					} catch (IOException e) {
+						// unable to calculate database size
+						// proper exception handling for this will take place
+						// when
+						// the db is created
+						dbSize = 0;
+					}
+
+					if (dbSize < free) {
+						retFile = tmpFile;
+					}
 				}
 			}
+		} catch (Exception e) {
+			// Trying SD broke, move to using internal
+			ErrorReporter.getInstance().putCustomData(
+					"Situation", "Failed to write to SD");
+			ErrorReporter.getInstance().handleException(e);
 		}
 
 		// check internal storage
@@ -235,6 +259,20 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		}
 
 		return retFile;
+	}
+
+	public void testDb(SQLiteDatabase database) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT count(*)");
+		sb.append(" FROM section_index");
+		String sql = sb.toString();
+		Cursor curs = database.rawQuery(sql, new String[0]);
+		try {
+			curs.moveToFirst();
+			curs.getInt(0);
+		} finally {
+			curs.close();
+		}
 	}
 
 	@Override
