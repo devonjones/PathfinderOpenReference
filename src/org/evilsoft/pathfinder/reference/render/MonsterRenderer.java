@@ -150,8 +150,7 @@ public class MonsterRenderer extends StatBlockRenderer {
 			StringBuffer sb = new StringBuffer();
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
-				String name = capitalizeString(curs.getString(0));
-				sb.append(addField(name, curs.getString(1)));
+				sb.append(addField(curs.getString(0), curs.getString(1)));
 				has_next = curs.moveToNext();
 			}
 			return sb.toString();
@@ -165,7 +164,7 @@ public class MonsterRenderer extends StatBlockRenderer {
 		// 29:strength, 30:dexterity, 31:constitution, 32:intelligence,
 		// 33:wisdom, 34:charisma,
 		// 35:base_attack, 36:cmb, 37:cmd, 38:feats, 39:skills,
-		// 40:racial_modifiers, 41:languages, 42:special_qualities, 43:gear,
+		// 40:racial_modifiers, 41:languages, 42:special_abilities, 43:gear,
 		sb.append(renderStatBlockBreaker("Statistics"));
 		sb.append(addField("Str", curs.getString(29), false));
 		sb.append(addField("Dex", curs.getString(30), false));
@@ -181,7 +180,7 @@ public class MonsterRenderer extends StatBlockRenderer {
 		sb.append(addField("Skills", curs.getString(39), rmExists));
 		sb.append(addField("Racial Modifiers", curs.getString(40)));
 		sb.append(addField("Languages", curs.getString(41)));
-		sb.append(addField("Special Qualities", curs.getString(42)));
+		sb.append(addField("Special Abilities", curs.getString(42)));
 		sb.append(addField("Gear", curs.getString(43)));
 		return sb.toString();
 	}
