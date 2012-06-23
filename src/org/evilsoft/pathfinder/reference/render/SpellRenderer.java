@@ -95,13 +95,18 @@ public class SpellRenderer extends Renderer {
 			}
 			String comma = "";
 			while (has_next) {
-				sb.append(comma);
-				sb.append(curs.getString(0));
+				String type = curs.getString(0);
 				String desc = curs.getString(1);
-				if (desc != null) {
-					sb.append(" (");
+				if (type != null) {
+					sb.append(comma);
+					sb.append(curs.getString(0));
+					if (desc != null) {
+						sb.append(" (");
+						sb.append(desc);
+						sb.append(")");
+					}
+				} else {
 					sb.append(desc);
-					sb.append(")");
 				}
 				comma = ", ";
 				has_next = curs.moveToNext();
