@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.render.AbilityRenderer;
 import org.evilsoft.pathfinder.reference.render.AfflictionRenderer;
@@ -27,6 +28,7 @@ import org.evilsoft.pathfinder.reference.render.VehicleRenderer;
 
 import android.content.res.AssetManager;
 import android.database.Cursor;
+import android.database.CursorIndexOutOfBoundsException;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -112,26 +114,31 @@ public class RenderFarm {
 		int depth = 0;
 		StringBuffer sb = new StringBuffer();
 		boolean has_next = curs.moveToFirst();
-		boolean top = true;
-		String topTitle = curs.getString(6);
-		// 0:section_id, 1:lft, 2:rgt, 3:parent_id, 4:type, 5:subtype, 6:name,
-		// 7:abbrev,
-		// 8:source, 9:description, 10:body
-		sb.append(renderCss());
-		this.title.setText(topTitle);
-		while (has_next) {
-			int sectionId = curs.getInt(0);
-			int parentId = curs.getInt(3);
-			String name = curs.getString(6);
-			depth = getDepth(depthMap, sectionId, parentId, depth);
-			titleMap.put(sectionId, name);
-			String title = name;
-			if (titleMap.containsKey(parentId)) {
-				title = titleMap.get(parentId);
+		try {
+			boolean top = true;
+			String topTitle = curs.getString(6);
+			// 0:section_id, 1:lft, 2:rgt, 3:parent_id, 4:type, 5:subtype, 6:name,
+			// 7:abbrev,
+			// 8:source, 9:description, 10:body
+			sb.append(renderCss());
+			this.title.setText(topTitle);
+			while (has_next) {
+				int sectionId = curs.getInt(0);
+				int parentId = curs.getInt(3);
+				String name = curs.getString(6);
+				depth = getDepth(depthMap, sectionId, parentId, depth);
+				titleMap.put(sectionId, name);
+				String title = name;
+				if (titleMap.containsKey(parentId)) {
+					title = titleMap.get(parentId);
+				}
+				sb.append(renderSectionText(curs, title, depth, uri, top));
+				has_next = curs.moveToNext();
+				top = false;
 			}
-			sb.append(renderSectionText(curs, title, depth, uri, top));
-			has_next = curs.moveToNext();
-			top = false;
+		} catch(CursorIndexOutOfBoundsException cioobe) {
+			ErrorReporter.getInstance().putCustomData("FailedURI", uri);
+			ErrorReporter.getInstance().handleException(cioobe);
 		}
 		return sb.toString();
 	}
