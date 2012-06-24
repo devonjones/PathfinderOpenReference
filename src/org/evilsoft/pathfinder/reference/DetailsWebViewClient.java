@@ -30,6 +30,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	private ImageButton back;
 	private String url;
 	private String oldUrl;
+	private boolean isTablet;
 	private long currentCollection;
 	ArrayList<HashMap<String, String>> path;
 
@@ -40,28 +41,36 @@ public class DetailsWebViewClient extends WebViewClient {
 		this.back = back;
 		this.star = star;
 		this.contentError = contentError;
+		this.isTablet = PathfinderOpenReferenceActivity.isTabletLayout(act);
 		assets = act.getApplicationContext().getAssets();
 		openDb();
 	}
 
 	public void back(WebView view) {
-		if (this.path.size() > 3) {
-			HashMap<String, String> parent = path.get(1);
-			String newUrl = RenderFarm.swapUrl(this.url, parent.get("name"),
-					parent.get("id"));
-			String[] parts = newUrl.split("\\/");
-			if (parts[2].equals("Search")) {
-				parts[2] = "Rules";
-				StringBuffer sb = new StringBuffer();
-				for (int i = 0; i < parts.length; i++) {
-					if (i != 0) {
-						sb.append("/");
+		try {
+			if (this.path.size() > 3) {
+				HashMap<String, String> parent = path.get(1);
+				String newUrl = RenderFarm.swapUrl(this.url,
+						parent.get("name"),
+						parent.get("id"));
+				String[] parts = newUrl.split("\\/");
+				if (parts[2].equals("Search")) {
+					parts[2] = "Rules";
+					StringBuffer sb = new StringBuffer();
+					for (int i = 0; i < parts.length; i++) {
+						if (i != 0) {
+							sb.append("/");
+						}
+						sb.append(parts[i]);
 					}
-					sb.append(parts[i]);
+					newUrl = sb.toString();
 				}
-				newUrl = sb.toString();
+				shouldOverrideUrlLoading(view, newUrl);
 			}
-			shouldOverrideUrlLoading(view, newUrl);
+		} catch (Exception e) {
+			ErrorReporter.getInstance().putCustomData(
+					"Situation", "Back button failed");
+			ErrorReporter.getInstance().handleException(e);
 		}
 	}
 
@@ -98,8 +107,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		// {id=10700, name=Rules: Core Rulebook}, {id=1, name=PFSRD}]
 		Log.i(TAG, newUrl);
 		String[] parts = newUrl.split("\\/");
-		if (parts[2].startsWith("Rules")
-				&& PathfinderOpenReferenceActivity.isTabletLayout(act)) {
+		if (parts[2].startsWith("Rules") && this.isTablet) {
 			DetailsListFragment list = (DetailsListFragment) act
 					.getSupportFragmentManager().findFragmentById(
 							R.id.details_list_fragment);
@@ -113,7 +121,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	public boolean renderPfsrd(WebView view, String newUrl) {
 		String[] parts = newUrl.split("\\/");
 		String html;
-		RenderFarm sa = new RenderFarm(dbAdapter, assets, title);
+		RenderFarm sa = new RenderFarm(dbAdapter, assets, title, isTablet);
 		if (parts[2].equals("Classes")) {
 			html = sa.render(parts[parts.length - 1], newUrl);
 		} else if (parts[2].equals("Feats")) {

@@ -149,7 +149,8 @@ public class PsrdDbAdapter {
 		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT node.section_id, node.lft, node.rgt, node.parent_id, node.type,");
-		sb.append("  node.subtype, node.name, node.abbrev, node.source, node.description, node.body");
+		sb.append("  node.subtype, node.name, node.abbrev, node.source, node.description, node.body,");
+		sb.append("  node.image, node.alt, node.create_index");
 		sb.append(" FROM sections AS node, sections AS parent");
 		sb.append(" WHERE node.lft BETWEEN parent.lft AND parent.rgt");
 		sb.append("  AND parent.section_id = ?");

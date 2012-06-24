@@ -39,12 +39,14 @@ public class RenderFarm {
 	private static String css;
 	private TextView title;
 	private List<Renderer> renderPath;
+	private boolean isTablet;
 
 	public RenderFarm(PsrdDbAdapter dbAdapter, AssetManager assets,
-			TextView title) {
+			TextView title, boolean isTablet) {
 		this.dbAdapter = dbAdapter;
 		this.assets = assets;
 		this.title = title;
+		this.isTablet = isTablet;
 	}
 
 	public Renderer getRenderer(String type) {
@@ -117,7 +119,8 @@ public class RenderFarm {
 		try {
 			boolean top = true;
 			String topTitle = curs.getString(6);
-			// 0:section_id, 1:lft, 2:rgt, 3:parent_id, 4:type, 5:subtype, 6:name,
+			// 0:section_id, 1:lft, 2:rgt, 3:parent_id, 4:type, 5:subtype,
+			// 6:name,
 			// 7:abbrev,
 			// 8:source, 9:description, 10:body
 			sb.append(renderCss());
@@ -136,7 +139,7 @@ public class RenderFarm {
 				has_next = curs.moveToNext();
 				top = false;
 			}
-		} catch(CursorIndexOutOfBoundsException cioobe) {
+		} catch (CursorIndexOutOfBoundsException cioobe) {
 			ErrorReporter.getInstance().putCustomData("FailedURI", uri);
 			ErrorReporter.getInstance().handleException(cioobe);
 		}
@@ -161,7 +164,7 @@ public class RenderFarm {
 		String newUri = swapUrl(uri, title, id);
 		Renderer renderer = getRenderer(type);
 		String text = renderer
-				.render(curs, newUri, depth, top, suppressTitle());
+				.render(curs, newUri, depth, top, suppressTitle(), isTablet);
 		renderPath.add(renderer);
 		return text;
 	}

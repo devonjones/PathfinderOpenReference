@@ -32,7 +32,8 @@ public class FeatListAdapter extends DisplayListAdapter {
 			layout = R.layout.feat_main_list_item;
 		}
 		if (V == null) {
-			LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			LayoutInflater vi = (LayoutInflater) context
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			V = vi.inflate(layout, null);
 		}
 
@@ -41,14 +42,20 @@ public class FeatListAdapter extends DisplayListAdapter {
 		TextView featTypes = (TextView) V.findViewById(R.id.feat_list_type);
 		featTypes.setText(c.getString(4));
 		if (mainList) {
-			TextView description = (TextView) V.findViewById(R.id.feat_list_description);
+			TextView description = (TextView) V
+					.findViewById(R.id.feat_list_description);
 			description.setText(c.getString(2));
+			TextView prereqs = (TextView) V
+					.findViewById(R.id.feat_list_prereqs);
+			TextView prereqsTitle = (TextView) V
+					.findViewById(R.id.feat_list_prereqs_title);
 			String p = c.getString(3);
 			if (p != null) {
-				TextView prereqs = (TextView) V.findViewById(R.id.feat_list_prereqs);
 				prereqs.setText(p);
-				TextView prereqsTitle = (TextView) V.findViewById(R.id.feat_list_prereqs_title);
 				prereqsTitle.setText("Prerequisites: ");
+			} else {
+				prereqs.setText("");
+				prereqsTitle.setText("");
 			}
 		}
 		return V;
@@ -63,7 +70,8 @@ public class FeatListAdapter extends DisplayListAdapter {
 		return buildFeat(section_id, name, description, prereqs, featTypes);
 	}
 
-	public FeatListItem buildFeat(int section_id, String name, String description, String prereqs, String featTypes) {
+	public FeatListItem buildFeat(int section_id, String name,
+			String description, String prereqs, String featTypes) {
 		FeatListItem fla = new FeatListItem();
 		fla.setSectionId(section_id);
 		fla.setName(name);

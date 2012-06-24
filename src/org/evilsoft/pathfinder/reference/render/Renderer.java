@@ -9,12 +9,16 @@ public abstract class Renderer {
 	public String type;
 	public String subtype;
 	public String name;
+	public String abbrev;
 	public String source;
 	public String desc;
 	public String body;
+	public String image;
+	public String alt;
 	public String newUri;
 	public int depth;
 	public boolean top;
+	public boolean isTablet;
 	public boolean suppressNextTitle;
 
 	public abstract String renderTitle();
@@ -26,26 +30,51 @@ public abstract class Renderer {
 	public abstract String renderHeader();
 
 	public String render(Cursor curs, String newUri, int depth, boolean top,
-			boolean suppressTitle) {
+			boolean suppressTitle, boolean isTablet) {
 		this.newUri = newUri;
 		this.depth = depth;
 		this.top = top;
+		this.isTablet = isTablet;
 		this.sectionId = curs.getString(0);
 		this.type = curs.getString(4);
 		this.subtype = curs.getString(5);
 		this.name = curs.getString(6);
+		this.abbrev = curs.getString(7);
 		this.source = curs.getString(8);
 		this.desc = curs.getString(9);
 		this.body = curs.getString(10);
+		this.image = curs.getString(11);
+		this.alt = curs.getString(12);
 		StringBuffer sb = new StringBuffer();
 		if (suppressTitle == false) {
 			sb.append(renderTitle());
 		}
+		sb.append(renderImage());
 		sb.append(renderHeader());
 		sb.append(renderDetails());
 		sb.append(renderDescription());
 		sb.append(renderBody());
 		sb.append(renderFooter());
+		return sb.toString();
+	}
+
+	public String renderImage() {
+		StringBuffer sb = new StringBuffer();
+		if (image != null) {
+			if (isTablet) {
+				sb.append("<img style='float: right' src='file:///android_asset/");
+				sb.append(image);
+				sb.append("' alt='");
+				sb.append(alt);
+				sb.append("'>");
+			} else {
+				sb.append("<img src='file:///android_asset/");
+				sb.append(image);
+				sb.append("' alt='");
+				sb.append(alt);
+				sb.append("'>");
+			}
+		}
 		return sb.toString();
 	}
 
@@ -142,6 +171,8 @@ public abstract class Renderer {
 			}
 			sb.append(tags[1]);
 			sb.append("\n");
+		} else {
+			sb.append("<br>\n");
 		}
 		return sb.toString();
 	}
@@ -169,5 +200,21 @@ public abstract class Renderer {
 			tags[1] = ":</I>";
 		}
 		return tags;
+	}
+
+	public static String capitalizeString(String string) {
+		char[] chars = string.toLowerCase().toCharArray();
+		boolean found = false;
+		for (int i = 0; i < chars.length; i++) {
+			if (!found && Character.isLetter(chars[i])) {
+				chars[i] = Character.toUpperCase(chars[i]);
+				found = true;
+			} else if (Character.isWhitespace(chars[i])
+					|| chars[i] == '.' || chars[i] == '\'' || chars[i] == '-') {
+				// You can add other chars here
+				found = false;
+			}
+		}
+		return String.valueOf(chars);
 	}
 }
