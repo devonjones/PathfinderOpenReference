@@ -31,7 +31,10 @@ public class SpellRenderer extends Renderer {
 		sb.append(renderSpellDetails(sectionId));
 		sb.append("<B>Source: </B>");
 		sb.append(source);
-		sb.append("<BR>");
+		sb.append("<BR>\n");
+		sb.append("<B>Summary: </B>");
+		sb.append(desc);
+		sb.append("<BR>\n");
 		return sb.toString();
 	}
 
@@ -133,6 +136,11 @@ public class SpellRenderer extends Renderer {
 		} finally {
 			curs.close();
 		}
+	}
+
+	@Override
+	public String renderDescription() {
+		return "";
 	}
 
 	@Override

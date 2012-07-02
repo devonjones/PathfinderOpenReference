@@ -52,6 +52,8 @@ public class MonsterRenderer extends StatBlockRenderer {
 				sb.append(renderCreatureDefense(curs));
 				sb.append(renderCreatureOffense(curs));
 				sb.append(renderCreatureSpells(sectionId));
+				// 48:bloodline
+				sb.append(addField("Bloodline", curs.getString(48)));
 				sb.append(renderCreatureStatistics(curs));
 				sb.append(renderCreatureEcology(curs));
 			}
@@ -113,8 +115,11 @@ public class MonsterRenderer extends StatBlockRenderer {
 		// 12:ac, 13:hp, 14:fortitude, 15:reflex, 16:will,
 		// 17:defensive_abilities, 18:dr, 19:resist, 20:immune,
 		// 21:sr, 22:weakness,
+		// 45:hit_dice, 46:natural_armor
 		sb.append(renderStatBlockBreaker("Defense"));
+		sb.append(addField("Natural Armor", curs.getString(46), false));
 		sb.append(addField("AC", curs.getString(12)));
+		sb.append(addField("Hit Dice", curs.getString(45), false));
 		sb.append(addField("HP", curs.getString(13)));
 		sb.append(addField("Fort", curs.getString(14), false));
 		sb.append(addField("Ref", curs.getString(15), false));
@@ -133,12 +138,14 @@ public class MonsterRenderer extends StatBlockRenderer {
 		StringBuffer sb = new StringBuffer();
 		// 23:speed, 24:melee, 25:ranged, 26:space, 27:reach,
 		// 28:special_attacks,
+		// 47:breath_weapon
 		sb.append(renderStatBlockBreaker("Offense"));
 		sb.append(addField("Speed", curs.getString(23)));
 		sb.append(addField("Melee", curs.getString(24)));
 		sb.append(addField("Ranged", curs.getString(25)));
 		sb.append(addField("Space", curs.getString(26)));
 		sb.append(addField("Reach", curs.getString(27)));
+		sb.append(addField("Breath Weapon", curs.getString(47), false));
 		sb.append(addField("Special Attacks", curs.getString(28)));
 		return sb.toString();
 	}

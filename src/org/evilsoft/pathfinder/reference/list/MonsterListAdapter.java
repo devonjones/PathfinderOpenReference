@@ -32,20 +32,28 @@ public class MonsterListAdapter extends DisplayListAdapter {
 			layout = R.layout.monster_main_list_item;
 		}
 		if (V == null) {
-			LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			LayoutInflater vi = (LayoutInflater) context
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			V = vi.inflate(layout, null);
 		}
 		TextView title = (TextView) V.findViewById(R.id.monster_list_name);
 		title.setText(c.getString(1));
-		TextView monsterType = (TextView) V.findViewById(R.id.monster_list_type);
+		TextView monsterType = (TextView) V
+				.findViewById(R.id.monster_list_type);
 		monsterType.setText(createTypeLine(c));
 		if (mainList) {
 			String description = c.getString(2);
+			TextView descTitle = (TextView) V
+					.findViewById(R.id.monster_list_description_title);
+			TextView tDescription = (TextView) V
+					.findViewById(R.id.monster_list_description);
 			if (description != null && !description.equals("")) {
-				TextView descTitle = (TextView) V.findViewById(R.id.monster_list_description_title);
 				descTitle.setText("Description: ");
-				TextView tDescription = (TextView) V.findViewById(R.id.monster_list_description);
 				tDescription.setText(c.getString(2));
+			}
+			else {
+				descTitle.setText("");
+				tDescription.setText("");
 			}
 		}
 		return V;
@@ -95,11 +103,14 @@ public class MonsterListAdapter extends DisplayListAdapter {
 		String xp = c.getString(6);
 		String size = c.getString(7);
 		String alignment = c.getString(8);
-		return buildMonster(section_id, name, description, creatureType, creatureSubtype, cr, xp, size, alignment);
+		return buildMonster(section_id, name, description, creatureType,
+				creatureSubtype, cr, xp, size, alignment);
 	}
 
-	public MonsterListItem buildMonster(int section_id, String name, String description, String creatureType,
-			String creatureSubtype, String cr, String xp, String size, String alignment) {
+	public MonsterListItem buildMonster(int section_id, String name,
+			String description, String creatureType,
+			String creatureSubtype, String cr, String xp, String size,
+			String alignment) {
 		MonsterListItem mla = new MonsterListItem();
 		mla.setSectionId(section_id);
 		mla.setName(name);
