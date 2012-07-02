@@ -131,7 +131,11 @@ public class MonsterRenderer extends StatBlockRenderer {
 		sb.append(addField("SR", curs.getString(21), false));
 		sb.append("<br>\n");
 		sb.append(addField("Weakness", curs.getString(22)));
-		return sb.toString();
+		String retval = sb.toString();
+		if (retval.equals(renderStatBlockBreaker("Defense"))) {
+			return "";
+		}
+		return retval;
 	}
 
 	private String renderCreatureOffense(Cursor curs) {
@@ -147,7 +151,11 @@ public class MonsterRenderer extends StatBlockRenderer {
 		sb.append(addField("Reach", curs.getString(27)));
 		sb.append(addField("Breath Weapon", curs.getString(47), false));
 		sb.append(addField("Special Attacks", curs.getString(28)));
-		return sb.toString();
+		String retval = sb.toString();
+		if (retval.equals(renderStatBlockBreaker("Offense"))) {
+			return "";
+		}
+		return retval;
 	}
 
 	private String renderCreatureSpells(String sectionId) {
@@ -190,7 +198,11 @@ public class MonsterRenderer extends StatBlockRenderer {
 		sb.append(addField("Languages", curs.getString(41)));
 		sb.append(addField("Special Qualities", curs.getString(42)));
 		sb.append(addField("Gear", curs.getString(43)));
-		return sb.toString();
+		String retval = sb.toString();
+		if (retval.equals(renderStatBlockBreaker("Statistics"))) {
+			return "";
+		}
+		return retval;
 	}
 
 	private String renderCreatureEcology(Cursor curs) {
@@ -200,7 +212,11 @@ public class MonsterRenderer extends StatBlockRenderer {
 		sb.append(addField("Environment", curs.getString(44)));
 		sb.append(addField("Organization", curs.getString(45)));
 		sb.append(addField("Treasure", curs.getString(46)));
-		return sb.toString();
+		String retval = sb.toString();
+		if (retval.equals(renderStatBlockBreaker("Ecology"))) {
+			return "";
+		}
+		return retval;
 	}
 
 	@Override
