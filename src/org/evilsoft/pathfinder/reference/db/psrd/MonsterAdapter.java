@@ -66,7 +66,7 @@ public class MonsterAdapter {
 		sb.append("  strength, dexterity, constitution, intelligence, wisdom, charisma,");
 		sb.append("  base_attack, cmb, cmd, feats, skills, racial_modifiers, languages, special_qualities, gear,");
 		sb.append("  environment, organization, treasure,");
-		sb.append("  hit_dice, natural_armor, breath_weapon, bloodline");
+		sb.append("  hit_dice, natural_armor, breath_weapon");
 		sb.append(" FROM creature_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
