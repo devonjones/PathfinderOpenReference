@@ -206,30 +206,31 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 		try {
 			if (Environment.getExternalStorageState().equals(
 					Environment.MEDIA_MOUNTED)) {
-				tmpFile = new File(context.getExternalFilesDir(null)
-						.getAbsolutePath(), DB_NAME);
-				if (tmpFile.exists()) {
-					// db already exists
-					retFile = tmpFile;
-				} else {
-					// see if there is enough space to hold the db on external
-					// storage
-					free = AvailableSpaceHandler
-							.getAvailableSpaceInBytes(tmpFile
-									.getParent());
-
-					try {
-						dbSize = calcDatabaseSize();
-					} catch (IOException e) {
-						// unable to calculate database size
-						// proper exception handling for this will take place
-						// when
-						// the db is created
-						dbSize = 0;
-					}
-
-					if (dbSize < free) {
+				tmpFile = new File(context.getExternalFilesDir(null), DB_NAME);
+				if (tmpFile != null) {
+					if (tmpFile.exists()) {
+						// db already exists
 						retFile = tmpFile;
+					} else {
+						// see if there is enough space to hold the db on
+						// external storage
+						free = AvailableSpaceHandler
+								.getAvailableSpaceInBytes(tmpFile.getParent());
+
+						try {
+							dbSize = calcDatabaseSize();
+						} catch (IOException e) {
+							// unable to calculate database size
+							// proper exception handling for this will take
+							// place
+							// when
+							// the db is created
+							dbSize = 0;
+						}
+
+						if (dbSize < free) {
+							retFile = tmpFile;
+						}
 					}
 				}
 			}
