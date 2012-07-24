@@ -3,6 +3,7 @@ package org.evilsoft.pathfinder.reference;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
@@ -54,6 +55,7 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 		return false;
 	}
 
+	@SuppressLint("NewApi")
 	public static int getSmallestDimension(Activity act) {
 		int smallest = act.getResources().getConfiguration().screenWidthDp;
 		if (act.getResources().getConfiguration().screenHeightDp < smallest) {
@@ -85,14 +87,15 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 		}
 	}
 
+	@SuppressLint("NewApi")
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = this.getSupportMenuInflater();
 		inflater.inflate(R.menu.main_menu, menu);
+		MenuItem searchItem = menu.findItem(R.id.menu_search);
+		searchItem.setVisible(true);
 		if (Build.VERSION.SDK_INT >= 11) {
-			MenuItem searchItem = menu.findItem(R.id.menu_search);
-			searchItem.setVisible(true);
 			SearchView searchView = (SearchView) searchItem.getActionView();
 			if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 				searchView.setIconifiedByDefault(false);
@@ -132,6 +135,9 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 							DetailsActivity.class);
 					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
 					startActivity(showContent);
+					return true;
+				case R.id.menu_search:
+					this.onSearchRequested();
 					return true;
 				default:
 					return super.onOptionsItemSelected(item);

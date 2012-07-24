@@ -2,7 +2,8 @@ package org.evilsoft.pathfinder.reference.list;
 
 public class CollectionItemListItem {
 	private String name;
-	private String sectionId;
+	private String collectionValueId;
+	private String url;
 
 	public String getName() {
 		return name;
@@ -12,11 +13,19 @@ public class CollectionItemListItem {
 		this.name = name;
 	}
 
-	public void setSectionId(String characterId) {
-		this.sectionId = characterId;
+	public void setCollectionValueId(String collectionValueId) {
+		this.collectionValueId = collectionValueId;
 	}
 
-	public String getSectionId() {
-		return sectionId;
+	public String getCollectionValueId() {
+		return collectionValueId;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 }

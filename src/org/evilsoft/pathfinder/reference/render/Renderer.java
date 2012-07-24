@@ -45,6 +45,7 @@ public abstract class Renderer {
 		this.body = curs.getString(10);
 		this.image = curs.getString(11);
 		this.alt = curs.getString(12);
+		localSetValues();
 		StringBuffer sb = new StringBuffer();
 		if (suppressTitle == false) {
 			sb.append(renderTitle());
@@ -56,6 +57,9 @@ public abstract class Renderer {
 		sb.append(renderBody());
 		sb.append(renderFooter());
 		return sb.toString();
+	}
+
+	public void localSetValues() {
 	}
 
 	public String renderImage() {
@@ -160,13 +164,13 @@ public abstract class Renderer {
 		if (title != null) {
 			sb.append("\n");
 			sb.append(tags[0]);
-			if (depth >= 1) {
-				sb.append("<a href=\"http://");
+			if (depth >= 1 && newUri != null) {
+				sb.append("<a href=\"");
 				sb.append(newUri);
 				sb.append("\">");
 			}
 			sb.append(title);
-			if (depth >= 1) {
+			if (depth >= 1 && newUri != null) {
 				sb.append("</a>");
 			}
 			sb.append(tags[1]);

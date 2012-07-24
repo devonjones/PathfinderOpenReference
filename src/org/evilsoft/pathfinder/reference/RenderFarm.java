@@ -15,6 +15,7 @@ import org.evilsoft.pathfinder.reference.render.AnimalCompanionRenderer;
 import org.evilsoft.pathfinder.reference.render.ClassRenderer;
 import org.evilsoft.pathfinder.reference.render.FeatRenderer;
 import org.evilsoft.pathfinder.reference.render.ItemRenderer;
+import org.evilsoft.pathfinder.reference.render.LinkRenderer;
 import org.evilsoft.pathfinder.reference.render.MonsterRenderer;
 import org.evilsoft.pathfinder.reference.render.RaceRenderer;
 import org.evilsoft.pathfinder.reference.render.Renderer;
@@ -49,68 +50,53 @@ public class RenderFarm {
 		this.isTablet = isTablet;
 	}
 
-	public Renderer getRenderer(String type) {
+	public static Renderer getRenderer(String type, PsrdDbAdapter dbAdapter) {
 		if (type.equals("ability")) {
-			return new AbilityRenderer(this.dbAdapter);
+			return new AbilityRenderer(dbAdapter);
 		} else if (type.equals("affliction")) {
-			return new AfflictionRenderer(this.dbAdapter);
+			return new AfflictionRenderer(dbAdapter);
 		} else if (type.equals("animal_companion")) {
-			return new AnimalCompanionRenderer(this.dbAdapter);
+			return new AnimalCompanionRenderer(dbAdapter);
 		} else if (type.equals("class")) {
-			return new ClassRenderer(this.dbAdapter);
+			return new ClassRenderer(dbAdapter);
 		} else if (type.equals("creature")) {
-			return new MonsterRenderer(this.dbAdapter);
+			return new MonsterRenderer(dbAdapter);
 		} else if (type.equals("feat")) {
-			return new FeatRenderer(this.dbAdapter);
+			return new FeatRenderer(dbAdapter);
 		} else if (type.equals("item")) {
-			return new ItemRenderer(this.dbAdapter);
+			return new ItemRenderer(dbAdapter);
+		} else if (type.equals("link")) {
+			return new LinkRenderer(dbAdapter);
 		} else if (type.equals("race")) {
-			return new RaceRenderer(this.dbAdapter);
+			return new RaceRenderer(dbAdapter);
 		} else if (type.equals("settlement")) {
-			return new SettlementRenderer(this.dbAdapter);
+			return new SettlementRenderer(dbAdapter);
 		} else if (type.equals("skill")) {
-			return new SkillRenderer(this.dbAdapter);
+			return new SkillRenderer(dbAdapter);
 		} else if (type.equals("spell")) {
-			return new SpellRenderer(this.dbAdapter);
+			return new SpellRenderer(dbAdapter);
 		} else if (type.equals("table")) {
-			return new TableRenderer(this.dbAdapter);
+			return new TableRenderer(dbAdapter);
 		} else if (type.equals("trap")) {
-			return new TrapRenderer(this.dbAdapter);
+			return new TrapRenderer(dbAdapter);
 		} else if (type.equals("vehicle")) {
-			return new VehicleRenderer(this.dbAdapter);
+			return new VehicleRenderer(dbAdapter);
 		} else {
-			return new SectionRenderer(this.dbAdapter);
+			return new SectionRenderer(dbAdapter);
 		}
 	}
 
-	public static String swapUrl(String uri, String title, String id) {
-		String[] parts = uri.split("\\/");
-		StringBuffer sb = new StringBuffer();
-		for (int i = 0; i < parts.length - 2; i++) {
-			String part = parts[i];
-			if (i > 0) {
-				part = part.replace(':', '_');
-			}
-			sb.append(part);
-			sb.append('/');
-		}
-		sb.append(title);
-		sb.append("/");
-		sb.append(id);
-		return sb.toString();
-	}
-
-	public String render(String sectionId, String uri) {
+	public String render(String sectionId, String inUrl) {
 		Cursor curs = this.dbAdapter.fetchFullSection(sectionId);
 		try {
 			renderPath = new ArrayList<Renderer>();
-			return renderSection(curs, uri);
+			return renderSection(curs, inUrl);
 		} finally {
 			curs.close();
 		}
 	}
 
-	public String renderSection(Cursor curs, String uri) {
+	public String renderSection(Cursor curs, String inUrl) {
 		HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 		HashMap<Integer, String> titleMap = new HashMap<Integer, String>();
 		int depth = 0;
@@ -120,27 +106,32 @@ public class RenderFarm {
 			boolean top = true;
 			String topTitle = curs.getString(6);
 			// 0:section_id, 1:lft, 2:rgt, 3:parent_id, 4:type, 5:subtype,
-			// 6:name,
-			// 7:abbrev,
+			// 6:name, 7:abbrev,
 			// 8:source, 9:description, 10:body
+			// 11:image, 12:alt, 13:create_index, 14:url
+
 			sb.append(renderCss());
 			this.title.setText(topTitle);
 			while (has_next) {
 				int sectionId = curs.getInt(0);
 				int parentId = curs.getInt(3);
 				String name = curs.getString(6);
+				String abbrev = curs.getString(7);
 				depth = getDepth(depthMap, sectionId, parentId, depth);
 				titleMap.put(sectionId, name);
 				String title = name;
+				if (abbrev != null && !abbrev.equals("")) {
+					title += " (" + abbrev + ")";
+				}
 				if (titleMap.containsKey(parentId)) {
 					title = titleMap.get(parentId);
 				}
-				sb.append(renderSectionText(curs, title, depth, uri, top));
+				sb.append(renderSectionText(curs, title, depth, top));
 				has_next = curs.moveToNext();
 				top = false;
 			}
 		} catch (CursorIndexOutOfBoundsException cioobe) {
-			ErrorReporter.getInstance().putCustomData("FailedURI", uri);
+			ErrorReporter.getInstance().putCustomData("FailedURI", inUrl);
 			ErrorReporter.getInstance().handleException(cioobe);
 		}
 		return sb.toString();
@@ -158,13 +149,12 @@ public class RenderFarm {
 	}
 
 	public String renderSectionText(Cursor curs, String title, int depth,
-			String uri, boolean top) {
-		String id = curs.getString(0);
+			boolean top) {
 		String type = curs.getString(4);
-		String newUri = swapUrl(uri, title, id);
-		Renderer renderer = getRenderer(type);
+		String uri = curs.getString(14);
+		Renderer renderer = getRenderer(type, dbAdapter);
 		String text = renderer
-				.render(curs, newUri, depth, top, suppressTitle(), isTablet);
+				.render(curs, uri, depth, top, suppressTitle(), isTablet);
 		renderPath.add(renderer);
 		return text;
 	}

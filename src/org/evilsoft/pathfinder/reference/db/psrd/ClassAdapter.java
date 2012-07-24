@@ -38,12 +38,14 @@ public class ClassAdapter {
 
 	public Cursor fetchClassList(String classType) {
 		List<String> args = new ArrayList<String>();
-		args.add(classType);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id, name");
 		sb.append(" FROM sections");
 		sb.append("  WHERE type = 'class'");
-		sb.append("   AND subtype = ?");
+		if (classType != null) {
+			args.add(classType);
+			sb.append("   AND subtype = ?");
+		}
 		sb.append(" ORDER BY name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,

@@ -62,12 +62,13 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		List<Integer> collectionList = new ArrayList<Integer>();
 		if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 			setContentView(R.layout.details);
-			setUpList(newUri);
 			collectionList = setUpViewer(newUri, action);
 		} else {
 			if (showList) {
 				setContentView(R.layout.details_phone_list);
-				setUpList(newUri);
+				DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
+						.findFragmentById(R.id.details_list_fragment);
+				list.updateUrl(newUri);
 			} else {
 				setContentView(R.layout.details_phone);
 				collectionList = setUpViewer(newUri, action);
@@ -84,7 +85,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
 		Integer defaultColId = ca.fetchFirstCollectionId();
-		if(defaultColId != null) {
+		if (defaultColId != null) {
 			Integer collectionId = settings.getInt(
 					"collectionId", defaultColId);
 			if (!ca.collectionExists(collectionId.toString())) {
@@ -99,16 +100,10 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		return null;
 	}
 
-	private void setUpList(String newUri) {
-		DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
-				.findFragmentById(R.id.details_list_fragment);
-		String uri = buildDetailsListUri(newUri);
-		list.updateUrl(uri);
-	}
-
 	private List<Integer> setUpViewer(String newUri, ActionBar action) {
 		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.details_view_fragment);
+
 		viewer.updateUrl(newUri);
 		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
 		Cursor curs = ca.fetchCollectionList();
@@ -157,9 +152,9 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = this.getSupportMenuInflater();
 		inflater.inflate(R.menu.main_menu, menu);
+		MenuItem searchItem = menu.findItem(R.id.menu_search);
+		searchItem.setVisible(true);
 		if (Build.VERSION.SDK_INT >= 11) {
-			MenuItem searchItem = menu.findItem(R.id.menu_search);
-			searchItem.setVisible(true);
 			SearchView searchView = (SearchView) searchItem.getActionView();
 			if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 				searchView.setIconifiedByDefault(false);
@@ -176,58 +171,16 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	}
 
 	public String buildSearchUrl(String searchText) {
-		StringBuffer sb = new StringBuffer();
 		Cursor c = dbAdapter.getSingleSearchArticle(searchText);
 		try {
 			c.moveToFirst();
-			String sectionId = c.getString(0);
-			String type = c.getString(1);
-			String parentId = c.getString(5);
-			sb.append("pfsrd://");
-			if (type.equals("feat")) {
-				sb.append("Feats/0/All Feats/");
-				sb.append(sectionId);
-			} else if (type.equals("skill")) {
-				sb.append("Skills/");
-				sb.append(sectionId);
-			} else if (type.equals("class")) {
-				sb.append("Classes/");
-				sb.append(sectionId);
-			} else if (type.equals("creature")) {
-				sb.append("Monsters/0/All Monsters/");
-				sb.append(sectionId);
-			} else if (type.equals("race")) {
-				sb.append("Races/");
-				sb.append(sectionId);
-			} else if (type.equals("spell")) {
-				sb.append("Spells/0/All/");
-				sb.append(sectionId);
-			} else {
-				sb.append("Rules/");
-				sb.append(parentId);
-				sb.append("/");
-				sb.append(sectionId);
-			}
+			String url = c.getString(4);
+			return url;
 		} finally {
 			c.close();
 		}
-		return sb.toString();
 	}
 
-	public static String buildDetailsListUri(String uri) {
-		String[] parts = uri.split("\\/");
-		if (parts[2].equals("Search")) {
-			return uri;
-		}
-		StringBuffer sb = new StringBuffer();
-		for (int i = 0; i < parts.length - 1; i++) {
-			if (i != 0) {
-				sb.append("/");
-			}
-			sb.append(parts[i]);
-		}
-		return sb.toString();
-	}
 
 	private void openDb() {
 		if (userDbAdapter == null) {
@@ -264,7 +217,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Cursor curs = null;
 		String sectionId;
-		
+
 		switch (item.getItemId()) {
 			case R.id.menu_ogl:
 				curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
@@ -291,6 +244,9 @@ public class DetailsActivity extends SherlockFragmentActivity {
 						PathfinderOpenReferenceActivity.class);
 				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				startActivity(intent);
+				return true;
+			case R.id.menu_search:
+				this.onSearchRequested();
 				return true;
 			default:
 				return super.onOptionsItemSelected(item);

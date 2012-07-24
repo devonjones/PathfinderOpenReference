@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference.list;
 
 import org.evilsoft.pathfinder.reference.DisplayListAdapter;
 import org.evilsoft.pathfinder.reference.R;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.view.LayoutInflater;
@@ -21,7 +22,8 @@ public class CollectionItemListAdapter extends DisplayListAdapter {
 		View V = convertView;
 
 		if (V == null) {
-			LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			LayoutInflater vi = (LayoutInflater) context
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			V = vi.inflate(R.layout.character_list_item, null);
 		}
 
@@ -33,8 +35,9 @@ public class CollectionItemListAdapter extends DisplayListAdapter {
 	@Override
 	public Object buildItem(Cursor c) {
 		CollectionItemListItem cla = new CollectionItemListItem();
-		cla.setSectionId(c.getString(0));
+		cla.setCollectionValueId(c.getString(0));
 		cla.setName(c.getString(1));
+		cla.setUrl(c.getString(2));
 		return cla;
 	}
 

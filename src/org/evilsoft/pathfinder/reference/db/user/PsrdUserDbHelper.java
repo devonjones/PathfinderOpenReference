@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class PsrdUserDbHelper extends SQLiteOpenHelper {
 	private static final String DATABASE_NAME = "psrd_user.db";
-	private static final int DATABASE_VERSION = 1;
+	private static final int DATABASE_VERSION = 2;
 
 	public PsrdUserDbHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -16,13 +16,15 @@ public class PsrdUserDbHelper extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		db.execSQL(createCollectionTable());
 		db.execSQL(addDefaultCollection());
-		db.execSQL(createCollectionEntryTable());
 		db.execSQL(createPsrdDbVersionTable());
+		db.execSQL(createCollectionValuesTable());
 	}
 
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		// TODO Auto-generated method stub
+		if (newVersion == 2) {
+			db.execSQL(createCollectionValuesTable());
+		}
 	}
 
 	private String createCollectionTable() {
@@ -41,6 +43,18 @@ public class PsrdUserDbHelper extends SQLiteOpenHelper {
 		return sb.toString();
 	}
 
+	private String createCollectionValuesTable() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("CREATE TABLE collection_values(");
+		sb.append(" collection_entry_id INTEGER PRIMARY KEY,");
+		sb.append(" collection_id INTEGER,");
+		sb.append(" name TEXT,");
+		sb.append(" url TEXT");
+		sb.append(")");
+		return sb.toString();
+	}
+
+	@Deprecated
 	private String createCollectionEntryTable() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("CREATE TABLE collection_entries(");

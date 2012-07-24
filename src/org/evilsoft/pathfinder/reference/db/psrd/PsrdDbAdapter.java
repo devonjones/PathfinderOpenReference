@@ -9,6 +9,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.text.TextUtils;
 import android.util.Log;
 
 public class PsrdDbAdapter {
@@ -74,6 +75,23 @@ public class PsrdDbAdapter {
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
+	public ArrayList<HashMap<String, String>> getPathByUrl(String url) {
+		if(url.indexOf("?") > -1) {
+			url = TextUtils.split(url, "\\?")[0];
+		}
+		Cursor curs = fetchSectionByUrl(url);
+		try {
+			boolean has_rows = curs.moveToFirst();
+			if (has_rows) {
+				String sectionId = curs.getString(0);
+				return getPath(sectionId);
+			}
+		} finally {
+			curs.close();
+		}
+		return null;
+	}
+
 	public ArrayList<HashMap<String, String>> getPath(String sectionId) {
 		Cursor curs = fetchSection(sectionId);
 		try {
@@ -86,6 +104,8 @@ public class PsrdDbAdapter {
 				HashMap<String, String> element = new HashMap<String, String>();
 				element.put("id", curs.getString(0));
 				element.put("name", curs.getString(2));
+				element.put("url", curs.getString(3));
+				element.put("type", curs.getString(4));
 				path.add(element);
 				while (parentId != null) {
 					Cursor curs2 = fetchSection(parentId);
@@ -95,6 +115,8 @@ public class PsrdDbAdapter {
 						element = new HashMap<String, String>();
 						element.put("id", curs2.getString(0));
 						element.put("name", curs2.getString(2));
+						element.put("url", curs2.getString(3));
+						element.put("type", curs2.getString(4));
 						path.add(element);
 					} finally {
 						curs2.close();
@@ -111,7 +133,7 @@ public class PsrdDbAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, parent_id, name");
+		sb.append("SELECT section_id, parent_id, name, url, type, subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE section_id = ?");
 		sb.append(" LIMIT 1");
@@ -123,7 +145,7 @@ public class PsrdDbAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(parentId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, name, type, subtype");
+		sb.append("SELECT section_id, name, type, subtype, url");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
 		sb.append(" ORDER BY name");
@@ -144,13 +166,24 @@ public class PsrdDbAdapter {
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
+	public Cursor fetchSectionByUrl(String url) {
+		List<String> args = new ArrayList<String>();
+		args.add(url);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT section_id, parent_id, name, type");
+		sb.append(" FROM sections");
+		sb.append(" WHERE url = ?");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+
 	public Cursor fetchFullSection(String sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT node.section_id, node.lft, node.rgt, node.parent_id, node.type,");
 		sb.append("  node.subtype, node.name, node.abbrev, node.source, node.description, node.body,");
-		sb.append("  node.image, node.alt, node.create_index");
+		sb.append("  node.image, node.alt, node.create_index, node.url");
 		sb.append(" FROM sections AS node, sections AS parent");
 		sb.append(" WHERE node.lft BETWEEN parent.lft AND parent.rgt");
 		sb.append("  AND parent.section_id = ?");
@@ -244,6 +277,18 @@ public class PsrdDbAdapter {
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
+	public Cursor getLinkDetails(String sectionId) {
+		List<String> args = new ArrayList<String>();
+		args.add(sectionId);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT section_id, url, display");
+		sb.append(" FROM link_details");
+		sb.append(" WHERE section_id = ?");
+		sb.append(" LIMIT 1");
+		String sql = sb.toString();
+		return database.rawQuery(sql, toStringArray(args));
+	}
+
 	public Cursor autocomplete(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
@@ -284,7 +329,7 @@ public class PsrdDbAdapter {
 	public Cursor getSingleSearchArticle(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT s.*");
+		sb.append("SELECT s.section_id, s.name, s.type, s.subtype, s.url, s.parent_id");
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN section_index i");
 		sb.append("   ON i.section_id = s.section_id");

@@ -17,12 +17,28 @@ public class RuleAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(parentId);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, name");
+		sb.append("SELECT section_id, name, url");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
 		sb.append(" ORDER BY section_id");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
+		return dbAdapter.database.rawQuery(sql,
+				PsrdDbAdapter.toStringArray(args));
+	}
+
+	public Cursor fetchRuleListByUrl(String url) {
+		List<String> args = new ArrayList<String>();
+		args.add(url);
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT s.section_id, s.name");
+		sb.append(" FROM sections s");
+		sb.append("  INNER JOIN sections p");
+		sb.append("   ON s.parent_id = p.section_id");
+		sb.append(" WHERE p.url = ?");
+		sb.append(" ORDER BY s.section_id");
+		String sql = sb.toString();
+		return dbAdapter.database.rawQuery(sql,
+				PsrdDbAdapter.toStringArray(args));
 	}
 
 	public ArrayList<HashMap<String, Object>> createRuleList(String parentId) {
@@ -34,9 +50,11 @@ public class RuleAdapter {
 			while (has_next) {
 				String ruleId = curs.getString(0);
 				String ruleName = curs.getString(1);
+				String url = curs.getString(2);
 				child = new HashMap<String, Object>();
 				child.put("specificName", ruleName);
 				child.put("id", ruleId);
+				child.put("url", url);
 				secList.add(child);
 				has_next = curs.moveToNext();
 			}

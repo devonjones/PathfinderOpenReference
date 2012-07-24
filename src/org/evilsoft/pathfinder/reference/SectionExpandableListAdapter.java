@@ -31,7 +31,8 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	public SectionExpandableListAdapter(Context context) {
 		this.context = context;
-		inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		inflater = (LayoutInflater) context
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	}
 
 	public void refresh(PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {
@@ -42,21 +43,28 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public Object getChild(int groupPosition, int childPosition) {
-		return children.get(groupPosition).get(childPosition).get("specificName");
+		return children.get(groupPosition).get(childPosition)
+				.get("specificName");
 	}
 
 	@Override
 	public long getChildId(int groupPosition, int childPosition) {
 		try {
-			return Long.parseLong((String)children.get(groupPosition).get(childPosition).get("id"));
-		}
-		catch (NumberFormatException nfe) {
+			return Long.parseLong((String) children.get(groupPosition)
+					.get(childPosition).get("id"));
+		} catch (NumberFormatException nfe) {
 			return 0;
 		}
 	}
 
 	public String getPfChildId(int groupPosition, int childPosition) {
-		return (String)children.get(groupPosition).get(childPosition).get("id");
+		return (String) children.get(groupPosition).get(childPosition)
+				.get("id");
+	}
+
+	public String getPfChildUrl(int groupPosition, int childPosition) {
+		return (String) children.get(groupPosition).get(childPosition)
+				.get("url");
 	}
 
 	@Override
@@ -68,9 +76,9 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		} else {
 			v = convertView;
 		}
-		TextView name = (TextView)v.findViewById(R.id.childname);
+		TextView name = (TextView) v.findViewById(R.id.childname);
 		if (name != null) {
-			name.setText((String)getChild(groupPosition, childPosition));
+			name.setText((String) getChild(groupPosition, childPosition));
 		}
 		return v;
 	}
@@ -93,15 +101,19 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	@Override
 	public long getGroupId(int groupPosition) {
 		try {
-			return Long.parseLong((String)subjects.get(groupPosition).get("id"));
-		}
-		catch (NumberFormatException nfe) {
+			return Long.parseLong((String) subjects.get(groupPosition)
+					.get("id"));
+		} catch (NumberFormatException nfe) {
 			return 0;
 		}
 	}
 
 	public String getPfGroupId(int groupPosition) {
-		return (String)subjects.get(groupPosition).get("id");
+		return (String) subjects.get(groupPosition).get("id");
+	}
+
+	public String getPfGroupUrl(int groupPosition) {
+		return (String) subjects.get(groupPosition).get("url");
 	}
 
 	@Override
@@ -113,9 +125,9 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		} else {
 			v = convertView;
 		}
-		TextView name = (TextView)v.findViewById(R.id.groupname);
+		TextView name = (TextView) v.findViewById(R.id.groupname);
 		if (name != null) {
-			name.setText((String)getGroup(groupPosition));
+			name.setText((String) getGroup(groupPosition));
 		}
 		return v;
 	}
@@ -138,16 +150,19 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 			HashMap<String, Object> child = new HashMap<String, Object>();
 			child.put("sectionName", "Bookmarks");
 			child.put("id", "0");
+			child.put("url", "pfsrd://Bookmarks");
 			result.add(child);
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
 				String section_id = curs.getString(0);
 				String name = curs.getString(1);
 				String type = curs.getString(2);
-				if(type.equals("list")) {
+				String url = curs.getString(4);
+				if (type.equals("list")) {
 					child = new HashMap<String, Object>();
 					child.put("sectionName", name);
 					child.put("id", section_id);
+					child.put("url", url);
 					result.add(child);
 				}
 				has_next = curs.moveToNext();
@@ -159,7 +174,8 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		}
 	}
 
-	public List<List<HashMap<String, Object>>> createChildList(PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {
+	public List<List<HashMap<String, Object>>> createChildList(
+			PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {
 		ArrayList<List<HashMap<String, Object>>> result = new ArrayList<List<HashMap<String, Object>>>();
 		for (int i = 0; i < subjects.size(); ++i) {
 			HashMap<String, Object> sub = subjects.get(i);
@@ -183,16 +199,19 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 				result.add(ma.createMonsterTypeList());
 			} else if (sectionName.equals("Bookmarks")) {
 				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-				ArrayList<HashMap<String, Object>> charList = ca.createCharacterList();
+				ArrayList<HashMap<String, Object>> charList = ca
+						.createCollectionList();
 
 				HashMap<String, Object> adder = new HashMap<String, Object>();
 				adder.put("id", "0");
-				adder.put("specificName", context.getString(R.string.add_collection));
+				adder.put("specificName",
+						context.getString(R.string.add_collection));
 				charList.add(adder);
 				if (charList.size() > 1) {
 					HashMap<String, Object> remover = new HashMap<String, Object>();
 					remover.put("id", "1");
-					remover.put("specificName", context.getString(R.string.del_collection));
+					remover.put("specificName",
+							context.getString(R.string.del_collection));
 					charList.add(remover);
 				}
 				result.add(charList);

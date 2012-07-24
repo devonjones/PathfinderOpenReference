@@ -91,7 +91,7 @@ public class SpellAdapter {
 			ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
 			HashMap<String, Object> child = new HashMap<String, Object>();
 			child.put("specificName", "All");
-			child.put("id", "All");
+			child.put("id", null);
 			secList.add(child);
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {

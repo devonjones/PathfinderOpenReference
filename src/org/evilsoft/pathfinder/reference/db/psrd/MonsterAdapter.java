@@ -13,16 +13,14 @@ public class MonsterAdapter {
 		this.dbAdapter = dbAdapter;
 	}
 
-	public Cursor fetchMonsterList(String parentId) {
+	public Cursor fetchMonsterList() {
 		List<String> args = new ArrayList<String>();
-		args.add(parentId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT s.section_id, s.name, s.description, cd.creature_type, cd.creature_subtype,");
 		sb.append("  cd.cr, cd.xp, cd.size, cd.alignment");
 		sb.append(" FROM sections s");
-		sb.append("  LEFT OUTER JOIN creature_details cd");
+		sb.append("  INNER JOIN creature_details cd");
 		sb.append("   ON s.section_id = cd.section_id");
-		sb.append(" WHERE s.parent_id = ?");
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
@@ -92,7 +90,7 @@ public class MonsterAdapter {
 			ArrayList<HashMap<String, Object>> secList = new ArrayList<HashMap<String, Object>>();
 			HashMap<String, Object> child = new HashMap<String, Object>();
 			child.put("specificName", "All Monsters");
-			child.put("id", "All Monsters");
+			child.put("id", null);
 			secList.add(child);
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {

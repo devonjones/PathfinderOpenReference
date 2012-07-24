@@ -1,5 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -10,7 +12,10 @@ import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
 import android.content.res.AssetManager;
+import android.database.Cursor;
+import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
@@ -46,42 +51,24 @@ public class DetailsWebViewClient extends WebViewClient {
 		openDb();
 	}
 
-	public void back(WebView view) {
-		try {
-			if (this.path.size() > 3) {
-				HashMap<String, String> parent = path.get(1);
-				String newUrl = RenderFarm.swapUrl(this.url,
-						parent.get("name"),
-						parent.get("id"));
-				String[] parts = newUrl.split("\\/");
-				if (parts[2].equals("Search")) {
-					parts[2] = "Rules";
-					StringBuffer sb = new StringBuffer();
-					for (int i = 0; i < parts.length; i++) {
-						if (i != 0) {
-							sb.append("/");
-						}
-						sb.append(parts[i]);
-					}
-					newUrl = sb.toString();
-				}
-				shouldOverrideUrlLoading(view, newUrl);
-			}
-		} catch (Exception e) {
-			ErrorReporter.getInstance().putCustomData(
-					"Situation", "Back button failed");
-			ErrorReporter.getInstance().handleException(e);
-		}
-	}
-
 	@Override
 	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
 		Log.i(TAG, newUrl);
 		ErrorReporter e = ErrorReporter.getInstance();
+		if (newUrl == null) {
+			return false;
+		}
 		e.putCustomData("LastWebViewUrl", newUrl);
 		if (newUrl.startsWith("http://")) {
 			newUrl = newUrl.replace("http://pfsrd://", "pfsrd://"); // Gingerbread-
 			newUrl = newUrl.replace("http://pfsrd//", "pfsrd://"); // Honeycomb+
+			try {
+				newUrl = URLDecoder.decode(newUrl, "UTF-8");
+			} catch (UnsupportedEncodingException uee) {
+				ErrorReporter.getInstance().putCustomData(
+						"Situation", "Unable to decode url: " + newUrl);
+				ErrorReporter.getInstance().handleException(uee);
+			}
 		}
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].equals("Search") && parts.length < 5) {
@@ -90,61 +77,131 @@ public class DetailsWebViewClient extends WebViewClient {
 		if (parts[0].toLowerCase().equals("pfsrd:")) {
 			this.url = newUrl;
 			Log.d(TAG, parts[parts.length - 1]);
-			this.path = dbAdapter.getPath(parts[parts.length - 1]);
-			if (path.size() <= 3) {
-				this.back.setVisibility(View.INVISIBLE);
-			} else {
-				this.back.setVisibility(View.VISIBLE);
-				reloadList(newUrl);
-			}
+			path = dbAdapter.getPathByUrl(newUrl);
+			setBackVisibility(newUrl);
 			return renderPfsrd(view, newUrl);
 		}
 		return false;
+	}
+
+	public void setBackVisibility(String newUrl) {
+		if (path != null && path.size() > 1) {
+			reloadList(newUrl);
+			if (!path.get(1).get("type").equals("list")) {
+				this.back.setVisibility(View.VISIBLE);
+				return;
+			}
+		}
+		this.back.setVisibility(View.INVISIBLE);
+	}
+
+	private String up(String uri) {
+		String subtype = Uri.parse(uri).getQueryParameter("subtype");
+		String localUrl = uri;
+		if(uri.indexOf("?") > -1) {
+			localUrl = TextUtils.split(uri, "\\?")[0];
+		}
+		if (path == null) {
+			return localUrl;
+		}
+
+		String newUrl = null;
+		int index = 1;
+		while (newUrl == null && index < path.size() -1) {
+			newUrl = path.get(index).get("url");
+			index++;
+		}
+		StringBuffer sb = new StringBuffer();
+		sb.append(newUrl);
+		if (subtype != null) {
+			sb.append("?subtype=");
+			sb.append(subtype);
+		}
+		return sb.toString();
+	}
+
+	public void back(WebView view) {
+		try {
+			if (path.size() > 1) {
+				if (!path.get(1).get("type").equals("list")) {
+					String newUrl = up(url);
+					shouldOverrideUrlLoading(view, newUrl);
+				}
+			}
+		} catch (Exception e) {
+			ErrorReporter.getInstance().putCustomData(
+					"Situation", "Back button failed");
+			ErrorReporter.getInstance().handleException(e);
+		}
 	}
 
 	public void reloadList(String newUrl) {
 		// [{id=10751, name=Ability Scores}, {id=10701, name=Getting Started},
 		// {id=10700, name=Rules: Core Rulebook}, {id=1, name=PFSRD}]
 		Log.i(TAG, newUrl);
-		String[] parts = newUrl.split("\\/");
-		if (parts[2].startsWith("Rules") && this.isTablet) {
+		if (this.isTablet) {
 			DetailsListFragment list = (DetailsListFragment) act
 					.getSupportFragmentManager().findFragmentById(
 							R.id.details_list_fragment);
-			HashMap<String, String> parent = path.get(1);
-			String updateUrl = RenderFarm.swapUrl(
-					this.url, parent.get("name"), parent.get("id"));
+			String updateUrl = up(newUrl);
 			list.updateUrl(updateUrl);
 		}
 	}
 
+	public String renderByUrl(WebView view, RenderFarm sa, String newUrl) {
+		Cursor curs = dbAdapter.fetchSectionByUrl(newUrl);
+		String html = null;
+		StringBuffer htmlparts = new StringBuffer();
+		try {
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				htmlparts.append(sa.render(curs.getString(0), newUrl));
+				has_next = curs.moveToNext();
+			}
+		} finally {
+			html = htmlparts.toString();
+			if (html.equals("")) {
+				html = null;
+			}
+			curs.close();
+		}
+		return html;
+	}
+
 	public boolean renderPfsrd(WebView view, String newUrl) {
+		if(newUrl.indexOf("?") > -1) {
+			newUrl = TextUtils.split(newUrl, "\\?")[0];
+		}
 		String[] parts = newUrl.split("\\/");
 		String html;
 		RenderFarm sa = new RenderFarm(dbAdapter, assets, title, isTablet);
-		if (parts[2].equals("Classes")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Feats")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Monsters")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].startsWith("Rules")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Races")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Bookmarks")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Search")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Skills")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Spells")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else if (parts[2].equals("Ogl")) {
-			html = sa.render(parts[parts.length - 1], newUrl);
-		} else {
-			html = "<H1>" + newUrl + "</H1>";
+		html = renderByUrl(view, sa, newUrl);
+		if (html == null) {
+			if (parts[2].equals("Classes")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Feats")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Monsters")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].startsWith("Rules")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Races")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Bookmarks")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Search")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Skills")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Spells")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else if (parts[2].equals("Ogl")) {
+				html = sa.render(parts[parts.length - 1], newUrl);
+			} else {
+				html = "<H1>" + newUrl + "</H1>";
+			}
 		}
+		html = urlFilter(html);
 		view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8",
 				this.oldUrl);
 		view.setWebViewClient(this);
@@ -155,8 +212,8 @@ public class DetailsWebViewClient extends WebViewClient {
 			@Override
 			public void onClick(View v) {
 				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-				ca.toggleEntryStar(currentCollection, path, title.getText()
-						.toString(), url);
+				ca.toggleEntryStar(currentCollection, url,
+						title.getText().toString());
 				refreshStarButtonState();
 			}
 		});
@@ -166,14 +223,19 @@ public class DetailsWebViewClient extends WebViewClient {
 		return true;
 	}
 
+	private String urlFilter(String html) {
+		return html.replace("pfsrd://", "http://pfsrd://");
+	}
+
 	private void refreshStarButtonState() {
-		if (path != null) {
-			CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-			boolean starred = ca.entryIsStarred(currentCollection, path, title
-					.getText().toString());
+		if (url != null) {
+			CollectionAdapter ca = new
+					CollectionAdapter(userDbAdapter);
+			boolean starred =
+					ca.entryIsStarred(currentCollection, url);
 			star.setPressed(starred);
-			star.setImageResource(starred ? android.R.drawable.btn_star_big_on
-					: android.R.drawable.btn_star_big_off);
+			star.setImageResource(starred ? android.R.drawable.btn_star_big_on :
+					android.R.drawable.btn_star_big_off);
 		}
 	}
 

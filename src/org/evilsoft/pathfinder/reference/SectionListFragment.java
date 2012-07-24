@@ -117,9 +117,7 @@ public class SectionListFragment extends ExpandableListFragment implements
 		if(expListAdapter.getChildrenCount(groupPosition) != 0) {
 			return false;
 		}
-		String sectionName = (String)expListAdapter.getGroup(groupPosition);
-		String sectionId = expListAdapter.getPfGroupId(groupPosition);
-		String uri = "pfsrd://" + sectionName + "/" + sectionId;
+		String uri = expListAdapter.getPfGroupUrl(groupPosition);
 		if(PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
 			updateFragment(uri);
 		} else {
@@ -132,35 +130,28 @@ public class SectionListFragment extends ExpandableListFragment implements
 	}
 
 	private String getUri(int groupPosition, int childPosition) {
-		String sectionName = (String)expListAdapter.getGroup(groupPosition);
-		String sectionId = expListAdapter.getPfGroupId(groupPosition);
-		String specificName = (String)expListAdapter.getChild(groupPosition, childPosition);
-		String specificId = expListAdapter.getPfChildId(groupPosition, childPosition);
-		StringBuffer sb = new StringBuffer();
-		sb.append("pfsrd://");
-		sb.append(addSectionName(sectionName));
-		sb.append("/");
-		sb.append(sectionId);
-		sb.append("/");
-		sb.append(specificName);
-		if (addId(sectionName)) {
+		String group = (String)expListAdapter.getGroup(groupPosition);
+		if(group.equals("Bookmarks")) {
+			String sectionUrl = expListAdapter.getPfGroupUrl(groupPosition);
+			String specificName = (String) expListAdapter.getChild(groupPosition, childPosition);
+			StringBuffer sb = new StringBuffer();
+			sb.append(sectionUrl);
 			sb.append("/");
-			sb.append(specificId);
+			sb.append(specificName);
+			return sb.toString();
+		} else if(group.startsWith("Rules")) {
+			return expListAdapter.getPfChildUrl(groupPosition, childPosition);
+		} else {
+			String sectionUrl = expListAdapter.getPfGroupUrl(groupPosition);
+			String specificId = expListAdapter.getPfChildId(groupPosition, childPosition);
+			StringBuffer sb = new StringBuffer();
+			sb.append(sectionUrl);
+			if (specificId != null) {
+				sb.append("?subtype=");
+				sb.append(specificId);
+			}
+			return sb.toString();
 		}
-		return sb.toString();
-	}
-
-	private String addSectionName(String sectionName) {
-		return sectionName;
-	}
-
-	private boolean addId(String sectionName) {
-		if (sectionName.startsWith("Rules")) {
-			return true;
-		} else if (sectionName.endsWith("Classes")) {
-			return true;
-		}
-		return false;
 	}
 
 	@Override
