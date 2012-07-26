@@ -62,7 +62,13 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		List<Integer> collectionList = new ArrayList<Integer>();
 		if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 			setContentView(R.layout.details);
-			collectionList = setUpViewer(newUri, action);
+			if (showList) {
+				DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
+						.findFragmentById(R.id.details_list_fragment);
+				list.updateUrl(newUri);
+			} else {
+				collectionList = setUpViewer(newUri, action);
+			}
 		} else {
 			if (showList) {
 				setContentView(R.layout.details_phone_list);
