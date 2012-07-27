@@ -137,7 +137,7 @@ public class RenderFarm {
 		return sb.toString();
 	}
 
-	public int getDepth(HashMap<Integer, Integer> depthMap, int section_id,
+	public static int getDepth(HashMap<Integer, Integer> depthMap, int section_id,
 			int parent_id, int depth) {
 		if (depthMap.containsKey(parent_id)) {
 			depth = depthMap.get(parent_id) + 1;

@@ -1,5 +1,7 @@
 package org.evilsoft.pathfinder.reference.render;
 
+import java.util.HashMap;
+
 import org.evilsoft.pathfinder.reference.RenderFarm;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 
@@ -58,34 +60,40 @@ public class LinkRenderer extends Renderer {
 
 	@Override
 	public String renderBody() {
+		StringBuffer sb = new StringBuffer();
 		if (render) {
-			StringBuffer sb = new StringBuffer();
 			sb.append("<a href='");
 			sb.append(link_url);
 			sb.append("'>");
 			sb.append(super.renderBody());
 			sb.append("</a>");
-			return sb.toString();
 		} else {
+			HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
+			int localdepth = depth;
+			boolean showTitle = true;
 			String sectionId = getLinkSectionId();
 			if (sectionId != null) {
 				Cursor curs = this.dbAdapter.fetchFullSection(sectionId);
 				try {
 					boolean has_next = curs.moveToFirst();
-					if (has_next) {
+					while (has_next) {
 						String type = curs.getString(4);
-						Renderer renderer = RenderFarm.getRenderer(type,
-								dbAdapter);
-						return renderer
-								.render(curs, link_url, depth, top, true,
-										isTablet);
+						int secId = curs.getInt(0);
+						int parentId = curs.getInt(3);
+						Renderer renderer = RenderFarm.getRenderer(
+								type, dbAdapter);
+						localdepth = RenderFarm.getDepth(depthMap, secId, parentId, depth);
+						sb.append(renderer.render(
+								curs, link_url, localdepth, top, showTitle, isTablet));
+						has_next = curs.moveToNext();
+						showTitle = false;
 					}
 				} finally {
 					curs.close();
 				}
 			}
 		}
-		return "";
+		return sb.toString();
 	}
 
 	private String getLinkSectionId() {
