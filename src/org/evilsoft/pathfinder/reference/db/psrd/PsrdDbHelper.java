@@ -25,7 +25,7 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 	private final String DB_PATH;
 	private static String DB_NAME = "psrd.db";
 	private static int DB_CHUNKS = 21;
-	private static final Integer VERSION = 55603;
+	private static final Integer VERSION = 55605;
 	private SQLiteDatabase db;
 	private final Context context;
 
@@ -46,6 +46,12 @@ public class PsrdDbHelper extends SQLiteOpenHelper {
 			Integer currVersion = userDbAdapter.getPsrdDbVersion();
 			if (VERSION > currVersion) {
 				buildDatabase();
+				this.openDatabase();
+				try {
+					userDbAdapter.updateBookmarks(this.db);
+				} finally {
+					this.close();
+				}
 				userDbAdapter.updatePsrdDbVersion(VERSION);
 			}
 		} else {

@@ -54,19 +54,6 @@ public class PsrdUserDbHelper extends SQLiteOpenHelper {
 		return sb.toString();
 	}
 
-	@Deprecated
-	private String createCollectionEntryTable() {
-		StringBuffer sb = new StringBuffer();
-		sb.append("CREATE TABLE collection_entries(");
-		sb.append(" collection_entry_id INTEGER PRIMARY KEY,");
-		sb.append(" collection_id INTEGER,");
-		sb.append(" section_id INTEGER,");
-		sb.append(" name TEXT,");
-		sb.append(" path TEXT");
-		sb.append(")");
-		return sb.toString();
-	}
-
 	private String createPsrdDbVersionTable() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("CREATE TABLE psrd_db_version(");
