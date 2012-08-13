@@ -27,25 +27,19 @@ import org.evilsoft.pathfinder.reference.render.TableRenderer;
 import org.evilsoft.pathfinder.reference.render.TrapRenderer;
 import org.evilsoft.pathfinder.reference.render.VehicleRenderer;
 
-import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.database.CursorIndexOutOfBoundsException;
-import android.util.Log;
 import android.widget.TextView;
 
 public class RenderFarm {
-	private static final String TAG = "SectionRenderer";
 	private PsrdDbAdapter dbAdapter;
-	private AssetManager assets;
-	private static String css;
 	private TextView title;
 	private List<Renderer> renderPath;
 	private boolean isTablet;
 
-	public RenderFarm(PsrdDbAdapter dbAdapter, AssetManager assets,
+	public RenderFarm(PsrdDbAdapter dbAdapter,
 			TextView title, boolean isTablet) {
 		this.dbAdapter = dbAdapter;
-		this.assets = assets;
 		this.title = title;
 		this.isTablet = isTablet;
 	}
@@ -110,7 +104,8 @@ public class RenderFarm {
 			// 8:source, 9:description, 10:body
 			// 11:image, 12:alt, 13:create_index, 14:url
 
-			sb.append(renderCss());
+			sb.append(renderHeader());
+			sb.append("<body>");
 			this.title.setText(topTitle);
 			while (has_next) {
 				int sectionId = curs.getInt(0);
@@ -134,11 +129,12 @@ public class RenderFarm {
 			ErrorReporter.getInstance().putCustomData("FailedURI", inUrl);
 			ErrorReporter.getInstance().handleException(cioobe);
 		}
+		sb.append("</body>");
 		return sb.toString();
 	}
 
-	public static int getDepth(HashMap<Integer, Integer> depthMap, int section_id,
-			int parent_id, int depth) {
+	public static int getDepth(HashMap<Integer, Integer> depthMap,
+			int section_id, int parent_id, int depth) {
 		if (depthMap.containsKey(parent_id)) {
 			depth = depthMap.get(parent_id) + 1;
 			depthMap.put(section_id, depth);
@@ -153,8 +149,8 @@ public class RenderFarm {
 		String type = curs.getString(4);
 		String uri = curs.getString(14);
 		Renderer renderer = getRenderer(type, dbAdapter);
-		String text = renderer
-				.render(curs, uri, depth, top, suppressTitle(), isTablet);
+		String text = renderer.render(curs, uri, depth, top, suppressTitle(),
+				isTablet);
 		renderPath.add(renderer);
 		return text;
 	}
@@ -167,21 +163,16 @@ public class RenderFarm {
 		return prev.suppressNextTitle == true;
 	}
 
-	public String renderCss() {
+	public String renderHeader() {
 		StringBuffer sb = new StringBuffer();
-		sb.append("<head><style type='text/css'>");
-		if (css == null) {
-			try {
-				InputStream in = assets.open("display.css");
-				css = readFile(in);
-			} catch (IOException e) {
-				Log.e(TAG, "Failed to loaded display.css");
-			}
-		}
-		sb.append("\n");
-		sb.append(css);
-		sb.append("</style></head>");
-		sb.append("\n");
+		sb.append("<html>");
+		sb.append("<head>");
+		sb.append("<meta name=\"viewport\" content=\"width=device-width; initial-scale=1; maximum-sale=1; minimum-scale=1; user-scalable=n;\" />");
+		sb.append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />");
+		sb.append("<link media=\"screen, print\" rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/application.min.css\" />");
+		sb.append("<link media=\"screen, print\" rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/display.css\" />");
+		sb.append("<script type=\"text/javascript\" src=\"file:///android_asset/application.min.js\"></script>");
+		sb.append("</head>");
 		return sb.toString();
 	}
 

@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference;
 
 import org.acra.ErrorReporter;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,11 +24,13 @@ public class DetailsViewFragment extends SherlockFragment {
 		super();
 	}
 
+	@SuppressLint("ValidFragment")
 	public DetailsViewFragment(String newUrl) {
 		super();
 		this.startUrl = newUrl;
 	}
 
+	@SuppressLint({ "NewApi", "SetJavaScriptEnabled" })
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -38,6 +41,12 @@ public class DetailsViewFragment extends SherlockFragment {
 		ImageButton contentError = (ImageButton) v
 				.findViewById(R.id.content_error);
 		viewer = (WebView) v.findViewById(R.id.display_webview);
+		viewer.getSettings().setJavaScriptEnabled(true);
+		if (Build.VERSION.SDK_INT >= 11 && Build.VERSION.SDK_INT < 16) {
+			// Wierd rendering bug that causes the viewport of a webview to be offset from
+			// the actual webview.
+			viewer.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		}
 		client = new DetailsWebViewClient(getActivity(), title, back, star,
 				contentError);
 		viewer.setWebViewClient(client);

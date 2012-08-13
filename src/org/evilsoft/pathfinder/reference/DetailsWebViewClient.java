@@ -28,7 +28,6 @@ public class DetailsWebViewClient extends WebViewClient {
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
 	private FragmentActivity act;
-	private AssetManager assets;
 	private TextView title;
 	private ImageButton contentError;
 	private ImageButton star;
@@ -47,7 +46,6 @@ public class DetailsWebViewClient extends WebViewClient {
 		this.star = star;
 		this.contentError = contentError;
 		this.isTablet = PathfinderOpenReferenceActivity.isTabletLayout(act);
-		assets = act.getApplicationContext().getAssets();
 		openDb();
 	}
 
@@ -174,7 +172,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		}
 		String[] parts = newUrl.split("\\/");
 		String html;
-		RenderFarm sa = new RenderFarm(dbAdapter, assets, title, isTablet);
+		RenderFarm sa = new RenderFarm(dbAdapter, title, isTablet);
 		html = renderByUrl(view, sa, newUrl);
 		if (html == null) {
 			if (parts[2].equals("Classes")) {

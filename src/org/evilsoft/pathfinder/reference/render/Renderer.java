@@ -66,7 +66,7 @@ public abstract class Renderer {
 		StringBuffer sb = new StringBuffer();
 		if (image != null) {
 			if (isTablet) {
-				sb.append("<img style='float: right' src='file:///android_asset/");
+				sb.append("<img style='float: left' src='file:///android_asset/");
 				sb.append(image);
 				sb.append("' alt='");
 				sb.append(alt);
