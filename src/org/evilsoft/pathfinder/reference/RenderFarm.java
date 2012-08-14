@@ -29,6 +29,7 @@ import org.evilsoft.pathfinder.reference.render.VehicleRenderer;
 
 import android.database.Cursor;
 import android.database.CursorIndexOutOfBoundsException;
+import android.os.Build;
 import android.widget.TextView;
 
 public class RenderFarm {
@@ -169,8 +170,8 @@ public class RenderFarm {
 		sb.append("<head>");
 		sb.append("<meta name=\"viewport\" content=\"width=device-width; initial-scale=1; maximum-sale=1; minimum-scale=1; user-scalable=n;\" />");
 		sb.append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />");
-		sb.append("<link media=\"screen, print\" rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/application.min.css\" />");
 		sb.append("<link media=\"screen, print\" rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/display.css\" />");
+		sb.append("<link media=\"screen, print\" rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/application.min.css\" />");
 		sb.append("<script type=\"text/javascript\" src=\"file:///android_asset/application.min.js\"></script>");
 		sb.append("</head>");
 		return sb.toString();
