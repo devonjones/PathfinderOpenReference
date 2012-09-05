@@ -30,11 +30,6 @@ public class RaceListAdapter extends DisplayListAdapter {
 		title.setText(c.getString(1));
 		TextView type = (TextView) V.findViewById(R.id.race_list_misc);
 		String raceType = c.getString(2);
-		if ("standard_race".equals(raceType)) {
-			type.setText("(Standard)");
-		} else if ("monster_race".equals(raceType)) {
-			type.setText("(Monster Race)");
-		}
 		return V;
 	}
 

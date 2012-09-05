@@ -259,7 +259,7 @@ public class SectionViewFragment extends SherlockListFragment implements
 		} else if (name.equals("Races")) {
 			currentType = "Races";
 			RaceAdapter ra = new RaceAdapter(dbAdapter);
-			Cursor curs = ra.fetchRaceList();
+			Cursor curs = ra.fetchRaceList(subtype);
 			cursorList.add(curs);
 			currentListAdapter = new RaceListAdapter(getActivity()
 					.getApplicationContext(), curs);

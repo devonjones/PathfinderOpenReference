@@ -8,6 +8,7 @@ import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.psrd.RaceAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
 import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
@@ -194,6 +195,9 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 			} else if (sectionName.equals("Classes")) {
 				ClassAdapter ca = new ClassAdapter(dbAdapter);
 				result.add(ca.createClassTypeList());
+			} else if (sectionName.equals("Races")) {
+				RaceAdapter ra = new RaceAdapter(dbAdapter);
+				result.add(ra.createRaceTypeList());
 			} else if (sectionName.equals("Monsters")) {
 				MonsterAdapter ma = new MonsterAdapter(dbAdapter);
 				result.add(ma.createMonsterTypeList());

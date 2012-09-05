@@ -218,7 +218,7 @@ public class DetailsListFragment extends SherlockListFragment implements OnItemC
 			currentListAdapter = new MonsterListAdapter(getActivity().getApplicationContext(), curs, false);
 		} else if (name.equals("Races")) {
 			RaceAdapter ra = new RaceAdapter(dbAdapter);
-			Cursor curs2 = ra.fetchRaceList();
+			Cursor curs2 = ra.fetchRaceList(subtype);
 			cursorList.add(curs2);
 			currentListAdapter = new RaceListAdapter(getActivity().getApplicationContext(), curs2);
 		} else if (name.equals("Skills")) {
