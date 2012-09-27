@@ -292,17 +292,19 @@ public class PsrdDbAdapter {
 	public Cursor autocomplete(String constraint) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id as _id,");
-		sb.append("  search_name AS " + SearchManager.SUGGEST_COLUMN_TEXT_1
+		sb.append("SELECT si.section_id as _id,");
+		sb.append("  si.search_name AS " + SearchManager.SUGGEST_COLUMN_TEXT_1
 				+ ",");
-		sb.append("  search_name AS " + SearchManager.SUGGEST_COLUMN_QUERY);
-		sb.append(" FROM section_index");
+		sb.append("  si.search_name AS " + SearchManager.SUGGEST_COLUMN_QUERY);
+		sb.append(" FROM section_index si");
+		sb.append(" INNER JOIN section_sort ss");
+		sb.append("  ON si.type = ss.type");
 		if (constraint != null) {
-			sb.append(" WHERE search_name like ?");
+			sb.append(" WHERE si.search_name like ?");
 			args.add('%' + constraint + '%');
 		}
-		sb.append(" GROUP BY search_name");
-		sb.append(" ORDER BY search_name");
+		sb.append(" GROUP BY si.search_name");
+		sb.append(" ORDER BY ss.section_sort_id, si.search_name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
@@ -349,11 +351,13 @@ public class PsrdDbAdapter {
 		sb.append("   ON s.parent_id = p.section_id");
 		sb.append("  INNER JOIN section_index i");
 		sb.append("   ON i.section_id = s.section_id");
+		sb.append("  INNER JOIN section_sort ss");
+		sb.append("   ON i.type = ss.type");
 		if (constraint != null) {
 			sb.append(" WHERE i.search_name like ?");
 			args.add('%' + constraint + '%');
 		}
-		sb.append(" ORDER BY i.search_name, s.section_id");
+		sb.append(" ORDER BY ss.section_sort_id, i.search_name, s.section_id");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
