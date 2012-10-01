@@ -198,10 +198,10 @@ public abstract class Renderer {
 			tags[1] = "</H3>";
 		} else if (depth == 3) {
 			tags[0] = "<B>";
-			tags[1] = ":</B>";
+			tags[1] = ":</B> ";
 		} else {
 			tags[0] = "<I>";
-			tags[1] = ":</I>";
+			tags[1] = ":</I> ";
 		}
 		return tags;
 	}
