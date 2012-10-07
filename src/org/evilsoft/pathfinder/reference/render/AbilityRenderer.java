@@ -13,7 +13,7 @@ public class AbilityRenderer extends Renderer {
 
 	@Override
 	public String renderTitle() {
-		return renderTitle(abilityName(name, sectionId), newUri, depth, top);
+		return renderTitle(abilityName(name, sectionId), abbrev, newUri, depth, top);
 	}
 
 	@Override

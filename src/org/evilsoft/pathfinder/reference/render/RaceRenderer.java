@@ -12,7 +12,7 @@ public class RaceRenderer extends Renderer {
 		if (!top) {
 			title = title + " Characters";
 		}
-		return renderTitle(title, newUri, depth, top);
+		return renderTitle(title, abbrev, newUri, depth, top);
 	}
 
 	@Override

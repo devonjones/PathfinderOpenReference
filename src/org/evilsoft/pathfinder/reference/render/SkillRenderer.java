@@ -22,7 +22,7 @@ public class SkillRenderer extends Renderer {
 
 	@Override
 	public String renderTitle() {
-		return renderTitle(name, newUri, 0, top);
+		return renderTitle(name, abbrev, newUri, 0, top);
 	}
 
 	@Override

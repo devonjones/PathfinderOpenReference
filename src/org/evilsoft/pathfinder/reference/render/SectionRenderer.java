@@ -8,7 +8,7 @@ public class SectionRenderer extends Renderer {
 
 	@Override
 	public String renderTitle() {
-		return renderTitle(name, newUri, depth, top);
+		return renderTitle(name, abbrev, newUri, depth, top);
 	}
 
 	@Override

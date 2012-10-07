@@ -153,7 +153,7 @@ public abstract class Renderer {
 		return sb.toString();
 	}
 
-	public String renderTitle(String title, String newUri, int depth,
+	public String renderTitle(String title, String abbrev, String newUri, int depth,
 			boolean top) {
 		if (top) {
 			return "";
@@ -172,6 +172,11 @@ public abstract class Renderer {
 			sb.append(title);
 			if (depth >= 1 && newUri != null) {
 				sb.append("</a>");
+			}
+			if (abbrev != null) {
+				sb.append(" (");
+				sb.append(abbrev);
+				sb.append(")");
 			}
 			sb.append(tags[1]);
 			sb.append("\n");
