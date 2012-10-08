@@ -159,8 +159,8 @@ pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspire Greatness
 pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspire Last Stand
 pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command
 pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command/Battle Magic*
-pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command/Inspire Hardiness
 pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command/Inspired Tactics
+pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command/Inspire Hardiness
 pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command/Keep Your Heads
 pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command/None Shall Fall*
 pfsrd://PFSRD/Classes/Battle Herald/Class Features/Inspiring Command/Pincer Maneuver
@@ -335,8 +335,8 @@ pfsrd://PFSRD/Classes/Commoner/Class Skills/Skill Ranks per Level/Table Commoner
 pfsrd://PFSRD/Classes/Dragon Disciple
 pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Ability Boost
 pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Blindsense
-pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Blood of Dragons
 pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Bloodline Feat
+pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Blood of Dragons
 pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Breath Weapon
 pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Dragon Bite
 pfsrd://PFSRD/Classes/Dragon Disciple/Class Features/Dragon Form
@@ -462,8 +462,8 @@ pfsrd://PFSRD/Classes/Gunslinger
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Bleeding Wound
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Cheat Death
-pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Dead Shot
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Deadeye
+pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Dead Shot
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Death's Shot
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Evasive
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Expert Loading
@@ -481,8 +481,8 @@ pfsrd://PFSRD/Classes/Gunslinger/Class Features/Deeds/Utility Shot
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Grit
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Grit/Critical Hit with a Firearm
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Grit/Killing Blow with a Firearm
-pfsrd://PFSRD/Classes/Gunslinger/Class Features/Gun Training
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Gunsmith
+pfsrd://PFSRD/Classes/Gunslinger/Class Features/Gun Training
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Nimble
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/Table Gunslinger
 pfsrd://PFSRD/Classes/Gunslinger/Class Features/True Grit
@@ -514,11 +514,11 @@ pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Forest
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Jungle
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Mountain
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Plains
+pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Plane/aligned
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Plane of Air
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Plane of Earth
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Plane of Fire
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Plane of Water
-pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Plane/aligned
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Swamp
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Underground
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Dominance/Urban
@@ -530,11 +530,11 @@ pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Forest
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Jungle
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Mountain
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Plains
+pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Plane/aligned
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Plane of Air
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Plane of Earth
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Plane of Fire
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Plane of Water
-pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Plane/aligned
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Swamp
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Underground
 pfsrd://PFSRD/Classes/Horizon Walker/Class Features/Terrain Mastery/Urban
@@ -611,9 +611,9 @@ pfsrd://PFSRD/Classes/Magus/Class Features/Magus Arcana/Still Magic
 pfsrd://PFSRD/Classes/Magus/Class Features/Magus Arcana/Wand Mastery
 pfsrd://PFSRD/Classes/Magus/Class Features/Magus Arcana/Wand Wielder
 pfsrd://PFSRD/Classes/Magus/Class Features/Medium Armor
+pfsrd://PFSRD/Classes/Magus/Class Features/Spellbooks
 pfsrd://PFSRD/Classes/Magus/Class Features/Spell Combat
 pfsrd://PFSRD/Classes/Magus/Class Features/Spell Recall
-pfsrd://PFSRD/Classes/Magus/Class Features/Spellbooks
 pfsrd://PFSRD/Classes/Magus/Class Features/Spellstrike
 pfsrd://PFSRD/Classes/Magus/Class Features/Table Magus
 pfsrd://PFSRD/Classes/Magus/Class Features/True Magus
@@ -669,8 +669,8 @@ pfsrd://PFSRD/Classes/Master Spy/Class Features/Sneak Attack
 pfsrd://PFSRD/Classes/Master Spy/Class Features/Superficial Knowledge
 pfsrd://PFSRD/Classes/Master Spy/Class Skills/Skill Ranks per Level/Table Master Spy
 pfsrd://PFSRD/Classes/Monk
-pfsrd://PFSRD/Classes/Monk/Class Features/AC Bonus
 pfsrd://PFSRD/Classes/Monk/Class Features/Abundant Step
+pfsrd://PFSRD/Classes/Monk/Class Features/AC Bonus
 pfsrd://PFSRD/Classes/Monk/Class Features/Diamond Body
 pfsrd://PFSRD/Classes/Monk/Class Features/Diamond Soul
 pfsrd://PFSRD/Classes/Monk/Class Features/Empty Body
@@ -948,8 +948,8 @@ pfsrd://PFSRD/Classes/Rage Prophet
 pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Enduring Rage
 pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Greater Rage
 pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Indomitable Caster
-pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Rage Prophet Mystery
 pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Ragecaster
+pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Rage Prophet Mystery
 pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Raging Healer
 pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Raging Spellstrength
 pfsrd://PFSRD/Classes/Rage Prophet/Class Features/Savage Seer
@@ -1007,8 +1007,8 @@ pfsrd://PFSRD/Classes/Rogue/Class Features/Rogue Talents/Stand Up
 pfsrd://PFSRD/Classes/Rogue/Class Features/Rogue Talents/Surprise Attack
 pfsrd://PFSRD/Classes/Rogue/Class Features/Rogue Talents/Trap Spotter
 pfsrd://PFSRD/Classes/Rogue/Class Features/Rogue Talents/Weapon Training
-pfsrd://PFSRD/Classes/Rogue/Class Features/Trap Sense
 pfsrd://PFSRD/Classes/Rogue/Class Features/Trapfinding
+pfsrd://PFSRD/Classes/Rogue/Class Features/Trap Sense
 pfsrd://PFSRD/Classes/Rogue/Class Features/Uncanny Dodge
 pfsrd://PFSRD/Classes/Rogue/Class Skills/Skill Ranks per Level/Table Rogue
 pfsrd://PFSRD/Classes/Rogue/Rogue Archetypes
@@ -1070,8 +1070,8 @@ pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Aberrant/Bloodline Powers/Unu
 pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Abyssal
 pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Abyssal/Bloodline Powers/Added Summonings
 pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Abyssal/Bloodline Powers/Claws
-pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Abyssal/Bloodline Powers/Demon Resistances
 pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Abyssal/Bloodline Powers/Demonic Might
+pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Abyssal/Bloodline Powers/Demon Resistances
 pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Abyssal/Bloodline Powers/Strength of the Abyss
 pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Arcane
 pfsrd://PFSRD/Classes/Sorcerer/Sorcerer Bloodlines/Arcane/Bloodline Powers/Arcane Apotheosis
@@ -1162,17 +1162,17 @@ pfsrd://PFSRD/Classes/Summoner/Class Features/Transposition
 pfsrd://PFSRD/Classes/Summoner/Class Features/Twin Eidolon
 pfsrd://PFSRD/Classes/Summoner/Class Skills/Skill Ranks per Level/Table Summoner
 pfsrd://PFSRD/Classes/Summoner/Class Skills/Skill Ranks per Level/Table Summoner Spells Known
-pfsrd://PFSRD/Classes/Summoner/Eidolon Skills
-pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Base Forms
-pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Biped
-pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Quadruped
-pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Serpentine
 pfsrd://PFSRD/Classes/Summoner/Eidolons
 pfsrd://PFSRD/Classes/Summoner/Eidolons/Armor Bonus
 pfsrd://PFSRD/Classes/Summoner/Eidolons/BAB
 pfsrd://PFSRD/Classes/Summoner/Eidolons/Class Level
 pfsrd://PFSRD/Classes/Summoner/Eidolons/Evolution Pool
 pfsrd://PFSRD/Classes/Summoner/Eidolons/Good/Bad Saves
+pfsrd://PFSRD/Classes/Summoner/Eidolon Skills
+pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Base Forms
+pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Biped
+pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Quadruped
+pfsrd://PFSRD/Classes/Summoner/Eidolon Skills/Serpentine
 pfsrd://PFSRD/Classes/Summoner/Eidolons/Max. Attacks
 pfsrd://PFSRD/Classes/Summoner/Eidolons/Special/Ability Score Increase
 pfsrd://PFSRD/Classes/Summoner/Eidolons/Special/Darkvision
@@ -1291,11 +1291,11 @@ pfsrd://PFSRD/Classes/Witch/Patron Spells/Trickery
 pfsrd://PFSRD/Classes/Witch/Patron Spells/Water
 pfsrd://PFSRD/Classes/Witch/Patron Spells/Wisdom
 pfsrd://PFSRD/Classes/Witch/Witch Archetypes
-pfsrd://PFSRD/Classes/Witch/Witch Spells
 pfsrd://PFSRD/Classes/Witch/Witch's Familiar
 pfsrd://PFSRD/Classes/Witch/Witch's Familiar/Adding Spells to a Witch's Familiar
 pfsrd://PFSRD/Classes/Witch/Witch's Familiar/Deliver Touch Spells
 pfsrd://PFSRD/Classes/Witch/Witch's Familiar/Store Spells
+pfsrd://PFSRD/Classes/Witch/Witch Spells
 pfsrd://PFSRD/Classes/Wizard
 pfsrd://PFSRD/Classes/Wizard/Arcane Schools
 pfsrd://PFSRD/Classes/Wizard/Arcane Schools/Abjuration School
@@ -1379,13 +1379,13 @@ pfsrd://PFSRD/Feats/Animal Affinity
 pfsrd://PFSRD/Feats/Antagonize
 pfsrd://PFSRD/Feats/Antagonize/Benefits/Diplomacy
 pfsrd://PFSRD/Feats/Antagonize/Benefits/Intimidate
-pfsrd://PFSRD/Feats/Arc Slinger
 pfsrd://PFSRD/Feats/Arcane Armor Mastery
 pfsrd://PFSRD/Feats/Arcane Armor Training
 pfsrd://PFSRD/Feats/Arcane Blast
 pfsrd://PFSRD/Feats/Arcane Shield
 pfsrd://PFSRD/Feats/Arcane Strike
 pfsrd://PFSRD/Feats/Arcane Talent
+pfsrd://PFSRD/Feats/Arc Slinger
 pfsrd://PFSRD/Feats/Armor Proficiency/Heavy
 pfsrd://PFSRD/Feats/Armor Proficiency/Light
 pfsrd://PFSRD/Feats/Armor Proficiency/Medium
@@ -1411,8 +1411,8 @@ pfsrd://PFSRD/Feats/Bludgeoner
 pfsrd://PFSRD/Feats/Boar Ferocity
 pfsrd://PFSRD/Feats/Boar Shred
 pfsrd://PFSRD/Feats/Boar Style
-pfsrd://PFSRD/Feats/Body Shield
 pfsrd://PFSRD/Feats/Bodyguard
+pfsrd://PFSRD/Feats/Body Shield
 pfsrd://PFSRD/Feats/Bolstered Resilience
 pfsrd://PFSRD/Feats/Bonebreaker
 pfsrd://PFSRD/Feats/Bouncing Spell
@@ -1426,10 +1426,10 @@ pfsrd://PFSRD/Feats/Burning Spell
 pfsrd://PFSRD/Feats/Cartwheel Dodge
 pfsrd://PFSRD/Feats/Catch Off-Guard
 pfsrd://PFSRD/Feats/Cavalry Formation
-pfsrd://PFSRD/Feats/Channel Smite
 pfsrd://PFSRD/Feats/Channeled Revival
 pfsrd://PFSRD/Feats/Channeled Shield Wall
 pfsrd://PFSRD/Feats/Channeling Scourge
+pfsrd://PFSRD/Feats/Channel Smite
 pfsrd://PFSRD/Feats/Charge Through
 pfsrd://PFSRD/Feats/Charging Hurler
 pfsrd://PFSRD/Feats/Childlike
@@ -1482,10 +1482,10 @@ pfsrd://PFSRD/Feats/Deadly Finish
 pfsrd://PFSRD/Feats/Deadly Stroke
 pfsrd://PFSRD/Feats/Deafening Critical
 pfsrd://PFSRD/Feats/Death from Above
-pfsrd://PFSRD/Feats/Death or Glory
 pfsrd://PFSRD/Feats/Deathless Initiate
 pfsrd://PFSRD/Feats/Deathless Master
 pfsrd://PFSRD/Feats/Deathless Zealot
+pfsrd://PFSRD/Feats/Death or Glory
 pfsrd://PFSRD/Feats/Deceitful
 pfsrd://PFSRD/Feats/Deceptive Exchange
 pfsrd://PFSRD/Feats/Deep Drinker
@@ -1513,9 +1513,9 @@ pfsrd://PFSRD/Feats/Disengaging Feint
 pfsrd://PFSRD/Feats/Disengaging Flourish
 pfsrd://PFSRD/Feats/Disengaging Shot
 pfsrd://PFSRD/Feats/Disorienting Maneuver
-pfsrd://PFSRD/Feats/Dispel Synergy
 pfsrd://PFSRD/Feats/Dispelling Critical
 pfsrd://PFSRD/Feats/Dispelling Fist
+pfsrd://PFSRD/Feats/Dispel Synergy
 pfsrd://PFSRD/Feats/Disposable Weapon
 pfsrd://PFSRD/Feats/Disrupting Shot
 pfsrd://PFSRD/Feats/Disruptive
@@ -1532,10 +1532,10 @@ pfsrd://PFSRD/Feats/Domain Strike
 pfsrd://PFSRD/Feats/Double Bane
 pfsrd://PFSRD/Feats/Double Slice
 pfsrd://PFSRD/Feats/Drag Down
+pfsrd://PFSRD/Feats/Dragonbane Aura
 pfsrd://PFSRD/Feats/Dragon Ferocity
 pfsrd://PFSRD/Feats/Dragon Roar
 pfsrd://PFSRD/Feats/Dragon Style
-pfsrd://PFSRD/Feats/Dragonbane Aura
 pfsrd://PFSRD/Feats/Dramatic Display
 pfsrd://PFSRD/Feats/Dreadful Carnage
 pfsrd://PFSRD/Feats/Duck and Cover
@@ -1572,8 +1572,8 @@ pfsrd://PFSRD/Feats/Exotic Weapon Proficiency
 pfsrd://PFSRD/Feats/Expanded Arcana
 pfsrd://PFSRD/Feats/Expert Driver
 pfsrd://PFSRD/Feats/Exploit Lore
-pfsrd://PFSRD/Feats/Extend Spell
 pfsrd://PFSRD/Feats/Extended Bane
+pfsrd://PFSRD/Feats/Extend Spell
 pfsrd://PFSRD/Feats/Extra Arcana
 pfsrd://PFSRD/Feats/Extra Arcane Pool
 pfsrd://PFSRD/Feats/Extra Bane
@@ -1629,12 +1629,11 @@ pfsrd://PFSRD/Feats/Furious Focus
 pfsrd://PFSRD/Feats/Gang Up
 pfsrd://PFSRD/Feats/Gliding Steps
 pfsrd://PFSRD/Feats/Gnome Trickster
-pfsrd://PFSRD/Feats/Go Unnoticed
 pfsrd://PFSRD/Feats/Gorgon's Fist
 pfsrd://PFSRD/Feats/Gory Finish
+pfsrd://PFSRD/Feats/Go Unnoticed
 pfsrd://PFSRD/Feats/Grant Initiative
 pfsrd://PFSRD/Feats/Great Cleave
-pfsrd://PFSRD/Feats/Great Fortitude
 pfsrd://PFSRD/Feats/Greater Blighted Critical
 pfsrd://PFSRD/Feats/Greater Blind-Fight
 pfsrd://PFSRD/Feats/Greater Bull Rush
@@ -1670,6 +1669,7 @@ pfsrd://PFSRD/Feats/Greater Whip Mastery/Benefits/Free Hands
 pfsrd://PFSRD/Feats/Greater Whip Mastery/Benefits/Reach
 pfsrd://PFSRD/Feats/Greater Whip Mastery/Benefits/Tie Up
 pfsrd://PFSRD/Feats/Greater Wild Empathy
+pfsrd://PFSRD/Feats/Great Fortitude
 pfsrd://PFSRD/Feats/Groundling
 pfsrd://PFSRD/Feats/Guided Hand
 pfsrd://PFSRD/Feats/Gunsmithing
@@ -1684,9 +1684,9 @@ pfsrd://PFSRD/Feats/Haunted Gnome
 pfsrd://PFSRD/Feats/Haunted Gnome Assault
 pfsrd://PFSRD/Feats/Haunted Gnome Shroud
 pfsrd://PFSRD/Feats/Heighten Spell
-pfsrd://PFSRD/Feats/Hero's Display
 pfsrd://PFSRD/Feats/Heroic Defiance
 pfsrd://PFSRD/Feats/Heroic Recovery
+pfsrd://PFSRD/Feats/Hero's Display
 pfsrd://PFSRD/Feats/Hex Strike
 pfsrd://PFSRD/Feats/Horse Master
 pfsrd://PFSRD/Feats/Hover
@@ -1747,27 +1747,27 @@ pfsrd://PFSRD/Feats/Intensified Spell
 pfsrd://PFSRD/Feats/Intimidating Bane
 pfsrd://PFSRD/Feats/Intimidating Gaze
 pfsrd://PFSRD/Feats/Intimidating Prowess
-pfsrd://PFSRD/Feats/Iron Will
 pfsrd://PFSRD/Feats/Ironguts
 pfsrd://PFSRD/Feats/Ironhide
+pfsrd://PFSRD/Feats/Iron Will
 pfsrd://PFSRD/Feats/Janni Rush
 pfsrd://PFSRD/Feats/Janni Style
 pfsrd://PFSRD/Feats/Janni Tempest
 pfsrd://PFSRD/Feats/Jawbreaker
 pfsrd://PFSRD/Feats/Judgment Surge
 pfsrd://PFSRD/Feats/Keen Scent
-pfsrd://PFSRD/Feats/Ki Stand
-pfsrd://PFSRD/Feats/Ki Throw
 pfsrd://PFSRD/Feats/Kirin Path
 pfsrd://PFSRD/Feats/Kirin Strike
 pfsrd://PFSRD/Feats/Kirin Style
+pfsrd://PFSRD/Feats/Ki Stand
+pfsrd://PFSRD/Feats/Ki Throw
 pfsrd://PFSRD/Feats/Knockout Artist
 pfsrd://PFSRD/Feats/Landing Roll
 pfsrd://PFSRD/Feats/Leadership
 pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers
 pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers/Cohort Level
-pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers/Leader's Reputation
 pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers/Leadership Score
+pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers/Leader's Reputation
 pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers/Number of Followers by Level
 pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers/The Leader...
 pfsrd://PFSRD/Feats/Leadership/Leadership Modifiers/The Leader....
@@ -1776,9 +1776,9 @@ pfsrd://PFSRD/Feats/Leaf Singer
 pfsrd://PFSRD/Feats/Leaping Shot Deed
 pfsrd://PFSRD/Feats/Learn Ranger Trap
 pfsrd://PFSRD/Feats/Life Lure
-pfsrd://PFSRD/Feats/Light Step
 pfsrd://PFSRD/Feats/Lightning Reflexes
 pfsrd://PFSRD/Feats/Lightning Stance
+pfsrd://PFSRD/Feats/Light Step
 pfsrd://PFSRD/Feats/Lingering Performance
 pfsrd://PFSRD/Feats/Lingering Spell
 pfsrd://PFSRD/Feats/Lookout
@@ -1798,10 +1798,10 @@ pfsrd://PFSRD/Feats/Martial Weapon Proficiency
 pfsrd://PFSRD/Feats/Master Alchemist
 pfsrd://PFSRD/Feats/Master Combat Performer
 pfsrd://PFSRD/Feats/Master Craftsman
-pfsrd://PFSRD/Feats/Master Siege Engineer
 pfsrd://PFSRD/Feats/Masterful Display
-pfsrd://PFSRD/Feats/Maximize Spell
+pfsrd://PFSRD/Feats/Master Siege Engineer
 pfsrd://PFSRD/Feats/Maximized Spellstrike
+pfsrd://PFSRD/Feats/Maximize Spell
 pfsrd://PFSRD/Feats/Medusa's Wrath
 pfsrd://PFSRD/Feats/Menacing Bane
 pfsrd://PFSRD/Feats/Merciful Bane
@@ -1829,9 +1829,9 @@ pfsrd://PFSRD/Feats/Mystic Stride
 pfsrd://PFSRD/Feats/Natural Spell
 pfsrd://PFSRD/Feats/Neckbreaker
 pfsrd://PFSRD/Feats/Net Adept
+pfsrd://PFSRD/Feats/Net and Trident
 pfsrd://PFSRD/Feats/Net Maneuvering
 pfsrd://PFSRD/Feats/Net Trickery
-pfsrd://PFSRD/Feats/Net and Trident
 pfsrd://PFSRD/Feats/Nightmare Fist
 pfsrd://PFSRD/Feats/Nightmare Striker
 pfsrd://PFSRD/Feats/Nightmare Weaver
@@ -1885,12 +1885,12 @@ pfsrd://PFSRD/Feats/Quick Channel
 pfsrd://PFSRD/Feats/Quick Dirty Trick
 pfsrd://PFSRD/Feats/Quick Drag
 pfsrd://PFSRD/Feats/Quick Draw
-pfsrd://PFSRD/Feats/Quick Reposition
-pfsrd://PFSRD/Feats/Quick Steal
-pfsrd://PFSRD/Feats/Quick Wild Shape
 pfsrd://PFSRD/Feats/Quicken Spell
 pfsrd://PFSRD/Feats/Quicken Spell-Like Ability
 pfsrd://PFSRD/Feats/Quicken Spell-Like Ability/Special/Empowered and Quickened Spell-Like Abilities
+pfsrd://PFSRD/Feats/Quick Reposition
+pfsrd://PFSRD/Feats/Quick Steal
+pfsrd://PFSRD/Feats/Quick Wild Shape
 pfsrd://PFSRD/Feats/Racial Heritage
 pfsrd://PFSRD/Feats/Radiant Charge
 pfsrd://PFSRD/Feats/Raging Brutality
@@ -1949,14 +1949,14 @@ pfsrd://PFSRD/Feats/Shared Insight
 pfsrd://PFSRD/Feats/Shared Judgment
 pfsrd://PFSRD/Feats/Sharp Senses
 pfsrd://PFSRD/Feats/Shatter Defenses
+pfsrd://PFSRD/Feats/Shielded Caster
 pfsrd://PFSRD/Feats/Shield Focus
 pfsrd://PFSRD/Feats/Shield Master
+pfsrd://PFSRD/Feats/Shield of Swings
 pfsrd://PFSRD/Feats/Shield Proficiency
 pfsrd://PFSRD/Feats/Shield Slam
 pfsrd://PFSRD/Feats/Shield Specialization
 pfsrd://PFSRD/Feats/Shield Wall
-pfsrd://PFSRD/Feats/Shield of Swings
-pfsrd://PFSRD/Feats/Shielded Caster
 pfsrd://PFSRD/Feats/Shot on the Run
 pfsrd://PFSRD/Feats/Sickening Critical
 pfsrd://PFSRD/Feats/Sickening Spell
@@ -1969,8 +1969,8 @@ pfsrd://PFSRD/Feats/Silent Spell
 pfsrd://PFSRD/Feats/Simple Weapon Proficiency
 pfsrd://PFSRD/Feats/Sin Seer
 pfsrd://PFSRD/Feats/Skeleton Summoner
-pfsrd://PFSRD/Feats/Skill Focus
 pfsrd://PFSRD/Feats/Skilled Driver
+pfsrd://PFSRD/Feats/Skill Focus
 pfsrd://PFSRD/Feats/Slayer's Knack
 pfsrd://PFSRD/Feats/Sling Flail
 pfsrd://PFSRD/Feats/Smash
@@ -1978,10 +1978,10 @@ pfsrd://PFSRD/Feats/Smell Fear
 pfsrd://PFSRD/Feats/Snake Fang
 pfsrd://PFSRD/Feats/Snake Sidewind
 pfsrd://PFSRD/Feats/Snake Style
-pfsrd://PFSRD/Feats/Snap Shot
 pfsrd://PFSRD/Feats/Snapping Turtle Clutch
 pfsrd://PFSRD/Feats/Snapping Turtle Shell
 pfsrd://PFSRD/Feats/Snapping Turtle Style
+pfsrd://PFSRD/Feats/Snap Shot
 pfsrd://PFSRD/Feats/Snatch
 pfsrd://PFSRD/Feats/Snatch Arrows
 pfsrd://PFSRD/Feats/Sneaking Precision
@@ -1990,14 +1990,14 @@ pfsrd://PFSRD/Feats/Sorcerous Bloodstrike
 pfsrd://PFSRD/Feats/Sorcerous Strike
 pfsrd://PFSRD/Feats/Spell Bane
 pfsrd://PFSRD/Feats/Spell Bluff
+pfsrd://PFSRD/Feats/Spellbreaker
 pfsrd://PFSRD/Feats/Spell Focus
 pfsrd://PFSRD/Feats/Spell Hex
 pfsrd://PFSRD/Feats/Spell Mastery
 pfsrd://PFSRD/Feats/Spell Penetration
 pfsrd://PFSRD/Feats/Spell Perfection
-pfsrd://PFSRD/Feats/Spell Specialization
-pfsrd://PFSRD/Feats/Spellbreaker
 pfsrd://PFSRD/Feats/Spellsong
+pfsrd://PFSRD/Feats/Spell Specialization
 pfsrd://PFSRD/Feats/Spider Step
 pfsrd://PFSRD/Feats/Spinning Throw
 pfsrd://PFSRD/Feats/Spirited Charge
@@ -2018,9 +2018,9 @@ pfsrd://PFSRD/Feats/Steel Soul
 pfsrd://PFSRD/Feats/Step Up
 pfsrd://PFSRD/Feats/Step Up and Strike
 pfsrd://PFSRD/Feats/Still Spell
+pfsrd://PFSRD/Feats/Stone-Faced
 pfsrd://PFSRD/Feats/Stone Sense
 pfsrd://PFSRD/Feats/Stone Singer
-pfsrd://PFSRD/Feats/Stone-Faced
 pfsrd://PFSRD/Feats/Strangler
 pfsrd://PFSRD/Feats/Strike Back
 pfsrd://PFSRD/Feats/Strong Comeback
@@ -2089,8 +2089,8 @@ pfsrd://PFSRD/Feats/Vicious Stomp
 pfsrd://PFSRD/Feats/Vigilant Eidolon
 pfsrd://PFSRD/Feats/Vital Strike
 pfsrd://PFSRD/Feats/Voice of the Sibyl
-pfsrd://PFSRD/Feats/War Singer
 pfsrd://PFSRD/Feats/Warrior Priest
+pfsrd://PFSRD/Feats/War Singer
 pfsrd://PFSRD/Feats/Wave Strike
 pfsrd://PFSRD/Feats/Weapon Finesse
 pfsrd://PFSRD/Feats/Weapon Focus
@@ -2250,12 +2250,12 @@ pfsrd://PFSRD/Monsters/Animal Lord/Species Affinity/Raptor Lord (Eagle/Falcon)
 pfsrd://PFSRD/Monsters/Animal Lord/Species Affinity/Rat Lord (Giant Rat)
 pfsrd://PFSRD/Monsters/Animal Lord/Species Affinity/Serpent Lord (Snake)
 pfsrd://PFSRD/Monsters/Animal Lord/Species Affinity/Shark Lord (Shark)
-pfsrd://PFSRD/Monsters/Animate Dream
-pfsrd://PFSRD/Monsters/Animate Dream/Special Abilities
-pfsrd://PFSRD/Monsters/Animate Dream/Special Abilities/Nightmare Curse
 pfsrd://PFSRD/Monsters/Animated Object
 pfsrd://PFSRD/Monsters/Animated Object/Special Abilities
 pfsrd://PFSRD/Monsters/Animated Object/Special Abilities/Construction Points
+pfsrd://PFSRD/Monsters/Animate Dream
+pfsrd://PFSRD/Monsters/Animate Dream/Special Abilities
+pfsrd://PFSRD/Monsters/Animate Dream/Special Abilities/Nightmare Curse
 pfsrd://PFSRD/Monsters/Ankheg
 pfsrd://PFSRD/Monsters/Ankheg/Special Abilities
 pfsrd://PFSRD/Monsters/Ankheg/Special Abilities/Spit Acid
@@ -2464,6 +2464,7 @@ pfsrd://PFSRD/Monsters/Bat/Skaveling/Base Atk
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Disease
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Environment
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Fort
+pfsrd://PFSRD/Monsters/Bat/Skaveling/hp
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Immune
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Init
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Organization
@@ -2472,7 +2473,6 @@ pfsrd://PFSRD/Monsters/Bat/Skaveling/Space
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Str
 pfsrd://PFSRD/Monsters/Bat/Skaveling/Treasure
 pfsrd://PFSRD/Monsters/Bat/Skaveling/XP 1,600
-pfsrd://PFSRD/Monsters/Bat/Skaveling/hp
 pfsrd://PFSRD/Monsters/Baykok
 pfsrd://PFSRD/Monsters/Baykok/Special Abilities
 pfsrd://PFSRD/Monsters/Baykok/Special Abilities/Devour Soul
@@ -2612,13 +2612,13 @@ pfsrd://PFSRD/Monsters/Cat
 pfsrd://PFSRD/Monsters/Cat/Cheetah
 pfsrd://PFSRD/Monsters/Cat/Cheetah/Special Abilities
 pfsrd://PFSRD/Monsters/Cat/Cheetah/Special Abilities/Sprint
-pfsrd://PFSRD/Monsters/Cat/Leopard
 pfsrd://PFSRD/Monsters/Catfolk
 pfsrd://PFSRD/Monsters/Catfolk/Catfolk
 pfsrd://PFSRD/Monsters/Catfolk/Catfolk/Natural Hunter
 pfsrd://PFSRD/Monsters/Catfolk/Special Abilities
 pfsrd://PFSRD/Monsters/Catfolk/Special Abilities/Cat's Luck
 pfsrd://PFSRD/Monsters/Catfolk/Special Abilities/Sprinter
+pfsrd://PFSRD/Monsters/Cat/Leopard
 pfsrd://PFSRD/Monsters/Catoblepas
 pfsrd://PFSRD/Monsters/Catoblepas/Special Abilities
 pfsrd://PFSRD/Monsters/Catoblepas/Special Abilities/Poison Breath
@@ -2643,12 +2643,12 @@ pfsrd://PFSRD/Monsters/Centaur/Special Abilities/Undersized Weapons
 pfsrd://PFSRD/Monsters/Centipede
 pfsrd://PFSRD/Monsters/Centipede
 pfsrd://PFSRD/Monsters/Centipede/Giant
+pfsrd://PFSRD/Monsters/Centipede/Giant/Special Abilities
+pfsrd://PFSRD/Monsters/Centipede/Giant/Special Abilities/Poison (EX)
 pfsrd://PFSRD/Monsters/Centipede/Giant Whiptail
 pfsrd://PFSRD/Monsters/Centipede/Giant Whiptail/Special Abilities
 pfsrd://PFSRD/Monsters/Centipede/Giant Whiptail/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Centipede/Giant Whiptail/Special Abilities/Tail Slap
-pfsrd://PFSRD/Monsters/Centipede/Giant/Special Abilities
-pfsrd://PFSRD/Monsters/Centipede/Giant/Special Abilities/Poison (EX)
 pfsrd://PFSRD/Monsters/Centipede/Titan
 pfsrd://PFSRD/Monsters/Centipede/Titan/Special Abilities
 pfsrd://PFSRD/Monsters/Centipede/Titan/Special Abilities/Poison
@@ -2785,10 +2785,6 @@ pfsrd://PFSRD/Monsters/Cyclops/Great/Special Abilities
 pfsrd://PFSRD/Monsters/Cyclops/Great/Special Abilities/Flash of Brutality
 pfsrd://PFSRD/Monsters/Cyclops/Special Abilities
 pfsrd://PFSRD/Monsters/Cyclops/Special Abilities/Flash of Insight
-pfsrd://PFSRD/Monsters/D'ziriak
-pfsrd://PFSRD/Monsters/D'ziriak/Special Abilities
-pfsrd://PFSRD/Monsters/D'ziriak/Special Abilities/Dazzling Burst
-pfsrd://PFSRD/Monsters/D'ziriak/Special Abilities/Glow
 pfsrd://PFSRD/Monsters/Daemon
 pfsrd://PFSRD/Monsters/Daemon
 pfsrd://PFSRD/Monsters/Daemon/Astradaemon
@@ -2855,6 +2851,7 @@ pfsrd://PFSRD/Monsters/Dark Creeper/Special Abilities/Death Throes
 pfsrd://PFSRD/Monsters/Dark Creeper/Special Abilities/Poison Use
 pfsrd://PFSRD/Monsters/Dark Creeper/Special Abilities/Rag Armor
 pfsrd://PFSRD/Monsters/Dark Creeper/Special Abilities/See in Darkness
+pfsrd://PFSRD/Monsters/Darkmantle
 pfsrd://PFSRD/Monsters/Dark Slayer
 pfsrd://PFSRD/Monsters/Dark Slayer/Special Abilities
 pfsrd://PFSRD/Monsters/Dark Slayer/Special Abilities/Death Throes
@@ -2865,13 +2862,6 @@ pfsrd://PFSRD/Monsters/Dark Stalker/Special Abilities
 pfsrd://PFSRD/Monsters/Dark Stalker/Special Abilities/Death Throes
 pfsrd://PFSRD/Monsters/Dark Stalker/Special Abilities/Poison Use
 pfsrd://PFSRD/Monsters/Dark Stalker/Special Abilities/See in Darkness
-pfsrd://PFSRD/Monsters/Darkmantle
-pfsrd://PFSRD/Monsters/Death Worm
-pfsrd://PFSRD/Monsters/Death Worm/Special Abilities
-pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Corrosive Blood
-pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Electrical Jolt
-pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Poison
-pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Venomous Skin
 pfsrd://PFSRD/Monsters/Deathtrap Ooze
 pfsrd://PFSRD/Monsters/Deathtrap Ooze/Special Abilities
 pfsrd://PFSRD/Monsters/Deathtrap Ooze/Special Abilities/Acid
@@ -2880,6 +2870,12 @@ pfsrd://PFSRD/Monsters/Deathweb
 pfsrd://PFSRD/Monsters/Deathweb/Special Abilities
 pfsrd://PFSRD/Monsters/Deathweb/Special Abilities/Infestation
 pfsrd://PFSRD/Monsters/Deathweb/Special Abilities/Poison
+pfsrd://PFSRD/Monsters/Death Worm
+pfsrd://PFSRD/Monsters/Death Worm/Special Abilities
+pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Corrosive Blood
+pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Electrical Jolt
+pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Poison
+pfsrd://PFSRD/Monsters/Death Worm/Special Abilities/Venomous Skin
 pfsrd://PFSRD/Monsters/Decapus
 pfsrd://PFSRD/Monsters/Decapus/Special Abilities
 pfsrd://PFSRD/Monsters/Decapus/Special Abilities/Tentacles
@@ -3044,6 +3040,12 @@ pfsrd://PFSRD/Monsters/Devil/Devil/The Ranks of Devilkind
 pfsrd://PFSRD/Monsters/Devil/Erinyes
 pfsrd://PFSRD/Monsters/Devil/Erinyes/Special Abilities
 pfsrd://PFSRD/Monsters/Devil/Erinyes/Special Abilities/Entangle
+pfsrd://PFSRD/Monsters/Devilfish
+pfsrd://PFSRD/Monsters/Devilfish/Special Abilities
+pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Poison
+pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Savage Bite
+pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Unholy Blood
+pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Water Dependency
 pfsrd://PFSRD/Monsters/Devil/Handmaiden
 pfsrd://PFSRD/Monsters/Devil/Handmaiden/Special Abilities
 pfsrd://PFSRD/Monsters/Devil/Handmaiden/Special Abilities/Agile Grappler
@@ -3072,12 +3074,6 @@ pfsrd://PFSRD/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities
 pfsrd://PFSRD/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Devil Shaping
 pfsrd://PFSRD/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Disease
 pfsrd://PFSRD/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Poison
-pfsrd://PFSRD/Monsters/Devilfish
-pfsrd://PFSRD/Monsters/Devilfish/Special Abilities
-pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Poison
-pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Savage Bite
-pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Unholy Blood
-pfsrd://PFSRD/Monsters/Devilfish/Special Abilities/Water Dependency
 pfsrd://PFSRD/Monsters/Devourer
 pfsrd://PFSRD/Monsters/Devourer/Special Abilities
 pfsrd://PFSRD/Monsters/Devourer/Special Abilities/Devour Soul
@@ -3199,16 +3195,6 @@ pfsrd://PFSRD/Monsters/Doppelganger/Special Abilities/Perfect Copy
 pfsrd://PFSRD/Monsters/Dragon
 pfsrd://PFSRD/Monsters/Dragon
 pfsrd://PFSRD/Monsters/Dragon
-pfsrd://PFSRD/Monsters/Dragon Horse
-pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities
-pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Breath Weapons
-pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Flying Charge
-pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Know Alignment
-pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Shift Planes
-pfsrd://PFSRD/Monsters/Dragon Turtle
-pfsrd://PFSRD/Monsters/Dragon Turtle/Special Abilities
-pfsrd://PFSRD/Monsters/Dragon Turtle/Special Abilities/Breath Weapon
-pfsrd://PFSRD/Monsters/Dragon Turtle/Special Abilities/Capsize
 pfsrd://PFSRD/Monsters/Dragon/Age Categories
 pfsrd://PFSRD/Monsters/Dragon/Age Categories/Age Category
 pfsrd://PFSRD/Monsters/Dragon/Age Categories/Age in Years
@@ -3220,8 +3206,8 @@ pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Adult
 pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Ancient
 pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black
 pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities
-pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Acid Pool
 pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Acidic Bite
+pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Acid Pool
 pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Charm Reptiles
 pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Corrupt Water
 pfsrd://PFSRD/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Speak with Reptiles
@@ -3298,6 +3284,19 @@ pfsrd://PFSRD/Monsters/Dragon/Combat/Wings
 pfsrd://PFSRD/Monsters/Dragon/Faerie
 pfsrd://PFSRD/Monsters/Dragon/Faerie/Special Abilities
 pfsrd://PFSRD/Monsters/Dragon/Faerie/Special Abilities/Breath Weapon
+pfsrd://PFSRD/Monsters/Dragonfly/Giant
+pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly
+pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly Nymph
+pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly Nymph/Special Abilities
+pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly Nymph/Special Abilities/Extending Jaw
+pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly/Special Abilities
+pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly/Special Abilities/Darting Charge
+pfsrd://PFSRD/Monsters/Dragon Horse
+pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities
+pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Breath Weapons
+pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Flying Charge
+pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Know Alignment
+pfsrd://PFSRD/Monsters/Dragon Horse/Special Abilities/Shift Planes
 pfsrd://PFSRD/Monsters/Dragon/Imperial
 pfsrd://PFSRD/Monsters/Dragon/Imperial/Additional Dragon Rules
 pfsrd://PFSRD/Monsters/Dragon/Imperial/Additional Dragon Rules/Dragon Senses
@@ -3446,6 +3445,9 @@ pfsrd://PFSRD/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver/Special Abi
 pfsrd://PFSRD/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver/Special Abilities/Spell-Like Abilities
 pfsrd://PFSRD/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver/Special Abilities/True Courage
 pfsrd://PFSRD/Monsters/Dragon/Metallic/Silver/Young
+pfsrd://PFSRD/Monsters/Dragonne
+pfsrd://PFSRD/Monsters/Dragonne/Special Abilities
+pfsrd://PFSRD/Monsters/Dragonne/Special Abilities/Roar
 pfsrd://PFSRD/Monsters/Dragon/Primal
 pfsrd://PFSRD/Monsters/Dragon/Primal/Additional Dragon Rules
 pfsrd://PFSRD/Monsters/Dragon/Primal/Additional Dragon Rules/Dragon Senses
@@ -3528,16 +3530,10 @@ pfsrd://PFSRD/Monsters/Dragon/Primal/Umbral/Umbral Dragon/Special Abilities/Spel
 pfsrd://PFSRD/Monsters/Dragon/Primal/Umbral/Umbral Dragon/Special Abilities/Umbral Scion
 pfsrd://PFSRD/Monsters/Dragon/Primal/Umbral/Umbral Dragon/Table Umbral Special Abilities
 pfsrd://PFSRD/Monsters/Dragon/Primal/Umbral/Young
-pfsrd://PFSRD/Monsters/Dragonfly/Giant
-pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly
-pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly Nymph
-pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly Nymph/Special Abilities
-pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly Nymph/Special Abilities/Extending Jaw
-pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly/Special Abilities
-pfsrd://PFSRD/Monsters/Dragonfly/Giant/Giant Dragonfly/Special Abilities/Darting Charge
-pfsrd://PFSRD/Monsters/Dragonne
-pfsrd://PFSRD/Monsters/Dragonne/Special Abilities
-pfsrd://PFSRD/Monsters/Dragonne/Special Abilities/Roar
+pfsrd://PFSRD/Monsters/Dragon Turtle
+pfsrd://PFSRD/Monsters/Dragon Turtle/Special Abilities
+pfsrd://PFSRD/Monsters/Dragon Turtle/Special Abilities/Breath Weapon
+pfsrd://PFSRD/Monsters/Dragon Turtle/Special Abilities/Capsize
 pfsrd://PFSRD/Monsters/Drake
 pfsrd://PFSRD/Monsters/Drake
 pfsrd://PFSRD/Monsters/Drake/Desert
@@ -3585,12 +3581,12 @@ pfsrd://PFSRD/Monsters/Drider/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Drider/Special Abilities/Undersized Weapons
 pfsrd://PFSRD/Monsters/Drow
 pfsrd://PFSRD/Monsters/Drow/Drow
-pfsrd://PFSRD/Monsters/Drow/Drow Noble
-pfsrd://PFSRD/Monsters/Drow/Drow Noble/Drow Nobility
-pfsrd://PFSRD/Monsters/Drow/Drow Noble/Drow Noble
 pfsrd://PFSRD/Monsters/Drow/Drow/Drow
 pfsrd://PFSRD/Monsters/Drow/Drow/Drow/Drow Immunities
 pfsrd://PFSRD/Monsters/Drow/Drow/Drow/Light Blindness
+pfsrd://PFSRD/Monsters/Drow/Drow Noble
+pfsrd://PFSRD/Monsters/Drow/Drow Noble/Drow Nobility
+pfsrd://PFSRD/Monsters/Drow/Drow Noble/Drow Noble
 pfsrd://PFSRD/Monsters/Drow/Drow/Special Abilities
 pfsrd://PFSRD/Monsters/Drow/Drow/Special Abilities/Poison Use
 pfsrd://PFSRD/Monsters/Dryad
@@ -3616,6 +3612,10 @@ pfsrd://PFSRD/Monsters/Dybbuk/Special Abilities
 pfsrd://PFSRD/Monsters/Dybbuk/Special Abilities/Malevolence
 pfsrd://PFSRD/Monsters/Dybbuk/Special Abilities/Pain Touch
 pfsrd://PFSRD/Monsters/Dybbuk/Special Abilities/Possess Object
+pfsrd://PFSRD/Monsters/D'ziriak
+pfsrd://PFSRD/Monsters/D'ziriak/Special Abilities
+pfsrd://PFSRD/Monsters/D'ziriak/Special Abilities/Dazzling Burst
+pfsrd://PFSRD/Monsters/D'ziriak/Special Abilities/Glow
 pfsrd://PFSRD/Monsters/Eagle
 pfsrd://PFSRD/Monsters/Eagle/Eagle
 pfsrd://PFSRD/Monsters/Eagle/Giant
@@ -3823,13 +3823,13 @@ pfsrd://PFSRD/Monsters/Frog/Giant/Frog
 pfsrd://PFSRD/Monsters/Frog/Giant/Frog/4th-Level Adv.
 pfsrd://PFSRD/Monsters/Frog/Giant/Special Abilities
 pfsrd://PFSRD/Monsters/Frog/Giant/Special Abilities/Tongue
-pfsrd://PFSRD/Monsters/Frog/Poison
-pfsrd://PFSRD/Monsters/Frog/Poison/Special Abilities
-pfsrd://PFSRD/Monsters/Frog/Poison/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Froghemoth
 pfsrd://PFSRD/Monsters/Froghemoth/Special Abilities
 pfsrd://PFSRD/Monsters/Froghemoth/Special Abilities/All-Around Vision
 pfsrd://PFSRD/Monsters/Froghemoth/Special Abilities/Slowed by Electricity
+pfsrd://PFSRD/Monsters/Frog/Poison
+pfsrd://PFSRD/Monsters/Frog/Poison/Special Abilities
+pfsrd://PFSRD/Monsters/Frog/Poison/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Frost Worm
 pfsrd://PFSRD/Monsters/Frost Worm/Special Abilities
 pfsrd://PFSRD/Monsters/Frost Worm/Special Abilities/Cold
@@ -3975,12 +3975,12 @@ pfsrd://PFSRD/Monsters/Goblin
 pfsrd://PFSRD/Monsters/Goblin Dog
 pfsrd://PFSRD/Monsters/Goblin Dog/Special Abilities
 pfsrd://PFSRD/Monsters/Goblin Dog/Special Abilities/Allergic Reaction
+pfsrd://PFSRD/Monsters/Goblin/Goblin
+pfsrd://PFSRD/Monsters/Goblin/Goblin/Fast
 pfsrd://PFSRD/Monsters/Goblin Snake
 pfsrd://PFSRD/Monsters/Goblin Snake/Special Abilities
 pfsrd://PFSRD/Monsters/Goblin Snake/Special Abilities/Goblin Breath
 pfsrd://PFSRD/Monsters/Goblin Snake/Special Abilities/Snake Empathy
-pfsrd://PFSRD/Monsters/Goblin/Goblin
-pfsrd://PFSRD/Monsters/Goblin/Goblin/Fast
 pfsrd://PFSRD/Monsters/Golem
 pfsrd://PFSRD/Monsters/Golem
 pfsrd://PFSRD/Monsters/Golem
@@ -4246,12 +4246,12 @@ pfsrd://PFSRD/Monsters/Hangman Tree/Special Abilities/Vines
 pfsrd://PFSRD/Monsters/Harpy
 pfsrd://PFSRD/Monsters/Harpy/Special Abilities
 pfsrd://PFSRD/Monsters/Harpy/Special Abilities/Captivating Song
-pfsrd://PFSRD/Monsters/Hell Hound
-pfsrd://PFSRD/Monsters/Hell Hound/Hell Hound
-pfsrd://PFSRD/Monsters/Hell Hound/Nessian
 pfsrd://PFSRD/Monsters/Hellcat
 pfsrd://PFSRD/Monsters/Hellcat/Special Abilities
 pfsrd://PFSRD/Monsters/Hellcat/Special Abilities/Invisible in Light
+pfsrd://PFSRD/Monsters/Hell Hound
+pfsrd://PFSRD/Monsters/Hell Hound/Hell Hound
+pfsrd://PFSRD/Monsters/Hell Hound/Nessian
 pfsrd://PFSRD/Monsters/Herd Animal
 pfsrd://PFSRD/Monsters/Herd Animal
 pfsrd://PFSRD/Monsters/Herd Animal
@@ -4638,6 +4638,9 @@ pfsrd://PFSRD/Monsters/Lion/Dire
 pfsrd://PFSRD/Monsters/Lion/Lion
 pfsrd://PFSRD/Monsters/Lizard
 pfsrd://PFSRD/Monsters/Lizard
+pfsrd://PFSRD/Monsters/Lizardfolk
+pfsrd://PFSRD/Monsters/Lizardfolk/Special Abilities
+pfsrd://PFSRD/Monsters/Lizardfolk/Special Abilities/Hold Breath
 pfsrd://PFSRD/Monsters/Lizard/Giant Chameleon
 pfsrd://PFSRD/Monsters/Lizard/Giant Chameleon/Special Abilities
 pfsrd://PFSRD/Monsters/Lizard/Giant Chameleon/Special Abilities/Tongue
@@ -4651,9 +4654,6 @@ pfsrd://PFSRD/Monsters/Lizard/Monitor
 pfsrd://PFSRD/Monsters/Lizard/Monitor/Monitor Lizard
 pfsrd://PFSRD/Monsters/Lizard/Monitor/Special Abilities
 pfsrd://PFSRD/Monsters/Lizard/Monitor/Special Abilities/Poison
-pfsrd://PFSRD/Monsters/Lizardfolk
-pfsrd://PFSRD/Monsters/Lizardfolk/Special Abilities
-pfsrd://PFSRD/Monsters/Lizardfolk/Special Abilities/Hold Breath
 pfsrd://PFSRD/Monsters/Locathah
 pfsrd://PFSRD/Monsters/Lukwata
 pfsrd://PFSRD/Monsters/Lukwata/Special Abilities
@@ -4832,14 +4832,14 @@ pfsrd://PFSRD/Monsters/Mothman
 pfsrd://PFSRD/Monsters/Mothman/Special Abilities
 pfsrd://PFSRD/Monsters/Mothman/Special Abilities/Agent of Fate
 pfsrd://PFSRD/Monsters/Mothman/Special Abilities/Mind-Warping Gaze
-pfsrd://PFSRD/Monsters/Mu Spore
-pfsrd://PFSRD/Monsters/Mu Spore/Special Abilities
-pfsrd://PFSRD/Monsters/Mu Spore/Special Abilities/Grasping Tendrils
-pfsrd://PFSRD/Monsters/Mu Spore/Special Abilities/Spore Cough
 pfsrd://PFSRD/Monsters/Mummy
 pfsrd://PFSRD/Monsters/Mummy/Special Abilities
 pfsrd://PFSRD/Monsters/Mummy/Special Abilities/Despair
 pfsrd://PFSRD/Monsters/Mummy/Special Abilities/Mummy Rot
+pfsrd://PFSRD/Monsters/Mu Spore
+pfsrd://PFSRD/Monsters/Mu Spore/Special Abilities
+pfsrd://PFSRD/Monsters/Mu Spore/Special Abilities/Grasping Tendrils
+pfsrd://PFSRD/Monsters/Mu Spore/Special Abilities/Spore Cough
 pfsrd://PFSRD/Monsters/Myceloid
 pfsrd://PFSRD/Monsters/Myceloid/Special Abilities
 pfsrd://PFSRD/Monsters/Myceloid/Special Abilities/Disease
@@ -4990,15 +4990,15 @@ pfsrd://PFSRD/Monsters/Oni/Spirit
 pfsrd://PFSRD/Monsters/Oni/Spirit/Special Abilities
 pfsrd://PFSRD/Monsters/Oni/Spirit/Special Abilities/Mask Symbiosis
 pfsrd://PFSRD/Monsters/Oni/Spirit/Special Abilities/Poison
+pfsrd://PFSRD/Monsters/Oni/Voidlords
+pfsrd://PFSRD/Monsters/Oni/Voidlords/Martial Arts
+pfsrd://PFSRD/Monsters/Oni/Voidlords/Swordplay
 pfsrd://PFSRD/Monsters/Oni/Void Yai
 pfsrd://PFSRD/Monsters/Oni/Void Yai/Special Abilities
 pfsrd://PFSRD/Monsters/Oni/Void Yai/Special Abilities/Commanding Voice
 pfsrd://PFSRD/Monsters/Oni/Void Yai/Special Abilities/Void Form
 pfsrd://PFSRD/Monsters/Oni/Void Yai/Special Abilities/Void Missile
 pfsrd://PFSRD/Monsters/Oni/Void Yai/Special Abilities/Void Trap
-pfsrd://PFSRD/Monsters/Oni/Voidlords
-pfsrd://PFSRD/Monsters/Oni/Voidlords/Martial Arts
-pfsrd://PFSRD/Monsters/Oni/Voidlords/Swordplay
 pfsrd://PFSRD/Monsters/Oni/Water Yai
 pfsrd://PFSRD/Monsters/Oni/Water Yai/Special Abilities
 pfsrd://PFSRD/Monsters/Oni/Water Yai/Special Abilities/Acidic Missile
@@ -5014,13 +5014,13 @@ pfsrd://PFSRD/Monsters/Otyugh
 pfsrd://PFSRD/Monsters/Otyugh/Special Abilities
 pfsrd://PFSRD/Monsters/Otyugh/Special Abilities/Disease
 pfsrd://PFSRD/Monsters/Owl
+pfsrd://PFSRD/Monsters/Owlbear
 pfsrd://PFSRD/Monsters/Owl/Giant
 pfsrd://PFSRD/Monsters/Owl/Giant/Special Abilities
 pfsrd://PFSRD/Monsters/Owl/Giant/Special Abilities/Animal Telepathy
 pfsrd://PFSRD/Monsters/Owl/Giant/Special Abilities/Insightful Senses
 pfsrd://PFSRD/Monsters/Owl/Giant/Special Abilities/Piercing Stare
 pfsrd://PFSRD/Monsters/Owl/Great Horned
-pfsrd://PFSRD/Monsters/Owlbear
 pfsrd://PFSRD/Monsters/Pale Stranger
 pfsrd://PFSRD/Monsters/Pale Stranger/Special Abilities
 pfsrd://PFSRD/Monsters/Pale Stranger/Special Abilities/Pistols
@@ -5186,6 +5186,17 @@ pfsrd://PFSRD/Monsters/Qlippoth/Thulgant/Special Abilities/Ability Drain
 pfsrd://PFSRD/Monsters/Qlippoth/Thulgant/Special Abilities/Demon Hunter
 pfsrd://PFSRD/Monsters/Qlippoth/Thulgant/Special Abilities/Horrific Appearance
 pfsrd://PFSRD/Monsters/Qlippoth/Thulgant/Special Abilities/Savage Stingers
+pfsrd://PFSRD/Monsters/quickling
+pfsrd://PFSRD/Monsters/quickling/Special Abilities
+pfsrd://PFSRD/Monsters/quickling/Special Abilities/Natural Invisibility
+pfsrd://PFSRD/Monsters/quickling/Special Abilities/Slow Susceptibility
+pfsrd://PFSRD/Monsters/quickling/Special Abilities/Supernatural Speed
+pfsrd://PFSRD/Monsters/quickwood
+pfsrd://PFSRD/Monsters/quickwood/Special Abilities
+pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Fear Aura
+pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Oaksight
+pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Roots
+pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Spell Absorption
 pfsrd://PFSRD/Monsters/Rakshasa
 pfsrd://PFSRD/Monsters/Rakshasa
 pfsrd://PFSRD/Monsters/Rakshasa/Dandasuka
@@ -5379,13 +5390,13 @@ pfsrd://PFSRD/Monsters/Seugathi/Special Abilities/Confusion Command
 pfsrd://PFSRD/Monsters/Seugathi/Special Abilities/Item Use
 pfsrd://PFSRD/Monsters/Seugathi/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Shadow
+pfsrd://PFSRD/Monsters/Shadow/Greater
+pfsrd://PFSRD/Monsters/Shadow/Greater/Special Abilities
+pfsrd://PFSRD/Monsters/Shadow/Greater/Special Abilities/Strength Damage
 pfsrd://PFSRD/Monsters/Shadow Mastiff
 pfsrd://PFSRD/Monsters/Shadow Mastiff/Special Abilities
 pfsrd://PFSRD/Monsters/Shadow Mastiff/Special Abilities/Bay
 pfsrd://PFSRD/Monsters/Shadow Mastiff/Special Abilities/Shadow Blend
-pfsrd://PFSRD/Monsters/Shadow/Greater
-pfsrd://PFSRD/Monsters/Shadow/Greater/Special Abilities
-pfsrd://PFSRD/Monsters/Shadow/Greater/Special Abilities/Strength Damage
 pfsrd://PFSRD/Monsters/Shadow/Shadow
 pfsrd://PFSRD/Monsters/Shadow/Shadow/Special Abilities
 pfsrd://PFSRD/Monsters/Shadow/Shadow/Special Abilities/Create Spawn
@@ -5448,8 +5459,8 @@ pfsrd://PFSRD/Monsters/Sinspawn/Seven Types of Sinspawn/Slothspawn (+2 Wis/-2 De
 pfsrd://PFSRD/Monsters/Sinspawn/Seven Types of Sinspawn/Wrathspawn
 pfsrd://PFSRD/Monsters/Sinspawn/Special Abilities
 pfsrd://PFSRD/Monsters/Sinspawn/Special Abilities/Martial Proficiency
-pfsrd://PFSRD/Monsters/Sinspawn/Special Abilities/Sin-Scent
 pfsrd://PFSRD/Monsters/Sinspawn/Special Abilities/Sinful Bite
+pfsrd://PFSRD/Monsters/Sinspawn/Special Abilities/Sin-Scent
 pfsrd://PFSRD/Monsters/Siren
 pfsrd://PFSRD/Monsters/Siren/Special Abilities
 pfsrd://PFSRD/Monsters/Siren/Special Abilities/Bardic Performance
@@ -5524,16 +5535,16 @@ pfsrd://PFSRD/Monsters/Small Familiars/Familiar/Squirrel/Flying/Special Abilitie
 pfsrd://PFSRD/Monsters/Small Familiars/Familiar/Squirrel/Flying/Special Abilities/Glide
 pfsrd://PFSRD/Monsters/Snake
 pfsrd://PFSRD/Monsters/Snake
-pfsrd://PFSRD/Monsters/Snake Swarm
-pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake
-pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake/Venomous
-pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake/Venomous/Special Abilities
-pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake/Venomous/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Snake/Constrictor
 pfsrd://PFSRD/Monsters/Snake/Emperor Cobra
 pfsrd://PFSRD/Monsters/Snake/Emperor Cobra/Special Abilities
 pfsrd://PFSRD/Monsters/Snake/Emperor Cobra/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Snake/Giant Anaconda
+pfsrd://PFSRD/Monsters/Snake Swarm
+pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake
+pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake/Venomous
+pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake/Venomous/Special Abilities
+pfsrd://PFSRD/Monsters/Snake Swarm/Swarm/Snake/Venomous/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Snake/Venomous
 pfsrd://PFSRD/Monsters/Snake/Venomous/Special Abilities
 pfsrd://PFSRD/Monsters/Snake/Venomous/Special Abilities/Poison
@@ -5541,18 +5552,18 @@ pfsrd://PFSRD/Monsters/Solifugid
 pfsrd://PFSRD/Monsters/Solifugid/Albino Cave
 pfsrd://PFSRD/Monsters/Solifugid/Giant
 pfsrd://PFSRD/Monsters/Solifugid/Giant/Table Solifugid Variants
-pfsrd://PFSRD/Monsters/Soul Eater
-pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities
-pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Caster Link
-pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Find Target
-pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Soul Drain
-pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Wisdom Damage
 pfsrd://PFSRD/Monsters/Soulbound Doll
 pfsrd://PFSRD/Monsters/Soulbound Doll/Construction/Soulbound Doll
 pfsrd://PFSRD/Monsters/Soulbound Doll/Special Abilities
 pfsrd://PFSRD/Monsters/Soulbound Doll/Special Abilities/Alignment Variation
 pfsrd://PFSRD/Monsters/Soulbound Doll/Special Abilities/Soul Focus
 pfsrd://PFSRD/Monsters/Soulbound Doll/Special Abilities/Susceptible to Mind-Affecting Effects
+pfsrd://PFSRD/Monsters/Soul Eater
+pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities
+pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Caster Link
+pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Find Target
+pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Soul Drain
+pfsrd://PFSRD/Monsters/Soul Eater/Special Abilities/Wisdom Damage
 pfsrd://PFSRD/Monsters/Spectre
 pfsrd://PFSRD/Monsters/Spectre/Special Abilities
 pfsrd://PFSRD/Monsters/Spectre/Special Abilities/Create Spawn
@@ -5585,12 +5596,12 @@ pfsrd://PFSRD/Monsters/Spider/Giant Black Widow/Special Abilities/Strong Webs
 pfsrd://PFSRD/Monsters/Spider/Giant Crab
 pfsrd://PFSRD/Monsters/Spider/Giant Crab/Special Abilities
 pfsrd://PFSRD/Monsters/Spider/Giant Crab/Special Abilities/Poison
+pfsrd://PFSRD/Monsters/Spider/Giant/Special Abilities
+pfsrd://PFSRD/Monsters/Spider/Giant/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Spider/Giant Tarantula
 pfsrd://PFSRD/Monsters/Spider/Giant Tarantula/Special Abilities
 pfsrd://PFSRD/Monsters/Spider/Giant Tarantula/Special Abilities/Barbed Hairs
 pfsrd://PFSRD/Monsters/Spider/Giant Tarantula/Special Abilities/Poison
-pfsrd://PFSRD/Monsters/Spider/Giant/Special Abilities
-pfsrd://PFSRD/Monsters/Spider/Giant/Special Abilities/Poison
 pfsrd://PFSRD/Monsters/Spider/Ogre
 pfsrd://PFSRD/Monsters/Spider/Ogre/Special Abilities
 pfsrd://PFSRD/Monsters/Spider/Ogre/Special Abilities/Poison
@@ -5799,6 +5810,9 @@ pfsrd://PFSRD/Monsters/Troglodyte
 pfsrd://PFSRD/Monsters/Troll
 pfsrd://PFSRD/Monsters/Troll
 pfsrd://PFSRD/Monsters/Troll
+pfsrd://PFSRD/Monsters/Trollhound
+pfsrd://PFSRD/Monsters/Trollhound/Special Abilities
+pfsrd://PFSRD/Monsters/Trollhound/Special Abilities/Disease
 pfsrd://PFSRD/Monsters/Troll/Ice
 pfsrd://PFSRD/Monsters/Troll/Jotund
 pfsrd://PFSRD/Monsters/Troll/Jotund/Special Abilities
@@ -5813,9 +5827,6 @@ pfsrd://PFSRD/Monsters/Troll/Rock
 pfsrd://PFSRD/Monsters/Troll/Rock/Special Abilities
 pfsrd://PFSRD/Monsters/Troll/Rock/Special Abilities/Sunlight Petrification
 pfsrd://PFSRD/Monsters/Troll/Scrags
-pfsrd://PFSRD/Monsters/Trollhound
-pfsrd://PFSRD/Monsters/Trollhound/Special Abilities
-pfsrd://PFSRD/Monsters/Trollhound/Special Abilities/Disease
 pfsrd://PFSRD/Monsters/Tupilaq
 pfsrd://PFSRD/Monsters/Tupilaq/Construction/Tupilaq
 pfsrd://PFSRD/Monsters/Tupilaq/Tupilaq
@@ -5846,8 +5857,8 @@ pfsrd://PFSRD/Monsters/Undine/Special Abilities/Elemental Affinity
 pfsrd://PFSRD/Monsters/Undine/Undine
 pfsrd://PFSRD/Monsters/Unicorn
 pfsrd://PFSRD/Monsters/Unicorn/Special Abilities
-pfsrd://PFSRD/Monsters/Unicorn/Special Abilities/Magic Circle against Evil
 pfsrd://PFSRD/Monsters/Unicorn/Special Abilities/Magical Strike
+pfsrd://PFSRD/Monsters/Unicorn/Special Abilities/Magic Circle against Evil
 pfsrd://PFSRD/Monsters/Unicorn/Special Abilities/Wild Empathy
 pfsrd://PFSRD/Monsters/Urdefhan
 pfsrd://PFSRD/Monsters/Urdefhan/Special Abilities
@@ -5965,11 +5976,11 @@ pfsrd://PFSRD/Monsters/Witchwyrd/Special Abilities
 pfsrd://PFSRD/Monsters/Witchwyrd/Special Abilities/Absorb Force
 pfsrd://PFSRD/Monsters/Witchwyrd/Special Abilities/Force Bolt
 pfsrd://PFSRD/Monsters/Wolf
+pfsrd://PFSRD/Monsters/Wolf/Dire
 pfsrd://PFSRD/Monsters/Wolf-in-Sheep's-Clothing
 pfsrd://PFSRD/Monsters/Wolf-in-Sheep's-Clothing/Special Abilities
 pfsrd://PFSRD/Monsters/Wolf-in-Sheep's-Clothing/Special Abilities/Corpse Lure
 pfsrd://PFSRD/Monsters/Wolf-in-Sheep's-Clothing/Special Abilities/Implant
-pfsrd://PFSRD/Monsters/Wolf/Dire
 pfsrd://PFSRD/Monsters/Wolf/Wolf
 pfsrd://PFSRD/Monsters/Wolverine
 pfsrd://PFSRD/Monsters/Wolverine/Dire
@@ -6071,17 +6082,6 @@ pfsrd://PFSRD/Monsters/Zoog/Special Abilities/Spell Sight
 pfsrd://PFSRD/Monsters/Zuvembie
 pfsrd://PFSRD/Monsters/Zuvembie/Special Abilities
 pfsrd://PFSRD/Monsters/Zuvembie/Special Abilities/Corpse Call
-pfsrd://PFSRD/Monsters/quickling
-pfsrd://PFSRD/Monsters/quickling/Special Abilities
-pfsrd://PFSRD/Monsters/quickling/Special Abilities/Natural Invisibility
-pfsrd://PFSRD/Monsters/quickling/Special Abilities/Slow Susceptibility
-pfsrd://PFSRD/Monsters/quickling/Special Abilities/Supernatural Speed
-pfsrd://PFSRD/Monsters/quickwood
-pfsrd://PFSRD/Monsters/quickwood/Special Abilities
-pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Fear Aura
-pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Oaksight
-pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Roots
-pfsrd://PFSRD/Monsters/quickwood/Special Abilities/Spell Absorption
 pfsrd://PFSRD/OGL
 pfsrd://PFSRD/Races
 pfsrd://PFSRD/Races/Aasimars
@@ -6105,13 +6105,13 @@ pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Equipment/Celestial Lamp
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Equipment/Incense
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Equipment/Incense/Aasimar Equipment
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats
-pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angel Wings
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angelic Blood
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angelic Flesh
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angelic Flesh/Benefit/Brazen
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angelic Flesh/Benefit/Golden
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angelic Flesh/Benefit/Silver
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angelic Flesh/Benefit/Steel
+pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Angel Wings
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Celestial Servant
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Channel Force
 pfsrd://PFSRD/Races/Aasimars/New Racial Rules/Aasimar Feats/Greater Channel Force
@@ -6311,8 +6311,8 @@ pfsrd://PFSRD/Races/Duergar/New Racial Rules/Duergar Feats/Lingering Invisibilit
 pfsrd://PFSRD/Races/Duergar/New Racial Rules/Duergar Feats/Lingering Invisibility/Benefit/Duergar Poison
 pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)
 pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)/Born in Darkness (Sp)
-pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)/Earth Glide (Su)
 pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)/Earthen Thrall (Sp)
+pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)/Earth Glide (Su)
 pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)/Entomb (Su)
 pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)/Fade from Sight (Sp)
 pfsrd://PFSRD/Races/Duergar/Racial Archetypes/Gray Disciple (Monk)/Gray Heart (Sp)
@@ -6414,10 +6414,10 @@ pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Earth Channel 
 pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Heartstone (Ex)
 pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Mobile Defense (Ex)
 pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Phase Strike (Su)
-pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stone Body (Ex)
-pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stone Servant (Su)
 pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stonebane (Su)
 pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stoneblood (Ex)
+pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stone Body (Ex)
+pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stone Servant (Su)
 pfsrd://PFSRD/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stonestrike (Su)
 pfsrd://PFSRD/Races/Elves
 pfsrd://PFSRD/Races/Elves
@@ -6483,13 +6483,13 @@ pfsrd://PFSRD/Races/Elves/Racial Archetypes/Plant Companions/Carnivorous Flower
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Plant Companions/Crawling Vine
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Plant Companions/Puffball (Floating Fungus)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Plant Companions/Sapling Treant
+pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spellbinder (Wizard)
+pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spellbinder (Wizard)/Spell Bond (Su)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spell Dancer (Magus)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spell Dancer (Magus)/Arcane Movement (Su)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spell Dancer (Magus)/Dance of Avoidance (Su)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spell Dancer (Magus)/Greater Dance of Avoidance (Su)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spell Dancer (Magus)/Spell Dance (Su)
-pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spellbinder (Wizard)
-pfsrd://PFSRD/Races/Elves/Racial Archetypes/Spellbinder (Wizard)/Spell Bond (Su)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Treesinger (Druid)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Treesinger (Druid)/Green Empathy (Ex)
 pfsrd://PFSRD/Races/Elves/Racial Archetypes/Treesinger (Druid)/Plant Bond (Ex)
@@ -6702,8 +6702,8 @@ pfsrd://PFSRD/Races/Half-Elves
 pfsrd://PFSRD/Races/Half-Elves
 pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Ancestral Arms
 pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Arcane Training
-pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Drow Magic
 pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Drow-Blooded
+pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Drow Magic
 pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Dual Minded
 pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Integrated
 pfsrd://PFSRD/Races/Half-Elves/Alternate Racial Rules/Alternate Racial Traits/Sociable
@@ -6771,9 +6771,86 @@ pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Favored Te
 pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Harrying Attack (Ex)
 pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Master of Terrain (Ex)
 pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Unfettered Step (Ex)
-pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Wild Stalker (Ex)
 pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Wild at Heart (Ex)
+pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Wild Stalker (Ex)
 pfsrd://PFSRD/Races/Half-Elves/Racial Archetypes/Wild Shadow (Ranger)/Woodland Stride (Ex)
+pfsrd://PFSRD/Races/Halflings
+pfsrd://PFSRD/Races/Halflings
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Adaptable Luck
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Craven
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Fleet of Foot
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Ingratiating
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Low Blow
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Outrider
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Polyglot
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Practicality
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Shiftless
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Swift as Shadows
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Underfoot
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Wanderlust
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Warslinger
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Racial Subtypes/Avenging
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Racial Subtypes/Nomadic
+pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Racial Subtypes/Slave Born
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/+2 Dexterity/+2 Charisma/-2 Strength
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Attributes
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Fearless
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Fearless
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Halfling Luck
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Halfling Luck
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Keen Senses
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Languages
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Slow Speed
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Small
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Sure-Footed
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Sure-Footed
+pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Weapon Familiarity
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Alchemical Preserves
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Billow Cape
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Halfling Jugglesticks
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Roar Cord
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Roar Cord/Halfling Equipment
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Adaptive Fortune
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Blundering Defense (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Cautious Fighter (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Courageous Resolve
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Desperate Swing (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Fortunate One
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Improved Low Blow (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Lucky Healer
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Lucky Strike (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Risky Striker (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Sure and Fleet
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Surprise Strike (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Uncanny Defense (Combat)
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Book of Marvelous Recipes
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Escape Dust
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Quickfingers Gloves
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Solidsmoke Pipeweed
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Symbol of Luck
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Blessing of Luck and Resolve
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Blessing of Luck and Resolve/Mass
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Escaping Ward
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Fearsome Duplicate
+pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Village Veil
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Community Guardian (Oracle)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Filch (Ex)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Quicker than the Eye (Ex)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Rummage (Ex)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Superior Filching (Ex)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Order of the Paw (Cavalier)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)/Improved Underfoot Grace (Ex)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)/Underfoot Grace (Ex)
+pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)/Underfoot Trip (Ex)
 pfsrd://PFSRD/Races/Half-Orcs
 pfsrd://PFSRD/Races/Half-Orcs
 pfsrd://PFSRD/Races/Half-Orcs/Alternate Racial Rules/Alternate Racial Traits/Acute Darkvision
@@ -6863,83 +6940,6 @@ pfsrd://PFSRD/Races/Half-Orcs/Racial Archetypes/Skulking Slayer (Rogue)/Pass for
 pfsrd://PFSRD/Races/Half-Orcs/Racial Archetypes/Skulking Slayer (Rogue)/Shifty (Ex)
 pfsrd://PFSRD/Races/Half-Orcs/Racial Archetypes/Skulking Slayer (Rogue)/Underhanded Maneuvers (Ex)
 pfsrd://PFSRD/Races/Half-Orcs/Racial Archetypes/Skulking Slayer (Rogue)/Unexpected Charge (Ex)
-pfsrd://PFSRD/Races/Halflings
-pfsrd://PFSRD/Races/Halflings
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Adaptable Luck
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Craven
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Fleet of Foot
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Ingratiating
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Low Blow
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Outrider
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Polyglot
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Practicality
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Shiftless
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Swift as Shadows
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Underfoot
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Wanderlust
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Alternate Racial Traits/Warslinger
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Racial Subtypes/Avenging
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Racial Subtypes/Nomadic
-pfsrd://PFSRD/Races/Halflings/Alternate Racial Rules/Racial Subtypes/Slave Born
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/+2 Dexterity/+2 Charisma/-2 Strength
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Attributes
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Fearless
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Fearless
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Halfling Luck
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Halfling Luck
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Keen Senses
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Languages
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Slow Speed
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Small
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Sure-Footed
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Sure-Footed
-pfsrd://PFSRD/Races/Halflings/Halfling Racial Traits/Weapon Familiarity
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Alchemical Preserves
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Billow Cape
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Halfling Jugglesticks
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Roar Cord
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Equipment/Roar Cord/Halfling Equipment
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Adaptive Fortune
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Blundering Defense (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Cautious Fighter (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Courageous Resolve
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Desperate Swing (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Fortunate One
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Improved Low Blow (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Lucky Healer
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Lucky Strike (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Risky Striker (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Sure and Fleet
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Surprise Strike (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Feats/Uncanny Defense (Combat)
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Book of Marvelous Recipes
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Escape Dust
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Quickfingers Gloves
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Solidsmoke Pipeweed
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Magic Items/Symbol of Luck
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Blessing of Luck and Resolve
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Blessing of Luck and Resolve/Mass
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Escaping Ward
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Fearsome Duplicate
-pfsrd://PFSRD/Races/Halflings/New Racial Rules/Halfling Spells/Village Veil
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Community Guardian (Oracle)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Filch (Ex)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Quicker than the Eye (Ex)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Rummage (Ex)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Filcher (Rogue)/Superior Filching (Ex)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Order of the Paw (Cavalier)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)/Improved Underfoot Grace (Ex)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)/Underfoot Grace (Ex)
-pfsrd://PFSRD/Races/Halflings/Racial Archetypes and Orders/Underfoot Adept (Monk)/Underfoot Trip (Ex)
 pfsrd://PFSRD/Races/Hobgoblins
 pfsrd://PFSRD/Races/Hobgoblins/Alternate Racial Traits/Bandy-Legged
 pfsrd://PFSRD/Races/Hobgoblins/Alternate Racial Traits/Battle-Hardened
@@ -7121,8 +7121,8 @@ pfsrd://PFSRD/Races/Ifrits/New Racial Rules/Ifrit Spells/Scorching Ash Form
 pfsrd://PFSRD/Races/Ifrits/New Racial Rules/Ifrit Spells/Touch of Combustion
 pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)
 pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)/Burnt Offering (Su)
-pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)/Judgment (Su)
 pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)/Judgment by Fire (Su)
+pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)/Judgment (Su)
 pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)/Servant of the Flame
 pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Wishcrafter (Sorcerer)
 pfsrd://PFSRD/Races/Ifrits/Racial Archetypes/Wishcrafter (Sorcerer)/Expanded Wishcraft
@@ -7293,8 +7293,8 @@ pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Feats/Stony Step
 pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Magic Items
 pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Magic Items/Belt of Stoneskin
 pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Magic Items/Earthbind Rod
-pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Magic Items/Guarding (shield special ability)
 pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Magic Items/Guarding/Greater (shield special ability)
+pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Magic Items/Guarding (shield special ability)
 pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Magic Items/Mask of Stony Demeanor
 pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Spells
 pfsrd://PFSRD/Races/Oreads/New Racial Rules/Oread Spells/Binding Earth
@@ -7479,8 +7479,8 @@ pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)
 pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Into the Wild Blue (Su)
 pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Nature Bond (Ex)
 pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Resist Storm (Ex)
-pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Sky's Embrace (Su)
 pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Skymaster (Su)
+pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Sky's Embrace (Su)
 pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Soaring Form (Ex)
 pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)/Wild Shape (Su)
 pfsrd://PFSRD/Races/Sylphs/Racial Archetypes/Wind Listener (Wizard)
@@ -7922,10 +7922,10 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Metal
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Metal Subdomain/Replacement Power/Metal Fist
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Murder Subdomain
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Murder Subdomain/Replacement Power/Killing Blow
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Night Subdomain
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Night Subdomain/Replacement Power/Night Hunter
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Nightmare Subdomain
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Nightmare Subdomain/Replacement Power/Fearful Touch
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Night Subdomain
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Night Subdomain/Replacement Power/Night Hunter
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Oceans Subdomain
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Oceans Subdomain/Replacement Power/Surge
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Cleric/Subdomains/Protean Subdomain
@@ -7975,28 +7975,28 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Bear Shaman
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Bear Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Bear Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Bear Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Bear Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Bear Shaman/Wild Shape
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Eagle Shaman
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Eagle Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Eagle Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Eagle Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Eagle Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Eagle Shaman/Wild Shape
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Lion Shaman
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Lion Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Lion Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Lion Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Lion Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Lion Shaman/Wild Shape
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Serpent Shaman
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Serpent Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Serpent Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Serpent Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Serpent Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Serpent Shaman/Wild Shape
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Wolf Shaman
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Wolf Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Wolf Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Wolf Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Wolf Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Animal Shamans/Wolf Shaman/Wild Shape
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Aquatic Druid
@@ -8041,9 +8041,9 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Jungle Druid/Wild Shape
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Jungle Druid/Woodland Stride
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid/Mountaineer
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid/Mountain Stance
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid/Mountain Stone
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid/Mountaineer
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid/Spire Walker
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid/Sure-Footed
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Druid/Druid Archetypes/Mountain Druid/Wild Shape
@@ -8113,9 +8113,9 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archety
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Phalanx Soldier/Stand Firm
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Flexible Flanker
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Pole Fighting
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Polearm Parry
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Polearm Training
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Pole Fighting
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Steadfast Pike
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Step Aside
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Fighter/Fighter Archetypes/Polearm Master/Sweeping Fend
@@ -8177,8 +8177,8 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Dr
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Drunken Master/Drunken Strength
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Drunken Master/Firewater Breath
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Hungry Ghost Monk
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Hungry Ghost Monk/Life Funnel
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Hungry Ghost Monk/Life from a Stone
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Hungry Ghost Monk/Life Funnel
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Hungry Ghost Monk/Punishing Kick
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Hungry Ghost Monk/Sipping Demon
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Monk/Monk Archetypes/Hungry Ghost Monk/Steal Ki
@@ -8516,15 +8516,15 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Pro
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Serpentine
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Serpentine/Bloodline Powers/Den of Vipers
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Serpentine/Bloodline Powers/Scaled Soul
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Serpentine/Bloodline Powers/Serpent's Fang
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Serpentine/Bloodline Powers/Serpentfriend
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Serpentine/Bloodline Powers/Serpent's Fang
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Serpentine/Bloodline Powers/Snakeskin
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Shadow
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Shadow/Bloodline Powers/Enveloping Darkness
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Shadow/Bloodline Powers/Nighteye
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Shadow/Bloodline Powers/Shadow Master
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Shadow/Bloodline Powers/Shadow Well
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Shadow/Bloodline Powers/Shadowstrike
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Shadow/Bloodline Powers/Shadow Well
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Starsoul
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Starsoul/Bloodline Powers/Aurora Borealis
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Starsoul/Bloodline Powers/Breaching the Gulf
@@ -8533,8 +8533,8 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Sta
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Starsoul/Bloodline Powers/Voidwalker
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Stormborn
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Stormborn/Bloodline Powers/Ride the Lightning
-pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Stormborn/Bloodline Powers/Storm Lord
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Stormborn/Bloodline Powers/Stormchild
+pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Stormborn/Bloodline Powers/Storm Lord
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Stormborn/Bloodline Powers/Thunderbolt
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Stormborn/Bloodline Powers/Thunderstaff
 pfsrd://PFSRD/Rules Advanced Player's Guide/Core Classes/Sorcerer/Bloodlines/Verdant
@@ -8736,8 +8736,8 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Lasso
 pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Lucerne Hammer
 pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Mancatcher
 pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Pilum
-pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Sword Cane
 pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Swordbreaker Dagger
+pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Sword Cane
 pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Temple Sword
 pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Wooden Stake
 pfsrd://PFSRD/Rules Advanced Player's Guide/Gear/Weapons/Wooden Stake/Table Weapons
@@ -9035,15 +9035,15 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Magic Items/Her
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Magic Items/Reaver's Scythe
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Magic Items/Ring of Heroes
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Magic Items/Staff of Fortune
+pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Points
+pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Points/Antiheroes
+pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Points/Hero Points for GMs
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Spells
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Spells/Heroic Fortune
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Spells/Heroic Fortune/Mass
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Spells/Malediction
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Spells/Severed Fate
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Point Spells/Unravel Destiny
-pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Points
-pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Points/Antiheroes
-pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Hero Points/Hero Points for GMs
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/New Rules
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/New Rules/Combat Maneuvers
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/New Rules/Hero Points
@@ -9060,12 +9060,12 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Gnome Race Tra
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Elf Race Traits
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Elf Race Traits/Elven Reflexes
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Elf Race Traits/Failed Apprentice
-pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Orc Race Traits
-pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Orc Race Traits/Brute
-pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Orc Race Traits/Outcast
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Halfling Race Traits
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Halfling Race Traits/Freedom Fighter
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Halfling Race Traits/Well-Informed
+pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Orc Race Traits
+pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Orc Race Traits/Brute
+pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Half-Orc Race Traits/Outcast
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Human Race Traits
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Human Race Traits/Scholar of Ruins
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Race Traits/Human Race Traits/World Traveler
@@ -9155,6 +9155,16 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Elves/Alternate Racial Tr
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Elves/Alternate Racial Traits/Sociable
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Elves/Alternate Racial Traits/Water Child
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Elves/Half-Elf Adventurers
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Craven
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Low Blow
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Outrider
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Practicality
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Swift as Shadows
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Underfoot
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Wanderlust
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Warslinger
+pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Halfling Adventurers
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Orcs
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Orcs/Alternate Racial Traits/Beastmaster
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Orcs/Alternate Racial Traits/Bestial
@@ -9167,16 +9177,6 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Orcs/Alternate Racial Tra
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Orcs/Alternate Racial Traits/Scavenger
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Orcs/Alternate Racial Traits/Toothy
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Half-Orcs/Half-Orc Adventurers
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Craven
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Low Blow
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Outrider
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Practicality
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Swift as Shadows
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Underfoot
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Wanderlust
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Alternate Racial Traits/Warslinger
-pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Halflings/Halfling Adventurers
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Humans
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Humans/Alternate Racial Traits/Eye for Talent
 pfsrd://PFSRD/Rules Advanced Player's Guide/Races/Humans/Alternate Racial Traits/Heart of the Fields
@@ -9358,8 +9358,8 @@ pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racia
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Mountain-Born
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Plagueborn
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Poison Resistance
-pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Resist Level Drain
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Resistant
+pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Resist Level Drain
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Shadow Blending
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Shadow Resistance
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Defense Racial Traits/Standard Traits/Spell Resistance/Greater
@@ -9378,8 +9378,8 @@ pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skil
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Emissary
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Flexible Bonus Feat
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Focused Study
-pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Gift of Tongues
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Gifted Linguist
+pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Gift of Tongues
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Greed
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Gregarious
 pfsrd://PFSRD/Rules Advanced Race Guide/Race Builder/Racial Traits/Feat and Skill Racial Traits/Standard Traits/Integrated
@@ -9633,18 +9633,18 @@ pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Alignment/Size/and Ty
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Base Atk/CMB/CMD
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Defensive Abilities/DR/Immune/Resist/SR
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Environment
+pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/hp
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Init and Senses
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Name and CR
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Organization
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Race/Class/and Level
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Ranged
-pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/SQ
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Saving Throws
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Space/Reach
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Spells Known/Prepared
+pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/SQ
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/Treasure
 pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/XP
-pfsrd://PFSRD/Rules Bestiary (All)/Introduction/Stat Block/hp
 pfsrd://PFSRD/Rules Bestiary (All)/Misc Monster Rules
 pfsrd://PFSRD/Rules Bestiary (All)/Misc Monster Rules/Monster As PCs
 pfsrd://PFSRD/Rules Bestiary (All)/Misc Monster Rules/Monster Cohorts
@@ -9688,9 +9688,9 @@ pfsrd://PFSRD/Rules Bestiary (All)/Monster Advancement/Templates/Acquired Templa
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Advancement/Templates/Inherited Templates
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster
+pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster/Step 10 Details
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster/Step 1 Concept
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster/Step 1 Concept/Table Monster Statistics by CR
-pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster/Step 10 Details
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster/Step 2 Target Statistics
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster/Step 2 Target Statistics/Average Damage
 pfsrd://PFSRD/Rules Bestiary (All)/Monster Creation/Building the Monster/Step 2 Target Statistics/Good Save
@@ -9742,8 +9742,8 @@ pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Compression
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Constrict
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Construct Traits
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Curse
-pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Curse of Lycanthropy
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Curse/Format
+pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Curse of Lycanthropy
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Damage Reduction
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Disease
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Disease/Format
@@ -9799,8 +9799,8 @@ pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Rock Throwing
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Scent
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/See in Darkness
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Sound Mimicry
-pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Spell Resistance
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Spell-Like Abilities
+pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Spell Resistance
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Split
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Stench
 pfsrd://PFSRD/Rules Bestiary (All)/Universal Monster Rules/Strangle
@@ -9903,8 +9903,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Action Types/Standard
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Action Types/Swift Action
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Free Actions
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Free Actions/Cease Concentration on Spell
-pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Free Actions/Drop Prone
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Free Actions/Drop an Item
+pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Free Actions/Drop Prone
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Free Actions/Speak
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Full-Round Actions
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Full-Round Actions/Cast a Spell
@@ -9951,14 +9951,14 @@ pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Atta
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Shooting or Throwing into a Melee
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Shooting or Throwing into a Melee/Precise Shot
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Unarmed Attacks
+pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Unarmed Attacks/“Armed” Unarmed Attacks
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Unarmed Attacks/Attacks of Opportunity
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Unarmed Attacks/Dealing Lethal Damage
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Unarmed Attacks/Unarmed Strike Damage
-pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Attack/Unarmed Attacks/“Armed” Unarmed Attacks
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell/Attacks of Opportunity
-pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell/Casting Time
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell/Casting on the Defensive
+pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell/Casting Time
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell/Concentrating to Maintain a Spell
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell/Concentration
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Actions In Combat/Standard Actions/Cast a Spell/Dismiss a Spell
@@ -9984,8 +9984,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Combat/Big And Little Creatures In Combat/Tabl
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Big And Little Creatures In Combat/Tiny/Diminutive/and Fine Creatures
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers/Concealment
-pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers/Concealment/Concealment Miss Chance
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers/Concealment/Concealment and Stealth Checks
+pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers/Concealment/Concealment Miss Chance
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers/Concealment/Ignoring Concealment
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers/Concealment/Total Concealment
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Combat Modifiers/Concealment/Varying Degrees of Concealment
@@ -10145,8 +10145,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Delay/Initia
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Ready
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Ready/Distracting Spellcasters
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Ready/Initiative Consequences of Readying
-pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Ready/Readying a Weapon against a Charge
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Ready/Readying an Action
+pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Ready/Readying a Weapon against a Charge
 pfsrd://PFSRD/Rules Core Rulebook/Combat/Special Initiative Actions/Ready/Readying to Counterspell
 pfsrd://PFSRD/Rules Core Rulebook/Environment
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Dungeons
@@ -10219,9 +10219,9 @@ pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Cold Dangers
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Cold Dangers/Ice Effects
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Darkness
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Falling
+pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Falling/Falling into Water
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Falling Objects
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Falling Objects/Table Damage from Falling Objects
-pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Falling/Falling into Water
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Heat Dangers
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Heat Dangers/Catching on Fire
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Environmental Rules/Heat Dangers/Lava Effects
@@ -10257,10 +10257,10 @@ pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Mech
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Mechanical Trap Cost/Multiple Traps
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Mechanical Traps
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Spell Trap Cost
-pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Table CR Modifiers for Magic Traps
-pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Table CR Modifiers for Mechanical Traps
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Table Cost Modifiers for Magic Device Traps
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Table Craft DCs (Traps)
+pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Table CR Modifiers for Magic Traps
+pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Designing a Trap/Table CR Modifiers for Mechanical Traps
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Destruction Trap
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Electricity Arc Trap
 pfsrd://PFSRD/Rules Core Rulebook/Environment/Sample Traps/Empowered Disintegrate Trap
@@ -10506,8 +10506,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Armor Spike
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Banded Mail
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Breastplate
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Buckler
-pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Chain Shirt
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Chainmail
+pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Chain Shirt
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Full Plate
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Gauntlet/Locked
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Half-Plate
@@ -10515,13 +10515,13 @@ pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Hide
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Leather
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Padded
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Scale Mail
-pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield Spikes
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield/Heavy; Wooden or Steel
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield/Heavy; Wooden or Steel/Shield Bash Attacks
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield/Heavy; Wooden or Steel/Wooden or Steel
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield/Light; Wooden or Steel
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield/Light; Wooden or Steel/Shield Bash Attacks
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield/Light; Wooden or Steel/Wooden or Steel
+pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield Spikes
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Shield/Tower
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Splint Mail
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Armor/Armor Descriptions/Studded Leather
@@ -10624,8 +10624,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill K
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Magnifying Glass
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Musical Instrument/Common or Masterwork
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Scale/Merchant's
-pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Spell Component Pouch
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Spellbook/Wizard's
+pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Spell Component Pouch
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Thieves' Tools
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Thieves' Tools/Masterwork
 pfsrd://PFSRD/Rules Core Rulebook/Equipment/Goods And Services/Tools and Skill Kits/Tool/Masterwork
@@ -10974,8 +10974,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Deathblade
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Dragon Bile
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Drow Poison
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Giant Wasp Poison
-pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Green Prismatic Poison
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Greenblood Oil
+pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Green Prismatic Poison
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Hemlock
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Id Moss
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/Poison/Insanity Mist
@@ -11007,6 +11007,78 @@ pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/When Spell Resistan
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/When Spell Resistance Applies/Effect Spells
 pfsrd://PFSRD/Rules Core Rulebook/Glossary/Special Abilities/When Spell Resistance Applies/Targeted Spells
 pfsrd://PFSRD/Rules Core Rulebook/Magic
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook/Independent Research
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook/Spells Copied from Another's Spellbook or a Scroll
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook/Spells Gained at a New Level
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Replacing and Copying Spellbooks
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Selling a Spellbook
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Wizard Spells and Borrowed Spellbooks
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Materials and Costs
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Materials and Costs/Spell Level
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Space in the Spellbook
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Time
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Death and Prepared Spell Retention
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Preparation Environment
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Prepared Spell Retention
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Recent Casting Limit/Rest Interruptions
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Rest
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Spell Preparation Time
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Spell Selection and Preparation
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards/Adding Spells to a Sorcerer's or Bard's Repertoire
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards/Daily Readying of Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards/Recent Casting Limit
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Spell Slots
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Choosing a Spell
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Instantaneous Effects
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Spells with Opposite Effects
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Different Bonus Types
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Multiple Mental Control Effects
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/One Effect Makes Another Irrelevant
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Same Effect More than Once in Different Strengths
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Same Effect with Differing Results
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Casting Defensively
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Entangled
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Grappling or Pinned
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Injury
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Table Concentration Check DCs
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Vigorous Motion
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Violent Motion
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Violent Weather
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/Counterspelling Metamagic Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/Dispel Magic
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/How Counterspells Work
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/Specific Exceptions
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bonus Types
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead/Negative Levels
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead/Preventing Revivification
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead/Revivification against One's Will
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Spell Failure
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/The Spell's Result
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Divine Magical Writings
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/New Divine Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/New Divine Spells/Independent Research
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/New Divine Spells/Spells Gained at a New Level
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Recent Casting Limit
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spell Selection and Preparation
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spell Slots
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spontaneous Casting of
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spontaneous Casting of Cure
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Time of Day
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Armor for Unusual Creatures
@@ -11056,8 +11128,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Specific Shields/Lion's Shie
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Specific Shields/Mithral Heavy Shield
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Specific Shields/Spined Shield
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Specific Shields/Winged Shield
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Table Armor Special Abilities
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Table Armor and Shields
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Table Armor Special Abilities
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Table Shield Special Abilities
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Table Specific Armors
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Armor/Table Specific Shields
@@ -11098,8 +11170,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Artifacts/Minor Artifacts/Philosop
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Artifacts/Minor Artifacts/Sphere of Annihilation
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Artifacts/Minor Artifacts/Staff of the Magi
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Artifacts/Minor Artifacts/Talisman of Pure Good
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Artifacts/Minor Artifacts/Talisman of Ultimate Evil
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Artifacts/Minor Artifacts/Talisman of the Sphere
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Artifacts/Minor Artifacts/Talisman of Ultimate Evil
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Cursed Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Cursed Items/Common Cursed Item Effects
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Cursed Items/Common Cursed Item Effects/Delusion
@@ -11236,21 +11308,21 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of Sustenance
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of Swimming
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of Swimming/Improved
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of Telekinesis
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of the Ram
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of Three Wishes
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of Water Walking
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of Wizardry
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of X-Ray Vision
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Ring of the Ram
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rings/Special Qualities/Table Rings
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Immovable Rod
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic Rods
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic Rods/Lesser and Greater Metamagic Rods
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic/Empower
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic/Enlarge
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic/Extend
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic/Maximize
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic/Quicken
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic Rods
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic Rods/Lesser and Greater Metamagic Rods
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Metamagic/Silent
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Absorption
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Alertness
@@ -11264,12 +11336,12 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Negation
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Rulership
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Security
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Splendor
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of the Python
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of the Viper
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Thunder and Lightning
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Withering
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Wonder
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of Wonder/Description/d%
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of the Python
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Rod of the Viper
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Rods/Table Rods
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Scrolls
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Scrolls/Activation/Activate the Spell
@@ -11329,8 +11401,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Staff of Passage
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Staff of Power
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Staff of Size Alteration
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Staff of Swarming Insects
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Staff of Transmutation
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Staff of the Woodlands
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Staff of Transmutation
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Table Staves
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Staves/Using Staves
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wands
@@ -11342,6 +11414,7 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Caster Level for Weapons
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Hardness and Hit Points
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Light Generation
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Ammunition and Breakage
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapons and Critical Hits
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapon Special Ability Descriptions
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapon Special Ability Descriptions/Anarchic
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapon Special Ability Descriptions/Axiomatic
@@ -11373,7 +11446,6 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapon Special Abili
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapon Special Ability Descriptions/Vicious
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapon Special Ability Descriptions/Vorpal
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapon Special Ability Descriptions/Wounding
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Magic Weapons and Critical Hits
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Ranged Weapons and Ammunition
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Specific Weapons
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Weapons/Specific Weapons/Adamantine Battleaxe
@@ -11535,6 +11607,7 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Hat
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Headband of Alluring Charisma
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Headband of Inspired Wisdom
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Headband of Mental Prowess
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/headband of Mental Superiority
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Headband of Vast Intelligence
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Helm of Brilliance
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Helm of Comprehend Languages and Read Magic
@@ -11547,8 +11620,8 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Hor
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Horn of Goodness/Evil
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Horn of Valhalla
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Horn of Valhalla/Description/Table Horn of Valhalla
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Horseshoes of Speed
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Horseshoes of a Zephyr
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Horseshoes of Speed
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Incense of Meditation
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Instant Fortress
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Ioun Stones
@@ -11589,29 +11662,29 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Pip
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Portable Hole
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Restorative Ointment
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Ring Gates
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe/Monk's
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of Blending
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of Bones
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of Eyes
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of Scintillating Colors
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of Stars
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of the Archmagi
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of Useful Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of Useful Items/Description/Table Robe of Useful Items
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe of the Archmagi
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Robe/Monk's
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Rope of Climbing
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Rope of Entanglement
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Salve of Slipperiness
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Salve of Slipperiness/Description/Salve of slipperiness
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Scabbard of Keen Edges
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Scarab of Protection
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Scarab/Golembane
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Scarab of Protection
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Silversheen
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Slippers of Spider Climbing
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Sovereign Glue
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Special Qualities/Extradimensional Spaces
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Stone Salve
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Stone of Alarm
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Stone of Good Luck (Luckstone)
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Stone Salve
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Strand of Prayer Beads
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Strand of Prayer Beads/Description/Table Prayer Beads Special Bead Type
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Sustaining Spoon
@@ -11620,84 +11693,11 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Tom
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Tome of Understanding
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Unguent of Timelessness
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Universal Solvent
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Vest of Escape
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Vestment/Druid's
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Vest of Escape
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Well of Many Worlds
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Wind Fan
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Wings of Flying
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/headband of Mental Superiority
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook/Independent Research
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook/Spells Copied from Another's Spellbook or a Scroll
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Adding Spells to a Wizard's Spellbook/Spells Gained at a New Level
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Replacing and Copying Spellbooks
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Selling a Spellbook
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Wizard Spells and Borrowed Spellbooks
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Materials and Costs
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Materials and Costs/Spell Level
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Space in the Spellbook
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Arcane Magical Writings/Writing a New Spell into a Spellbook/Time
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Death and Prepared Spell Retention
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Preparation Environment
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Prepared Spell Retention
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Recent Casting Limit/Rest Interruptions
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Rest
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Spell Preparation Time
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Preparing Wizard Spells/Spell Selection and Preparation
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards/Adding Spells to a Sorcerer's or Bard's Repertoire
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards/Daily Readying of Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Sorcerers and Bards/Recent Casting Limit
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Arcane Spells/Spell Slots
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Choosing a Spell
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Instantaneous Effects
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Spells with Opposite Effects
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Different Bonus Types
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Multiple Mental Control Effects
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/One Effect Makes Another Irrelevant
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Same Effect More than Once in Different Strengths
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Combining Magic Effects/Stacking Effects/Same Effect with Differing Results
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Casting Defensively
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Entangled
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Grappling or Pinned
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Injury
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Table Concentration Check DCs
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Vigorous Motion
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Violent Motion
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Concentration/Violent Weather
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/Counterspelling Metamagic Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/Dispel Magic
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/How Counterspells Work
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Counterspells/Specific Exceptions
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bonus Types
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead/Negative Levels
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead/Preventing Revivification
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Special Spell Effects/Bringing Back the Dead/Revivification against One's Will
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/Spell Failure
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Casting Spells/The Spell's Result
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Divine Magical Writings
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/New Divine Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/New Divine Spells/Independent Research
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/New Divine Spells/Spells Gained at a New Level
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Recent Casting Limit
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spell Selection and Preparation
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spell Slots
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spontaneous Casting of
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Spontaneous Casting of Cure
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Divine Spells/Preparing Divine Spells/Time of Day
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Special Abilities
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Special Abilities/Extraordinary Abilities
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Special Abilities/Natural Abilities
@@ -11724,6 +11724,7 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Components/Material
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Components/Somatic
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Components/Verbal
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Descriptive Text
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/[Descriptor]
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Duration
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Duration/Concentration
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Duration/Discharge
@@ -11743,14 +11744,14 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Range/Range Expressed
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Range/Touch
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Range/Unlimited
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/(harmless)
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/(object)
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Automatic Failures and Successes
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Disbelief
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Half
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/(harmless)
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Items Surviving after a Saving Throw
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Negates
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/None
+pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/(object)
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Partial
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Saving Throw Difficulty Class
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/Saving Throw/Succeeding on a Saving Throw
@@ -11778,7 +11779,6 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/School (Subschool)/Ne
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/School (Subschool)/Transmutation
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/School (Subschool)/Transmutation/Polymorph
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/School (Subschool)/Transmutation/Polymorph/Creature's Original Size
-pfsrd://PFSRD/Rules Core Rulebook/Magic/Spell Descriptions/[Descriptor]
 pfsrd://PFSRD/Rules Core Rulebook/Spells
 pfsrd://PFSRD/Rules Core Rulebook/Spells/Spell Lists
 pfsrd://PFSRD/Rules Core Rulebook/Spells/Spell Lists/Spell Lists/Creatures and Characters
@@ -11839,8 +11839,8 @@ pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Drugs
 pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Drugs and Addiction
 pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Drugs/Drunkenness
 pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Sample Drugs
-pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Sample Drugs/AEther
 pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Sample Drugs/Addiction
+pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Sample Drugs/AEther
 pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Sample Drugs/Dwarven Fire Ale
 pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Sample Drugs/Elven Absinthe
 pfsrd://PFSRD/Rules Game Mastery Guide/Drugs and Addiction/Sample Drugs/Flayleaf
@@ -11862,11 +11862,11 @@ pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Comb
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/Base Save
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/Crew
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/Crew/Table Ship Statistics
+pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/hp
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/Maximum Speed
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/Ram
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/Ship Type
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/Squares
-pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Ship Statistics/hp
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Sinking
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Fast-Play Ship Combat/Starting Combat
 pfsrd://PFSRD/Rules Game Mastery Guide/Fast Play Ship Combat/Nautical Adventures
@@ -11882,13 +11882,13 @@ pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Creating a Haunt/Step 5-Calculate 
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/Alignment and Area
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/Haunt Name
+pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/hp
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/Notice
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/Reset
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/Table CR Modifiers of Haunts
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/Trigger
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/Weakness
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/XP
-pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Elements of a Haunt/hp
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Haunt Rules
 pfsrd://PFSRD/Rules Game Mastery Guide/Haunts/Haunts
 pfsrd://PFSRD/Rules Game Mastery Guide/Hazards
@@ -12009,12 +12009,12 @@ pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Going Insane
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Sanity and Madness
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/Amnesia
+pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/d%
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/Mania/Phobia
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/Multiple Personality Disorder
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/Paranoia
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/Psychosis
 pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/Schizophrenia
-pfsrd://PFSRD/Rules Game Mastery Guide/Sanity and Madness/Types of Insanity/d%
 pfsrd://PFSRD/Rules Game Mastery Guide/Settlements
 pfsrd://PFSRD/Rules Game Mastery Guide/Settlements/Settlements in Play
 pfsrd://PFSRD/Rules Game Mastery Guide/Settlements/Settlements in Play/Sample Settlements
@@ -12289,18 +12289,18 @@ pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Cleric/Cleric Archetypes/Me
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Ape Shaman
-pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Ape Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Ape Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Ape Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Ape Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Ape Shaman/Wild Shape
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Bat Shaman
-pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Bat Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Bat Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Bat Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Bat Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Bat Shaman/Wild Shape
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Boar Shaman
-pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Boar Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Boar Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Boar Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Boar Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/Boar Shaman/Wild Shape
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Druid/Druid Archetypes/World Walker
@@ -12490,8 +12490,8 @@ pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skir
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Arcane Bond
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Arcane Pool
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Greater Spellshield
-pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Shield Pool
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Shielded Spell Combat
+pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Shield Pool
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Sorcerous Shield
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Spellshield
 pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Magus/Magus Archetypes/Skirnir/Spellstrike
@@ -12736,12 +12736,12 @@ pfsrd://PFSRD/Rules Ultimate Combat/Feats/Types of Feats/Teamwork Feats
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Duel Combat
-pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Duel Results
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Dueling Counter
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Dueling Counter/Table Dueling Counter Modifiers
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Dueling Dodge
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Dueling Parry
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Dueling Resolve
+pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Duel Results
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Duels and Performance Combat
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Duels/Starting a Duel
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Eastern Armor and Weapons
@@ -12880,9 +12880,9 @@ pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Buck
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Capacity
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Concealing Firearms
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Deflecting and Snatching Bullets
-pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Fire while Prone
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Firearm Proficiency
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Firearms/Black Powder/and Water
+pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Fire while Prone
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Inappropriately Sized Firearms
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Loading a Firearm
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Firearms/Firearm Rules/Loading a Firearm/Advanced Firearms
@@ -12957,6 +12957,7 @@ pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Crowd At
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Crowd Attitudes/Unfriendly
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Crowd's Starting Attitude
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check
+pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check/Base Attack Bonus
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check DC
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check DC/Other Circumstances That Affect DC
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check DC/Other Circumstances That Affect DC/Bribery or Coercion
@@ -12975,7 +12976,6 @@ pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performa
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check DC/Total Number of Combatants/Large Battle
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check DC/Total Number of Combatants/Medium Battle
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check DC/Total Number of Combatants/Small Battle
-pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check/Base Attack Bonus
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Performance Combat Check/Highest Perform Ranks
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Types of Performance Combat
 pfsrd://PFSRD/Rules Ultimate Combat/Mastering Combat/Performance Combat/Types of Performance Combat/Knockout Bout
@@ -13103,8 +13103,8 @@ pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Armo
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Armor as Damage Reduction/Defense/Flat-Footed Defense
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Armor as Damage Reduction/Defense/Losing Dexterity Bonus to Defense
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Critical Hits and Defense
-pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Critical Hits and Defense/Critical defense DC = critical hit roll + 1/2 attacker's base attack bonus + 1 for each critical feat + 1 for each size category larger attacker is than target
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Critical Hits and Defense/Critical defense check bonus = creature's DR + Dexterity modifier + shield bonus to Defense + deflection bonus
+pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Critical Hits and Defense/Critical defense DC = critical hit roll + 1/2 attacker's base attack bonus + 1 for each critical feat + 1 for each size category larger attacker is than target
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Critical Hits and Defense/Fortification Special Armor Quality
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Critical Hits and Defense/Fortification Special Armor Quality/Table Armor Composition and DR
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Armor as Damage Reduction/Critical Hits and Defense/Fortification Special Armor Quality/Table Natural Armor Conversion to DR
@@ -13140,6 +13140,7 @@ pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Called Shots/Making Called Sho
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Called Shots/Neck
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Called Shots/Vitals
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor
+pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor and Armor Piece hit Points and hardness
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor Piece Descriptions
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor Piece Descriptions/Arms
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor Piece Descriptions/Arms/Agile Plate Arm Armor Piece
@@ -13217,7 +13218,6 @@ pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor Piece De
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor Piece Descriptions/Torso/Tatami-Do Torso Armor Piece
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor Piece Descriptions/Torso/Wooden Torso Armor Piece
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor Pieces for Unusual Creatures
-pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Armor and Armor Piece hit Points and hardness
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Getting Into and Out of Armor Pieces
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Getting Into and Out of Armor Pieces/Don
 pfsrd://PFSRD/Rules Ultimate Combat/Variant Rules/Piecemeal Armor/Getting Into and Out of Armor Pieces/Don Hastily
@@ -13293,15 +13293,11 @@ pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Propulsion and D
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Facing and Movement
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Facing and Movement/Facing
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Facing and Movement/Movement
-pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space
-pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space/Driving Space
-pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space/Driving Space/Table Vehicle Size by Squares
-pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space/Size Conversion
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Attacks against Vehicles
+pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Attacks against Vehicles/Attacking an Occupant
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Attacks against Vehicles/Attacking Conveyance
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Attacks against Vehicles/Attacking Propulsion
-pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Attacks against Vehicles/Attacking an Occupant
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Attacks against Vehicles/Attacking the Driving Device
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Attacks against Vehicles/Attacking the Structure
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Damaging a Vehicle
@@ -13323,6 +13319,10 @@ pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Comb
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Vehicle Combat Maneuvers/Ramming/Table Ramming Damage by Size
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Vehicle Combat Maneuvers/Vehicular Bull Rush
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicles in Combat/Vehicle Combat Maneuvers/Vehicular Overrun
+pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space
+pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space/Driving Space
+pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space/Driving Space/Table Vehicle Size by Squares
+pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Full Vehicle Rules/Vehicle Size and Space/Size Conversion
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Land Vehicles
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Land Vehicles/Carriage
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Land Vehicles/Cart
@@ -13353,6 +13353,7 @@ pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Basics/Facing
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Basics/In Combat
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Basics/Initiative
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Basics/Occupants
+pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicles
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/AC and Hardness
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Acceleration
@@ -13365,13 +13366,12 @@ pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Driving Check
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Driving Device
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Driving Space
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Forward Facing
+pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/hp
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Maximum Speed
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Name
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Propulsion
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Size and Type
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/Squares
-pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicle Statistics/hp
-pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Vehicles
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Water Vehicles
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Water Vehicles/Galley
 pfsrd://PFSRD/Rules Ultimate Combat/Vehicles/Water Vehicles/Keelboat
@@ -13522,9 +13522,6 @@ pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Binding Outsiders/Outsider Ca
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Binding Outsiders/Outsider Categories/Qlippoth/Thulgant
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Binding Outsiders/True Names
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building New Constructs
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building New Constructs/Pricing a New Construct
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building New Constructs/Table Constructs
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building and Modifying Constructs/Animated Objects
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building and Modifying Constructs/Animated Objects/Animated Object
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building and Modifying Constructs/New Animated Object Abilities
@@ -13535,6 +13532,9 @@ pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constr
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building and Modifying Constructs/New Animated Object Abilities/Ranged Attack (Ex/2 CP)
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building and Modifying Constructs/New Animated Object Abilities/Slashing Attack (Ex/1 CP)
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building and Modifying Constructs/New Animated Object Abilities/Trip (Ex/2 CP)
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building New Constructs
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building New Constructs/Pricing a New Construct
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Building New Constructs/Table Constructs
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Basic Modifications
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Basic Modifications/Ability Score Modification
@@ -13561,9 +13561,9 @@ pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constr
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Rune-Carved/Rune of Terror
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Rune-Carved/Rune of Terror/Trigger and Effect
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash/CR Increase
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash/Corrosive Jet Stash
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash/Corrosive Jet Stash/Modification
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash/CR Increase
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash/Firebomb Stash
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash/Firebomb Stash/Modification
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Building and Modifying Constructs/Construct Modifications/Shatter Stash/Frost Mist Stash
@@ -13665,15 +13665,9 @@ pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/Building and Modifying Constructs
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/Designing Spells
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/New Familiars
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/Spell Duels
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/Spellblights
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/Spellbooks
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Duel Combat
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Duel Results
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Dueling Counter
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Dueling Counter/Table Dueling Counter Modifiers
-pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Starting a Duel
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Mastering Magic/Introduction/Spell Duels
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spellblights
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spellblights/Description of Spellblights
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spellblights/Description of Spellblights/Major Spellblights
@@ -13790,6 +13784,12 @@ pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spellbooks/Spellbooks/Tome of
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spellbooks/Spellbooks/Traveler's Tome (Level 4 Transmuter)
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spellbooks/Spellbooks/Unnamed Journal (Level 3 Universalist)
 pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spellbooks/Using Preparation Rituals
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Duel Combat
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Dueling Counter
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Dueling Counter/Table Dueling Counter Modifiers
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Duel Results
+pfsrd://PFSRD/Rules Ultimate Magic/Mastering Magic/Spell Duels/Starting a Duel
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Alchemist
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Alchemist/Alchemist Archetypes
@@ -14012,8 +14012,8 @@ pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Animal and T
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Dragon Shaman
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Dragon Shaman/Dragon Bite
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Dragon Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Dragon Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Dragon Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Dragon Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Dragon Shaman/Wild Shape
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Menhir Savant
@@ -14037,13 +14037,13 @@ pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archet
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Reincarnated Druid/Tongue of the Sun and Moon
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Reincarnated Druid/Wild Shape
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Saurian Shaman
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Saurian Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Saurian Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Saurian Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Saurian Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Saurian Shaman/Wild Shape
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Shark Shaman
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Shark Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Shark Shaman/Totemic Summons
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Shark Shaman/Totem Transformation
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Shark Shaman/Wild Empathy
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Shark Shaman/Wild Shape
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Druid/Druid Archetypes/Storm Druid
@@ -14207,11 +14207,11 @@ pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetyp
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/18th-Level Ki Powers
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/20th-Level Ki Powers
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/Ki
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/augury
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/barkskin
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/feather step
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/hydraulic push
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/Ki
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/ki arrow
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/message
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/scorching ray
@@ -14246,9 +14246,9 @@ pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/A
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Blood of Heroes
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Phantom Touch
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Sacred Council
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Spirit of the Warrior
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Spirit Shield
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Spirit Walk
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Spirit of the Warrior
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Storm of Souls
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Voice of the Grave
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Ancestor/Revelations/Wisdom of the Ancestors
@@ -14292,9 +14292,9 @@ pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/W
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Wood/Revelations/Tree Form
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Wood/Revelations/Wood Armor
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Wood/Revelations/Wood Bond
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Wood/Revelations/Wood Sight
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Wood/Revelations/Wooden Weapon
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Wood/Revelations/Woodland Stride
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Mysteries/Wood/Revelations/Wood Sight
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Oracle Archetypes
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Oracle Archetypes/Dual-Cursed Oracle
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Oracle/Oracle Archetypes/Dual-Cursed Oracle/Oracle's Curse
@@ -14328,15 +14328,15 @@ pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Ar
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Savagery
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Savagery/Holy Reach
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Savagery/Hordebreaker
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm/Breath Evasion
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm/Divine Bond
+pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm/Dragon-Slaying Strike
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Undeath
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Undeath/Aura of Life
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Undeath/Detect Undead
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Undeath/Ghost Touch Aura
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against Undeath/Superior Channeler
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm/Breath Evasion
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm/Divine Bond
-pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath against the Wyrm/Dragon-Slaying Strike
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath of Charity
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath of Charity/Charitable Hands
 pfsrd://PFSRD/Rules Ultimate Magic/Spellcasting Class Options/Paladin/Paladin Archetypes/Oathbound Paladin/Oaths/Oath of Charity/Charitable Mercy
@@ -14667,9 +14667,9 @@ pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells/Counterspelling Wordspells
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells/Multiple Effect Words and Damage
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells/Multiple Effect Words and Duration
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells/Wordspells and Spell Resistance
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells/Wordspell Saving Throws
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells/Wordspell Schools
-pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Casting Wordspells/Wordspells and Spell Resistance
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class-Specific Rules
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class-Specific Rules/Clerics
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class-Specific Rules/Druids
@@ -14691,8 +14691,8 @@ pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Learning Words of Power/Magi/W
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Magic Item Creation
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Word Mastery
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Wordcaster Feats
-pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Words of Power - Types
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Words of Power in the World
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Words of Power - Types
 pfsrd://PFSRD/Skills
 pfsrd://PFSRD/Skills/Acrobatics
 pfsrd://PFSRD/Skills/Acrobatics/Check/Acrobatics Modifiers
@@ -14707,8 +14707,8 @@ pfsrd://PFSRD/Skills/Bluff/Check/Feint
 pfsrd://PFSRD/Skills/Bluff/Check/Secret Messages
 pfsrd://PFSRD/Skills/Climb
 pfsrd://PFSRD/Skills/Climb/Check/Accelerated Climbing
-pfsrd://PFSRD/Skills/Climb/Check/Catch Yourself When Falling
 pfsrd://PFSRD/Skills/Climb/Check/Catch a Falling Character While Climbing
+pfsrd://PFSRD/Skills/Climb/Check/Catch Yourself When Falling
 pfsrd://PFSRD/Skills/Climb/Check/Climb DC
 pfsrd://PFSRD/Skills/Climb/Check/Make Your Own Handholds and Footholds
 pfsrd://PFSRD/Skills/Craft
@@ -14809,23 +14809,23 @@ pfsrd://PFSRD/Skills/Use Magic Device
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Activate Blindly
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Decipher a Written Spell
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Emulate a Class Feature
-pfsrd://PFSRD/Skills/Use Magic Device/Check/Emulate a Race
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Emulate an Ability Score
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Emulate an Alignment
+pfsrd://PFSRD/Skills/Use Magic Device/Check/Emulate a Race
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Task
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Use a Scroll
 pfsrd://PFSRD/Skills/Use Magic Device/Check/Use a Wand/Staff/or Other Spell Trigger Item
 pfsrd://PFSRD/Spells
 pfsrd://PFSRD/Spells/Ablative Barrier
-pfsrd://PFSRD/Spells/Absorb Toxicity
 pfsrd://PFSRD/Spells/Absorbing Touch
+pfsrd://PFSRD/Spells/Absorb Toxicity
 pfsrd://PFSRD/Spells/Abundant Ammunition
 pfsrd://PFSRD/Spells/Accelerate Poison
 pfsrd://PFSRD/Spells/Acid Arrow
 pfsrd://PFSRD/Spells/Acid Fog
+pfsrd://PFSRD/Spells/Acidic Spray
 pfsrd://PFSRD/Spells/Acid Pit
 pfsrd://PFSRD/Spells/Acid Splash
-pfsrd://PFSRD/Spells/Acidic Spray
 pfsrd://PFSRD/Spells/Acute Senses
 pfsrd://PFSRD/Spells/Adjuring Step
 pfsrd://PFSRD/Spells/Adoration
@@ -14897,8 +14897,8 @@ pfsrd://PFSRD/Spells/Badger's Ferocity
 pfsrd://PFSRD/Spells/Baleful Polymorph
 pfsrd://PFSRD/Spells/Ball Lightning
 pfsrd://PFSRD/Spells/Bane
-pfsrd://PFSRD/Spells/Banish Seeming
 pfsrd://PFSRD/Spells/Banishment
+pfsrd://PFSRD/Spells/Banish Seeming
 pfsrd://PFSRD/Spells/Bard's Escape
 pfsrd://PFSRD/Spells/Barkskin
 pfsrd://PFSRD/Spells/Battlemind Link
@@ -14923,21 +14923,21 @@ pfsrd://PFSRD/Spells/Blasphemy/HD
 pfsrd://PFSRD/Spells/Blaze Of Glory
 pfsrd://PFSRD/Spells/Bleed
 pfsrd://PFSRD/Spells/Bless
-pfsrd://PFSRD/Spells/Bless Water
-pfsrd://PFSRD/Spells/Bless Weapon
 pfsrd://PFSRD/Spells/Blessing Of Courage And Life
 pfsrd://PFSRD/Spells/Blessing Of Fervor
 pfsrd://PFSRD/Spells/Blessing Of The Mole
 pfsrd://PFSRD/Spells/Blessing Of The Salamander
+pfsrd://PFSRD/Spells/Bless Water
+pfsrd://PFSRD/Spells/Bless Weapon
 pfsrd://PFSRD/Spells/Blight
 pfsrd://PFSRD/Spells/Blindness/Deafness
 pfsrd://PFSRD/Spells/Blink
 pfsrd://PFSRD/Spells/Blistering Invective
 pfsrd://PFSRD/Spells/Blood Biography
 pfsrd://PFSRD/Spells/Blood Crow Strike
+pfsrd://PFSRD/Spells/Bloodhound
 pfsrd://PFSRD/Spells/Blood Mist
 pfsrd://PFSRD/Spells/Blood Transcription
-pfsrd://PFSRD/Spells/Bloodhound
 pfsrd://PFSRD/Spells/Bloody Claws
 pfsrd://PFSRD/Spells/Blur
 pfsrd://PFSRD/Spells/Boiling Blood
@@ -14954,9 +14954,9 @@ pfsrd://PFSRD/Spells/Breath Of Life
 pfsrd://PFSRD/Spells/Brilliant Inspiration
 pfsrd://PFSRD/Spells/Bristle
 pfsrd://PFSRD/Spells/Brow Gasher
+pfsrd://PFSRD/Spells/Bullet Shield
 pfsrd://PFSRD/Spells/Bull's Strength
 pfsrd://PFSRD/Spells/Bull's Strength/Mass
-pfsrd://PFSRD/Spells/Bullet Shield
 pfsrd://PFSRD/Spells/Bungle
 pfsrd://PFSRD/Spells/Burning Gaze
 pfsrd://PFSRD/Spells/Burning Hands
@@ -14977,9 +14977,9 @@ pfsrd://PFSRD/Spells/Calm Animals
 pfsrd://PFSRD/Spells/Calm Emotions
 pfsrd://PFSRD/Spells/Campfire Wall
 pfsrd://PFSRD/Spells/Cape Of Wasps
-pfsrd://PFSRD/Spells/Cast Out
 pfsrd://PFSRD/Spells/Castigate
 pfsrd://PFSRD/Spells/Castigate/Mass
+pfsrd://PFSRD/Spells/Cast Out
 pfsrd://PFSRD/Spells/Cat's Grace
 pfsrd://PFSRD/Spells/Cat's Grace/Mass
 pfsrd://PFSRD/Spells/Cause Fear
@@ -15014,9 +15014,9 @@ pfsrd://PFSRD/Spells/Cloudkill
 pfsrd://PFSRD/Spells/Cold Ice Strike
 pfsrd://PFSRD/Spells/Color Spray
 pfsrd://PFSRD/Spells/Command
+pfsrd://PFSRD/Spells/Command/Greater
 pfsrd://PFSRD/Spells/Command Plants
 pfsrd://PFSRD/Spells/Command Undead
-pfsrd://PFSRD/Spells/Command/Greater
 pfsrd://PFSRD/Spells/Commune
 pfsrd://PFSRD/Spells/Commune With Nature
 pfsrd://PFSRD/Spells/Companion Mind Link
@@ -15026,8 +15026,8 @@ pfsrd://PFSRD/Spells/Comprehend Languages
 pfsrd://PFSRD/Spells/Cone Of Cold
 pfsrd://PFSRD/Spells/Confess
 pfsrd://PFSRD/Spells/Confusion
-pfsrd://PFSRD/Spells/Confusion/Lesser
 pfsrd://PFSRD/Spells/Confusion/d%
+pfsrd://PFSRD/Spells/Confusion/Lesser
 pfsrd://PFSRD/Spells/Conjure Black Pudding
 pfsrd://PFSRD/Spells/Consecrate
 pfsrd://PFSRD/Spells/Contact Other Plane
@@ -15076,11 +15076,11 @@ pfsrd://PFSRD/Spells/Cure Moderate Wounds
 pfsrd://PFSRD/Spells/Cure Moderate Wounds/Mass
 pfsrd://PFSRD/Spells/Cure Serious Wounds
 pfsrd://PFSRD/Spells/Cure Serious Wounds/Mass
+pfsrd://PFSRD/Spells/Cursed Earth
+pfsrd://PFSRD/Spells/Curse/Major
 pfsrd://PFSRD/Spells/Curse Of Disgust
 pfsrd://PFSRD/Spells/Curse Of Magic Negation
 pfsrd://PFSRD/Spells/Curse Water
-pfsrd://PFSRD/Spells/Curse/Major
-pfsrd://PFSRD/Spells/Cursed Earth
 pfsrd://PFSRD/Spells/Cushioning Bands
 pfsrd://PFSRD/Spells/Damp Powder
 pfsrd://PFSRD/Spells/Dance Of A Hundred Cuts
@@ -15094,8 +15094,8 @@ pfsrd://PFSRD/Spells/Darkvision/Greater
 pfsrd://PFSRD/Spells/Daybreak Arrow
 pfsrd://PFSRD/Spells/Daylight
 pfsrd://PFSRD/Spells/Daze
-pfsrd://PFSRD/Spells/Daze Monster
 pfsrd://PFSRD/Spells/Daze/Mass
+pfsrd://PFSRD/Spells/Daze Monster
 pfsrd://PFSRD/Spells/Deadeye's Lore
 pfsrd://PFSRD/Spells/Deadly Finale
 pfsrd://PFSRD/Spells/Deadly Juggernaut
@@ -15105,16 +15105,16 @@ pfsrd://PFSRD/Spells/Death Ward
 pfsrd://PFSRD/Spells/Deathwatch
 pfsrd://PFSRD/Spells/Debilitating Portent
 pfsrd://PFSRD/Spells/Decompose Corpse
-pfsrd://PFSRD/Spells/Deep Slumber
 pfsrd://PFSRD/Spells/Deeper Darkness
+pfsrd://PFSRD/Spells/Deep Slumber
 pfsrd://PFSRD/Spells/Defensive Shock
 pfsrd://PFSRD/Spells/Defile Armor
 pfsrd://PFSRD/Spells/Deflection
+pfsrd://PFSRD/Spells/Delayed Blast Fireball
+pfsrd://PFSRD/Spells/Delayed Consumption
 pfsrd://PFSRD/Spells/Delay Pain
 pfsrd://PFSRD/Spells/Delay Poison
 pfsrd://PFSRD/Spells/Delay Poison/Communal
-pfsrd://PFSRD/Spells/Delayed Blast Fireball
-pfsrd://PFSRD/Spells/Delayed Consumption
 pfsrd://PFSRD/Spells/Delusional Pride
 pfsrd://PFSRD/Spells/Demand
 pfsrd://PFSRD/Spells/Denounce
@@ -15144,9 +15144,9 @@ pfsrd://PFSRD/Spells/Devolution
 pfsrd://PFSRD/Spells/Diagnose Disease
 pfsrd://PFSRD/Spells/Dictum
 pfsrd://PFSRD/Spells/Dictum/HD
-pfsrd://PFSRD/Spells/Dimension Door
 pfsrd://PFSRD/Spells/Dimensional Anchor
 pfsrd://PFSRD/Spells/Dimensional Lock
+pfsrd://PFSRD/Spells/Dimension Door
 pfsrd://PFSRD/Spells/Diminish Plants
 pfsrd://PFSRD/Spells/Discern Lies
 pfsrd://PFSRD/Spells/Discern Location
@@ -15164,8 +15164,8 @@ pfsrd://PFSRD/Spells/Dispel Law
 pfsrd://PFSRD/Spells/Dispel Magic
 pfsrd://PFSRD/Spells/Dispel Magic/Greater
 pfsrd://PFSRD/Spells/Displacement
-pfsrd://PFSRD/Spells/Disrupt Undead
 pfsrd://PFSRD/Spells/Disrupting Weapon
+pfsrd://PFSRD/Spells/Disrupt Undead
 pfsrd://PFSRD/Spells/Distracting Cacophony
 pfsrd://PFSRD/Spells/Distressing Tone
 pfsrd://PFSRD/Spells/Divination
@@ -15263,7 +15263,10 @@ pfsrd://PFSRD/Spells/Find Quarry
 pfsrd://PFSRD/Spells/Find The Path
 pfsrd://PFSRD/Spells/Find Traps
 pfsrd://PFSRD/Spells/Finger Of Death
+pfsrd://PFSRD/Spells/Fireball
+pfsrd://PFSRD/Spells/Firebrand
 pfsrd://PFSRD/Spells/Fire Breath
+pfsrd://PFSRD/Spells/Firefall
 pfsrd://PFSRD/Spells/Fire Of Entanglement
 pfsrd://PFSRD/Spells/Fire Of Judgment
 pfsrd://PFSRD/Spells/Fire Of Vengeance
@@ -15272,13 +15275,10 @@ pfsrd://PFSRD/Spells/Fire Shield
 pfsrd://PFSRD/Spells/Fire Snake
 pfsrd://PFSRD/Spells/Fire Storm
 pfsrd://PFSRD/Spells/Fire Trap
-pfsrd://PFSRD/Spells/Fireball
-pfsrd://PFSRD/Spells/Firebrand
-pfsrd://PFSRD/Spells/Firefall
 pfsrd://PFSRD/Spells/Flame Arrow
 pfsrd://PFSRD/Spells/Flame Blade
-pfsrd://PFSRD/Spells/Flame Strike
 pfsrd://PFSRD/Spells/Flames Of The Faithful
+pfsrd://PFSRD/Spells/Flame Strike
 pfsrd://PFSRD/Spells/Flaming Sphere
 pfsrd://PFSRD/Spells/Flare
 pfsrd://PFSRD/Spells/Flare Burst
@@ -15296,12 +15296,12 @@ pfsrd://PFSRD/Spells/Fool's Forbiddance
 pfsrd://PFSRD/Spells/Forbid Action
 pfsrd://PFSRD/Spells/Forbid Action/Greater
 pfsrd://PFSRD/Spells/Forbiddance
-pfsrd://PFSRD/Spells/Force Hook Charge
-pfsrd://PFSRD/Spells/Force Punch
 pfsrd://PFSRD/Spells/Forcecage
 pfsrd://PFSRD/Spells/Forced Quiet
 pfsrd://PFSRD/Spells/Forced Repentance
 pfsrd://PFSRD/Spells/Forceful Hand
+pfsrd://PFSRD/Spells/Force Hook Charge
+pfsrd://PFSRD/Spells/Force Punch
 pfsrd://PFSRD/Spells/Foresight
 pfsrd://PFSRD/Spells/Forest Friend
 pfsrd://PFSRD/Spells/Form Of The Dragon I
@@ -15314,8 +15314,8 @@ pfsrd://PFSRD/Spells/Freedom Of Movement
 pfsrd://PFSRD/Spells/Freezing Sphere
 pfsrd://PFSRD/Spells/Frightful Aspect
 pfsrd://PFSRD/Spells/Frigid Touch
-pfsrd://PFSRD/Spells/Frost Fall
 pfsrd://PFSRD/Spells/Frostbite
+pfsrd://PFSRD/Spells/Frost Fall
 pfsrd://PFSRD/Spells/Frozen Note
 pfsrd://PFSRD/Spells/Fumbletongue
 pfsrd://PFSRD/Spells/Fungal Infestation
@@ -15327,10 +15327,10 @@ pfsrd://PFSRD/Spells/Geas/Quest
 pfsrd://PFSRD/Spells/Gentle Repose
 pfsrd://PFSRD/Spells/Getaway
 pfsrd://PFSRD/Spells/Geyser
-pfsrd://PFSRD/Spells/Ghost Sound
 pfsrd://PFSRD/Spells/Ghostbane Dirge
 pfsrd://PFSRD/Spells/Ghostbane Dirge/Mass
 pfsrd://PFSRD/Spells/Ghostly Disguise
+pfsrd://PFSRD/Spells/Ghost Sound
 pfsrd://PFSRD/Spells/Ghoul Touch
 pfsrd://PFSRD/Spells/Giant Form I
 pfsrd://PFSRD/Spells/Giant Form II
@@ -15343,8 +15343,8 @@ pfsrd://PFSRD/Spells/Globe Of Invulnerability
 pfsrd://PFSRD/Spells/Globe Of Invulnerability/Lesser
 pfsrd://PFSRD/Spells/Glyph Of Warding
 pfsrd://PFSRD/Spells/Glyph Of Warding/Greater
-pfsrd://PFSRD/Spells/Good Hope
 pfsrd://PFSRD/Spells/Goodberry
+pfsrd://PFSRD/Spells/Good Hope
 pfsrd://PFSRD/Spells/Grace
 pfsrd://PFSRD/Spells/Grasping Hand
 pfsrd://PFSRD/Spells/Gravity Bow
@@ -15363,19 +15363,19 @@ pfsrd://PFSRD/Spells/Haunted Fey Aspect
 pfsrd://PFSRD/Spells/Haunting Choir
 pfsrd://PFSRD/Spells/Haunting Mists
 pfsrd://PFSRD/Spells/Heal
-pfsrd://PFSRD/Spells/Heal Mount
-pfsrd://PFSRD/Spells/Heal/Mass
 pfsrd://PFSRD/Spells/Healing Thief
+pfsrd://PFSRD/Spells/Heal/Mass
+pfsrd://PFSRD/Spells/Heal Mount
 pfsrd://PFSRD/Spells/Heat Metal
 pfsrd://PFSRD/Spells/Heat Metal/Round
 pfsrd://PFSRD/Spells/Helping Hand
 pfsrd://PFSRD/Spells/Helping Hand/Distance
-pfsrd://PFSRD/Spells/Hero's Defiance
 pfsrd://PFSRD/Spells/Heroes' Feast
 pfsrd://PFSRD/Spells/Heroic Finale
 pfsrd://PFSRD/Spells/Heroic Invocation
 pfsrd://PFSRD/Spells/Heroism
 pfsrd://PFSRD/Spells/Heroism/Greater
+pfsrd://PFSRD/Spells/Hero's Defiance
 pfsrd://PFSRD/Spells/Hex Ward
 pfsrd://PFSRD/Spells/Hidden Speech
 pfsrd://PFSRD/Spells/Hide Campsite
@@ -15450,10 +15450,10 @@ pfsrd://PFSRD/Spells/Interrogation/School
 pfsrd://PFSRD/Spells/Invigorate
 pfsrd://PFSRD/Spells/Invigorate/Mass
 pfsrd://PFSRD/Spells/Invisibility
-pfsrd://PFSRD/Spells/Invisibility Purge
-pfsrd://PFSRD/Spells/Invisibility Sphere
 pfsrd://PFSRD/Spells/Invisibility/Greater
 pfsrd://PFSRD/Spells/Invisibility/Mass
+pfsrd://PFSRD/Spells/Invisibility Purge
+pfsrd://PFSRD/Spells/Invisibility Sphere
 pfsrd://PFSRD/Spells/Iron Body
 pfsrd://PFSRD/Spells/Ironwood
 pfsrd://PFSRD/Spells/Irresistible Dance
@@ -15467,9 +15467,9 @@ pfsrd://PFSRD/Spells/Keen Edge
 pfsrd://PFSRD/Spells/Keen Senses
 pfsrd://PFSRD/Spells/Ki Arrow
 pfsrd://PFSRD/Spells/Ki Leech
-pfsrd://PFSRD/Spells/Ki Shout
 pfsrd://PFSRD/Spells/Kinetic Reverberation
 pfsrd://PFSRD/Spells/King's Castle
+pfsrd://PFSRD/Spells/Ki Shout
 pfsrd://PFSRD/Spells/Knight's Calling
 pfsrd://PFSRD/Spells/Knock
 pfsrd://PFSRD/Spells/Know Direction
@@ -15616,8 +15616,8 @@ pfsrd://PFSRD/Spells/Owl's Wisdom/Mass
 pfsrd://PFSRD/Spells/Pain Strike
 pfsrd://PFSRD/Spells/Pain Strike/Mass
 pfsrd://PFSRD/Spells/Paladin's Sacrifice
-pfsrd://PFSRD/Spells/Pass Without Trace
 pfsrd://PFSRD/Spells/Passwall
+pfsrd://PFSRD/Spells/Pass Without Trace
 pfsrd://PFSRD/Spells/Peacebond
 pfsrd://PFSRD/Spells/Pellet Blast
 pfsrd://PFSRD/Spells/Perceive Cues
@@ -15708,8 +15708,8 @@ pfsrd://PFSRD/Spells/Pyrotechnics
 pfsrd://PFSRD/Spells/Qualm
 pfsrd://PFSRD/Spells/Quench
 pfsrd://PFSRD/Spells/Rage
-pfsrd://PFSRD/Spells/Rain Of Frogs
 pfsrd://PFSRD/Spells/Rainbow Pattern
+pfsrd://PFSRD/Spells/Rain Of Frogs
 pfsrd://PFSRD/Spells/Raise Animal Companion
 pfsrd://PFSRD/Spells/Raise Dead
 pfsrd://PFSRD/Spells/Rally Point
@@ -15750,9 +15750,9 @@ pfsrd://PFSRD/Spells/Repulsion
 pfsrd://PFSRD/Spells/Residual Tracking
 pfsrd://PFSRD/Spells/Resilient Sphere
 pfsrd://PFSRD/Spells/Resinous Skin
+pfsrd://PFSRD/Spells/Resistance
 pfsrd://PFSRD/Spells/Resist Energy
 pfsrd://PFSRD/Spells/Resist Energy/Communal
-pfsrd://PFSRD/Spells/Resistance
 pfsrd://PFSRD/Spells/Resonating Word
 pfsrd://PFSRD/Spells/Resounding Blow
 pfsrd://PFSRD/Spells/Rest Eternal
@@ -15813,6 +15813,7 @@ pfsrd://PFSRD/Spells/Sepia Snake Sigil
 pfsrd://PFSRD/Spells/Sequester
 pfsrd://PFSRD/Spells/Serenity
 pfsrd://PFSRD/Spells/Shades
+pfsrd://PFSRD/Spells/Shadowbard
 pfsrd://PFSRD/Spells/Shadow Bomb Admixture
 pfsrd://PFSRD/Spells/Shadow Conjuration
 pfsrd://PFSRD/Spells/Shadow Conjuration/Greater
@@ -15822,15 +15823,14 @@ pfsrd://PFSRD/Spells/Shadow Projection
 pfsrd://PFSRD/Spells/Shadow Step
 pfsrd://PFSRD/Spells/Shadow Walk
 pfsrd://PFSRD/Spells/Shadow Weapon
-pfsrd://PFSRD/Spells/Shadowbard
 pfsrd://PFSRD/Spells/Shambler
 pfsrd://PFSRD/Spells/Shapechange
 pfsrd://PFSRD/Spells/Shard Of Chaos
+pfsrd://PFSRD/Spells/Shared Wrath
 pfsrd://PFSRD/Spells/Share Language
 pfsrd://PFSRD/Spells/Share Language/Communal
 pfsrd://PFSRD/Spells/Share Memory
 pfsrd://PFSRD/Spells/Share Senses
-pfsrd://PFSRD/Spells/Shared Wrath
 pfsrd://PFSRD/Spells/Shatter
 pfsrd://PFSRD/Spells/Shield
 pfsrd://PFSRD/Spells/Shield Of Faith
@@ -15838,9 +15838,9 @@ pfsrd://PFSRD/Spells/Shield Of Law
 pfsrd://PFSRD/Spells/Shield Other
 pfsrd://PFSRD/Spells/Shifting Sand
 pfsrd://PFSRD/Spells/Shillelagh
-pfsrd://PFSRD/Spells/Shock Shield
 pfsrd://PFSRD/Spells/Shocking Grasp
 pfsrd://PFSRD/Spells/Shocking Image
+pfsrd://PFSRD/Spells/Shock Shield
 pfsrd://PFSRD/Spells/Shout
 pfsrd://PFSRD/Spells/Shout/Greater
 pfsrd://PFSRD/Spells/Shrink Item
@@ -15883,18 +15883,18 @@ pfsrd://PFSRD/Spells/Spell Immunity/Communal
 pfsrd://PFSRD/Spells/Spell Immunity/Greater
 pfsrd://PFSRD/Spells/Spell Immunity/Greater Communal
 pfsrd://PFSRD/Spells/Spell Resistance
+pfsrd://PFSRD/Spells/Spellstaff
 pfsrd://PFSRD/Spells/Spell Turning
 pfsrd://PFSRD/Spells/Spell Turning/d%
-pfsrd://PFSRD/Spells/Spellstaff
 pfsrd://PFSRD/Spells/Spider Climb
 pfsrd://PFSRD/Spells/Spider Climb/Communal
+pfsrd://PFSRD/Spells/Spiked Pit
 pfsrd://PFSRD/Spells/Spike Growth
 pfsrd://PFSRD/Spells/Spike Stones
-pfsrd://PFSRD/Spells/Spiked Pit
 pfsrd://PFSRD/Spells/Spiritual Ally
 pfsrd://PFSRD/Spells/Spiritual Weapon
-pfsrd://PFSRD/Spells/Spit Venom
 pfsrd://PFSRD/Spells/Spite
+pfsrd://PFSRD/Spells/Spit Venom
 pfsrd://PFSRD/Spells/Spontaneous Immolation
 pfsrd://PFSRD/Spells/Stabilize
 pfsrd://PFSRD/Spells/Stabilize Powder
@@ -15906,12 +15906,12 @@ pfsrd://PFSRD/Spells/Stinking Cloud
 pfsrd://PFSRD/Spells/Stone Call
 pfsrd://PFSRD/Spells/Stone Fist
 pfsrd://PFSRD/Spells/Stone Shape
-pfsrd://PFSRD/Spells/Stone Tell
-pfsrd://PFSRD/Spells/Stone To Flesh
 pfsrd://PFSRD/Spells/Stoneskin
 pfsrd://PFSRD/Spells/Stoneskin/Communal
-pfsrd://PFSRD/Spells/Storm Of Vengeance
+pfsrd://PFSRD/Spells/Stone Tell
+pfsrd://PFSRD/Spells/Stone To Flesh
 pfsrd://PFSRD/Spells/Stormbolts
+pfsrd://PFSRD/Spells/Storm Of Vengeance
 pfsrd://PFSRD/Spells/Strangling Hair
 pfsrd://PFSRD/Spells/Strong Jaw
 pfsrd://PFSRD/Spells/Stumble Gap
@@ -15922,14 +15922,15 @@ pfsrd://PFSRD/Spells/Suggestion
 pfsrd://PFSRD/Spells/Suggestion/Mass
 pfsrd://PFSRD/Spells/Summon Eidolon
 pfsrd://PFSRD/Spells/Summon Elder Worm
+pfsrd://PFSRD/Spells/Summoner Conduit
 pfsrd://PFSRD/Spells/Summon Froghemoth
 pfsrd://PFSRD/Spells/Summon Instrument
 pfsrd://PFSRD/Spells/Summon Minor Ally
 pfsrd://PFSRD/Spells/Summon Minor Monster
 pfsrd://PFSRD/Spells/Summon Monster I
-pfsrd://PFSRD/Spells/Summon Monster I/Table Summon Monster
 pfsrd://PFSRD/Spells/Summon Monster II
 pfsrd://PFSRD/Spells/Summon Monster III
+pfsrd://PFSRD/Spells/Summon Monster I/Table Summon Monster
 pfsrd://PFSRD/Spells/Summon Monster IV
 pfsrd://PFSRD/Spells/Summon Monster IX
 pfsrd://PFSRD/Spells/Summon Monster V
@@ -15937,9 +15938,9 @@ pfsrd://PFSRD/Spells/Summon Monster VI
 pfsrd://PFSRD/Spells/Summon Monster VII
 pfsrd://PFSRD/Spells/Summon Monster VIII
 pfsrd://PFSRD/Spells/Summon Nature's Ally I
-pfsrd://PFSRD/Spells/Summon Nature's Ally I/Table Summon Nature's Ally
 pfsrd://PFSRD/Spells/Summon Nature's Ally II
 pfsrd://PFSRD/Spells/Summon Nature's Ally III
+pfsrd://PFSRD/Spells/Summon Nature's Ally I/Table Summon Nature's Ally
 pfsrd://PFSRD/Spells/Summon Nature's Ally IV
 pfsrd://PFSRD/Spells/Summon Nature's Ally IX
 pfsrd://PFSRD/Spells/Summon Nature's Ally V
@@ -15947,10 +15948,9 @@ pfsrd://PFSRD/Spells/Summon Nature's Ally VI
 pfsrd://PFSRD/Spells/Summon Nature's Ally VII
 pfsrd://PFSRD/Spells/Summon Nature's Ally VIII
 pfsrd://PFSRD/Spells/Summon Swarm
-pfsrd://PFSRD/Spells/Summoner Conduit
-pfsrd://PFSRD/Spells/Sun Metal
 pfsrd://PFSRD/Spells/Sunbeam
 pfsrd://PFSRD/Spells/Sunburst
+pfsrd://PFSRD/Spells/Sun Metal
 pfsrd://PFSRD/Spells/Surmount Affliction
 pfsrd://PFSRD/Spells/Swarm Skin
 pfsrd://PFSRD/Spells/Swarm Skin/Number of Levels
@@ -15976,18 +15976,18 @@ pfsrd://PFSRD/Spells/Sympathetic Vibration
 pfsrd://PFSRD/Spells/Sympathy
 pfsrd://PFSRD/Spells/Tactical Acumen
 pfsrd://PFSRD/Spells/Tar Ball
-pfsrd://PFSRD/Spells/Tar Pool
 pfsrd://PFSRD/Spells/Targeted Bomb Admixture
+pfsrd://PFSRD/Spells/Tar Pool
 pfsrd://PFSRD/Spells/Telekinesis
 pfsrd://PFSRD/Spells/Telekinetic Assembly
 pfsrd://PFSRD/Spells/Telekinetic Charge
 pfsrd://PFSRD/Spells/Telekinetic Sphere
 pfsrd://PFSRD/Spells/Telepathic Bond
 pfsrd://PFSRD/Spells/Teleport
-pfsrd://PFSRD/Spells/Teleport Object
+pfsrd://PFSRD/Spells/Teleportation Circle
 pfsrd://PFSRD/Spells/Teleport/Familiarity
 pfsrd://PFSRD/Spells/Teleport/Greater
-pfsrd://PFSRD/Spells/Teleportation Circle
+pfsrd://PFSRD/Spells/Teleport Object
 pfsrd://PFSRD/Spells/Temporal Stasis
 pfsrd://PFSRD/Spells/Temporary Resurrection
 pfsrd://PFSRD/Spells/Terrain Bond
@@ -15996,8 +15996,8 @@ pfsrd://PFSRD/Spells/Thorn Body
 pfsrd://PFSRD/Spells/Threefold Aspect
 pfsrd://PFSRD/Spells/Thunder Fire
 pfsrd://PFSRD/Spells/Thundering Drums
-pfsrd://PFSRD/Spells/Time Stop
 pfsrd://PFSRD/Spells/Timely Inspiration
+pfsrd://PFSRD/Spells/Time Stop
 pfsrd://PFSRD/Spells/Tiny Hut
 pfsrd://PFSRD/Spells/Tireless Pursuers
 pfsrd://PFSRD/Spells/Tireless Pursuit
@@ -16093,8 +16093,8 @@ pfsrd://PFSRD/Spells/Wall Of Stone
 pfsrd://PFSRD/Spells/Wall Of Suppression
 pfsrd://PFSRD/Spells/Wall Of Thorns
 pfsrd://PFSRD/Spells/Wandering Star Motes
-pfsrd://PFSRD/Spells/Ward The Faithful
 pfsrd://PFSRD/Spells/Warding Weapon
+pfsrd://PFSRD/Spells/Ward The Faithful
 pfsrd://PFSRD/Spells/Warp Wood
 pfsrd://PFSRD/Spells/Wartrain Mount
 pfsrd://PFSRD/Spells/Water Breathing
@@ -16111,13 +16111,13 @@ pfsrd://PFSRD/Spells/Weird
 pfsrd://PFSRD/Spells/Whirlwind
 pfsrd://PFSRD/Spells/Whispering Wind
 pfsrd://PFSRD/Spells/Wilderness Soldiers
+pfsrd://PFSRD/Spells/Winds Of Vengeance
 pfsrd://PFSRD/Spells/Wind Walk
 pfsrd://PFSRD/Spells/Wind Wall
-pfsrd://PFSRD/Spells/Winds Of Vengeance
 pfsrd://PFSRD/Spells/Wish
 pfsrd://PFSRD/Spells/Witness
-pfsrd://PFSRD/Spells/Wood Shape
 pfsrd://PFSRD/Spells/Wooden Phalanx
+pfsrd://PFSRD/Spells/Wood Shape
 pfsrd://PFSRD/Spells/Word Of Chaos
 pfsrd://PFSRD/Spells/Word Of Chaos/HD
 pfsrd://PFSRD/Spells/Word Of Recall
