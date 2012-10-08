@@ -12,7 +12,6 @@ import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
@@ -242,6 +241,12 @@ public class DetailsWebViewClient extends WebViewClient {
 		contentError.setOnClickListener(new ContentErrorReporter(this.act,
 				path, title.getText().toString()));
 		this.oldUrl = newUrl;
+		if(isTablet) {
+			view.loadUrl("javascript:window.psrd_toc.side()");
+		}
+		else {
+			view.loadUrl("javascript:window.psrd_toc.full()");
+		}
 		return true;
 	}
 

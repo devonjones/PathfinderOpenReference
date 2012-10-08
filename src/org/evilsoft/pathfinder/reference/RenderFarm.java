@@ -29,7 +29,6 @@ import org.evilsoft.pathfinder.reference.render.VehicleRenderer;
 
 import android.database.Cursor;
 import android.database.CursorIndexOutOfBoundsException;
-import android.os.Build;
 import android.widget.TextView;
 
 public class RenderFarm {

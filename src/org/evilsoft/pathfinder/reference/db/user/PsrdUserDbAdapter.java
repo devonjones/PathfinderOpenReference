@@ -103,7 +103,7 @@ public class PsrdUserDbAdapter {
 					ErrorReporter.getInstance().putCustomData(
 							"Situation", "URL does not exist: " + url);
 					ErrorReporter.getInstance().handleException(null);
-					//deleteBookmark(id);
+					deleteBookmark(id);
 				}
 			}
 			hasNext = curs.moveToNext();
