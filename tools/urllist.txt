@@ -680,6 +680,7 @@ pfsrd://PFSRD/Classes/Monk/Class Features/Flurry of Blows
 pfsrd://PFSRD/Classes/Monk/Class Features/High Jump
 pfsrd://PFSRD/Classes/Monk/Class Features/Improved Evasion
 pfsrd://PFSRD/Classes/Monk/Class Features/Ki
+pfsrd://PFSRD/Classes/Monk/Class Features/Ki Pool
 pfsrd://PFSRD/Classes/Monk/Class Features/Maneuver Training
 pfsrd://PFSRD/Classes/Monk/Class Features/Perfect Self
 pfsrd://PFSRD/Classes/Monk/Class Features/Purity of Body
@@ -910,20 +911,35 @@ pfsrd://PFSRD/Classes/Paladin/Class Features/Divine Health
 pfsrd://PFSRD/Classes/Paladin/Class Features/Holy Champion
 pfsrd://PFSRD/Classes/Paladin/Class Features/Lay On Hands
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Blinded
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Blinded
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Cursed
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Cursed
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Dazed
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Dazed
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Deafened
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Deafened
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Diseased
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Diseased
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Exhausted
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Exhausted
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Fatigued
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Fatigued
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Frightened
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Frightened
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Nauseated
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Nauseated
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Paralyzed
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Paralyzed
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Poisoned
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Poisoned
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Shaken
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Shaken
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Sickened
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Sickened
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Staggered
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Staggered
+pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/Stunned
 pfsrd://PFSRD/Classes/Paladin/Class Features/Mercy/• Stunned
 pfsrd://PFSRD/Classes/Paladin/Class Features/Smite Evil
 pfsrd://PFSRD/Classes/Paladin/Class Skills/Skill Ranks per Level/Table Paladin
@@ -2128,6 +2144,10 @@ pfsrd://PFSRD/Monsters/Adlet
 pfsrd://PFSRD/Monsters/Adlet/Special Abilities
 pfsrd://PFSRD/Monsters/Adlet/Special Abilities/Arctic Stride
 pfsrd://PFSRD/Monsters/Adlet/Special Abilities/Frozen Breath
+pfsrd://PFSRD/Monsters/Adventurers
+pfsrd://PFSRD/Monsters/Adventurers/Battle Mage
+pfsrd://PFSRD/Monsters/Adventurers/Monster Hunter
+pfsrd://PFSRD/Monsters/Adventurers/Tomb Raider
 pfsrd://PFSRD/Monsters/Aeon
 pfsrd://PFSRD/Monsters/Aeon/Aeon/Monad/the Condition of All
 pfsrd://PFSRD/Monsters/Aeon/Akhana
@@ -2572,6 +2592,10 @@ pfsrd://PFSRD/Monsters/Brain Ooze/Special Abilities
 pfsrd://PFSRD/Monsters/Brain Ooze/Special Abilities/Neural Pulse
 pfsrd://PFSRD/Monsters/Brain Ooze/Special Abilities/Prescience
 pfsrd://PFSRD/Monsters/Brain Ooze/Special Abilities/Psychic Noise
+pfsrd://PFSRD/Monsters/Brigands
+pfsrd://PFSRD/Monsters/Brigands/Bandit
+pfsrd://PFSRD/Monsters/Brigands/Bandit Lord
+pfsrd://PFSRD/Monsters/Brigands/Highwayman
 pfsrd://PFSRD/Monsters/Brownie
 pfsrd://PFSRD/Monsters/Bugbear
 pfsrd://PFSRD/Monsters/Bugbear/Special Abilities
@@ -2693,6 +2717,10 @@ pfsrd://PFSRD/Monsters/Chupacabra/Special Abilities/Chupar
 pfsrd://PFSRD/Monsters/Chuul
 pfsrd://PFSRD/Monsters/Chuul/Special Abilities
 pfsrd://PFSRD/Monsters/Chuul/Special Abilities/Paralytic Tentacles
+pfsrd://PFSRD/Monsters/City Watch
+pfsrd://PFSRD/Monsters/City Watch/Guard
+pfsrd://PFSRD/Monsters/City Watch/Guard Officer
+pfsrd://PFSRD/Monsters/City Watch/Watch Captain
 pfsrd://PFSRD/Monsters/Cloaker
 pfsrd://PFSRD/Monsters/Cloaker/Special Abilities
 pfsrd://PFSRD/Monsters/Cloaker/Special Abilities/Engulf
@@ -2743,6 +2771,10 @@ pfsrd://PFSRD/Monsters/Cold Rider/Special Abilities
 pfsrd://PFSRD/Monsters/Cold Rider/Special Abilities/Icewalking
 pfsrd://PFSRD/Monsters/Cold Rider/Special Abilities/Implements of Ice
 pfsrd://PFSRD/Monsters/Cold Rider/Special Abilities/Susceptible to Shatter
+pfsrd://PFSRD/Monsters/Coliseum
+pfsrd://PFSRD/Monsters/Coliseum/Beast Master
+pfsrd://PFSRD/Monsters/Coliseum/Champion
+pfsrd://PFSRD/Monsters/Coliseum/Gladiator
 pfsrd://PFSRD/Monsters/Couatl
 pfsrd://PFSRD/Monsters/Couatl/Special Abilities
 pfsrd://PFSRD/Monsters/Couatl/Special Abilities/Poison
@@ -2765,6 +2797,14 @@ pfsrd://PFSRD/Monsters/Crawling Hand/Giant
 pfsrd://PFSRD/Monsters/Crawling Hand/Giant/Special Abilities
 pfsrd://PFSRD/Monsters/Crawling Hand/Giant/Special Abilities/Mark Quarry
 pfsrd://PFSRD/Monsters/Crawling Hand/Giant/Special Abilities/Pus Burst
+pfsrd://PFSRD/Monsters/Criminals I
+pfsrd://PFSRD/Monsters/Criminals I/Burglar
+pfsrd://PFSRD/Monsters/Criminals II
+pfsrd://PFSRD/Monsters/Criminals II/Guild Master
+pfsrd://PFSRD/Monsters/Criminals II/Slaver
+pfsrd://PFSRD/Monsters/Criminals II/Slayer
+pfsrd://PFSRD/Monsters/Criminals I/Pickpocket
+pfsrd://PFSRD/Monsters/Criminals I/Street Thug
 pfsrd://PFSRD/Monsters/Crocodile
 pfsrd://PFSRD/Monsters/Crocodile/Crocodile
 pfsrd://PFSRD/Monsters/Crocodile/Crocodile/Special Abilities
@@ -2772,6 +2812,10 @@ pfsrd://PFSRD/Monsters/Crocodile/Crocodile/Special Abilities/Death Roll
 pfsrd://PFSRD/Monsters/Crocodile/Crocodile/Special Abilities/Hold Breath
 pfsrd://PFSRD/Monsters/Crocodile/Crocodile/Special Abilities/Sprint
 pfsrd://PFSRD/Monsters/Crocodile/Dire
+pfsrd://PFSRD/Monsters/Crusaders
+pfsrd://PFSRD/Monsters/Crusaders/Holy Warrior
+pfsrd://PFSRD/Monsters/Crusaders/Saint
+pfsrd://PFSRD/Monsters/Crusaders/Squire
 pfsrd://PFSRD/Monsters/Crypt Thing
 pfsrd://PFSRD/Monsters/Crypt Thing/Special Abilities
 pfsrd://PFSRD/Monsters/Crypt Thing/Special Abilities/Teleporting Burst
@@ -3604,6 +3648,10 @@ pfsrd://PFSRD/Monsters/Dullahan/Special Abilities
 pfsrd://PFSRD/Monsters/Dullahan/Special Abilities/Chilling Blade
 pfsrd://PFSRD/Monsters/Dullahan/Special Abilities/Death's Calling
 pfsrd://PFSRD/Monsters/Dullahan/Special Abilities/Summon Mount
+pfsrd://PFSRD/Monsters/Dungeon
+pfsrd://PFSRD/Monsters/Dungeon/Prisoner
+pfsrd://PFSRD/Monsters/Dungeon/Torturer
+pfsrd://PFSRD/Monsters/Dungeon/Turnkey
 pfsrd://PFSRD/Monsters/Dust Digger
 pfsrd://PFSRD/Monsters/Dust Digger/Special Abilities
 pfsrd://PFSRD/Monsters/Dust Digger/Special Abilities/Sinkhole
@@ -3734,6 +3782,10 @@ pfsrd://PFSRD/Monsters/Elephant
 pfsrd://PFSRD/Monsters/Elephant/Elephant
 pfsrd://PFSRD/Monsters/Elephant/Mastodon
 pfsrd://PFSRD/Monsters/Elephant/Mastodon/Elephant/Mastodon
+pfsrd://PFSRD/Monsters/Entertainers
+pfsrd://PFSRD/Monsters/Entertainers/Celebrity Bard
+pfsrd://PFSRD/Monsters/Entertainers/Minstrel
+pfsrd://PFSRD/Monsters/Entertainers/Storyteller
 pfsrd://PFSRD/Monsters/Ettercap
 pfsrd://PFSRD/Monsters/Ettercap/Ettercap Deadfall
 pfsrd://PFSRD/Monsters/Ettercap/Ettercap Noose
@@ -3785,6 +3837,10 @@ pfsrd://PFSRD/Monsters/Fey Creature/Creating a Fey Creature
 pfsrd://PFSRD/Monsters/Fey Creature/Creating a Fey Creature/Special Abilities
 pfsrd://PFSRD/Monsters/Fey Creature/Special Abilities
 pfsrd://PFSRD/Monsters/Fey Creature/Special Abilities/Poison Skin
+pfsrd://PFSRD/Monsters/Fighting School
+pfsrd://PFSRD/Monsters/Fighting School/Battle Monk
+pfsrd://PFSRD/Monsters/Fighting School/Initiate
+pfsrd://PFSRD/Monsters/Fighting School/Master
 pfsrd://PFSRD/Monsters/Flail Snail
 pfsrd://PFSRD/Monsters/Flail Snail/Special Abilities
 pfsrd://PFSRD/Monsters/Flail Snail/Special Abilities/Mucus
@@ -3830,6 +3886,10 @@ pfsrd://PFSRD/Monsters/Froghemoth/Special Abilities/Slowed by Electricity
 pfsrd://PFSRD/Monsters/Frog/Poison
 pfsrd://PFSRD/Monsters/Frog/Poison/Special Abilities
 pfsrd://PFSRD/Monsters/Frog/Poison/Special Abilities/Poison
+pfsrd://PFSRD/Monsters/Frontier
+pfsrd://PFSRD/Monsters/Frontier/Guide
+pfsrd://PFSRD/Monsters/Frontier/Hermit
+pfsrd://PFSRD/Monsters/Frontier/Trapper
 pfsrd://PFSRD/Monsters/Frost Worm
 pfsrd://PFSRD/Monsters/Frost Worm/Special Abilities
 pfsrd://PFSRD/Monsters/Frost Worm/Special Abilities/Cold
@@ -4267,6 +4327,10 @@ pfsrd://PFSRD/Monsters/Herd Animal/Camel/Special Abilities/Spit
 pfsrd://PFSRD/Monsters/Herd Animal/Elk
 pfsrd://PFSRD/Monsters/Herd Animal/Ram
 pfsrd://PFSRD/Monsters/Herd Animal/Ram/Ram
+pfsrd://PFSRD/Monsters/Heretics
+pfsrd://PFSRD/Monsters/Heretics/Conjurist
+pfsrd://PFSRD/Monsters/Heretics/Cultist
+pfsrd://PFSRD/Monsters/Heretics/Cult Leader
 pfsrd://PFSRD/Monsters/Hippocampus
 pfsrd://PFSRD/Monsters/Hippocampus/Special Abilities
 pfsrd://PFSRD/Monsters/Hippocampus/Special Abilities/Water Dependency
@@ -4728,6 +4792,10 @@ pfsrd://PFSRD/Monsters/Mantis/Giant/Special Abilities
 pfsrd://PFSRD/Monsters/Mantis/Giant/Special Abilities/Lunge
 pfsrd://PFSRD/Monsters/Mantis/Giant/Special Abilities/Mandibles
 pfsrd://PFSRD/Monsters/Mantis/Giant/Special Abilities/Sudden Strike
+pfsrd://PFSRD/Monsters/Marauders
+pfsrd://PFSRD/Monsters/Marauders/Pirate Captain
+pfsrd://PFSRD/Monsters/Marauders/Raider
+pfsrd://PFSRD/Monsters/Marauders/Viking
 pfsrd://PFSRD/Monsters/Marsupial
 pfsrd://PFSRD/Monsters/Marsupial/Kangaroo
 pfsrd://PFSRD/Monsters/Marsupial/Thylacine
@@ -4779,6 +4847,14 @@ pfsrd://PFSRD/Monsters/Mephit/Water Mephit (Water)
 pfsrd://PFSRD/Monsters/Mercane
 pfsrd://PFSRD/Monsters/Mercane/Special Abilities
 pfsrd://PFSRD/Monsters/Mercane/Special Abilities/Secret Chest
+pfsrd://PFSRD/Monsters/Mercenaries
+pfsrd://PFSRD/Monsters/Mercenaries/Bounty Hunter
+pfsrd://PFSRD/Monsters/Mercenaries/Caravan Guard
+pfsrd://PFSRD/Monsters/Mercenaries/Sellsword
+pfsrd://PFSRD/Monsters/Merchants
+pfsrd://PFSRD/Monsters/Merchants/Merchant Prince
+pfsrd://PFSRD/Monsters/Merchants/Shopkeep
+pfsrd://PFSRD/Monsters/Merchants/Traveling Merchant
 pfsrd://PFSRD/Monsters/Merfolk
 pfsrd://PFSRD/Monsters/Merfolk/Merfolk
 pfsrd://PFSRD/Monsters/Merfolk/Merfolk/Aquatic
@@ -4791,6 +4867,10 @@ pfsrd://PFSRD/Monsters/Mihstu/Special Abilities/Deadly Embrace
 pfsrd://PFSRD/Monsters/Mihstu/Special Abilities/Gaseous
 pfsrd://PFSRD/Monsters/Mihstu/Special Abilities/Susceptible to Cold
 pfsrd://PFSRD/Monsters/Mihstu/Special Abilities/Wind Defense
+pfsrd://PFSRD/Monsters/Military
+pfsrd://PFSRD/Monsters/Military/Cavalry
+pfsrd://PFSRD/Monsters/Military/Foot Soldier
+pfsrd://PFSRD/Monsters/Military/General
 pfsrd://PFSRD/Monsters/Mimic
 pfsrd://PFSRD/Monsters/Mimic/Special Abilities
 pfsrd://PFSRD/Monsters/Mimic/Special Abilities/Adhesive
@@ -4933,6 +5013,10 @@ pfsrd://PFSRD/Monsters/Nixie/Bog Nixies/Minor Wish
 pfsrd://PFSRD/Monsters/Nixie/Nixie
 pfsrd://PFSRD/Monsters/Nixie/Nixie/Special Abilities
 pfsrd://PFSRD/Monsters/Nixie/Nixie/Special Abilities/Wild Empathy
+pfsrd://PFSRD/Monsters/Nobles
+pfsrd://PFSRD/Monsters/Nobles/Knight
+pfsrd://PFSRD/Monsters/Nobles/Noble
+pfsrd://PFSRD/Monsters/Nobles/Noble Scion
 pfsrd://PFSRD/Monsters/Norn
 pfsrd://PFSRD/Monsters/Norn/Special Abilities
 pfsrd://PFSRD/Monsters/Norn/Special Abilities/Fated
@@ -5276,10 +5360,18 @@ pfsrd://PFSRD/Monsters/Revenant/Special Abilities/Sense Murderer
 pfsrd://PFSRD/Monsters/Rhinoceros
 pfsrd://PFSRD/Monsters/Rhinoceros/Rhinoceros
 pfsrd://PFSRD/Monsters/Rhinoceros/Woolly
+pfsrd://PFSRD/Monsters/Road
+pfsrd://PFSRD/Monsters/Road/Pilgrim
+pfsrd://PFSRD/Monsters/Road/Vagabond
+pfsrd://PFSRD/Monsters/Road/Wanderer
 pfsrd://PFSRD/Monsters/Roc
 pfsrd://PFSRD/Monsters/Roper
 pfsrd://PFSRD/Monsters/Roper/Special Abilities
 pfsrd://PFSRD/Monsters/Roper/Special Abilities/Strands
+pfsrd://PFSRD/Monsters/Royalty
+pfsrd://PFSRD/Monsters/Royalty/King
+pfsrd://PFSRD/Monsters/Royalty/Princess
+pfsrd://PFSRD/Monsters/Royalty/Queen
 pfsrd://PFSRD/Monsters/Rusalka
 pfsrd://PFSRD/Monsters/Rusalka/Special Abilities
 pfsrd://PFSRD/Monsters/Rusalka/Special Abilities/Beckoning Call
@@ -5302,6 +5394,10 @@ pfsrd://PFSRD/Monsters/Sahuagin
 pfsrd://PFSRD/Monsters/Sahuagin/Special Abilities
 pfsrd://PFSRD/Monsters/Sahuagin/Special Abilities/Blood Frenzy
 pfsrd://PFSRD/Monsters/Sahuagin/Special Abilities/Speak with Sharks
+pfsrd://PFSRD/Monsters/Sailors
+pfsrd://PFSRD/Monsters/Sailors/Captain
+pfsrd://PFSRD/Monsters/Sailors/First Mate
+pfsrd://PFSRD/Monsters/Sailors/Shipmate
 pfsrd://PFSRD/Monsters/Salamander
 pfsrd://PFSRD/Monsters/Salamander/Special Abilities
 pfsrd://PFSRD/Monsters/Salamander/Special Abilities/Heat
@@ -5338,6 +5434,10 @@ pfsrd://PFSRD/Monsters/Sceaduinar/Special Abilities
 pfsrd://PFSRD/Monsters/Sceaduinar/Special Abilities/Entropic Flesh
 pfsrd://PFSRD/Monsters/Sceaduinar/Special Abilities/Entropic Touch
 pfsrd://PFSRD/Monsters/Sceaduinar/Special Abilities/Void Child
+pfsrd://PFSRD/Monsters/Scholars
+pfsrd://PFSRD/Monsters/Scholars/Archaeologist
+pfsrd://PFSRD/Monsters/Scholars/Hedge Wizard
+pfsrd://PFSRD/Monsters/Scholars/Sage
 pfsrd://PFSRD/Monsters/Scorpion
 pfsrd://PFSRD/Monsters/Scorpion
 pfsrd://PFSRD/Monsters/Scorpion/Black
@@ -5380,6 +5480,10 @@ pfsrd://PFSRD/Monsters/Sea Serpent/Deep/Special Abilities/Surge
 pfsrd://PFSRD/Monsters/Sea Serpent/Special Abilities
 pfsrd://PFSRD/Monsters/Sea Serpent/Special Abilities/Capsize
 pfsrd://PFSRD/Monsters/Sea Serpent/Special Abilities/Elusive
+pfsrd://PFSRD/Monsters/Seers
+pfsrd://PFSRD/Monsters/Seers/Doomsayer
+pfsrd://PFSRD/Monsters/Seers/Fortune Teller
+pfsrd://PFSRD/Monsters/Seers/Medium
 pfsrd://PFSRD/Monsters/Serpentfolk
 pfsrd://PFSRD/Monsters/Serpentfolk/Special Abilities
 pfsrd://PFSRD/Monsters/Serpentfolk/Special Abilities/Poison
@@ -5626,6 +5730,10 @@ pfsrd://PFSRD/Monsters/Stirge/Special Abilities
 pfsrd://PFSRD/Monsters/Stirge/Special Abilities/Attach
 pfsrd://PFSRD/Monsters/Stirge/Special Abilities/Blood Drain
 pfsrd://PFSRD/Monsters/Stirge/Special Abilities/Diseased
+pfsrd://PFSRD/Monsters/Street
+pfsrd://PFSRD/Monsters/Street/Beggar
+pfsrd://PFSRD/Monsters/Street/Dealer
+pfsrd://PFSRD/Monsters/Street/Prostitute
 pfsrd://PFSRD/Monsters/Stymphalidies
 pfsrd://PFSRD/Monsters/Stymphalidies/Special Abilities
 pfsrd://PFSRD/Monsters/Stymphalidies/Special Abilities/Glare
@@ -5701,6 +5809,14 @@ pfsrd://PFSRD/Monsters/Tarrasque/Special Abilities/Spines
 pfsrd://PFSRD/Monsters/Tatzlwyrm
 pfsrd://PFSRD/Monsters/Tatzlwyrm/Special Abilities
 pfsrd://PFSRD/Monsters/Tatzlwyrm/Special Abilities/Poison Gasp
+pfsrd://PFSRD/Monsters/Tavern
+pfsrd://PFSRD/Monsters/Tavern/Barkeep
+pfsrd://PFSRD/Monsters/Tavern/Barmaid
+pfsrd://PFSRD/Monsters/Tavern/Drunkard
+pfsrd://PFSRD/Monsters/Temple
+pfsrd://PFSRD/Monsters/Temple/Acolyte
+pfsrd://PFSRD/Monsters/Temple/High Priest
+pfsrd://PFSRD/Monsters/Temple/Priest
 pfsrd://PFSRD/Monsters/Tendriculos
 pfsrd://PFSRD/Monsters/Tenebrous Worm
 pfsrd://PFSRD/Monsters/Tenebrous Worm/Special Abilities
@@ -5805,6 +5921,10 @@ pfsrd://PFSRD/Monsters/Treant/Special Abilities
 pfsrd://PFSRD/Monsters/Treant/Special Abilities/Animate Trees
 pfsrd://PFSRD/Monsters/Treant/Special Abilities/Double Damage Against Objects
 pfsrd://PFSRD/Monsters/Treant/Special Abilities/Treespeech
+pfsrd://PFSRD/Monsters/Tribe
+pfsrd://PFSRD/Monsters/Tribe/Cannibal
+pfsrd://PFSRD/Monsters/Tribe/Chieftain
+pfsrd://PFSRD/Monsters/Tribe/Shaman
 pfsrd://PFSRD/Monsters/Triton
 pfsrd://PFSRD/Monsters/Troglodyte
 pfsrd://PFSRD/Monsters/Troll
@@ -5904,6 +6024,10 @@ pfsrd://PFSRD/Monsters/Vemerak/Special Abilities
 pfsrd://PFSRD/Monsters/Vemerak/Special Abilities/Breath Weapon
 pfsrd://PFSRD/Monsters/Vemerak/Special Abilities/Earthquake
 pfsrd://PFSRD/Monsters/Vemerak/Special Abilities/Spore Cloud
+pfsrd://PFSRD/Monsters/Villagers
+pfsrd://PFSRD/Monsters/Villagers/Farmer
+pfsrd://PFSRD/Monsters/Villagers/Mayor
+pfsrd://PFSRD/Monsters/Villagers/Village Idiot
 pfsrd://PFSRD/Monsters/Violet Fungus
 pfsrd://PFSRD/Monsters/Violet Fungus/Special Abilities
 pfsrd://PFSRD/Monsters/Violet Fungus/Special Abilities/Rot
@@ -8782,6 +8906,7 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Cursed Items/Riot Pipes
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Cursed Items/Rod of Arson
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Magic Items
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Magic Items/Magic Item Descriptions
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Magic Items/Magic Item Descriptions/Aura
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Magic Items/Magic Item Descriptions/Price
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Magic Items/Magic Item Descriptions/Slot
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Magic Items/Magic Item Descriptions/Weight
@@ -8947,6 +9072,74 @@ pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wonderous Items/Wondrous
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wonderous Items/Wondrous Items/Torc of Lionheart Fury
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wonderous Items/Wondrous Items/Vest of the Cockroach
 pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wonderous Items/Wondrous Items/War Paint of the Terrible Visage
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/All Tools Vest
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Amulet of Magecraft
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Amulet of Spell Cunning
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Annihilation Spectacles
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Apple of Eternal Sleep
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Assisting Glove
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Bandages of Rapid Recovery
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Book of the Loremaster
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Boots of Friendly Terrain
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Bottle of Messages
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Bracelet of Mercy
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Campfire Bead
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Catching Cape
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Cauldron of Brewing
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Cauldron of Flying
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Cauldron of Plenty
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Cauldron of Resurrection
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Cauldron of Seeing
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Cauldron of the Dead
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Clamor Box
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Construct Channel Brick
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Cowardly Crouching Cloak
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Crystal of Healing Hands
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Defoliant Polish
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Doomharp
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Dust of Emulation
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Flying Ointment
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Gloves of Dueling
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Glowing Glove
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Grappler's Mask
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Helm of Fearsome Mien
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Horn of Antagonism
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Horn of the Huntmaster
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Ioun Torch
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Key of Lock Jamming
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Ki Mat
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Knight's Pennon
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Knight's Pennon/Description/Battle
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Knight's Pennon/Description/Honor
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Knight's Pennon/Description/Parley
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Lord's Banner
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Lord's Banner/Description/Crusades
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Lord's Banner/Description/Swiftness
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Lord's Banner/Description/Terror
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Lord's Banner/Description/Victory
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Manacles of Cooperation
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Mask of Giants
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Moon Circlet
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Muleback Cords
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Necklace of Ki Serenity
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Necromancer's Athame
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Philter of Love
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Robes of Arcane Heritage
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Sash of the War Champion
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Scabbard of Stanching
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Scabbard of Vigor
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Scabbard of Vigor/Description/Bonus Duration
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Sheath of Bladestealth
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Silver Smite Bracelet
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Sniper Goggles
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Soul Soap
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Table Major Wondrous Items
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Table Medium Wondrous Items
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Table Minor Wondrous Items
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Torc of Lionheart Fury
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/Vest of the Cockroach
+pfsrd://PFSRD/Rules Advanced Player's Guide/Magic Items/Wondrous Items/War Paint of the Terrible Visage
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Awarding Hero Points
 pfsrd://PFSRD/Rules Advanced Player's Guide/New Rules/Awarding Hero Points/Additional Hero Point Rules
@@ -11238,6 +11431,7 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Damaging Magic Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Damaging Magic Items/Charges/Doses/and Multiple Uses
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Damaging Magic Items/Repairing Magic Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Magic Item Descriptions
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Magic Item Descriptions/Aura
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Magic Item Descriptions/Price
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Magic Item Descriptions/Slot
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Magic Items/Magic Item Descriptions/Weight
@@ -11487,7 +11681,6 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Table Major Wondrous Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Table Medium Wondrous Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Table Minor Wondrous Items
-pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Amulet of Mighty Fists
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Amulet of Natural Armor
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Amulet of Proof against Detection and Location
@@ -11698,6 +11891,221 @@ pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Ves
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Well of Many Worlds
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Wind Fan
 pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wonderous Items/Wondrous Items/Wings of Flying
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Amulet of Mighty Fists
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Amulet of Natural Armor
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Amulet of Proof against Detection and Location
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Amulet of the Planes
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Apparatus of the Crab
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Apparatus of the Crab/Description/Table Apparatus of the Crab Lever
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bag of Holding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bag of Holding/Description/Table Bag of Holding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bag of Tricks
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bag of Tricks/Description/Table Bag of Tricks
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bead of Force
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Belt of Dwarvenkind
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Belt of Giant Strength
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Belt of Incredible Dexterity
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Belt of Mighty Constitution
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Belt of Physical Might
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Belt of Physical Perfection
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Blessed Book
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boat/Folding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boots of Elvenkind
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boots of Levitation
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boots of Speed
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boots of Striding and Springing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boots of Teleportation
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boots of the Winterlands
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Boots/Winged
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bottle of Air
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bracelet of Friends
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bracers of Archery/Greater
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bracers of Archery/Lesser
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Bracers of Armor
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Brooch of Shielding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Broom of Flying
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Candle of Invocation
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Candle of Truth
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cape of the Mountebank
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Carpet of Flying
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Carpet of Flying/Description/Table Carpet of Flying
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Chime of Interruption
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Chime of Opening
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Circlet of Persuasion
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of Arachnida
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of Displacement/Major
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of Displacement/Minor
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of Elvenkind
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of Etherealness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of Resistance
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of the Bat
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cloak of the Manta Ray
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Crown of Blasting/Major
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Crown of Blasting/Minor
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Crystal Ball
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Crystal Ball/Description/Table Crystal Ball Type
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cube of Force
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cube of Force/Description/Table Cube of Force Attack Form
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cube of Force/Description/Table Cube of Force Cube Face
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cube of Frost Resistance
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Cubic Gate
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Darkskull
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Decanter of Endless Water
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Deck of Illusions
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Deck of Illusions/Description/Table Deck of Illusions
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Dimensional Shackles
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Drums of Panic
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Dust of Appearance
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Dust of Appearance/Description/Dust of appearance
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Dust of Disappearance
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Dust of Dryness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Dust of Illusion
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Dust of Tracelessness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Efficient Quiver
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Efreeti Bottle
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elemental Gem
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elixir of Fire Breath
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elixir of Hiding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elixir of Love
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elixir of Swimming
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elixir of Truth
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elixir of Tumbling
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Elixir of Vision
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Eversmoking Bottle
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Eyes of Charming
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Eyes of Doom
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Eyes of the Eagle
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Feather Token
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Feather Token/Description/Anchor
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Feather Token/Description/Bird
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Feather Token/Description/Fan
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Feather Token/Description/Swan Boat
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Feather Token/Description/Tree
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Feather Token/Description/Whip
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Figurines of Wondrous Power
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Figurines of Wondrous Power/Description/Marble Elephant
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Figurines of Wondrous Power/Description/Obsidian Steed
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Figurines of Wondrous Power/Description/Onyx Dog
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Figurines of Wondrous Power/Description/Serpentine Owl
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Figurines of Wondrous Power/Description/Silver Raven
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Gauntlet of Rust
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Gem of Brightness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Gem of Seeing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Glove of Storing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Gloves of Arrow Snaring
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Gloves of Swimming and Climbing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Goggles of Minute Seeing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Goggles of Night
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Golem Manual
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Golem Manual/Description/Clay Golem Manual
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Golem Manual/Description/Flesh Golem Manual
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Golem Manual/Description/Iron Golem Manual
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Golem Manual/Description/Stone Golem Guardian Manual
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Golem Manual/Description/Stone Golem Manual
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Hand of Glory
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Hand of the Mage
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Handy Haversack
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Harp of Charming
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Hat of Disguise
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Headband of Alluring Charisma
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Headband of Inspired Wisdom
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Headband of Mental Prowess
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Headband of Mental Superiority
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Headband of Vast Intelligence
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Helm of Brilliance
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Helm of Comprehend Languages and Read Magic
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Helm of Telepathy
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Helm of Teleportation
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Helm of Underwater Action
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horn of Blasting
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horn of Blasting/Greater
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horn of Fog
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horn of Goodness/Evil
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horn of Valhalla
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horn of Valhalla/Description/Table Horn of Valhalla
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horseshoes of a Zephyr
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Horseshoes of Speed
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Incense of Meditation
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Instant Fortress
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Ioun Stones
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Ioun Stones/Description/Table Ioun Stones
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Iron Bands of Binding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Iron Flask
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Iron Flask/Description/Table Iron Flask
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Lantern of Revealing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Lens of Detection
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Lyre of Building
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Mantle of Faith
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Mantle of Spell Resistance
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Manual of Bodily Health
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Manual of Gainful Exercise
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Manual of Quickness of Action
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Marvelous Pigments
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Mask of the Skull
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Mattock of the Titans
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Maul of the Titans
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Medallion of Thoughts
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Mirror of Life Trapping
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Mirror of Opposition
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Necklace of Adaptation
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Necklace of Fireballs
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Necklace of Fireballs/Description/Table Necklace of Fireballs
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Orb of Storms
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Pearl of Power
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Pearl of the Sirines
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Periapt of Health
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Periapt of Proof against Poison
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Periapt of Wound Closure
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Phylactery of Faithfulness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Phylactery of Negative Channeling
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Phylactery of Positive Channeling
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Pipes of Haunting
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Pipes of Sounding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Pipes of the Sewers
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Portable Hole
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Restorative Ointment
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Ring Gates
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe/Monk's
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of Blending
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of Bones
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of Eyes
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of Scintillating Colors
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of Stars
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of the Archmagi
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of Useful Items
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Robe of Useful Items/Description/Table Robe of Useful Items
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Rope of Climbing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Rope of Entanglement
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Salve of Slipperiness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Salve of Slipperiness/Description/Salve of slipperiness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Scabbard of Keen Edges
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Scarab/Golembane
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Scarab of Protection
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Silversheen
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Slippers of Spider Climbing
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Sovereign Glue
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Special Qualities/Extradimensional Spaces
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Stone of Alarm
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Stone of Good Luck (Luckstone)
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Stone Salve
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Strand of Prayer Beads
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Strand of Prayer Beads/Description/Table Prayer Beads Special Bead Type
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Sustaining Spoon
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Table Major Wondrous Items
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Table Medium Wondrous Items
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Table Minor Wondrous Items
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Tome of Clear Thought
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Tome of Leadership and Influence
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Tome of Understanding
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Unguent of Timelessness
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Universal Solvent
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Vestment/Druid's
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Vest of Escape
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Well of Many Worlds
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Wind Fan
+pfsrd://PFSRD/Rules Core Rulebook/Magic Items/Wondrous Items/Wings of Flying
+>>>>>>> Stashed changes
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Special Abilities
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Special Abilities/Extraordinary Abilities
 pfsrd://PFSRD/Rules Core Rulebook/Magic/Special Abilities/Natural Abilities
@@ -11922,6 +12330,18 @@ pfsrd://PFSRD/Rules Game Mastery Guide/NPC Gallery/An NPC by Any Other Name
 pfsrd://PFSRD/Rules Game Mastery Guide/NPC Gallery/NPC Boons
 pfsrd://PFSRD/Rules Game Mastery Guide/NPC Gallery/NPC Boons/Table Pregenerated NPC Statistics
 pfsrd://PFSRD/Rules Game Mastery Guide/NPC Gallery/NPC Gallery
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/Adept
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/Aristocrat
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/Commoner
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/Expert
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/NPC Boons/Favor
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/NPC Boons/Skill
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/NPC Boons/Unique
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Boons/Warrior
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Gallery
+pfsrd://PFSRD/Rules Game Mastery Guide/NPCs/NPC Gallery/Table Pregenerated NPC Statistics
 pfsrd://PFSRD/Rules Game Mastery Guide/Planar Adventures
 pfsrd://PFSRD/Rules Game Mastery Guide/Planar Adventures/Planar
 pfsrd://PFSRD/Rules Game Mastery Guide/Planar Adventures/Planar Traits
@@ -14677,6 +15097,284 @@ pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class-Specific Rules/Multiclas
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class-Specific Rules/Oracles and Sorcerers
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class-Specific Rules/Witches
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class-Specific Rules/Wizards
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Alchemist Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Alchemist Words/1st-Level Alchemist Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Alchemist Words/2nd-Level Alchemist Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Alchemist Words/3rd-Level Alchemist Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Alchemist Words/4th-Level Alchemist Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Alchemist Words/5th-Level Alchemist Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Alchemist Words/6th-Level Alchemist Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words/0-Level Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words/1st-Level Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words/2nd-Level Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words/3rd-Level Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words/4th-Level Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words/5th-Level Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Bard Words/6th-Level Bard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/0-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/0-Level Cleric/Oracle Words/Bleeding Wounds
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/1st-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/2nd-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/3rd-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/4th-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/5th-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/6th-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/7th-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/8th-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Cleric/Oracle Words/9th-Level Cleric/Oracle Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/0-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/1st-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/2nd-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/3rd-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/4th-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/4th-Level Druid Words/Altered Form
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/5th-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/6th-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/7th-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/8th-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Druid Words/9th-Level Druid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words/0-Level Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words/1st-Level Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words/2nd-Level Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words/3rd-Level Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words/4th-Level Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words/5th-Level Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Inquisitor Words/6th-Level Inquisitor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words/0-Level Magus Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words/1st-Level Magus Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words/2nd-Level Magus Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words/3rd-Level Magus Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words/4th-Level Magus Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words/5th-Level Magus Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Magus words/6th-Level Magus Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Paladin Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Paladin Words/1st-Level Paladin Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Paladin Words/2nd-Level Paladin Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Paladin Words/3rd-Level Paladin Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Paladin Words/4th-Level Paladin Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Ranger Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Ranger Words/1st-Level Ranger Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Ranger Words/2nd-Level Ranger Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Ranger Words/3rd-Level Ranger Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Ranger Words/4th-Level Ranger Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/0-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/1st-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/2nd-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/3rd-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/4th-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/5th-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/6th-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/7th-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/8th-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Sorcerer/Wizard Words/9th-Level Sorcerer/Wizard Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words/0-Level Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words/1st-Level Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words/2nd-Level Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words/3rd-Level Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words/4th-Level Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words/5th-Level Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Summoner Words/6th-Level Summoner Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/0-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/0-Level Witch Words/Bleeding Wounds
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/1st-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/2nd-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/3rd-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/4th-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/5th-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/6th-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/7th-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/8th-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Class Word Lists/Witch Words/9th-Level Witch Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Acid Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Acid Words/Acid Burn
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Acid Words/Acid Wave
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Acid Words/Caustic Cloud
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Acid Words/Corrosive Bolt
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Alignment Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Alignment Words/Alignment Assault
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Alignment Words/Alignment Aura
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Alignment Words/Alignment Shield
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Animal Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Animal Words/Nature's Calm
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Animal Words/Nature's Command
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Animal Words/Wild Lure
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Armor Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Armor Words/Force Armor
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Armor Words/Force Block
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Armor Words/Force Shield
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Armor Words/Force Ward
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Binding Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Binding Words/Lock Ward
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Binding Words/Paralyze Creature
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Binding Words/Paralyze Humanoid
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Binding Words/Permanent Paralysis
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Body Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Body Words/Energy Immunity
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Body Words/Enhance Form
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Body Words/Fortify
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Body Words/Perfect Form
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Change Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Change Words/Altered Form
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Change Words/Bestial Form
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Change Words/Monstrous Form
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Cold Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Cold Words/Cold Snap
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Cold Words/Frost Fingers
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Cold Words/Ice Blast
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Cold Words/Winter's Wrath
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Complex Order
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Crush Will
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Friendship
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Simple Order
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Simple Order/Approach
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Simple Order/Drop
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Simple Order/Fall
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Simple Order/Flee
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Command Words/Simple Order/Halt
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Concealing Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Concealing Words/Disappear
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Concealing Words/Fade
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Concealing Words/Unseen Shell
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Death Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Death Words/Grave Bane
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Death Words/Life Leech
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Death Words/Slay
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Death Words/Undeath
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Destruction Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Destruction Words/Catastrophe
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Destruction Words/Rumble
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Detection Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Detection Words/Sense Alignment
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Detection Words/Sense Hidden
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Detection Words/Sense Magic
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Detection Words/Sense Thoughts
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Dispelling Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Dispelling Words/Negation
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Dispelling Words/Resist Arcana
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Dispelling Words/Suppress
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Dispelling Words/Unmake
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Divination Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Divination Words/Beacon
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Divination Words/Far Sight
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Divination Words/Locate
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Duration
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Electricity Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Electricity Words/Ball Lightning
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Electricity Words/Lightning Blast
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Electricity Words/Shock Arc
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Electricity Words/Spark
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Electricity Words/Thunder Strike
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fear Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fear Words/Horror
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fear Words/Spook
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fear Words/Terror
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fire Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fire Words/Burning Flash
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fire Words/Cinder Storm
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fire Words/Fire Blast
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fire Words/Flame Jet
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fire Words/Inferno
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Fire Words/True Fire
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Flight Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Flight Words/Float
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Flight Words/Soar
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Force Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Force Words/Force Blast
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Force Words/Force Bolt
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Gravity Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Gravity Words/Lift
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Gravity Words/Repulse
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Gravity Words/Unfetter
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Healing Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Healing Words/Elder Cure
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Healing Words/Greater Cure
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Healing Words/Lesser Cure
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Healing Words/Moderate Cure
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Healing Words/Soothing Touch
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Illumination Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Illumination Words/Gloom
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Illumination Words/Radiance
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Illumination Words/Sunshine
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Illusion Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Illusion Words/Echo
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Illusion Words/Glimmering
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Language Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Language Words/Decipher
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Language Words/Far Casting
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Language Words/Translate
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Level
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Life Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Life Words/Life Touch
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Life Words/Purify
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Life Words/Revive
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Pain Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Pain Words/Cramp
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Pain Words/Torture
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Pain Words/Wrack
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Power Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Power Words/Blind
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Power Words/Blind/Table Blind
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Power Words/Kill
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Power Words/Stun
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Power Words/Stun/Table Stun
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Saving Throw
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/School
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Sonic Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Sonic Words/Destructive Vibration
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Sonic Words/Discordant Note
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Sonic Words/Sound Blast
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor I
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor II
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor III
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor IV
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor IX
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor V
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor VI
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor VII
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Summoning Words/Servitor VIII
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Target Restrictions
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Teleportation Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Teleportation Words/Dimensional Gate
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Teleportation Words/Dimensional Hop
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Teleportation Words/Dimensional Jump
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Teleportation Words/Dimensional Shift
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words/Accelerate
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words/Borrow Future
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words/Control Time
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words/Dash
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words/Decelerate
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words/Fleet
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Time Words/Predict
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wall Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wall Words/Blade Wall
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wall Words/Fire Wall
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wall Words/Ice Wall
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wall Words/Stone Wall
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wall Words/Wind Wall
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Weather Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Weather Words/Blizzard
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Weather Words/Fog Bank
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Weather Words/Storm Master
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Weather Words/Wind Blast
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wounding Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wounding Words/Bleeding Wounds
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wounding Words/Elder Wound
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wounding Words/Greater Wound
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wounding Words/Lesser Wound
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Effect Words/Wounding Words/Moderate Wound
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Examples
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Examples/Burst Fire Blast
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Examples/Selected Alignment Shield Enhance Form Grave Bane
@@ -14690,6 +15388,27 @@ pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Learning Words of Power/Cleric
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Learning Words of Power/Magi/Witches/and Wizards
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Magic Item Creation
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Word Mastery
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Careful
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Distant
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Irresistible
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Lengthy
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Level
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Manifestation
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Mind Warp
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Penetrating
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Quiet
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Meta Words/Simple
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Barrier
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Burst
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Cone
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Level
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Line
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Personal
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Range
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Selected
+pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Target Words/Target
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Wordcaster Feats
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Words of Power in the World
 pfsrd://PFSRD/Rules Ultimate Magic/Words of Power/Words of Power - Types
@@ -15930,23 +16649,41 @@ pfsrd://PFSRD/Spells/Summon Minor Monster
 pfsrd://PFSRD/Spells/Summon Monster I
 pfsrd://PFSRD/Spells/Summon Monster II
 pfsrd://PFSRD/Spells/Summon Monster III
+pfsrd://PFSRD/Spells/Summon Monster III/Table Summon Monster III
+pfsrd://PFSRD/Spells/Summon Monster II/Table Summon Monster II
 pfsrd://PFSRD/Spells/Summon Monster I/Table Summon Monster
+pfsrd://PFSRD/Spells/Summon Monster I/Table Summon Monster I
 pfsrd://PFSRD/Spells/Summon Monster IV
+pfsrd://PFSRD/Spells/Summon Monster IV/Table Summon Monster IV
 pfsrd://PFSRD/Spells/Summon Monster IX
+pfsrd://PFSRD/Spells/Summon Monster IX/Table Summon Monster IX
 pfsrd://PFSRD/Spells/Summon Monster V
 pfsrd://PFSRD/Spells/Summon Monster VI
 pfsrd://PFSRD/Spells/Summon Monster VII
 pfsrd://PFSRD/Spells/Summon Monster VIII
+pfsrd://PFSRD/Spells/Summon Monster VIII/Table Summon Monster VIII
+pfsrd://PFSRD/Spells/Summon Monster VII/Table Summon Monster VII
+pfsrd://PFSRD/Spells/Summon Monster VI/Table Summon Monster VI
+pfsrd://PFSRD/Spells/Summon Monster V/Table Summon Monster V
 pfsrd://PFSRD/Spells/Summon Nature's Ally I
 pfsrd://PFSRD/Spells/Summon Nature's Ally II
 pfsrd://PFSRD/Spells/Summon Nature's Ally III
+pfsrd://PFSRD/Spells/Summon Nature's Ally III/Table Summon Nature's Ally III
+pfsrd://PFSRD/Spells/Summon Nature's Ally II/Table Summon Nature's Ally II
 pfsrd://PFSRD/Spells/Summon Nature's Ally I/Table Summon Nature's Ally
+pfsrd://PFSRD/Spells/Summon Nature's Ally I/Table Summon Nature's Ally I
 pfsrd://PFSRD/Spells/Summon Nature's Ally IV
+pfsrd://PFSRD/Spells/Summon Nature's Ally IV/Table Summon Nature's Ally IV
 pfsrd://PFSRD/Spells/Summon Nature's Ally IX
+pfsrd://PFSRD/Spells/Summon Nature's Ally IX/Table Summon Nature's Ally IX
 pfsrd://PFSRD/Spells/Summon Nature's Ally V
 pfsrd://PFSRD/Spells/Summon Nature's Ally VI
 pfsrd://PFSRD/Spells/Summon Nature's Ally VII
 pfsrd://PFSRD/Spells/Summon Nature's Ally VIII
+pfsrd://PFSRD/Spells/Summon Nature's Ally VIII/Table Summon Nature's Ally VIII
+pfsrd://PFSRD/Spells/Summon Nature's Ally VII/Table Summon Nature's Ally VII
+pfsrd://PFSRD/Spells/Summon Nature's Ally VI/Table Summon Nature's Ally VI
+pfsrd://PFSRD/Spells/Summon Nature's Ally V/Table Summon Nature's Ally V
 pfsrd://PFSRD/Spells/Summon Swarm
 pfsrd://PFSRD/Spells/Sunbeam
 pfsrd://PFSRD/Spells/Sunburst
