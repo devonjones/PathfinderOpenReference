@@ -88,7 +88,6 @@ public class PsrdUserDbAdapter {
 		boolean hasNext = curs.moveToFirst();
 		while(hasNext) {
 			String id = curs.getString(0);
-			String name = curs.getString(1);
 			String url = curs.getString(2);
 			if(url.indexOf("?") > -1) {
 				url = TextUtils.split(url, "\\?")[0];
@@ -104,7 +103,7 @@ public class PsrdUserDbAdapter {
 					ErrorReporter.getInstance().putCustomData(
 							"Situation", "URL does not exist: " + url);
 					ErrorReporter.getInstance().handleException(null);
-					deleteBookmark(id);
+					//deleteBookmark(id);
 				}
 			}
 			hasNext = curs.moveToNext();
@@ -156,6 +155,28 @@ public class PsrdUserDbAdapter {
 		StringBuffer sql = new StringBuffer();
 		sql.append("SELECT *");
 		sql.append(" FROM sections");
+		sql.append(" WHERE url = ?");
+		Cursor curs = psrdDb.rawQuery(sql.toString(),
+				PsrdDbAdapter.toStringArray(args));
+		try {
+			boolean result = curs.moveToFirst();
+			if (result) {
+				return result;
+			}
+			else {
+				return urlReferenceExists(psrdDb, url);
+			}
+		} finally {
+			curs.close();
+		}
+	}
+
+	private boolean urlReferenceExists(SQLiteDatabase psrdDb, String url) {
+		List<String> args = new ArrayList<String>();
+		args.add(url);
+		StringBuffer sql = new StringBuffer();
+		sql.append("SELECT *");
+		sql.append(" FROM url_references");
 		sql.append(" WHERE url = ?");
 		Cursor curs = psrdDb.rawQuery(sql.toString(),
 				PsrdDbAdapter.toStringArray(args));

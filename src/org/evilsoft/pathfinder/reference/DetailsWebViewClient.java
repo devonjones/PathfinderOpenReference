@@ -11,6 +11,7 @@ import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.net.Uri;
@@ -49,12 +50,11 @@ public class DetailsWebViewClient extends WebViewClient {
 		openDb();
 	}
 
-	@Override
-	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
+	public String mungeUrl(String newUrl) {
 		Log.i(TAG, newUrl);
 		ErrorReporter e = ErrorReporter.getInstance();
 		if (newUrl == null) {
-			return false;
+			return null;
 		}
 		e.putCustomData("LastWebViewUrl", newUrl);
 		if (newUrl.startsWith("http://")) {
@@ -70,14 +70,38 @@ public class DetailsWebViewClient extends WebViewClient {
 		}
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].equals("Search") && parts.length < 5) {
-			return false;
+			return null;
 		}
-		if (parts[0].toLowerCase().equals("pfsrd:")) {
-			this.url = newUrl;
-			Log.d(TAG, parts[parts.length - 1]);
-			path = dbAdapter.getPathByUrl(newUrl);
-			setBackVisibility(newUrl);
-			return renderPfsrd(view, newUrl);
+		return newUrl;
+	}
+
+	public boolean render(WebView view, String newUrl) {
+		newUrl = mungeUrl(newUrl);
+		if (newUrl != null) {
+			String[] parts = newUrl.split("\\/");
+			if (parts[0].toLowerCase().equals("pfsrd:")) {
+				this.url = newUrl;
+				Log.d(TAG, parts[parts.length - 1]);
+				path = dbAdapter.getPathByUrl(newUrl);
+				setBackVisibility(newUrl);
+				return renderPfsrd(view, newUrl);
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public boolean shouldOverrideUrlLoading(WebView view, String newUrl) {
+		newUrl = mungeUrl(newUrl);
+		if (newUrl != null) {
+			String[] parts = newUrl.split("\\/");
+			if (parts[0].toLowerCase().equals("pfsrd:")) {
+				Intent showContent = new Intent(act.getApplicationContext(), DetailsActivity.class);
+
+				showContent.setData(Uri.parse(newUrl));
+				act.startActivity(showContent);
+				return true;
+			}
 		}
 		return false;
 	}

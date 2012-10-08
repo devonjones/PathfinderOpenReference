@@ -72,7 +72,7 @@ public class DetailsViewFragment extends SherlockFragment {
 	}
 
 	public void updateUrl(String newUrl) {
-		client.shouldOverrideUrlLoading(viewer, newUrl);
+		client.render(viewer, newUrl);
 	}
 
 	@Override
