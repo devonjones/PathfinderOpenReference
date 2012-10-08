@@ -174,7 +174,19 @@ public class PsrdDbAdapter {
 		sb.append(" FROM sections");
 		sb.append(" WHERE url = ?");
 		String sql = sb.toString();
-		return database.rawQuery(sql, toStringArray(args));
+		Cursor curs = database.rawQuery(sql, toStringArray(args));
+		if(curs.getCount() == 0) {
+			curs.close();
+			sb = new StringBuffer();
+			sb.append("SELECT s.section_id, s.parent_id, s.name, s.type");
+			sb.append(" FROM sections s");
+			sb.append("  INNER JOIN url_references u");
+			sb.append("   ON s.section_id = u.section_id");
+			sb.append(" WHERE u.url = ?");
+			sql = sb.toString();
+			curs = database.rawQuery(sql, toStringArray(args));
+		}
+		return curs;
 	}
 
 	public Cursor fetchFullSection(String sectionId) {
