@@ -12,6 +12,7 @@ import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
@@ -24,6 +25,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class DetailsWebViewClient extends WebViewClient {
+	public static final String PREFS_NAME = "psrd.prefs";
 	private static final String TAG = "DetailsWebViewClient";
 	private PsrdDbAdapter dbAdapter;
 	private PsrdUserDbAdapter userDbAdapter;
@@ -195,7 +197,9 @@ public class DetailsWebViewClient extends WebViewClient {
 		}
 		String[] parts = newUrl.split("\\/");
 		String html;
-		RenderFarm sa = new RenderFarm(dbAdapter, title, isTablet);
+		SharedPreferences settings = act.getSharedPreferences(PREFS_NAME, 0);
+		boolean showToc = settings.getBoolean("showToc", true);
+		RenderFarm sa = new RenderFarm(dbAdapter, title, isTablet, showToc);
 		html = renderByUrl(view, sa, newUrl);
 		if (html == null) {
 			if (parts[2].equals("Classes")) {
@@ -241,12 +245,6 @@ public class DetailsWebViewClient extends WebViewClient {
 		contentError.setOnClickListener(new ContentErrorReporter(this.act,
 				path, title.getText().toString()));
 		this.oldUrl = newUrl;
-		if(isTablet) {
-			view.loadUrl("javascript:window.psrd_toc.side()");
-		}
-		else {
-			view.loadUrl("javascript:window.psrd_toc.full()");
-		}
 		return true;
 	}
 

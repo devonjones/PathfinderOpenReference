@@ -65,6 +65,10 @@ public class DetailsViewFragment extends SherlockFragment {
 		return v;
 	}
 
+	public WebView getWebView() {
+		return viewer;
+	}
+
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		if (this.startUrl != null) {
 			updateUrl(this.startUrl);

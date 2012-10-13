@@ -54,8 +54,6 @@
 			/>
 		</RelativeLayout>
 	<WebView
-		android:layout_marginBottom="4dip"
-		android:layout_marginLeft="4dip"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:id="@+id/display_webview"/>

@@ -36,12 +36,14 @@ public class RenderFarm {
 	private TextView title;
 	private List<Renderer> renderPath;
 	private boolean isTablet;
+	private boolean showToc;
 
 	public RenderFarm(PsrdDbAdapter dbAdapter,
-			TextView title, boolean isTablet) {
+			TextView title, boolean isTablet, boolean showToc) {
 		this.dbAdapter = dbAdapter;
 		this.title = title;
 		this.isTablet = isTablet;
+		this.showToc = showToc;
 	}
 
 	public static Renderer getRenderer(String type, PsrdDbAdapter dbAdapter) {
@@ -130,6 +132,7 @@ public class RenderFarm {
 			ErrorReporter.getInstance().handleException(cioobe);
 		}
 		sb.append("</body>");
+		sb.append(renderFooter());
 		return sb.toString();
 	}
 
@@ -163,6 +166,22 @@ public class RenderFarm {
 		return prev.suppressNextTitle == true;
 	}
 
+	public String renderFooter() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("<script type=\"text/javascript\" src=\"file:///android_asset/application.min.js\"></script>");
+		if(showToc) {
+			if(isTablet) {
+				sb.append("<script type=\"text/javascript\">window.psrd_toc.side();</script>");
+			}
+			else {
+				sb.append("<script type=\"text/javascript\">window.psrd_toc.full();</script>");
+			}
+		} else {
+			sb.append("<script type=\"text/javascript\">window.psrd_toc.hide();</script>");
+		}
+		return sb.toString();
+	}
+	
 	public String renderHeader() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("<html>");
@@ -171,7 +190,6 @@ public class RenderFarm {
 		sb.append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />");
 		sb.append("<link media=\"screen, print\" rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/display.css\" />");
 		sb.append("<link media=\"screen, print\" rel=\"stylesheet\" type=\"text/css\" href=\"file:///android_asset/application.min.css\" />");
-		sb.append("<script type=\"text/javascript\" src=\"file:///android_asset/application.min.js\"></script>");
 		sb.append("</head>");
 		return sb.toString();
 	}

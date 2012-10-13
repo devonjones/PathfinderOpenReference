@@ -18,6 +18,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
+import android.webkit.WebView;
 import android.widget.SearchView;
 
 import com.actionbarsherlock.app.ActionBar;
@@ -157,7 +158,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = this.getSupportMenuInflater();
-		inflater.inflate(R.menu.main_menu, menu);
+		inflater.inflate(R.menu.display_menu, menu);
 		MenuItem searchItem = menu.findItem(R.id.menu_search);
 		searchItem.setVisible(true);
 		if (Build.VERSION.SDK_INT >= 11) {
@@ -243,6 +244,28 @@ public class DetailsActivity extends SherlockFragmentActivity {
 						DetailsActivity.class);
 				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
 				startActivity(showContent);
+				return true;
+			case R.id.menu_toggle_toc:
+				DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
+					.findFragmentById(R.id.details_view_fragment);
+				WebView view = viewer.getWebView();
+				SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+				SharedPreferences.Editor editor = settings.edit(); 
+				boolean showToc = settings.getBoolean("showToc", true);
+				if(showToc) {
+					editor.putBoolean("showToc", false);
+					view.loadUrl("javascript:window.psrd_toc.hide()");
+				}
+				else {
+					editor.putBoolean("showToc", true);
+					if(PathfinderOpenReferenceActivity.isTabletLayout(this)) {
+						view.loadUrl("javascript:window.psrd_toc.side()");
+					}
+					else {
+						view.loadUrl("javascript:window.psrd_toc.full()");
+					}
+				}
+				editor.commit();
 				return true;
 			case android.R.id.home:
 				// app icon in action bar clicked; go home
