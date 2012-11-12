@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.evilsoft.pathfinder.reference"
-    android:versionCode="16"
-    android:versionName="1.0.15"
+    android:versionCode="17"
+    android:versionName="1.0.16"
     android:installLocation="auto">
 
-    <uses-sdk android:targetSdkVersion="14" android:minSdkVersion="8" />
+    <uses-sdk android:targetSdkVersion="15" android:minSdkVersion="10" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <supports-screens
