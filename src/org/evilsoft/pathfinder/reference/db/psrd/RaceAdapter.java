@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 
 public class RaceAdapter {
@@ -18,6 +20,7 @@ public class RaceAdapter {
 		sb.append("SELECT DISTINCT subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE type = 'race'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append(" ORDER BY subtype");
 		String sql = sb.toString();
 		String[] selectionArgs = new String[0];
@@ -30,6 +33,7 @@ public class RaceAdapter {
 		sb.append("SELECT s.section_id, s.name, s.subtype");
 		sb.append(" FROM sections s");
 		sb.append(" WHERE s.type = 'race'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		if (raceType != null) {
 			String subtype = raceType.toLowerCase() + "_race";
 			args.add(subtype);

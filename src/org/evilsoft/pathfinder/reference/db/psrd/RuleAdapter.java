@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 
 public class RuleAdapter {
@@ -20,6 +22,7 @@ public class RuleAdapter {
 		sb.append("SELECT section_id, name, url");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append(" ORDER BY section_id");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,

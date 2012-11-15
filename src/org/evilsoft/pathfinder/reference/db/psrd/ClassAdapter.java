@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 
 public class ClassAdapter {
@@ -30,6 +32,7 @@ public class ClassAdapter {
 		sb.append("SELECT DISTINCT subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE type = 'class'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append(" ORDER BY subtype");
 		String sql = sb.toString();
 		String[] selectionArgs = new String[0];
@@ -42,6 +45,7 @@ public class ClassAdapter {
 		sb.append("SELECT section_id, name");
 		sb.append(" FROM sections");
 		sb.append("  WHERE type = 'class'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		if (classType != null) {
 			args.add(classType);
 			sb.append("   AND subtype = ?");
