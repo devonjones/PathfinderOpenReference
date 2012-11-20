@@ -3,6 +3,8 @@ package org.evilsoft.pathfinder.reference.db.psrd;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 
 public class SkillAdapter {
@@ -30,6 +32,7 @@ public class SkillAdapter {
 		sb.append("  INNER JOIN skill_attributes sa");
 		sb.append("   ON s.section_id = sa.section_id");
 		sb.append(" WHERE s.type = 'skill'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, new String[0]);

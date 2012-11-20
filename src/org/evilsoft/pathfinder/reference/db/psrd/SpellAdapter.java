@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 
 public class SpellAdapter {
@@ -63,6 +65,7 @@ public class SpellAdapter {
 		sb.append("  INNER JOIN spell_details sd");
 		sb.append("   ON s.section_id = sd.section_id");
 		sb.append(" WHERE s.type = 'spell'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, new String[0]);
@@ -80,6 +83,7 @@ public class SpellAdapter {
 		sb.append("   ON s.section_id = sl_filter.section_id");
 		sb.append("    AND sl_filter.class = ?");
 		sb.append(" WHERE s.type = 'spell'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append(" ORDER BY sl_filter.level, s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));

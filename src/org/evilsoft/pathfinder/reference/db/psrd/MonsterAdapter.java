@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 
 public class MonsterAdapter {
@@ -21,6 +23,7 @@ public class MonsterAdapter {
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN creature_details cd");
 		sb.append("   ON s.section_id = cd.section_id");
+		sb.append(FilterPreferenceManager.getSourceFilter("WHERE"));
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
@@ -35,6 +38,7 @@ public class MonsterAdapter {
 		sb.append("  cd.cr, cd.xp, cd.size, cd.alignment");
 		sb.append(" FROM sections s, creature_details cd");
 		sb.append(" WHERE s.section_id = cd.section_id");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append("  AND cd.creature_type = ?");
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
@@ -79,6 +83,7 @@ public class MonsterAdapter {
 		sb.append("SELECT name, body");
 		sb.append(" FROM creature_spells");
 		sb.append(" WHERE section_id = ?");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
 				PsrdDbAdapter.toStringArray(args));

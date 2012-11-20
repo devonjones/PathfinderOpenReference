@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference;
 
 import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
 import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
+import org.evilsoft.pathfinder.reference.preference.PathfinderPreferenceActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -138,6 +139,11 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 					return true;
 				case R.id.menu_search:
 					this.onSearchRequested();
+					return true;
+				case R.id.menu_prefs:
+					showContent = new Intent(getApplicationContext(),
+							PathfinderPreferenceActivity.class);
+					startActivity(showContent);
 					return true;
 				default:
 					return super.onOptionsItemSelected(item);
