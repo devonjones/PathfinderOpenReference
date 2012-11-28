@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.app.SearchManager;
 import android.content.Context;
 import android.database.Cursor;

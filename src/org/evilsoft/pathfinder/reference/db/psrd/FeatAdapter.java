@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 
 public class FeatAdapter {
@@ -42,6 +44,7 @@ public class FeatAdapter {
 		sb.append("SELECT s.section_id as _id, s.*");
 		sb.append(" FROM sections s, feat_types ft");
 		sb.append(" WHERE s.section_id = ft.section_id");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append("  AND ft.feat_type = ?");
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
@@ -73,6 +76,7 @@ public class FeatAdapter {
 			args.add(featType);
 		}
 		sb.append(" WHERE s.type = 'feat'");
+		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
