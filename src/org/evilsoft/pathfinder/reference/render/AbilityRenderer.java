@@ -1,14 +1,15 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.AbilityAdapter;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 
 import android.database.Cursor;
 
 public class AbilityRenderer extends Renderer {
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
 
-	public AbilityRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
+	public AbilityRenderer(BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
 	}
 
 	@Override
@@ -21,13 +22,13 @@ public class AbilityRenderer extends Renderer {
 		return "";
 	}
 
-	public String abilityName(String name, String sectionId) {
-		Cursor curs = dbAdapter.getAbilityTypes(sectionId);
+	public String abilityName(String name, Integer sectionId) {
+		Cursor cursor = bookDbAdapter.getAbilityAdapter().getAbilityTypes(sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
 			sb.append(name);
 			boolean fields = false;
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			String comma = "";
 			while (has_next) {
 				sb.append(comma);
@@ -36,7 +37,7 @@ public class AbilityRenderer extends Renderer {
 					comma = ", ";
 					fields = true;
 				}
-				String type = curs.getString(0);
+				String type = AbilityAdapter.AbilityUtils.getAbilityType(cursor);
 				if (type.equals("Extraordinary")) {
 					sb.append("Ex");
 				} else if (type.equals("Supernatural")) {
@@ -44,14 +45,14 @@ public class AbilityRenderer extends Renderer {
 				} else if (type.equals("Spell-Like")) {
 					sb.append("Sp");
 				}
-				has_next = curs.moveToNext();
+				has_next = cursor.moveToNext();
 			}
 			if (fields) {
 				sb.append(")");
 			}
 			return sb.toString();
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 

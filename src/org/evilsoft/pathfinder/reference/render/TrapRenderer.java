@@ -1,62 +1,60 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.TrapAdapter;
 
 import android.database.Cursor;
 
 public class TrapRenderer extends StatBlockRenderer {
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
 
-	public TrapRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
+	public TrapRenderer(BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
 	}
 
 	@Override
 	public String renderTitle() {
-		Cursor curs = dbAdapter.getTrapDetails(sectionId);
+		Cursor cursor = bookDbAdapter.getTrapAdapter().getTrapDetails(sectionId);
 		try {
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			String title = name;
 			if (has_next) {
-				String cr = curs.getString(0);
+				String cr = TrapAdapter.TrapUtils.getCr(cursor);
 				if (cr != null) {
 					title = title + " (CR " + cr + ")";
 				}
 			}
 			return renderStatBlockTitle(title, newUri, top);
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 
 	@Override
 	public String renderDetails() {
-		Cursor curs = dbAdapter.getTrapDetails(sectionId);
-		// 0: cr, 1: trap_type, 2: perception, 3: disable_device, 4: duration,
-		// 5: effect,
-		// 6: trigger, 7: reset
+		Cursor cursor = bookDbAdapter.getTrapAdapter().getTrapDetails(sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
-				String cr = curs.getString(0);
+				String cr = TrapAdapter.TrapUtils.getCr(cursor);
 				if (top) {
 					sb.append("<b>CR ");
 					sb.append(cr);
 					sb.append("</b><br>\n");
 				}
-				sb.append(addField("Type", curs.getString(1), false));
-				sb.append(addField("Perception", curs.getString(2), false));
-				sb.append(addField("Disable Device", curs.getString(3)));
+				sb.append(addField("Type", TrapAdapter.TrapUtils.getTrapType(cursor), false));
+				sb.append(addField("Perception", TrapAdapter.TrapUtils.getPerception(cursor), false));
+				sb.append(addField("Disable Device", TrapAdapter.TrapUtils.getDisableDevice(cursor)));
 				sb.append(renderStatBlockBreaker("Effects"));
-				sb.append(addField("Trigger", curs.getString(6), false));
-				sb.append(addField("Duration", curs.getString(4), false));
-				sb.append(addField("Reset", curs.getString(7)));
-				sb.append(addField("Effect", curs.getString(5)));
+				sb.append(addField("Trigger", TrapAdapter.TrapUtils.getTrigger(cursor), false));
+				sb.append(addField("Duration", TrapAdapter.TrapUtils.getDuration(cursor), false));
+				sb.append(addField("Reset", TrapAdapter.TrapUtils.getReset(cursor)));
+				sb.append(addField("Effect", TrapAdapter.TrapUtils.getEffect(cursor)));
 			}
 			return sb.toString();
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 

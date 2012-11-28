@@ -1,23 +1,15 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.ClassAdapter;
 
 import android.database.Cursor;
 
 public class ClassRenderer extends Renderer {
-	private ClassAdapter classAdapter;
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
 
-	public ClassRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
-	}
-
-	private ClassAdapter getClassAdapter() {
-		if (this.classAdapter == null) {
-			this.classAdapter = new ClassAdapter(this.dbAdapter);
-		}
-		return this.classAdapter;
+	public ClassRenderer(BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
 	}
 
 	@Override
@@ -28,20 +20,20 @@ public class ClassRenderer extends Renderer {
 	@Override
 	public String renderFooter() {
 		StringBuffer sb = new StringBuffer();
-		Cursor curs = this.getClassAdapter().fetchClassDetails(sectionId);
+		Cursor cursor = bookDbAdapter.getClassAdapter().fetchClassDetails(sectionId);
 		try {
 			sb.append("<B>Source: </B>");
 			sb.append(source);
 			sb.append("<BR>");
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
-				String align = curs.getString(0);
+				String align = ClassAdapter.ClassUtils.getAlignment(cursor);
 				if (align != null) {
 					sb.append("<B>Alignment: </B>");
 					sb.append(align);
 					sb.append("<BR>\n");
 				}
-				String hd = curs.getString(1);
+				String hd = ClassAdapter.ClassUtils.getHitDie(cursor);
 				if (hd != null) {
 					sb.append("<B>Hit Die: </B>");
 					sb.append(hd);
@@ -49,7 +41,7 @@ public class ClassRenderer extends Renderer {
 				}
 			}
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 		return sb.toString();
 	}

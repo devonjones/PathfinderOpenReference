@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference.list;
 
 import org.evilsoft.pathfinder.reference.DisplayListAdapter;
 import org.evilsoft.pathfinder.reference.R;
+import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -37,36 +38,43 @@ public class SkillListAdapter extends DisplayListAdapter {
 		}
 
 		TextView title = (TextView) V.findViewById(R.id.skill_list_name);
-		title.setText(c.getString(1));
+		title.setText(IndexGroupAdapter.IndexGroupUtils.getName(c));
 		TextView attr = (TextView) V.findViewById(R.id.skill_list_attribute);
-		attr.setText(c.getString(3));
+		attr.setText(IndexGroupAdapter.IndexGroupUtils.getSkillAttr(c));
 		if (mainList) {
 			TextView description = (TextView) V.findViewById(R.id.skill_list_description);
-			String desc = c.getString(2);
+			String desc = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
 			description.setText(SkillListItem.shortDescription(desc));
-			boolean armorCheckPenalty = (c.getInt(4) != 0);
-			boolean trainedOnly = (c.getInt(5) != 0);
+			boolean armorCheckPenalty = (IndexGroupAdapter.IndexGroupUtils.getSkillArmor(c) != 0);
+			boolean trainedOnly = (IndexGroupAdapter.IndexGroupUtils.getSkillTrained(c) != 0);
 			TextView qualities = (TextView) V.findViewById(R.id.skill_list_qualities);
 			qualities.setText(SkillListItem.buildQualitiesDisplay(armorCheckPenalty, trainedOnly));
 		}
 		return V;
 	}
 
+	@Override
 	public Object buildItem(Cursor c) {
-		int section_id = c.getInt(0);
-		String name = c.getString(1);
-		String description = c.getString(2);
-		String attribute = c.getString(3);
-		boolean armorCheckPenalty = (c.getInt(4) != 0);
-		boolean trainedOnly = (c.getInt(5) != 0);
-		return buildSkill(section_id, name, description, attribute, armorCheckPenalty, trainedOnly);
+		Integer sectionId = IndexGroupAdapter.IndexGroupUtils.getSectionId(c);
+		String database = IndexGroupAdapter.IndexGroupUtils.getDatabase(c);
+		String name = IndexGroupAdapter.IndexGroupUtils.getName(c);
+		String url = IndexGroupAdapter.IndexGroupUtils.getUrl(c);
+		String description = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
+		String attribute = IndexGroupAdapter.IndexGroupUtils.getSkillAttr(c);
+		boolean armorCheckPenalty = (IndexGroupAdapter.IndexGroupUtils.getSkillArmor(c) != 0);
+		boolean trainedOnly = (IndexGroupAdapter.IndexGroupUtils.getSkillTrained(c) != 0);
+		return buildSkill(sectionId, database, name, url, description,
+				attribute, armorCheckPenalty, trainedOnly);
 	}
 
-	public SkillListItem buildSkill(int section_id, String name, String description, String attribute,
+	public SkillListItem buildSkill(Integer sectionId, String database,
+			String name, String url, String description, String attribute,
 			boolean armorCheckPenalty, boolean trainedOnly) {
 		SkillListItem sla = new SkillListItem();
-		sla.setSectionId(section_id);
+		sla.setSectionId(sectionId);
+		sla.setDatabase(database);
 		sla.setName(name);
+		sla.setUrl(url);
 		sla.setDescription(description);
 		sla.setAttribute(attribute);
 		sla.setArmorCheckPenalty(armorCheckPenalty);

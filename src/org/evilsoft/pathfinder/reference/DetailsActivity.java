@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.acra.ErrorReporter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
+import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
+import org.evilsoft.pathfinder.reference.db.index.SearchAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
-import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.annotation.SuppressLint;
 import android.app.SearchManager;
@@ -28,9 +29,8 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 
 public class DetailsActivity extends SherlockFragmentActivity {
+	private DbWrangler dbWrangler;
 	public static final String PREFS_NAME = "psrd.prefs";
-	private PsrdDbAdapter dbAdapter;
-	private PsrdUserDbAdapter userDbAdapter;
 	private List<Cursor> cursorList = new ArrayList<Cursor>();
 
 	@Override
@@ -44,7 +44,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		boolean showList = false; // Phone only
 		if (Intent.ACTION_SEARCH.equals(launchingIntent.getAction())) {
 			String query = launchingIntent.getStringExtra(SearchManager.QUERY);
-			int count = dbAdapter.countSearchArticles(query);
+			int count = dbWrangler.getIndexDbAdapter().getSearchAdapter().countSearchArticles(query);
 			if (count == 1) {
 				newUri = buildSearchUrl(query);
 			} else {
@@ -90,7 +90,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 
 	private Integer getCurrentCollection(List<Integer> collectionList) {
 		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 		Integer defaultColId = ca.fetchFirstCollectionId();
 		if (defaultColId != null) {
 			Integer collectionId = settings.getInt(
@@ -112,7 +112,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				.findFragmentById(R.id.details_view_fragment);
 
 		viewer.updateUrl(newUri);
-		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 		Cursor curs = ca.fetchCollectionList();
 		cursorList.add(curs);
 		ArrayList<Integer> retList = new ArrayList<Integer>();
@@ -178,29 +178,23 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	}
 
 	public String buildSearchUrl(String searchText) {
-		Cursor c = dbAdapter.getSingleSearchArticle(searchText);
+		Cursor cursor = dbWrangler.getIndexDbAdapter().getSearchAdapter().getSingleSearchArticle(searchText);
 		try {
-			c.moveToFirst();
-			String url = c.getString(4);
+			cursor.moveToFirst();
+			String url = SearchAdapter.SearchUtils.getUrl(cursor);
 			return url;
 		} finally {
-			c.close();
+			cursor.close();
 		}
 	}
 
 
 	private void openDb() {
-		if (userDbAdapter == null) {
-			userDbAdapter = new PsrdUserDbAdapter(this.getApplicationContext());
+		if (dbWrangler == null) {
+			dbWrangler = new DbWrangler(getApplicationContext());
 		}
-		if (userDbAdapter.isClosed()) {
-			userDbAdapter.open();
-		}
-		if (dbAdapter == null) {
-			dbAdapter = new PsrdDbAdapter(this.getApplicationContext());
-		}
-		if (dbAdapter.isClosed()) {
-			dbAdapter.open();
+		if (dbWrangler.isClosed()) {
+			dbWrangler.open();
 		}
 	}
 
@@ -212,11 +206,8 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				curs.close();
 			}
 		}
-		if (dbAdapter != null) {
-			dbAdapter.close();
-		}
-		if (userDbAdapter != null) {
-			userDbAdapter.close();
+		if (dbWrangler != null) {
+			dbWrangler.close();
 		}
 	}
 
@@ -225,9 +216,10 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		Cursor curs = null;
 		String sectionId;
 
+		SectionAdapter sa = dbWrangler.getBookDbAdapter("book-ogl.db").getSectionAdapter();
 		switch (item.getItemId()) {
 			case R.id.menu_ogl:
-				curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
+				curs = sa.fetchSectionByParentIdAndName("1", "OGL");
 				curs.moveToFirst();
 				sectionId = curs.getString(0);
 				Intent showContent = new Intent(getApplicationContext(),
@@ -236,7 +228,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				startActivity(showContent);
 				return true;
 			case R.id.menu_cul:
-				curs = dbAdapter.fetchSectionByParentIdAndName("1",
+				curs = sa.fetchSectionByParentIdAndName("1",
 						"Community Use License");
 				curs.moveToFirst();
 				sectionId = curs.getString(0);

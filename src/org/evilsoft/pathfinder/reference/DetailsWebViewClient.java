@@ -6,9 +6,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.acra.ErrorReporter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
-import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -27,9 +28,8 @@ import android.widget.TextView;
 public class DetailsWebViewClient extends WebViewClient {
 	public static final String PREFS_NAME = "psrd.prefs";
 	private static final String TAG = "DetailsWebViewClient";
-	private PsrdDbAdapter dbAdapter;
-	private PsrdUserDbAdapter userDbAdapter;
 	private FragmentActivity act;
+	private DbWrangler dbWrangler;
 	private TextView title;
 	private ImageButton contentError;
 	private ImageButton star;
@@ -83,7 +83,7 @@ public class DetailsWebViewClient extends WebViewClient {
 			if (parts[0].toLowerCase().equals("pfsrd:")) {
 				this.url = newUrl;
 				Log.d(TAG, parts[parts.length - 1]);
-				path = dbAdapter.getPathByUrl(newUrl);
+				path = dbWrangler.getBookDbAdapterByUrl(newUrl).getPathByUrl(newUrl);
 				setBackVisibility(newUrl);
 				return renderPfsrd(view, newUrl);
 			}
@@ -172,21 +172,21 @@ public class DetailsWebViewClient extends WebViewClient {
 	}
 
 	public String renderByUrl(WebView view, RenderFarm sa, String newUrl) {
-		Cursor curs = dbAdapter.fetchSectionByUrl(newUrl);
+		Cursor cursor = dbWrangler.getBookDbAdapterByUrl(newUrl).getSectionAdapter().fetchSectionByUrl(newUrl);
 		String html = null;
 		StringBuffer htmlparts = new StringBuffer();
 		try {
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			while (has_next) {
-				htmlparts.append(sa.render(curs.getString(0), newUrl));
-				has_next = curs.moveToNext();
+				htmlparts.append(sa.render(SectionAdapter.SectionUtils.getSectionId(cursor).toString(), newUrl));
+				has_next = cursor.moveToNext();
 			}
 		} finally {
 			html = htmlparts.toString();
 			if (html.equals("")) {
 				html = null;
 			}
-			curs.close();
+			cursor.close();
 		}
 		return html;
 	}
@@ -199,7 +199,8 @@ public class DetailsWebViewClient extends WebViewClient {
 		String html;
 		SharedPreferences settings = act.getSharedPreferences(PREFS_NAME, 0);
 		boolean showToc = settings.getBoolean("showToc", true);
-		RenderFarm sa = new RenderFarm(dbAdapter, title, isTablet, showToc);
+		BookDbAdapter bookDbAdapter = dbWrangler.getBookDbAdapterByUrl(newUrl);
+		RenderFarm sa = new RenderFarm(dbWrangler, bookDbAdapter, title, isTablet, showToc);
 		html = renderByUrl(view, sa, newUrl);
 		if (html == null) {
 			if (parts[2].equals("Classes")) {
@@ -236,7 +237,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		star.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+				CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 				ca.toggleEntryStar(currentCollection, url,
 						title.getText().toString());
 				refreshStarButtonState();
@@ -255,7 +256,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	private void refreshStarButtonState() {
 		if (url != null) {
 			CollectionAdapter ca = new
-					CollectionAdapter(userDbAdapter);
+					CollectionAdapter(dbWrangler.getUserDbAdapter());
 			boolean starred =
 					ca.entryIsStarred(currentCollection, url);
 			star.setPressed(starred);
@@ -265,26 +266,17 @@ public class DetailsWebViewClient extends WebViewClient {
 	}
 
 	private void openDb() {
-		if (userDbAdapter == null) {
-			userDbAdapter = new PsrdUserDbAdapter(act.getApplicationContext());
+		if (dbWrangler == null) {
+			dbWrangler = new DbWrangler(act.getApplicationContext());
 		}
-		if (userDbAdapter.isClosed()) {
-			userDbAdapter.open();
-		}
-		if (dbAdapter == null) {
-			dbAdapter = new PsrdDbAdapter(act.getApplicationContext());
-		}
-		if (dbAdapter.isClosed()) {
-			dbAdapter.open();
+		if (dbWrangler.isClosed()) {
+			dbWrangler.open();
 		}
 	}
 
 	public void onDestroy() {
-		if (dbAdapter != null) {
-			dbAdapter.close();
-		}
-		if (userDbAdapter != null) {
-			userDbAdapter.close();
+		if (dbWrangler != null) {
+			dbWrangler.close();
 		}
 	}
 

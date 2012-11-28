@@ -1,21 +1,12 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 
 public class FeatRenderer extends Renderer {
-	private FeatAdapter featAdapter;
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
 
-	public FeatRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
-	}
-
-	private FeatAdapter getFeatAdapter() {
-		if (this.featAdapter == null) {
-			this.featAdapter = new FeatAdapter(this.dbAdapter);
-		}
-		return this.featAdapter;
+	public FeatRenderer(BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
 	}
 
 	@Override
@@ -27,7 +18,7 @@ public class FeatRenderer extends Renderer {
 	public String renderDetails() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("<B>");
-		sb.append(this.getFeatAdapter().renderFeatTypeDescription(sectionId));
+		sb.append(bookDbAdapter.getFeatAdapter().renderFeatTypeDescription(sectionId));
 		sb.append("</B><BR>\n");
 		sb.append("<B>Source: </B>");
 		sb.append(source);

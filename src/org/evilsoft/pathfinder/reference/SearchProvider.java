@@ -2,9 +2,7 @@ package org.evilsoft.pathfinder.reference;
 
 import java.io.IOException;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbHelper;
-import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
 
 import android.content.ContentProvider;
@@ -13,7 +11,7 @@ import android.database.Cursor;
 import android.net.Uri;
 
 public class SearchProvider extends ContentProvider {
-	private PsrdDbAdapter dbAdapter;
+	private DbWrangler dbWrangler;
 
 	@Override
 	public boolean onCreate() {
@@ -24,12 +22,10 @@ public class SearchProvider extends ContentProvider {
 	public Cursor query(Uri uri, String[] projection, String selection,
 			String[] selectionArgs, String sortOrder) {
 
-		PsrdDbHelper dbh = new PsrdDbHelper(getContext());
-		PsrdUserDbAdapter userDbAdapter = new PsrdUserDbAdapter(getContext());
-		userDbAdapter.open();
 		boolean cont = true;
 		try {
-			dbh.createDatabase(userDbAdapter);
+			DbWrangler dbw = new DbWrangler(getContext());
+			dbw.checkDatabases();
 		} catch (IOException e) {
 			cont = false;
 		} catch (LimitedSpaceException e) {
@@ -39,21 +35,25 @@ public class SearchProvider extends ContentProvider {
 			// for that error is a bit wonky
 			cont = false;
 		} finally {
-			userDbAdapter.close();
 		}
 
 		Cursor c = null;
 
 		if (cont) {
-			if (dbAdapter == null) {
-				dbAdapter = new PsrdDbAdapter(getContext());
-				dbAdapter.open();
-			}
-
-			c = dbAdapter.autocomplete(uri.getLastPathSegment());
+			openDb();
+			c = dbWrangler.getIndexDbAdapter().getSearchAdapter().autocomplete(uri.getLastPathSegment());
 		}
 
 		return c;
+	}
+
+	private void openDb() {
+		if (dbWrangler == null) {
+			dbWrangler = new DbWrangler(getContext());
+		}
+		if (dbWrangler.isClosed()) {
+			dbWrangler.open();
+		}
 	}
 
 	@Override

@@ -1,28 +1,11 @@
 package org.evilsoft.pathfinder.reference.list;
 
-public class SpellListItem {
-	private int section_id;
-	private String name;
+public class SpellListItem extends BaseListItem {
 	private String description;
 	private String school;
 	private String subschool;
+	private String descriptor;
 	private int level;
-
-	public int getSectionId() {
-		return section_id;
-	}
-
-	public void setSectionId(int section_id) {
-		this.section_id = section_id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public String getDescription() {
 		return description;
@@ -48,6 +31,14 @@ public class SpellListItem {
 		this.subschool = subschool;
 	}
 
+	public String getDescriptor() {
+		return descriptor;
+	}
+
+	public void setDescriptor(String descriptor) {
+		this.descriptor = descriptor;
+	}
+
 	public int getLevel() {
 		return level;
 	}
@@ -56,17 +47,18 @@ public class SpellListItem {
 		this.level = level;
 	}
 
-	public String toString() {
-		return name;
-	}
-
-	public static String buildSchoolLine(String school, String subschool) {
+	public static String buildSchoolLine(String school, String subschool, String descriptor) {
 		StringBuffer sb = new StringBuffer();
 		sb.append(school);
 		if (subschool != null) {
 			sb.append(" (");
 			sb.append(subschool);
 			sb.append(")");
+		}
+		if (descriptor != null) {
+			sb.append(" [");
+			sb.append(descriptor);
+			sb.append("]");
 		}
 		return sb.toString();
 	}

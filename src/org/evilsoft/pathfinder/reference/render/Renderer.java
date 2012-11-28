@@ -2,10 +2,12 @@ package org.evilsoft.pathfinder.reference.render;
 
 import java.util.List;
 
+import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
+
 import android.database.Cursor;
 
 public abstract class Renderer {
-	public String sectionId;
+	public Integer sectionId;
 	public String type;
 	public String subtype;
 	public String name;
@@ -29,22 +31,22 @@ public abstract class Renderer {
 
 	public abstract String renderHeader();
 
-	public String render(Cursor curs, String newUri, int depth, boolean top,
+	public String render(Cursor cursor, String newUri, int depth, boolean top,
 			boolean suppressTitle, boolean isTablet) {
 		this.newUri = newUri;
 		this.depth = depth;
 		this.top = top;
 		this.isTablet = isTablet;
-		this.sectionId = curs.getString(0);
-		this.type = curs.getString(4);
-		this.subtype = curs.getString(5);
-		this.name = curs.getString(6);
-		this.abbrev = curs.getString(7);
-		this.source = curs.getString(8);
-		this.desc = curs.getString(9);
-		this.body = curs.getString(10);
-		this.image = curs.getString(11);
-		this.alt = curs.getString(12);
+		this.sectionId = FullSectionAdapter.SectionUtils.getSectionId(cursor);
+		this.type = FullSectionAdapter.SectionUtils.getType(cursor);
+		this.subtype = FullSectionAdapter.SectionUtils.getSubtype(cursor);
+		this.name = FullSectionAdapter.SectionUtils.getName(cursor);
+		this.abbrev = FullSectionAdapter.SectionUtils.getAbbrev(cursor);
+		this.source = FullSectionAdapter.SectionUtils.getSource(cursor);
+		this.desc = FullSectionAdapter.SectionUtils.getDescription(cursor);
+		this.body = FullSectionAdapter.SectionUtils.getBody(cursor);
+		this.image = FullSectionAdapter.SectionUtils.getImage(cursor);
+		this.alt = FullSectionAdapter.SectionUtils.getAlt(cursor);
 		localSetValues();
 		StringBuffer sb = new StringBuffer();
 		if (suppressTitle == false) {

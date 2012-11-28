@@ -1,8 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
 import org.acra.ErrorReporter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,8 +16,7 @@ import android.widget.ExpandableListView;
 
 public class SectionListFragment extends ExpandableListFragment implements
 		ExpandableListView.OnChildClickListener, ExpandableListView.OnGroupClickListener {
-	private PsrdDbAdapter dbAdapter;
-	private PsrdUserDbAdapter userDbAdapter;
+	private DbWrangler dbWrangler;
 	private SectionExpandableListAdapter expListAdapter;
 
 	@Override
@@ -29,24 +27,18 @@ public class SectionListFragment extends ExpandableListFragment implements
 	}
 
 	private void openDb() {
-		if (userDbAdapter == null) {
-			userDbAdapter = new PsrdUserDbAdapter(this.getActivity().getApplicationContext());
+		if (dbWrangler == null) {
+			dbWrangler = new DbWrangler(this.getActivity().getApplicationContext());
 		}
-		if (userDbAdapter.isClosed()) {
-			userDbAdapter.open();
-		}
-		if (dbAdapter == null) {
-			dbAdapter = new PsrdDbAdapter(this.getActivity().getApplicationContext());
-		}
-		if (dbAdapter.isClosed()) {
-			dbAdapter.open();
+		if (dbWrangler.isClosed()) {
+			dbWrangler.open();
 		}
 	}
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		openDb();
-		refresh(dbAdapter, userDbAdapter);
+		refresh(dbWrangler);
 		super.onCreate(savedInstanceState);
 	}
 
@@ -62,11 +54,11 @@ public class SectionListFragment extends ExpandableListFragment implements
 	@Override
 	public void onStart() {
 		super.onStart();
-		refresh(dbAdapter, userDbAdapter);
+		refresh(dbWrangler);
 	}
 
-	public void refresh(PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {
-		expListAdapter.refresh(dbAdapter, userDbAdapter);
+	public void refresh(DbWrangler dbWrangler) {
+		expListAdapter.refresh(dbWrangler);
 	}
 
 	private void updateFragment(String uri) {
@@ -139,29 +131,16 @@ public class SectionListFragment extends ExpandableListFragment implements
 			sb.append("/");
 			sb.append(specificName);
 			return sb.toString();
-		} else if(group.startsWith("Rules")) {
-			return expListAdapter.getPfChildUrl(groupPosition, childPosition);
 		} else {
-			String sectionUrl = expListAdapter.getPfGroupUrl(groupPosition);
-			String specificId = expListAdapter.getPfChildId(groupPosition, childPosition);
-			StringBuffer sb = new StringBuffer();
-			sb.append(sectionUrl);
-			if (specificId != null) {
-				sb.append("?subtype=");
-				sb.append(specificId);
-			}
-			return sb.toString();
+			return expListAdapter.getPfChildUrl(groupPosition, childPosition);
 		}
 	}
 
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		if (dbAdapter != null) {
-			dbAdapter.close();
-		}
-		if (userDbAdapter != null) {
-			userDbAdapter.close();
+		if (dbWrangler != null) {
+			dbWrangler.close();
 		}
 	}
 }

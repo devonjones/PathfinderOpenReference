@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference.list;
 
 import org.evilsoft.pathfinder.reference.DisplayListAdapter;
 import org.evilsoft.pathfinder.reference.R;
+import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -38,18 +39,18 @@ public class FeatListAdapter extends DisplayListAdapter {
 		}
 
 		TextView title = (TextView) V.findViewById(R.id.feat_list_name);
-		title.setText(c.getString(1));
+		title.setText(IndexGroupAdapter.IndexGroupUtils.getName(c));
 		TextView featTypes = (TextView) V.findViewById(R.id.feat_list_type);
-		featTypes.setText(c.getString(4));
+		featTypes.setText(IndexGroupAdapter.IndexGroupUtils.getFeatTypes(c));
 		if (mainList) {
 			TextView description = (TextView) V
 					.findViewById(R.id.feat_list_description);
-			description.setText(c.getString(2));
+			description.setText(IndexGroupAdapter.IndexGroupUtils.getDescription(c));
 			TextView prereqs = (TextView) V
 					.findViewById(R.id.feat_list_prereqs);
 			TextView prereqsTitle = (TextView) V
 					.findViewById(R.id.feat_list_prereqs_title);
-			String p = c.getString(3);
+			String p = IndexGroupAdapter.IndexGroupUtils.getFeatPrereqs(c);
 			if (p != null) {
 				prereqs.setText(p);
 				prereqsTitle.setText("Prerequisites: ");
@@ -61,20 +62,25 @@ public class FeatListAdapter extends DisplayListAdapter {
 		return V;
 	}
 
+	@Override
 	public Object buildItem(Cursor c) {
-		int section_id = c.getInt(0);
-		String name = c.getString(1);
-		String description = c.getString(2);
-		String prereqs = c.getString(3);
-		String featTypes = c.getString(4);
-		return buildFeat(section_id, name, description, prereqs, featTypes);
+		Integer sectionId = IndexGroupAdapter.IndexGroupUtils.getSectionId(c);
+		String database = IndexGroupAdapter.IndexGroupUtils.getDatabase(c);
+		String name = IndexGroupAdapter.IndexGroupUtils.getName(c);
+		String url = IndexGroupAdapter.IndexGroupUtils.getUrl(c);
+		String description = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
+		String prereqs = IndexGroupAdapter.IndexGroupUtils.getFeatPrereqs(c);
+		String featTypes = IndexGroupAdapter.IndexGroupUtils.getFeatTypes(c);
+		return buildFeat(sectionId, database, name, url, description, prereqs, featTypes);
 	}
 
-	public FeatListItem buildFeat(int section_id, String name,
-			String description, String prereqs, String featTypes) {
+	public FeatListItem buildFeat(Integer sectionId, String database,
+			String name, String url, String description, String prereqs, String featTypes) {
 		FeatListItem fla = new FeatListItem();
-		fla.setSectionId(section_id);
+		fla.setSectionId(sectionId);
+		fla.setDatabase(database);
 		fla.setName(name);
+		fla.setUrl(url);
 		fla.setDescription(description);
 		fla.setPrereqs(prereqs);
 		fla.setFeatTypes(featTypes);

@@ -1,9 +1,7 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-
 public class RaceRenderer extends Renderer {
-	public RaceRenderer(PsrdDbAdapter dbAdapter) {
+	public RaceRenderer() {
 	}
 
 	@Override

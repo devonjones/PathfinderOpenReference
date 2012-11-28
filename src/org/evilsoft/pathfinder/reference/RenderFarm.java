@@ -8,7 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.acra.ErrorReporter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
 import org.evilsoft.pathfinder.reference.render.AbilityRenderer;
 import org.evilsoft.pathfinder.reference.render.AfflictionRenderer;
 import org.evilsoft.pathfinder.reference.render.AnimalCompanionRenderer;
@@ -16,7 +18,7 @@ import org.evilsoft.pathfinder.reference.render.ClassRenderer;
 import org.evilsoft.pathfinder.reference.render.FeatRenderer;
 import org.evilsoft.pathfinder.reference.render.ItemRenderer;
 import org.evilsoft.pathfinder.reference.render.LinkRenderer;
-import org.evilsoft.pathfinder.reference.render.MonsterRenderer;
+import org.evilsoft.pathfinder.reference.render.CreatureRenderer;
 import org.evilsoft.pathfinder.reference.render.RaceRenderer;
 import org.evilsoft.pathfinder.reference.render.Renderer;
 import org.evilsoft.pathfinder.reference.render.SectionRenderer;
@@ -32,88 +34,85 @@ import android.database.CursorIndexOutOfBoundsException;
 import android.widget.TextView;
 
 public class RenderFarm {
-	private PsrdDbAdapter dbAdapter;
+	private DbWrangler dbWrangler;
+	private BookDbAdapter bookDbAdapter;
 	private TextView title;
 	private List<Renderer> renderPath;
 	private boolean isTablet;
 	private boolean showToc;
 
-	public RenderFarm(PsrdDbAdapter dbAdapter,
+	public RenderFarm(DbWrangler dbWrangler, BookDbAdapter bookDbAdapter,
 			TextView title, boolean isTablet, boolean showToc) {
-		this.dbAdapter = dbAdapter;
+		this.dbWrangler = dbWrangler;
+		this.bookDbAdapter = bookDbAdapter;
 		this.title = title;
 		this.isTablet = isTablet;
 		this.showToc = showToc;
 	}
 
-	public static Renderer getRenderer(String type, PsrdDbAdapter dbAdapter) {
+	public static Renderer getRenderer(String type, DbWrangler dbWrangler, BookDbAdapter bookDbAdapter) {
 		if (type.equals("ability")) {
-			return new AbilityRenderer(dbAdapter);
+			return new AbilityRenderer(bookDbAdapter);
 		} else if (type.equals("affliction")) {
-			return new AfflictionRenderer(dbAdapter);
+			return new AfflictionRenderer(bookDbAdapter);
 		} else if (type.equals("animal_companion")) {
-			return new AnimalCompanionRenderer(dbAdapter);
+			return new AnimalCompanionRenderer(bookDbAdapter);
 		} else if (type.equals("class")) {
-			return new ClassRenderer(dbAdapter);
+			return new ClassRenderer(bookDbAdapter);
 		} else if (type.equals("creature")) {
-			return new MonsterRenderer(dbAdapter);
+			return new CreatureRenderer(bookDbAdapter);
 		} else if (type.equals("feat")) {
-			return new FeatRenderer(dbAdapter);
+			return new FeatRenderer(bookDbAdapter);
 		} else if (type.equals("item")) {
-			return new ItemRenderer(dbAdapter);
+			return new ItemRenderer(bookDbAdapter);
 		} else if (type.equals("link")) {
-			return new LinkRenderer(dbAdapter);
+			return new LinkRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("race")) {
-			return new RaceRenderer(dbAdapter);
+			return new RaceRenderer();
 		} else if (type.equals("settlement")) {
-			return new SettlementRenderer(dbAdapter);
+			return new SettlementRenderer(bookDbAdapter);
 		} else if (type.equals("skill")) {
-			return new SkillRenderer(dbAdapter);
+			return new SkillRenderer(bookDbAdapter);
 		} else if (type.equals("spell")) {
-			return new SpellRenderer(dbAdapter);
+			return new SpellRenderer(bookDbAdapter);
 		} else if (type.equals("table")) {
-			return new TableRenderer(dbAdapter);
+			return new TableRenderer();
 		} else if (type.equals("trap")) {
-			return new TrapRenderer(dbAdapter);
+			return new TrapRenderer(bookDbAdapter);
 		} else if (type.equals("vehicle")) {
-			return new VehicleRenderer(dbAdapter);
+			return new VehicleRenderer(bookDbAdapter);
 		} else {
-			return new SectionRenderer(dbAdapter);
+			return new SectionRenderer();
 		}
 	}
 
 	public String render(String sectionId, String inUrl) {
-		Cursor curs = this.dbAdapter.fetchFullSection(sectionId);
+		Cursor cursor = this.bookDbAdapter.getFullSectionAdapter().fetchFullSection(sectionId);
 		try {
 			renderPath = new ArrayList<Renderer>();
-			return renderSection(curs, inUrl);
+			return renderSection(cursor, inUrl);
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 
-	public String renderSection(Cursor curs, String inUrl) {
+	public String renderSection(Cursor cursor, String inUrl) {
 		HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 		HashMap<Integer, String> titleMap = new HashMap<Integer, String>();
 		int depth = 0;
 		StringBuffer sb = new StringBuffer();
-		boolean has_next = curs.moveToFirst();
+		boolean has_next = cursor.moveToFirst();
 		try {
 			boolean top = true;
-			String topTitle = curs.getString(6);
-			// 0:section_id, 1:lft, 2:rgt, 3:parent_id, 4:type, 5:subtype,
-			// 6:name, 7:abbrev,
-			// 8:source, 9:description, 10:body
-			// 11:image, 12:alt, 13:create_index, 14:url
-
+			String topTitle = FullSectionAdapter.SectionUtils.getName(cursor);
 			sb.append(renderHeader());
 			sb.append("<body>");
 			this.title.setText(topTitle);
 			while (has_next) {
-				int sectionId = curs.getInt(0);
-				int parentId = curs.getInt(3);
-				String name = curs.getString(6);
-				String abbrev = curs.getString(7);
+				int sectionId = FullSectionAdapter.SectionUtils.getSectionId(cursor);
+				int parentId = FullSectionAdapter.SectionUtils.getParentId(cursor);
+				String name = FullSectionAdapter.SectionUtils.getName(cursor);
+				String abbrev = FullSectionAdapter.SectionUtils.getAbbrev(cursor);
 				depth = getDepth(depthMap, sectionId, parentId, depth);
 				titleMap.put(sectionId, name);
 				String title = name;
@@ -123,8 +122,8 @@ public class RenderFarm {
 				if (titleMap.containsKey(parentId)) {
 					title = titleMap.get(parentId);
 				}
-				sb.append(renderSectionText(curs, title, depth, top));
-				has_next = curs.moveToNext();
+				sb.append(renderSectionText(cursor, title, depth, top));
+				has_next = cursor.moveToNext();
 				top = false;
 			}
 		} catch (CursorIndexOutOfBoundsException cioobe) {
@@ -147,12 +146,12 @@ public class RenderFarm {
 		return depth;
 	}
 
-	public String renderSectionText(Cursor curs, String title, int depth,
+	public String renderSectionText(Cursor cursor, String title, int depth,
 			boolean top) {
-		String type = curs.getString(4);
-		String uri = curs.getString(14);
-		Renderer renderer = getRenderer(type, dbAdapter);
-		String text = renderer.render(curs, uri, depth, top, suppressTitle(),
+		String type = FullSectionAdapter.SectionUtils.getType(cursor);
+		String url = FullSectionAdapter.SectionUtils.getUrl(cursor);
+		Renderer renderer = getRenderer(type, dbWrangler, bookDbAdapter);
+		String text = renderer.render(cursor, url, depth, top, suppressTitle(),
 				isTablet);
 		renderPath.add(renderer);
 		return text;

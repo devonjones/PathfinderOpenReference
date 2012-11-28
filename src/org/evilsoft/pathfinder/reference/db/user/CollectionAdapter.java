@@ -1,10 +1,10 @@
 package org.evilsoft.pathfinder.reference.db.user;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.MenuItem;
+import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -13,26 +13,25 @@ import android.database.SQLException;
 import android.util.Log;
 
 public class CollectionAdapter {
-	private PsrdUserDbAdapter userDbAdapter;
+	private UserDbAdapter userDbAdapter;
 
-	public CollectionAdapter(PsrdUserDbAdapter userDbAdapter) {
+	public CollectionAdapter(UserDbAdapter userDbAdapter) {
 		this.userDbAdapter = userDbAdapter;
 	}
 
 	/* Collections calls */
 
-	public ArrayList<HashMap<String, Object>> createCollectionList() {
+	public ArrayList<MenuItem> createCollectionList() {
 		Cursor curs = fetchCollectionList();
 		try {
-			ArrayList<HashMap<String, Object>> charList =
-					new ArrayList<HashMap<String, Object>>();
-			HashMap<String, Object> child;
+			ArrayList<MenuItem> charList = new ArrayList<MenuItem>();
+			MenuItem child;
 
 			boolean hasNext = curs.moveToFirst();
 			while (hasNext) {
-				child = new HashMap<String, Object>();
-				child.put("id", curs.getString(0));
-				child.put("specificName", curs.getString(1));
+				child = new MenuItem();
+				child.setId(curs.getInt(0));
+				child.setName(curs.getString(1));
 				charList.add(child);
 				hasNext = curs.moveToNext();
 			}
@@ -81,11 +80,11 @@ public class CollectionAdapter {
 		Integer colId = selectCollectionId(name);
 		args.add(colId.toString());
 		userDbAdapter.database.delete("collection_values",
-				"collection_id = ?", PsrdDbAdapter.toStringArray(args));
+				"collection_id = ?", BaseDbHelper.toStringArray(args));
 		args = new ArrayList<String>();
 		args.add(name);
 		return userDbAdapter.database.delete("collections", "name = ?",
-				PsrdDbAdapter.toStringArray(args));
+				BaseDbHelper.toStringArray(args));
 	}
 
 	public Integer selectCollectionId(String name) {
@@ -97,7 +96,7 @@ public class CollectionAdapter {
 		sb.append(" WHERE name = ?");
 		String sql = sb.toString();
 		Cursor c = userDbAdapter.database.rawQuery(sql,
-				PsrdDbAdapter.toStringArray(args));
+				BaseDbHelper.toStringArray(args));
 		try {
 			c.moveToFirst();
 			if (c.getCount() < 1) {
@@ -125,7 +124,7 @@ public class CollectionAdapter {
 		sql.append(" WHERE collections.collection_id = ?");
 		args.add(collectionId);
 		return userDbAdapter.database.rawQuery(sql.toString(),
-				PsrdDbAdapter.toStringArray(args));
+				BaseDbHelper.toStringArray(args));
 	}
 
 	public Cursor fetchFirstCollection() {
@@ -148,7 +147,7 @@ public class CollectionAdapter {
 		sql.append(" WHERE collection_id = ?");
 		sql.append("  AND url = ?");
 		Cursor curs = userDbAdapter.database.rawQuery(sql.toString(),
-				PsrdDbAdapter.toStringArray(args));
+				BaseDbHelper.toStringArray(args));
 		try {
 			return curs.moveToFirst();
 		} finally {
@@ -187,7 +186,7 @@ public class CollectionAdapter {
 		int result = userDbAdapter.database.delete(
 				"collection_values",
 				"collection_id = ? AND url = ?",
-				PsrdDbAdapter.toStringArray(args));
+				BaseDbHelper.toStringArray(args));
 
 		if (result < 1) {
 			throw new SQLException(String.format(
@@ -206,7 +205,7 @@ public class CollectionAdapter {
 		sql.append("   ON collections.collection_id = cv.collection_id");
 		sql.append(" WHERE collections.name = ?");
 		return userDbAdapter.database.rawQuery(sql.toString(),
-				PsrdDbAdapter.toStringArray(args));
+				BaseDbHelper.toStringArray(args));
 	}
 
 	public Cursor fetchCollectionValue(String collectionValueId) {
@@ -217,6 +216,6 @@ public class CollectionAdapter {
 		sql.append(" FROM collection_values cv");
 		sql.append(" WHERE collection_entry_id = ?");
 		return userDbAdapter.database.rawQuery(sql.toString(),
-				PsrdDbAdapter.toStringArray(args));
+				BaseDbHelper.toStringArray(args));
 	}
 }

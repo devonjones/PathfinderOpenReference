@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference.list;
 
 import org.evilsoft.pathfinder.reference.DisplayListAdapter;
 import org.evilsoft.pathfinder.reference.R;
+import org.evilsoft.pathfinder.reference.db.index.SearchAdapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -27,13 +28,13 @@ public class SearchListAdapter extends DisplayListAdapter {
 		}
 
 		TextView title = (TextView) V.findViewById(R.id.search_list_name);
-		title.setText(c.getString(1));
+		title.setText(SearchAdapter.SearchUtils.getName(c));
 		TextView parent_name = (TextView) V.findViewById(R.id.search_list_parent);
-		parent_name.setText("From: " + c.getString(4));
+		parent_name.setText("From: " + SearchAdapter.SearchUtils.getParentName(c));
 		TextView type = (TextView) V.findViewById(R.id.search_list_misc);
 		StringBuffer sb = new StringBuffer();
-		String sectionType = c.getString(2);
-		String sectionSubtype = c.getString(3);
+		String sectionType = SearchAdapter.SearchUtils.getType(c);
+		String sectionSubtype = SearchAdapter.SearchUtils.getSubtype(c);
 		sb.append("(");
 		if(sectionType != null) {
 			sb.append(sectionType);
@@ -47,22 +48,28 @@ public class SearchListAdapter extends DisplayListAdapter {
 		return V;
 	}
 
+	@Override
 	public Object buildItem(Cursor c) {
-		int section_id = c.getInt(0);
-		String name = c.getString(1);
-		String sectionType = c.getString(2);
-		String sectionSubtype = c.getString(2);
-		String parent = c.getString(3);
-		return buildSearchItem(section_id, name, sectionType, sectionSubtype, parent);
+		Integer sectionId = SearchAdapter.SearchUtils.getSectionId(c);
+		String database = SearchAdapter.SearchUtils.getDatabase(c);
+		String name = SearchAdapter.SearchUtils.getName(c);
+		String url = SearchAdapter.SearchUtils.getUrl(c);
+		String type = SearchAdapter.SearchUtils.getType(c);
+		String subtype = SearchAdapter.SearchUtils.getSubtype(c);
+		String parentName = SearchAdapter.SearchUtils.getParentName(c);
+		return buildSearchItem(sectionId, database, name, url, type, subtype, parentName);
 	}
 
-	public SearchListItem buildSearchItem(int section_id, String name, String sectionType, String sectionSubtype, String parent) {
+	public SearchListItem buildSearchItem(Integer sectionId, String database, String name, String url,
+			String type, String subtype, String parentName) {
 		SearchListItem sla = new SearchListItem();
-		sla.setSectionId(section_id);
+		sla.setSectionId(sectionId);
+		sla.setDatabase(database);
 		sla.setName(name);
-		sla.setSectionType(sectionType);
-		sla.setSectionSubtype(sectionSubtype);
-		sla.setParent(parent);
+		sla.setUrl(url);
+		sla.setSectionType(type);
+		sla.setSectionSubtype(subtype);
+		sla.setParent(parentName);
 		return sla;
 	}
 }

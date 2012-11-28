@@ -1,18 +1,15 @@
 package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.RaceAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
+import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
+import org.evilsoft.pathfinder.reference.db.index.CreatureTypeAdapter;
+import org.evilsoft.pathfinder.reference.db.index.FeatTypeAdapter;
+import org.evilsoft.pathfinder.reference.db.index.MenuAdapter;
+import org.evilsoft.pathfinder.reference.db.index.SpellClassAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
-import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -25,10 +22,10 @@ import android.widget.TextView;
 
 public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	private static final String TAG = "SectionExpandableListAdapter";
-	private List<HashMap<String, Object>> subjects;
-	private List<List<HashMap<String, Object>>> children;
-	private Context context;
+	private List<MenuItem> subjects;
+	private List<List<MenuItem>> children;
 	private LayoutInflater inflater;
+	private Context context;
 
 	public SectionExpandableListAdapter(Context context) {
 		this.context = context;
@@ -36,36 +33,33 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	}
 
-	public void refresh(PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {
-		createGroupList(dbAdapter);
-		createChildList(dbAdapter, userDbAdapter);
+	public void refresh(DbWrangler dbWrangler) {
+		createGroupList(dbWrangler);
+		createChildList(dbWrangler);
 		notifyDataSetChanged();
 	}
 
 	@Override
 	public Object getChild(int groupPosition, int childPosition) {
-		return children.get(groupPosition).get(childPosition)
-				.get("specificName");
+		return children.get(groupPosition).get(childPosition).getName();
 	}
 
 	@Override
 	public long getChildId(int groupPosition, int childPosition) {
 		try {
-			return Long.parseLong((String) children.get(groupPosition)
-					.get(childPosition).get("id"));
+			return children.get(groupPosition)
+					.get(childPosition).getId();
 		} catch (NumberFormatException nfe) {
 			return 0;
 		}
 	}
 
-	public String getPfChildId(int groupPosition, int childPosition) {
-		return (String) children.get(groupPosition).get(childPosition)
-				.get("id");
+	public Integer getPfChildId(int groupPosition, int childPosition) {
+		return children.get(groupPosition).get(childPosition).getId();
 	}
 
 	public String getPfChildUrl(int groupPosition, int childPosition) {
-		return (String) children.get(groupPosition).get(childPosition)
-				.get("url");
+		return children.get(groupPosition).get(childPosition).getUrl();
 	}
 
 	@Override
@@ -91,7 +85,7 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public Object getGroup(int groupPosition) {
-		return subjects.get(groupPosition).get("sectionName");
+		return subjects.get(groupPosition).getName();
 	}
 
 	@Override
@@ -102,19 +96,18 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	@Override
 	public long getGroupId(int groupPosition) {
 		try {
-			return Long.parseLong((String) subjects.get(groupPosition)
-					.get("id"));
+			return subjects.get(groupPosition).getId();
 		} catch (NumberFormatException nfe) {
 			return 0;
 		}
 	}
 
-	public String getPfGroupId(int groupPosition) {
-		return (String) subjects.get(groupPosition).get("id");
+	public Integer getPfGroupId(int groupPosition) {
+		return subjects.get(groupPosition).getId();
 	}
 
 	public String getPfGroupUrl(int groupPosition) {
-		return (String) subjects.get(groupPosition).get("url");
+		return subjects.get(groupPosition).getUrl();
 	}
 
 	@Override
@@ -135,7 +128,6 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public boolean hasStableIds() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
@@ -144,28 +136,14 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		return true;
 	}
 
-	public List<HashMap<String, Object>> createGroupList(PsrdDbAdapter dbAdapter) {
-		Cursor curs = dbAdapter.fetchSectionByParentId("1");
+	public List<MenuItem> createGroupList(DbWrangler dbWrangler) {
+		Cursor curs = dbWrangler.getIndexDbAdapter().getMenuAdapter().fetchMenu();
 		try {
-			ArrayList<HashMap<String, Object>> result = new ArrayList<HashMap<String, Object>>();
-			HashMap<String, Object> child = new HashMap<String, Object>();
-			child.put("sectionName", "Bookmarks");
-			child.put("id", "0");
-			child.put("url", "pfsrd://Bookmarks");
-			result.add(child);
+			List<MenuItem> result = new ArrayList<MenuItem>();
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
-				String section_id = curs.getString(0);
-				String name = curs.getString(1);
-				String type = curs.getString(2);
-				String url = curs.getString(4);
-				if (type.equals("list")) {
-					child = new HashMap<String, Object>();
-					child.put("sectionName", name);
-					child.put("id", section_id);
-					child.put("url", url);
-					result.add(child);
-				}
+				MenuItem mi = MenuAdapter.MenuUtils.genMenuItem(curs);
+				result.add(mi);
 				has_next = curs.moveToNext();
 			}
 			this.subjects = result;
@@ -175,55 +153,140 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		}
 	}
 
-	public List<List<HashMap<String, Object>>> createChildList(
-			PsrdDbAdapter dbAdapter, PsrdUserDbAdapter userDbAdapter) {
-		ArrayList<List<HashMap<String, Object>>> result = new ArrayList<List<HashMap<String, Object>>>();
+	public List<List<MenuItem>> createChildList(DbWrangler dbWrangler) {
+		List<List<MenuItem>> retList = new ArrayList<List<MenuItem>>();
 		for (int i = 0; i < subjects.size(); ++i) {
-			HashMap<String, Object> sub = subjects.get(i);
-			Log.d(TAG, sub.get("sectionName").toString());
-			String sectionName = sub.get("sectionName").toString();
-			String id = sub.get("id").toString();
-			if (sectionName.equals("Feats")) {
-				FeatAdapter fa = new FeatAdapter(dbAdapter);
-				result.add(fa.createFeatTypeList());
-			} else if (sectionName.equals("Spells")) {
-				SpellAdapter sa = new SpellAdapter(dbAdapter);
-				result.add(sa.createSpellClassList());
-			} else if (sectionName.startsWith("Rules")) {
-				RuleAdapter ra = new RuleAdapter(dbAdapter);
-				result.add(ra.createRuleList(id));
-			} else if (sectionName.equals("Classes")) {
-				ClassAdapter ca = new ClassAdapter(dbAdapter);
-				result.add(ca.createClassTypeList());
-			} else if (sectionName.equals("Races")) {
-				RaceAdapter ra = new RaceAdapter(dbAdapter);
-				result.add(ra.createRaceTypeList());
-			} else if (sectionName.equals("Monsters")) {
-				MonsterAdapter ma = new MonsterAdapter(dbAdapter);
-				result.add(ma.createMonsterTypeList());
-			} else if (sectionName.equals("Bookmarks")) {
-				CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-				ArrayList<HashMap<String, Object>> charList = ca
-						.createCollectionList();
-
-				HashMap<String, Object> adder = new HashMap<String, Object>();
-				adder.put("id", "0");
-				adder.put("specificName",
-						context.getString(R.string.add_collection));
-				charList.add(adder);
-				if (charList.size() > 1) {
-					HashMap<String, Object> remover = new HashMap<String, Object>();
-					remover.put("id", "1");
-					remover.put("specificName",
-							context.getString(R.string.del_collection));
-					charList.add(remover);
+			MenuItem sub = subjects.get(i);
+			Log.d(TAG, sub.getName());
+			Integer id = sub.getId();
+			Cursor curs = dbWrangler.getIndexDbAdapter().getMenuAdapter().fetchMenu(id.toString());
+			try {
+				ArrayList<MenuItem> result = new ArrayList<MenuItem>();
+				if(curs.getCount() > 0) {
+					boolean has_next = curs.moveToFirst();
+					while (has_next) {
+						String group = MenuAdapter.MenuUtils.getGrouping(curs);
+						if("feat_type".equals(group)) {
+							result.addAll(getFeatTypeList(dbWrangler));
+						} else if ("creature_type".equals(group)) {
+							result.addAll(getCreatureTypeList(dbWrangler));
+						} else if ("spell_classes".equals(group)) {
+							result.addAll(getSpellClassList(dbWrangler));
+						} else if ("bookmarks".equals(group)) {
+							result.addAll(getBookmarks(dbWrangler));
+						} else if ("children".equals(group)) {
+							String db = MenuAdapter.MenuUtils.getDb(curs);
+							String listUri = MenuAdapter.MenuUtils.getListUrl(curs);
+							result.addAll(getChildren(dbWrangler, db, listUri));
+						} else {
+							MenuItem mi = MenuAdapter.MenuUtils.genMenuItem(curs);
+							result.add(mi);
+						}
+						has_next = curs.moveToNext();
+					}
 				}
-				result.add(charList);
-			} else {
-				result.add(new ArrayList<HashMap<String, Object>>());
+				retList.add(result);
+			} finally {
+				curs.close();
 			}
 		}
-		this.children = result;
-		return result;
+		this.children = retList;
+		return retList;
+	}
+
+	public List<MenuItem> getFeatTypeList(DbWrangler dbWrangler) {
+		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
+		Cursor curs = dbWrangler.getIndexDbAdapter().getFeatTypeAdapter().fetchFeatTypes();
+		try {
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				MenuItem mi = new MenuItem();
+				mi.setId(0);
+				String name = FeatTypeAdapter.FeatTypeUtils.getFeatType(curs);
+				mi.setName(name);
+				mi.setUrl("pfsrd://Menu/Feats/feats/" + name);
+				results.add(mi);
+				has_next = curs.moveToNext();
+			}
+		} finally {
+			curs.close();
+		}
+		return results;
+	}
+
+	public List<MenuItem> getCreatureTypeList(DbWrangler dbWrangler) {
+		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
+		Cursor curs = dbWrangler.getIndexDbAdapter().getCreatureTypeAdapter().fetchCreatureTypes();
+		try {
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				MenuItem mi = new MenuItem();
+				mi.setId(0);
+				String name = CreatureTypeAdapter.CreatureTypeUtils.getCreatureType(curs);
+				mi.setName(name);
+				mi.setUrl("pfsrd://Menu/Creatures/creatures/" + name);
+				results.add(mi);
+				has_next = curs.moveToNext();
+			}
+		} finally {
+			curs.close();
+		}
+		return results;
+	}
+
+	public List<MenuItem> getSpellClassList(DbWrangler dbWrangler) {
+		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
+		Cursor curs = dbWrangler.getIndexDbAdapter().getSpellClassAdapter().fetchSpellClasses();
+		try {
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				MenuItem mi = new MenuItem();
+				mi.setId(0);
+				String name = SpellClassAdapter.SpellListUtils.getClass(curs);
+				mi.setName(name);
+				mi.setUrl("pfsrd://Menu/Spells/spells/" + name);
+				results.add(mi);
+				has_next = curs.moveToNext();
+			}
+		} finally {
+			curs.close();
+		}
+		return results;
+	}
+
+	public List<MenuItem> getBookmarks(DbWrangler dbWrangler) {
+		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+		List<MenuItem> charList = ca.createCollectionList();
+
+		MenuItem adder = new MenuItem();
+		adder.setId(0);
+		adder.setName(context.getString(R.string.add_collection));
+		charList.add(adder);
+		if (charList.size() > 1) {
+			MenuItem remover = new MenuItem();
+			remover.setId(1);
+			remover.setName(context.getString(R.string.del_collection));
+			charList.add(remover);
+		}
+		return charList;
+	}
+
+	public List<MenuItem> getChildren(DbWrangler dbWrangler, String db, String listUri) {
+		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
+		Cursor curs = dbWrangler.getBookDbAdapter(db).getSectionAdapter().fetchSectionByParentUrl(listUri);
+		try {
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				MenuItem mi = new MenuItem();
+				mi.setId(SectionAdapter.SectionUtils.getSectionId(curs));
+				mi.setName(SectionAdapter.SectionUtils.getName(curs));
+				mi.setUrl(SectionAdapter.SectionUtils.getUrl(curs));
+				results.add(mi);
+				has_next = curs.moveToNext();
+			}
+		} finally {
+			curs.close();
+		}
+		return results;
 	}
 }

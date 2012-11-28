@@ -1,9 +1,7 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-
 public class SectionRenderer extends Renderer {
-	public SectionRenderer(PsrdDbAdapter dbAdapter) {
+	public SectionRenderer() {
 	}
 
 	@Override

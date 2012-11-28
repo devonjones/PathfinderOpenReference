@@ -1,26 +1,17 @@
 package org.evilsoft.pathfinder.reference;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import org.acra.ErrorReporter;
-import org.evilsoft.pathfinder.reference.db.psrd.ClassAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.FeatAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.MonsterAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.RaceAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.RuleAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.SkillAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.SpellAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
-import org.evilsoft.pathfinder.reference.db.user.PsrdUserDbAdapter;
-import org.evilsoft.pathfinder.reference.list.ClassListAdapter;
+import org.evilsoft.pathfinder.reference.list.BaseListItem;
 import org.evilsoft.pathfinder.reference.list.CollectionItemListAdapter;
+import org.evilsoft.pathfinder.reference.list.CreatureListAdapter;
+import org.evilsoft.pathfinder.reference.list.DefaultListAdapter;
 import org.evilsoft.pathfinder.reference.list.FeatListAdapter;
-import org.evilsoft.pathfinder.reference.list.MonsterListAdapter;
-import org.evilsoft.pathfinder.reference.list.RaceListAdapter;
-import org.evilsoft.pathfinder.reference.list.RuleListAdapter;
+import org.evilsoft.pathfinder.reference.list.SectionListAdapter;
 import org.evilsoft.pathfinder.reference.list.SkillListAdapter;
 import org.evilsoft.pathfinder.reference.list.SpellListAdapter;
 
@@ -32,7 +23,6 @@ import android.database.Cursor;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -47,12 +37,10 @@ import com.actionbarsherlock.app.SherlockListFragment;
 public class SectionViewFragment extends SherlockListFragment implements
 		OnItemClickListener {
 	private static final String TAG = "SectionViewFragment";
-	private PsrdDbAdapter dbAdapter;
-	private PsrdUserDbAdapter userDbAdapter;
+	private DbWrangler dbWrangler;
 	private List<Cursor> cursorList = new ArrayList<Cursor>();
 	private String currentUrl;
 	private String currentType;
-	private String subtype;
 	private BaseAdapter currentListAdapter;
 	private String startUrl;
 	private boolean empty = false;
@@ -82,19 +70,11 @@ public class SectionViewFragment extends SherlockListFragment implements
 	}
 
 	private void openDb() {
-		if (userDbAdapter == null) {
-			userDbAdapter = new PsrdUserDbAdapter(this.getActivity()
-					.getApplicationContext());
+		if (dbWrangler == null) {
+			dbWrangler = new DbWrangler(this.getActivity().getApplicationContext());
 		}
-		if (userDbAdapter.isClosed()) {
-			userDbAdapter.open();
-		}
-		if (dbAdapter == null) {
-			dbAdapter = new PsrdDbAdapter(this.getActivity()
-					.getApplicationContext());
-		}
-		if (dbAdapter.isClosed()) {
-			dbAdapter.open();
+		if (dbWrangler.isClosed()) {
+			dbWrangler.open();
 		}
 	}
 
@@ -106,11 +86,8 @@ public class SectionViewFragment extends SherlockListFragment implements
 				curs.close();
 			}
 		}
-		if (dbAdapter != null) {
-			dbAdapter.close();
-		}
-		if (userDbAdapter != null) {
-			userDbAdapter.close();
+		if (dbWrangler != null) {
+			dbWrangler.close();
 		}
 	}
 
@@ -129,159 +106,117 @@ public class SectionViewFragment extends SherlockListFragment implements
 		}
 		Intent showContent = new Intent(getActivity().getApplicationContext(),
 				DetailsActivity.class);
-		String uri = getNextUrl(id);
-		if (subtype != null) {
-			uri = uri + "?subtype=" + subtype;
-		}
+		String uri = getNextUrl(id, position);
 		Log.d(TAG, uri);
 		showContent.setData(Uri.parse(uri));
 		startActivity(showContent);
 	}
 
-	private String getNextUrl(Long id) {
+	private String getNextUrl(Long id, int position) {
 		String uri = null;
 		if ("Bookmarks".equals(currentType)) {
-			CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+			CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 			Cursor curs = ca.fetchCollectionValue(id.toString());
 			boolean has_next = curs.moveToNext();
 			if (has_next) {
 				uri = curs.getString(2);
 			}
+			return uri;
 		} else {
-			Cursor curs = dbAdapter.fetchSection(id.toString());
-			try {
-				boolean has_next = curs.moveToNext();
-				if (has_next) {
-					uri = curs.getString(3);
-				}
-			} finally {
-				curs.close();
-			}
+			BaseListItem item = (BaseListItem)currentListAdapter.getItem(position);
+			return item.getUrl();
 		}
-		if (uri == null) {
-			uri = currentUrl + "/" + id;
-		}
-		return uri;
 	}
 
 	public void updateUrl(String newUrl) {
 		currentType = null;
+		currentUrl = newUrl;
 		Log.i(TAG, newUrl);
 		ErrorReporter e = ErrorReporter.getInstance();
 		e.putCustomData("LastSectionViewUrl", newUrl);
 		this.getListView().setOnItemClickListener(this);
 		this.getListView().setCacheColorHint(Color.WHITE);
-		currentUrl = newUrl;
-		Uri uri = Uri.parse(currentUrl);
-		subtype = uri.getQueryParameter("subtype");
-		String localUrl = currentUrl;
-		if(currentUrl.indexOf("?") > -1) {
-			localUrl = TextUtils.split(currentUrl, "\\?")[0];
-		}
-		Cursor curs = dbAdapter.fetchSectionByUrl(localUrl);
-		try {
-			boolean has_item = curs.moveToFirst();
-			String[] parts = newUrl.split("\\/");
-			if (has_item) {
-				String name = curs.getString(2);
-				String type = curs.getString(3);
-				getListAdapter(name, type, subtype);
-			} else if (parts[2].equals("Bookmarks")) {
-				currentType = "Bookmarks";
-				if (parts.length > 3) {
-					// I believe it's safe to test against the name because the
-					// keyboard doesn't allow typing an ellipsis character
-					if (parts[parts.length - 1]
-							.equals(getString(R.string.add_collection))) {
-						showNewCollectionDialog();
-					} else if (parts[parts.length - 1]
-							.equals(getString(R.string.del_collection))) {
-						showDelCollectionDialog();
-					} else {
-						// We have a collection name and can search on it
-						CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
-						Cursor curs2 = ca
-								.fetchCollectionValues(parts[parts.length - 1]);
-						cursorList.add(curs2);
-						currentListAdapter = new CollectionItemListAdapter(
-								getActivity(), curs2);
-					}
+		String[] parts = newUrl.split("\\/");
+		if(parts[3].equals("Bookmarks")) {
+			currentType = "Bookmarks";
+			if (parts.length > 3) {
+				// I believe it's safe to test against the name because the
+				// keyboard doesn't allow typing an ellipsis character
+				if (parts[parts.length - 1]
+						.equals(getString(R.string.add_collection))) {
+					showNewCollectionDialog();
+				} else if (parts[parts.length - 1]
+						.equals(getString(R.string.del_collection))) {
+					showDelCollectionDialog();
+				} else {
+					// We have a collection name and can search on it
+					CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+					Cursor curs2 = ca
+							.fetchCollectionValues(parts[parts.length - 1]);
+					cursorList.add(curs2);
+					currentListAdapter = new CollectionItemListAdapter(
+							getActivity(), curs2);
 				}
-			} else {
-				empty = false;
 			}
-			setListAdapter(currentListAdapter);
-		} finally {
-			curs.close();
+		} else if(parts[2].equals("Menu")) {
+			Log.i(TAG, parts[2]);
+			String name = parts[3];
+			String type = parts[4];
+			String subtype = null;
+			if (parts.length > 5) {
+				subtype = parts[5];
+			}
+			getListAdapter(name, type, subtype);
+		} else {
+			Log.i(TAG, parts[2]);
+			String source = parts[2];
+			String name = parts[3];
+			getContentListAdapter(source, name, currentUrl);
 		}
+		setListAdapter(currentListAdapter);
+	}
+
+	public void getContentListAdapter(String source, String name, String url) {
+		currentType = name;
+		Cursor curs = dbWrangler.getIndexDbAdapter().getBooksAdapter().fetchBook(source);
+		curs = dbWrangler.getBookDbAdapterByName(source).getSectionAdapter().fetchSectionByParentUrl(url);
+		cursorList.add(curs);
+		currentListAdapter = new SectionListAdapter(getActivity()
+				.getApplicationContext(), curs);
 	}
 
 	public void getListAdapter(String name, String type, String subtype) {
-		ArrayList<HashMap<String, String>> path = dbAdapter.getPathByUrl(currentUrl);
-		if (path != null && path.size() > 1 && path.get(path.size() - 2).get("name").startsWith("Rules")) {
-			currentType = "Rules";
-			RuleAdapter ra = new RuleAdapter(dbAdapter);
-			Cursor curs = ra.fetchRuleListByUrl(currentUrl);
-			cursorList.add(curs);
-			currentListAdapter = new RuleListAdapter(getActivity()
-					.getApplicationContext(), curs);
-		} else if (name.equals("Classes")) {
-			currentType = "Classes";
-			ClassAdapter ca = new ClassAdapter(dbAdapter);
-			Cursor curs = ca.fetchClassList(subtype);
-			cursorList.add(curs);
-			currentListAdapter = new ClassListAdapter(getActivity()
-					.getApplicationContext(), curs);
-		} else if (name.equals("Feats")) {
-			currentType = "Feats";
-			FeatAdapter fa = new FeatAdapter(dbAdapter);
-			Cursor curs;
-			if (subtype != null) {
-				curs = fa.fetchFeatList(subtype);
-			} else {
-				curs = fa.fetchFeatList();
-			}
+		currentType = name;
+		if (name.equals("Feats")) {
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByFeatType(subtype);
 			cursorList.add(curs);
 			currentListAdapter = new FeatListAdapter(getActivity()
 					.getApplicationContext(), curs, true);
-		} else if (name.equals("Monsters")) {
-			currentType = "Monsters";
-			MonsterAdapter ma = new MonsterAdapter(dbAdapter);
-			Cursor curs;
-			if (subtype != null) {
-				curs = ma.fetchMonstersByType(subtype);
-			} else {
-				curs = ma.fetchMonsterList();
-			}
+		} else if (name.equals("Creatures")) {
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByCreatureType(subtype);
 			cursorList.add(curs);
-			currentListAdapter = new MonsterListAdapter(getActivity()
+			currentListAdapter = new CreatureListAdapter(getActivity()
 					.getApplicationContext(), curs, true);
-		} else if (name.equals("Races")) {
-			currentType = "Races";
-			RaceAdapter ra = new RaceAdapter(dbAdapter);
-			Cursor curs = ra.fetchRaceList(subtype);
-			cursorList.add(curs);
-			currentListAdapter = new RaceListAdapter(getActivity()
-					.getApplicationContext(), curs);
 		} else if (name.equals("Skills")) {
-			currentType = "Skills";
-			SkillAdapter sa = new SkillAdapter(dbAdapter);
-			Cursor curs = sa.fetchSkillList();
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByType(type, subtype);
 			cursorList.add(curs);
 			currentListAdapter = new SkillListAdapter(getActivity()
 					.getApplicationContext(), curs, true);
 		} else if (name.equals("Spells")) {
-			currentType = "Spells";
-			SpellAdapter sa = new SpellAdapter(dbAdapter);
 			Cursor curs;
-			if (subtype != null) {
-				curs = sa.fetchSpellList(subtype);
+			if(subtype != null) {
+				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchBySpellClass(subtype);
 			} else {
-				curs = sa.fetchSpellList();
+				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByType(type, subtype);
 			}
 			cursorList.add(curs);
 			currentListAdapter = new SpellListAdapter(getActivity()
 					.getApplicationContext(), curs, true);
+		} else {
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByType(type, subtype);
+			cursorList.add(curs);
+			currentListAdapter = new DefaultListAdapter(getActivity()
+					.getApplicationContext(), curs);
 		}
 	}
 
@@ -307,8 +242,7 @@ public class SectionViewFragment extends SherlockListFragment implements
 						sb.append(which);
 						ErrorReporter e = ErrorReporter.getInstance();
 						e.putCustomData("LastClick", sb.toString());
-						CollectionAdapter ca = new CollectionAdapter(
-								userDbAdapter);
+						CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 						if (ca.addCollection(edit.getText().toString())) {
 							Toast.makeText(getActivity(),
 									R.string.collection_entry_success,
@@ -335,7 +269,7 @@ public class SectionViewFragment extends SherlockListFragment implements
 
 	@SuppressLint("NewApi")
 	private void showDelCollectionDialog() {
-		CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 		Cursor curs = ca.fetchCollectionList();
 		try {
 			AlertDialog.Builder builder =
@@ -355,7 +289,7 @@ public class SectionViewFragment extends SherlockListFragment implements
 			builder.setTitle(R.string.del_collection_entry_title);
 			builder.setItems(items, new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
-					CollectionAdapter ca = new CollectionAdapter(userDbAdapter);
+					CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 					if (ca.delCollection(characterList.get(which)) > 0) {
 						Toast.makeText(getActivity(),
 								R.string.del_collection_entry_success,
@@ -386,7 +320,7 @@ public class SectionViewFragment extends SherlockListFragment implements
 			SectionListFragment list = (SectionListFragment) getActivity()
 					.getSupportFragmentManager().findFragmentById(
 							R.id.section_list_fragment);
-			list.refresh(dbAdapter, userDbAdapter);
+			list.refresh(dbWrangler);
 		} else {
 			Intent showContent = new Intent(getActivity()
 					.getApplicationContext(),

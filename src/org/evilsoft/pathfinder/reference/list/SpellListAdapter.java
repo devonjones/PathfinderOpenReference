@@ -2,6 +2,7 @@ package org.evilsoft.pathfinder.reference.list;
 
 import org.evilsoft.pathfinder.reference.DisplayListAdapter;
 import org.evilsoft.pathfinder.reference.R;
+import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -37,62 +38,74 @@ public class SpellListAdapter extends DisplayListAdapter {
 		}
 
 		TextView title = (TextView) V.findViewById(R.id.spell_list_name);
-		title.setText(c.getString(1));
+		title.setText(IndexGroupAdapter.IndexGroupUtils.getName(c));
 		if (mainList) {
 			TextView schoolV = (TextView) V.findViewById(R.id.spell_list_school);
-			String school = c.getString(3);
-			String subschool = c.getString(4);
-			schoolV.setText(SpellListItem.buildSchoolLine(school, subschool));
+			String school = IndexGroupAdapter.IndexGroupUtils.getSpellSchool(c);
+			String subschool = IndexGroupAdapter.IndexGroupUtils.getSpellSubschool(c);
+			String descriptor = IndexGroupAdapter.IndexGroupUtils.getSpellDescriptor(c);
+			schoolV.setText(SpellListItem.buildSchoolLine(school, subschool, descriptor));
 			TextView description = (TextView) V.findViewById(R.id.spell_list_description);
-			String desc = c.getString(2);
+			String desc = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
 			description.setText(SpellListItem.shortDescription(desc));
-			if (c.getColumnCount() > 5) {
-				int level = c.getInt(5);
+			if (IndexGroupAdapter.IndexGroupUtils.hasLevel(c)) {
+				Integer level = IndexGroupAdapter.IndexGroupUtils.getSpellLevel(c);
 				TextView qualities = (TextView) V.findViewById(R.id.spell_list_qualities);
 				qualities.setText("Level " + level);
 			}
 		} else {
-			if (c.getColumnCount() > 5) {
-				int level = c.getInt(5);
+			if (IndexGroupAdapter.IndexGroupUtils.hasLevel(c)) {
+				Integer level = IndexGroupAdapter.IndexGroupUtils.getSpellLevel(c);
 				TextView qualities = (TextView) V.findViewById(R.id.spell_list_qualities);
 				qualities.setText("Level " + level);
 			} else {
 				TextView schoolV = (TextView) V.findViewById(R.id.spell_list_school);
-				String school = c.getString(3);
-				String subschool = c.getString(4);
-				schoolV.setText(SpellListItem.buildSchoolLine(school, subschool));
+				String school = IndexGroupAdapter.IndexGroupUtils.getSpellSchool(c);
+				String subschool = IndexGroupAdapter.IndexGroupUtils.getSpellSubschool(c);
+				String descriptor = IndexGroupAdapter.IndexGroupUtils.getSpellDescriptor(c);
+				schoolV.setText(SpellListItem.buildSchoolLine(school, subschool, descriptor));
 			}
 		}
 		return V;
 	}
 
+	@Override
 	public Object buildItem(Cursor c) {
-		int section_id = c.getInt(0);
-		String name = c.getString(1);
-		String description = c.getString(2);
-		String school = c.getString(3);
-		String subschool = c.getString(4);
-		int level;
-		if (c.getColumnCount() > 5) {
-			level = c.getInt(5);
-			return buildSpell(section_id, name, description, school, subschool, level);
+		Integer sectionId = IndexGroupAdapter.IndexGroupUtils.getSectionId(c);
+		String database = IndexGroupAdapter.IndexGroupUtils.getDatabase(c);
+		String name = IndexGroupAdapter.IndexGroupUtils.getName(c);
+		String url = IndexGroupAdapter.IndexGroupUtils.getUrl(c);
+		String description = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
+		String school = IndexGroupAdapter.IndexGroupUtils.getSpellSchool(c);
+		String subschool = IndexGroupAdapter.IndexGroupUtils.getSpellSubschool(c);
+		String descriptor = IndexGroupAdapter.IndexGroupUtils.getSpellDescriptor(c);
+		if (IndexGroupAdapter.IndexGroupUtils.hasLevel(c)) {
+			Integer level = IndexGroupAdapter.IndexGroupUtils.getSpellLevel(c);
+			return buildSpell(sectionId, database, name, url, description, school, subschool, descriptor, level);
 		}
-		return buildSpell(section_id, name, description, school, subschool);
+		return buildSpell(sectionId, database, name, url, description, school, subschool, descriptor);
 	}
 
-	public SpellListItem buildSpell(int section_id, String name, String description, String school, String subschool) {
-		return buildSpell(section_id, name, description, school, subschool, null);
+	public SpellListItem buildSpell(Integer sectionId, String database,
+			String name, String url, String description, String school, String subschool, String descriptor) {
+		return buildSpell(sectionId, database, name, url, description, school, subschool, descriptor, null);
 	}
 
-	public SpellListItem buildSpell(int section_id, String name, String description, String school, String subschool,
-			Integer level) {
+	public SpellListItem buildSpell(Integer sectionId, String database,
+			String name, String url, String description, String school, String subschool,
+			String descriptor, Integer level) {
 		SpellListItem sla = new SpellListItem();
-		sla.setSectionId(section_id);
+		sla.setSectionId(sectionId);
+		sla.setDatabase(database);
 		sla.setName(name);
+		sla.setUrl(url);
 		sla.setDescription(description);
 		sla.setSchool(school);
 		sla.setSubschool(subschool);
-		sla.setLevel(level);
+		sla.setDescriptor(descriptor);
+		if(level != null) {
+			sla.setLevel(level);
+		}
 		return sla;
 	}
 }

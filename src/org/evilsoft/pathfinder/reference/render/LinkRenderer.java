@@ -3,26 +3,31 @@ package org.evilsoft.pathfinder.reference.render;
 import java.util.HashMap;
 
 import org.evilsoft.pathfinder.reference.RenderFarm;
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
+import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 
 import android.database.Cursor;
 
 public class LinkRenderer extends Renderer {
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
+	private DbWrangler dbWrangler;
 	private boolean render = true;
-	private String link_url;
+	private String linkUrl;
 
-	public LinkRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
+	public LinkRenderer(DbWrangler dbWrangler, BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
+		this.dbWrangler = dbWrangler;
 	}
 
 	@Override
 	public void localSetValues() {
-		Cursor lcurs = dbAdapter.getLinkDetails(sectionId);
+		Cursor lcurs = bookDbAdapter.getLinkAdapter().getLinkDetails(sectionId);
 		try {
 			boolean has_next = lcurs.moveToFirst();
 			if (has_next) {
-				link_url = lcurs.getString(1);
+				linkUrl = lcurs.getString(1);
 				render = lcurs.getInt(2) == 0;
 			}
 		} finally {
@@ -63,7 +68,7 @@ public class LinkRenderer extends Renderer {
 		StringBuffer sb = new StringBuffer();
 		if (render) {
 			sb.append("<a href='");
-			sb.append(link_url);
+			sb.append(linkUrl);
 			sb.append("'>");
 			sb.append(super.renderBody());
 			sb.append("</a>");
@@ -71,40 +76,41 @@ public class LinkRenderer extends Renderer {
 			HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 			int localdepth = depth;
 			boolean showTitle = true;
-			String sectionId = getLinkSectionId();
+			BookDbAdapter linkBookDbAdapter = dbWrangler.getBookDbAdapterByUrl(linkUrl);
+			Integer sectionId = getLinkSectionId(linkBookDbAdapter);
 			if (sectionId != null) {
-				Cursor curs = this.dbAdapter.fetchFullSection(sectionId);
+				Cursor cursor = linkBookDbAdapter.getFullSectionAdapter().fetchFullSection(sectionId.toString());
 				try {
-					boolean has_next = curs.moveToFirst();
+					boolean has_next = cursor.moveToFirst();
 					while (has_next) {
-						String type = curs.getString(4);
-						int secId = curs.getInt(0);
-						int parentId = curs.getInt(3);
+						String type = FullSectionAdapter.SectionUtils.getType(cursor);
+						Integer secId = FullSectionAdapter.SectionUtils.getSectionId(cursor);
+						Integer parentId = FullSectionAdapter.SectionUtils.getParentId(cursor);
 						Renderer renderer = RenderFarm.getRenderer(
-								type, dbAdapter);
+								type, dbWrangler, linkBookDbAdapter);
 						localdepth = RenderFarm.getDepth(depthMap, secId, parentId, depth);
 						sb.append(renderer.render(
-								curs, link_url, localdepth, top, showTitle, isTablet));
-						has_next = curs.moveToNext();
+								cursor, linkUrl, localdepth, top, showTitle, isTablet));
+						has_next = cursor.moveToNext();
 						showTitle = false;
 					}
 				} finally {
-					curs.close();
+					cursor.close();
 				}
 			}
 		}
 		return sb.toString();
 	}
 
-	private String getLinkSectionId() {
-		Cursor curs = dbAdapter.fetchSectionByUrl(link_url);
+	private Integer getLinkSectionId(BookDbAdapter linkBookDbAdapter) {
+		Cursor cursor = linkBookDbAdapter.getSectionAdapter().fetchSectionByUrl(linkUrl);
 		try {
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
-				return curs.getString(0);
+				return SectionAdapter.SectionUtils.getSectionId(cursor);
 			}
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 		return null;
 	}

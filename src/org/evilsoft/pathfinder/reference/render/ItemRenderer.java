@@ -1,14 +1,15 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.ItemAdapter;
 
 import android.database.Cursor;
 
 public class ItemRenderer extends StatBlockRenderer {
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
 
-	public ItemRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
+	public ItemRenderer(BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
 	}
 
 	@Override
@@ -18,31 +19,29 @@ public class ItemRenderer extends StatBlockRenderer {
 
 	@Override
 	public String renderDetails() {
-		Cursor curs = dbAdapter.getItemDetails(sectionId);
-		// 0: aura, 1: slot, 2: cl, 3: price, 4: weight, 5: requirements,
-		// 6: skill, 7: cr_increase, 8: cost
+		Cursor cursor = bookDbAdapter.getItemAdapter().getItemDetails(sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
-				sb.append(addField("Aura", curs.getString(0), false));
-				sb.append(addField("CL", curs.getString(2)));
-				sb.append(addField("Slot", curs.getString(1), false));
-				sb.append(addField("Price", curs.getString(3), false));
-				sb.append(addField("Weight", curs.getString(4)));
+				sb.append(addField("Aura", ItemAdapter.ItemUtils.getAura(cursor), false));
+				sb.append(addField("CL", ItemAdapter.ItemUtils.getCl(cursor)));
+				sb.append(addField("Slot", ItemAdapter.ItemUtils.getSlot(cursor), false));
+				sb.append(addField("Price", ItemAdapter.ItemUtils.getPrice(cursor), false));
+				sb.append(addField("Weight", ItemAdapter.ItemUtils.getWeight(cursor)));
 				// TODO: Construction and Description reversed due to child
 				// rendering
 				sb.append(renderStatBlockBreaker("Construction"));
-				sb.append(addField("Requirements", curs.getString(5), false));
-				sb.append(addField("Skill", curs.getString(6), false));
-				sb.append(addField("CR Increase", curs.getString(7), false));
-				sb.append(addField("Cost", curs.getString(8)));
+				sb.append(addField("Requirements", ItemAdapter.ItemUtils.getRequirements(cursor), false));
+				sb.append(addField("Skill", ItemAdapter.ItemUtils.getSkill(cursor), false));
+				sb.append(addField("CR Increase", ItemAdapter.ItemUtils.getCrIncrease(cursor), false));
+				sb.append(addField("Cost", ItemAdapter.ItemUtils.getCost(cursor)));
 				sb.append(renderStatBlockBreaker("Description"));
 				this.suppressNextTitle = true;
 			}
 			return sb.toString();
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 

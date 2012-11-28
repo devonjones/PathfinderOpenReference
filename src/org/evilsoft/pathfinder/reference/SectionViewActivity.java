@@ -1,6 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.DbWrangler;
+import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -18,7 +19,7 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 
 public class SectionViewActivity extends SherlockFragmentActivity {
-	private PsrdDbAdapter dbAdapter;
+	private DbWrangler dbWrangler;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -65,24 +66,25 @@ public class SectionViewActivity extends SherlockFragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Cursor curs = null;
-		String sectionId;
+		Integer sectionId;
 		Intent showContent;
 		try {
+			SectionAdapter sa = dbWrangler.getBookDbAdapter("book-ogl.db").getSectionAdapter();
 			switch (item.getItemId()) {
 				case R.id.menu_ogl:
-					curs = dbAdapter.fetchSectionByParentIdAndName("1", "OGL");
+					curs = sa.fetchSectionByParentIdAndName("1", "OGL");
 					curs.moveToFirst();
-					sectionId = curs.getString(0);
+					sectionId = SectionAdapter.SectionUtils.getSectionId(curs);
 					showContent = new Intent(getApplicationContext(),
 							DetailsActivity.class);
 					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
 					startActivity(showContent);
 					return true;
 				case R.id.menu_cul:
-					curs = dbAdapter.fetchSectionByParentIdAndName("1",
+					curs = sa.fetchSectionByParentIdAndName("1",
 							"Community Use License");
 					curs.moveToFirst();
-					sectionId = curs.getString(0);
+					sectionId = SectionAdapter.SectionUtils.getSectionId(curs);
 					showContent = new Intent(getApplicationContext(),
 							DetailsActivity.class);
 					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
@@ -109,19 +111,19 @@ public class SectionViewActivity extends SherlockFragmentActivity {
 	}
 
 	private void openDb() {
-		if (dbAdapter == null) {
-			dbAdapter = new PsrdDbAdapter(this.getApplicationContext());
+		if (dbWrangler == null) {
+			dbWrangler = new DbWrangler(getApplicationContext());
 		}
-		if (dbAdapter.isClosed()) {
-			dbAdapter.open();
+		if (dbWrangler.isClosed()) {
+			dbWrangler.open();
 		}
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		if (dbAdapter != null) {
-			dbAdapter.close();
+		if (dbWrangler != null) {
+			dbWrangler.close();
 		}
 	}
 }

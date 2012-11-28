@@ -1,23 +1,15 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
-import org.evilsoft.pathfinder.reference.db.psrd.SkillAdapter;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.SkillAdapter;
 
 import android.database.Cursor;
 
 public class SkillRenderer extends Renderer {
-	private SkillAdapter skillAdapter;
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
 
-	public SkillRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
-	}
-
-	private SkillAdapter getSkillAdapter() {
-		if (this.skillAdapter == null) {
-			this.skillAdapter = new SkillAdapter(this.dbAdapter);
-		}
-		return this.skillAdapter;
+	public SkillRenderer(BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
 	}
 
 	@Override
@@ -35,19 +27,19 @@ public class SkillRenderer extends Renderer {
 		return sb.toString();
 	}
 
-	public String renderSkillDetails(String sectionId) {
-		Cursor curs = this.getSkillAdapter().fetchSkillAttr(sectionId);
+	public String renderSkillDetails(Integer sectionId) {
+		Cursor cursor = bookDbAdapter.getSkillAdapter().fetchSkillAttr(sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append("<H2>(");
-				sb.append(curs.getString(0));
-				boolean armorCheckPenalty = (curs.getInt(1) != 0);
+				sb.append(SkillAdapter.SkillUtils.getAttribute(cursor));
+				boolean armorCheckPenalty = (SkillAdapter.SkillUtils.getArmorCheckPenalty(cursor) != 0);
 				if (armorCheckPenalty) {
 					sb.append("; Armor Check Penalty");
 				}
-				boolean trainedOnly = (curs.getInt(2) != 0);
+				boolean trainedOnly = (SkillAdapter.SkillUtils.getTrainedOnly(cursor) != 0);
 				if (trainedOnly) {
 					sb.append("; Trained Only");
 				}
@@ -55,7 +47,7 @@ public class SkillRenderer extends Renderer {
 			}
 			return sb.toString();
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 

@@ -1,26 +1,25 @@
 package org.evilsoft.pathfinder.reference.render;
 
-import org.evilsoft.pathfinder.reference.db.psrd.PsrdDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.AnimalCompanionAdapter;
+import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 
 import android.database.Cursor;
 
 public class AnimalCompanionRenderer extends StatBlockRenderer {
-	private PsrdDbAdapter dbAdapter;
+	private BookDbAdapter bookDbAdapter;
 
-	public AnimalCompanionRenderer(PsrdDbAdapter dbAdapter) {
-		this.dbAdapter = dbAdapter;
+	public AnimalCompanionRenderer(BookDbAdapter bookDbAdapter) {
+		this.bookDbAdapter = bookDbAdapter;
 	}
 
 	@Override
 	public String renderTitle() {
-		Cursor curs = dbAdapter.getAnimalCompanionDetails(sectionId);
-		// 0:ac, 1:attack, 2:ability_scores, 3:special_qualities,
-		// 4:special_attacks, 5:size, 6:speed, 7:level
+		Cursor cursor = bookDbAdapter.getAnimalCompanionAdapter().getAnimalCompanionDetails(sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
-				String level = curs.getString(7);
+				String level = AnimalCompanionAdapter.AnimalCompanionUtils.getLevel(cursor);
 				if (level != null) {
 					sb.append(renderStatBlockBreaker(level));
 				} else {
@@ -30,30 +29,28 @@ public class AnimalCompanionRenderer extends StatBlockRenderer {
 			}
 			return sb.toString();
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 
 	@Override
 	public String renderDetails() {
-		Cursor curs = dbAdapter.getAnimalCompanionDetails(sectionId);
-		// 0:ac, 1:attack, 2:ability_scores, 3:special_qualities,
-		// 4:special_attacks, 5:size, 6:speed, 7:level
+		Cursor cursor = bookDbAdapter.getAnimalCompanionAdapter().getAnimalCompanionDetails(sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
-			boolean has_next = curs.moveToFirst();
+			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
-				sb.append(addField("Size", curs.getString(5), false));
-				sb.append(addField("Speed", curs.getString(6)));
-				sb.append(addField("AC", curs.getString(0)));
-				sb.append(addField("Attack", curs.getString(1)));
-				sb.append(addField("Ability Scores", curs.getString(2)));
-				sb.append(addField("Special Qualities", curs.getString(3)));
-				sb.append(addField("Special Attacks", curs.getString(4)));
+				sb.append(addField("Size", AnimalCompanionAdapter.AnimalCompanionUtils.getSize(cursor), false));
+				sb.append(addField("Speed", AnimalCompanionAdapter.AnimalCompanionUtils.getSpeed(cursor)));
+				sb.append(addField("AC", AnimalCompanionAdapter.AnimalCompanionUtils.getAc(cursor)));
+				sb.append(addField("Attack", AnimalCompanionAdapter.AnimalCompanionUtils.getAttack(cursor)));
+				sb.append(addField("Ability Scores", AnimalCompanionAdapter.AnimalCompanionUtils.getAbilityScores(cursor)));
+				sb.append(addField("Special Qualities", AnimalCompanionAdapter.AnimalCompanionUtils.getSpecialQualities(cursor)));
+				sb.append(addField("Special Attacks", AnimalCompanionAdapter.AnimalCompanionUtils.getSpecialAttacks(cursor)));
 			}
 			return sb.toString();
 		} finally {
-			curs.close();
+			cursor.close();
 		}
 	}
 
