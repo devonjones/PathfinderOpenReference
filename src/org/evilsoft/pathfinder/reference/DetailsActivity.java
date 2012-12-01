@@ -8,6 +8,7 @@ import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 import org.evilsoft.pathfinder.reference.db.index.SearchAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
+import org.evilsoft.pathfinder.reference.utils.UrlAliaser;
 
 import android.annotation.SuppressLint;
 import android.app.SearchManager;
@@ -52,7 +53,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				showList = true;
 			}
 		} else {
-			newUri = launchingIntent.getData().toString();
+			newUri = UrlAliaser.aliasUrl(dbWrangler, launchingIntent.getData().toString());
 		}
 
 		// Set up action bar

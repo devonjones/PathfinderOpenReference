@@ -55,7 +55,18 @@ public class IndexGroupAdapter {
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 	}
-	
+
+	public Cursor fetchByMatchUrl(String url) {
+		List<String> args = new ArrayList<String>();
+		args.add(url);
+		StringBuffer sb = new StringBuffer();
+		sb.append(selectStatement());
+		sb.append(" WHERE i.url LIKE ?");
+		sb.append(" ORDER BY i.name");
+		String sql = sb.toString();
+		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
+	}
+
 	public Cursor fetchByType(String type, String subtype) {
 		if(type.equals("*")) {
 			type = null;
