@@ -2,12 +2,15 @@ package org.evilsoft.pathfinder.reference;
 
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 
+import android.annotation.TargetApi;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.AttributeSet;
+import android.view.View;
 import android.widget.SearchView;
 
 import com.actionbarsherlock.app.ActionBar;
@@ -23,23 +26,29 @@ public class SectionViewActivity extends SherlockFragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		openDb();
-		setContentView(R.layout.section_view);
-
-		Intent launchingIntent = getIntent();
-		String content = launchingIntent.getData().toString();
 
 		// Set up action bar
 		ActionBar action = this.getSupportActionBar();
 		action.setDisplayHomeAsUpEnabled(true);
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+		setContentView(R.layout.section_view);
 
 		SectionViewFragment viewer = (SectionViewFragment) getSupportFragmentManager()
 				.findFragmentById(
 						R.id.section_view_fragment);
-		viewer.updateUrl(content);
+		Intent launchingIntent = getIntent();
+		String url = launchingIntent.getData().toString();
+		viewer.updateUrl(url);
 	}
 
+	
+
 	@Override
+	public View onCreateView(String name, Context context, AttributeSet attrs) {
+		return super.onCreateView(name, context, attrs);
+	}
+
+	@TargetApi(11) @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = this.getSupportMenuInflater();

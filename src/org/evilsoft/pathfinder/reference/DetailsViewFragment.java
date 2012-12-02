@@ -18,17 +18,6 @@ import com.actionbarsherlock.app.SherlockFragment;
 public class DetailsViewFragment extends SherlockFragment {
 	private WebView viewer;
 	private DetailsWebViewClient client;
-	private String startUrl;
-
-	public DetailsViewFragment() {
-		super();
-	}
-
-	@SuppressLint("ValidFragment")
-	public DetailsViewFragment(String newUrl) {
-		super();
-		this.startUrl = newUrl;
-	}
 
 	@SuppressLint({ "NewApi", "SetJavaScriptEnabled" })
 	@Override
@@ -43,7 +32,8 @@ public class DetailsViewFragment extends SherlockFragment {
 		viewer = (WebView) v.findViewById(R.id.display_webview);
 		viewer.getSettings().setJavaScriptEnabled(true);
 		if (Build.VERSION.SDK_INT >= 11 && Build.VERSION.SDK_INT < 16) {
-			// Wierd rendering bug that causes the viewport of a webview to be offset from
+			// Wierd rendering bug that causes the viewport of a webview to be
+			// offset from
 			// the actual webview.
 			viewer.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 		}
@@ -53,7 +43,8 @@ public class DetailsViewFragment extends SherlockFragment {
 		back.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				ErrorReporter e = ErrorReporter.getInstance();
-				e.putCustomData("LastClick", "DetailsViewFragment.onCreateView.onClick");
+				e.putCustomData("LastClick",
+						"DetailsViewFragment.onCreateView.onClick");
 				client.back(viewer);
 			}
 		});
@@ -70,13 +61,10 @@ public class DetailsViewFragment extends SherlockFragment {
 	}
 
 	public void onViewCreated(View view, Bundle savedInstanceState) {
-		if (this.startUrl != null) {
-			updateUrl(this.startUrl);
-		}
 	}
 
-	public void updateUrl(String newUrl) {
-		client.render(viewer, newUrl);
+	public void updateUrl(String newUrl, String contextUrl) {
+		client.render(viewer, newUrl, contextUrl);
 	}
 
 	@Override

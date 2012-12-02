@@ -9,7 +9,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.ExpandableListView;
@@ -61,17 +60,26 @@ public class SectionListFragment extends ExpandableListFragment implements
 		expListAdapter.refresh(dbWrangler);
 	}
 
-	private void updateFragment(String uri) {
-		Fragment frag = this.getActivity().getSupportFragmentManager().findFragmentByTag("viewer");
+	private void updateFragment(String url) {
+		Bundle args = new Bundle();
+		args.putString("url", url);
+		/*Fragment frag = this.getActivity().getSupportFragmentManager().findFragmentByTag("viewer");
 		if (SectionViewFragment.class.isInstance(frag)) {
-			((SectionViewFragment)frag).updateUrl(uri);
+			((SectionViewFragment)frag).setArguments(args);
+			//((SectionViewFragment)frag).updateUrl(url);
 		}
 		else {
 			FragmentTransaction ft = this.getActivity().getSupportFragmentManager().beginTransaction();
-			SectionViewFragment viewer = new SectionViewFragment(uri);
+			SectionViewFragment viewer = new SectionViewFragment();
+			viewer.setArguments(args);
 			ft.replace(R.id.section_view_layout, viewer, "viewer");
 			ft.commit();
-		}
+		}*/
+		FragmentTransaction ft = this.getActivity().getSupportFragmentManager().beginTransaction();
+		SectionViewFragment viewer = new SectionViewFragment();
+		viewer.setArguments(args);
+		ft.replace(R.id.section_view_layout, viewer, "viewer");
+		ft.commit();
 	}
 
 	@Override
@@ -90,7 +98,6 @@ public class SectionListFragment extends ExpandableListFragment implements
 			updateFragment(uri);
 		} else {
 			Intent showContent = new Intent(this.getActivity().getApplicationContext(), SectionViewActivity.class);
-
 			showContent.setData(Uri.parse(uri));
 			startActivity(showContent);
 		}

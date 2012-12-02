@@ -76,7 +76,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		return newUrl;
 	}
 
-	public boolean render(WebView view, String newUrl) {
+	public boolean render(WebView view, String newUrl, String contextUrl) {
 		newUrl = mungeUrl(newUrl);
 		if (newUrl != null) {
 			String[] parts = newUrl.split("\\/");
@@ -84,7 +84,7 @@ public class DetailsWebViewClient extends WebViewClient {
 				this.url = newUrl;
 				Log.d(TAG, parts[parts.length - 1]);
 				path = dbWrangler.getBookDbAdapterByUrl(newUrl).getPathByUrl(newUrl);
-				setBackVisibility(newUrl);
+				setBackVisibility(newUrl, contextUrl);
 				return renderPfsrd(view, newUrl);
 			}
 		}
@@ -107,9 +107,13 @@ public class DetailsWebViewClient extends WebViewClient {
 		return false;
 	}
 
-	public void setBackVisibility(String newUrl) {
+	public void setBackVisibility(String newUrl, String contextUrl) {
 		if (path != null && path.size() > 1) {
-			reloadList(newUrl);
+			if(contextUrl != null) {
+				reloadList(contextUrl);
+			} else {
+				reloadList(newUrl);
+			}
 			if (!path.get(1).get("type").equals("list")) {
 				this.back.setVisibility(View.VISIBLE);
 				return;
@@ -166,8 +170,13 @@ public class DetailsWebViewClient extends WebViewClient {
 			DetailsListFragment list = (DetailsListFragment) act
 					.getSupportFragmentManager().findFragmentById(
 							R.id.details_list_fragment);
-			String updateUrl = up(newUrl);
-			list.updateUrl(updateUrl);
+			String[] parts = newUrl.split("\\/");
+			if(parts[2].equals("Menu")) {
+				list.updateUrl(newUrl);
+			} else {
+				String updateUrl = up(newUrl);
+				list.updateUrl(updateUrl);
+			}
 		}
 	}
 

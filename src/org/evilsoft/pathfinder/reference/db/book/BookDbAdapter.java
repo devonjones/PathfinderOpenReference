@@ -135,6 +135,10 @@ public class BookDbAdapter {
 		return new FullSectionAdapter(database, dbName);
 	}
 
+	public SectionIndexGroupAdapter getSectionIndexGroupAdapter() {
+		return new SectionIndexGroupAdapter(database, dbName);
+	}
+
 	public SettlementAdapter getSettlementAdapter() {
 		return new SettlementAdapter(database, dbName);
 	}

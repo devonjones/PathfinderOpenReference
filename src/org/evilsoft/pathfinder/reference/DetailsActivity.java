@@ -40,19 +40,19 @@ public class DetailsActivity extends SherlockFragmentActivity {
 
 		Intent launchingIntent = getIntent();
 
-		String newUri;
+		String newUrl;
 		boolean showList = false; // Phone only
 		if (Intent.ACTION_SEARCH.equals(launchingIntent.getAction())) {
 			String query = launchingIntent.getStringExtra(SearchManager.QUERY);
 			int count = dbWrangler.getIndexDbAdapter().getSearchAdapter().countSearchArticles(query);
 			if (count == 1) {
-				newUri = buildSearchUrl(query);
+				newUrl = buildSearchUrl(query);
 			} else {
-				newUri = "pfsrd://Search/" + query;
+				newUrl = "pfsrd://Search/" + query;
 				showList = true;
 			}
 		} else {
-			newUri = UrlAliaser.aliasUrl(dbWrangler, launchingIntent.getData().toString());
+			newUrl = UrlAliaser.aliasUrl(dbWrangler, launchingIntent.getData().toString());
 		}
 
 		// Set up action bar
@@ -61,24 +61,25 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		action.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 
 		List<Integer> collectionList = new ArrayList<Integer>();
+		String contextUrl = launchingIntent.getStringExtra("context");
 		if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 			setContentView(R.layout.details);
 			if (showList) {
 				DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
 						.findFragmentById(R.id.details_list_fragment);
-				list.updateUrl(newUri);
+				list.updateUrl(newUrl);
 			} else {
-				collectionList = setUpViewer(newUri, action);
+				collectionList = setUpViewer(newUrl, contextUrl, action);
 			}
 		} else {
 			if (showList) {
 				setContentView(R.layout.details_phone_list);
 				DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
 						.findFragmentById(R.id.details_list_fragment);
-				list.updateUrl(newUri);
+				list.updateUrl(newUrl);
 			} else {
 				setContentView(R.layout.details_phone);
-				collectionList = setUpViewer(newUri, action);
+				collectionList = setUpViewer(newUrl, contextUrl, action);
 			}
 		}
 
@@ -107,11 +108,11 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		return null;
 	}
 
-	private List<Integer> setUpViewer(String newUri, ActionBar action) {
+	private List<Integer> setUpViewer(String newUri, String contextUrl, ActionBar action) {
 		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.details_view_fragment);
 
-		viewer.updateUrl(newUri);
+		viewer.updateUrl(newUri, contextUrl);
 		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
 		Cursor curs = ca.fetchCollectionList();
 		cursorList.add(curs);

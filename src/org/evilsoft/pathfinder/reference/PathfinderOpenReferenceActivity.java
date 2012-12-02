@@ -1,6 +1,5 @@
 package org.evilsoft.pathfinder.reference;
 
-
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.preference.PathfinderPreferenceActivity;
 

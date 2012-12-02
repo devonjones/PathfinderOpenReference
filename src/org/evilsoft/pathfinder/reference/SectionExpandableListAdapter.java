@@ -5,9 +5,11 @@ import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
+import org.evilsoft.pathfinder.reference.db.index.CountAdapter;
 import org.evilsoft.pathfinder.reference.db.index.CreatureTypeAdapter;
 import org.evilsoft.pathfinder.reference.db.index.FeatTypeAdapter;
 import org.evilsoft.pathfinder.reference.db.index.MenuAdapter;
+import org.evilsoft.pathfinder.reference.db.index.MenuAdapter.MenuUtils;
 import org.evilsoft.pathfinder.reference.db.index.SpellClassAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 
@@ -179,8 +181,10 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 							String listUri = MenuAdapter.MenuUtils.getListUrl(curs);
 							result.addAll(getChildren(dbWrangler, db, listUri));
 						} else {
-							MenuItem mi = MenuAdapter.MenuUtils.genMenuItem(curs);
-							result.add(mi);
+							if(handleFilterEffects(dbWrangler, curs)) {
+								MenuItem mi = MenuAdapter.MenuUtils.genMenuItem(curs);
+								result.add(mi);
+							}
 						}
 						has_next = curs.moveToNext();
 					}
@@ -192,6 +196,19 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		}
 		this.children = retList;
 		return retList;
+	}
+
+	public boolean handleFilterEffects(DbWrangler dbWrangler, Cursor cursor) {
+		String type = MenuUtils.getType(cursor);
+		String subtype = MenuUtils.getSubtype(cursor);
+		if(type != null || subtype != null) {
+			Cursor countCurs = dbWrangler.getIndexDbAdapter().getCountAdapter().countByType(type, subtype);
+			countCurs.moveToFirst();
+			if(CountAdapter.CountUtils.getCount(countCurs) == 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	public List<MenuItem> getFeatTypeList(DbWrangler dbWrangler) {

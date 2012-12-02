@@ -7,6 +7,7 @@ import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
+import org.evilsoft.pathfinder.reference.db.index.CountAdapter;
 
 import android.database.Cursor;
 
@@ -14,6 +15,7 @@ public class LinkRenderer extends Renderer {
 	private BookDbAdapter bookDbAdapter;
 	private DbWrangler dbWrangler;
 	private boolean render = true;
+	private boolean exists = false;
 	private String linkUrl;
 
 	public LinkRenderer(DbWrangler dbWrangler, BookDbAdapter bookDbAdapter) {
@@ -29,6 +31,14 @@ public class LinkRenderer extends Renderer {
 			if (has_next) {
 				linkUrl = lcurs.getString(1);
 				render = lcurs.getInt(2) == 0;
+				Cursor ccurs = dbWrangler.getIndexDbAdapter().getCountAdapter().fetchByUrl(linkUrl);
+				try {
+					if (CountAdapter.CountUtils.getCount(ccurs) > 0) {
+						exists = true;
+					}
+				} finally {
+					ccurs.close();
+				}
 			}
 		} finally {
 			lcurs.close();
@@ -37,12 +47,15 @@ public class LinkRenderer extends Renderer {
 
 	@Override
 	public String renderTitle() {
-		return renderTitle(name, abbrev, newUri, depth, top);
+		if (exists) {
+			return renderTitle(name, abbrev, newUri, depth, top);
+		}
+		return "";
 	}
 
 	@Override
 	public String renderDescription() {
-		if (render) {
+		if (render && exists) {
 			return super.renderDescription();
 		}
 		return "";
@@ -65,6 +78,9 @@ public class LinkRenderer extends Renderer {
 
 	@Override
 	public String renderBody() {
+		if (!exists) {
+			return "";
+		}
 		StringBuffer sb = new StringBuffer();
 		if (render) {
 			sb.append("<a href='");
@@ -76,21 +92,27 @@ public class LinkRenderer extends Renderer {
 			HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 			int localdepth = depth;
 			boolean showTitle = true;
-			BookDbAdapter linkBookDbAdapter = dbWrangler.getBookDbAdapterByUrl(linkUrl);
+			BookDbAdapter linkBookDbAdapter = dbWrangler
+					.getBookDbAdapterByUrl(linkUrl);
 			Integer sectionId = getLinkSectionId(linkBookDbAdapter);
 			if (sectionId != null) {
-				Cursor cursor = linkBookDbAdapter.getFullSectionAdapter().fetchFullSection(sectionId.toString());
+				Cursor cursor = linkBookDbAdapter.getFullSectionAdapter()
+						.fetchFullSection(sectionId.toString());
 				try {
 					boolean has_next = cursor.moveToFirst();
 					while (has_next) {
-						String type = FullSectionAdapter.SectionUtils.getType(cursor);
-						Integer secId = FullSectionAdapter.SectionUtils.getSectionId(cursor);
-						Integer parentId = FullSectionAdapter.SectionUtils.getParentId(cursor);
-						Renderer renderer = RenderFarm.getRenderer(
-								type, dbWrangler, linkBookDbAdapter);
-						localdepth = RenderFarm.getDepth(depthMap, secId, parentId, depth);
-						sb.append(renderer.render(
-								cursor, linkUrl, localdepth, top, showTitle, isTablet));
+						String type = FullSectionAdapter.SectionUtils
+								.getType(cursor);
+						Integer secId = FullSectionAdapter.SectionUtils
+								.getSectionId(cursor);
+						Integer parentId = FullSectionAdapter.SectionUtils
+								.getParentId(cursor);
+						Renderer renderer = RenderFarm.getRenderer(type,
+								dbWrangler, linkBookDbAdapter);
+						localdepth = RenderFarm.getDepth(depthMap, secId,
+								parentId, depth);
+						sb.append(renderer.render(cursor, linkUrl, localdepth,
+								top, showTitle, isTablet));
 						has_next = cursor.moveToNext();
 						showTitle = false;
 					}
@@ -103,7 +125,8 @@ public class LinkRenderer extends Renderer {
 	}
 
 	private Integer getLinkSectionId(BookDbAdapter linkBookDbAdapter) {
-		Cursor cursor = linkBookDbAdapter.getSectionAdapter().fetchSectionByUrl(linkUrl);
+		Cursor cursor = linkBookDbAdapter.getSectionAdapter()
+				.fetchSectionByUrl(linkUrl);
 		try {
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {

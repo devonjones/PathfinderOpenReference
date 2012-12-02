@@ -59,4 +59,8 @@ public class IndexDbAdapter {
 	public SearchAdapter getSearchAdapter() {
 		return new SearchAdapter(database);
 	}
+
+	public CountAdapter getCountAdapter() {
+		return new CountAdapter(database);
+	}
 }
