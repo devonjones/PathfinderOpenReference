@@ -1,5 +1,11 @@
 package org.evilsoft.pathfinder.reference.db.index;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
+
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -11,13 +17,16 @@ public class FeatTypeAdapter {
 	}
 
 	public Cursor fetchFeatTypes() {
+		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT DISTINCT feat_type");
+		sb.append("SELECT DISTINCT ft.feat_type");
 		sb.append(" FROM feat_type_index ft");
-		sb.append(" ORDER BY feat_type");
+		sb.append("  INNER JOIN central_index ci");
+		sb.append("   ON ft.index_id = ci.index_id");
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "WHERE", "ci"));
+		sb.append(" ORDER BY ft.feat_type");
 		String sql = sb.toString();
-		String[] selectionArgs = new String[0];
-		return database.rawQuery(sql, selectionArgs);
+		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 	}
 	
 	public static class FeatTypeUtils {

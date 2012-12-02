@@ -61,7 +61,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".preference.PathfinderPreferenceActivity"
             android:theme="@style/Theme.Sherlock">

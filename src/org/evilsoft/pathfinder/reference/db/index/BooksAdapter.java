@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,11 +18,12 @@ public class BooksAdapter {
 
 	public Cursor fetchBook(String source) {
 		List<String> args = new ArrayList<String>();
-		args.add(source);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT book_id, source, db");
 		sb.append(" FROM books");
 		sb.append(" WHERE source = ?");
+		args.add(source);
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append(" LIMIT 1");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));

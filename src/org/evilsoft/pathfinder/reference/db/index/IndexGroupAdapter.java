@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -36,10 +37,11 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchById(Integer id) {
 		List<String> args = new ArrayList<String>();
-		args.add(id.toString());
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.indexId = ?");
+		args.add(id.toString());
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -47,10 +49,11 @@ public class IndexGroupAdapter {
 	
 	public Cursor fetchByUrl(String url) {
 		List<String> args = new ArrayList<String>();
-		args.add(url);
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url = ?");
+		args.add(url);
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -58,10 +61,11 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchByMatchUrl(String url) {
 		List<String> args = new ArrayList<String>();
-		args.add(url);
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url LIKE ?");
+		args.add(url);
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -81,9 +85,10 @@ public class IndexGroupAdapter {
 			args.add(type);
 		}
 		if (subtype != null) {
-			sb.append("  " + where + " subtype = ?");
+			sb.append("  " + where + " i.subtype = ?");
 			args.add(subtype);
 		}
+		sb.append(FilterPreferenceManager.getSourceFilter(args, where, "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -98,6 +103,7 @@ public class IndexGroupAdapter {
 			sb.append("  AND i.creature_type = ?");
 			args.add(creatureType);
 		}
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -114,6 +120,7 @@ public class IndexGroupAdapter {
 			args.add(featType);
 		}
 		sb.append(" WHERE i.type = 'feat'");
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -121,13 +128,14 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchBySpellClass(String spellClass) {
 		List<String> args = new ArrayList<String>();
-		args.add(spellClass);
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement(", sl.level, sl.class"));
 		sb.append("  INNER JOIN spell_list_index sl");
 		sb.append("   ON i.index_id = sl.index_id");
 		sb.append("    AND sl.class = ?");
+		args.add(spellClass);
 		sb.append(" WHERE i.type = 'spell'");
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY sl.level, i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -141,6 +149,8 @@ public class IndexGroupAdapter {
 		sb.append("   ON i.parent_id = p.section_id");
 		sb.append("    AND i.database = p.database");
 		sb.append(" WHERE p.url = ?");
+		args.add(parentUrl);
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));

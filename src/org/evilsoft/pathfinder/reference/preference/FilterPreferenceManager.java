@@ -14,6 +14,10 @@ public class FilterPreferenceManager {
 	static Context context;
 
 	public static String getSourceFilter(List<String> args, String conjunction) {
+		return getSourceFilter(args, conjunction, null);
+	}
+
+	public static String getSourceFilter(List<String> args, String conjunction, String tableName) {
 		StringBuffer filter = new StringBuffer();
 		ArrayList<String> sourceList = new ArrayList<String>();
 		
@@ -50,7 +54,12 @@ public class FilterPreferenceManager {
 			// Create the start of the WHERE/AND clause
 			filter.append(" ");
 			filter.append(conjunction);
-			filter.append(" source NOT IN (");
+			filter.append("( ");
+			if (tableName != null) {
+				filter.append(tableName);
+				filter.append(".");
+			}
+			filter.append("source NOT IN (");
 			String comma = "";
 			for(int numFilters = 0; numFilters < sourceList.size(); numFilters++) {
 				filter.append(comma);
@@ -58,7 +67,7 @@ public class FilterPreferenceManager {
 				comma = ", ";
 			}
 			// End the WHERE/AND clause
-			filter.append(")");
+			filter.append(") OR source IS NULL)");
 		}
 		args.addAll(sourceList);
 		return filter.toString();

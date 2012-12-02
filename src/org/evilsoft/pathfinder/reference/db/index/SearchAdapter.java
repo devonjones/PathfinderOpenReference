@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 
 import android.app.SearchManager;
 import android.database.Cursor;
@@ -25,6 +26,7 @@ public class SearchAdapter {
 			sb.append(" WHERE search_name like ?");
 			args.add('%' + constraint + '%');
 		}
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		String sql = sb.toString();
 		Cursor c = database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 		try {
@@ -49,6 +51,7 @@ public class SearchAdapter {
 			sb.append(" WHERE si.search_name like ?");
 			args.add('%' + constraint + '%');
 		}
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "si"));
 		sb.append(" GROUP BY si.search_name");
 		sb.append(" ORDER BY ss.section_sort_id, si.search_name");
 		String sql = sb.toString();
@@ -61,6 +64,7 @@ public class SearchAdapter {
 		sb.append("SELECT i.section_id, i.database, i.name, i.type, i.subtype, i.url, i.parent_id, i.parent_name");
 		sb.append(" FROM central_index i");
 		sb.append(" WHERE i.search_name like ?");
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" LIMIT 1");
 		args.add('%' + constraint + '%');
 		String sql = sb.toString();
@@ -78,6 +82,7 @@ public class SearchAdapter {
 			sb.append(" WHERE i.search_name like ?");
 			args.add('%' + constraint + '%');
 		}
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
 		sb.append(" ORDER BY ss.section_sort_id, i.search_name, i.section_id");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
