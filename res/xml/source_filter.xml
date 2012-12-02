@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<CheckBoxPreference
+		android:key="source_APG"
+		android:title="Advanced Player's Guide"
+		android:summary="More core rules"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_ARG"
+		android:title="Advanced Race Guide"
+		android:summary="More races"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_UC"
+		android:title="Ultimate Combat"
+		android:summary="Physical fighting"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_UM"
+		android:title="Ultimate Magic"
+		android:summary="Supernatural sorcery"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_B1"
+		android:title="Bestiary"
+		android:summary="Monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_B2"
+		android:title="Bestiary 2"
+		android:summary="More monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_B3"
+		android:title="Bestiary 3"
+		android:summary="More more monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_GMG"
+		android:title="Game Mastery Guide"
+		android:summary="A guide for master gamers"
+		android:defaultValue="true" />
+
+</PreferenceScreen>
