@@ -36,13 +36,15 @@ public class ContentErrorReporter implements View.OnClickListener {
 					public void onClick(DialogInterface dialog,
 							int whichButton) {
 						Editable value = input.getText();
-						ErrorReporter e = ErrorReporter.getInstance();
-						e.putCustomData("Path", renderPath());
-						e.putCustomData("IdPath", renderIdPath());
-						e.putCustomData("Title", title);
-						e.putCustomData("UserComment", value.toString());
-						e.putCustomData("LastClick", "ContentErrorReporter.onClick: Ok");
-						e.handleException(null);
+						if (!value.toString().trim().equals("")) {
+							ErrorReporter e = ErrorReporter.getInstance();
+							e.putCustomData("Path", renderPath());
+							e.putCustomData("IdPath", renderIdPath());
+							e.putCustomData("Title", title);
+							e.putCustomData("UserComment", value.toString());
+							e.putCustomData("LastClick", "ContentErrorReporter.onClick: Ok");
+							e.handleException(null);
+						}
 					}
 				});
 		alert.setNegativeButton("Cancel",
