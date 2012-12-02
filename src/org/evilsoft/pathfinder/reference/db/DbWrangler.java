@@ -31,7 +31,7 @@ public class DbWrangler {
 	public static final String PREFS_NAME = "psrd.prefs";
 	public static final String TAG = "DbWrangler";
 	private Context context;
-	private static final Integer VERSION = 14;
+	private static final Integer VERSION = 17;
 	private HashMap<String, BookDbAdapter> bookDbAdapters;
 	private IndexDbAdapter indexDbAdapter;
 	private UserDbAdapter userDbAdapter;
@@ -123,10 +123,14 @@ public class DbWrangler {
 	public BookDbAdapter getBookDbAdapterByName(String source) {
 		Cursor curs = getIndexDbAdapter().getBooksAdapter().fetchBook(source);
 		String bookDb;
-		try {
-			bookDb = BooksAdapter.BookUtils.getBookDb(curs);
-		} finally {
-			curs.close();
+		if(source.equals("Open Game License")) {
+			bookDb = "book-ogl.db";
+		} else {
+			try {
+				bookDb = BooksAdapter.BookUtils.getBookDb(curs);
+			} finally {
+				curs.close();
+			}
 		}
 		return getBookDbAdapter(bookDb);
 	}

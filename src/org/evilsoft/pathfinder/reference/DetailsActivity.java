@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
-import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 import org.evilsoft.pathfinder.reference.db.index.SearchAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.utils.UrlAliaser;
@@ -214,28 +213,17 @@ public class DetailsActivity extends SherlockFragmentActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		Cursor curs = null;
-		String sectionId;
-
-		SectionAdapter sa = dbWrangler.getBookDbAdapter("book-ogl.db").getSectionAdapter();
 		switch (item.getItemId()) {
 			case R.id.menu_ogl:
-				curs = sa.fetchSectionByParentIdAndName("1", "OGL");
-				curs.moveToFirst();
-				sectionId = curs.getString(0);
 				Intent showContent = new Intent(getApplicationContext(),
 						DetailsActivity.class);
-				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
+				showContent.setData(Uri.parse("pfsrd://Open Game License/OGL"));
 				startActivity(showContent);
 				return true;
 			case R.id.menu_cul:
-				curs = sa.fetchSectionByParentIdAndName("1",
-						"Community Use License");
-				curs.moveToFirst();
-				sectionId = curs.getString(0);
 				showContent = new Intent(getApplicationContext(),
 						DetailsActivity.class);
-				showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
+				showContent.setData(Uri.parse("pfsrd://Open Game License/Community Use License"));
 				startActivity(showContent);
 				return true;
 			case R.id.menu_toggle_toc:

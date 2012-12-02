@@ -1,12 +1,10 @@
 package org.evilsoft.pathfinder.reference;
 
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
-import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -65,48 +63,32 @@ public class SectionViewActivity extends SherlockFragmentActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		Cursor curs = null;
-		Integer sectionId;
 		Intent showContent;
-		try {
-			SectionAdapter sa = dbWrangler.getBookDbAdapter("book-ogl.db").getSectionAdapter();
-			switch (item.getItemId()) {
-				case R.id.menu_ogl:
-					curs = sa.fetchSectionByParentIdAndName("1", "OGL");
-					curs.moveToFirst();
-					sectionId = SectionAdapter.SectionUtils.getSectionId(curs);
-					showContent = new Intent(getApplicationContext(),
-							DetailsActivity.class);
-					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
-					startActivity(showContent);
-					return true;
-				case R.id.menu_cul:
-					curs = sa.fetchSectionByParentIdAndName("1",
-							"Community Use License");
-					curs.moveToFirst();
-					sectionId = SectionAdapter.SectionUtils.getSectionId(curs);
-					showContent = new Intent(getApplicationContext(),
-							DetailsActivity.class);
-					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
-					startActivity(showContent);
-					return true;
-				case R.id.menu_search:
-					this.onSearchRequested();
-					return true;
-				case android.R.id.home:
-					// app icon in action bar clicked; go home
-					Intent intent = new Intent(this,
-							PathfinderOpenReferenceActivity.class);
-					intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-					startActivity(intent);
-					return true;
-				default:
-					return super.onOptionsItemSelected(item);
-			}
-		} finally {
-			if (curs != null) {
-				curs.close();
-			}
+		switch (item.getItemId()) {
+			case R.id.menu_ogl:
+				showContent = new Intent(getApplicationContext(),
+						DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Open Game License/OGL"));
+				startActivity(showContent);
+				return true;
+			case R.id.menu_cul:
+				showContent = new Intent(getApplicationContext(),
+						DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Open Game License/Community Use License"));
+				startActivity(showContent);
+				return true;
+			case R.id.menu_search:
+				this.onSearchRequested();
+				return true;
+			case android.R.id.home:
+				// app icon in action bar clicked; go home
+				Intent intent = new Intent(this,
+						PathfinderOpenReferenceActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(intent);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
 	}
 

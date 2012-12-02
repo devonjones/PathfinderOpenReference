@@ -2,7 +2,6 @@ package org.evilsoft.pathfinder.reference;
 
 
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
-import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 import org.evilsoft.pathfinder.reference.preference.PathfinderPreferenceActivity;
 
 import android.annotation.SuppressLint;
@@ -11,7 +10,6 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -113,46 +111,30 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		Cursor curs = null;
-		Integer sectionId;
 		Intent showContent;
-		SectionAdapter sa = dbWrangler.getBookDbAdapter("book-ogl.db").getSectionAdapter();
-		try {
-			switch (item.getItemId()) {
-				case R.id.menu_ogl:
-					curs = sa.fetchSectionByParentIdAndName("1", "OGL");
-					curs.moveToFirst();
-					sectionId = SectionAdapter.SectionUtils.getSectionId(curs);
-					showContent = new Intent(getApplicationContext(),
-							DetailsActivity.class);
-					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
-					startActivity(showContent);
-					return true;
-				case R.id.menu_cul:
-					curs = sa.fetchSectionByParentIdAndName("1",
-							"Community Use License");
-					curs.moveToFirst();
-					sectionId = SectionAdapter.SectionUtils.getSectionId(curs);
-					showContent = new Intent(getApplicationContext(),
-							DetailsActivity.class);
-					showContent.setData(Uri.parse("pfsrd://Ogl/" + sectionId));
-					startActivity(showContent);
-					return true;
-				case R.id.menu_search:
-					this.onSearchRequested();
-					return true;
-				case R.id.menu_prefs:
-					showContent = new Intent(getApplicationContext(),
-							PathfinderPreferenceActivity.class);
-					startActivity(showContent);
-					return true;
-				default:
-					return super.onOptionsItemSelected(item);
-			}
-		} finally {
-			if (curs != null) {
-				curs.close();
-			}
+		switch (item.getItemId()) {
+			case R.id.menu_ogl:
+				showContent = new Intent(getApplicationContext(),
+						DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Open Game License/OGL"));
+				startActivity(showContent);
+				return true;
+			case R.id.menu_cul:
+				showContent = new Intent(getApplicationContext(),
+						DetailsActivity.class);
+				showContent.setData(Uri.parse("pfsrd://Open Game License/Community Use License"));
+				startActivity(showContent);
+				return true;
+			case R.id.menu_search:
+				this.onSearchRequested();
+				return true;
+			case R.id.menu_prefs:
+				showContent = new Intent(getApplicationContext(),
+						PathfinderPreferenceActivity.class);
+				startActivity(showContent);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
 	}
 
