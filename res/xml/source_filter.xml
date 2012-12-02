@@ -1,18 +1,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
 	<CheckBoxPreference
-		android:key="source_core"
-		android:title="Core Rulebook"
-		android:summary="The core rules"
-		android:defaultValue="true" />
-	
-	<CheckBoxPreference
-		android:key="source_GMG"
-		android:title="Game Mastery Guide"
-		android:summary="A guide for master gamers"
-		android:defaultValue="true" />
-	
-	<CheckBoxPreference
 		android:key="source_APG"
 		android:title="Advanced Player's Guide"
 		android:summary="More core rules"
@@ -55,15 +43,9 @@
 		android:defaultValue="true" />
 	
 	<CheckBoxPreference
-		android:key="source_OGL"
-		android:title="OGL"
-		android:summary="Open... Games... License?"
-		android:defaultValue="true" />
-	
-	<CheckBoxPreference
-		android:key="source_PFSRD"
-		android:title="PFSRD"
-		android:summary="System Reference Document"
+		android:key="source_GMG"
+		android:title="Game Mastery Guide"
+		android:summary="A guide for master gamers"
 		android:defaultValue="true" />
 
 </PreferenceScreen>

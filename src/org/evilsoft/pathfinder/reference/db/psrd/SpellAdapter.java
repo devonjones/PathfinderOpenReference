@@ -17,33 +17,33 @@ public class SpellAdapter {
 
 	public Cursor fetchSpellComponents(String section_id) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT component_type, description");
 		sb.append(" FROM spell_components");
 		sb.append(" WHERE section_id = ?");
+		args.add(section_id);
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchSpellDetails(String section_id) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT school, subschool, descriptor_text, level_text, casting_time, preparation_time, range, duration, saving_throw, spell_resistance, as_spell_id");
 		sb.append(" FROM spell_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(section_id);
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchSpellEffects(String section_id) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT name, description");
 		sb.append(" FROM spell_effects");
 		sb.append(" WHERE section_id = ?");
+		args.add(section_id);
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
@@ -59,21 +59,22 @@ public class SpellAdapter {
 	}
 
 	public Cursor fetchSpellList() {
+		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT s.section_id, s.name, s.description, sd.school, sd.subschool");
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN spell_details sd");
 		sb.append("   ON s.section_id = sd.section_id");
 		sb.append(" WHERE s.type = 'spell'");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
-		return dbAdapter.database.rawQuery(sql, new String[0]);
+		return dbAdapter.database.rawQuery(sql,
+				PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchSpellList(String spellClass) {
 		List<String> args = new ArrayList<String>();
-		args.add(spellClass);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT s.section_id, s.name, s.description, sd.school, sd.subschool, sl_filter.level");
 		sb.append(" FROM sections s");
@@ -82,8 +83,9 @@ public class SpellAdapter {
 		sb.append("  INNER JOIN spell_lists sl_filter");
 		sb.append("   ON s.section_id = sl_filter.section_id");
 		sb.append("    AND sl_filter.class = ?");
+		args.add(spellClass);
 		sb.append(" WHERE s.type = 'spell'");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append(" ORDER BY sl_filter.level, s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));

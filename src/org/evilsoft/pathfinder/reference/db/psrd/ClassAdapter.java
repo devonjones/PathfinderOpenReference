@@ -17,26 +17,26 @@ public class ClassAdapter {
 
 	public Cursor fetchClassDetails(String section_id) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT alignment, hit_die");
 		sb.append(" FROM class_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(section_id);
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
 				PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchClassTypes() {
+		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT DISTINCT subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE type = 'class'");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append(" ORDER BY subtype");
 		String sql = sb.toString();
-		String[] selectionArgs = new String[0];
-		return dbAdapter.database.rawQuery(sql, selectionArgs);
+		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchClassList(String classType) {
@@ -45,10 +45,10 @@ public class ClassAdapter {
 		sb.append("SELECT section_id, name");
 		sb.append(" FROM sections");
 		sb.append("  WHERE type = 'class'");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		if (classType != null) {
-			args.add(classType);
 			sb.append("   AND subtype = ?");
+			args.add(classType);
 		}
 		sb.append(" ORDER BY name");
 		String sql = sb.toString();

@@ -1,6 +1,7 @@
 package org.evilsoft.pathfinder.reference.preference;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.evilsoft.pathfinder.reference.R;
 
@@ -12,8 +13,8 @@ public class FilterPreferenceManager {
 	
 	static Context context;
 
-	public static String getSourceFilter(String conjunction) {
-		String filter = "";
+	public static String getSourceFilter(List<String> args, String conjunction) {
+		StringBuffer filter = new StringBuffer();
 		ArrayList<String> sourceList = new ArrayList<String>();
 		
 		// The default values must be set here to bypass a bug in Android
@@ -21,56 +22,46 @@ public class FilterPreferenceManager {
 		PreferenceManager.setDefaultValues(context, R.xml.source_filter, false);
 		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
 		
-		if(preferences.getBoolean("source_core", true))
-			sourceList.add("Core Rulebook");
-		
-		if(preferences.getBoolean("source_GMG", true))
-			sourceList.add("Game Mastery Guide");
-		
-		if(preferences.getBoolean("source_APG", true))
-			sourceList.add("Advanced Player''s Guide");
-		
-		if(preferences.getBoolean("source_ARG", true))
+		if(preferences.getBoolean("source_APG", true) == false) {
+			sourceList.add("Advanced Player's Guide");
+		}
+		if(preferences.getBoolean("source_ARG", true) == false) {
 			sourceList.add("Advanced Race Guide");
-
-		if(preferences.getBoolean("source_UC", true))
+		}
+		if(preferences.getBoolean("source_UC", true) == false) {
 			sourceList.add("Ultimate Combat");
-		
-		if(preferences.getBoolean("source_UM", true))
+		}
+		if(preferences.getBoolean("source_UM", true) == false) {
 			sourceList.add("Ultimate Magic");
-	
-		if(preferences.getBoolean("source_B1", true))
+		}
+		if(preferences.getBoolean("source_B1", true) == false) {
 			sourceList.add("Bestiary");
-		
-		if(preferences.getBoolean("source_B2", true))
+		}
+		if(preferences.getBoolean("source_B2", true) == false) {
 			sourceList.add("Bestiary 2");
-		
-		if(preferences.getBoolean("source_B3", true))
+		}
+		if(preferences.getBoolean("source_B3", true) == false) {
 			sourceList.add("Bestiary 3");
-		
-		if(preferences.getBoolean("source_OGL", true))
-			sourceList.add("OGL");
-		
-		if(preferences.getBoolean("source_PFSRD", true))
-			sourceList.add("PFSRD");
-		
+		}
+		if(preferences.getBoolean("source_GMG", true) == false) {
+			sourceList.add("Game Mastery Guide");
+		}
 		if(sourceList.size() > 0) {
 			// Create the start of the WHERE/AND clause
-			filter = " "+ conjunction + " source in (";
-			
-			for(int numFilters = 0; numFilters < sourceList.size() - 1; numFilters++) {
-				// For all but the last filter, add that filter followed by a comma
-				filter += "'" + sourceList.get(numFilters) + "',";
+			filter.append(" ");
+			filter.append(conjunction);
+			filter.append(" source NOT IN (");
+			String comma = "";
+			for(int numFilters = 0; numFilters < sourceList.size(); numFilters++) {
+				filter.append(comma);
+				filter.append("?");
+				comma = ", ";
 			}
-			
-			// Add the final filter without a comma
-			filter += "'" + sourceList.get(sourceList.size() - 1) + "'";
-			
 			// End the WHERE/AND clause
-			filter += ")";
+			filter.append(")");
 		}
-		
-		return filter;
+		args.addAll(sourceList);
+		return filter.toString();
 	}
 	
 	public static void setContext(Context setContext) {

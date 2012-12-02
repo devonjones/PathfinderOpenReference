@@ -16,15 +16,16 @@ public class RaceAdapter {
 	}
 
 	public Cursor fetchRaceTypes() {
+		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT DISTINCT subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE type = 'race'");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append(" ORDER BY subtype");
 		String sql = sb.toString();
-		String[] selectionArgs = new String[0];
-		return dbAdapter.database.rawQuery(sql, selectionArgs);
+		return dbAdapter.database.rawQuery(sql,
+				PsrdDbAdapter.toStringArray(args));
 	}
 
 	public Cursor fetchRaceList(String raceType) {
@@ -33,11 +34,11 @@ public class RaceAdapter {
 		sb.append("SELECT s.section_id, s.name, s.subtype");
 		sb.append(" FROM sections s");
 		sb.append(" WHERE s.type = 'race'");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		if (raceType != null) {
 			String subtype = raceType.toLowerCase() + "_race";
-			args.add(subtype);
 			sb.append("   AND subtype = ?");
+			args.add(subtype);
 		}
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();

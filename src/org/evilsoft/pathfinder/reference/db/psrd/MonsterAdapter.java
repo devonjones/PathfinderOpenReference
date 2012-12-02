@@ -23,7 +23,7 @@ public class MonsterAdapter {
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN creature_details cd");
 		sb.append("   ON s.section_id = cd.section_id");
-		sb.append(FilterPreferenceManager.getSourceFilter("WHERE"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "WHERE"));
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
@@ -32,14 +32,14 @@ public class MonsterAdapter {
 
 	public Cursor fetchMonstersByType(String creatureType) {
 		List<String> args = new ArrayList<String>();
-		args.add(creatureType);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT s.section_id, s.name, s.description, cd.creature_type, cd.creature_subtype,");
 		sb.append("  cd.cr, cd.xp, cd.size, cd.alignment");
 		sb.append(" FROM sections s, creature_details cd");
 		sb.append(" WHERE s.section_id = cd.section_id");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append("  AND cd.creature_type = ?");
+		args.add(creatureType);
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
@@ -59,7 +59,6 @@ public class MonsterAdapter {
 
 	public Cursor getCreatureDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT sex, super_race, level, cr, xp, alignment, size, creature_type, creature_subtype, init,");
 		sb.append("  senses, aura,");
@@ -71,6 +70,7 @@ public class MonsterAdapter {
 		sb.append("  hit_dice, natural_armor, breath_weapon");
 		sb.append(" FROM creature_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
 				PsrdDbAdapter.toStringArray(args));
@@ -78,12 +78,12 @@ public class MonsterAdapter {
 
 	public Cursor getCreatureSpells(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT name, body");
 		sb.append(" FROM creature_spells");
 		sb.append(" WHERE section_id = ?");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		args.add(sectionId);
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
 				PsrdDbAdapter.toStringArray(args));

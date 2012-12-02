@@ -27,11 +27,11 @@ public class FeatAdapter {
 
 	public Cursor fetchFeatTypeDescriptionForSection(String section_id) {
 		List<String> args = new ArrayList<String>();
-		args.add(section_id);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT feat_type_description");
 		sb.append(" FROM feat_type_descriptions");
 		sb.append(" WHERE section_id = ?");
+		args.add(section_id);
 		sb.append(" ORDER BY feat_type_description");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
@@ -39,13 +39,13 @@ public class FeatAdapter {
 
 	public Cursor fetchFeatsByType(String feat_type) {
 		List<String> args = new ArrayList<String>();
-		args.add(feat_type);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT s.section_id as _id, s.*");
 		sb.append(" FROM sections s, feat_types ft");
 		sb.append(" WHERE s.section_id = ft.section_id");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append("  AND ft.feat_type = ?");
+		args.add(feat_type);
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));
@@ -76,7 +76,7 @@ public class FeatAdapter {
 			args.add(featType);
 		}
 		sb.append(" WHERE s.type = 'feat'");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append(" ORDER BY s.name");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql, PsrdDbAdapter.toStringArray(args));

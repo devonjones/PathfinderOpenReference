@@ -17,12 +17,12 @@ public class RuleAdapter {
 
 	public Cursor fetchRuleList(String parentId) {
 		List<String> args = new ArrayList<String>();
-		args.add(parentId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id, name, url");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
-		sb.append(FilterPreferenceManager.getSourceFilter("AND"));
+		args.add(parentId);
+		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
 		sb.append(" ORDER BY section_id");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,
@@ -31,13 +31,13 @@ public class RuleAdapter {
 
 	public Cursor fetchRuleListByUrl(String url) {
 		List<String> args = new ArrayList<String>();
-		args.add(url);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT s.section_id, s.name");
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN sections p");
 		sb.append("   ON s.parent_id = p.section_id");
 		sb.append(" WHERE p.url = ?");
+		args.add(url);
 		sb.append(" ORDER BY s.section_id");
 		String sql = sb.toString();
 		return dbAdapter.database.rawQuery(sql,

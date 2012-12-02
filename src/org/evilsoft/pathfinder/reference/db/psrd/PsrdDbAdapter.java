@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
-
 import android.app.SearchManager;
 import android.content.Context;
 import android.database.Cursor;
@@ -64,8 +62,8 @@ public class PsrdDbAdapter {
 		if (sectionType != null) {
 			sb.append(where);
 			sb.append(" type = ?");
-			where = "  AND";
 			args.add(sectionType);
+			where = "  AND";
 		}
 		if (sectionSubType != null) {
 			sb.append(where);
@@ -133,11 +131,11 @@ public class PsrdDbAdapter {
 
 	public Cursor fetchSection(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id, parent_id, name, url, type, subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		sb.append(" LIMIT 1");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
@@ -145,11 +143,11 @@ public class PsrdDbAdapter {
 
 	public Cursor fetchSectionByParentId(String parentId) {
 		List<String> args = new ArrayList<String>();
-		args.add(parentId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id, name, type, subtype, url");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
+		args.add(parentId);
 		sb.append(" ORDER BY name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
@@ -157,24 +155,24 @@ public class PsrdDbAdapter {
 
 	public Cursor fetchSectionByParentIdAndName(String parentId, String name) {
 		List<String> args = new ArrayList<String>();
-		args.add(parentId);
-		args.add(name);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id, name, type, subtype");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
+		args.add(parentId);
 		sb.append("  AND name = ?");
+		args.add(name);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor fetchSectionByUrl(String url) {
 		List<String> args = new ArrayList<String>();
-		args.add(url);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id, parent_id, name, type");
 		sb.append(" FROM sections");
 		sb.append(" WHERE url = ?");
+		args.add(url);
 		String sql = sb.toString();
 		Cursor curs = database.rawQuery(sql, toStringArray(args));
 		if(curs.getCount() == 0) {
@@ -193,7 +191,6 @@ public class PsrdDbAdapter {
 
 	public Cursor fetchFullSection(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT node.section_id, node.lft, node.rgt, node.parent_id, node.type,");
 		sb.append("  node.subtype, node.name, node.abbrev, node.source, node.description, node.body,");
@@ -201,60 +198,60 @@ public class PsrdDbAdapter {
 		sb.append(" FROM sections AS node, sections AS parent");
 		sb.append(" WHERE node.lft BETWEEN parent.lft AND parent.rgt");
 		sb.append("  AND parent.section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getAbilityTypes(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT ability_type");
 		sb.append(" FROM ability_types");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getAfflictionDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT contracted, save, onset, frequency, effect, initial_effect, ");
 		sb.append("  secondary_effect,cure");
 		sb.append(" FROM affliction_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getAnimalCompanionDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT ac, attack, ability_scores, special_qualities, special_attacks, ");
 		sb.append("  size, speed, level");
 		sb.append(" FROM animal_companion_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getItemDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT aura, slot, cl, price, weight, requirements, skill, ");
 		sb.append("  cr_increase, cost");
 		sb.append(" FROM item_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getSettlementDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT alignment, settlement_type, size, corruption, crime, economy, law, ");
 		sb.append("  lore, society, qualities, danger, disadvantages, government, ");
@@ -262,24 +259,24 @@ public class PsrdDbAdapter {
 		sb.append("  minor_items, medium_items, major_items");
 		sb.append(" FROM settlement_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getTrapDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT cr, trap_type, perception, disable_device, duration, effect, trigger, reset");
 		sb.append(" FROM trap_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getVehicleDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT size, vehicle_type, squares, cost, ac, hardness, hp, base_save, ");
 		sb.append("  maximum_speed, acceleration, cmb, cmd, ramming_damage, propulsion, ");
@@ -287,17 +284,18 @@ public class PsrdDbAdapter {
 		sb.append("  deck, weapons, crew, passengers");
 		sb.append(" FROM vehicle_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
 	}
 
 	public Cursor getLinkDetails(String sectionId) {
 		List<String> args = new ArrayList<String>();
-		args.add(sectionId);
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT section_id, url, display");
 		sb.append(" FROM link_details");
 		sb.append(" WHERE section_id = ?");
+		args.add(sectionId);
 		sb.append(" LIMIT 1");
 		String sql = sb.toString();
 		return database.rawQuery(sql, toStringArray(args));
