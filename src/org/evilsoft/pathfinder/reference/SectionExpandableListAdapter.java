@@ -168,6 +168,7 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 					boolean has_next = curs.moveToFirst();
 					while (has_next) {
 						String group = MenuAdapter.MenuUtils.getGrouping(curs);
+						String listUri = MenuAdapter.MenuUtils.getListUrl(curs);
 						if("feat_type".equals(group)) {
 							result.addAll(getFeatTypeList(dbWrangler));
 						} else if ("creature_type".equals(group)) {
@@ -178,8 +179,10 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 							result.addAll(getBookmarks(dbWrangler));
 						} else if ("children".equals(group)) {
 							String db = MenuAdapter.MenuUtils.getDb(curs);
-							String listUri = MenuAdapter.MenuUtils.getListUrl(curs);
 							result.addAll(getChildren(dbWrangler, db, listUri));
+						} else if (listUri != null) {
+							String db = MenuAdapter.MenuUtils.getDb(curs);
+							result.addAll(getUrl(dbWrangler, db, listUri));
 						} else {
 							if(handleFilterEffects(dbWrangler, curs)) {
 								MenuItem mi = MenuAdapter.MenuUtils.genMenuItem(curs);
@@ -291,6 +294,25 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	public List<MenuItem> getChildren(DbWrangler dbWrangler, String db, String listUri) {
 		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
 		Cursor curs = dbWrangler.getBookDbAdapter(db).getSectionAdapter().fetchSectionByParentUrl(listUri);
+		try {
+			boolean has_next = curs.moveToFirst();
+			while (has_next) {
+				MenuItem mi = new MenuItem();
+				mi.setId(SectionAdapter.SectionUtils.getSectionId(curs));
+				mi.setName(SectionAdapter.SectionUtils.getName(curs));
+				mi.setUrl(SectionAdapter.SectionUtils.getUrl(curs));
+				results.add(mi);
+				has_next = curs.moveToNext();
+			}
+		} finally {
+			curs.close();
+		}
+		return results;
+	}
+
+	public List<MenuItem> getUrl(DbWrangler dbWrangler, String db, String url) {
+		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
+		Cursor curs = dbWrangler.getBookDbAdapter(db).getSectionAdapter().fetchSectionByUrl(url);
 		try {
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
