@@ -63,18 +63,6 @@ public class SectionListFragment extends ExpandableListFragment implements
 	private void updateFragment(String url) {
 		Bundle args = new Bundle();
 		args.putString("url", url);
-		/*Fragment frag = this.getActivity().getSupportFragmentManager().findFragmentByTag("viewer");
-		if (SectionViewFragment.class.isInstance(frag)) {
-			((SectionViewFragment)frag).setArguments(args);
-			//((SectionViewFragment)frag).updateUrl(url);
-		}
-		else {
-			FragmentTransaction ft = this.getActivity().getSupportFragmentManager().beginTransaction();
-			SectionViewFragment viewer = new SectionViewFragment();
-			viewer.setArguments(args);
-			ft.replace(R.id.section_view_layout, viewer, "viewer");
-			ft.commit();
-		}*/
 		FragmentTransaction ft = this.getActivity().getSupportFragmentManager().beginTransaction();
 		SectionViewFragment viewer = new SectionViewFragment();
 		viewer.setArguments(args);
