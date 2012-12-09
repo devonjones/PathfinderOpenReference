@@ -86,6 +86,7 @@ public class IndexGroupAdapter {
 		}
 		if (subtype != null) {
 			sb.append("  " + where + " i.subtype = ?");
+			where = "AND";
 			args.add(subtype);
 		}
 		sb.append(FilterPreferenceManager.getSourceFilter(args, where, "i"));
