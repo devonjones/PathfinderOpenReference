@@ -2188,6 +2188,11 @@ pfsrd://Advanced Player's Guide/Rules/New Rules/Campaign Traits/Outlander/Exile
 pfsrd://Advanced Player's Guide/Rules/New Rules/Campaign Traits/Outlander/Lore Seeker
 pfsrd://Advanced Player's Guide/Rules/New Rules/Campaign Traits/Outlander/Missionary
 pfsrd://Advanced Player's Guide/Rules/New Rules/Combat Maneuvers
+pfsrd://Advanced Player's Guide/Rules/New Rules/Combat Maneuvers/Dirty Trick
+pfsrd://Advanced Player's Guide/Rules/New Rules/Combat Maneuvers/Drag
+pfsrd://Advanced Player's Guide/Rules/New Rules/Combat Maneuvers/Drag/Stability
+pfsrd://Advanced Player's Guide/Rules/New Rules/Combat Maneuvers/Reposition
+pfsrd://Advanced Player's Guide/Rules/New Rules/Combat Maneuvers/Steal
 pfsrd://Advanced Player's Guide/Rules/New Rules/Dirty Trick
 pfsrd://Advanced Player's Guide/Rules/New Rules/Drag
 pfsrd://Advanced Player's Guide/Rules/New Rules/Drag/Stability
@@ -2209,7 +2214,45 @@ pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Point Magic Items/Ring of H
 pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Point Magic Items/Staff of Fortune
 pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points
 pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Antiheroes
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Additional Hero Point Rules
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Character Story
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Completing Plot Arcs
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Faith
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Group Service
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Heroic Acts
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Maximum Hero Points
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Return from the Dead
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points/Act Out of Turn
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points/Bonus
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points/Cheat Death
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points/Extra Action
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points/Inspiration
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points/Recall
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Awarding Hero Points/Using Hero Points/Reroll
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Blood of Heroes
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Blood of Heroes/Benefit
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Blood of Heroes/Prerequisite
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Hero's Fortune
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Hero's Fortune/Benefit
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Luck of Heroes
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Luck of Heroes/Benefit
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Feats/Luck of Heroes/Prerequisite
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Magic Items
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Magic Items/Elixir of Luck
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Magic Items/Hero's Blade
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Magic Items/Reaver's Scythe
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Magic Items/Ring of Heroes
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Magic Items/Staff of Fortune
 pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Points for GMs
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Spells
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Spells/Heroic Fortune
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Spells/Heroic Fortune/Mass
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Spells/Malediction
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Spells/Severed Fate
+pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Points/Hero Point Spells/Unravel Destiny
 pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Point Spells
 pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Point Spells/Heroic Fortune
 pfsrd://Advanced Player's Guide/Rules/New Rules/Hero Point Spells/Heroic Fortune/Mass
@@ -2270,6 +2313,116 @@ pfsrd://Advanced Player's Guide/Rules/New Rules/Reposition
 pfsrd://Advanced Player's Guide/Rules/New Rules/Restrictions on Trait Selection
 pfsrd://Advanced Player's Guide/Rules/New Rules/Steal
 pfsrd://Advanced Player's Guide/Rules/New Rules/Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Anatomist
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Armor Expert
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Bullied
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Courageous
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Deft Dodger
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Dirty Fighter
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Fencer
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Killer
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Reactionary
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Combat Traits/Resilient
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Birthmark
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Caretaker
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Child of the Temple
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Devotee of the Green
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Ease of Faith
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/History of Heresy
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Indomitable Faith
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Sacred Conduit
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Sacred Touch
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Faith Traits/Scholar of the Great Beyond
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Classically Schooled
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Dangerously Curious
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Focused Mind
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Gifted Adept
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Hedge Magician
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Magical Knack
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Magical Lineage
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Magical Talent
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Mathematical Prodigy
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Magic Traits/Skeptic
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Adopted
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Bully
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Canter
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Charming
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Child of the Streets
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Fast-Talker
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Natural-Born Leader
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Poverty-Stricken
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Rich Parents
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Basic Traits/Social Traits/Suspicious
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Black Sheep
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Black Sheep/Apothecary
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Black Sheep/Bitter Nobleman
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Favored Son/Daughter
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Favored Son/Daughter/Sherrif
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Favored Son/Daughter/Tavern Owner
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Outlander
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Outlander/Exile
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Outlander/Lore Seeker
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Campaign Traits/Outlander/Missionary
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Gaining Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Dwarf Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Dwarf Race Traits/Goldsniffer
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Dwarf Race Traits/Tunnel Fighter
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Elf Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Elf Race Traits/Forlorn
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Elf Race Traits/Warrior of Old
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Gnome Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Gnome Race Traits/Animal Friend
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Gnome Race Traits/Rapscallion
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Half-Elf Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Half-Elf Race Traits/Elven Reflexes
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Half-Elf Race Traits/Failed Apprentice
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Halfling Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Halfling Race Traits/Freedom Fighter
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Halfling Race Traits/Well-Informed
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Half-Orc Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Half-Orc Race Traits/Brute
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Half-Orc Race Traits/Outcast
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Human Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Human Race Traits/Scholar of Ruins
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Race Traits/Human Race Traits/World Traveler
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits/Desert Child
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits/Highlander
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits/Log Roller
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits/Militia Veteran
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits/River Rat
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits/Savanna Child
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Regional Traits/Vagabond Child
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Child of Nature
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Demon Hunter
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Divine Courtesan
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Divine Warrior
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Ear for Music
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Eyes and Ears of the City
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Flame of the Dawnflower
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Fortified Drinker
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Guardian of the Forge
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Magic is Life
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Patient Optimist
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Starchild
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Undead Slayer
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Veteran of Battle
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Religion Traits/Wisdom in the Flesh
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Restrictions on Trait Selection
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Types of Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Types of Traits/Basic Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Types of Traits/Campaign Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Types of Traits/Race Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Types of Traits/Regional Traits
+pfsrd://Advanced Player's Guide/Rules/New Rules/Traits/Types of Traits/Religion Traits
 pfsrd://Advanced Player's Guide/Rules/New Rules/Types of Traits
 pfsrd://Advanced Player's Guide/Rules/New Rules/Types of Traits/Basic Traits
 pfsrd://Advanced Player's Guide/Rules/New Rules/Types of Traits/Campaign Traits
