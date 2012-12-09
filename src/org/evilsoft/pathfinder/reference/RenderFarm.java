@@ -63,6 +63,8 @@ public class RenderFarm {
 			return new CreatureRenderer(bookDbAdapter);
 		} else if (type.equals("feat")) {
 			return new FeatRenderer(bookDbAdapter);
+		} else if (type.equals("haunt")) {
+			return new SectionRenderer();
 		} else if (type.equals("item")) {
 			return new ItemRenderer(bookDbAdapter);
 		} else if (type.equals("link")) {
