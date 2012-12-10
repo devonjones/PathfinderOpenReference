@@ -40,6 +40,7 @@ public class AfflictionRenderer extends StatBlockRenderer {
 				sb.append(addField("Initial Effect", AfflictionAdapter.AfflictionUtils.getInitialEffect(cursor)));
 				sb.append(addField("Secondary Effect", AfflictionAdapter.AfflictionUtils.getSecondaryEffect(cursor)));
 				sb.append(addField("Cure", AfflictionAdapter.AfflictionUtils.getCure(cursor)));
+				sb.append(addField("Cost", AfflictionAdapter.AfflictionUtils.getCost(cursor)));
 			}
 			return sb.toString();
 		} finally {

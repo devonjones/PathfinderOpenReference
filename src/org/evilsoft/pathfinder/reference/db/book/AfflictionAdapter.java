@@ -22,7 +22,7 @@ public class AfflictionAdapter {
 		args.add(sectionId.toString());
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT contracted, save, onset, frequency, effect, initial_effect, ");
-		sb.append("  secondary_effect, cure");
+		sb.append("  secondary_effect, cure, cost");
 		sb.append(" FROM affliction_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
@@ -53,6 +53,9 @@ public class AfflictionAdapter {
 		}
 		public static String getCure(Cursor cursor) {
 			return cursor.getString(7);
+		}
+		public static String getCost(Cursor cursor) {
+			return cursor.getString(8);
 		}
 	}
 }

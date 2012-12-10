@@ -7684,6 +7684,7 @@ pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Drone (+1 CR)
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Queen (+2 CR)
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Special Abilities/Poison/Giant Ant Venom
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Worker (andndash;1 CR)
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Swarm/Army Ant
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Swarm/Army Ant/Special Abilities
@@ -7782,6 +7783,7 @@ pfsrd://Bestiary/Monsters/Centipede
 pfsrd://Bestiary/Monsters/Centipede/Giant
 pfsrd://Bestiary/Monsters/Centipede/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Centipede/Giant/Special Abilities/Poison (EX)
+pfsrd://Bestiary/Monsters/Centipede/Giant/Special Abilities/Poison (EX)/Giant Centipede Venom
 pfsrd://Bestiary/Monsters/Chimera
 pfsrd://Bestiary/Monsters/Chimera/Special Abilities
 pfsrd://Bestiary/Monsters/Chimera/Special Abilities/Breath Weapon
@@ -7803,6 +7805,7 @@ pfsrd://Bestiary/Monsters/Cockatrice/Special Abilities/Petrification
 pfsrd://Bestiary/Monsters/Couatl
 pfsrd://Bestiary/Monsters/Couatl/Special Abilities
 pfsrd://Bestiary/Monsters/Couatl/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Couatl/Special Abilities/Poison/Couatl Venom
 pfsrd://Bestiary/Monsters/Crab
 pfsrd://Bestiary/Monsters/Crab/Giant
 pfsrd://Bestiary/Monsters/Crab/Giant/Special Abilities
@@ -7865,6 +7868,7 @@ pfsrd://Bestiary/Monsters/Demon/Nalfeshnee/Special Abilities/Unholy Nimbus
 pfsrd://Bestiary/Monsters/Demon/Quasit
 pfsrd://Bestiary/Monsters/Demon/Quasit/Special Abilities
 pfsrd://Bestiary/Monsters/Demon/Quasit/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Demon/Quasit/Special Abilities/Poison/Quasit Poison
 pfsrd://Bestiary/Monsters/Demon/Shadow
 pfsrd://Bestiary/Monsters/Demon/Shadow/Special Abilities
 pfsrd://Bestiary/Monsters/Demon/Shadow/Special Abilities/Shadow Blend
@@ -7898,6 +7902,7 @@ pfsrd://Bestiary/Monsters/Devil/Bearded/Special Abilities/Infernal Wound
 pfsrd://Bestiary/Monsters/Devil/Bone
 pfsrd://Bestiary/Monsters/Devil/Bone/Special Abilities
 pfsrd://Bestiary/Monsters/Devil/Bone/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Devil/Bone/Special Abilities/Poison/Bone Devil Venom
 pfsrd://Bestiary/Monsters/Devil/Devil/The Infernal Hierarchy
 pfsrd://Bestiary/Monsters/Devil/Devil/The Infernal Hierarchy/Greater Devils
 pfsrd://Bestiary/Monsters/Devil/Devil/The Infernal Hierarchy/Least Devils
@@ -7916,6 +7921,7 @@ pfsrd://Bestiary/Monsters/Devil/Ice/Special Abilities/Slow
 pfsrd://Bestiary/Monsters/Devil/Imp
 pfsrd://Bestiary/Monsters/Devil/Imp/Special Abilities
 pfsrd://Bestiary/Monsters/Devil/Imp/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Devil/Imp/Special Abilities/Poison/Imp Venom
 pfsrd://Bestiary/Monsters/Devil/Lemure
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Infernal Dukes
@@ -7927,6 +7933,7 @@ pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Devil Shaping
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Disease
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Poison/Pit Fiend Venom
 pfsrd://Bestiary/Monsters/Devourer
 pfsrd://Bestiary/Monsters/Devourer/Special Abilities
 pfsrd://Bestiary/Monsters/Devourer/Special Abilities/Devour Soul
@@ -7956,6 +7963,7 @@ pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus/Tyrannosaurus
 pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus/Tyrannosaurus/7th-Level Adv.
 pfsrd://Bestiary/Monsters/Dog
 pfsrd://Bestiary/Monsters/Dog/Dog/Dog
+pfsrd://Bestiary/Monsters/Dog/Dog/Dog/Rabies
 pfsrd://Bestiary/Monsters/Dog/Dog/Rabies
 pfsrd://Bestiary/Monsters/Dog/Riding
 pfsrd://Bestiary/Monsters/Dolphin
@@ -8135,6 +8143,7 @@ pfsrd://Bestiary/Monsters/Dragon Turtle/Special Abilities/Capsize
 pfsrd://Bestiary/Monsters/Drider
 pfsrd://Bestiary/Monsters/Drider/Special Abilities
 pfsrd://Bestiary/Monsters/Drider/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Drider/Special Abilities/Poison/Drider Venom
 pfsrd://Bestiary/Monsters/Drider/Special Abilities/Undersized Weapons
 pfsrd://Bestiary/Monsters/Drow
 pfsrd://Bestiary/Monsters/Drow/Drow
@@ -8228,8 +8237,12 @@ pfsrd://Bestiary/Monsters/Ettercap/Ettercap Noose
 pfsrd://Bestiary/Monsters/Ettercap/Ettercap Spear Trap
 pfsrd://Bestiary/Monsters/Ettercap/Special Abilities
 pfsrd://Bestiary/Monsters/Ettercap/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Ettercap/Special Abilities/Poison/Ettercap Venom
 pfsrd://Bestiary/Monsters/Ettercap/Special Abilities/Spider Empathy
 pfsrd://Bestiary/Monsters/Ettercap/Special Abilities/Traps
+pfsrd://Bestiary/Monsters/Ettercap/Special Abilities/Traps/Ettercap Deadfall
+pfsrd://Bestiary/Monsters/Ettercap/Special Abilities/Traps/Ettercap Noose
+pfsrd://Bestiary/Monsters/Ettercap/Special Abilities/Traps/Ettercap Spear Trap
 pfsrd://Bestiary/Monsters/Ettin
 pfsrd://Bestiary/Monsters/Ettin/Special Abilities
 pfsrd://Bestiary/Monsters/Ettin/Special Abilities/Superior Two-Weapon Fighting
@@ -8246,6 +8259,7 @@ pfsrd://Bestiary/Monsters/Familiar/Toad
 pfsrd://Bestiary/Monsters/Familiar/Viper
 pfsrd://Bestiary/Monsters/Familiar/Viper/Special Abilities
 pfsrd://Bestiary/Monsters/Familiar/Viper/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Familiar/Viper/Special Abilities/Poison/Viper Venom
 pfsrd://Bestiary/Monsters/Familiar/Weasel
 pfsrd://Bestiary/Monsters/Familiar/Weasel/Special Abilities
 pfsrd://Bestiary/Monsters/Familiar/Weasel/Special Abilities/Attach
@@ -8265,6 +8279,7 @@ pfsrd://Bestiary/Monsters/Froghemoth/Special Abilities/Slowed by Electricity
 pfsrd://Bestiary/Monsters/Frog/Poison
 pfsrd://Bestiary/Monsters/Frog/Poison/Special Abilities
 pfsrd://Bestiary/Monsters/Frog/Poison/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Frog/Poison/Special Abilities/Poison/Frog Poison
 pfsrd://Bestiary/Monsters/Gargoyle
 pfsrd://Bestiary/Monsters/Gargoyle/Special Abilities
 pfsrd://Bestiary/Monsters/Gargoyle/Special Abilities/Freeze
@@ -8443,6 +8458,7 @@ pfsrd://Bestiary/Monsters/Homunculus
 pfsrd://Bestiary/Monsters/Homunculus/Construction/Homunculus
 pfsrd://Bestiary/Monsters/Homunculus/Special Abilities
 pfsrd://Bestiary/Monsters/Homunculus/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Homunculus/Special Abilities/Poison/Homunculus Venom
 pfsrd://Bestiary/Monsters/Homunculus/Special Abilities/Telepathic Link
 pfsrd://Bestiary/Monsters/Horse
 pfsrd://Bestiary/Monsters/Horse/Horse
@@ -8580,6 +8596,7 @@ pfsrd://Bestiary/Monsters/Medusa/Special Abilities
 pfsrd://Bestiary/Monsters/Medusa/Special Abilities/All-Around Vision
 pfsrd://Bestiary/Monsters/Medusa/Special Abilities/Petrifying Gaze
 pfsrd://Bestiary/Monsters/Medusa/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Medusa/Special Abilities/Poison/Medusa Venom
 pfsrd://Bestiary/Monsters/Mephit
 pfsrd://Bestiary/Monsters/Mephit/Air Mephit (Air)
 pfsrd://Bestiary/Monsters/Mephit/Dust Mephit (Air)
@@ -8640,14 +8657,17 @@ pfsrd://Bestiary/Monsters/Naga/Dark/Special Abilities
 pfsrd://Bestiary/Monsters/Naga/Dark/Special Abilities/Detect Thoughts
 pfsrd://Bestiary/Monsters/Naga/Dark/Special Abilities/Guarded Thoughts
 pfsrd://Bestiary/Monsters/Naga/Dark/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Naga/Dark/Special Abilities/Poison/Dark Naga Venom
 pfsrd://Bestiary/Monsters/Naga/Guardian
 pfsrd://Bestiary/Monsters/Naga/Guardian/Special Abilities
 pfsrd://Bestiary/Monsters/Naga/Guardian/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Naga/Guardian/Special Abilities/Poison/Guardian Naga Venom
 pfsrd://Bestiary/Monsters/Naga/Guardian/Special Abilities/Spit
 pfsrd://Bestiary/Monsters/Naga/Spirit
 pfsrd://Bestiary/Monsters/Naga/Spirit/Special Abilities
 pfsrd://Bestiary/Monsters/Naga/Spirit/Special Abilities/Charming Gaze
 pfsrd://Bestiary/Monsters/Naga/Spirit/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Naga/Spirit/Special Abilities/Poison/Spirit Naga Venom
 pfsrd://Bestiary/Monsters/Neothelid
 pfsrd://Bestiary/Monsters/Neothelid/Special Abilities
 pfsrd://Bestiary/Monsters/Neothelid/Special Abilities/Mind Thrust
@@ -8656,6 +8676,7 @@ pfsrd://Bestiary/Monsters/Neothelid/Special Abilities/Trace Teleport
 pfsrd://Bestiary/Monsters/Night Hag
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Disease
+pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Disease/Demon Fever
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Dream Haunting
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Heartstone
 pfsrd://Bestiary/Monsters/Nightmare
@@ -8692,6 +8713,7 @@ pfsrd://Bestiary/Monsters/Orc/Orc/Weapon Familiarity
 pfsrd://Bestiary/Monsters/Otyugh
 pfsrd://Bestiary/Monsters/Otyugh/Special Abilities
 pfsrd://Bestiary/Monsters/Otyugh/Special Abilities/Disease
+pfsrd://Bestiary/Monsters/Otyugh/Special Abilities/Disease/Otyugh Filth Fever
 pfsrd://Bestiary/Monsters/Owlbear
 pfsrd://Bestiary/Monsters/Pegasus
 pfsrd://Bestiary/Monsters/Phase Spider
@@ -8699,6 +8721,7 @@ pfsrd://Bestiary/Monsters/Phase Spider/Special Abilities
 pfsrd://Bestiary/Monsters/Phase Spider/Special Abilities/Ethereal Ambush
 pfsrd://Bestiary/Monsters/Phase Spider/Special Abilities/Ethereal Jaunt
 pfsrd://Bestiary/Monsters/Phase Spider/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Phase Spider/Special Abilities/Poison/Phase Spider Venom
 pfsrd://Bestiary/Monsters/Phoenix
 pfsrd://Bestiary/Monsters/Phoenix/Special Abilities
 pfsrd://Bestiary/Monsters/Phoenix/Special Abilities/Self-Resurrection
@@ -8710,9 +8733,11 @@ pfsrd://Bestiary/Monsters/Pixie/Special Abilities/Special Arrows
 pfsrd://Bestiary/Monsters/Pseudodragon
 pfsrd://Bestiary/Monsters/Pseudodragon/Special Abilities
 pfsrd://Bestiary/Monsters/Pseudodragon/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Pseudodragon/Special Abilities/Poison/Pseudodragon Venom
 pfsrd://Bestiary/Monsters/Purple Worm
 pfsrd://Bestiary/Monsters/Purple Worm/Special Abilities
 pfsrd://Bestiary/Monsters/Purple Worm/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Purple Worm/Special Abilities/Poison/Purple Worm Venom
 pfsrd://Bestiary/Monsters/Rakshasa
 pfsrd://Bestiary/Monsters/Rakshasa/Special Abilities
 pfsrd://Bestiary/Monsters/Rakshasa/Special Abilities/Detect Thoughts
@@ -8721,6 +8746,7 @@ pfsrd://Bestiary/Monsters/Rat/Dire
 pfsrd://Bestiary/Monsters/Rat/Dire/Dire Rat
 pfsrd://Bestiary/Monsters/Rat/Dire/Special Abilities
 pfsrd://Bestiary/Monsters/Rat/Dire/Special Abilities/Disease
+pfsrd://Bestiary/Monsters/Rat/Dire/Special Abilities/Disease/Dire Rat Filth Fever
 pfsrd://Bestiary/Monsters/Remorhaz
 pfsrd://Bestiary/Monsters/Remorhaz/Special Abilities
 pfsrd://Bestiary/Monsters/Remorhaz/Special Abilities/Heat
@@ -8753,6 +8779,7 @@ pfsrd://Bestiary/Monsters/Satyr/Special Abilities/Pipes
 pfsrd://Bestiary/Monsters/Scorpion/Giant
 pfsrd://Bestiary/Monsters/Scorpion/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Scorpion/Giant/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Scorpion/Giant/Special Abilities/Poison/Giant Scorpion Venom
 pfsrd://Bestiary/Monsters/Sea Hag
 pfsrd://Bestiary/Monsters/Sea Hag/Special Abilities
 pfsrd://Bestiary/Monsters/Sea Hag/Special Abilities/Evil Eye
@@ -8826,6 +8853,7 @@ pfsrd://Bestiary/Monsters/Snake/Constrictor
 pfsrd://Bestiary/Monsters/Snake/Venomous
 pfsrd://Bestiary/Monsters/Snake/Venomous/Special Abilities
 pfsrd://Bestiary/Monsters/Snake/Venomous/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Snake/Venomous/Special Abilities/Poison/Snake Venom
 pfsrd://Bestiary/Monsters/Spectre
 pfsrd://Bestiary/Monsters/Spectre/Special Abilities
 pfsrd://Bestiary/Monsters/Spectre/Special Abilities/Create Spawn
@@ -8837,6 +8865,7 @@ pfsrd://Bestiary/Monsters/Spider
 pfsrd://Bestiary/Monsters/Spider/Giant
 pfsrd://Bestiary/Monsters/Spider/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Spider/Giant/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Spider/Giant/Special Abilities/Poison/Giant Spider Venom
 pfsrd://Bestiary/Monsters/Squid
 pfsrd://Bestiary/Monsters/Squid/Giant
 pfsrd://Bestiary/Monsters/Squid/Squid
@@ -8863,6 +8892,7 @@ pfsrd://Bestiary/Monsters/Swarm/Bat
 pfsrd://Bestiary/Monsters/Swarm/Centipede
 pfsrd://Bestiary/Monsters/Swarm/Centipede/Special Abilities
 pfsrd://Bestiary/Monsters/Swarm/Centipede/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Swarm/Centipede/Special Abilities/Poison/Centipede Swarm Venom
 pfsrd://Bestiary/Monsters/Swarm/Crab
 pfsrd://Bestiary/Monsters/Swarm/Leech
 pfsrd://Bestiary/Monsters/Swarm/Leech/Special Abilities
@@ -8874,9 +8904,11 @@ pfsrd://Bestiary/Monsters/Swarm/Rat/Special Abilities/Disease
 pfsrd://Bestiary/Monsters/Swarm/Spider
 pfsrd://Bestiary/Monsters/Swarm/Spider/Special Abilities
 pfsrd://Bestiary/Monsters/Swarm/Spider/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Swarm/Spider/Special Abilities/Poison/Spider Swarm Venom
 pfsrd://Bestiary/Monsters/Swarm/Wasp
 pfsrd://Bestiary/Monsters/Swarm/Wasp/Special Abilities
 pfsrd://Bestiary/Monsters/Swarm/Wasp/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Swarm/Wasp/Special Abilities/Poison/Wasp Swarm Venom
 pfsrd://Bestiary/Monsters/Tarrasque
 pfsrd://Bestiary/Monsters/Tarrasque/Special Abilities
 pfsrd://Bestiary/Monsters/Tarrasque/Special Abilities/Carapace
@@ -8930,6 +8962,7 @@ pfsrd://Bestiary/Monsters/Vargouille
 pfsrd://Bestiary/Monsters/Vargouille/Special Abilities
 pfsrd://Bestiary/Monsters/Vargouille/Special Abilities/Kiss
 pfsrd://Bestiary/Monsters/Vargouille/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Vargouille/Special Abilities/Poison/Vargouille Venom
 pfsrd://Bestiary/Monsters/Vargouille/Special Abilities/Shriek
 pfsrd://Bestiary/Monsters/Vegepygmy
 pfsrd://Bestiary/Monsters/Vegepygmy/Russet Mold (CR 6)
@@ -8937,10 +8970,12 @@ pfsrd://Bestiary/Monsters/Violet Fungus
 pfsrd://Bestiary/Monsters/Violet Fungus/Special Abilities
 pfsrd://Bestiary/Monsters/Violet Fungus/Special Abilities/Rot
 pfsrd://Bestiary/Monsters/Violet Fungus/Violet Venom
+pfsrd://Bestiary/Monsters/Violet Fungus/Violet Venom/Violet Venom
 pfsrd://Bestiary/Monsters/Wasp
 pfsrd://Bestiary/Monsters/Wasp/Giant
 pfsrd://Bestiary/Monsters/Wasp/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Wasp/Giant/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Wasp/Giant/Special Abilities/Poison/Giant Wasp Venom
 pfsrd://Bestiary/Monsters/Wight
 pfsrd://Bestiary/Monsters/Wight/Brute Wight (CR 5)
 pfsrd://Bestiary/Monsters/Wight/Cairn Wight (CR 4)
@@ -8977,6 +9012,7 @@ pfsrd://Bestiary/Monsters/Wraith/Special Abilities/Unnatural Aura
 pfsrd://Bestiary/Monsters/Wyvern
 pfsrd://Bestiary/Monsters/Wyvern/Special Abilities
 pfsrd://Bestiary/Monsters/Wyvern/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Wyvern/Special Abilities/Poison/Wyvern Venom
 pfsrd://Bestiary/Monsters/Xill
 pfsrd://Bestiary/Monsters/Xill/Special Abilities
 pfsrd://Bestiary/Monsters/Xill/Special Abilities/Implant
@@ -13489,6 +13525,7 @@ pfsrd://Game Mastery Guide/Rules/Fast Play Ship Combat/Nautical Adventures
 pfsrd://Game Mastery Guide/Rules/Fast Play Ship Combat/Water
 pfsrd://Game Mastery Guide/Rules/Haunts
 pfsrd://Game Mastery Guide/Rules/Haunts/Creating a Haunt
+pfsrd://Game Mastery Guide/Rules/Haunts/Creating a Haunt/Bleeding Walls
 pfsrd://Game Mastery Guide/Rules/Haunts/Creating a Haunt/Bleeding Walls CR 5
 pfsrd://Game Mastery Guide/Rules/Haunts/Creating a Haunt/Step 1-Determine Base CR
 pfsrd://Game Mastery Guide/Rules/Haunts/Creating a Haunt/Step 2-Determine Actual CR
