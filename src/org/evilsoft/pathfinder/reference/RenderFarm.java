@@ -15,10 +15,11 @@ import org.evilsoft.pathfinder.reference.render.AbilityRenderer;
 import org.evilsoft.pathfinder.reference.render.AfflictionRenderer;
 import org.evilsoft.pathfinder.reference.render.AnimalCompanionRenderer;
 import org.evilsoft.pathfinder.reference.render.ClassRenderer;
+import org.evilsoft.pathfinder.reference.render.CreatureRenderer;
 import org.evilsoft.pathfinder.reference.render.FeatRenderer;
+import org.evilsoft.pathfinder.reference.render.HauntRenderer;
 import org.evilsoft.pathfinder.reference.render.ItemRenderer;
 import org.evilsoft.pathfinder.reference.render.LinkRenderer;
-import org.evilsoft.pathfinder.reference.render.CreatureRenderer;
 import org.evilsoft.pathfinder.reference.render.RaceRenderer;
 import org.evilsoft.pathfinder.reference.render.Renderer;
 import org.evilsoft.pathfinder.reference.render.SectionRenderer;
@@ -64,7 +65,7 @@ public class RenderFarm {
 		} else if (type.equals("feat")) {
 			return new FeatRenderer(bookDbAdapter);
 		} else if (type.equals("haunt")) {
-			return new SectionRenderer();
+			return new HauntRenderer(bookDbAdapter);
 		} else if (type.equals("item")) {
 			return new ItemRenderer(bookDbAdapter);
 		} else if (type.equals("link")) {

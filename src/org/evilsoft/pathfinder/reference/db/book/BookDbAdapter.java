@@ -119,6 +119,10 @@ public class BookDbAdapter {
 		return new FeatAdapter(database, dbName);
 	}
 
+	public HauntAdapter getHauntAdapter() {
+		return new HauntAdapter(database, dbName);
+	}
+
 	public ItemAdapter getItemAdapter() {
 		return new ItemAdapter(database, dbName);
 	}
