@@ -185,7 +185,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 				currentListAdapter = new FeatListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
-		} else if (name.equals("Creatures")) {
+		} else if (name.equals("Creatures") && type.equals("creature")  && !subtype.equals("npc")) {
 			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByCreatureType(subtype);
 			cursorList.add(curs);
 			if(thin) {
