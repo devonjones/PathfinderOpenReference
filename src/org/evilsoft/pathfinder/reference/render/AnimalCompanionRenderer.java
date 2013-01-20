@@ -21,7 +21,7 @@ public class AnimalCompanionRenderer extends StatBlockRenderer {
 			if (has_next) {
 				String level = AnimalCompanionAdapter.AnimalCompanionUtils.getLevel(cursor);
 				if (level != null) {
-					sb.append(renderStatBlockBreaker(level));
+					sb.append(renderStatBlockBreaker(level +"-Level Advancement"));
 				} else {
 					sb.append(renderStatBlockTitle(name, newUri, top));
 					sb.append(renderStatBlockBreaker("Starting Statistics"));
