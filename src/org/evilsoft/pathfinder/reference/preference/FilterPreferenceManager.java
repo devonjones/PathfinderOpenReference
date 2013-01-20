@@ -10,14 +10,12 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 public class FilterPreferenceManager {
-	
-	static Context context;
 
-	public static String getSourceFilter(List<String> args, String conjunction) {
-		return getSourceFilter(args, conjunction, null);
+	public static String getSourceFilter(Context context, List<String> args, String conjunction) {
+		return getSourceFilter(context, args, conjunction, null);
 	}
 
-	public static String getSourceFilter(List<String> args, String conjunction, String tableName) {
+	public static String getSourceFilter(Context context, List<String> args, String conjunction, String tableName) {
 		StringBuffer filter = new StringBuffer();
 		ArrayList<String> sourceList = new ArrayList<String>();
 		
@@ -72,9 +70,4 @@ public class FilterPreferenceManager {
 		args.addAll(sourceList);
 		return filter.toString();
 	}
-	
-	public static void setContext(Context setContext) {
-		context = setContext;
-	}
-	
 }

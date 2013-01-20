@@ -6,14 +6,17 @@ import java.util.List;
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
 import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class IndexGroupAdapter {
 	public SQLiteDatabase database;
+	public Context context;
 
-	public IndexGroupAdapter(SQLiteDatabase database) {
+	public IndexGroupAdapter(SQLiteDatabase database, Context context) {
 		this.database = database;
+		this.context = context;
 	}
 
 	private String selectStatement() {
@@ -41,7 +44,7 @@ public class IndexGroupAdapter {
 		sb.append(selectStatement());
 		sb.append(" WHERE i.indexId = ?");
 		args.add(id.toString());
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -53,7 +56,7 @@ public class IndexGroupAdapter {
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url = ?");
 		args.add(url);
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -65,7 +68,7 @@ public class IndexGroupAdapter {
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url LIKE ?");
 		args.add(url);
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -89,7 +92,7 @@ public class IndexGroupAdapter {
 			where = "AND";
 			args.add(subtype);
 		}
-		sb.append(FilterPreferenceManager.getSourceFilter(args, where, "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, where, "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -104,7 +107,7 @@ public class IndexGroupAdapter {
 			sb.append("  AND i.creature_type = ?");
 			args.add(creatureType);
 		}
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -121,7 +124,7 @@ public class IndexGroupAdapter {
 			args.add(featType);
 		}
 		sb.append(" WHERE i.type = 'feat'");
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -136,7 +139,7 @@ public class IndexGroupAdapter {
 		sb.append("    AND sl.class = ?");
 		args.add(spellClass);
 		sb.append(" WHERE i.type = 'spell'");
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY sl.level, i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -151,7 +154,7 @@ public class IndexGroupAdapter {
 		sb.append("    AND i.database = p.database");
 		sb.append(" WHERE p.url = ?");
 		args.add(parentUrl);
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));

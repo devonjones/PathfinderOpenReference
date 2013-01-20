@@ -6,14 +6,17 @@ import java.util.List;
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
 import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class CountAdapter {
 	public SQLiteDatabase database;
+	public Context context;
 
-	public CountAdapter(SQLiteDatabase database) {
+	public CountAdapter(SQLiteDatabase database, Context context) {
 		this.database = database;
+		this.context = context;
 	}
 
 	public Cursor countByType(String type, String subtype) {
@@ -35,7 +38,7 @@ public class CountAdapter {
 			where = "AND";
 			args.add(subtype);
 		}
-		sb.append(FilterPreferenceManager.getSourceFilter(args, where, "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, where, "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -48,7 +51,7 @@ public class CountAdapter {
 		sb.append(" FROM central_index i");
 		sb.append(" WHERE i.url = ?");
 		args.add(url);
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));

@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
-import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
 
 import android.app.Activity;
@@ -18,10 +17,6 @@ public class StartActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		// Give the FilterPreferenceManager a context so it can access
-		// default shared preferences
-		FilterPreferenceManager.setContext(this);
 		
 		// The default values must be set here to bypass a bug in Android
 		// See http://stackoverflow.com/questions/3907830/android-checkboxpreference-default-value

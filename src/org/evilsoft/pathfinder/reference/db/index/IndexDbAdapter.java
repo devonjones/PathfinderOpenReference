@@ -33,34 +33,34 @@ public class IndexDbAdapter {
 	}
 	
 	public MenuAdapter getMenuAdapter() {
-		return new MenuAdapter(database);
+		return new MenuAdapter(database, context);
 	}
 
 	public FeatTypeAdapter getFeatTypeAdapter() {
-		return new FeatTypeAdapter(database);
+		return new FeatTypeAdapter(database, context);
 	}
 
 	public CreatureTypeAdapter getCreatureTypeAdapter() {
-		return new CreatureTypeAdapter(database);
+		return new CreatureTypeAdapter(database, context);
 	}
 
 	public SpellClassAdapter getSpellClassAdapter() {
-		return new SpellClassAdapter(database);
+		return new SpellClassAdapter(database, context);
 	}
 	
 	public IndexGroupAdapter getIndexGroupAdapter() {
-		return new IndexGroupAdapter(database);
+		return new IndexGroupAdapter(database, context);
 	}
 	
 	public BooksAdapter getBooksAdapter() {
-		return new BooksAdapter(database);
+		return new BooksAdapter(database, context);
 	}
 	
 	public SearchAdapter getSearchAdapter() {
-		return new SearchAdapter(database);
+		return new SearchAdapter(database, context);
 	}
 
 	public CountAdapter getCountAdapter() {
-		return new CountAdapter(database);
+		return new CountAdapter(database, context);
 	}
 }

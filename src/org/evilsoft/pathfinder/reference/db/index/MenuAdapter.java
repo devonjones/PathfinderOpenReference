@@ -7,14 +7,17 @@ import org.evilsoft.pathfinder.reference.MenuItem;
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
 import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class MenuAdapter {
 	public SQLiteDatabase database;
+	public Context context;
 
-	public MenuAdapter(SQLiteDatabase database) {
+	public MenuAdapter(SQLiteDatabase database, Context context) {
 		this.database = database;
+		this.context = context;
 	}
 
 	public Cursor fetchMenu() {
@@ -23,7 +26,7 @@ public class MenuAdapter {
 		sb.append("SELECT menu_id, parent_menu_id, name, NULL AS parent_name, type, subtype, url, db, grouping, priority");
 		sb.append(" FROM menu");
 		sb.append(" WHERE parent_menu_id IS NULL");
-		sb.append(FilterPreferenceManager.getSourceFilter(args, "AND"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND"));
 		sb.append(" ORDER BY priority, name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
