@@ -7717,13 +7717,14 @@ pfsrd://Bestiary/Monsters/Basidirond/Special Abilities
 pfsrd://Bestiary/Monsters/Basidirond/Special Abilities/Cold Lethargy
 pfsrd://Bestiary/Monsters/Basidirond/Special Abilities/Hallucination Cloud
 pfsrd://Bestiary/Monsters/Basidirond/Special Abilities/Spores
+pfsrd://Bestiary/Monsters/Basidirond/Special Abilities/Spores/Basidirond Spores
 pfsrd://Bestiary/Monsters/Basilisk
 pfsrd://Bestiary/Monsters/Basilisk/Special Abilities
 pfsrd://Bestiary/Monsters/Basilisk/Special Abilities/Gaze
 pfsrd://Bestiary/Monsters/Bat
 pfsrd://Bestiary/Monsters/Bat/Dire
-pfsrd://Bestiary/Monsters/Bat/Dire/Bat/Dire
-pfsrd://Bestiary/Monsters/Bat/Dire/Bat/Dire/7th-Level Advancement
+pfsrd://Bestiary/Monsters/Bat/Dire/Dire Bat
+pfsrd://Bestiary/Monsters/Bat/Dire/Dire Bat/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Bear
 pfsrd://Bestiary/Monsters/Bear/Dire
 pfsrd://Bestiary/Monsters/Bear/Grizzly
@@ -7898,6 +7899,7 @@ pfsrd://Bestiary/Monsters/Devil/Barbed/Special Abilities/Impale
 pfsrd://Bestiary/Monsters/Devil/Bearded
 pfsrd://Bestiary/Monsters/Devil/Bearded/Special Abilities
 pfsrd://Bestiary/Monsters/Devil/Bearded/Special Abilities/Beard
+pfsrd://Bestiary/Monsters/Devil/Bearded/Special Abilities/Beard/Devil Chills/Bearded Devil
 pfsrd://Bestiary/Monsters/Devil/Bearded/Special Abilities/Infernal Wound
 pfsrd://Bestiary/Monsters/Devil/Bone
 pfsrd://Bestiary/Monsters/Devil/Bone/Special Abilities
@@ -7932,6 +7934,7 @@ pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Devil Shaping
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Disease
+pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Disease/Devil Chills/Pit Fiend
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Poison
 pfsrd://Bestiary/Monsters/Devil/Pit Fiend/Pit Fiend/Special Abilities/Poison/Pit Fiend Venom
 pfsrd://Bestiary/Monsters/Devourer
@@ -7941,26 +7944,30 @@ pfsrd://Bestiary/Monsters/Devourer/Special Abilities/Spell Deflection
 pfsrd://Bestiary/Monsters/Dinosaur
 pfsrd://Bestiary/Monsters/Dinosaur/Ankylosaurus
 pfsrd://Bestiary/Monsters/Dinosaur/Ankylosaurus/Ankylosaurus
+pfsrd://Bestiary/Monsters/Dinosaur/Ankylosaurus/Ankylosaurus/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Dinosaur/Ankylosaurus/Special Abilities
 pfsrd://Bestiary/Monsters/Dinosaur/Ankylosaurus/Special Abilities/Stun
 pfsrd://Bestiary/Monsters/Dinosaur/Brachiosaurus
 pfsrd://Bestiary/Monsters/Dinosaur/Brachiosaurus/Brachiosaurus
-pfsrd://Bestiary/Monsters/Dinosaur/Brachiosaurus/Brachiosaurus/7th-Level Adv.
+pfsrd://Bestiary/Monsters/Dinosaur/Brachiosaurus/Brachiosaurus/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Dinosaur/Deinonychus
 pfsrd://Bestiary/Monsters/Dinosaur/Elasmosaurus
 pfsrd://Bestiary/Monsters/Dinosaur/Elasmosaurus/Elasmosaurus
+pfsrd://Bestiary/Monsters/Dinosaur/Elasmosaurus/Elasmosaurus/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Dinosaur/Pteranodon
 pfsrd://Bestiary/Monsters/Dinosaur/Pteranodon/Pteranodon
+pfsrd://Bestiary/Monsters/Dinosaur/Pteranodon/Pteranodon/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Dinosaur/Stegosaurus
 pfsrd://Bestiary/Monsters/Dinosaur/Stegosaurus/Stegosaurus
-pfsrd://Bestiary/Monsters/Dinosaur/Stegosaurus/Stegosaurus/7th-Level Adv
+pfsrd://Bestiary/Monsters/Dinosaur/Stegosaurus/Stegosaurus/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Dinosaur/Triceratops
 pfsrd://Bestiary/Monsters/Dinosaur/Triceratops/Triceratops
+pfsrd://Bestiary/Monsters/Dinosaur/Triceratops/Triceratops/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus
 pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus/Special Abilities
 pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus/Special Abilities/Powerful Bite
 pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus/Tyrannosaurus
-pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus/Tyrannosaurus/7th-Level Adv.
+pfsrd://Bestiary/Monsters/Dinosaur/Tyrannosaurus/Tyrannosaurus/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Dog
 pfsrd://Bestiary/Monsters/Dog/Dog/Dog
 pfsrd://Bestiary/Monsters/Dog/Dog/Dog/Rabies
@@ -7968,10 +7975,13 @@ pfsrd://Bestiary/Monsters/Dog/Dog/Rabies
 pfsrd://Bestiary/Monsters/Dog/Riding
 pfsrd://Bestiary/Monsters/Dolphin
 pfsrd://Bestiary/Monsters/Dolphin/Dolphin
+pfsrd://Bestiary/Monsters/Dolphin/Dolphin/Dolphin
+pfsrd://Bestiary/Monsters/Dolphin/Dolphin/Dolphin/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Dolphin/Dolphin/Special Abilities
 pfsrd://Bestiary/Monsters/Dolphin/Dolphin/Special Abilities/Hold Breath
 pfsrd://Bestiary/Monsters/Dolphin/Orca
 pfsrd://Bestiary/Monsters/Dolphin/Orca/Orca
+pfsrd://Bestiary/Monsters/Dolphin/Orca/Orca/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Doppelganger
 pfsrd://Bestiary/Monsters/Doppelganger/Special Abilities
 pfsrd://Bestiary/Monsters/Doppelganger/Special Abilities/Mimicry
@@ -8179,10 +8189,12 @@ pfsrd://Bestiary/Monsters/Eagle/Giant
 pfsrd://Bestiary/Monsters/Eel
 pfsrd://Bestiary/Monsters/Eel/Electric
 pfsrd://Bestiary/Monsters/Eel/Electric/Electric Eel
+pfsrd://Bestiary/Monsters/Eel/Electric/Electric Eel/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Eel/Electric/Special Abilities
 pfsrd://Bestiary/Monsters/Eel/Electric/Special Abilities/Electricity
 pfsrd://Bestiary/Monsters/Eel/Giant Moray
 pfsrd://Bestiary/Monsters/Eel/Giant Moray/Moray Eel
+pfsrd://Bestiary/Monsters/Eel/Giant Moray/Moray Eel/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Eel/Giant Moray/Special Abilities
 pfsrd://Bestiary/Monsters/Eel/Giant Moray/Special Abilities/Gnaw
 pfsrd://Bestiary/Monsters/Elemental
@@ -8231,6 +8243,7 @@ pfsrd://Bestiary/Monsters/Elephant
 pfsrd://Bestiary/Monsters/Elephant/Elephant
 pfsrd://Bestiary/Monsters/Elephant/Mastodon
 pfsrd://Bestiary/Monsters/Elephant/Mastodon/Elephant/Mastodon
+pfsrd://Bestiary/Monsters/Elephant/Mastodon/Elephant/Mastodon/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Ettercap
 pfsrd://Bestiary/Monsters/Ettercap/Ettercap Deadfall
 pfsrd://Bestiary/Monsters/Ettercap/Ettercap Noose
@@ -8314,13 +8327,15 @@ pfsrd://Bestiary/Monsters/Genie/Shaitan/Special Abilities/Stone Curse
 pfsrd://Bestiary/Monsters/Genie/Shaitan/Special Abilities/Stone Glide
 pfsrd://Bestiary/Monsters/Ghost
 pfsrd://Bestiary/Monsters/Ghost/Creating a Ghost
-pfsrd://Bestiary/Monsters/Ghost/Creating a Ghost/Defensive Abilities
-pfsrd://Bestiary/Monsters/Ghost/Creating a Ghost/Melee and Ranged Attacks
+pfsrd://Bestiary/Monsters/Ghost/Creating a Ghost/Ghost
+pfsrd://Bestiary/Monsters/Ghost/Creating a Ghost/Ghost/Defensive Abilities
+pfsrd://Bestiary/Monsters/Ghost/Creating a Ghost/Ghost/Melee and Ranged Attacks
 pfsrd://Bestiary/Monsters/Ghoul
 pfsrd://Bestiary/Monsters/Ghoul/Ghast
 pfsrd://Bestiary/Monsters/Ghoul/Lacedon
 pfsrd://Bestiary/Monsters/Ghoul/Special Abilities
 pfsrd://Bestiary/Monsters/Ghoul/Special Abilities/Disease
+pfsrd://Bestiary/Monsters/Ghoul/Special Abilities/Disease/Ghoul Fever
 pfsrd://Bestiary/Monsters/Giant
 pfsrd://Bestiary/Monsters/Giant/Cloud
 pfsrd://Bestiary/Monsters/Giant/Cloud/Special Abilities
@@ -8351,6 +8366,8 @@ pfsrd://Bestiary/Monsters/Girallon
 pfsrd://Bestiary/Monsters/Gnoll
 pfsrd://Bestiary/Monsters/Goblin
 pfsrd://Bestiary/Monsters/Goblin Dog
+pfsrd://Bestiary/Monsters/Goblin Dog/Goblin Dog
+pfsrd://Bestiary/Monsters/Goblin Dog/Goblin Dog/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Goblin Dog/Special Abilities
 pfsrd://Bestiary/Monsters/Goblin Dog/Special Abilities/Allergic Reaction
 pfsrd://Bestiary/Monsters/Goblin/Goblin
@@ -8423,21 +8440,24 @@ pfsrd://Bestiary/Monsters/Green Hag/Special Abilities/Weakness
 pfsrd://Bestiary/Monsters/Griffon
 pfsrd://Bestiary/Monsters/Half-Celestial
 pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial
-pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial/Defenses/Qualities
-pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial/Special Abilities
-pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial/Special Abilities/HD
+pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial/Half-Celestial
+pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial/Half-Celestial/Defenses/Qualities
+pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial/Half-Celestial/Special Abilities
+pfsrd://Bestiary/Monsters/Half-Celestial/Creating a Half-Celestial/Half-Celestial/Special Abilities/HD
 pfsrd://Bestiary/Monsters/Half-Dragon
 pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon
-pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon/Melee
-pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon/Special Abilities/Dragon Variety
-pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon/Special Qualities and Defenses
+pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon/Half-Dragon
+pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon/Half-Dragon/Melee
+pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon/Half-Dragon/Special Abilities/Dragon Variety
+pfsrd://Bestiary/Monsters/Half-Dragon/Creating a Half-Dragon/Half-Dragon/Special Qualities and Defenses
 pfsrd://Bestiary/Monsters/Half-Dragon/Dracolisk
 pfsrd://Bestiary/Monsters/Half-Fiend
 pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend
-pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Defenses/Qualities
-pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Melee
-pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Special Attacks
-pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Special Attacks/HD
+pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Half-Fiend
+pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Half-Fiend/Defenses/Qualities
+pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Half-Fiend/Melee
+pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Half-Fiend/Special Attacks
+pfsrd://Bestiary/Monsters/Half-Fiend/Creating a Half-Fiend/Half-Fiend/Special Attacks/HD
 pfsrd://Bestiary/Monsters/Harpy
 pfsrd://Bestiary/Monsters/Harpy/Special Abilities
 pfsrd://Bestiary/Monsters/Harpy/Special Abilities/Captivating Song
@@ -8447,7 +8467,7 @@ pfsrd://Bestiary/Monsters/Hell Hound/Nessian
 pfsrd://Bestiary/Monsters/Herd Animal
 pfsrd://Bestiary/Monsters/Herd Animal/Aurochs
 pfsrd://Bestiary/Monsters/Herd Animal/Aurochs/Aurochs
-pfsrd://Bestiary/Monsters/Herd Animal/Aurochs/Aurochs/7th-Level Adv.
+pfsrd://Bestiary/Monsters/Herd Animal/Aurochs/Aurochs/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Herd Animal/Aurochs/Special Abilities
 pfsrd://Bestiary/Monsters/Herd Animal/Aurochs/Special Abilities/Stampede
 pfsrd://Bestiary/Monsters/Herd Animal/Bison
@@ -8475,6 +8495,8 @@ pfsrd://Bestiary/Monsters/Hydra/Special Abilities/Regenerate Head
 pfsrd://Bestiary/Monsters/Hyena
 pfsrd://Bestiary/Monsters/Hyena/Dire
 pfsrd://Bestiary/Monsters/Hyena/Hyena
+pfsrd://Bestiary/Monsters/Hyena/Hyena/Hyena
+pfsrd://Bestiary/Monsters/Hyena/Hyena/Hyena/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Intellect Devourer
 pfsrd://Bestiary/Monsters/Intellect Devourer/Special Abilities
 pfsrd://Bestiary/Monsters/Intellect Devourer/Special Abilities/Body Thief
@@ -8492,6 +8514,7 @@ pfsrd://Bestiary/Monsters/Iron Cobra/Mithral Cobra (+1 CR)
 pfsrd://Bestiary/Monsters/Iron Cobra/Special Abilities
 pfsrd://Bestiary/Monsters/Iron Cobra/Special Abilities/Find Target
 pfsrd://Bestiary/Monsters/Iron Cobra/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Iron Cobra/Special Abilities/Poison/Black Adder Venom
 pfsrd://Bestiary/Monsters/Kobold
 pfsrd://Bestiary/Monsters/Kobold/Kobold
 pfsrd://Bestiary/Monsters/Kobold/Kobold/Armor
@@ -8524,10 +8547,11 @@ pfsrd://Bestiary/Monsters/Leech/Giant/Special Abilities/Blood Drain
 pfsrd://Bestiary/Monsters/Leech/Giant/Special Abilities/Susceptible to Salt
 pfsrd://Bestiary/Monsters/Lich
 pfsrd://Bestiary/Monsters/Lich/Creating a Lich
-pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Damage
-pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Melee Attack
-pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Senses
-pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Special Attacks
+pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Lich
+pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Lich/Damage
+pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Lich/Melee Attack
+pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Lich/Senses
+pfsrd://Bestiary/Monsters/Lich/Creating a Lich/Lich/Special Attacks
 pfsrd://Bestiary/Monsters/Lich/The Lich's Phylactery
 pfsrd://Bestiary/Monsters/Linnorm
 pfsrd://Bestiary/Monsters/Linnorm/Crag
@@ -8536,6 +8560,7 @@ pfsrd://Bestiary/Monsters/Linnorm/Crag/Special Abilities/Breath Weapon
 pfsrd://Bestiary/Monsters/Linnorm/Crag/Special Abilities/Death Curse
 pfsrd://Bestiary/Monsters/Linnorm/Crag/Special Abilities/Freedom of Movement
 pfsrd://Bestiary/Monsters/Linnorm/Crag/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Linnorm/Crag/Special Abilities/Poison/Crag Linnorm Venom
 pfsrd://Bestiary/Monsters/Linnorm/Crag/Special Abilities/True Seeing
 pfsrd://Bestiary/Monsters/Linnorm/Ice
 pfsrd://Bestiary/Monsters/Linnorm/Ice/Special Abilities
@@ -8543,6 +8568,7 @@ pfsrd://Bestiary/Monsters/Linnorm/Ice/Special Abilities/Breath Weapon
 pfsrd://Bestiary/Monsters/Linnorm/Ice/Special Abilities/Death Curse
 pfsrd://Bestiary/Monsters/Linnorm/Ice/Special Abilities/Freedom of Movement
 pfsrd://Bestiary/Monsters/Linnorm/Ice/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Linnorm/Ice/Special Abilities/Poison/Ice Linnorm Venom
 pfsrd://Bestiary/Monsters/Linnorm/Ice/Special Abilities/True Seeing
 pfsrd://Bestiary/Monsters/Linnorm/Tarn
 pfsrd://Bestiary/Monsters/Linnorm/Tarn/Special Abilities
@@ -8551,6 +8577,7 @@ pfsrd://Bestiary/Monsters/Linnorm/Tarn/Special Abilities/Breath Weapon
 pfsrd://Bestiary/Monsters/Linnorm/Tarn/Special Abilities/Death Curse
 pfsrd://Bestiary/Monsters/Linnorm/Tarn/Special Abilities/Freedom of Movement
 pfsrd://Bestiary/Monsters/Linnorm/Tarn/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Linnorm/Tarn/Special Abilities/Poison/Tarn Linnorm Venom
 pfsrd://Bestiary/Monsters/Linnorm/Tarn/Special Abilities/True Seeing
 pfsrd://Bestiary/Monsters/Lion
 pfsrd://Bestiary/Monsters/Lion/Dire
@@ -8564,21 +8591,25 @@ pfsrd://Bestiary/Monsters/Lizard/Giant Frilled/Special Abilities
 pfsrd://Bestiary/Monsters/Lizard/Giant Frilled/Special Abilities/Intimidating Charge
 pfsrd://Bestiary/Monsters/Lizard/Monitor
 pfsrd://Bestiary/Monsters/Lizard/Monitor/Monitor Lizard
+pfsrd://Bestiary/Monsters/Lizard/Monitor/Monitor Lizard/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Lizard/Monitor/Special Abilities
 pfsrd://Bestiary/Monsters/Lizard/Monitor/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Lizard/Monitor/Special Abilities/Poison/Monitor Lizard Venom
 pfsrd://Bestiary/Monsters/Lycanthrope
 pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope
-pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Ability Scores
-pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/AC
-pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Melee
-pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Size and Type
-pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Special Attacks
+pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Lycanthrope
+pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Lycanthrope/Ability Scores
+pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Lycanthrope/AC
+pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Lycanthrope/Melee
+pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Lycanthrope/Size and Type
+pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Creating a Lycanthrope/Lycanthrope/Special Attacks
 pfsrd://Bestiary/Monsters/Lycanthrope/Lycanthrope/Lycanthropy
 pfsrd://Bestiary/Monsters/Lycanthrope/Wererat
 pfsrd://Bestiary/Monsters/Lycanthrope/Wererat/Wererat (Human Form)
 pfsrd://Bestiary/Monsters/Lycanthrope/Wererat/Wererat (Hybrid Form)
 pfsrd://Bestiary/Monsters/Lycanthrope/Wererat/Wererat (Hybrid Form)/Special Abilities
 pfsrd://Bestiary/Monsters/Lycanthrope/Wererat/Wererat (Hybrid Form)/Special Abilities/Disease
+pfsrd://Bestiary/Monsters/Lycanthrope/Wererat/Wererat (Hybrid Form)/Special Abilities/Disease/Filth Fever/Wererat
 pfsrd://Bestiary/Monsters/Lycanthrope/Werewolf
 pfsrd://Bestiary/Monsters/Lycanthrope/Werewolf/Werewolf
 pfsrd://Bestiary/Monsters/Lycanthrope/Werewolf/Werewolf (Hybrid Form)
@@ -8651,6 +8682,7 @@ pfsrd://Bestiary/Monsters/Mummy
 pfsrd://Bestiary/Monsters/Mummy/Special Abilities
 pfsrd://Bestiary/Monsters/Mummy/Special Abilities/Despair
 pfsrd://Bestiary/Monsters/Mummy/Special Abilities/Mummy Rot
+pfsrd://Bestiary/Monsters/Mummy/Special Abilities/Mummy Rot/Mummy Rot
 pfsrd://Bestiary/Monsters/Naga
 pfsrd://Bestiary/Monsters/Naga/Dark
 pfsrd://Bestiary/Monsters/Naga/Dark/Special Abilities
@@ -8676,7 +8708,7 @@ pfsrd://Bestiary/Monsters/Neothelid/Special Abilities/Trace Teleport
 pfsrd://Bestiary/Monsters/Night Hag
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Disease
-pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Disease/Demon Fever
+pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Disease/Demon Fever/Night Hag
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Dream Haunting
 pfsrd://Bestiary/Monsters/Night Hag/Special Abilities/Heartstone
 pfsrd://Bestiary/Monsters/Nightmare
@@ -8699,11 +8731,15 @@ pfsrd://Bestiary/Monsters/Octopus
 pfsrd://Bestiary/Monsters/Octopus/Giant
 pfsrd://Bestiary/Monsters/Octopus/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Octopus/Giant/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Octopus/Giant/Special Abilities/Poison/Giant Octopus Venom
 pfsrd://Bestiary/Monsters/Octopus/Octopus
+pfsrd://Bestiary/Monsters/Octopus/Octopus/Octopus
+pfsrd://Bestiary/Monsters/Octopus/Octopus/Octopus/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Octopus/Octopus/Special Abilities
 pfsrd://Bestiary/Monsters/Octopus/Octopus/Special Abilities/Ink Cloud
 pfsrd://Bestiary/Monsters/Octopus/Octopus/Special Abilities/Jet
 pfsrd://Bestiary/Monsters/Octopus/Octopus/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Octopus/Octopus/Special Abilities/Poison/Octopus Venom
 pfsrd://Bestiary/Monsters/Ogre
 pfsrd://Bestiary/Monsters/Oni/Ogre Mage
 pfsrd://Bestiary/Monsters/Oni/Ogre Mage/Oni Traits
@@ -8713,7 +8749,7 @@ pfsrd://Bestiary/Monsters/Orc/Orc/Weapon Familiarity
 pfsrd://Bestiary/Monsters/Otyugh
 pfsrd://Bestiary/Monsters/Otyugh/Special Abilities
 pfsrd://Bestiary/Monsters/Otyugh/Special Abilities/Disease
-pfsrd://Bestiary/Monsters/Otyugh/Special Abilities/Disease/Otyugh Filth Fever
+pfsrd://Bestiary/Monsters/Otyugh/Special Abilities/Disease/Filth Fever/Otyugh
 pfsrd://Bestiary/Monsters/Owlbear
 pfsrd://Bestiary/Monsters/Pegasus
 pfsrd://Bestiary/Monsters/Phase Spider
@@ -8744,9 +8780,10 @@ pfsrd://Bestiary/Monsters/Rakshasa/Special Abilities/Detect Thoughts
 pfsrd://Bestiary/Monsters/Rat
 pfsrd://Bestiary/Monsters/Rat/Dire
 pfsrd://Bestiary/Monsters/Rat/Dire/Dire Rat
+pfsrd://Bestiary/Monsters/Rat/Dire/Dire Rat/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Rat/Dire/Special Abilities
 pfsrd://Bestiary/Monsters/Rat/Dire/Special Abilities/Disease
-pfsrd://Bestiary/Monsters/Rat/Dire/Special Abilities/Disease/Dire Rat Filth Fever
+pfsrd://Bestiary/Monsters/Rat/Dire/Special Abilities/Disease/Filth Fever/Dire Rat
 pfsrd://Bestiary/Monsters/Remorhaz
 pfsrd://Bestiary/Monsters/Remorhaz/Special Abilities
 pfsrd://Bestiary/Monsters/Remorhaz/Special Abilities/Heat
@@ -8757,8 +8794,12 @@ pfsrd://Bestiary/Monsters/Retriever/Special Abilities/Eye Rays
 pfsrd://Bestiary/Monsters/Retriever/Special Abilities/Relentless
 pfsrd://Bestiary/Monsters/Rhinoceros
 pfsrd://Bestiary/Monsters/Rhinoceros/Rhinoceros
+pfsrd://Bestiary/Monsters/Rhinoceros/Rhinoceros/Rhinoceros
+pfsrd://Bestiary/Monsters/Rhinoceros/Rhinoceros/Rhinoceros/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Rhinoceros/Woolly
 pfsrd://Bestiary/Monsters/Roc
+pfsrd://Bestiary/Monsters/Roc/Roc
+pfsrd://Bestiary/Monsters/Roc/Roc/7th-Level Advancement
 pfsrd://Bestiary/Monsters/Roper
 pfsrd://Bestiary/Monsters/Roper/Special Abilities
 pfsrd://Bestiary/Monsters/Roper/Special Abilities/Strands
@@ -8818,21 +8859,23 @@ pfsrd://Bestiary/Monsters/Shoggoth/Special Abilities/Engulf
 pfsrd://Bestiary/Monsters/Shoggoth/Special Abilities/Maddening Cacophony
 pfsrd://Bestiary/Monsters/Skeletal Champion
 pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion
-pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Attacks
-pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/BAB
-pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Feats
-pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Saves
+pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Skeletal Champion
+pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Skeletal Champion/Attacks
+pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Skeletal Champion/BAB
+pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Skeletal Champion/Feats
+pfsrd://Bestiary/Monsters/Skeletal Champion/Creating a Skeletal Champion/Skeletal Champion/Saves
 pfsrd://Bestiary/Monsters/Skeleton
 pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Armor Class/Skeleton Size
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Attacks
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/BAB
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Challenge Rating/HD
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Environment
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Feats
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Organization
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Saves
-pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Treasure
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Armor Class/Skeleton Size
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Attacks
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/BAB
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Challenge Rating/HD
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Environment
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Feats
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Organization
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Saves
+pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Creating a Skeleton/Skeleton/Treasure
 pfsrd://Bestiary/Monsters/Skeleton/Skeleton/Human Skeleton
 pfsrd://Bestiary/Monsters/Skeleton/Variant Skeletons
 pfsrd://Bestiary/Monsters/Skeleton/Variant Skeletons/Bloody Skeleton
@@ -8872,6 +8915,8 @@ pfsrd://Bestiary/Monsters/Squid/Squid
 pfsrd://Bestiary/Monsters/Squid/Squid/Special Abilities
 pfsrd://Bestiary/Monsters/Squid/Squid/Special Abilities/Ink Cloud
 pfsrd://Bestiary/Monsters/Squid/Squid/Special Abilities/Jet
+pfsrd://Bestiary/Monsters/Squid/Squid/Squid
+pfsrd://Bestiary/Monsters/Squid/Squid/Squid/4th-Level Advancement
 pfsrd://Bestiary/Monsters/Stirge
 pfsrd://Bestiary/Monsters/Stirge/Special Abilities
 pfsrd://Bestiary/Monsters/Stirge/Special Abilities/Attach
@@ -8898,9 +8943,11 @@ pfsrd://Bestiary/Monsters/Swarm/Leech
 pfsrd://Bestiary/Monsters/Swarm/Leech/Special Abilities
 pfsrd://Bestiary/Monsters/Swarm/Leech/Special Abilities/Blood Drain
 pfsrd://Bestiary/Monsters/Swarm/Leech/Special Abilities/Poison
+pfsrd://Bestiary/Monsters/Swarm/Leech/Special Abilities/Poison/Leech Swarm Venom
 pfsrd://Bestiary/Monsters/Swarm/Rat
 pfsrd://Bestiary/Monsters/Swarm/Rat/Special Abilities
 pfsrd://Bestiary/Monsters/Swarm/Rat/Special Abilities/Disease
+pfsrd://Bestiary/Monsters/Swarm/Rat/Special Abilities/Disease/Filth Fever/Rat Swarm
 pfsrd://Bestiary/Monsters/Swarm/Spider
 pfsrd://Bestiary/Monsters/Swarm/Spider/Special Abilities
 pfsrd://Bestiary/Monsters/Swarm/Spider/Special Abilities/Poison
@@ -8949,14 +8996,15 @@ pfsrd://Bestiary/Monsters/Unicorn/Special Abilities/Magic Circle against Evil
 pfsrd://Bestiary/Monsters/Unicorn/Special Abilities/Wild Empathy
 pfsrd://Bestiary/Monsters/Vampire
 pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Ability Scores
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/AL
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Feats
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Melee
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Senses
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Special Attacks
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Special Qualities
-pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Weaknesses
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/Ability Scores
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/AL
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/Feats
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/Melee
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/Senses
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/Special Attacks
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/Special Qualities
+pfsrd://Bestiary/Monsters/Vampire/Creating a Vampire/Vampire/Weaknesses
 pfsrd://Bestiary/Monsters/Vampire/Vampire Spawn
 pfsrd://Bestiary/Monsters/Vargouille
 pfsrd://Bestiary/Monsters/Vargouille/Special Abilities
@@ -9042,16 +9090,19 @@ pfsrd://Bestiary/Monsters/Zombie/Variant Zombies
 pfsrd://Bestiary/Monsters/Zombie/Variant Zombies/Fast Zombie
 pfsrd://Bestiary/Monsters/Zombie/Variant Zombies/Fast Zombie/Special Attacks
 pfsrd://Bestiary/Monsters/Zombie/Variant Zombies/Plague Zombie
-pfsrd://Bestiary/Monsters/Zombie/Variant Zombies/Plague Zombie/Special Attacks
+pfsrd://Bestiary/Monsters/Zombie/Variant Zombies/Plague Zombie/Special Attacks/Death Burst
+pfsrd://Bestiary/Monsters/Zombie/Variant Zombies/Plague Zombie/Special Attacks/Disease
+pfsrd://Bestiary/Monsters/Zombie/Variant Zombies/Plague Zombie/Special Attacks/Disease/Zombie Rot
 pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Armor Class/Zombie Size
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Attacks
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/BAB
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Challenge Rating/HD
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Feats
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Hit Dice/Zombie Size
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Saves
-pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Special Qualities
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/Armor Class/Zombie Size
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/Attacks
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/BAB
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/Challenge Rating/HD
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/Feats
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/Hit Dice/Zombie Size
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/Saves
+pfsrd://Bestiary/Monsters/Zombie/Zombie/Creating a Zombie/Zombie/Special Qualities
 pfsrd://Bestiary/Monsters/Zombie/Zombie/Human Zombie
 pfsrd://Bestiary/Rules
 pfsrd://Bestiary/Rules/Creature Types
@@ -9174,18 +9225,18 @@ pfsrd://Bestiary/Rules/Monster Advancement/Adding Racial Hit Dice/Step 5 Statist
 pfsrd://Bestiary/Rules/Monster Advancement/Adding Racial Hit Dice/Step 6 Comparison
 pfsrd://Bestiary/Rules/Monster Advancement/Monster Advancement
 pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Advanced Creature (CR +1)
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Advanced Creature (CR +1)/Quick Rules
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Celestial Creature (CR +0 or +1)
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Celestial Creature (CR +0 or +1)/Rebuild Rules/Celestial Creature Defenses
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Entropic Creature (CR +0 or +1)
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Entropic Creature (CR +0 or +1)/Rebuild Rules/Entropic Creature Defenses
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Fiendish Creature (CR +0 or +1)
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Fiendish Creature (CR +0 or +1)/Rebuild Rules/Fiendish Creature Defenses
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Giant Creature (+1)
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Giant Creature (+1)/Quick Rules
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Resolute Creature (CR +0 or +1)
-pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Resolute Creature (CR +0 or +1)/Rebuild Rules/Resolute Creature Defenses
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Advanced Creature
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Advanced Creature/Quick Rules
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Celestial Creature
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Celestial Creature/Rebuild Rules/Celestial Creature Defenses
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Entropic Creature
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Entropic Creature/Rebuild Rules/Entropic Creature Defenses
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Fiendish Creature
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Fiendish Creature/Rebuild Rules/Fiendish Creature Defenses
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Giant Creature
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Giant Creature/Quick Rules
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Resolute Creature
+pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Resolute Creature/Rebuild Rules/Resolute Creature Defenses
 pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Young Creature
 pfsrd://Bestiary/Rules/Monster Advancement/Simple Templates/Young Creature/Quick Rules
 pfsrd://Bestiary/Rules/Monster Advancement/Templates
@@ -16738,52 +16789,18 @@ pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Magus/Magus Archetypes/S
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/10th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/12th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/14th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/16th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/18th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/20th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/4th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/6th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/8th-Level Ki Powers
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Activation
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Power
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/10th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/10th-Level Ki Powers/discordant blast
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/10th-Level Ki Powers/ki leech
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/10th-Level Ki Powers/shadow step
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/10th-Level Ki Powers/spit venom
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/12th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/12th-Level Ki Powers/battlemind link
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/12th-Level Ki Powers/shadow walk
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/14th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/14th-Level Ki Powers/blood crow strike
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/14th-Level Ki Powers/cold ice strike
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/14th-Level Ki Powers/ki shout
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/14th-Level Ki Powers/sonic thrust
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/16th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/16th-Level Ki Powers/strangling hair
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/18th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/20th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/augury
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/barkskin
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/feather step
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/hydraulic push
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/Ki
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/ki arrow
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/message
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/scorching ray
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/4th-Level Ki Powers/true strike
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/6th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/6th-Level Ki Powers/cloak of winds
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/6th-Level Ki Powers/gaseous form
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/6th-Level Ki Powers/hydraulic torrent
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/6th-Level Ki Powers/remove disease
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/8th-Level Ki Powers
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/8th-Level Ki Powers/dragon's breath
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/8th-Level Ki Powers/neutralize poison
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/8th-Level Ki Powers/poison
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/8th-Level Ki Powers/restoration
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/8th-Level Ki Powers/share memory
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/8th-Level Ki Powers/silk to steel
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/Activation
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/Feats
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/Ki
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/Monk Abilities
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Ki Powers/Requirements
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Archetypes/Qinggong Monk/Requirements
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Vows
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Vows/Vow of Celibacy
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Monk/Monk Vows/Vow of Chains
