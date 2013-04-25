@@ -16,7 +16,8 @@ public class CreatureRenderer extends StatBlockRenderer {
 
 	@Override
 	public String renderTitle() {
-		Cursor curs = bookDbAdapter.getCreatureAdapter().getCreatureDetails(sectionId);
+		Cursor curs = bookDbAdapter.getCreatureAdapter().getCreatureDetails(
+				sectionId);
 		try {
 			boolean has_next = curs.moveToFirst();
 			String title = name;
@@ -34,7 +35,8 @@ public class CreatureRenderer extends StatBlockRenderer {
 
 	@Override
 	public String renderDetails() {
-		Cursor curs = bookDbAdapter.getCreatureAdapter().getCreatureDetails(sectionId);
+		Cursor curs = bookDbAdapter.getCreatureAdapter().getCreatureDetails(
+				sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
 			boolean has_next = curs.moveToFirst();
@@ -148,7 +150,8 @@ public class CreatureRenderer extends StatBlockRenderer {
 	}
 
 	private String renderCreatureSpells(Integer sectionId) {
-		Cursor curs = bookDbAdapter.getCreatureAdapter().getCreatureSpells(sectionId);
+		Cursor curs = bookDbAdapter.getCreatureAdapter().getCreatureSpells(
+				sectionId);
 		// 0:name, 1:body
 		try {
 			StringBuffer sb = new StringBuffer();
@@ -169,7 +172,8 @@ public class CreatureRenderer extends StatBlockRenderer {
 		// 29:strength, 30:dexterity, 31:constitution, 32:intelligence,
 		// 33:wisdom, 34:charisma,
 		// 35:base_attack, 36:cmb, 37:cmd, 38:feats, 39:skills,
-		// 40:racial_modifiers, 41:languages, 42:special_qualities, 43:gear,
+		// 40:racial_modifiers, 41:languages, 42:special_qualities,
+		// 43:gear, 44:combat_gear, 45:other_gear, 46:boon,
 		sb.append(renderStatBlockBreaker("Statistics"));
 		sb.append(addField("Str", curs.getString(29), false));
 		sb.append(addField("Dex", curs.getString(30), false));
@@ -187,6 +191,9 @@ public class CreatureRenderer extends StatBlockRenderer {
 		sb.append(addField("Languages", curs.getString(41)));
 		sb.append(addField("Special Qualities", curs.getString(42)));
 		sb.append(addField("Gear", curs.getString(43)));
+		sb.append(addField("Combat Gear", curs.getString(44)));
+		sb.append(addField("Other Gear", curs.getString(45)));
+		sb.append(addField("Boon", curs.getString(46)));
 		String retval = sb.toString();
 		if (retval.equals(renderStatBlockBreaker("Statistics"))) {
 			return "";
@@ -196,11 +203,11 @@ public class CreatureRenderer extends StatBlockRenderer {
 
 	private String renderCreatureEcology(Cursor curs) {
 		StringBuffer sb = new StringBuffer();
-		// 44:environment, 45:organization, 46:treasure
+		// 47:environment, 48:organization, 49:treasure
 		sb.append(renderStatBlockBreaker("Ecology"));
-		sb.append(addField("Environment", curs.getString(44)));
-		sb.append(addField("Organization", curs.getString(45)));
-		sb.append(addField("Treasure", curs.getString(46)));
+		sb.append(addField("Environment", curs.getString(47)));
+		sb.append(addField("Organization", curs.getString(48)));
+		sb.append(addField("Treasure", curs.getString(49)));
 		String retval = sb.toString();
 		if (retval.equals(renderStatBlockBreaker("Ecology"))) {
 			return "";
