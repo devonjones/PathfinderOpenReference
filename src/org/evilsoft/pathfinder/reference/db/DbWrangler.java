@@ -44,10 +44,11 @@ public class DbWrangler {
 
 	public void checkDatabases() throws IOException, LimitedSpaceException {
 		handleOldDatabases();
-		SharedPreferences settings = context.getSharedPreferences(PREFS_NAME, 0);
+		SharedPreferences settings = context
+				.getSharedPreferences(PREFS_NAME, 0);
 		Integer version = settings.getInt(CURRENT_VERSION, 0);
 		boolean current = true;
-		if(version < VERSION) {
+		if (version < VERSION) {
 			current = false;
 		}
 		checkIndexDb(current);
@@ -59,14 +60,16 @@ public class DbWrangler {
 		}
 	}
 
-	public void checkIndexDb(boolean isCurrent) throws IOException, LimitedSpaceException {
+	public void checkIndexDb(boolean isCurrent) throws IOException,
+			LimitedSpaceException {
 		IndexDbHelper helper = new IndexDbHelper(context);
 		helper.createDatabase(isCurrent);
 	}
 
-	public void checkBookDbs(boolean isCurrent) throws IOException, LimitedSpaceException {
+	public void checkBookDbs(boolean isCurrent) throws IOException,
+			LimitedSpaceException {
 		List<String> files = getDbList();
-		for(int i = 0; i < files.size(); i++) {
+		for (int i = 0; i < files.size(); i++) {
 			BookDbHelper bookHelper = new BookDbHelper(context, files.get(i));
 			bookHelper.createDatabase(isCurrent);
 		}
@@ -92,13 +95,13 @@ public class DbWrangler {
 
 	public void open() {
 		List<String> files = getDbList();
-		for(int i = 0; i < files.size(); i++) {
+		for (int i = 0; i < files.size(); i++) {
 			openBookDbAdapter(files.get(i));
 		}
 		openIndexDbAdapter();
 		closed = false;
 	}
-	
+
 	public boolean isClosed() {
 		return closed;
 	}
@@ -119,11 +122,11 @@ public class DbWrangler {
 		}
 		return adapter;
 	}
-	
+
 	public BookDbAdapter getBookDbAdapterByName(String source) {
 		Cursor curs = getIndexDbAdapter().getBooksAdapter().fetchBook(source);
 		String bookDb;
-		if(source.equals("Open Game License")) {
+		if (source.equals("Open Game License")) {
 			bookDb = "book-ogl.db";
 		} else {
 			try {
@@ -168,7 +171,7 @@ public class DbWrangler {
 		return indexDbAdapter;
 	}
 
-	public void close () {
+	public void close() {
 		if (indexDbAdapter != null) {
 			indexDbAdapter.close();
 		}
@@ -184,15 +187,16 @@ public class DbWrangler {
 		closed = true;
 	}
 
-	public static void showLowSpaceError(Activity runningActivity, LimitedSpaceException e, DialogInterface.OnClickListener clickListener) {
+	public static void showLowSpaceError(Activity runningActivity,
+			LimitedSpaceException e,
+			DialogInterface.OnClickListener clickListener) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("Error creating database.  This app requires at least ");
 		sb.append(e.getSize() / AvailableSpaceHandler.SIZE_MB + 1);
 		sb.append(" megs free in order to store articles.  Exiting.");
 		AlertDialog.Builder builder = new AlertDialog.Builder(runningActivity);
-		builder.setMessage(sb.toString())
-			.setCancelable(false)
-			.setPositiveButton("Ok", clickListener);
+		builder.setMessage(sb.toString()).setCancelable(false)
+				.setPositiveButton("Ok", clickListener);
 		AlertDialog alert = builder.create();
 		alert.show();
 	}

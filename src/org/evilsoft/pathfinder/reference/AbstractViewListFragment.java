@@ -33,8 +33,8 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockListFragment;
 
-public abstract class AbstractViewListFragment extends SherlockListFragment implements
-		OnItemClickListener {
+public abstract class AbstractViewListFragment extends SherlockListFragment
+		implements OnItemClickListener {
 	private static final String TAG = "AbstractViewListFragment";
 	protected DbWrangler dbWrangler;
 	protected List<Cursor> cursorList = new ArrayList<Cursor>();
@@ -57,19 +57,20 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		Bundle bundle = getArguments();
-		if(bundle != null) {
+		if (bundle != null) {
 			if (bundle.containsKey("url")) {
 				startUrl = bundle.getString("url");
 			}
 		}
-		if(startUrl != null) {
+		if (startUrl != null) {
 			updateUrl(startUrl);
 		}
 	}
 
 	private void openDb() {
 		if (dbWrangler == null) {
-			dbWrangler = new DbWrangler(this.getActivity().getApplicationContext());
+			dbWrangler = new DbWrangler(this.getActivity()
+					.getApplicationContext());
 		}
 		if (dbWrangler.isClosed()) {
 			dbWrangler.open();
@@ -90,10 +91,11 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 	}
 
 	@Override
-	public abstract void onItemClick(AdapterView<?> parent, View view, int position, long id);
+	public abstract void onItemClick(AdapterView<?> parent, View view,
+			int position, long id);
 
 	public boolean checkUrlEqual(String newUrl) {
-		if(currentUrl == null) {
+		if (currentUrl == null) {
 			return false;
 		}
 		return newUrl.equals(currentUrl);
@@ -116,16 +118,17 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 				Cursor searchcurs = dbWrangler.getIndexDbAdapter()
 						.getSearchAdapter().search(parts[3].trim());
 				cursorList.add(searchcurs);
-				currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), searchcurs);
+				currentListAdapter = new SearchListAdapter(getActivity()
+						.getApplicationContext(), searchcurs);
 				if (currentListAdapter.isEmpty()) {
 					empty = true;
 					ArrayList<String> list = new ArrayList<String>();
 					list.add("(No Results)");
-					currentListAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.list_item,
-						list);
+					currentListAdapter = new ArrayAdapter<String>(getActivity()
+							.getApplicationContext(), R.layout.list_item, list);
 				}
 			}
-		} else if(parts[3].equals("Bookmarks")) {
+		} else if (parts[3].equals("Bookmarks")) {
 			currentType = "Bookmarks";
 			if (parts.length > 3) {
 				// I believe it's safe to test against the name because the
@@ -138,7 +141,8 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 					showDelCollectionDialog();
 				} else {
 					// We have a collection name and can search on it
-					CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+					CollectionAdapter ca = new CollectionAdapter(
+							dbWrangler.getUserDbAdapter());
 					Cursor curs2 = ca
 							.fetchCollectionValues(parts[parts.length - 1]);
 					cursorList.add(curs2);
@@ -146,7 +150,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 							getActivity(), curs2);
 				}
 			}
-		} else if(parts[2].equals("Menu")) {
+		} else if (parts[2].equals("Menu")) {
 			Log.i(TAG, parts[2]);
 			String name = parts[3];
 			String type = parts[4];
@@ -166,8 +170,10 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 
 	public void getContentListAdapter(String source, String name, String url) {
 		currentType = name;
-		Cursor curs = dbWrangler.getIndexDbAdapter().getBooksAdapter().fetchBook(source);
-		curs = dbWrangler.getBookDbAdapterByName(source).getSectionIndexGroupAdapter().fetchSectionByParentUrl(url);
+		Cursor curs = dbWrangler.getIndexDbAdapter().getBooksAdapter()
+				.fetchBook(source);
+		curs = dbWrangler.getBookDbAdapterByName(source)
+				.getSectionIndexGroupAdapter().fetchSectionByParentUrl(url);
 		cursorList.add(curs);
 		currentListAdapter = new SectionListAdapter(getActivity()
 				.getApplicationContext(), curs);
@@ -175,57 +181,64 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 
 	public void getListAdapter(String name, String type, String subtype) {
 		currentType = name;
-		if (name.equals("Feats")) {
-			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByFeatType(subtype);
+		if ("Feats".equals(name)) {
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+					.fetchByFeatType(subtype);
 			cursorList.add(curs);
-			if(thin) {
+			if (thin) {
 				currentListAdapter = new DefaultListAdapter(getActivity()
 						.getApplicationContext(), curs);
-				
+
 			} else {
 				currentListAdapter = new FeatListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
-		} else if (name.equals("Creatures") && type.equals("creature")  && !subtype.equals("npc")) {
-			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByCreatureType(subtype);
+		} else if ("Creatures".equals(name) && "creatures".equals(type)
+				&& !"npc".equals(subtype)) {
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+					.fetchByCreatureType(subtype);
 			cursorList.add(curs);
-			if(thin) {
+			if (thin) {
 				currentListAdapter = new DefaultListAdapter(getActivity()
 						.getApplicationContext(), curs);
-				
+
 			} else {
 				currentListAdapter = new CreatureListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
-		} else if (name.equals("Skills")) {
-			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByType(type, subtype);
+		} else if ("Skills".equals(name)) {
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+					.fetchByType(type, subtype);
 			cursorList.add(curs);
-			if(thin) {
+			if (thin) {
 				currentListAdapter = new DefaultListAdapter(getActivity()
 						.getApplicationContext(), curs);
-				
+
 			} else {
 				currentListAdapter = new SkillListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
-		} else if (name.equals("Spells")) {
+		} else if ("Spells".equals(name)) {
 			Cursor curs;
-			if(subtype != null) {
-				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchBySpellClass(subtype);
+			if (subtype != null) {
+				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+						.fetchBySpellClass(subtype);
 			} else {
-				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByType(type, subtype);
+				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+						.fetchByType(type, subtype);
 			}
 			cursorList.add(curs);
-			if(thin) {
+			if (thin) {
 				currentListAdapter = new DefaultListAdapter(getActivity()
 						.getApplicationContext(), curs);
-				
+
 			} else {
 				currentListAdapter = new SpellListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
 		} else {
-			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter().fetchByType(type, subtype);
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+					.fetchByType(type, subtype);
 			cursorList.add(curs);
 			currentListAdapter = new DefaultListAdapter(getActivity()
 					.getApplicationContext(), curs);
@@ -234,11 +247,9 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 
 	@SuppressLint("NewApi")
 	private void showNewCollectionDialog() {
-		AlertDialog.Builder alert =
-				android.os.Build.VERSION.SDK_INT < 11 ?
-						new AlertDialog.Builder(getActivity()) :
-						new AlertDialog.Builder(getActivity(),
-								AlertDialog.THEME_HOLO_DARK);
+		AlertDialog.Builder alert = android.os.Build.VERSION.SDK_INT < 11 ? new AlertDialog.Builder(
+				getActivity()) : new AlertDialog.Builder(getActivity(),
+				AlertDialog.THEME_HOLO_DARK);
 
 		final EditText edit = new EditText(this.getActivity()
 				.getApplicationContext());
@@ -254,7 +265,8 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 						sb.append(which);
 						ErrorReporter e = ErrorReporter.getInstance();
 						e.putCustomData("LastClick", sb.toString());
-						CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+						CollectionAdapter ca = new CollectionAdapter(dbWrangler
+								.getUserDbAdapter());
 						if (ca.addCollection(edit.getText().toString())) {
 							Toast.makeText(getActivity(),
 									R.string.collection_entry_success,
@@ -281,14 +293,13 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 
 	@SuppressLint("NewApi")
 	private void showDelCollectionDialog() {
-		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+		CollectionAdapter ca = new CollectionAdapter(
+				dbWrangler.getUserDbAdapter());
 		Cursor curs = ca.fetchCollectionList();
 		try {
-			AlertDialog.Builder builder =
-					android.os.Build.VERSION.SDK_INT < 11 ?
-							new AlertDialog.Builder(getActivity()) :
-							new AlertDialog.Builder(getActivity(),
-									AlertDialog.THEME_HOLO_DARK);
+			AlertDialog.Builder builder = android.os.Build.VERSION.SDK_INT < 11 ? new AlertDialog.Builder(
+					getActivity()) : new AlertDialog.Builder(getActivity(),
+					AlertDialog.THEME_HOLO_DARK);
 
 			final ArrayList<String> characterList = new ArrayList<String>();
 			boolean hasNext = curs.moveToFirst();
@@ -301,7 +312,8 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 			builder.setTitle(R.string.del_collection_entry_title);
 			builder.setItems(items, new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
-					CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+					CollectionAdapter ca = new CollectionAdapter(dbWrangler
+							.getUserDbAdapter());
 					if (ca.delCollection(characterList.get(which)) > 0) {
 						Toast.makeText(getActivity(),
 								R.string.del_collection_entry_success,

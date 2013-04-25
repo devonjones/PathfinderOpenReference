@@ -54,7 +54,8 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				showList = true;
 			}
 		} else {
-			newUrl = UrlAliaser.aliasUrl(dbWrangler, launchingIntent.getData().toString());
+			newUrl = UrlAliaser.aliasUrl(dbWrangler, launchingIntent.getData()
+					.toString());
 		}
 
 		// Set up action bar
@@ -93,11 +94,12 @@ public class DetailsActivity extends SherlockFragmentActivity {
 
 	private Integer getCurrentCollection(List<Integer> collectionList) {
 		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+		CollectionAdapter ca = new CollectionAdapter(
+				dbWrangler.getUserDbAdapter());
 		Integer defaultColId = ca.fetchFirstCollectionId();
 		if (defaultColId != null) {
-			Integer collectionId = settings.getInt(
-					"collectionId", defaultColId);
+			Integer collectionId = settings
+					.getInt("collectionId", defaultColId);
 			if (!ca.collectionExists(collectionId.toString())) {
 				collectionId = ca.fetchFirstCollectionId();
 			}
@@ -110,12 +112,14 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		return null;
 	}
 
-	private List<Integer> setUpViewer(String newUri, String contextUrl, ActionBar action) {
+	private List<Integer> setUpViewer(String newUri, String contextUrl,
+			ActionBar action) {
 		final DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.details_view_fragment);
 
 		viewer.updateUrl(newUri, contextUrl);
-		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+		CollectionAdapter ca = new CollectionAdapter(
+				dbWrangler.getUserDbAdapter());
 		Cursor curs = ca.fetchCollectionList();
 		cursorList.add(curs);
 		ArrayList<Integer> retList = new ArrayList<Integer>();
@@ -125,17 +129,13 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			has_next = curs.moveToNext();
 		}
 		curs.moveToFirst();
-		SimpleCursorAdapter sca = new SimpleCursorAdapter(
-				this,
-				R.layout.actionbar_spinner,
-				curs,
-				new String[] { "name" },
-				new int[] { android.R.id.text1 },
-				0);
+		SimpleCursorAdapter sca = new SimpleCursorAdapter(this,
+				R.layout.actionbar_spinner, curs, new String[] { "name" },
+				new int[] { android.R.id.text1 }, 0);
 		action.setListNavigationCallbacks(sca,
 				new ActionBar.OnNavigationListener() {
-					public boolean onNavigationItemSelected(
-							int itemPosition, long itemId) {
+					public boolean onNavigationItemSelected(int itemPosition,
+							long itemId) {
 						StringBuffer sb = new StringBuffer();
 						sb.append("DetailsActivity.setUpViewer.onNavigationItemSelected: itemPosition:");
 						sb.append(itemPosition);
@@ -147,8 +147,8 @@ public class DetailsActivity extends SherlockFragmentActivity {
 						SharedPreferences settings = getSharedPreferences(
 								PREFS_NAME, 0);
 						SharedPreferences.Editor editor = settings.edit();
-						editor.putInt(
-								"collectionId", ((Long) itemId).intValue());
+						editor.putInt("collectionId",
+								((Long) itemId).intValue());
 						editor.commit();
 						return true;
 					}
@@ -168,14 +168,12 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			SearchView searchView = (SearchView) searchItem.getActionView();
 			if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
 				searchView.setIconifiedByDefault(false);
-			}
-			else {
+			} else {
 				searchView.setIconifiedByDefault(true);
 			}
-			SearchManager searchManager = (SearchManager) getSystemService(
-					Context.SEARCH_SERVICE);
-			searchView.setSearchableInfo(
-					searchManager.getSearchableInfo(getComponentName()));
+			SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+			searchView.setSearchableInfo(searchManager
+					.getSearchableInfo(getComponentName()));
 		}
 		return true;
 	}
@@ -191,7 +189,6 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			cursor.close();
 		}
 	}
-
 
 	private void openDb() {
 		if (dbWrangler == null) {
@@ -218,52 +215,51 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-			case R.id.menu_ogl:
-				Intent showContent = new Intent(getApplicationContext(),
-						DetailsActivity.class);
-				showContent.setData(Uri.parse("pfsrd://Open Game License/OGL"));
-				startActivity(showContent);
-				return true;
-			case R.id.menu_cul:
-				showContent = new Intent(getApplicationContext(),
-						DetailsActivity.class);
-				showContent.setData(Uri.parse("pfsrd://Open Game License/Community Use License"));
-				startActivity(showContent);
-				return true;
-			case R.id.menu_toggle_toc:
-				DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
+		case R.id.menu_ogl:
+			Intent showContent = new Intent(getApplicationContext(),
+					DetailsActivity.class);
+			showContent.setData(Uri.parse("pfsrd://Open Game License/OGL"));
+			startActivity(showContent);
+			return true;
+		case R.id.menu_cul:
+			showContent = new Intent(getApplicationContext(),
+					DetailsActivity.class);
+			showContent.setData(Uri
+					.parse("pfsrd://Open Game License/Community Use License"));
+			startActivity(showContent);
+			return true;
+		case R.id.menu_toggle_toc:
+			DetailsViewFragment viewer = (DetailsViewFragment) getSupportFragmentManager()
 					.findFragmentById(R.id.details_view_fragment);
-				WebView view = viewer.getWebView();
-				SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-				SharedPreferences.Editor editor = settings.edit(); 
-				boolean showToc = settings.getBoolean("showToc", true);
-				if(showToc) {
-					editor.putBoolean("showToc", false);
-					view.loadUrl("javascript:window.psrd_toc.hide()");
+			WebView view = viewer.getWebView();
+			SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+			SharedPreferences.Editor editor = settings.edit();
+			boolean showToc = settings.getBoolean("showToc", true);
+			if (showToc) {
+				editor.putBoolean("showToc", false);
+				view.loadUrl("javascript:window.psrd_toc.hide()");
+			} else {
+				editor.putBoolean("showToc", true);
+				if (PathfinderOpenReferenceActivity.isTabletLayout(this)) {
+					view.loadUrl("javascript:window.psrd_toc.side()");
+				} else {
+					view.loadUrl("javascript:window.psrd_toc.full()");
 				}
-				else {
-					editor.putBoolean("showToc", true);
-					if(PathfinderOpenReferenceActivity.isTabletLayout(this)) {
-						view.loadUrl("javascript:window.psrd_toc.side()");
-					}
-					else {
-						view.loadUrl("javascript:window.psrd_toc.full()");
-					}
-				}
-				editor.commit();
-				return true;
-			case android.R.id.home:
-				// app icon in action bar clicked; go home
-				Intent intent = new Intent(this,
-						PathfinderOpenReferenceActivity.class);
-				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				startActivity(intent);
-				return true;
-			case R.id.menu_search:
-				this.onSearchRequested();
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
+			}
+			editor.commit();
+			return true;
+		case android.R.id.home:
+			// app icon in action bar clicked; go home
+			Intent intent = new Intent(this,
+					PathfinderOpenReferenceActivity.class);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
+			return true;
+		case R.id.menu_search:
+			this.onSearchRequested();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
 		}
 	}
 }

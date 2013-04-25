@@ -54,7 +54,8 @@ public class SearchAdapter {
 			sb.append(" WHERE si.search_name like ?");
 			args.add('%' + constraint + '%');
 		}
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "si"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"si"));
 		sb.append(" GROUP BY si.search_name");
 		sb.append(" ORDER BY ss.section_sort_id, si.search_name");
 		String sql = sb.toString();
@@ -67,7 +68,8 @@ public class SearchAdapter {
 		sb.append("SELECT i.section_id, i.database, i.name, i.type, i.subtype, i.url, i.parent_id, i.parent_name");
 		sb.append(" FROM central_index i");
 		sb.append(" WHERE i.search_name like ?");
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" LIMIT 1");
 		args.add('%' + constraint + '%');
 		String sql = sb.toString();
@@ -85,7 +87,8 @@ public class SearchAdapter {
 			sb.append(" WHERE i.search_name like ?");
 			args.add('%' + constraint + '%');
 		}
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY ss.section_sort_id, i.search_name, i.section_id");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -95,7 +98,7 @@ public class SearchAdapter {
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}
-		
+
 		public static String getDatabase(Cursor cursor) {
 			return cursor.getString(1);
 		}
