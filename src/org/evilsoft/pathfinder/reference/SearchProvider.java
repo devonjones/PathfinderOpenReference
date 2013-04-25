@@ -41,7 +41,8 @@ public class SearchProvider extends ContentProvider {
 
 		if (cont) {
 			openDb();
-			c = dbWrangler.getIndexDbAdapter().getSearchAdapter().autocomplete(uri.getLastPathSegment());
+			c = dbWrangler.getIndexDbAdapter().getSearchAdapter()
+					.autocomplete(uri.getLastPathSegment().trim());
 		}
 
 		return c;

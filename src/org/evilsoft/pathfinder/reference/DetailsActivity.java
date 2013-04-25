@@ -44,7 +44,9 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		boolean showList = false; // Phone only
 		if (Intent.ACTION_SEARCH.equals(launchingIntent.getAction())) {
 			String query = launchingIntent.getStringExtra(SearchManager.QUERY);
-			int count = dbWrangler.getIndexDbAdapter().getSearchAdapter().countSearchArticles(query);
+			query = query.trim();
+			int count = dbWrangler.getIndexDbAdapter().getSearchAdapter()
+					.countSearchArticles(query);
 			if (count == 1) {
 				newUrl = buildSearchUrl(query);
 			} else {
@@ -179,7 +181,8 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	}
 
 	public String buildSearchUrl(String searchText) {
-		Cursor cursor = dbWrangler.getIndexDbAdapter().getSearchAdapter().getSingleSearchArticle(searchText);
+		Cursor cursor = dbWrangler.getIndexDbAdapter().getSearchAdapter()
+				.getSingleSearchArticle(searchText.trim());
 		try {
 			cursor.moveToFirst();
 			String url = SearchAdapter.SearchUtils.getUrl(cursor);

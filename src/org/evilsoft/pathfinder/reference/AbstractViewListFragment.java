@@ -113,7 +113,8 @@ public abstract class AbstractViewListFragment extends SherlockListFragment impl
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].equals("Search")) {
 			if (parts.length == 4) {
-				Cursor searchcurs = dbWrangler.getIndexDbAdapter().getSearchAdapter().search(parts[3]);
+				Cursor searchcurs = dbWrangler.getIndexDbAdapter()
+						.getSearchAdapter().search(parts[3].trim());
 				cursorList.add(searchcurs);
 				currentListAdapter = new SearchListAdapter(getActivity().getApplicationContext(), searchcurs);
 				if (currentListAdapter.isEmpty()) {
