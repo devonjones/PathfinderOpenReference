@@ -11,44 +11,54 @@ import android.preference.PreferenceManager;
 
 public class FilterPreferenceManager {
 
-	public static String getSourceFilter(Context context, List<String> args, String conjunction) {
+	public static String getSourceFilter(Context context, List<String> args,
+			String conjunction) {
 		return getSourceFilter(context, args, conjunction, null);
 	}
 
-	public static String getSourceFilter(Context context, List<String> args, String conjunction, String tableName) {
+	public static String getSourceFilter(Context context, List<String> args,
+			String conjunction, String tableName) {
 		StringBuffer filter = new StringBuffer();
 		ArrayList<String> sourceList = new ArrayList<String>();
-		
+
 		// The default values must be set here to bypass a bug in Android
-		// See http://stackoverflow.com/questions/3907830/android-checkboxpreference-default-value
+		// See
+		// http://stackoverflow.com/questions/3907830/android-checkboxpreference-default-value
 		PreferenceManager.setDefaultValues(context, R.xml.source_filter, false);
-		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-		
-		if(preferences.getBoolean("source_APG", true) == false) {
+		SharedPreferences preferences = PreferenceManager
+				.getDefaultSharedPreferences(context);
+
+		if (preferences.getBoolean("source_APG", true) == false) {
 			sourceList.add("Advanced Player's Guide");
 		}
-		if(preferences.getBoolean("source_ARG", true) == false) {
+		if (preferences.getBoolean("source_ARG", true) == false) {
 			sourceList.add("Advanced Race Guide");
 		}
-		if(preferences.getBoolean("source_UC", true) == false) {
+		if (preferences.getBoolean("source_UC", true) == false) {
 			sourceList.add("Ultimate Combat");
 		}
-		if(preferences.getBoolean("source_UM", true) == false) {
+		if (preferences.getBoolean("source_UE", true) == false) {
+			sourceList.add("Ultimate Equipment");
+		}
+		if (preferences.getBoolean("source_UM", true) == false) {
 			sourceList.add("Ultimate Magic");
 		}
-		if(preferences.getBoolean("source_B1", true) == false) {
+		if (preferences.getBoolean("source_B1", true) == false) {
 			sourceList.add("Bestiary");
 		}
-		if(preferences.getBoolean("source_B2", true) == false) {
+		if (preferences.getBoolean("source_B2", true) == false) {
 			sourceList.add("Bestiary 2");
 		}
-		if(preferences.getBoolean("source_B3", true) == false) {
+		if (preferences.getBoolean("source_B3", true) == false) {
 			sourceList.add("Bestiary 3");
 		}
-		if(preferences.getBoolean("source_GMG", true) == false) {
+		if (preferences.getBoolean("source_GMG", true) == false) {
 			sourceList.add("Game Mastery Guide");
 		}
-		if(sourceList.size() > 0) {
+		if (preferences.getBoolean("source_NPC", true) == false) {
+			sourceList.add("NPC Codex");
+		}
+		if (sourceList.size() > 0) {
 			// Create the start of the WHERE/AND clause
 			filter.append(" ");
 			filter.append(conjunction);
@@ -59,7 +69,7 @@ public class FilterPreferenceManager {
 			}
 			filter.append("source NOT IN (");
 			String comma = "";
-			for(int numFilters = 0; numFilters < sourceList.size(); numFilters++) {
+			for (int numFilters = 0; numFilters < sourceList.size(); numFilters++) {
 				filter.append(comma);
 				filter.append("?");
 				comma = ", ";
