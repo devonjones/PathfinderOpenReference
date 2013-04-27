@@ -5,7 +5,7 @@ import org.acra.annotation.ReportsCrashes;
 
 import android.app.Application;
 
-@ReportsCrashes(formKey = "dGNUN1FrMjdBSm02bUVrX1JYVzVMamc6MQ", socketTimeout = 5000)
+@ReportsCrashes(formKey = "dHdZVlYzOGRMaDRQajNReXR5QzBiV1E6MQ", socketTimeout = 5000)
 public class PathfinderOpenReferenceApplication extends Application {
 	@Override
 	public void onCreate() {
