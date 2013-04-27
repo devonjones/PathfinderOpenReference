@@ -31,7 +31,9 @@ public class LinkRenderer extends Renderer {
 			if (has_next) {
 				linkUrl = lcurs.getString(1);
 				render = lcurs.getInt(2) == 0;
-				Cursor ccurs = dbWrangler.getIndexDbAdapter().getCountAdapter().fetchByUrl(linkUrl);
+				Cursor ccurs = dbWrangler.getIndexDbAdapter().getCountAdapter()
+						.fetchByUrl(linkUrl);
+				ccurs.moveToFirst();
 				try {
 					if (CountAdapter.CountUtils.getCount(ccurs) > 0) {
 						exists = true;
