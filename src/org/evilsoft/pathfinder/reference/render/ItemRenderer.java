@@ -3,6 +3,7 @@ package org.evilsoft.pathfinder.reference.render;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.ItemAdapter;
 
+import android.annotation.SuppressLint;
 import android.database.Cursor;
 
 public class ItemRenderer extends StatBlockRenderer {
@@ -21,7 +22,6 @@ public class ItemRenderer extends StatBlockRenderer {
 	public String renderDetails() {
 		StringBuffer sb = new StringBuffer();
 		sb.append(renderItemDetails());
-		sb.append(renderItemMisc());
 		return sb.toString();
 	}
 
@@ -43,17 +43,10 @@ public class ItemRenderer extends StatBlockRenderer {
 						ItemAdapter.ItemUtils.getWeight(cursor)));
 				// TODO: Construction and Description reversed due to child
 				// rendering
-				sb.append(renderStatBlockBreaker("Construction"));
-				sb.append(addField("Requirements",
-						ItemAdapter.ItemUtils.getRequirements(cursor), false));
-				sb.append(addField("Skill",
-						ItemAdapter.ItemUtils.getSkill(cursor), false));
-				sb.append(addField("CR Increase",
-						ItemAdapter.ItemUtils.getCrIncrease(cursor), false));
-				sb.append(addField("Cost",
-						ItemAdapter.ItemUtils.getCost(cursor)));
+				sb.append(renderItemMisc());
+				sb.append(renderConstruction(cursor));
 				sb.append(renderStatBlockBreaker("Description"));
-				this.suppressNextTitle = true;
+				// this.suppressNextTitle = true;
 			}
 			return sb.toString();
 		} finally {
@@ -61,23 +54,49 @@ public class ItemRenderer extends StatBlockRenderer {
 		}
 	}
 
+	public String renderConstruction(Cursor cursor) {
+		StringBuffer sb = new StringBuffer();
+		sb.append(addField("Requirements",
+				ItemAdapter.ItemUtils.getRequirements(cursor), false));
+		sb.append(addField("Skill", ItemAdapter.ItemUtils.getSkill(cursor),
+				false));
+		sb.append(addField("CR Increase",
+				ItemAdapter.ItemUtils.getCrIncrease(cursor), false));
+		sb.append(addField("Cost", ItemAdapter.ItemUtils.getCost(cursor)));
+		String content = sb.toString();
+		if (!"".equals(content)) {
+			content = renderStatBlockBreaker("Construction") + content;
+		}
+		return content;
+	}
+
+	@SuppressLint("DefaultLocale")
 	public String renderItemMisc() {
 		Cursor cursor = bookDbAdapter.getItemAdapter().getItemMisc(sectionId);
 		try {
 			StringBuffer sb = new StringBuffer();
+			StringBuffer titleSb = new StringBuffer();
 			boolean has_next = cursor.moveToFirst();
 			String lastSection = "";
-			if (has_next) {
+			while (has_next) {
 				String currentSection = ItemAdapter.ItemMiscUtils
 						.getSubsection(cursor);
-				if (!lastSection.equals(currentSection)) {
-					sb.append(renderStatBlockBreaker("currentSection"));
-					lastSection = currentSection;
+				if (currentSection.toLowerCase().equals(name.toLowerCase())) {
+					titleSb.append(addField(
+							ItemAdapter.ItemMiscUtils.getField(cursor),
+							ItemAdapter.ItemMiscUtils.getValue(cursor), false));
+				} else {
+					if (!lastSection.equals(currentSection)) {
+						sb.append(renderStatBlockBreaker(currentSection));
+						lastSection = currentSection;
+					}
+					sb.append(addField(
+							ItemAdapter.ItemMiscUtils.getField(cursor),
+							ItemAdapter.ItemMiscUtils.getValue(cursor), false));
 				}
-				sb.append(addField(ItemAdapter.ItemMiscUtils.getField(cursor),
-						ItemAdapter.ItemMiscUtils.getValue(cursor), false));
+				has_next = cursor.moveToNext();
 			}
-			return sb.toString();
+			return titleSb.toString() + sb.toString();
 		} finally {
 			cursor.close();
 		}
