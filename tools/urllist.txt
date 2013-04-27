@@ -6811,6 +6811,7 @@ pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest/Adult
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest/Ancient
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest/Dragon/Imperial/Forest
+pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest/Dragon/Imperial/Forest/Age Category
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest/Dragon/Imperial/Forest/Special Abilities
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest/Dragon/Imperial/Forest/Special Abilities/Change Shape
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Forest/Dragon/Imperial/Forest/Special Abilities/Destructive Crush
@@ -6823,6 +6824,7 @@ pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea/Adult
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea/Ancient
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea/Dragon/Imperial/Sea
+pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea/Dragon/Imperial/Sea/Age Category
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea/Dragon/Imperial/Sea/Special Abilities
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea/Dragon/Imperial/Sea/Special Abilities/Change Shape
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sea/Dragon/Imperial/Sea/Special Abilities/Sea Strider
@@ -6834,6 +6836,7 @@ pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky/Adult
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky/Ancient
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky/Dragon/Imperial/Sky
+pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky/Dragon/Imperial/Sky/Age Category
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky/Dragon/Imperial/Sky/Special Abilities
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky/Dragon/Imperial/Sky/Special Abilities/Borne Aloft
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sky/Dragon/Imperial/Sky/Special Abilities/Celestial Emissary
@@ -6846,6 +6849,7 @@ pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign/Adult
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign/Ancient
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign/Dragon/Imperial/Sovereign
+pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign/Dragon/Imperial/Sovereign/Age Category
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign/Dragon/Imperial/Sovereign/Special Abilities
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign/Dragon/Imperial/Sovereign/Special Abilities/Change Shape
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Sovereign/Dragon/Imperial/Sovereign/Special Abilities/Dogmatic Discordance
@@ -6857,6 +6861,7 @@ pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld/Adult
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld/Ancient
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld/Dragon/Imperial/Underworld
+pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld/Dragon/Imperial/Underworld/Age Category
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld/Dragon/Imperial/Underworld/Special Abilities
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld/Dragon/Imperial/Underworld/Special Abilities/Adamantine Claws
 pfsrd://Bestiary 3/Monsters/Dragon/Imperial/Underworld/Dragon/Imperial/Underworld/Special Abilities/Change Shape
@@ -7204,7 +7209,7 @@ pfsrd://Bestiary 3/Monsters/Jubjub Bird/Special Abilities/Planar Acclimation
 pfsrd://Bestiary 3/Monsters/Jubjub Bird/Special Abilities/Shriek
 pfsrd://Bestiary 3/Monsters/Kamadan
 pfsrd://Bestiary 3/Monsters/Kamadan/Dusk Kamadan (CR +1)
-pfsrd://Bestiary 3/Monsters/Kamadan/Dusk Kamadan (CR +1)/Dusk Kamadan Snake Venom
+pfsrd://Bestiary 3/Monsters/Kamadan/Dusk Kamadan (CR +1)/Dusk Kamadan Venom
 pfsrd://Bestiary 3/Monsters/Kamadan/Polar Kamadan (CR +2)
 pfsrd://Bestiary 3/Monsters/Kamadan/Special Abilities
 pfsrd://Bestiary 3/Monsters/Kamadan/Special Abilities/Breath Weapon
@@ -7897,6 +7902,7 @@ pfsrd://Bestiary/Monsters/Angel/Solar
 pfsrd://Bestiary/Monsters/Angel/Solar/Special Abilities
 pfsrd://Bestiary/Monsters/Angel/Solar/Special Abilities/Slaying Arrow
 pfsrd://Bestiary/Monsters/Animated Object
+pfsrd://Bestiary/Monsters/Animated Object/Size
 pfsrd://Bestiary/Monsters/Animated Object/Special Abilities
 pfsrd://Bestiary/Monsters/Animated Object/Special Abilities/Construction Points
 pfsrd://Bestiary/Monsters/Ankheg
@@ -7923,6 +7929,7 @@ pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Queen (+2 CR)
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Special Abilities/Poison
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Special Abilities/Poison/Giant Ant Venom
+pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Worker (-1 CR)
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Ant/Giant/Worker (andndash;1 CR)
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Swarm/Army Ant
 pfsrd://Bestiary/Monsters/Army Ant Swarm/Swarm/Army Ant/Special Abilities
@@ -8025,9 +8032,11 @@ pfsrd://Bestiary/Monsters/Centipede/Giant
 pfsrd://Bestiary/Monsters/Centipede/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Centipede/Giant/Special Abilities/Poison (EX)
 pfsrd://Bestiary/Monsters/Centipede/Giant/Special Abilities/Poison (EX)/Giant Centipede Venom
+pfsrd://Bestiary/Monsters/Centipede/Giant/Species
 pfsrd://Bestiary/Monsters/Chimera
 pfsrd://Bestiary/Monsters/Chimera/Special Abilities
 pfsrd://Bestiary/Monsters/Chimera/Special Abilities/Breath Weapon
+pfsrd://Bestiary/Monsters/Chimera/Special Abilities/Breath Weapon/d10
 pfsrd://Bestiary/Monsters/Choker
 pfsrd://Bestiary/Monsters/Choker/Special Abilities
 pfsrd://Bestiary/Monsters/Choker/Special Abilities/Quickness
@@ -8051,6 +8060,7 @@ pfsrd://Bestiary/Monsters/Crab
 pfsrd://Bestiary/Monsters/Crab/Giant
 pfsrd://Bestiary/Monsters/Crab/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Crab/Giant/Special Abilities/Water Dependency
+pfsrd://Bestiary/Monsters/Crab/Giant/Species
 pfsrd://Bestiary/Monsters/Crocodile
 pfsrd://Bestiary/Monsters/Crocodile/Crocodile
 pfsrd://Bestiary/Monsters/Crocodile/Crocodile/Special Abilities
@@ -8244,6 +8254,7 @@ pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black/Adult
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black
+pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Acidic Bite
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Black/Dragon/Chromatic/Black/Special Abilities/Acid Pool
@@ -8258,6 +8269,7 @@ pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue/Adult
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue/Dragon/Chromatic/Blue
+pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue/Dragon/Chromatic/Blue/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue/Dragon/Chromatic/Blue/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue/Dragon/Chromatic/Blue/Special Abilities/Desert Thirst
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Blue/Dragon/Chromatic/Blue/Special Abilities/Electricity Aura
@@ -8271,6 +8283,7 @@ pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green/Adult
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green/Dragon/Chromatic/Green
+pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green/Dragon/Chromatic/Green/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green/Dragon/Chromatic/Green/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green/Dragon/Chromatic/Green/Special Abilities/Awaken Treants
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Green/Dragon/Chromatic/Green/Special Abilities/Camouflage
@@ -8284,6 +8297,7 @@ pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red/Adult
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red/Dragon/Chromatic/Red
+pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red/Dragon/Chromatic/Red/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red/Dragon/Chromatic/Red/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red/Dragon/Chromatic/Red/Special Abilities/Fire Aura
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/Red/Dragon/Chromatic/Red/Special Abilities/Incinerate
@@ -8296,6 +8310,7 @@ pfsrd://Bestiary/Monsters/Dragon/Chromatic/White
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/White/Adult
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/White/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/White/Dragon/Chromatic/White
+pfsrd://Bestiary/Monsters/Dragon/Chromatic/White/Dragon/Chromatic/White/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/White/Dragon/Chromatic/White/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/White/Dragon/Chromatic/White/Special Abilities/Blizzard
 pfsrd://Bestiary/Monsters/Dragon/Chromatic/White/Dragon/Chromatic/White/Special Abilities/Cold Aura
@@ -8326,6 +8341,7 @@ pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass/Adult
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass/Dragon/Metallic/Brass
+pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass/Dragon/Metallic/Brass/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass/Dragon/Metallic/Brass/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass/Dragon/Metallic/Brass/Special Abilities/Desert Wind
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Brass/Dragon/Metallic/Brass/Special Abilities/Fire Aura
@@ -8339,6 +8355,7 @@ pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze/Adult
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze/Dragon/Metallic/Bronze
+pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze/Dragon/Metallic/Bronze/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze/Dragon/Metallic/Bronze/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze/Dragon/Metallic/Bronze/Special Abilities/Change Shape
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Bronze/Dragon/Metallic/Bronze/Special Abilities/Electricity Aura
@@ -8353,6 +8370,7 @@ pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper/Adult
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper/Dragon/Metallic/Copper
+pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper/Dragon/Metallic/Copper/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper/Dragon/Metallic/Copper/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper/Dragon/Metallic/Copper/Special Abilities/Climb Stone
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Copper/Dragon/Metallic/Copper/Special Abilities/Deadly Joke
@@ -8367,6 +8385,7 @@ pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold/Adult
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold/Dragon/Metallic/Gold
+pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold/Dragon/Metallic/Gold/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold/Dragon/Metallic/Gold/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold/Dragon/Metallic/Gold/Special Abilities/Change Shape
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Gold/Dragon/Metallic/Gold/Special Abilities/Detect Gems
@@ -8381,6 +8400,7 @@ pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver/Adult
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver/Ancient
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver
+pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver/Age Category
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver/Special Abilities
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver/Special Abilities/Change Shape
 pfsrd://Bestiary/Monsters/Dragon/Metallic/Silver/Dragon/Metallic/Silver/Special Abilities/Cloudwalking
@@ -8447,6 +8467,7 @@ pfsrd://Bestiary/Monsters/Eel/Giant Moray/Special Abilities/Gnaw
 pfsrd://Bestiary/Monsters/Elemental
 pfsrd://Bestiary/Monsters/Elemental/Air
 pfsrd://Bestiary/Monsters/Elemental/Air/Elder
+pfsrd://Bestiary/Monsters/Elemental/Air/Elder/Elemental
 pfsrd://Bestiary/Monsters/Elemental/Air/Elemental/Air
 pfsrd://Bestiary/Monsters/Elemental/Air/Elemental/Air/Special Abilities
 pfsrd://Bestiary/Monsters/Elemental/Air/Elemental/Air/Special Abilities/Air Mastery
@@ -8457,6 +8478,7 @@ pfsrd://Bestiary/Monsters/Elemental/Air/Medium
 pfsrd://Bestiary/Monsters/Elemental/Air/Small
 pfsrd://Bestiary/Monsters/Elemental/Earth
 pfsrd://Bestiary/Monsters/Elemental/Earth/Elder
+pfsrd://Bestiary/Monsters/Elemental/Earth/Elder/Elemental
 pfsrd://Bestiary/Monsters/Elemental/Earth/Elemental/Earth
 pfsrd://Bestiary/Monsters/Elemental/Earth/Elemental/Earth/Special Abilities
 pfsrd://Bestiary/Monsters/Elemental/Earth/Elemental/Earth/Special Abilities/Earth Glide
@@ -8468,6 +8490,7 @@ pfsrd://Bestiary/Monsters/Elemental/Earth/Medium
 pfsrd://Bestiary/Monsters/Elemental/Earth/Small
 pfsrd://Bestiary/Monsters/Elemental/Fire
 pfsrd://Bestiary/Monsters/Elemental/Fire/Elder
+pfsrd://Bestiary/Monsters/Elemental/Fire/Elder/Elemental
 pfsrd://Bestiary/Monsters/Elemental/Fire/Elemental/Fire
 pfsrd://Bestiary/Monsters/Elemental/Fire/Greater
 pfsrd://Bestiary/Monsters/Elemental/Fire/Huge
@@ -8476,6 +8499,7 @@ pfsrd://Bestiary/Monsters/Elemental/Fire/Medium
 pfsrd://Bestiary/Monsters/Elemental/Fire/Small
 pfsrd://Bestiary/Monsters/Elemental/Water
 pfsrd://Bestiary/Monsters/Elemental/Water/Elder
+pfsrd://Bestiary/Monsters/Elemental/Water/Elder/Elemental
 pfsrd://Bestiary/Monsters/Elemental/Water/Elemental/Water
 pfsrd://Bestiary/Monsters/Elemental/Water/Elemental/Water/Special Abilities
 pfsrd://Bestiary/Monsters/Elemental/Water/Elemental/Water/Special Abilities/Drench
@@ -8886,6 +8910,7 @@ pfsrd://Bestiary/Monsters/Lycanthrope/Werewolf/Werewolf
 pfsrd://Bestiary/Monsters/Lycanthrope/Werewolf/Werewolf (Hybrid Form)
 pfsrd://Bestiary/Monsters/Lycanthrope/Werewolf/Werewolf (Hybrid Form)/Lycanthropic Player Characters
 pfsrd://Bestiary/Monsters/Manticore
+pfsrd://Bestiary/Monsters/Manticore/Manticore's Mate
 pfsrd://Bestiary/Monsters/Manticore/Special Abilities
 pfsrd://Bestiary/Monsters/Manticore/Special Abilities/Spikes
 pfsrd://Bestiary/Monsters/Mantis/Giant
@@ -9092,6 +9117,7 @@ pfsrd://Bestiary/Monsters/Scorpion/Giant
 pfsrd://Bestiary/Monsters/Scorpion/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Scorpion/Giant/Special Abilities/Poison
 pfsrd://Bestiary/Monsters/Scorpion/Giant/Special Abilities/Poison/Giant Scorpion Venom
+pfsrd://Bestiary/Monsters/Scorpion/Giant/Species
 pfsrd://Bestiary/Monsters/Sea Hag
 pfsrd://Bestiary/Monsters/Sea Hag/Special Abilities
 pfsrd://Bestiary/Monsters/Sea Hag/Special Abilities/Evil Eye
@@ -9194,6 +9220,7 @@ pfsrd://Bestiary/Monsters/Spider/Giant
 pfsrd://Bestiary/Monsters/Spider/Giant/Special Abilities
 pfsrd://Bestiary/Monsters/Spider/Giant/Special Abilities/Poison
 pfsrd://Bestiary/Monsters/Spider/Giant/Special Abilities/Poison/Giant Spider Venom
+pfsrd://Bestiary/Monsters/Spider/Giant/Species
 pfsrd://Bestiary/Monsters/Squid
 pfsrd://Bestiary/Monsters/Squid/Giant
 pfsrd://Bestiary/Monsters/Squid/Squid
@@ -13719,6 +13746,7 @@ pfsrd://Game Mastery Guide
 pfsrd://Game Mastery Guide/Monsters
 pfsrd://Game Mastery Guide/Monsters/Adventurers
 pfsrd://Game Mastery Guide/Monsters/Adventurers/Battle Mage
+pfsrd://Game Mastery Guide/Monsters/Adventurers/Battle Mage/Prohibited Schools
 pfsrd://Game Mastery Guide/Monsters/Adventurers/Monster Hunter
 pfsrd://Game Mastery Guide/Monsters/Adventurers/Tomb Raider
 pfsrd://Game Mastery Guide/Monsters/Brigands
@@ -14153,69 +14181,114 @@ pfsrd://NPC Codex/Rules/Core Class NPCs
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Arcane Experimenter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Arcane Experimenter/Krida Grichenwald
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Axe Warrior
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Cannibalistic Hunter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Cannibalistic Hunter/Lanani Shabu
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Death Dealer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Dog Rider
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Double Axe Fury
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Double Axe Fury/Graun Quor
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Dwarven Rager
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Forest Guardian
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Giant Slayer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Giant Slayer/Jemar Crowell
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Glaive Rager
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Graceful Slayer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Graceful Slayer/Sibusiswe Njai
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Life Stealer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Life Stealer/Xavier Durant
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Raging Swimmer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Raging Swimmer/Dorremera Salin
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Refined Reaver
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Savage Mercenary
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Savage Mercenary/Arjana
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Savage Rider
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Savage Rider/Finnogh Llew
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Scarred Wanderer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Scarred Wanderer/Gorgu Stonesplitter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Sundering Axe
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Undead Hunter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Undead Hunter/Torain Mirno
 pfsrd://NPC Codex/Rules/Core Class NPCs/Barbarian/Barbarians/Wild Lancer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Chameleon
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Chameleon/Arweena Melkoreth
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Con Artist
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Con Artist/Agail Enthess
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Courtesan
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Courtesan/Siwar Kurash
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Court Poet
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Court Poet/Eksel Mertand
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Cruel Instructor
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Cruel Instructor/Ormal Ardem
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Doomsayer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Doomsayer/Asha Garcer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Gambler
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Gambler/Meliski Traundor
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Lion Tamer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Lion Tamer/Yimni Zushergal
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Local Celebrity
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Local Celebrity/Tremin Kaylos
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Master Spy
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Master Spy/Marlit Telamin
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Notorious Foil
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Notorious Foil/Milanet Rutteppi
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Rival Explorer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Rival Explorer/Rhortia Mooldon
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Seance Medium
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Seance Medium/Halbert Nerik
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Spellsword
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Spellsword/Palos Kendrosi
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Street Artist
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Street Artist/Telkineel "Alleycat" Orbast
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Street Performer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Street Performer/Jelks the Piper
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Taunting Comedian
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Taunting Comedian/Kormick Veldross
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Tavern Singer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Tavern Singer/Calvos
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Tribal Leader
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Tribal Leader/Esaye Polbele
 pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Tunnel Drummer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Bard/Bards/Tunnel Drummer/Takina Berzan
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Carousing Champion
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Carousing Champion/Eggal Torkelson
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Death Priest
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Death Priest/Relyk Zahim
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Elemental Priest
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Fire Cleric
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Fire Cleric/Aleksion Coric
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Fire Diabolist
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Herald of Armageddon
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Herald of Armageddon/Gavramha Batzur
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Master of Undeath
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Master of Undeath/Thamo Hakasa
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Mercenary Healer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Mercenary Healer/Zened Mirces
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Mother of Beasts
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Mother of Beasts/Empiri Chalemede
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Noble Crusader
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Noble Crusader/Oriedesme Eisbrin
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Priest of Oblivion
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Profane General
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Profane General/Birn Hengdel
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Sacred Guardian
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Sacred Guardian/Pindle Finberry
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Scholar Priest
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Shadow Cleric
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Shadow Cleric/Soufara Ebonwind
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Shoreline Cleric
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Trickster Priest
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Trickster Priest/Unam Clarefield
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Vivisectionist Cleric
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Vivisectionist Cleric/Melisai Hesani
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/War Priest
 pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Wrath Priest
+pfsrd://NPC Codex/Rules/Core Class NPCs/Cleric/Clerics/Wrath Priest/Aznek
 pfsrd://NPC Codex/Rules/Core Class NPCs/Core Classes
 pfsrd://NPC Codex/Rules/Core Class NPCs/Core Classes/Allies
 pfsrd://NPC Codex/Rules/Core Class NPCs/Core Classes/Antagonists
@@ -14235,179 +14308,292 @@ pfsrd://NPC Codex/Rules/Core Class NPCs/Core Classes/Wizard
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Castaway
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Castaway/Passago
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Cavern Defender
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Cavern Defender/Zirul
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Creeping Death
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Creeping Death/Genyielt Graycloak
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Dark Nature Priest
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Earthfather
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Evasive Slip
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Evasive Slip/Velun The Slip
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Fey friend
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Fey friend/Pai Spiritwind
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Fury of Flame
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Fury of Flame/Karuth Firesoul
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Hateful Scourge
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Hateful Scourge/Pateba Blackmind
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Initiate of Flame
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Island Defender
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Island Defender/Tasseira Sprayspirit
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Mistress of High Places
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Mistress of High Places/Yala of the High Places
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Mud Shaman
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Mud Shaman/Kiro
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Rage Flame
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Sail Master
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Savage Plant sage
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Sea Captain
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Sea Captain/Edal
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Sylvan Protector
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Taiga Stalker
 pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Water Merchant
+pfsrd://NPC Codex/Rules/Core Class NPCs/Druid/Druids/Water Merchant/Sasrukutenek
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Adventuring Blacksmith
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Adventuring Blacksmith/Vika Beliskar
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Arcane Pretender
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Arcane Pretender/Flenta Casalina
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Brutal Warlord
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Brutal Warlord/Livia Coldheart
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Cautious Archer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Cautious Archer/Danathel Yessillion
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Crime Lord
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Crime Lord/Tontelizi Legbreaker
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Daring Bravo
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Daring Bravo/Tala Hankelthorn
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Dwarven Arbalester
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Dwarven Arbalester/Stigr Harrowstare
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Elven Recluse
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Elven Recluse/Selindril Longstrider
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Failed Disciple
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Failed Disciple/Urguk the Chosen
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Fastidious Sharpshooter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Griffon Rider
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Griffon Rider/Jalynel Masathal
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Halfling Slinger
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Halfling Slinger/Tomin Blanderbass
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Infernal Champion
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Murderous Halfling
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Murderous Halfling/Lisanne Jelansil
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Pirate King
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Pirate King/Dalithan of the Black Hand
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Scheming Fencer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Scheming Fencer/Eralin Lisinar
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/ShieldBreaker
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/ShieldBreaker/Rogar Talgast
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Spell Hunter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Superstitious Mercenary
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Superstitious Mercenary/Corwyn Klas
 pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Traitorous Brigand
+pfsrd://NPC Codex/Rules/Core Class NPCs/Fighter/Fighters/Traitorous Brigand/Rorn the Black
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Ageless Master
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Ageless Master/Oyonchol
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Axe Dancer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Bullying Brawler
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Careful Initiate
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Cautious Hunter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Cautious Hunter/Tiaret the Huntress
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Cruel Devotee
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Grove Guardian
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Grove Guardian/Xexilia Aishinkai
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Harrying Brute
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Horse Monk
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Horse Monk/Asim the Crimson Bandit
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Improvised Hurler
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Improvised Hurler/Creighton Flintfinger
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Little Fist
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Little Fist/Laoshi
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Monastic Sniper
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Monastic Sniper/Tourindall Andarael
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Nimble Shuriken Thrower
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Poisonous Performer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Poisonous Performer/Natessa the Angel of Death
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Spry Ambusher
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Steadfast Defender
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Steadfast Defender/Branock Ulgrehn
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Swift Brawler
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Swift Brawler/Ryoto
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Sword Savant
+pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Sword Savant/Ehtyar Nasta
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Vigilant Bodyguard
 pfsrd://NPC Codex/Rules/Core Class NPCs/Monk/Monks/Warren Chief
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Axe Lord
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Axe Lord/Edager Graybeard
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Callous Rake
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Callous Rake/Tristram Reis
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Demon Hunter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Desert Protector
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Desert Protector/Oriana Sallic
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Dog rider Knight
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Dragon Smiter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Dragon Smiter/Telthor Grimblade
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Elven Honorblade
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Elven Honorblade/Jatha Ventoth
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Forge Rider
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Forge Rider/Kelgul Klagan
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Furious Crusader
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Furious Crusader/Hellin Tallhallow
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Giant Hunter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Giant Hunter/Neln Belgurorn
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Hammer of Justice
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Haughty Avenger
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Haughty Avenger/Nyalil Stormstrike
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Holy Archer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Honorable Outcast
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Mithral Master
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Mithral Master/Kallisi Kul
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Mounted Paragon
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Mounted Paragon/Velj Thundari
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Pious Guard
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Pious Guard/Delphos Hesara
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Rider of the Steppe
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Rider of the Steppe/Leisair Truemark
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Saintly Knight
+pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Saintly Knight/Tregor the Just
 pfsrd://NPC Codex/Rules/Core Class NPCs/Paladin/Paladins/Skirmishing Crusader
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Angel Slayer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Angel Slayer/Wrathack
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Border Guard
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Border Guard/Vardeeka
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Bounty Hunter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Bounty Hunter/Alec Renatus
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Daredevil Hunter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Daredevil Hunter/Thalion Skytale
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Desert Stalker
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Desert Stalker/Arkesh
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Fiendslayer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Fiendslayer/Elizaveta Oriones
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Giant-Killer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Giant-Killer/Mirshi Knee-Splitter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Golem-Breaker
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Golem-Breaker/Esheyna
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Mage Hunter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Mountaineer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Mounted Archer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Mounted Archer/Zarishen
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Novice Scout
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Novice Scout/Atanya
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Orc slayer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Pirate Queen
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Pirate Queen/Pialoosa
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Poacher
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Poacher/Brayvek the Butcher
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Supreme Hunter
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Swampwalker
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Swampwalker/Cullen Theoren
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Town Watcher
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Town Watcher/Colin Fletcher
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Tunnel Rat
 pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Undead Slayer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Ranger/Rangers/Undead Slayer/Seijal Nightbane
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Blade Lord
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Blade Lord/Yalandara
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Cave Stalker
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Cave Stalker/Galeth Redbeard
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Chain Mauler
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Chain Mauler/Peletha
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Charlatan
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Charlatan/Ezekari
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Contract Killer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Contract Killer/Mollarn the Corpsemaker
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Cutpurse
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Cutpurse/Avem the Blade
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Dagger Master
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Dagger Master/Vink the Blade
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Dancing Dervish
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Dancing Dervish/Lesath the Desert Sting
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Deadly Spy
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Deadly Spy/Kelethiros
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Death Whisperer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Death Whisperer/Wu Shen
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Dilettante
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Dilettante/Neberton the Wise
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Freelance Thief
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Freelance Thief/Hal Five-Coins
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Guild Initiate
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Guild Initiate/Felix the Twig
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Guildmaster
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Guildmaster/Olenjack the Axe
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Mage Slayer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Mage Slayer/Skanrak
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Masked Lord
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Masked Lord/Tadros the Hidden
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Skilled Sniper
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Skilled Sniper/Diata the Poacher
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Skulking Brute
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Skulking Brute/Blarta
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Trapsmith
 pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Unseen Archer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Rogue/Rogues/Unseen Archer/Roscolian
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Arisen Sorcerer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Azure Bolt Sorcerer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Azure Bolt Sorcerer/Sesserand
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Blackscale Sorcerer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Blackscale Sorcerer/Brax Swampblack
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Bloodfire Sorcerer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Bloodfire Sorcerer/Sindriza
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Bramble Sorcerer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Bramble Sorcerer/Amriel Thask
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Demon-Blooded Sorcerer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Demon-Blooded Sorcerer/Ogrik the Demon
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Diabolical Charmer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Fate-Bound Mage
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Fey Enchantress
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Fey Enchantress/Elindria
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Fiery Dragonkin
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Gem Sorcerer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Ice Mage
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Ice Mage/Matherie Tourane
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Lucky Mage
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Lucky Mage/Amaryllis Hollendock
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Mercenary Magician
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Mercenary Magician/Maron Blackthorne
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Natural Arcanist
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Natural Arcanist/Nar Losafel
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Sacred Sorcerer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Sacred Sorcerer/Evangeline de Jille
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Storm Sorcerer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Storm Sorcerer/Valendron Oparal
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Tainted Sorcerer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Trickster Mage
+pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Trickster Mage/Qualzar Jallarimple
 pfsrd://NPC Codex/Rules/Core Class NPCs/Sorcerer/Sorcerers/Whiteclaw Sorcerer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Battle Mage
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Cautious Mage
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Cautious Mage/Holdreda Danton
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Cave Wizard
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Cave Wizard/Caracheck the Caustic
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Cruel Conjurer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Cruel Conjurer/Alexi the Stern
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Deep Marshal
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Grand Necromancer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Investigator Wizard
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Jungle Wizard
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Jungle Wizard/Mandar Tamarice
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Mage Sniper
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Mage Sniper/Hiroki Darshan
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Mage Spy
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Master Universalist
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Prankster Illusionist
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Prankster Illusionist/Miet Silvervein
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Puppet Master
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Puppet Master/Radillo
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Pyromaniac Mage
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Seductive Enchanter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Seductive Enchanter/Vaeleus the Charmer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Street Magician
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Thunder Wizard
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Thunder Wizard/Zuket Amaral
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Toothy Transmuter
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Toothy Transmuter/Garashing Tusk-Taker
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Tribal Seer
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Tribal Seer/Greshek the Sighted
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Undead Creator
+pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Undead Creator/Tyrek Glodfer
 pfsrd://NPC Codex/Rules/Iconic NPCs
 pfsrd://NPC Codex/Rules/Iconic NPCs/Amiri
 pfsrd://NPC Codex/Rules/Iconic NPCs/Amiri/Iconic Barbarian
@@ -14463,6 +14649,8 @@ pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan
 pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk
 pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 1
 pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 12
+pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 12/Temple Sword
+pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 12/Temple Sword/Exotic Weapons
 pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 7
 pfsrd://NPC Codex/Rules/Iconic NPCs/Seelah
 pfsrd://NPC Codex/Rules/Iconic NPCs/Seelah/Iconic Paladin
@@ -14554,57 +14742,84 @@ pfsrd://NPC Codex/Rules/Prestige Class NPCs
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers/Chaos Arrow
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers/Chaos Arrow/Tris Darkjester
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers/Green Warden
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers/Tournament Champion
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers/Tournament Champion/Clairian Arrowsong
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers/Undead Bane
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Archer/Arcane Archers/Undead Bane/Sorina Kalthorin
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters/Arcanothief
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters/Arcanothief/Jilis Quickfingers
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters/God Stealer
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters/God Stealer/Bellinos
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters/Stage Magician
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters/Vaultbreaker
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Arcane Trickster/Arcane Tricksters/Vaultbreaker/Delant the Bold
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Death Initiate
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Death Initiate/Kel Sal Koth
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Fatal Axe
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Fatal Axe/Thelan Stonebiter
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Murderous Scythe
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Murderous Scythe/Zelath the Reaper
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Sacred Killer
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Assassin/Assassins/Sacred Killer/Dulg Goldeneyes
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples/Acid Terror
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples/Acid Terror/Remel Levath
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples/Dragon Chieftain
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples/Ice Maiden
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples/Ice Maiden/Koriel Dragonchild
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples/Storm Prophet
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Dragon Disciple/Dragon Disciples/Storm Prophet/Gwellat Hammermind
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Feisty Hotspur
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Feisty Hotspur/Lylin Dalthainol
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Iron Duelist
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Iron Duelist/Unthal Rumblegut
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Master Duelist
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Master Duelist/Dancer
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Tribal Champion
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Duelist/Duelists/Tribal Champion/Yallathoon
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight/Eldritch Knights
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight/Eldritch Knights/Champion of Magic
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight/Eldritch Knights/Champion of Magic/Melkallan Truespell
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight/Eldritch Knights/Mithral Wizard
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight/Eldritch Knights/Queen of Staves
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight/Eldritch Knights/Queen of Staves/Esmerelda Darkshadow
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Eldritch Knight/Eldritch Knights/Spirit Avenger
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster/Loremasters
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster/Loremasters/Demonologist
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster/Loremasters/Divine Loremaster
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster/Loremasters/Divine Loremaster/Onora Goldenfields
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster/Loremasters/Master Historian
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster/Loremasters/Master Historian/Rindol Runehand
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Loremaster/Loremasters/Nature Scholar
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge/Mystic Theurges
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge/Mystic Theurges/Celestial Theurge
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge/Mystic Theurges/Celestial Theurge/Traica Kaladon
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge/Mystic Theurges/Death Master
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge/Mystic Theurges/Holy Battle Mage
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge/Mystic Theurges/Sound Warrior
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Mystic Theurge/Mystic Theurges/Sound Warrior/Rindra Thunderpath
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Aloof Scholar
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Aloof Scholar/Denarath Lithernorn
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Battle Skald
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Battle Skald/Ygulda Goldenbrow
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Mad Prophet
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Mad Prophet/Talminus the Esoteric
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Master Storycrafter
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Pathfinder Chronicler/Pathfinder Chroniclers/Master Storycrafter/Yenelis Halfelven
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Prestige Classes
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Prestige Classes/Arcane Archer
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Prestige Classes/Arcane Trickster
@@ -14620,9 +14835,13 @@ pfsrd://NPC Codex/Rules/Prestige Class NPCs/Prestige Classes/Shadowdancer
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Black Ice
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Black Ice/Scal Wistalvak
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Blackstrike
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Blackstrike/Kresis Helgold
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Darkstar
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Darkstar/Filagan Umbraflame
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Midnight Dancer
+pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Midnight Dancer/Mellak the Raven
 pfsrd://Ultimate Combat
 pfsrd://Ultimate Combat/Classes
 pfsrd://Ultimate Combat/Classes/Gunslinger
@@ -16617,6 +16836,7 @@ pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Ar
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Half-Plate
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Haramaki
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Heavy Steel Shield
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Heavy Steel Shield/Shield Bash Attacks
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Heavy Wooden Shield
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Hide
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Kikko
@@ -16628,6 +16848,7 @@ pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Ar
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Leather
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Light Steel Quickdraw Shield
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Light Steel Shield
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Light Steel Shield/Shield Bash Attacks
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Light Wooden Quickdraw Shield
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Light Wooden Shield
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Armor/Getting Into and Out of Armor/Locked Gauntlet
@@ -16664,21 +16885,32 @@ pfsrd://Ultimate Equipment/Rules/Arms And Armor/Arms and Armor/Special Materials
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Arms and Armor/Weapons
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/adamantine
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/adamantine/Type of Adamantine Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/alchemical silver
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/alchemical silver/Type of Alchemical Silver Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Angelskin
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Angelskin/Type of Angelskin Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Blood Crystal
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Blood Crystal/Type of Blood Crystal Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Cold iron
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Darkleaf Cloth
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Darkleaf Cloth/Type of Darkleaf Cloth Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Darkwood
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Dragonhide
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Eel hide
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Eel hide/Type of Eel Hide Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Elysian Bronze
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Elysian Bronze/Type of Elysian Bronze Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Fire-forged steel
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Fire-forged steel/Type of Fire-Forged Steel Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/frost-forged steel
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/greenwood
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/griffon mane
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/griffon mane/Type of Griffon Mane Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/living steel
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/living steel/Type of Living Steel Item	Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/mithral
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/mithral/Type of Mithral Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Primitive Materials
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Primitive Materials/bone
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Primitive Materials/bronze
@@ -16686,6 +16918,7 @@ pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Primitive Mate
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Primitive Materials/obsidian
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/Primitive Materials/Stone
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/viridium
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/viridium/Type of Viridium Item	Item
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/whipwood
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Special Materials/WYROOT
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons
@@ -16755,6 +16988,7 @@ pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Firearms/Scatter/Firearm
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Firearms/Shotgun
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Firearms/sword cane Pistol
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Firearms/Warhammer Musket
+pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Firearms/Warhammer Musket/Firearms
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Weapon Descriptions
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Weapon Descriptions/Aklys
 pfsrd://Ultimate Equipment/Rules/Arms And Armor/Weapons/Weapon Descriptions/Amentum
@@ -17288,6 +17522,9 @@ pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Spelunking Kit
 pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Spider's Silk Rope
 pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Spyglass
 pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Stationery
+pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Stilts
+pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Stilts/Masterwork Stilts
+pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Stilts/Type
 pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Stove Can
 pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/String or Twine
 pfsrd://Ultimate Equipment/Rules/Gear/Adventuring Gear/Summoner's kit
@@ -17411,6 +17648,7 @@ pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mo
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Axe Beak Egg
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Badger
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Barding
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Barding/Barding
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Bat
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Bit and Bridle
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Cage
@@ -17473,6 +17711,10 @@ pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mo
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Raven
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Saddle
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Saddlebags
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Saddle/Exotic Saddle
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Saddle/Military Saddle
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Saddle/Pack Saddle
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Saddle/Riding Saddle
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Scorpion/Greensting
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Sheep
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Animals/Mounts/and Related Gear/Skunk
@@ -17493,6 +17735,9 @@ pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Carriage
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Cart
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Chariot
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Chariot/Heavy Chariots
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Chariot/Light Chariots
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Chariot/Medium Chariots
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Dog Sled
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Galley
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Junk
@@ -17505,6 +17750,9 @@ pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/sleigh
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Transport
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Wagon
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Wagon/Heavy Wagon
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Wagon/Light Wagon
+pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Wagon/Medium Wagon
 pfsrd://Ultimate Equipment/Rules/Gear/Animals/Mounts/and Related Gear/Transports/Warship
 pfsrd://Ultimate Equipment/Rules/Gear/Clothing
 pfsrd://Ultimate Equipment/Rules/Gear/Clothing/Artisan's Outfit
@@ -17630,6 +17878,7 @@ pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Doctor
 pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Footman
 pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Hireling
 pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Inn Stay
+pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Inn Stay/Inn Suite
 pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Laundry
 pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Lawyer
 pfsrd://Ultimate Equipment/Rules/Gear/Lodging and Services/Lodging and Services
@@ -17794,7 +18043,9 @@ pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and S
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Giant-Hide Armor
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Hamatula Hide
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Invincible Armor
+pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Invincible Armor/Invincible armor
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Mail of Malevolence
+pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Mail of Malevolence/Mail of malevolence
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Mistmail
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Mithral full plate of speed
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Mithral Shirt
@@ -17803,6 +18054,7 @@ pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and S
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Otyugh Hide
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Plate Armor of the Deep
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Prismatic Plate
+pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Prismatic Plate/Color
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Rhino Hide
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Scarab Breastplate
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Specific Magic Armor and Shields/Specific Magic Armor/Soothsayer's Raiment
@@ -17934,6 +18186,7 @@ pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/M
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/Magic Weapon Special Ability Descriptions/Anchoring
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/Magic Weapon Special Ability Descriptions/Axiomatic
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/Magic Weapon Special Ability Descriptions/Bane
+pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/Magic Weapon Special Ability Descriptions/Bane/d%
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/Magic Weapon Special Ability Descriptions/Benevolent
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/Magic Weapon Special Ability Descriptions/Brilliant Energy
 pfsrd://Ultimate Equipment/Rules/Magic Arms and Armor/Weapon Special Abilities/Magic Weapon Special Ability Descriptions/Called
@@ -18052,6 +18305,17 @@ pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Delayed Doo
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Djinni Calling
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Ectoplasmic Invigoration
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Element
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Air)
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Earth)
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Fire)
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Water)
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Water)/Control water
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Water)/Create water
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Water)/Ice storm
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Water)/Wall of ice
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Water)/Water breathing
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Elemental Command/Ring of Elemental Command (Water)/Water walk
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Energy Resistance
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Energy Shroud
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Evasion
@@ -18078,6 +18342,7 @@ pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Return
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Revelation
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Sacred Mistletoe
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Shooting Stars
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Shooting Stars/Number of Balls
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Spell Knowledge
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Spell Storing
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Spell Storing/Major
@@ -18100,6 +18365,7 @@ pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Three Wishe
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Transposition
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Water Walking
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Wizardry
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of Wizardry/Type I
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Ring of X-Ray Vision
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Rods/and Staves
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rings/Scholar's Ring
@@ -18181,6 +18447,7 @@ pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Rod Of Thunder 
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Rod of Thunderous Force
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Rod Of Withering
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Rod Of Wonder
+pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Rod Of Wonder/d%
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Sapling Rod
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Scepter of Heaven
 pfsrd://Ultimate Equipment/Rules/Rings/Rods and Staves/Rods/Rods/Special Qualities
@@ -18337,6 +18604,7 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Ro
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Robe of Stars
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Robe of the Archmagi
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Robe of Useful Items
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Robe of Useful Items/d%
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Shocking Robe
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Smuggler's Collapsible Robe
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Body/Body Slot Wondrous Items/Sorcerer's Robe
@@ -18396,6 +18664,7 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Go
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Goggles of Night
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Inquisitor's Monocle
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Kinsight Goggles
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Kinsight Goggles/Kinsight goggles
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Lenses of Detection
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Lenses of Figment Piercing
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Eyes/Eyes Slot Wondrous Items/Mindmaster's Eyes
@@ -18415,6 +18684,7 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Ac
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Boots of Elvenkind
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Boots of escape
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Boots of Friendly Terrain
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Boots of Friendly Terrain/Boots of friendly terrain
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Boots of Levitation
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Boots of Speed
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Boots of Striding and Springing
@@ -18436,6 +18706,8 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Ge
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Haunted Shoes
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Horseshoes of a Zephyr
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Horseshoes of Crushing Blows
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Horseshoes of Crushing Blows/Horseshoes of crushing blows
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Horseshoes of Crushing Blows/Horseshoes of crushing blows
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Horseshoes of Glory
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Horseshoes of Mist
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Feet/Feet Slot Wondrous Items/Horseshoes of Speed
@@ -18523,6 +18795,9 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Phylactery of the Shepherd
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Serpent's Band
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Shifter's Headband
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Shifter's Headband/Shifter's headband +2
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Shifter's Headband/Shifter's headband +4
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Shifter's Headband/Shifter's headband +6
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Soulbound Eye
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Veiled Eye
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Headbands/Headband Slot Wondrous Items/Winter Wolf Headband
@@ -18611,6 +18886,7 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Mi
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Mummer's Ruff
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Necklace of Adaptation
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Necklace of Fireballs
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Necklace of Fireballs/Necklace
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Necklace of Ki Serenity
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Necklace of Netted Stars
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Neck/Neck Slot Wondrous Items/Neck Slot Wondrous Items
@@ -18644,6 +18920,14 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrou
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Diplomat
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the duskwalker
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Abjuration
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Conjuration
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Divination
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Enchantment
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Evocation
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Illusion
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Necromancy
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Hedge Wizard/Transmutation
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Manta Ray
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cloak of the Scuttling Rat
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Shoulders/Shoulders Slot Wondrous Items/Cocoon Cloak
@@ -18688,11 +18972,14 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Anatomy Doll
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Animated Portrait
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Apparatus of the Crab
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Apparatus of the Crab/Lever
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Apple of Eternal Sleep
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Archon's Torch
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Arrow Magnet
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Bag of Holding
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Bag of Holding/Bag
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Bag of Tricks
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Bag of Tricks/Gray Bag
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Balm of Impish Grace
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Bead of Force
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Bead of Newt Prevention
@@ -18721,6 +19008,7 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Candle of Truth
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cape of Bravado
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Carpet of Flying
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Carpet of Flying/Size
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cauldron of Brewing
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cauldron of Flying
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cauldron of Plenty
@@ -18739,23 +19027,31 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Concealing Pocket
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Construct Channel Brick
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Crystal Ball
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Crystal Ball/Crystal Ball Type
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cube of Force
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cube of Force/Attack Form
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cube of Force/Cube Face
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cube of Frost Resistance
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Cubic Gate
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Darkskull
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Decanter of Endless Water
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Deck of Illusions
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Deck of Illusions/Playing Card
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Defoliant Polish
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Doomharp
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dowsing Syrup
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dragonbone Divination Sticks
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Drinking Horn of Bottomless Valor
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Drinking Horn of Bottomless Valor/1 charge
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Drinking Horn of Bottomless Valor/2 charges
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Drinking Horn of Bottomless Valor/3 charges
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Drum of Advance and Retreat
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Drums of Haste
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Drums of Panic
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dry Load Powder Horn
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dust of Acid Consumption
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dust of Appearance
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dust of Appearance/Dust of appearance
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dust of Darkness
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dust of Disappearance
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Dust of Dryness
@@ -18767,6 +19063,12 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Efreeti Bottle
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elemental Gem
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Dragon Breath
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Dragon Breath/Black or copper dragon
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Dragon Breath/Blue or bronze dragon
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Dragon Breath/Brass dragon
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Dragon Breath/Gold or red dragon
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Dragon Breath/Green dragon
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Dragon Breath/Silver or white dragon
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Fire Breath
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Hiding
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Elixir of Love
@@ -18782,7 +19084,22 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Eye of the Void
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Far-Reaching Sight
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Feather Token
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Feather Token/Anchor
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Feather Token/Bird
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Feather Token/Fan
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Feather Token/Swan Boat
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Feather Token/Tree
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Feather Token/Whip
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Bronze Griffon
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Ebony Fly
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Golden Lions
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Marble Elephant
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Obsidian Steed
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Onyx Dog
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Serpentine Owl
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Silver Raven
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Figurines of Wondrous Power/Slate Spider
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Flying Ointment
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Folding Boat
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Formula Alembic
@@ -18791,7 +19108,13 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Goblin Fire Drum
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Goblin Skull Bomb
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Golem Manual
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Golem Manual/Clay Golem Manual
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Golem Manual/Flesh Golem Manual
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Golem Manual/Iron Golem Manual
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Golem Manual/Stone Golem Guardian Manual
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Golem Manual/Stone Golem Manual
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Grave Salt
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Grave Salt/Grave salt
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Grim Lantern
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Handy Haversack
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Harp of Charming
@@ -18808,6 +19131,7 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Horn of the Huntmaster
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Horn of the Tritons
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Horn of Valhalla
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Horn of Valhalla/d%
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Horsemaster's Saddle
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Hourglass of Last Chances
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Hybridization Funnel
@@ -18818,19 +19142,28 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Instant Bridge
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Instant Fortress
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Ioun Stone
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Ioun Stone/Color
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Ioun Torch
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Iron Bands of Binding
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Iron Flask
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Iron Flask/d%
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Iron Rope
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Iron Spike of Safe Passage
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Key of Lock Jamming
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Ki Mat
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Knight's Pennon
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Knight's Pennon/Battle
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Knight's Pennon/Honor
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Knight's Pennon/Parley
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Lantern of Revealing
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Last Leaves of the Autumn Dryad
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Life Link Badge
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Loathsome Mirror
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Lord's Banner
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Lord's Banner/Crusades
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Lord's Banner/Swiftness
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Lord's Banner/Terror
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Lord's Banner/Victory
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Lyre of Building
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Malleable Symbol
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Mallet of Building
@@ -18849,6 +19182,12 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Mirror of Mental Prowess
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Mirror of Opposition
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Naga-scale Bindi
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Naga-scale Bindi/Dark naga
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Naga-scale Bindi/Guardian naga
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Naga-scale Bindi/Lunar naga
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Naga-scale Bindi/Royal naga
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Naga-scale Bindi/Spirit naga
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Naga-scale Bindi/Water naga
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Necromancer's Athame
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Needles of Fleshgraving
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Nightdrops
@@ -18883,10 +19222,12 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Rope of Entanglement
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Rope of Knots
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Salve of Slipperiness
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Salve of Slipperiness/Salve of slipperiness
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Scabbard of Honing
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Scabbard of Keen Edges
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Scabbard of Stanching
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Scabbard of Vigor
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Scabbard of Vigor/Bonus
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/School of Eyes
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Seeker's Sight
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Seer's Tea
@@ -18901,12 +19242,15 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Steadfast Gut-Stone
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone Familiar
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone Horse
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone Horse/Courser
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone Horse/Destrier
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone of Alarm
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone of Alliance
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone of Conjuring Earth Elementals
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone of Good Luck
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stone Salve
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Strand of Prayer Beads
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Strand of Prayer Beads/Special Bead Type
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Stubborn Nail
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Summoning Shackle
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotless/Slotless Wondrous Items/Summon-Slave Crystal
@@ -18962,6 +19306,11 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Item
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Bracers of the Merciful Knight
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Burglar's Bracers
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Charm Bracelet
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Charm Bracelet/Arming Sword
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Charm Bracelet/Healthy Apple
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Charm Bracelet/Loving Heart
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Charm Bracelet/Lucky Star
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Charm Bracelet/Peaceful Dove
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Dimensional Shackles
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Duelist's Vambraces
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Gauntlets of Skill at Arms
@@ -18971,10 +19320,15 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Item
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Merciful Vambraces
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Seducer's Bane
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Shackles of Compliance
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Shackles of Compliance/Shackles of compliance
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Shackles of Durance Vile
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Spellguard Bracers
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Vambraces of Defense
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Vambraces of the Genie
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Vambraces of the Genie/Djinni
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Vambraces of the Genie/Efreeti
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Vambraces of the Genie/Marid
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Vambraces of the Genie/Shaitan
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Vambraces of the Tactician
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Verdant Vine
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists/Wrists Slot Wondrous Items/Wrists Slot Wondrous Items
