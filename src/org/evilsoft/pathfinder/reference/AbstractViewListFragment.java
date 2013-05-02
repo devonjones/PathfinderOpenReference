@@ -10,6 +10,7 @@ import org.evilsoft.pathfinder.reference.list.CollectionItemListAdapter;
 import org.evilsoft.pathfinder.reference.list.CreatureListAdapter;
 import org.evilsoft.pathfinder.reference.list.DefaultListAdapter;
 import org.evilsoft.pathfinder.reference.list.FeatListAdapter;
+import org.evilsoft.pathfinder.reference.list.NpcListAdapter;
 import org.evilsoft.pathfinder.reference.list.SearchListAdapter;
 import org.evilsoft.pathfinder.reference.list.SectionListAdapter;
 import org.evilsoft.pathfinder.reference.list.SkillListAdapter;
@@ -193,7 +194,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 				currentListAdapter = new FeatListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
-		} else if ("Creatures".equals(name) && "creatures".equals(type)
+		} else if ("Creatures".equals(name) && "creature".equals(type)
 				&& !"npc".equals(subtype)) {
 			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
 					.fetchByCreatureType(subtype);
@@ -204,6 +205,19 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 
 			} else {
 				currentListAdapter = new CreatureListAdapter(getActivity()
+						.getApplicationContext(), curs, true);
+			}
+		} else if ("Creatures".equals(name) && "creature".equals(type)
+				&& "npc".equals(subtype)) {
+			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+					.fetchByType(type, subtype);
+			cursorList.add(curs);
+			if (thin) {
+				currentListAdapter = new DefaultListAdapter(getActivity()
+						.getApplicationContext(), curs);
+
+			} else {
+				currentListAdapter = new NpcListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
 		} else if ("Skills".equals(name)) {

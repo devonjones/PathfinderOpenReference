@@ -21,8 +21,7 @@ public class ItemAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT aura, slot, cl, price, weight, requirements, skill, ");
-		sb.append("  cr_increase, cost");
+		sb.append("SELECT aura, slot, cl, price, weight");
 		sb.append(" FROM item_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
@@ -48,22 +47,6 @@ public class ItemAdapter {
 
 		public static String getWeight(Cursor cursor) {
 			return cursor.getString(4);
-		}
-
-		public static String getRequirements(Cursor cursor) {
-			return cursor.getString(5);
-		}
-
-		public static String getSkill(Cursor cursor) {
-			return cursor.getString(6);
-		}
-
-		public static String getCrIncrease(Cursor cursor) {
-			return cursor.getString(7);
-		}
-
-		public static String getCost(Cursor cursor) {
-			return cursor.getString(8);
 		}
 	}
 

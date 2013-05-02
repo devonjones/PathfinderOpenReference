@@ -31,8 +31,8 @@ public class IndexGroupAdapter {
 		sb.append("  i.feat_type_description, i.feat_prerequisites,");
 		sb.append("  i.skill_attribute, i.skill_armor_check_penalty, i.skill_trained_only,");
 		sb.append("  i.spell_school, i.spell_subschool, i.spell_descriptor_text,");
-		sb.append("  i.creature_type, i.creature_subtype, i.creature_cr,");
-		sb.append("  i.creature_xp, i.creature_size, i.creature_alignment");
+		sb.append("  i.creature_type, i.creature_subtype, i.creature_super_race,");
+		sb.append("  i.creature_cr, i.creature_xp, i.creature_size, i.creature_alignment");
 		sb.append(addedColumns);
 		sb.append(" FROM central_index i");
 		return sb.toString();
@@ -44,19 +44,21 @@ public class IndexGroupAdapter {
 		sb.append(selectStatement());
 		sb.append(" WHERE i.indexId = ?");
 		args.add(id.toString());
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 	}
-	
+
 	public Cursor fetchByUrl(String url) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url = ?");
 		args.add(url);
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -68,14 +70,15 @@ public class IndexGroupAdapter {
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url LIKE ?");
 		args.add(url);
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 	}
 
 	public Cursor fetchByType(String type, String subtype) {
-		if(type.equals("*")) {
+		if (type.equals("*")) {
 			type = null;
 		}
 		List<String> args = new ArrayList<String>();
@@ -92,7 +95,8 @@ public class IndexGroupAdapter {
 			where = "AND";
 			args.add(subtype);
 		}
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, where, "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, where,
+				"i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -103,11 +107,14 @@ public class IndexGroupAdapter {
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.type = 'creature'");
+		sb.append("  AND (i.subtype != 'npc'");
+		sb.append("   OR i.subtype IS NULL)");
 		if (creatureType != null) {
 			sb.append("  AND i.creature_type = ?");
 			args.add(creatureType);
 		}
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -124,7 +131,8 @@ public class IndexGroupAdapter {
 			args.add(featType);
 		}
 		sb.append(" WHERE i.type = 'feat'");
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -139,7 +147,8 @@ public class IndexGroupAdapter {
 		sb.append("    AND sl.class = ?");
 		args.add(spellClass);
 		sb.append(" WHERE i.type = 'spell'");
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY sl.level, i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -154,7 +163,8 @@ public class IndexGroupAdapter {
 		sb.append("    AND i.database = p.database");
 		sb.append(" WHERE p.url = ?");
 		args.add(parentUrl);
-		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND", "i"));
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
 		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
@@ -164,91 +174,121 @@ public class IndexGroupAdapter {
 		public static Integer getIndexId(Cursor cursor) {
 			return cursor.getInt(0);
 		}
+
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(1);
 		}
+
 		public static Integer getParentId(Cursor cursor) {
 			return cursor.getInt(2);
 		}
+
 		public static String getParentName(Cursor cursor) {
 			return cursor.getString(3);
 		}
+
 		public static String getDatabase(Cursor cursor) {
 			return cursor.getString(4);
 		}
+
 		public static String getSource(Cursor cursor) {
 			return cursor.getString(5);
 		}
+
 		public static String getType(Cursor cursor) {
 			return cursor.getString(6);
 		}
+
 		public static String getSubtype(Cursor cursor) {
 			return cursor.getString(7);
 		}
+
 		public static String getName(Cursor cursor) {
 			return cursor.getString(8);
 		}
+
 		public static String getSearchName(Cursor cursor) {
 			return cursor.getString(9);
 		}
+
 		public static String getDescription(Cursor cursor) {
 			return cursor.getString(10);
 		}
+
 		public static String getUrl(Cursor cursor) {
 			return cursor.getString(11);
 		}
+
 		public static String getFeatTypes(Cursor cursor) {
 			return cursor.getString(12);
 		}
+
 		public static String getFeatPrereqs(Cursor cursor) {
 			return cursor.getString(13);
 		}
+
 		public static String getSkillAttr(Cursor cursor) {
 			return cursor.getString(14);
 		}
+
 		public static Integer getSkillArmor(Cursor cursor) {
 			return cursor.getInt(15);
 		}
+
 		public static Integer getSkillTrained(Cursor cursor) {
 			return cursor.getInt(16);
 		}
+
 		public static String getSpellSchool(Cursor cursor) {
 			return cursor.getString(17);
 		}
+
 		public static String getSpellSubschool(Cursor cursor) {
 			return cursor.getString(18);
 		}
+
 		public static String getSpellDescriptor(Cursor cursor) {
 			return cursor.getString(19);
 		}
+
 		public static String getCreatureType(Cursor cursor) {
 			return cursor.getString(20);
 		}
+
 		public static String getCreatureSubtype(Cursor cursor) {
 			return cursor.getString(21);
 		}
-		public static String getCreatureCr(Cursor cursor) {
+
+		public static String getCreatureSuperRace(Cursor cursor) {
 			return cursor.getString(22);
 		}
-		public static String getCreatureXp(Cursor cursor) {
+
+		public static String getCreatureCr(Cursor cursor) {
 			return cursor.getString(23);
 		}
-		public static String getCreatureSize(Cursor cursor) {
+
+		public static String getCreatureXp(Cursor cursor) {
 			return cursor.getString(24);
 		}
-		public static String getCreatureAlign(Cursor cursor) {
+
+		public static String getCreatureSize(Cursor cursor) {
 			return cursor.getString(25);
 		}
+
+		public static String getCreatureAlign(Cursor cursor) {
+			return cursor.getString(26);
+		}
+
 		public static boolean hasLevel(Cursor cursor) {
-			if (cursor.getColumnCount() > 26) {
+			if (cursor.getColumnCount() > 27) {
 				return true;
 			}
 			return false;
-			
+
 		}
+
 		public static Integer getSpellLevel(Cursor cursor) {
-			return cursor.getInt(26);
+			return cursor.getInt(27);
 		}
 	}
 }
-

@@ -44,7 +44,6 @@ public class ItemRenderer extends StatBlockRenderer {
 				// TODO: Construction and Description reversed due to child
 				// rendering
 				sb.append(renderItemMisc());
-				sb.append(renderConstruction(cursor));
 				sb.append(renderStatBlockBreaker("Description"));
 				// this.suppressNextTitle = true;
 			}
@@ -52,22 +51,6 @@ public class ItemRenderer extends StatBlockRenderer {
 		} finally {
 			cursor.close();
 		}
-	}
-
-	public String renderConstruction(Cursor cursor) {
-		StringBuffer sb = new StringBuffer();
-		sb.append(addField("Requirements",
-				ItemAdapter.ItemUtils.getRequirements(cursor), false));
-		sb.append(addField("Skill", ItemAdapter.ItemUtils.getSkill(cursor),
-				false));
-		sb.append(addField("CR Increase",
-				ItemAdapter.ItemUtils.getCrIncrease(cursor), false));
-		sb.append(addField("Cost", ItemAdapter.ItemUtils.getCost(cursor)));
-		String content = sb.toString();
-		if (!"".equals(content)) {
-			content = renderStatBlockBreaker("Construction") + content;
-		}
-		return content;
 	}
 
 	@SuppressLint("DefaultLocale")

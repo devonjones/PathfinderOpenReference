@@ -49,8 +49,7 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	@Override
 	public long getChildId(int groupPosition, int childPosition) {
 		try {
-			return children.get(groupPosition)
-					.get(childPosition).getId();
+			return children.get(groupPosition).get(childPosition).getId();
 		} catch (NumberFormatException nfe) {
 			return 0;
 		}
@@ -139,7 +138,8 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	}
 
 	public List<MenuItem> createGroupList(DbWrangler dbWrangler) {
-		Cursor curs = dbWrangler.getIndexDbAdapter().getMenuAdapter().fetchMenu();
+		Cursor curs = dbWrangler.getIndexDbAdapter().getMenuAdapter()
+				.fetchMenu();
 		try {
 			List<MenuItem> result = new ArrayList<MenuItem>();
 			boolean has_next = curs.moveToFirst();
@@ -161,15 +161,16 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 			MenuItem sub = subjects.get(i);
 			Log.d(TAG, sub.getName());
 			Integer id = sub.getId();
-			Cursor curs = dbWrangler.getIndexDbAdapter().getMenuAdapter().fetchMenu(id.toString());
+			Cursor curs = dbWrangler.getIndexDbAdapter().getMenuAdapter()
+					.fetchMenu(id.toString());
 			try {
 				ArrayList<MenuItem> result = new ArrayList<MenuItem>();
-				if(curs.getCount() > 0) {
+				if (curs.getCount() > 0) {
 					boolean has_next = curs.moveToFirst();
 					while (has_next) {
 						String group = MenuAdapter.MenuUtils.getGrouping(curs);
 						String listUri = MenuAdapter.MenuUtils.getListUrl(curs);
-						if("feat_type".equals(group)) {
+						if ("feat_type".equals(group)) {
 							result.addAll(getFeatTypeList(dbWrangler));
 						} else if ("creature_type".equals(group)) {
 							result.addAll(getCreatureTypeList(dbWrangler));
@@ -184,8 +185,9 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 							String db = MenuAdapter.MenuUtils.getDb(curs);
 							result.addAll(getUrl(dbWrangler, db, listUri));
 						} else {
-							if(handleFilterEffects(dbWrangler, curs)) {
-								MenuItem mi = MenuAdapter.MenuUtils.genMenuItem(curs);
+							if (handleFilterEffects(dbWrangler, curs)) {
+								MenuItem mi = MenuAdapter.MenuUtils
+										.genMenuItem(curs);
 								result.add(mi);
 							}
 						}
@@ -204,10 +206,11 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	public boolean handleFilterEffects(DbWrangler dbWrangler, Cursor cursor) {
 		String type = MenuUtils.getType(cursor);
 		String subtype = MenuUtils.getSubtype(cursor);
-		if(type != null || subtype != null) {
-			Cursor countCurs = dbWrangler.getIndexDbAdapter().getCountAdapter().countByType(type, subtype);
+		if (type != null || subtype != null) {
+			Cursor countCurs = dbWrangler.getIndexDbAdapter().getCountAdapter()
+					.countByType(type, subtype);
 			countCurs.moveToFirst();
-			if(CountAdapter.CountUtils.getCount(countCurs) == 0) {
+			if (CountAdapter.CountUtils.getCount(countCurs) == 0) {
 				return false;
 			}
 		}
@@ -216,7 +219,8 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	public List<MenuItem> getFeatTypeList(DbWrangler dbWrangler) {
 		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
-		Cursor curs = dbWrangler.getIndexDbAdapter().getFeatTypeAdapter().fetchFeatTypes();
+		Cursor curs = dbWrangler.getIndexDbAdapter().getFeatTypeAdapter()
+				.fetchFeatTypes();
 		try {
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
@@ -236,15 +240,17 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	public List<MenuItem> getCreatureTypeList(DbWrangler dbWrangler) {
 		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
-		Cursor curs = dbWrangler.getIndexDbAdapter().getCreatureTypeAdapter().fetchCreatureTypes();
+		Cursor curs = dbWrangler.getIndexDbAdapter().getCreatureTypeAdapter()
+				.fetchCreatureTypes();
 		try {
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
 				MenuItem mi = new MenuItem();
 				mi.setId(0);
-				String name = CreatureTypeAdapter.CreatureTypeUtils.getCreatureType(curs);
+				String name = CreatureTypeAdapter.CreatureTypeUtils
+						.getCreatureType(curs);
 				mi.setName(name);
-				mi.setUrl("pfsrd://Menu/Creatures/creatures/" + name);
+				mi.setUrl("pfsrd://Menu/Creatures/creature/" + name);
 				results.add(mi);
 				has_next = curs.moveToNext();
 			}
@@ -256,7 +262,8 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	public List<MenuItem> getSpellClassList(DbWrangler dbWrangler) {
 		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
-		Cursor curs = dbWrangler.getIndexDbAdapter().getSpellClassAdapter().fetchSpellClasses();
+		Cursor curs = dbWrangler.getIndexDbAdapter().getSpellClassAdapter()
+				.fetchSpellClasses();
 		try {
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
@@ -275,7 +282,8 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 	}
 
 	public List<MenuItem> getBookmarks(DbWrangler dbWrangler) {
-		CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+		CollectionAdapter ca = new CollectionAdapter(
+				dbWrangler.getUserDbAdapter());
 		List<MenuItem> charList = ca.createCollectionList();
 
 		MenuItem adder = new MenuItem();
@@ -291,9 +299,11 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		return charList;
 	}
 
-	public List<MenuItem> getChildren(DbWrangler dbWrangler, String db, String listUri) {
+	public List<MenuItem> getChildren(DbWrangler dbWrangler, String db,
+			String listUri) {
 		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
-		Cursor curs = dbWrangler.getBookDbAdapter(db).getSectionAdapter().fetchSectionByParentUrl(listUri);
+		Cursor curs = dbWrangler.getBookDbAdapter(db).getSectionAdapter()
+				.fetchSectionByParentUrl(listUri);
 		try {
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
@@ -312,7 +322,8 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 
 	public List<MenuItem> getUrl(DbWrangler dbWrangler, String db, String url) {
 		ArrayList<MenuItem> results = new ArrayList<MenuItem>();
-		Cursor curs = dbWrangler.getBookDbAdapter(db).getSectionAdapter().fetchSectionByUrl(url);
+		Cursor curs = dbWrangler.getBookDbAdapter(db).getSectionAdapter()
+				.fetchSectionByUrl(url);
 		try {
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
