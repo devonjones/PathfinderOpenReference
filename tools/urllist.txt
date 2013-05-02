@@ -7209,7 +7209,7 @@ pfsrd://Bestiary 3/Monsters/Jubjub Bird/Special Abilities/Planar Acclimation
 pfsrd://Bestiary 3/Monsters/Jubjub Bird/Special Abilities/Shriek
 pfsrd://Bestiary 3/Monsters/Kamadan
 pfsrd://Bestiary 3/Monsters/Kamadan/Dusk Kamadan (CR +1)
-pfsrd://Bestiary 3/Monsters/Kamadan/Dusk Kamadan (CR +1)/Dusk Kamadan Venom
+pfsrd://Bestiary 3/Monsters/Kamadan/Dusk Kamadan (CR +1)/Dusk Kamadan Snake Venom
 pfsrd://Bestiary 3/Monsters/Kamadan/Polar Kamadan (CR +2)
 pfsrd://Bestiary 3/Monsters/Kamadan/Special Abilities
 pfsrd://Bestiary 3/Monsters/Kamadan/Special Abilities/Breath Weapon
