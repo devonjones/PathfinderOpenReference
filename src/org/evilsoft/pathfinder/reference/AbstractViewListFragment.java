@@ -104,14 +104,14 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 
 	public void updateUrl(String newUrl) {
 		currentType = null;
+		if (newUrl == null || checkUrlEqual(newUrl)) {
+			return;
+		}
 		Log.i(TAG, newUrl);
 		ErrorReporter e = ErrorReporter.getInstance();
 		e.putCustomData("LastSectionViewUrl", newUrl);
 		this.getListView().setOnItemClickListener(this);
 		this.getListView().setCacheColorHint(Color.WHITE);
-		if (newUrl == null || checkUrlEqual(newUrl)) {
-			return;
-		}
 		currentUrl = newUrl;
 		String[] parts = newUrl.split("\\/");
 		if (parts[2].equals("Search")) {

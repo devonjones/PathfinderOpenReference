@@ -64,8 +64,8 @@ public class DetailsWebViewClient extends WebViewClient {
 			try {
 				newUrl = URLDecoder.decode(newUrl, "UTF-8");
 			} catch (UnsupportedEncodingException uee) {
-				ErrorReporter.getInstance().putCustomData(
-						"Situation", "Unable to decode url: " + newUrl);
+				ErrorReporter.getInstance().putCustomData("Situation",
+						"Unable to decode url: " + newUrl);
 				ErrorReporter.getInstance().handleException(uee);
 			}
 		}
@@ -83,7 +83,8 @@ public class DetailsWebViewClient extends WebViewClient {
 			if (parts[0].toLowerCase().equals("pfsrd:")) {
 				this.url = newUrl;
 				Log.d(TAG, parts[parts.length - 1]);
-				path = dbWrangler.getBookDbAdapterByUrl(newUrl).getPathByUrl(newUrl);
+				path = dbWrangler.getBookDbAdapterByUrl(newUrl).getPathByUrl(
+						newUrl);
 				setBackVisibility(newUrl, contextUrl);
 				return renderPfsrd(view, newUrl);
 			}
@@ -97,7 +98,8 @@ public class DetailsWebViewClient extends WebViewClient {
 		if (newUrl != null) {
 			String[] parts = newUrl.split("\\/");
 			if (parts[0].toLowerCase().equals("pfsrd:")) {
-				Intent showContent = new Intent(act.getApplicationContext(), DetailsActivity.class);
+				Intent showContent = new Intent(act.getApplicationContext(),
+						DetailsActivity.class);
 
 				showContent.setData(Uri.parse(newUrl));
 				act.startActivity(showContent);
@@ -109,7 +111,7 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	public void setBackVisibility(String newUrl, String contextUrl) {
 		if (path != null && path.size() > 1) {
-			if(contextUrl != null) {
+			if (contextUrl != null) {
 				reloadList(contextUrl);
 			} else {
 				reloadList(newUrl);
@@ -125,7 +127,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	private String up(String uri) {
 		String subtype = Uri.parse(uri).getQueryParameter("subtype");
 		String localUrl = uri;
-		if(uri.indexOf("?") > -1) {
+		if (uri.indexOf("?") > -1) {
 			localUrl = TextUtils.split(uri, "\\?")[0];
 		}
 		if (path == null) {
@@ -134,9 +136,12 @@ public class DetailsWebViewClient extends WebViewClient {
 
 		String newUrl = null;
 		int index = 1;
-		while (newUrl == null && index < path.size() -1) {
+		while (newUrl == null && index < path.size() - 1) {
 			newUrl = path.get(index).get("url");
 			index++;
+		}
+		if (newUrl == null) {
+			return uri;
 		}
 		StringBuffer sb = new StringBuffer();
 		sb.append(newUrl);
@@ -156,8 +161,8 @@ public class DetailsWebViewClient extends WebViewClient {
 				}
 			}
 		} catch (Exception e) {
-			ErrorReporter.getInstance().putCustomData(
-					"Situation", "Back button failed");
+			ErrorReporter.getInstance().putCustomData("Situation",
+					"Back button failed");
 			ErrorReporter.getInstance().handleException(e);
 		}
 	}
@@ -171,7 +176,7 @@ public class DetailsWebViewClient extends WebViewClient {
 					.getSupportFragmentManager().findFragmentById(
 							R.id.details_list_fragment);
 			String[] parts = newUrl.split("\\/");
-			if(parts[2].equals("Menu")) {
+			if (parts[2].equals("Menu")) {
 				list.updateUrl(newUrl);
 			} else {
 				String updateUrl = up(newUrl);
@@ -181,13 +186,15 @@ public class DetailsWebViewClient extends WebViewClient {
 	}
 
 	public String renderByUrl(WebView view, RenderFarm sa, String newUrl) {
-		Cursor cursor = dbWrangler.getBookDbAdapterByUrl(newUrl).getSectionAdapter().fetchSectionByUrl(newUrl);
+		Cursor cursor = dbWrangler.getBookDbAdapterByUrl(newUrl)
+				.getSectionAdapter().fetchSectionByUrl(newUrl);
 		String html = null;
 		StringBuffer htmlparts = new StringBuffer();
 		try {
 			boolean has_next = cursor.moveToFirst();
 			while (has_next) {
-				htmlparts.append(sa.render(SectionAdapter.SectionUtils.getSectionId(cursor).toString(), newUrl));
+				htmlparts.append(sa.render(SectionAdapter.SectionUtils
+						.getSectionId(cursor).toString(), newUrl));
 				has_next = cursor.moveToNext();
 			}
 		} finally {
@@ -201,7 +208,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	}
 
 	public boolean renderPfsrd(WebView view, String newUrl) {
-		if(newUrl.indexOf("?") > -1) {
+		if (newUrl.indexOf("?") > -1) {
 			newUrl = TextUtils.split(newUrl, "\\?")[0];
 		}
 		String[] parts = newUrl.split("\\/");
@@ -209,7 +216,8 @@ public class DetailsWebViewClient extends WebViewClient {
 		SharedPreferences settings = act.getSharedPreferences(PREFS_NAME, 0);
 		boolean showToc = settings.getBoolean("showToc", true);
 		BookDbAdapter bookDbAdapter = dbWrangler.getBookDbAdapterByUrl(newUrl);
-		RenderFarm sa = new RenderFarm(dbWrangler, bookDbAdapter, title, isTablet, showToc);
+		RenderFarm sa = new RenderFarm(dbWrangler, bookDbAdapter, title,
+				isTablet, showToc);
 		html = renderByUrl(view, sa, newUrl);
 		if (html == null) {
 			if (parts[2].equals("Classes")) {
@@ -246,9 +254,10 @@ public class DetailsWebViewClient extends WebViewClient {
 		star.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
-				ca.toggleEntryStar(currentCollection, url,
-						title.getText().toString());
+				CollectionAdapter ca = new CollectionAdapter(dbWrangler
+						.getUserDbAdapter());
+				ca.toggleEntryStar(currentCollection, url, title.getText()
+						.toString());
 				refreshStarButtonState();
 			}
 		});
@@ -264,13 +273,12 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	private void refreshStarButtonState() {
 		if (url != null) {
-			CollectionAdapter ca = new
-					CollectionAdapter(dbWrangler.getUserDbAdapter());
-			boolean starred =
-					ca.entryIsStarred(currentCollection, url);
+			CollectionAdapter ca = new CollectionAdapter(
+					dbWrangler.getUserDbAdapter());
+			boolean starred = ca.entryIsStarred(currentCollection, url);
 			star.setPressed(starred);
-			star.setImageResource(starred ? android.R.drawable.btn_star_big_on :
-					android.R.drawable.btn_star_big_off);
+			star.setImageResource(starred ? android.R.drawable.btn_star_big_on
+					: android.R.drawable.btn_star_big_off);
 		}
 	}
 
