@@ -31,7 +31,7 @@ public class IndexDbAdapter {
 	public boolean isClosed() {
 		return closed;
 	}
-	
+
 	public MenuAdapter getMenuAdapter() {
 		return new MenuAdapter(database, context);
 	}
@@ -47,20 +47,24 @@ public class IndexDbAdapter {
 	public SpellClassAdapter getSpellClassAdapter() {
 		return new SpellClassAdapter(database, context);
 	}
-	
+
 	public IndexGroupAdapter getIndexGroupAdapter() {
 		return new IndexGroupAdapter(database, context);
 	}
-	
+
 	public BooksAdapter getBooksAdapter() {
 		return new BooksAdapter(database, context);
 	}
-	
+
 	public SearchAdapter getSearchAdapter() {
 		return new SearchAdapter(database, context);
 	}
 
 	public CountAdapter getCountAdapter() {
 		return new CountAdapter(database, context);
+	}
+
+	public UrlReferenceAdapter getUrlReferenceAdapter() {
+		return new UrlReferenceAdapter(database, context);
 	}
 }

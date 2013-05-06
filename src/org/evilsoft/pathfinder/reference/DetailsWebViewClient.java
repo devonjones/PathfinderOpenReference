@@ -245,7 +245,7 @@ public class DetailsWebViewClient extends WebViewClient {
 			}
 		}
 		html = urlFilter(html);
-		view.loadDataWithBaseURL(newUrl, html, "text/html", "UTF-8",
+		view.loadDataWithBaseURL(encodeUrl(newUrl), html, "text/html", "UTF-8",
 				this.oldUrl);
 		view.setWebViewClient(this);
 		view.scrollTo(0, 0);
@@ -265,6 +265,17 @@ public class DetailsWebViewClient extends WebViewClient {
 				path, title.getText().toString()));
 		this.oldUrl = newUrl;
 		return true;
+	}
+
+	private String encodeUrl(String url) {
+		String[] parts = url.split("\\/");
+		StringBuffer sb = new StringBuffer();
+		sb.append(parts[0]);
+		for (int i = 1; i < parts.length; i++) {
+			sb.append("/");
+			sb.append(Uri.encode(parts[i]));
+		}
+		return sb.toString();
 	}
 
 	private String urlFilter(String html) {
