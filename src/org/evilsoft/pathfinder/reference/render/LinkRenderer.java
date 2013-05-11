@@ -29,7 +29,7 @@ public class LinkRenderer extends Renderer {
 		try {
 			boolean has_next = lcurs.moveToFirst();
 			if (has_next) {
-				linkUrl = lcurs.getString(1);
+				linkUrl = lcurs.getString(1).replaceAll("'", "");
 				render = lcurs.getInt(2) == 0;
 				Cursor ccurs = dbWrangler.getIndexDbAdapter().getCountAdapter()
 						.fetchByUrl(linkUrl);
