@@ -1,6 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
 import org.acra.ErrorReporter;
+import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.list.BaseListItem;
 
@@ -39,7 +40,8 @@ public class SectionViewFragment extends AbstractViewListFragment {
 	private String getNextUrl(Long id, int position) {
 		String uri = null;
 		if ("Bookmarks".equals(currentType)) {
-			CollectionAdapter ca = new CollectionAdapter(dbWrangler.getUserDbAdapter());
+			CollectionAdapter ca = new CollectionAdapter(
+					dbWrangler.getUserDbAdapter());
 			Cursor curs = ca.fetchCollectionValue(id.toString());
 			boolean has_next = curs.moveToNext();
 			if (has_next) {
@@ -47,7 +49,17 @@ public class SectionViewFragment extends AbstractViewListFragment {
 			}
 			return uri;
 		} else {
-			BaseListItem item = (BaseListItem)currentListAdapter.getItem(position);
+			BaseListItem item = (BaseListItem) currentListAdapter
+					.getItem(position);
+			String url = item.getUrl();
+			if (url == null) {
+				SectionAdapter sa = dbWrangler.getBookDbAdapter(
+						item.getDatabase()).getSectionAdapter();
+				Cursor cursor = sa.fetchParentBySectionId(item.getSectionId());
+				if (cursor.moveToFirst()) {
+					return SectionAdapter.SectionUtils.getUrl(cursor);
+				}
+			}
 			return item.getUrl();
 		}
 	}

@@ -52,6 +52,19 @@ public class SectionAdapter {
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 	}
 
+	public Cursor fetchParentBySectionId(Integer sectionId) {
+		List<String> args = new ArrayList<String>();
+		args.add(sectionId.toString());
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT p.section_id, p.parent_id, p.name, p.type, p.subtype, p.url");
+		sb.append(" FROM sections s");
+		sb.append("  INNER JOIN sections p");
+		sb.append("   ON s.parent_id = p.section_id");
+		sb.append(" WHERE s.section_id = ?");
+		String sql = sb.toString();
+		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
+	}
+
 	public Cursor fetchSectionByParentUrl(String parentUrl) {
 		List<String> args = new ArrayList<String>();
 		args.add(parentUrl);
@@ -74,7 +87,7 @@ public class SectionAdapter {
 		sb.append(" WHERE url = ?");
 		String sql = sb.toString();
 		Cursor curs = database.rawQuery(sql, BaseDbHelper.toStringArray(args));
-		if(curs.getCount() == 0) {
+		if (curs.getCount() == 0) {
 			curs.close();
 			sb = new StringBuffer();
 			sb.append("SELECT s.section_id, s.parent_id, s.name, s.type, s.subtype, s.url");
@@ -92,18 +105,23 @@ public class SectionAdapter {
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}
+
 		public static Integer getParentId(Cursor cursor) {
 			return cursor.getInt(1);
 		}
+
 		public static String getName(Cursor cursor) {
 			return cursor.getString(2);
 		}
+
 		public static String getType(Cursor cursor) {
 			return cursor.getString(3);
 		}
+
 		public static String getSubtype(Cursor cursor) {
 			return cursor.getString(4);
 		}
+
 		public static String getUrl(Cursor cursor) {
 			return cursor.getString(5);
 		}
