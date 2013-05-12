@@ -42,14 +42,15 @@ public class BookDbAdapter {
 	}
 
 	public ArrayList<HashMap<String, String>> getPathByUrl(String url) {
-		if(url.indexOf("?") > -1) {
+		if (url.indexOf("?") > -1) {
 			url = TextUtils.split(url, "\\?")[0];
 		}
 		Cursor cursor = getSectionAdapter().fetchSectionByUrl(url);
 		try {
 			boolean has_rows = cursor.moveToFirst();
 			if (has_rows) {
-				Integer sectionId = SectionAdapter.SectionUtils.getSectionId(cursor);
+				Integer sectionId = SectionAdapter.SectionUtils
+						.getSectionId(cursor);
 				return getPath(sectionId);
 			}
 		} finally {
@@ -66,23 +67,32 @@ public class BookDbAdapter {
 			boolean has_rows = cursor.moveToFirst();
 			Log.d(TAG, ((Boolean) has_rows).toString());
 			if (has_rows) {
-				Integer parentId = SectionAdapter.SectionUtils.getParentId(cursor);
+				Integer parentId = SectionAdapter.SectionUtils
+						.getParentId(cursor);
 				HashMap<String, String> element = new HashMap<String, String>();
-				element.put("id", SectionAdapter.SectionUtils.getSectionId(cursor).toString());
+				element.put("id",
+						SectionAdapter.SectionUtils.getSectionId(cursor)
+								.toString());
 				element.put("name", SectionAdapter.SectionUtils.getName(cursor));
 				element.put("url", SectionAdapter.SectionUtils.getUrl(cursor));
 				element.put("type", SectionAdapter.SectionUtils.getType(cursor));
 				path.add(element);
 				while (parentId != 0) {
-					Cursor cursor2 = getSectionAdapter().fetchSectionBySectionId(parentId);
+					Cursor cursor2 = getSectionAdapter()
+							.fetchSectionBySectionId(parentId);
 					try {
 						cursor2.moveToFirst();
-						parentId = SectionAdapter.SectionUtils.getParentId(cursor2);
+						parentId = SectionAdapter.SectionUtils
+								.getParentId(cursor2);
 						element = new HashMap<String, String>();
-						element.put("id", SectionAdapter.SectionUtils.getSectionId(cursor2).toString());
-						element.put("name", SectionAdapter.SectionUtils.getName(cursor2));
-						element.put("url", SectionAdapter.SectionUtils.getUrl(cursor2));
-						element.put("type", SectionAdapter.SectionUtils.getType(cursor2));
+						element.put("id", SectionAdapter.SectionUtils
+								.getSectionId(cursor2).toString());
+						element.put("name",
+								SectionAdapter.SectionUtils.getName(cursor2));
+						element.put("url",
+								SectionAdapter.SectionUtils.getUrl(cursor2));
+						element.put("type",
+								SectionAdapter.SectionUtils.getType(cursor2));
 						path.add(element);
 					} finally {
 						cursor2.close();

@@ -16,6 +16,7 @@ import org.evilsoft.pathfinder.reference.render.AfflictionRenderer;
 import org.evilsoft.pathfinder.reference.render.AnimalCompanionRenderer;
 import org.evilsoft.pathfinder.reference.render.ClassRenderer;
 import org.evilsoft.pathfinder.reference.render.CreatureRenderer;
+import org.evilsoft.pathfinder.reference.render.EmbedRenderer;
 import org.evilsoft.pathfinder.reference.render.FeatRenderer;
 import org.evilsoft.pathfinder.reference.render.HauntRenderer;
 import org.evilsoft.pathfinder.reference.render.ItemRenderer;
@@ -51,7 +52,8 @@ public class RenderFarm {
 		this.showToc = showToc;
 	}
 
-	public static Renderer getRenderer(String type, DbWrangler dbWrangler, BookDbAdapter bookDbAdapter) {
+	public static Renderer getRenderer(String type, DbWrangler dbWrangler,
+			BookDbAdapter bookDbAdapter) {
 		if (type.equals("ability")) {
 			return new AbilityRenderer(bookDbAdapter);
 		} else if (type.equals("affliction")) {
@@ -70,6 +72,8 @@ public class RenderFarm {
 			return new ItemRenderer(bookDbAdapter);
 		} else if (type.equals("link")) {
 			return new LinkRenderer(dbWrangler, bookDbAdapter);
+		} else if (type.equals("embed")) {
+			return new EmbedRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("race")) {
 			return new RaceRenderer();
 		} else if (type.equals("settlement")) {
@@ -90,7 +94,8 @@ public class RenderFarm {
 	}
 
 	public String render(String sectionId, String inUrl) {
-		Cursor cursor = this.bookDbAdapter.getFullSectionAdapter().fetchFullSection(sectionId);
+		Cursor cursor = this.bookDbAdapter.getFullSectionAdapter()
+				.fetchFullSection(sectionId);
 		try {
 			renderPath = new ArrayList<Renderer>();
 			return renderSection(cursor, inUrl);
@@ -112,10 +117,13 @@ public class RenderFarm {
 			sb.append("<body>");
 			this.title.setText(topTitle);
 			while (has_next) {
-				int sectionId = FullSectionAdapter.SectionUtils.getSectionId(cursor);
-				int parentId = FullSectionAdapter.SectionUtils.getParentId(cursor);
+				int sectionId = FullSectionAdapter.SectionUtils
+						.getSectionId(cursor);
+				int parentId = FullSectionAdapter.SectionUtils
+						.getParentId(cursor);
 				String name = FullSectionAdapter.SectionUtils.getName(cursor);
-				String abbrev = FullSectionAdapter.SectionUtils.getAbbrev(cursor);
+				String abbrev = FullSectionAdapter.SectionUtils
+						.getAbbrev(cursor);
 				depth = getDepth(depthMap, sectionId, parentId, depth);
 				titleMap.put(sectionId, name);
 				String title = name;
@@ -171,11 +179,10 @@ public class RenderFarm {
 	public String renderFooter() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("<script type=\"text/javascript\" src=\"file:///android_asset/application.min.js\"></script>");
-		if(showToc) {
-			if(isTablet) {
+		if (showToc) {
+			if (isTablet) {
 				sb.append("<script type=\"text/javascript\">window.psrd_toc.side();</script>");
-			}
-			else {
+			} else {
 				sb.append("<script type=\"text/javascript\">window.psrd_toc.full();</script>");
 			}
 		} else {
@@ -183,7 +190,7 @@ public class RenderFarm {
 		}
 		return sb.toString();
 	}
-	
+
 	public String renderHeader() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("<html>");

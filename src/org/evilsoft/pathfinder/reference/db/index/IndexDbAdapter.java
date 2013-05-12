@@ -48,6 +48,10 @@ public class IndexDbAdapter {
 		return new SpellClassAdapter(database, context);
 	}
 
+	public SpellListAdapter getSpellListAdapter() {
+		return new SpellListAdapter(database, context);
+	}
+
 	public IndexGroupAdapter getIndexGroupAdapter() {
 		return new IndexGroupAdapter(database, context);
 	}
