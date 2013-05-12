@@ -64,6 +64,10 @@ public class DbWrangler {
 			LimitedSpaceException {
 		IndexDbHelper helper = new IndexDbHelper(context);
 		helper.createDatabase(isCurrent);
+		if (!isCurrent) {
+			UserDbAdapter udba = this.getUserDbAdapter();
+			udba.updateBookmarks(this);
+		}
 	}
 
 	public void checkBookDbs(boolean isCurrent) throws IOException,
