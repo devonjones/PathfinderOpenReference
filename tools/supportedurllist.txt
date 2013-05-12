@@ -399,6 +399,7 @@ pfsrd://Advanced Players Guide/Classes/Oracle/Mysteries/Wind/Revelations/Vortex 
 pfsrd://Advanced Players Guide/Classes/Oracle/Mysteries/Wind/Revelations/Wind Sight
 pfsrd://Advanced Players Guide/Classes/Oracle/Mysteries/Wind/Revelations/Wings of Air
 pfsrd://Advanced Players Guide/Classes/Oracle/Oracle Archetypes
+pfsrd://Advanced Players Guide/Classes/Oracle/Oracle Spells
 pfsrd://Advanced Players Guide/Classes/Rage Prophet
 pfsrd://Advanced Players Guide/Classes/Rage Prophet/Class Features/Enduring Rage
 pfsrd://Advanced Players Guide/Classes/Rage Prophet/Class Features/Greater Rage
@@ -4188,7 +4189,16 @@ pfsrd://Advanced Race Guide/Races/Wayangs/Wayang Racial Traits/Wayang
 pfsrd://Advanced Race Guide/Rules
 pfsrd://Advanced Race Guide/Rules/Age/Height and Weight
 pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Age
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Age/Core Race Aging Effects
 pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Age/Core Race Random Starting Ages
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Age/Featured Race Aging Effects
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Age/Featured Race Random Starting Ages
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Age/Uncommon Race Aging Effects
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Age/Uncommon Race Random Starting Ages
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Height and Weight
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Height and Weight/Core Race Random Height and Weight
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Height and Weight/Featured Race Random Height and Weight
+pfsrd://Advanced Race Guide/Rules/Age/Height and Weight/Height and Weight/Uncommon Race Random Height and Weight
 pfsrd://Advanced Race Guide/Rules/Core Races
 pfsrd://Advanced Race Guide/Rules/Core Races/Alternate Racial Rules
 pfsrd://Advanced Race Guide/Rules/Core Races/Core Races
@@ -9370,6 +9380,7 @@ pfsrd://Core Rulebook/Classes/Barbarian/Class Skills/Skill Ranks per Level/Table
 pfsrd://Core Rulebook/Classes/Barbarian/Ex-Barbarians
 pfsrd://Core Rulebook/Classes/Bard
 pfsrd://Core Rulebook/Classes/Bard/Bard Archetypes
+pfsrd://Core Rulebook/Classes/Bard/Bard Spells
 pfsrd://Core Rulebook/Classes/Bard/Class Features/Bardic Knowledge
 pfsrd://Core Rulebook/Classes/Bard/Class Features/Bardic Performance
 pfsrd://Core Rulebook/Classes/Bard/Class Features/Bardic Performance/Countersong
@@ -9502,6 +9513,7 @@ pfsrd://Core Rulebook/Classes/Cleric/Class Features/Orisons
 pfsrd://Core Rulebook/Classes/Cleric/Class Features/Spontaneous Casting
 pfsrd://Core Rulebook/Classes/Cleric/Class Skills/Skill Ranks per Level/Table Cleric
 pfsrd://Core Rulebook/Classes/Cleric/Cleric Archetypes
+pfsrd://Core Rulebook/Classes/Cleric/Cleric Spells
 pfsrd://Core Rulebook/Classes/Cleric/Domains
 pfsrd://Core Rulebook/Classes/Cleric/Ex-Clerics
 pfsrd://Core Rulebook/Classes/Commoner
@@ -9589,6 +9601,7 @@ pfsrd://Core Rulebook/Classes/Druid/Class Features/Wild Shape
 pfsrd://Core Rulebook/Classes/Druid/Class Features/Woodland Stride
 pfsrd://Core Rulebook/Classes/Druid/Class Skills/Skill Ranks per Level/Table Druid
 pfsrd://Core Rulebook/Classes/Druid/Druid Archetypes
+pfsrd://Core Rulebook/Classes/Druid/Druid Spells
 pfsrd://Core Rulebook/Classes/Druid/Ex-Druids
 pfsrd://Core Rulebook/Classes/Duelist
 pfsrd://Core Rulebook/Classes/Duelist/Class Features/Acrobatic Charge
@@ -9715,6 +9728,7 @@ pfsrd://Core Rulebook/Classes/Paladin/Class Features/Smite Evil
 pfsrd://Core Rulebook/Classes/Paladin/Class Skills/Skill Ranks per Level/Table Paladin
 pfsrd://Core Rulebook/Classes/Paladin/Ex-Paladins
 pfsrd://Core Rulebook/Classes/Paladin/Paladin Archetypes
+pfsrd://Core Rulebook/Classes/Paladin/Paladin Spells
 pfsrd://Core Rulebook/Classes/Pathfinder Chronicler
 pfsrd://Core Rulebook/Classes/Pathfinder Chronicler/Class Features/Bardic Knowledge
 pfsrd://Core Rulebook/Classes/Pathfinder Chronicler/Class Features/Bardic Performance
@@ -9753,6 +9767,7 @@ pfsrd://Core Rulebook/Classes/Ranger/Class Features/Wild Empathy
 pfsrd://Core Rulebook/Classes/Ranger/Class Features/Woodland Stride
 pfsrd://Core Rulebook/Classes/Ranger/Class Skills/Skill Ranks per Level/Table Ranger
 pfsrd://Core Rulebook/Classes/Ranger/Ranger Archetypes
+pfsrd://Core Rulebook/Classes/Ranger/Ranger Spells
 pfsrd://Core Rulebook/Classes/Rogue
 pfsrd://Core Rulebook/Classes/Rogue/Class Features/Advanced Talents
 pfsrd://Core Rulebook/Classes/Rogue/Class Features/Advanced Talents/Crippling Strike*
@@ -9875,6 +9890,7 @@ pfsrd://Core Rulebook/Classes/Sorcerer/Sorcerer Bloodlines/Undead/Bloodline Powe
 pfsrd://Core Rulebook/Classes/Sorcerer/Sorcerer Bloodlines/Undead/Bloodline Powers/Grave Touch
 pfsrd://Core Rulebook/Classes/Sorcerer/Sorcerer Bloodlines/Undead/Bloodline Powers/Incorporeal Form
 pfsrd://Core Rulebook/Classes/Sorcerer/Sorcerer Bloodlines/Undead/Bloodline Powers/One of Us
+pfsrd://Core Rulebook/Classes/Sorcerer/Sorcerer Spells
 pfsrd://Core Rulebook/Classes/Warrior
 pfsrd://Core Rulebook/Classes/Warrior/Class Skills/Skill Ranks per Level/Table Warrior
 pfsrd://Core Rulebook/Classes/Wizard
@@ -9943,6 +9959,7 @@ pfsrd://Core Rulebook/Classes/Wizard/Familiars/Familiar Basics/Hit Dice
 pfsrd://Core Rulebook/Classes/Wizard/Familiars/Familiar Basics/Hit Points
 pfsrd://Core Rulebook/Classes/Wizard/Familiars/Familiar Basics/Saving Throws
 pfsrd://Core Rulebook/Classes/Wizard/Wizard Archetypes
+pfsrd://Core Rulebook/Classes/Wizard/Wizard Spells
 pfsrd://Core Rulebook/Feats
 pfsrd://Core Rulebook/Feats/Acrobatic
 pfsrd://Core Rulebook/Feats/Acrobatic Steps
@@ -18684,13 +18701,6 @@ pfsrd://Ultimate Magic/Classes/Magus/Class Features/Weapon and Armor Proficiency
 pfsrd://Ultimate Magic/Classes/Magus/Class Skills/Skill Ranks per Level
 pfsrd://Ultimate Magic/Classes/Magus/Magus Archetypes
 pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List
-pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List/0-Level Magus Spells
-pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List/1st-Level Magus Spells
-pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List/2nd-Level Magus Spells
-pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List/3rd-Level Magus Spells
-pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List/4th-Level Magus Spells
-pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List/5th-Level Magus Spells
-pfsrd://Ultimate Magic/Classes/Magus/Magus Spell List/6th-Level Magus Spells
 pfsrd://Ultimate Magic/Classes/Magus/Role
 pfsrd://Ultimate Magic/Classes/Magus/Starting Wealth
 pfsrd://Ultimate Magic/Feats
@@ -19755,6 +19765,7 @@ pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Dark Ta
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Dark Tapestry/Revelations/Interstellar Void
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Dark Tapestry/Revelations/Many Forms
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Dark Tapestry/Revelations/Pierce the Veil
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Dark Tapestry/Revelations/Read the Tapestry
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Dark Tapestry/Revelations/Touch of the Void
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Dark Tapestry/Revelations/Wings of Darkness
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Oracle/Mysteries/Metal
