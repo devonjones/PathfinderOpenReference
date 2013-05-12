@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
+import org.evilsoft.pathfinder.reference.preference.FilterPreferenceManager;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -27,6 +28,7 @@ public class SpellListAdapter {
 		sb.append("  INNER JOIN central_index i");
 		sb.append("   ON sl.index_id = i.index_id");
 		sb.append(" WHERE sl.class = ?");
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND"));
 		sb.append(" ORDER BY sl.level, i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
