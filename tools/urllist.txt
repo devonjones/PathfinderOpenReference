@@ -1330,6 +1330,7 @@ pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin
 pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin/Antipaladin
 pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin/Antipaladin/Alignment
 pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin/Antipaladin/Class Features
+pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin/Antipaladin/Class Features/Antipaladin Spells
 pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin/Antipaladin/Class Features/Associates
 pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin/Antipaladin/Class Features/Aura of Cowardice
 pfsrd://Advanced Players Guide/Rules/Core Classes/Paladin/Antipaladin/Class Features/Aura of Depravity
@@ -9733,7 +9734,7 @@ pfsrd://Bestiary/Rules/Universal Monster Rules/Whirlwind
 pfsrd://Core Rulebook
 pfsrd://Core Rulebook/Classes
 pfsrd://Core Rulebook/Classes/Adept
-pfsrd://Core Rulebook/Classes/Adept/Adept Spell List
+pfsrd://Core Rulebook/Classes/Adept/Adept Spells
 pfsrd://Core Rulebook/Classes/Adept/Class Features/Summon Familiar
 pfsrd://Core Rulebook/Classes/Adept/Class Skills/Skill Ranks per Level/Table Adept
 pfsrd://Core Rulebook/Classes/Arcane Archer
