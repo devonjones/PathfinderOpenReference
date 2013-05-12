@@ -38,6 +38,8 @@ public class DetailsWebViewClient extends WebViewClient {
 	private String oldUrl;
 	private boolean isTablet;
 	private long currentCollection;
+	private Float progressToRestore;
+	private WebView mWebView;
 	ArrayList<HashMap<String, String>> path;
 
 	public DetailsWebViewClient(Activity act, TextView title, ImageButton back,
@@ -49,6 +51,26 @@ public class DetailsWebViewClient extends WebViewClient {
 		this.contentError = contentError;
 		this.isTablet = PathfinderOpenReferenceActivity.isTabletLayout(act);
 		openDb();
+	}
+
+	@Override
+	public void onPageFinished(WebView view, String url) {
+		if (progressToRestore != null && mWebView != null) {
+
+			view.postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					float webviewsize = mWebView.getContentHeight()
+							- mWebView.getTop();
+					float positionInWV = webviewsize * progressToRestore;
+					int positionY = Math.round(mWebView.getTop() + positionInWV);
+					mWebView.scrollTo(0, positionY);
+					progressToRestore = null;
+				}
+				// Delay the scrollTo to make it work
+			}, 200);
+		}
+		super.onPageFinished(view, url);
 	}
 
 	public String mungeUrl(String newUrl) {
@@ -77,6 +99,7 @@ public class DetailsWebViewClient extends WebViewClient {
 	}
 
 	public boolean render(WebView view, String newUrl, String contextUrl) {
+		mWebView = view;
 		newUrl = mungeUrl(newUrl);
 		if (newUrl != null) {
 			String[] parts = newUrl.split("\\/");
@@ -311,5 +334,9 @@ public class DetailsWebViewClient extends WebViewClient {
 	public void setCharacter(long itemId) {
 		currentCollection = itemId;
 		refreshStarButtonState();
+	}
+
+	public void setProgressToRestore(float progressToRestore) {
+		this.progressToRestore = progressToRestore;
 	}
 }

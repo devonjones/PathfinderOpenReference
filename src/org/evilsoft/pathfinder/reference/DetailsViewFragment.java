@@ -39,6 +39,11 @@ public class DetailsViewFragment extends SherlockFragment {
 		}
 		client = new DetailsWebViewClient(getActivity(), title, back, star,
 				contentError);
+		if (savedInstanceState != null
+				&& savedInstanceState.containsKey("progression")) {
+			client.setProgressToRestore(savedInstanceState
+					.getFloat("progression"));
+		}
 		viewer.setWebViewClient(client);
 		back.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
@@ -65,6 +70,20 @@ public class DetailsViewFragment extends SherlockFragment {
 
 	public void updateUrl(String newUrl, String contextUrl) {
 		client.render(viewer, newUrl, contextUrl);
+	}
+
+	@Override
+	public void onSaveInstanceState(Bundle outState) {
+		outState.putFloat("progression", calculateProgression());
+	}
+
+	private float calculateProgression() {
+		float positionTopView = viewer.getTop();
+		float contentHeight = viewer.getContentHeight();
+		float currentScrollPosition = viewer.getScrollY();
+		float percentWebview = (currentScrollPosition - positionTopView)
+				/ contentHeight;
+		return percentWebview;
 	}
 
 	@Override
