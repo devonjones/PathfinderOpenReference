@@ -1,6 +1,6 @@
 package org.evilsoft.pathfinder.reference.list;
 
-public class BaseListItem {
+public class BaseListItem implements UrlListItem {
 	private int sectionId;
 	private String database;
 	private String name;

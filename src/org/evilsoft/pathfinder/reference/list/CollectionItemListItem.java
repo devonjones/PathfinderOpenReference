@@ -1,6 +1,6 @@
 package org.evilsoft.pathfinder.reference.list;
 
-public class CollectionItemListItem {
+public class CollectionItemListItem implements UrlListItem {
 	private String name;
 	private String collectionValueId;
 	private String url;

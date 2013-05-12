@@ -1,7 +1,7 @@
 package org.evilsoft.pathfinder.reference;
 
 import org.acra.ErrorReporter;
-import org.evilsoft.pathfinder.reference.list.BaseListItem;
+import org.evilsoft.pathfinder.reference.list.UrlListItem;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -46,7 +46,7 @@ public class DetailsListFragment extends AbstractViewListFragment {
 	}
 
 	private String getNextUrl(Integer position) {
-		BaseListItem item = (BaseListItem) currentListAdapter.getItem(position);
+		UrlListItem item = (UrlListItem) currentListAdapter.getItem(position);
 		return item.getUrl();
 	}
 }
