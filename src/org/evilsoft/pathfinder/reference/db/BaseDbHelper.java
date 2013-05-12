@@ -35,8 +35,8 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 		this.DB_FILENAME = db.getAbsolutePath();
 	}
 
-	public void createDatabase(boolean isCurrent)
-			throws IOException, LimitedSpaceException {
+	public void createDatabase(boolean isCurrent) throws IOException,
+			LimitedSpaceException {
 		boolean dbExists = checkDatabase();
 		if (dbExists) {
 			if (!isCurrent) {
@@ -53,7 +53,7 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 		}
 	}
 
-	/* Can be overridden to trigger other events after creation.*/
+	/* Can be overridden to trigger other events after creation. */
 	protected void onCreate() {
 	}
 
@@ -111,8 +111,8 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 		long buffer = (long) (size * 0.1);
 		long free = AvailableSpaceHandler.getAvailableSpaceInBytes(DB_PATH);
 		if (size + buffer > free) {
-			throw new LimitedSpaceException(
-					"Not enough free space.", size + buffer);
+			throw new LimitedSpaceException("Not enough free space.", size
+					+ buffer);
 		}
 	}
 
@@ -210,27 +210,37 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 			}
 		} catch (Exception e) {
 			// Trying SD broke, move to using internal
-			ErrorReporter.getInstance().putCustomData(
-					"Situation", "Failed to write to SD");
+			ErrorReporter.getInstance().putCustomData("Situation",
+					"Failed to write to SD");
 			ErrorReporter.getInstance().handleException(e);
 		}
 
 		// check internal storage
-		tmpFile = new File(context.getFilesDir().getAbsolutePath(), dbName);
-		// see if the db exists on internal storage
-		if (tmpFile.exists()) {
-			if (null != retFile) {
-				// if the db is on internal *and* external storage, delete the
-				// internal storage copy
-				tmpFile.delete();
+		try {
+			tmpFile = new File(context.getFilesDir().getAbsolutePath(), dbName);
+			// see if the db exists on internal storage
+			if (tmpFile.exists()) {
+				if (null != retFile) {
+					// if the db is on internal *and* external storage, delete
+					// the
+					// internal storage copy
+					tmpFile.delete();
+				}
 			}
-		}
 
-		// if we got this far with retFile undefined, there either isn't
-		// external storage
-		// or insufficient space there. default to internal storage
-		if (null == retFile) {
-			retFile = tmpFile;
+			// if we got this far with retFile undefined, there either isn't
+			// external storage
+			// or insufficient space there. default to internal storage
+			if (null == retFile) {
+				retFile = tmpFile;
+			}
+		} catch (NullPointerException npe) {
+			ErrorReporter.getInstance().putCustomData("Situation",
+					"DB failed to open: " + dbName.toString());
+			ErrorReporter.getInstance().putCustomData("path",
+					context.getFilesDir().getAbsolutePath());
+			ErrorReporter.getInstance().handleException(npe);
+			throw npe;
 		}
 
 		return retFile;
