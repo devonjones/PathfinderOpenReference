@@ -4758,26 +4758,10 @@ pfsrd://Bestiary 2/Monsters/Bat/Mobat
 pfsrd://Bestiary 2/Monsters/Bat/Mobat/Special Abilities
 pfsrd://Bestiary 2/Monsters/Bat/Mobat/Special Abilities/Screech
 pfsrd://Bestiary 2/Monsters/Bat/Skaveling
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/AC
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Base Atk
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Disease
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Disease/Ghoul Fever/Mobat
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Environment
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Feats
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Fort
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/hp
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Immune
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Init
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Melee
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Organization
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Screech
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Skills
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Space
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Special Attacks
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Speed
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Str
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Treasure
-pfsrd://Bestiary 2/Monsters/Bat/Skaveling/XP 1,600
+pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Special Abilities
+pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Special Abilities/Disease
+pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Special Abilities/Disease/Skaveling Ghoul Fever
+pfsrd://Bestiary 2/Monsters/Bat/Skaveling/Special Abilities/Screech
 pfsrd://Bestiary 2/Monsters/Bee
 pfsrd://Bestiary 2/Monsters/Bee/Giant
 pfsrd://Bestiary 2/Monsters/Bee/Giant Queen
@@ -12387,6 +12371,7 @@ pfsrd://Core Rulebook/Skills/Spellcraft
 pfsrd://Core Rulebook/Skills/Spellcraft/Retry
 pfsrd://Core Rulebook/Skills/Spellcraft/Special/Table Spellcraft DCs
 pfsrd://Core Rulebook/Skills/Stealth
+pfsrd://Core Rulebook/Skills/Stealth/Check/Breaking Stealth
 pfsrd://Core Rulebook/Skills/Stealth/Check/Creating a Diversion to Hide
 pfsrd://Core Rulebook/Skills/Stealth/Check/Sniping
 pfsrd://Core Rulebook/Skills/Survival
@@ -18608,6 +18593,7 @@ pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotted Wondrous Items/Head
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotted Wondrous Items/Headband
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotted Wondrous Items/Neck
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotted Wondrous Items/Shoulders
+pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotted Wondrous Items/Slotless
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Slotted Wondrous Items/Wrists
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Special Wondrous Items
 pfsrd://Ultimate Equipment/Rules/Wondrous Items/Wrists
