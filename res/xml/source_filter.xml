@@ -13,12 +13,18 @@
 		android:defaultValue="true" />
 	
 	<CheckBoxPreference
+		android:key="source_UCA"
+		android:title="Ultimate Campaign"
+		android:summary="Stuff to do when not in dungeons"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
 		android:key="source_UC"
 		android:title="Ultimate Combat"
 		android:summary="Physical fighting"
 		android:defaultValue="true" />
 	
-	<CheckBoxPreference
+		<CheckBoxPreference
 		android:key="source_UE"
 		android:title="Ultimate Equipment"
 		android:summary="Phat loot"

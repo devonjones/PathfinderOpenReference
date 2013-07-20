@@ -34,6 +34,9 @@ public class FilterPreferenceManager {
 		if (preferences.getBoolean("source_ARG", true) == false) {
 			sourceList.add("Advanced Race Guide");
 		}
+		if (preferences.getBoolean("source_UCA", true) == false) {
+			sourceList.add("Ultimate Campaign");
+		}
 		if (preferences.getBoolean("source_UC", true) == false) {
 			sourceList.add("Ultimate Combat");
 		}

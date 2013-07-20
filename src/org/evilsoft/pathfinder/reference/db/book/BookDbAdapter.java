@@ -117,6 +117,10 @@ public class BookDbAdapter {
 		return new AnimalCompanionAdapter(database, dbName);
 	}
 
+	public ArmyAdapter getArmyAdapter() {
+		return new ArmyAdapter(database, dbName);
+	}
+
 	public ClassAdapter getClassAdapter() {
 		return new ClassAdapter(database, dbName);
 	}
@@ -137,8 +141,16 @@ public class BookDbAdapter {
 		return new ItemAdapter(database, dbName);
 	}
 
+	public KingdomResourceAdapter getKingdomResourceAdapter() {
+		return new KingdomResourceAdapter(database, dbName);
+	}
+
 	public LinkAdapter getLinkAdapter() {
 		return new LinkAdapter(database, dbName);
+	}
+
+	public ResourceAdapter getResourceAdapter() {
+		return new ResourceAdapter(database, dbName);
 	}
 
 	public SectionAdapter getSectionAdapter() {
