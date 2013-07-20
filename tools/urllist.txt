@@ -3154,6 +3154,7 @@ pfsrd://Advanced Race Guide/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/
 pfsrd://Advanced Race Guide/Races/Dwarves/Racial Archetypes/Stonelord (Paladin)/Stonestrike (Su)
 pfsrd://Advanced Race Guide/Races/Elves
 pfsrd://Advanced Race Guide/Races/Elves/Alternate Racial Rules/Alternate Racial Traits/Arcane Focus
+pfsrd://Advanced Race Guide/Races/Elves/Alternate Racial Rules/Alternate Racial Traits/Darkvision
 pfsrd://Advanced Race Guide/Races/Elves/Alternate Racial Rules/Alternate Racial Traits/Desert Runner
 pfsrd://Advanced Race Guide/Races/Elves/Alternate Racial Rules/Alternate Racial Traits/Dreamspeaker
 pfsrd://Advanced Race Guide/Races/Elves/Alternate Racial Rules/Alternate Racial Traits/Elemental Resistance
@@ -3293,6 +3294,7 @@ pfsrd://Advanced Race Guide/Races/Gillmen/Racial Archetypes/Eldritch Raider (Rog
 pfsrd://Advanced Race Guide/Races/Gnomes
 pfsrd://Advanced Race Guide/Races/Gnomes/Alternate Racial Rules/Alternate Racial Traits/Academician
 pfsrd://Advanced Race Guide/Races/Gnomes/Alternate Racial Rules/Alternate Racial Traits/Bond to the Land
+pfsrd://Advanced Race Guide/Races/Gnomes/Alternate Racial Rules/Alternate Racial Traits/Darkvision
 pfsrd://Advanced Race Guide/Races/Gnomes/Alternate Racial Rules/Alternate Racial Traits/Eternal Hope
 pfsrd://Advanced Race Guide/Races/Gnomes/Alternate Racial Rules/Alternate Racial Traits/Explorer
 pfsrd://Advanced Race Guide/Races/Gnomes/Alternate Racial Rules/Alternate Racial Traits/Fell Magic
@@ -3356,6 +3358,7 @@ pfsrd://Advanced Race Guide/Races/Goblins/Alternate Racial Traits/Eat Anything
 pfsrd://Advanced Race Guide/Races/Goblins/Alternate Racial Traits/Hard Head/Big Teeth
 pfsrd://Advanced Race Guide/Races/Goblins/Alternate Racial Traits/Over-Sized Ears
 pfsrd://Advanced Race Guide/Races/Goblins/Alternate Racial Traits/Tree Runner
+pfsrd://Advanced Race Guide/Races/Goblins/Alternate Racial Traits/Weapon Familiarity
 pfsrd://Advanced Race Guide/Races/Goblins/Goblin Discoveries
 pfsrd://Advanced Race Guide/Races/Goblins/Goblin Discoveries/Fire Brand (Su)
 pfsrd://Advanced Race Guide/Races/Goblins/Goblin Discoveries/Rag Doll Mutagen (Su)
@@ -3576,6 +3579,7 @@ pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Alternate Rac
 pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Alternate Racial Traits/Sacred Tattoo
 pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Alternate Racial Traits/Scavenger
 pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Alternate Racial Traits/Shamans Apprentice
+pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Alternate Racial Traits/Skilled
 pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Alternate Racial Traits/Toothy
 pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Racial Subtypes/Arena-Bred
 pfsrd://Advanced Race Guide/Races/Half-Orcs/Alternate Racial Rules/Racial Subtypes/Deep Kin
@@ -3897,6 +3901,7 @@ pfsrd://Advanced Race Guide/Races/Kobolds/Racial Archetypes and Bloodlines/Kobol
 pfsrd://Advanced Race Guide/Races/Kobolds/Racial Archetypes and Bloodlines/Kobold Sorcerer Bloodline/Bonus Feats
 pfsrd://Advanced Race Guide/Races/Kobolds/Racial Archetypes and Bloodlines/Kobold Sorcerer Bloodline/Class Skill
 pfsrd://Advanced Race Guide/Races/Merfolk
+pfsrd://Advanced Race Guide/Races/Merfolk/Alternate Racial Traits/Darkvision
 pfsrd://Advanced Race Guide/Races/Merfolk/Alternate Racial Traits/Seasinger
 pfsrd://Advanced Race Guide/Races/Merfolk/Alternate Racial Traits/Strongtail
 pfsrd://Advanced Race Guide/Races/Merfolk/Merfolk Racial Traits
@@ -5440,6 +5445,10 @@ pfsrd://Bestiary 2/Monsters/Fungal Crawler/Special Abilities/Leap
 pfsrd://Bestiary 2/Monsters/Fungal Crawler/Special Abilities/Plant Defenses
 pfsrd://Bestiary 2/Monsters/Fungal Crawler/Special Abilities/Poison
 pfsrd://Bestiary 2/Monsters/Fungal Crawler/Special Abilities/Poison/Fungal Crawler Venom
+pfsrd://Bestiary 2/Monsters/Gar
+pfsrd://Bestiary 2/Monsters/Gar/Gar
+pfsrd://Bestiary 2/Monsters/Gar/Gar/Gar/7th-Level Advancement
+pfsrd://Bestiary 2/Monsters/Gar/Giant
 pfsrd://Bestiary 2/Monsters/Giant
 pfsrd://Bestiary 2/Monsters/Giant/Marsh
 pfsrd://Bestiary 2/Monsters/Giant/Rune
@@ -5928,16 +5937,27 @@ pfsrd://Bestiary 2/Monsters/Qlippoth/Thulgant/Special Abilities/Demon Hunter
 pfsrd://Bestiary 2/Monsters/Qlippoth/Thulgant/Special Abilities/Horrific Appearance
 pfsrd://Bestiary 2/Monsters/Qlippoth/Thulgant/Special Abilities/Savage Stingers
 pfsrd://Bestiary 2/Monsters/quickling
+pfsrd://Bestiary 2/Monsters/Quickling
 pfsrd://Bestiary 2/Monsters/quickling/Special Abilities
+pfsrd://Bestiary 2/Monsters/Quickling/Special Abilities
 pfsrd://Bestiary 2/Monsters/quickling/Special Abilities/Natural Invisibility
+pfsrd://Bestiary 2/Monsters/Quickling/Special Abilities/Natural Invisibility
 pfsrd://Bestiary 2/Monsters/quickling/Special Abilities/Slow Susceptibility
+pfsrd://Bestiary 2/Monsters/Quickling/Special Abilities/Slow Susceptibility
 pfsrd://Bestiary 2/Monsters/quickling/Special Abilities/Supernatural Speed
+pfsrd://Bestiary 2/Monsters/Quickling/Special Abilities/Supernatural Speed
 pfsrd://Bestiary 2/Monsters/quickwood
+pfsrd://Bestiary 2/Monsters/Quickwood
 pfsrd://Bestiary 2/Monsters/quickwood/Special Abilities
+pfsrd://Bestiary 2/Monsters/Quickwood/Special Abilities
 pfsrd://Bestiary 2/Monsters/quickwood/Special Abilities/Fear Aura
+pfsrd://Bestiary 2/Monsters/Quickwood/Special Abilities/Fear Aura
 pfsrd://Bestiary 2/Monsters/quickwood/Special Abilities/Oaksight
+pfsrd://Bestiary 2/Monsters/Quickwood/Special Abilities/Oaksight
 pfsrd://Bestiary 2/Monsters/quickwood/Special Abilities/Roots
+pfsrd://Bestiary 2/Monsters/Quickwood/Special Abilities/Roots
 pfsrd://Bestiary 2/Monsters/quickwood/Special Abilities/Spell Absorption
+pfsrd://Bestiary 2/Monsters/Quickwood/Special Abilities/Spell Absorption
 pfsrd://Bestiary 2/Monsters/Rast
 pfsrd://Bestiary 2/Monsters/Rast/Special Abilities
 pfsrd://Bestiary 2/Monsters/Rast/Special Abilities/Paralyzing Gaze
@@ -14845,6 +14865,2002 @@ pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Darkstar
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Darkstar/Filagan Umbraflame
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Midnight Dancer
 pfsrd://NPC Codex/Rules/Prestige Class NPCs/Shadowdancer/Shadowdancers/Midnight Dancer/Mellak the Raven
+pfsrd://Ultimate Campaign
+pfsrd://Ultimate Campaign/Feats
+pfsrd://Ultimate Campaign/Feats/Accursed
+pfsrd://Ultimate Campaign/Feats/Arisen
+pfsrd://Ultimate Campaign/Feats/Arisen/Normal
+pfsrd://Ultimate Campaign/Feats/Battlefield Healer
+pfsrd://Ultimate Campaign/Feats/Champion
+pfsrd://Ultimate Campaign/Feats/Damned
+pfsrd://Ultimate Campaign/Feats/Deny the Reaper
+pfsrd://Ultimate Campaign/Feats/Deny the Reaper/B
+pfsrd://Ultimate Campaign/Feats/Eldritch Researcher
+pfsrd://Ultimate Campaign/Feats/Fearless Zeal
+pfsrd://Ultimate Campaign/Feats/Feral Heart
+pfsrd://Ultimate Campaign/Feats/Foeslayer
+pfsrd://Ultimate Campaign/Feats/Forgotten Past
+pfsrd://Ultimate Campaign/Feats/Glimpse Beyond
+pfsrd://Ultimate Campaign/Feats/Innocent Blood
+pfsrd://Ultimate Campaign/Feats/Liberator
+pfsrd://Ultimate Campaign/Feats/Lost Legacy
+pfsrd://Ultimate Campaign/Feats/Magnum Opus
+pfsrd://Ultimate Campaign/Feats/Monument Builder
+pfsrd://Ultimate Campaign/Feats/Nation Builder
+pfsrd://Ultimate Campaign/Feats/Nemesis
+pfsrd://Ultimate Campaign/Feats/Prophet
+pfsrd://Ultimate Campaign/Feats/Redemption
+pfsrd://Ultimate Campaign/Feats/Shamed
+pfsrd://Ultimate Campaign/Feats/Stronghold
+pfsrd://Ultimate Campaign/Feats/Thief of Legend
+pfsrd://Ultimate Campaign/Feats/Town Tamer
+pfsrd://Ultimate Campaign/Feats/True Love
+pfsrd://Ultimate Campaign/Feats/Unforgotten
+pfsrd://Ultimate Campaign/Feats/Vengeance
+pfsrd://Ultimate Campaign/Rules
+pfsrd://Ultimate Campaign/Rules/Campaign Systems
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Changing alignment
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Chaotic Evil
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Chaotic Good
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Chaotic Neutral
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Forced Alignment Change
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Forced Alignment Change/Changing Alignment
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Lawful Evil
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Lawful Good
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Lawful Neutral
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Neutral
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Neutral Evil
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Alignment/Neutral Good
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Examples of Bargaining
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 1 Seller Sets the Asking Price
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 2 Evaluate Item
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 3 Determine Undercut
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 4 Set Offers
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 4 Set Offers/Fair
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 4 Set Offers/Unfair
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 4 Set Offers/Unfair
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 5 Bargain
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 5 Bargain/Counteroffer Equals Final Offer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 5 Bargain/Counteroffer Exceeds Final Offer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Bargaining Rules/Step 5 Bargain/Counteroffer Is Less Than Final Offer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Collector NPCs
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Flooding the Market
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Trade Goods
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Using Magic to Bargain
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Bargaining/Valuation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Alignment
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Bargaining
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Contacts
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Exploration
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Honor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Investment
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Lineage
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Magic Item Creation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Relationships
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Reputation and Fame
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Retirement
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Retraining
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Taxation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Campaign Systems/Young Characters
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Advancing Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Advancing Companions/Animal Companion
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Advancing Companions/Cohort
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Advancing Companions/Eidolon
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Advancing Companions/Follower
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Advancing Companions/Hirelings
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Advancing Companions/Mounts
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Companion Plot Hooks
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Companion Plot Hooks/Animal Companion
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Companion Plot Hooks/Animal Companion/Cohort
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Companion Plot Hooks/Animal Companion/Eidolon
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Companion Plot Hooks/Animal Companion/Familiar
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Companion Plot Hooks/Animal Companion/Follower
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Aspects of Control
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Aspects of Control/Common Exceptions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Aspects of Control/Eidolons
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Aspects of Control/Magical Control
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Aspects of Control/Nonsentient Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Aspects of Control/Sentient Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Issues of Control
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Issues of Control/Ease of Play
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Issues of Control/Game Balance
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Controlling Companions/Issues of Control/Sharing Information
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Intelligent Animals
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Remembering Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Remembering Companions/Tips for Remembering Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Remembering Companions/Tips for Remembering Companions/Casual Observer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Remembering Companions/Tips for Remembering Companions/Remembering Followers
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Reviving and Replacing Companions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Reviving and Replacing Companions/Reviving a Dead Companion
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Companions/Reviving and Replacing Companions/Reviving a Dead Companion/Finding a Replacement
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Gaining/Cultivating/and Losing Contacts
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Gaining/Cultivating/and Losing Contacts/NPC Trust
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Negotiation Checks
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/1. None
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/1. None/Critical Failure
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/2. Minor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/2. Minor/Critical Failure
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/3. Moderate
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/3. Moderate/Critical Failure
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/4. Considerable
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/4. Considerable/Critical Failure
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/5. Great
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Risk/5. Great/Critical Failure
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Trust
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Trust/1. Wary
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Trust/2. Skeptical
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Trust/3. Reliable
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Trust/4. Trustworthy
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Trust/5. Confidant
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Academic
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Artisan
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Assassin
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Crime Boss
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Fence
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Gossip
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Heretic
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Lunatic
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Manipulator
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Merchant
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Observer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Outsider
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Pariah
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Petty Criminal
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Politician
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Professional Criminal
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Rumormonger
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Saboteur
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Snitch
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Thug
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Traitor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Contacts/Types of Contacts/Watch Guard
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hazards
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hazards/Bad Weather
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hazards/Blight
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hazards/Deadly Gas
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hazards/Dust Devil
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hazards/Grass Fire
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hazards/Volcanic Tremor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Desert
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Forest
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Hill
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Marsh
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Mountain
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Plain
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Settlement
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Hex Terrain Types/Water
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Movement
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Movement/Exploration Rewards
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Movement/Exploration Time
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Movement/Getting Lost
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Movement/Keep Things Interesting
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Movement/Tracking Travel
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Movement/Travel Time
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Planned Encounters
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Random Encounters
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Random Encounters/d%
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Random Map Generation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Random Map Generation/d20
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Random Map Generation/d20
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Exploration/Sandbox Exploration
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Chivalric Code
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Chivalric Code/Event
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Criminal Code
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Criminal Code/Event
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/General Honor Events
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/General Honor Events/Event
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Political Code
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Political Code/Event
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Samurai Code
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Samurai Code/Event
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Tribal Code
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Consequences of Losing Honor/Tribal Code/Event
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Gaining and Losing Honor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Honor Points
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Honor Points/NPC Base Honor Points
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Honor Points/PC Base Honor Points
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Spending Honor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Spending Honor/Favor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Spending Honor/Gift or Loan
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Honor/Spending Honor/Skill Bonus
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Arts
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Banking
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Crafting
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Exploration
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Granary/Mill
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Guild
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Imports
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Invention
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Protection
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Quarry
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Research
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Stable
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Tavern
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Example Investments and Problems/Tavern/Investment Rewards
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Investment Mechanics
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Investment Mechanics/Breakout Year
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Investment Mechanics/Failed Year
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Investment/Investment Mechanics/Normal Year
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Complicated and Dysfunctional Families
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Death in the Family
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Developing Your Family
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Developing Your Family/Distant Relatives
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Developing Your Family/Extended Family
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Developing Your Family/Immediate Family
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Family Members as Foes
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Family Values
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Famous Lineages
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Including Families in the Game
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Inheritance
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Lineage/Support and Obligation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Adjusting Character Wealth by Level
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Altering Existing Items
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Altering Existing Items/Classes Value Some Slots More Than Others
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Altering Existing Items/Not All Item Slots Have Equal Value
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Altering Existing Items/Respect Each Crafting Feats Niche
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Altering Existing Items/Some Abilities Are Assigned to Certain Slots
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Cooperative Crafting
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Creating Items For Profit
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Creating Items For Profit/Alter Wealth By Level
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Creating Items For Profit/Use the Downtime System
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Pricing New Items
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Recharging Charged Items
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Components as Commodities
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Components as Treasure
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Enriching the Campaign
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Adamantine Ore
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Arcane Residue
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Astral Essence
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Demon Blood
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Devil Blood
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Dire Animal Brain
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Doppelganger Ichor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Dragon Bone
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Dragon Heartblood
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Elemental Spirit
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Ethereal Essence
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Giant Squid Ink
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Hand of a Murderer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Heart of the Mountain
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Holy/Unholy Symbol
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Mithral Crystal
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Naga Brain
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Rare Herbs
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Stardust
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Troll Blood
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Unicorn Horn
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Vampire Dust/Ichor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Virgins Blood
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Example Components/Wyvern Poison
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Requiring Components
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Talismanic components/Using Components
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Magic Item Creation/Upgrading Items
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Childhood Rival
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Childhood Rival/Adventure Hooks
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Childhood Rival/Growing the Relationship
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Childhood Rival/Roleplaying Advice
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Example Relationships
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Growing Relationships
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Growing Relationships/Campaign Trait
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Growing Relationships/Charisma
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Growing Relationships/Companionship
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Growing Relationships/Gifts and Insults
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Growing Relationships/Special Events
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Parent
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Parent/Adventure Hooks
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Parent/Growing the Relationship
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Parent/Roleplaying Advice
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Relationship Levels
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Relationship Levels/Association
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Relationship Levels/Devotion/Enmity
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Relationship Levels/Fellowship/Rivalry
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Relationship Levels/Friendship/Competition
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Relationship Levels/Relationship Score
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Reversing Relationships
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Sibling
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Sibling/Adventure Hooks
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Sibling/Growing the Relationship
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Sibling/Roleplaying Advice
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Spouse
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Spouse/Adventure Hooks
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Spouse/Growing the Relationship
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Relationships/Spouse/Roleplaying Advice
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Alter Egos/Aliases/and Secret Identities
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Alter Egos/Aliases/and Secret Identities/Fame Events
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Alter Egos/Aliases/and Secret Identities/Negative Fame Reactions
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 1
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 10
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 10/Arcane Study I
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 10/Character Witness
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 10/Lore of Ages
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 10/Wanderer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 1/Heros Luck
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 1/Palm Greaser
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 1/Planar Pact
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Arcane Study II
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Favored Territory
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Fence Friend
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Initiate
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Intense Student
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Master of Trade
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Sacrifice
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Sage
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Temporary Cohort
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 20/Vindicator
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 30
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 30/Arcane Study III
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 30/Blood-Bound
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 30/Escape Death
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 30/Officer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 30/Worldly Fame
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 40
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 40/Commander
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 40/Patriot
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 40/Privileged Meeting
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 55+
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 55+/High Commander
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Awards/Fame 55+/The Great
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Disrepute and Infamy
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Fame
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Prestige Points
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Shared Fame
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Sphere of Influence
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Reputation And Fame/Reputation and Fame/Sphere of Influence/Sphere of Influence Modifiers
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retirement
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retirement/Betrayal
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retirement/Relationship to the PCs
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retirement/Taking a Different Path
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retirement/The Simple Life
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Ability Score Increase
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Archetype
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Alchemist
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Antipaladin
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Barbarian
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Bard
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Cavalier
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Cleric
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Druid
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Fighter
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Gunslinger
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Inquisitor
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Magus
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Monk
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Ninja
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Oracle
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Paladin
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Ranger
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Rogue
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Samurai
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Sorcerer
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Summoner
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Witch
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Feature/Wizard
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Level
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Class Level/Retraining Synergies
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Feat
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Hit Points
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/New Language
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Racial Trait
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Skill Ranks
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Retraining/Spells Known
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Compliance
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Assassination
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Celebrity
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Espionage
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Magic Item Creation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Military Service
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Monster Hunting
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Other Services
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Service/Spellcasting
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Taxes
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Taxes/Direct Taxation
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Taxes/Monetary Favors
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Taxation/Types of Taxes/Service
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Considerations of Youth
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Considerations of Youth/Child Endangerment
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Considerations of Youth/Roleplaying
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Considerations of Youth/Uneven Parties
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Considerations of Youth/Weakness
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Creating Young Characters
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Creating Young Characters/Ability Score Adjustments
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Creating Young Characters/Available Classes
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Creating Young Characters/Traits
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Creating Young Characters/Traits/Random Young Starting Ages
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Leaving Youth Behind
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Leaving Youth Behind/Age
+pfsrd://Ultimate Campaign/Rules/Campaign Systems/Young Characters/Leaving Youth Behind/Reward
+pfsrd://Ultimate Campaign/Rules/Character Background
+pfsrd://Ultimate Campaign/Rules/Character Background/Adolescence
+pfsrd://Ultimate Campaign/Rules/Character Background/Adolescence/Class Event
+pfsrd://Ultimate Campaign/Rules/Character Background/Adolescence/Duty and Responsibilities
+pfsrd://Ultimate Campaign/Rules/Character Background/Adolescence/First Love
+pfsrd://Ultimate Campaign/Rules/Character Background/Adolescence/Friends/Allies/and Influences
+pfsrd://Ultimate Campaign/Rules/Character Background/Adolescence/Initiation Rites
+pfsrd://Ultimate Campaign/Rules/Character Background/Adulthood
+pfsrd://Ultimate Campaign/Rules/Character Background/Adulthood/Conflict and Behavior
+pfsrd://Ultimate Campaign/Rules/Character Background/Adulthood/Friends/Associates/and Companions
+pfsrd://Ultimate Campaign/Rules/Character Background/Adulthood/Vulnerability
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Adopted Outside Your Race
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Adopted Outside Your Race/Adopted Outside Your Race
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Alchemist
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Alchemist/Alchemist Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Barbarian
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Barbarian/Barbarian Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Bard
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Bard/Bard Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Cavalier
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Cavalier/Cavalier Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Circumstance of Birth
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Circumstance of Birth/Circumstance of Birth
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Cleric
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Cleric/Cleric Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Character Drawback
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Character Drawback/Character Drawback
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Crime
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Abadar
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Asmodeus
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Calistria
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Cayden Cailean
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Desna
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Erastil
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Gorum
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Gozreh
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Iomedae
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Irori
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Lamashtu
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Nethys
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/No Deity
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Norgorber
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Pharasma
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Rovagug
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Sarenrae
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Shelyn
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Torag
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Undecided
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Urgathoa
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Deity and Religious Philosophy/Zon-Kuthon
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Determining Alignment
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Punishment
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Relationship with Fellow Adventurers
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Relationship with Fellow Adventurers/Relationship with Fellow Adventurers
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Romantic Relationships
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Crime and Punishment/Romantic Relationships/Romantic Relationships
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Druid
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Druid/Druid Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Dwarf
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Dwarf/Dwarf Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Dwarf/Dwarf Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Dwarf/Dwarf Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Elf
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Elf/Elf Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Elf/Elf Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Elf/Elf Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Fighter
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Fighter/Fighter Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Gnome
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Gnome/Gnome Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Gnome/Gnome Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Gnome/Gnome Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Gunslinger
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Gunslinger/Gunslinger Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Elf
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Elf/Half-Elf Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Elf/Half-Elf Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Elf/Half-Elf Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Halfling
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Halfling/Halfling Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Halfling/Halfling Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Halfling/Halfling Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Orc
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Orc/Half-Orc Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Orc/Half-Orc Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Half-Orc/Half-Orc Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Human
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Human/Human Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Human/Human Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Human/Human Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Influential Associates
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Influential Associates/Influential Associates
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Inquisitor
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Inquisitor/Inquisitor Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Magus
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Magus/Magus Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Major Childhood Event
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Major Childhood Event/Major Childhood Event
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Monk
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Monk/Monk Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Nobility
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Nobility/Nobility
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Oracle
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Oracle/Oracle Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Paladin
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Paladin/Paladin Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Parents Profession
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Parents Profession/Parents Profession
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Ranger
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Ranger/Ranger Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Rogue
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Rogue/Rogue Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Siblings/Race of Adopted Sibling
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Siblings/Relative Age of Sibling
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Sorcerer
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Sorcerer/Sorcerer Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 1-Homeland/Family/and Childhood
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 1-Homeland/Family/and Childhood
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 2-Adolescence and Training
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 2-Adolescence And Training
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflict/Relationships/and Vulnerabilities
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Conflict Motivation
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Conflict Motivation/Motivation
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Conflicts
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Conflicts/Conflicts
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Conflict Subject
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Conflict Subject/Conflict Subject
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Major Conflict and Alignment
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution/Denial (+1 CP)
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution/Mixed Feelings
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution/No Guilt (+2 CP)
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution/Regret and Penance
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution/Secret Regret
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution/Sincere Regret
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Step 3-Moral Conflicts/Relationships/and Drawbacks/Resolution/You Enjoyed It (+3 CP)
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Summoner
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Summoner/Summoner Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Unusual Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Unusual Homeland/Unusual Homeland
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Witch
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Witch/Witch Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Wizard
+pfsrd://Ultimate Campaign/Rules/Character Background/Background Generator/Wizard/Wizard Backgrounds
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/How to Create a Background
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/How to Create a Background/Brainstorming Your Background
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/How to Create a Background/Creating a Unique Character Concept
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/How to Create a Background/Creating a Unique Character Concept/Opposites
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/How to Create a Background/Creating a Unique Character Concept/Originality
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/How to Create a Background/Creating a Unique Character Concept/Steal Shamelessly
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/How to Create a Background/Creating a Unique Character Concept/The Third Idea
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/Two Quirks and a Flaw Quick and Dirty Character Establishment
+pfsrd://Ultimate Campaign/Rules/Character Background/Character Background/Using This Section
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Circumstances of Birth
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Family
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Family/Adoption/Illegitimacy/and Orphanhood
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Family/Extended Family
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Family/Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Family/Parents Professions
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Family/Siblings
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Magic
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Major Childhood Event
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Region
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Religion and Ritual
+pfsrd://Ultimate Campaign/Rules/Character Background/Early Life/Social Rank and Education
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Anatomist
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Armor Expert
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Axe to Grind
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Battlefield Disciple
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Black Powder Bravado
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Black Powder Fortune
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Black Powder Interjection
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Bloodthirsty
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Bullied
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Cold and Calculating
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Courageous
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Dedicated Defender
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Deft Dodger
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Dirty Fighter
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Dispelled Battler
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Easy Way or the Hard Way
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Evasive Sting
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Faiths Hunter
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Fencer
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Hidden Hand
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Hunters Knack
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Indelible Ire
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Just Like New
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Killer
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Kin Guardian
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Larger Than Life
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Martial Performer
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Natures Mimic
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Never Stop Shooting
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Reactionary
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Reckless
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Reckless Contempt
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Resilient
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Resolve of the Rejected
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Scarred Descendant
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Startling Report
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Surprise Weapon
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Tactician
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Unblemished Barrel
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Combat Traits/Vigilant Battler
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Beacon of Faith
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Birthmark
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Blessed
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Caretaker
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Child of the Temple
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Devotee of the Green
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Disdainful Defender
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Ease of Faith
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Fates Favored
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Fearless Defiance
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Focused Disciple
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/History of Heresy
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Indomitable Faith
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Inspired
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Loyalty across Lifetimes
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Martial Manuscript
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Oathbound
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Omen
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Perpetual Companion
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Planar Savant
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Principled
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Prophesied
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Reincarnated
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Sacred Conduit
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Sacred Touch
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Scholar of the Great Beyond
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Schooled Inquisitor
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Spirit Sense
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Tireless Avenger
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Wanderers Shroud
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Faith Traits/Zealous Striker
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Air-Touched
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Alchemical Adept
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Alchemical Intuition
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Arcane Revitalization
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Arcane Temper
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Ascendant Recollection
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Bladed Magic
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Classically Schooled
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Cross-Disciplined
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Cross-Knowledge
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Dangerously Curious
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Desperate Resolve
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Desperate Speed
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Earth-Touched
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Eldritch Delver
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Enduring Mutagen
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Flame-Touched
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Focused Burn
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Focused Mind
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Gifted Adept
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Greater Link
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Greater Purpose
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Hedge Magician
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Kin Bond
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Knowledgeable Caster
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Linked Surge
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Magical Knack
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Magical Lineage
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Magical Talent
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Magic Crafter
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Malleable Magic
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Mathematical Prodigy
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Meticulous Concoction
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Outcasts Intuition
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Partial Protege
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Perfectionists Brew
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Possessed
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Pragmatic Activator
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Precise Treatment
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Reluctant Apprentice
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Resilient Caster
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Self-Taught Scholar
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Shrouded Casting
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Skeptic
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Storm-Touched
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Strength Foretold
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Tenacious Shifting
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Twinned Presence
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Unscathed
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Unseen but Not Undone
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Unstable Mutagen
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Unstable Mutagen/d6
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Volatile Conduit
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Magic Traits/Water-Touched
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Acrobat
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Adopted
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Ambitious
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Artisan
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Bastard
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Beast Bond
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Bruising Intellect
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Bully
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Canter
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Charming
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Child of the Streets
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Civilized
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Criminal
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Destined Diplomat
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Fast Talker
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Friend in Every Town
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Grief-Filled
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Harvester
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Imposing Scion
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Influence
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Knowing the Enemy
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Life of Toil
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Mentored
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Mercenary
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Merchant
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Natural-Born Leader
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Ordinary
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Orphaned
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Poverty-Stricken
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Rich Parents
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Savage
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Seeker
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Simple Disciple
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Style Sage
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Suspicious
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Talented
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Tireless Logic
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Trustworthy
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Truths Agent
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Unintentional Linguist
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Unnatural Revenge
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Unpredictable
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Veiled Disciple
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Weathered Emissary
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Basic Traits/Social Traits/Worldly
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Attached
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Avarice
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Dependent
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Doubt
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Family Ties
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Headstrong
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Hedonistic
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Lovesick
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Meticulous
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Paranoid
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Power-Hungry
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Pride
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Provincial
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Sentimental
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Vain
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Xenophobic
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Drawbacks/Zealous
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Bloodline Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Bloodline Race Traits/Blood of Dragons
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Bloodline Race Traits/Deathtouched
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Bloodline Race Traits/Fiend Blood
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Dwarf Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Dwarf Race Traits/Brewmaster
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Dwarf Race Traits/Goldsniffer
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Dwarf Race Traits/Tunnel Fighter
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Elf Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Elf Race Traits/Forlorn
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Elf Race Traits/Warrior of Old
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Gnome Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Gnome Race Traits/Animal Friend
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Gnome Race Traits/Rapscallion
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Elf Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Elf Race Traits/Elven Reflexes
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Elf Race Traits/Failed Apprentice
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Halfling Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Halfling Race Traits/Freedom Fighter
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Halfling Race Traits/Well-Informed
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Orc Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Orc Race Traits/Almost Human
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Orc Race Traits/Brute
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Orc Race Traits/Outcast
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Half-Orc Race Traits/Scrapper
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Human Race Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Human Race Traits/Scholar of Ruins
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Race Traits/Human Race Traits/World Traveler
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Desert Child
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Frontier-Forged
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Highlander
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Log Roller
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Militia Veteran
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/River Rat
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Savanna Child
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Sea-Souled
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Surface Stranger
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Tundra Child
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Regional Traits/Vagabond Child
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Asmodean Demon Hunter
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Calistrian Courtesan
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Child of Nature
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Corpse Cannibal
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Divine Warrior
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Ear for Music
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Eyes and Ears of the City
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Flame of the Dawnflower
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Fortified Drinker
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Guardian of the Forge
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Magic Is Life
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Pain Is Pleasure
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Patient Optimist
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Shadow Whispers
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Starchild
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Undead Slayer
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Veteran of Battle
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Voice of Monsters
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Wisdom in the Flesh
+pfsrd://Ultimate Campaign/Rules/Character Background/Traits/Religion Traits/Wrecking Wrath
+pfsrd://Ultimate Campaign/Rules/Downtime
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Academy
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Alchemist
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Arena
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Bank
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Bardic College
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Barracks
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Black Market
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Brewery
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Bureau
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Casters Tower
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Castle
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Cathedral
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Courthouse
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Dance Hall
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Exotic Artisan
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Farm
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Fort
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Garrison
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Granary
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Graveyard
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Guildhall
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Herbalist
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Hospital
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/House
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Inn
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Jail
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Library
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Luxury Store
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Magical Academy
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Magic Shop
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Mansion
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Menagerie
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Military Academy
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Mill
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Mint
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Monastery
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Monument
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Museum
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Noble Villa
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Observatory
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Orphanage
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Palace
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Pier
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/School
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Shop
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Shrine
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Smithy
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Stable
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Stockyard
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Tannery
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Tavern
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Temple
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Tenement
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Theater
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Town Hall
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Trade Shop
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/University
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Watchtower
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Buildings/Waterfront
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Artisans Guild
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Bounty Hunters
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Brute Squad
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Cabal
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Caravan Crew
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Cult
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Entourage
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Fight Club
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Hunting Party
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Mercenary Company
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Ship Crew
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Theater Company
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Thieves Guild
+pfsrd://Ultimate Campaign/Rules/Downtime/Buildings And Organizations/Buildings and Organizations/Organizations/Vagabonds
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Add Spells to Your Spellbook
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Construct Buildings
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Craft Magic Items
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Craft Mundane Items
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Earn Capital
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Earn XP
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Gather Information
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Gather Information/Influential Questioning
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Gather Information/Standard Check
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Gather Information/Thorough Questioning
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Heal Others
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Heal Others/Long-Term Care
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Heal Others/Treat Deadly Wounds
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Heal Others/Treat Disease
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Heal Others/Treat Wounds from Caltrops/Spike Growth/or Spike Stones
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Lead Your Kingdom
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Promote a Business
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Recruit for an Organization
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Replace Your Animal Companion
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Replace Your Familiar
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Research a Spell
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Research Facts and Lore
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Research Facts and Lore/Influential Research
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Research Facts and Lore/Magical Research
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Research Facts and Lore/Thorough Research
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Rest
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Retrain
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Run a Business
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Scheme for an Upcoming Adventure
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Train an Animal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Train an Animal/Rear a Wild Animal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Train an Animal/Teach an Animal a Trick
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Activities/Train an Animal/Train an Animal for a General Purpose
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime and Kingdom Building
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Activity Phase
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Activity Phase/Step 1-Perform Free Activities
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Activity Phase/Step 2-Continue Ongoing Downtime Activity
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Activity Phase/Step 3-Begin New Downtime Activity
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Event Phase
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Income Phase
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Income Phase/Step 1-Determine Building Income
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Income Phase/Step 2-Determine Organization Income
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Income Phase/Step 3-Determine Other Income
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Income Phase/Step 4-Abandon Assets
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Income Phase/Step 5-Sell Assets
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Phase 1-Upkeep
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Phase 2-Activity
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Phase 3-Income
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Phase 4-Event
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Upkeep Phase
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Upkeep Phase/Step 1-Add Up Costs
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Upkeep Phase/Step 2-Pay Costs
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Upkeep Phase/Step 3-Determine Capital Attrition
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Phases/Upkeep Phase/Step 4-Determine Business Attrition
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Building
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Build Points
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Business
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Capital
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Day
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Followers
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Gold Pieces
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Goods
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Influence
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Labor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Magic
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Downtime Terminology/Organization
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Accidental Poisoning
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Accursed Lounge
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Adept Student
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Arcane Breakthrough
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Arson
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Bad Weather
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Ballroom Magic
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Bar Brawl
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Bitter Student
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Bookworm Infestation
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Building-Specific Event
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Burglary
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Burglary
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Buried Relic
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Busy Day
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Catastrophic Mishap
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Ceremony Request
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Clueless Adventurer
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Cold Remedy
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Competition
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Concerned Citizens
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Contagion
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Contamination
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Cosmetic Problem
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Crazed Horse
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Criminal Activity
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Cursed Play
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Dangerous Discovery
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Dangerous Surge
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Day of Rest
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Deadly Accident
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Deadly Accident
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Desperate Visitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Discovery
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Drinking Contest
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Duel
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Embarrassing Affliction
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Embezzler
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Emergency Request
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Escaped Animal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Exhausting Concoction
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Exotic Donation
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Exotic Metal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Experiment Amok
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Explosion
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Explosion
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Failing Adept
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Famous Alumnus
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Famous Dancer
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Famous Visitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Famous Visitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Famous Writer
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Festival
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Fiendish Skill
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Fire
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Fire
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Food Shortage
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Forced Commission
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Forge Waste
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Full House
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Fussy Neighbor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Generic Building Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Good Fortune
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Good Weather
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Grand Feast
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Haunting
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Hazardous Stage
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Hazing Gone Wrong
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Hazing Gone Wrong
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Healing Potion Demand
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Healing Request
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Hearts Desire
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Holy Day
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Horse Thieves
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/House Fire
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Important Visitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Inadequate Defenses
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Increased Taxes
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Infestation
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Infighting
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Inquisitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Lost Visitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Magical Waste
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Major Miracle
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Minor Miracle
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Monster Attack
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Mysterious Item
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Mysterious Item/Castle Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Neighbor Rivalry
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/New Intoxicant
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/New Servant
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Notorious Visitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Noxious Fumes
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Offensive Jester
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Apostate
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Arcane Flux
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Big Heist
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Blasphemy
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Brawl
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Cabal Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Crackdown
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Crime Spree
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Discovery
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Divine Flux
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Duel
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Entrapment
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Familiar Scraps
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Image Problem
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Image Problem
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Impressive Results
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Meddling Adventurers
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Mutiny
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Mutiny
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Popular Ritual
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Portent
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Portent
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Rivalry
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Rivalry
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Rivalry/Room/Team
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Scandal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Schism
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Schism
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Schism/Mercenary Company Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Windfall
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Windfall/Thieves Guild Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Work Opportunity
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Organization Events/Work Opportunity/Cult Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Outbreak
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Pile of Books
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Poor Performance
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Predators
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Prima Donna
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Prodigy
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Productive Day
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Prosperity
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Protection Racket
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Protection Racket
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Rare Find
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Rave Reviews
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Renovations
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Rival Guild
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Rivalry
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Robbery
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Rousing Performance
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Rumormongering
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Runaway
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Sacred Ritual
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Scandal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Scandal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Scandal
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Scandal/Theater Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Shenanigans
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Shenanigans
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Shoplifter
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Sickness
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Slow Day
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Slow Day/Smithy Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Snake Oil
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Snake Oil/House Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Special Request
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Spoiled Student
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Stable Fire
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Stable Fire/Tavern Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Stolen Books
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Stolen Instrument
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Strange Guest
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Strange Visitor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Strange Visitor/Magic Shop Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Student Discovery
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Supply Problems
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Supply Shortage
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Sweaty Pox
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Talk of the Town
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Taproom Trouble
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Taproom Trouble/Temple Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Taxes
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Taxes/Alchemist Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Theft
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Training Drill
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Training Drill/Dance Hall Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Traveling Priest
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unexpected Grant
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unexpected Grant
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unexpected Grant/Menagerie Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unexpected Grant/Monastery Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unexpected Magic
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unexpected Magic/Magical Academy Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unfair Practices
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unfair Practices/Herbalist Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unforeseen Masterwork
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unruly Druid
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unruly Druid/Military Academy Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unstable Foundation
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unstable Foundation/Inn Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unstable Mutation
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Unstable Mutation/Bardic College Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Uprising
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Valuable Ore
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Valuable Ore/Stable Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Vandalism
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Violence
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Violence/Library Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Visiting Master
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Visiting Master/Casters Tower Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Visiting Relic
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Visiting Relic/Shop Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Visiting Troupe
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Wild Night
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime Events/Wild Night/Guildhall Events
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Class Abilities
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Converting Capital
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Earning Capital
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Earning Capital/Capital Values
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Moving Capital
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Purchases
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Purchasing Capital
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Rewards
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Skilled Work
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Skilled Work/Goods
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Skilled Work/Influence
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Skilled Work/Labor
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Skilled Work/Magic
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Skilled Work/Skill Check Result
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Spending Limits
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Spending Limits/Settlement
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Unskilled Work
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Gaining Capital/Using Followers
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Overview
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Spend Capital to Boost Checks
+pfsrd://Ultimate Campaign/Rules/Downtime/Downtime/Working Weekends
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Abbot
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Accountant
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Captain
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Doctor
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Guildmaster
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Guildmaster
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Headmaster
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Innkeeper
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Lieutenant
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Master Smith
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Partner
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Sensei
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Smuggler
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Stage manager
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Steward
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Underboss
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Example Managers/Warden
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Reading a Manager Stat Block
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Reading a Manager Stat Block/Skills
+pfsrd://Ultimate Campaign/Rules/Downtime/Managers/Reading a Manager Stat Block/Wage
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Broken Rooms
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Combining Rooms and Teams
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Constructing Buildings from Rooms
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Construction and Recruitment Delays
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Construction Examples
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Construction Examples/Inn
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Construction Examples/Thieves Guild
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Creating Organizations from Teams
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Moving an Organization
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Reading a Unit Stat Block
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Reading a Unit Stat Block/Create
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Reading a Unit Stat Block/Description
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Reading a Unit Stat Block/Earnings
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Reading a Unit Stat Block/Size
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Reading a Unit Stat Block/Time
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Reading a Unit Stat Block/Upgrade
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Fortification
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Furnishings
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Sitting Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Sports Field
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Stall
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Statue
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Storage
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Storefront
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Summoning Chamber
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Throne Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Tollbooth
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Torture Chamber
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Trap
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Trap
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Trophy Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Vault
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/War Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Workstation
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Restrictions on Earnings/Workstation/Room Augmentations
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Alchemy Lab
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Altar
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Animal Pen
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Armory
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Artisans Workshop
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Auditorium
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Ballroom
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Bar
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Bath
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Battle Ring
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Bedroom
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Bell Tower
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Book Repository
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Brewery
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Bunks
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Burial Ground
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Cell
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Ceremonial Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Classroom
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Clockwork Shop
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Common Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Confessional
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Courtyard
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Crypt
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Defensive Wall
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Dock
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Dojo
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Drawbridge
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Escape Route
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/False Front
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Farmland
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Forge
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Game Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Garden
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Gatehouse
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Gauntlet
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Greenhouse
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Guard Post
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Habitat
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Hatchery
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Infirmary
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Kitchen
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Labyrinth
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Laundry
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Lavatory
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Leather Workshop
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Lodging
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Magical Repository
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Mill Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Nursery
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Observation Dome
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Office
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Pit
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Printer
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Reliquary
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Sanctum
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Sauna
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Scriptorium
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Scrying Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Secret Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Sewer Access
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Sewing Room
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Rooms/Shack
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Acolyte
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams and Leadership
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Apprentice
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Archers
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Bureaucrats
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Cavalry
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Cavalry Archers
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Craftspeople
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Cutpurses
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Driver
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Elite Archers
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Elite Guards
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Elite Soldiers
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Guards
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Laborers
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Lackeys
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Mage
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Priest
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Robbers
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Sage
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Sailors
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Scofflaws
+pfsrd://Ultimate Campaign/Rules/Downtime/Rooms And Teams/Rooms and Teams/Teams/Soldiers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points/Starting from Scratch
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points/Starting from Scratch/Kingdom Size
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points/Wealthy Sponsor
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points/Wealthy Sponsor/Charter
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points/Wealthy Sponsor/Conquest
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points/Wealthy Sponsor/Fief
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Build Points/Wealthy Sponsor/Grant
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Capital City
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Founding a Kingdom
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Founding a Kingdom/Choose Leadership Roles
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Founding a Kingdom/Choose Your Kingdoms Alignment
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Founding a Kingdom/Determine Your Kingdoms Attributes
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Founding a Kingdom/Start Your Treasury
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Gaining Experience for Leadership
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Gaining Experience for Leadership/Found a Kingdom
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Building Quick Reference
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Alignment
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Build Points
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Consumption
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Control DC
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Economy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Kingdom Check
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Loyalty
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Population
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Size
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Stability
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Treasury
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Turn
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Kingdom Terminology/Unrest
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Abdicating a Role
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Consort
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Councilor
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/General
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Grand Diplomat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Heir
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/High Priest
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Leader Statistics
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Magister
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Marshal
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/PCs and NPCs as Leaders
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Responsibilities of Leadership
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Royal Enforcer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Ruler
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Spymaster
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Treasurer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Treasurer/Vacancy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Leadership Roles/Viceroy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Building/Overview
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdoms And War
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdoms And War/Kingdoms and War
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Academy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Alchemist
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Arena
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Bank
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Bardic College
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Barracks
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Black Market
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Brewery
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Bridge
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Building Name
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Bureau
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Casters Tower
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Castle
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Cathedral
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Cistern
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/City Wall
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Dance Hall
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Discount
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Dump
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Everflowing Spring
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Exotic Artisan
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Foreign Quarter
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Foundry
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Garrison
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Granary
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Graveyard
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Guildhall
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Herbalist
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Hospital
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/House
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Inn
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Jail
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Kingdom
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Library
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Limit
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Lots
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Luxury Store
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Magical Academy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Magical Streetlamps
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Magical Streetlamps/Continual flame
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Magic Items
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Magic Shop
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Mansion
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Market
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Menagerie
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Military Academy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Mill
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Mint
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Moat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Monastery
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Monument
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Museum
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Noble Villa
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Observatory
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Orphanage
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Palace
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Park
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Paved Streets
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Pier
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Settlement
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Sewer System
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Shop
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Shrine
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Smithy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Stable
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Stockyard
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Tannery
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Tavern
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Temple
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Tenement
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Theater
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Town Hall
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Trade Shop
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/University
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Upgrade To/From
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Watchtower
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Waterfront
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Watergate
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Building Descriptions/Waterway
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Buildings
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Buildings/Demolition
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Buildings/Destroyed Lots
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Buildings/Rebuilding
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Claiming Water and Islands
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Claiming Water and Islands/Terrain and Terrain Improvements
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edict Phase
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edict Phase/Step 1-Assign Leadership
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edict Phase/Step 2-Claim and Abandon Hexes
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edict Phase/Step 4-Build Terrain Improvements
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edict Phase/Step 5-Create and Improve Settlements
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edict Phase/Step 6-Create Army Units
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edict Phase/Step 7-Issue Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Holiday Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Holiday Edicts/Example/Holiday Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Improvement Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Improvement Edicts/Improvement Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Promotion Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Promotion Edicts/Promotion Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Taxation Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Edicts/Taxation Edicts/Taxation Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Event Phase
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Archaeological Find
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Assassination Attempt
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Bandit Activity
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Boomtown
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Building Demand
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Continuous Events
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Crop Failure
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Cult Activity
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Diplomatic Overture
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Discovery
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Drug Den
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Economic Boom
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Festive Invitation
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Feud
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Food Shortage
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Food Surplus
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Good Weather
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Hiring Adventurers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Hiring Adventurers/Beneficial Kingdom Events
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Hiring Adventurers/Beneficial Settlement Events
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Hiring Adventurers/Dangerous Kingdom Events
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Hiring Adventurers/Dangerous Settlement Events
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Hiring Adventurers/Event Type and Danger Level
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Improvement Demand
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Inquisition
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Justice Prevails
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Land Rush
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Large Disaster
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Localized Disaster
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Localized Events
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Monster Attack
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Natural Blessing
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/New Subjects
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Noblesse Oblige
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Outstanding Success
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Pilgrimage
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Plague
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Political Calm
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Public Scandal
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Remarkable Treasure
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Sensational Crime
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Settlement Modifiers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Slavers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Smugglers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Squatters
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Unexpected Find
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Vandals
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Visiting Celebrity
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Events/Wealthy Immigrant
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Founding a Settlement
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Founding a Settlement/Step 1-Acquire funds
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Founding a Settlement/Step 2-Explore and clear a hex
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Founding a Settlement/Step 3-Claim the hex as yours
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Founding a Settlement/Step 4-Prepare the site for construction
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Founding a Settlement/Step 5-Construct your first buildings
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Income Phase
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Income Phase/Step 1-Make Withdrawals from the Treasury
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Income Phase/Step 2-Make Deposits to the Treasury
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Income Phase/Step 3-Sell Expensive Items for BP
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Income Phase/Step 4-Collect Taxes
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Losing Hexes
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Magic Items in Settlements
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Magic Items in Settlements/Emptying Item Slots
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Magic Items in Settlements/Filling Item Slots
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Magic Items in Settlements/Filling Item Slots/Pathfinder RPG
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Magic Items in Settlements/Gaining Item Slots
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Phase 1-Upkeep
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Phase 2-Edict
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Phase 3-Income
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Phase 4-Event
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Settlements and Districts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Settlements and Districts/Base Value
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Settlements and Districts/Construction
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Settlements and Districts/Defense
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Settlements and Districts/Defense/Settlement Size and Base Value
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Settlements and Districts/Population
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain/Bridge
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain/Building
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain/Free City
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain/Lair
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain/Landmark
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain/River
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Special Terrain/Ruin
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Aqueduct
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Bridge*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Canal*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Farm*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Fishery*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Fort*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Highway*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Mine
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Quarry
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Road*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Sawmill
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Terrain Improvements/Watchtower*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Upkeep Phase
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Upkeep Phase/Step 1-Determine Kingdom Stability
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Upkeep Phase/Step 2-Pay Consumption
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Upkeep Phase/Step 3-Fill Vacant Magic Item Slots
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Upkeep Phase/Step 4-Modify Unrest
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Consort
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Councilor
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/General
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Grand Diplomat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Heir
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/High Priest
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Magister
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Marshal
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Royal Enforcer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Ruler
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Spymaster
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Treasurer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Kingdom Turn Sequence/Who Rolls the Kingdom Check/Viceroy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Healing Potions (10 BP)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Improved Armor (3 BP)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Improved Weapons (5 BP)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Mounts (BP = Mounts ACR)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Ranged Weapons (2 BP)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Siege Engines (15 BP per engine)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Siege Engines (15 BP per engine)/Resource Scaling
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Resources/Transferring Resources
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Alignment
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Army Challenge Rating (ACR)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Commander
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Consumption
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Defense Value (DV)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/hp
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Morale
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Name
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Offense Modifier (OM)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Resources
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Size
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Size/Army Sizes
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Speed
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Tactics
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/Type
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Statistics/XP
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Cautious Combat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Cavalry Experts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Defensive Wall
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Dirty Fighters
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Expert Flankers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/False Retreat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Full Defense
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Relentless Brutality
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Siegebreaker
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Sniper Support
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Spellbreaker
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Standard*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Taunt
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Army Tactics/Withdraw*
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Attacking and Taking Damage
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Attacking and Taking Damage/More Than Two Armies
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Advantageous Terrain
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Ambush
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Battlefield Advantage
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Darkness
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Dim Light
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Fog
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Fortifications
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Rain
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Sandstorm
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Snow
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battlefield Conditions/Wind
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battle Phases
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battle Phases/1. Tactics Phase
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battle Phases/2. Ranged Phase
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Battle Phases/3. Melee Phase
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Beyond the Kingdom
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Bloodied but Unbroken
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Bonus Tactic
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Defensive Tactics
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Flexible Tactics
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Hit and Run
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Hold the Line
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Live off the Land
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Loyalty
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Merciless
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Sharpshooter
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Boons/Triage
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Charisma Modifier
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Consort
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Councilor
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/General
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Grand Diplomat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Heir
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/High Priest
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Magister
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Marshal
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Royal Enforcer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Ruler
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Spymaster
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Treasurer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Kingdom Leader Commanders/Viceroy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Leadership
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Losing Commanders
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Name
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Commanders/Profession (soldier)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Mass Combat Quick Reference
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Mass Combat Quick Reference/Damage Dealt
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Mass Combat Quick Reference/Morale Check
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Mass Combat Quick Reference/Offense Check
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Optional Mass Combat Rules
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Optional Mass Combat Rules/Combining Armies
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Optional Mass Combat Rules/Reforming an Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Optional Mass Combat Rules/Reserve Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Optional Mass Combat Rules/Splitting an Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Overview
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Player Characters in Battles
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Recovery
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Recruiting Armies
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Rout
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Running Mass Combats
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Army (Colossal)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Army (Gargantuan)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Army (Huge)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Army (Large)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Army (Medium)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Boggard Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Centaur Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Drow Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Duergar Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Dwarven Defenders
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Elite Army Commandos
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Elite Mounted Knights
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Elven Wardens
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Ghoul Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Gnoll Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Gnome Stalkers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Goblin Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Goblin Horde
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Halfling Scouts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Half-Orc Berserkers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Hobgoblin Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Kobold Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Lizardfolk Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Militia (Colossal)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Militia (Gargantuan)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Militia (Huge)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Militia (Large)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Orc Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Orc Horde
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Skeleton Horde (Colossal)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Skeleton Horde (Gargantuan)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Skeleton Horde (Huge)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Skeleton Horde (Large)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Skeleton Horde (Medium)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Svirfneblin Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Tarrasque
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Tengu Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Troglodyte Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Worg Army
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Yeti Pack
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Zombie Horde (Colossal)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Zombie Horde (Gargantuan)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Zombie Horde (Huge)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Zombie Horde (Large)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Sample Armies/Zombie Horde (Medium)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Ability Damage/Drain
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Alchemy (Alchemist 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Amphibious
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Animal Companion (Druid 1/Ranger 4)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Aquatic
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Armor Training (Fighter 3)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Aura of Courage (Paladin 3)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Bleed
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Blindsense
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Blindsight
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Bomb (Alchemist 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Bravery (Fighter 2)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Breath Weapon
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Brew Potion (Alchemist 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Burn
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Burrow
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Cannibalize
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Challenge (Cavalier 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Channel Negative Energy (Cleric 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Channel Positive Energy (Cleric 1/Paladin 4)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Climb
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Combat Style (Ranger 2)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Construct
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Create Sandstorm
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Create Spawn
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Damage Reduction
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Darkvision
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Discovery (Alchemist 2)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Disease
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Divine Health (Paladin 3)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Earth Glide
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Eidolon (Summoner 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Energy Drain
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Evasion (Monk 2/Rogue 2)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Fast Healing
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Favored Enemy (Ranger 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Favored Terrain (Ranger 3)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Fear
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Ferocity
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Flight
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Flurry of Blows (Monk 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Grab
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Hex (Witch 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Hex (Witch 1)/Cauldron
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Hex (Witch 1)/Healing
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Hunters Bond (Ranger 4)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Hunters Bond (Ranger 4)/Animal
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Hunters Bond (Ranger 4)/Companions
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Immunity
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Incorporeal
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Inspire Courage (Bard 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Invisibility
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Judgment (Inquisitor 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Ki Pool (Monk 4)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Lay on Hands (Paladin 2)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Light Blindness
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Light Sensitivity
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Low-Light Vision
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Mercy (Paladin 3)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Mindless
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Mobility
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Mount (Cavalier 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Order (Cavalier 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Paralysis
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Petrification
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Plant
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Poison
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Poison Resistance (Alchemist 2)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Pounce
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Powerful Charge
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Rage (Barbarian 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Rake
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Regeneration
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Rend
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Resistance
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Rock Catching
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Rock Throwing
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Rogue Talent (Rogue 2)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Scent
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Shield Ally (Summoner 4)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Significant Defense
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Smite Evil (Paladin 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Sneak Attack (Rogue 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Spellcasting
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Spell Resistance
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Stunning Fist (Monk 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Swarm
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Tactician (Cavalier 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Teleportation
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Track (Inquisitor 2/Ranger 1)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Trample
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Trap Sense (Rogue 3)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Tremorsense
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Trip
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Undead
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Unnatural Aura
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Vortex
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Weapon Specialization (Fighter 4)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Whirlwind
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Special Abilities/Wild Shape (Druid 4)
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Strategy Track
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Strategy Track/Strategy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Victory/Rout/or Defeat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Victory/Rout/or Defeat/Defeated
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Victory/Rout/or Defeat/Defeated/Army Size
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Victory/Rout/or Defeat/Routed
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Mass Combat/Victory/Rout/or Defeat/Victorious
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Abandoned Buildings
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Deities and Holy Sites
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Alignment Difference Modifier
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Alignment Difference Modifier/Diplomatic Alignment Difference Modifier
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Attitude
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Relationship Modifier
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Relationship Modifier/Diplomatic Relationship Modifier
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Relationships with Multiple Kingdoms
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Special Size Modifier
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Type of Diplomatic Relationships
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Type of Diplomatic Relationships/Alliance
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Type of Diplomatic Relationships/Embassy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Diplomatic Edicts/Type of Diplomatic Relationships/Treaty
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Expanding Settlement Modifiers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Exploration Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Fame and Infamy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Fame and Infamy/Settlement Modifiers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Fame and Infamy/Size Increases
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Fame and Infamy/Starting Values
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Fame and Infamy/Using Fame and Infamy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government/Autocracy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government/Magocracy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government/Oligarchy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government/Overlord
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government/Republic
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government/Secret Syndicate
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Forms of Government/Theocracy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification/Declaring Independence
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification/Declaring Independence/Independence and Diplomatic Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification/Declaring Independence/Step 1
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification/Declaring Independence/Step 2
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification/Declaring Independence/Step 3
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification/Declaring Independence/Step 4
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Independence and Unification/Forming a Union
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Ambassador
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Consort
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Councilor
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/General
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Grand Diplomat
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Heir
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/High Priest
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Magister
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Marshal
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Royal Enforcer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Ruler
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Spymaster
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Treasurer
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Leadership Role Skills/Viceroy
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Settlement Sizes
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Settlement Sizes/Danger
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Settlement Sizes/Modifiers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Settlement Sizes/Settlement Sizes and Modifiers
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Special Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Trade Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Trade Edicts/Food
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Trade Edicts/Goods
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Trade Edicts/Luxuries
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Trade Edicts/Raw Materials
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Vassalage Edicts
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Vassalage Edicts/New Vassal or Colony
+pfsrd://Ultimate Campaign/Rules/Kingdoms And War/Optional Kingdom Rules/Vassalage Edicts/Subjugation
 pfsrd://Ultimate Combat
 pfsrd://Ultimate Combat/Classes
 pfsrd://Ultimate Combat/Classes/Gunslinger

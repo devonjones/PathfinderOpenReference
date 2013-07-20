@@ -14,15 +14,18 @@ import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
 import org.evilsoft.pathfinder.reference.render.AbilityRenderer;
 import org.evilsoft.pathfinder.reference.render.AfflictionRenderer;
 import org.evilsoft.pathfinder.reference.render.AnimalCompanionRenderer;
+import org.evilsoft.pathfinder.reference.render.ArmyRenderer;
 import org.evilsoft.pathfinder.reference.render.ClassRenderer;
 import org.evilsoft.pathfinder.reference.render.CreatureRenderer;
 import org.evilsoft.pathfinder.reference.render.EmbedRenderer;
 import org.evilsoft.pathfinder.reference.render.FeatRenderer;
 import org.evilsoft.pathfinder.reference.render.HauntRenderer;
 import org.evilsoft.pathfinder.reference.render.ItemRenderer;
+import org.evilsoft.pathfinder.reference.render.KingdomResourceRenderer;
 import org.evilsoft.pathfinder.reference.render.LinkRenderer;
 import org.evilsoft.pathfinder.reference.render.RaceRenderer;
 import org.evilsoft.pathfinder.reference.render.Renderer;
+import org.evilsoft.pathfinder.reference.render.ResourceRenderer;
 import org.evilsoft.pathfinder.reference.render.SectionRenderer;
 import org.evilsoft.pathfinder.reference.render.SettlementRenderer;
 import org.evilsoft.pathfinder.reference.render.SkillRenderer;
@@ -60,6 +63,8 @@ public class RenderFarm {
 			return new AfflictionRenderer(bookDbAdapter);
 		} else if (type.equals("animal_companion")) {
 			return new AnimalCompanionRenderer(bookDbAdapter);
+		} else if (type.equals("army")) {
+			return new ArmyRenderer(bookDbAdapter);
 		} else if (type.equals("class")) {
 			return new ClassRenderer(bookDbAdapter);
 		} else if (type.equals("creature")) {
@@ -70,12 +75,16 @@ public class RenderFarm {
 			return new HauntRenderer(bookDbAdapter);
 		} else if (type.equals("item")) {
 			return new ItemRenderer(bookDbAdapter);
+		} else if (type.equals("kingdom_resource")) {
+			return new KingdomResourceRenderer(bookDbAdapter);
 		} else if (type.equals("link")) {
 			return new LinkRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("embed")) {
 			return new EmbedRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("race")) {
 			return new RaceRenderer();
+		} else if (type.equals("resource")) {
+			return new ResourceRenderer(bookDbAdapter);
 		} else if (type.equals("settlement")) {
 			return new SettlementRenderer(bookDbAdapter);
 		} else if (type.equals("skill")) {
