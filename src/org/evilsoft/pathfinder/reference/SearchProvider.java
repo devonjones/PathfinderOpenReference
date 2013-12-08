@@ -15,13 +15,13 @@ public class SearchProvider extends ContentProvider {
 
 	@Override
 	public boolean onCreate() {
-		return false;
+		return true;
 	}
 
-	@Override
-	public Cursor query(Uri uri, String[] projection, String selection,
-			String[] selectionArgs, String sortOrder) {
-
+	public boolean initializeDatabase() {
+		if (dbWrangler != null && dbWrangler.isClosed() == false) {
+			return true;
+		}
 		boolean cont = true;
 		try {
 			DbWrangler dbw = new DbWrangler(getContext());
@@ -36,11 +36,17 @@ public class SearchProvider extends ContentProvider {
 			cont = false;
 		} finally {
 		}
-
-		Cursor c = null;
-
 		if (cont) {
 			openDb();
+		}
+		return cont;
+	}
+
+	@Override
+	public Cursor query(Uri uri, String[] projection, String selection,
+			String[] selectionArgs, String sortOrder) {
+		Cursor c = null;
+		if (initializeDatabase()) {
 			c = dbWrangler.getIndexDbAdapter().getSearchAdapter()
 					.autocomplete(uri.getLastPathSegment().trim());
 		}
@@ -58,8 +64,14 @@ public class SearchProvider extends ContentProvider {
 	}
 
 	@Override
+	public void shutdown() {
+		if (dbWrangler != null) {
+			dbWrangler.close();
+		}
+	}
+
+	@Override
 	public String getType(Uri uri) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

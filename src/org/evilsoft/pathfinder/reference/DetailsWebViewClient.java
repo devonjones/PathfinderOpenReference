@@ -208,7 +208,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		}
 	}
 
-	public String renderByUrl(WebView view, RenderFarm sa, String newUrl) {
+	public String renderByUrl(HtmlRenderFarm sa, String newUrl) {
 		Cursor cursor = dbWrangler.getBookDbAdapterByUrl(newUrl)
 				.getSectionAdapter().fetchSectionByUrl(newUrl);
 		String html = null;
@@ -239,9 +239,9 @@ public class DetailsWebViewClient extends WebViewClient {
 		SharedPreferences settings = act.getSharedPreferences(PREFS_NAME, 0);
 		boolean showToc = settings.getBoolean("showToc", true);
 		BookDbAdapter bookDbAdapter = dbWrangler.getBookDbAdapterByUrl(newUrl);
-		RenderFarm sa = new RenderFarm(dbWrangler, bookDbAdapter, title,
-				isTablet, showToc);
-		html = renderByUrl(view, sa, newUrl);
+		HtmlRenderFarm sa = new HtmlRenderFarm(dbWrangler, bookDbAdapter,
+				title, isTablet, showToc);
+		html = renderByUrl(sa, newUrl);
 		if (html == null) {
 			if (parts[2].equals("Classes")) {
 				html = sa.render(parts[parts.length - 1], newUrl);

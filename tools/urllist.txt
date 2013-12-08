@@ -14198,6 +14198,1336 @@ pfsrd://Game Mastery Guide/Rules/Settlements/Settlements in Play/The Settlement 
 pfsrd://Game Mastery Guide/Rules/Settlements/Settlements in Play/The Settlement Stat Block/Population
 pfsrd://Game Mastery Guide/Rules/Settlements/Settlements in Play/The Settlement Stat Block/Qualities
 pfsrd://Game Mastery Guide/Rules/Settlements/Settlements in Play/The Settlement Stat Block/Spellcasting
+pfsrd://Mythic Adventures
+pfsrd://Mythic Adventures/Feats
+pfsrd://Mythic Adventures/Feats/Accursed Hex
+pfsrd://Mythic Adventures/Feats/Acrobatic
+pfsrd://Mythic Adventures/Feats/Alertness
+pfsrd://Mythic Adventures/Feats/Alignment Channel
+pfsrd://Mythic Adventures/Feats/Animal Affinity
+pfsrd://Mythic Adventures/Feats/Arcane Armor Training
+pfsrd://Mythic Adventures/Feats/Arcane Blast
+pfsrd://Mythic Adventures/Feats/Arcane Shield
+pfsrd://Mythic Adventures/Feats/Arcane Strike
+pfsrd://Mythic Adventures/Feats/Ascendant Spell
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Claws
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Instinct
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Leap
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Senses
+pfsrd://Mythic Adventures/Feats/Athletic
+pfsrd://Mythic Adventures/Feats/Augment Summoning
+pfsrd://Mythic Adventures/Feats/Bleeding Critical
+pfsrd://Mythic Adventures/Feats/Blind-Fight
+pfsrd://Mythic Adventures/Feats/Catch Off-Guard
+pfsrd://Mythic Adventures/Feats/Channel Smite
+pfsrd://Mythic Adventures/Feats/Charge Through
+pfsrd://Mythic Adventures/Feats/Cleave
+pfsrd://Mythic Adventures/Feats/Combat Expertise
+pfsrd://Mythic Adventures/Feats/Combat Reflexes
+pfsrd://Mythic Adventures/Feats/Command Undead
+pfsrd://Mythic Adventures/Feats/Critical Focus
+pfsrd://Mythic Adventures/Feats/Critical Mastery
+pfsrd://Mythic Adventures/Feats/Dastardly Finish
+pfsrd://Mythic Adventures/Feats/Dazzling Display
+pfsrd://Mythic Adventures/Feats/Deadly Aim
+pfsrd://Mythic Adventures/Feats/Deadly Stroke
+pfsrd://Mythic Adventures/Feats/Death from Above
+pfsrd://Mythic Adventures/Feats/Deceitful
+pfsrd://Mythic Adventures/Feats/Deepsight
+pfsrd://Mythic Adventures/Feats/Defensive Combat Training
+pfsrd://Mythic Adventures/Feats/Deflect Arrows
+pfsrd://Mythic Adventures/Feats/Deft Hands
+pfsrd://Mythic Adventures/Feats/Detect Expertise
+pfsrd://Mythic Adventures/Feats/Disruptive
+pfsrd://Mythic Adventures/Feats/Distance Thrower
+pfsrd://Mythic Adventures/Feats/Divine Interference
+pfsrd://Mythic Adventures/Feats/Dodge
+pfsrd://Mythic Adventures/Feats/Dreadful Carnage
+pfsrd://Mythic Adventures/Feats/Drink Is Life
+pfsrd://Mythic Adventures/Feats/Dual Path
+pfsrd://Mythic Adventures/Feats/Eagle Eyes
+pfsrd://Mythic Adventures/Feats/Eldritch Heritage
+pfsrd://Mythic Adventures/Feats/Elemental Channel
+pfsrd://Mythic Adventures/Feats/Elemental Fist
+pfsrd://Mythic Adventures/Feats/Elemental Focus
+pfsrd://Mythic Adventures/Feats/Elven Accuracy
+pfsrd://Mythic Adventures/Feats/Endurance
+pfsrd://Mythic Adventures/Feats/Eschew Materials
+pfsrd://Mythic Adventures/Feats/Extra Mythic Power
+pfsrd://Mythic Adventures/Feats/Extra Path Ability
+pfsrd://Mythic Adventures/Feats/Fabulous Figments
+pfsrd://Mythic Adventures/Feats/Far Shot
+pfsrd://Mythic Adventures/Feats/Fast Empathy
+pfsrd://Mythic Adventures/Feats/Fire Music
+pfsrd://Mythic Adventures/Feats/Fleet
+pfsrd://Mythic Adventures/Feats/Furious Focus
+pfsrd://Mythic Adventures/Feats/Gnome Trickster
+pfsrd://Mythic Adventures/Feats/Gorgons Fist
+pfsrd://Mythic Adventures/Feats/Great Fortitude
+pfsrd://Mythic Adventures/Feats/Guided Hand
+pfsrd://Mythic Adventures/Feats/Heroic Defiance
+pfsrd://Mythic Adventures/Feats/Heroic Recovery
+pfsrd://Mythic Adventures/Feats/Improved Bull Rush
+pfsrd://Mythic Adventures/Feats/Improved Channel
+pfsrd://Mythic Adventures/Feats/Improved Counterspell
+pfsrd://Mythic Adventures/Feats/Improved Critical
+pfsrd://Mythic Adventures/Feats/Improved Dirty Trick
+pfsrd://Mythic Adventures/Feats/Improved Disarm
+pfsrd://Mythic Adventures/Feats/Improved Drag
+pfsrd://Mythic Adventures/Feats/Improved Familiar
+pfsrd://Mythic Adventures/Feats/Improved Grapple
+pfsrd://Mythic Adventures/Feats/Improved Initiative
+pfsrd://Mythic Adventures/Feats/Improved Overrun
+pfsrd://Mythic Adventures/Feats/Improved Reposition
+pfsrd://Mythic Adventures/Feats/Improved Steal
+pfsrd://Mythic Adventures/Feats/Improved Stonecunning
+pfsrd://Mythic Adventures/Feats/Improved Sunder
+pfsrd://Mythic Adventures/Feats/Improved Trip
+pfsrd://Mythic Adventures/Feats/Improved Unarmed Strike
+pfsrd://Mythic Adventures/Feats/Intimidating Prowess
+pfsrd://Mythic Adventures/Feats/Iron Will
+pfsrd://Mythic Adventures/Feats/Knockout Artist
+pfsrd://Mythic Adventures/Feats/Legendary Teamwork
+pfsrd://Mythic Adventures/Feats/Lightning Reflexes
+pfsrd://Mythic Adventures/Feats/Lucky Halfling
+pfsrd://Mythic Adventures/Feats/Lucky Surge
+pfsrd://Mythic Adventures/Feats/Lunge
+pfsrd://Mythic Adventures/Feats/Magical Aptitude
+pfsrd://Mythic Adventures/Feats/Manyshot
+pfsrd://Mythic Adventures/Feats/Marked for Glory
+pfsrd://Mythic Adventures/Feats/Maximize Surge
+pfsrd://Mythic Adventures/Feats/Medusas Wrath
+pfsrd://Mythic Adventures/Feats/Missile Shield
+pfsrd://Mythic Adventures/Feats/Mobility
+pfsrd://Mythic Adventures/Feats/Monastic Legacy
+pfsrd://Mythic Adventures/Feats/Mounted Archery
+pfsrd://Mythic Adventures/Feats/Mounted Combat
+pfsrd://Mythic Adventures/Feats/Mythic Companion
+pfsrd://Mythic Adventures/Feats/Mythic Crafter
+pfsrd://Mythic Adventures/Feats/Mythic Paragon
+pfsrd://Mythic Adventures/Feats/Mythic Spell Lore
+pfsrd://Mythic Adventures/Feats/Natural Spell
+pfsrd://Mythic Adventures/Feats/Nimble Moves
+pfsrd://Mythic Adventures/Feats/Penetrating Strike
+pfsrd://Mythic Adventures/Feats/Persuasive
+pfsrd://Mythic Adventures/Feats/Pinpoint Targeting
+pfsrd://Mythic Adventures/Feats/Point-Blank Shot
+pfsrd://Mythic Adventures/Feats/Potent Surge
+pfsrd://Mythic Adventures/Feats/Power Attack
+pfsrd://Mythic Adventures/Feats/Powerful Shape
+pfsrd://Mythic Adventures/Feats/Prophetic Visionary
+pfsrd://Mythic Adventures/Feats/Quick Draw
+pfsrd://Mythic Adventures/Feats/Racial Heritage
+pfsrd://Mythic Adventures/Feats/Rapid Reload
+pfsrd://Mythic Adventures/Feats/Rapid Shot
+pfsrd://Mythic Adventures/Feats/Rhetorical Flourish
+pfsrd://Mythic Adventures/Feats/Ride-By Attack
+pfsrd://Mythic Adventures/Feats/Run
+pfsrd://Mythic Adventures/Feats/Saving Shield
+pfsrd://Mythic Adventures/Feats/Scorpion Style
+pfsrd://Mythic Adventures/Feats/Selective Channeling
+pfsrd://Mythic Adventures/Feats/Self-sufficient
+pfsrd://Mythic Adventures/Feats/Shatter Defenses
+pfsrd://Mythic Adventures/Feats/Shield Focus
+pfsrd://Mythic Adventures/Feats/Shield Slam
+pfsrd://Mythic Adventures/Feats/Shot on the Run
+pfsrd://Mythic Adventures/Feats/Skill Focus
+pfsrd://Mythic Adventures/Feats/Snatch Arrows
+pfsrd://Mythic Adventures/Feats/Sociable
+pfsrd://Mythic Adventures/Feats/Spellbreaker
+pfsrd://Mythic Adventures/Feats/Spell Focus
+pfsrd://Mythic Adventures/Feats/Spell Mastery
+pfsrd://Mythic Adventures/Feats/Spell Penetration
+pfsrd://Mythic Adventures/Feats/Spirited Charge
+pfsrd://Mythic Adventures/Feats/Spontaneous Metafocus
+pfsrd://Mythic Adventures/Feats/Spring Attack
+pfsrd://Mythic Adventures/Feats/Stealthy
+pfsrd://Mythic Adventures/Feats/Strike Back
+pfsrd://Mythic Adventures/Feats/Strong Comeback
+pfsrd://Mythic Adventures/Feats/Stunning Fist
+pfsrd://Mythic Adventures/Feats/Throw Anything
+pfsrd://Mythic Adventures/Feats/Titan Strike
+pfsrd://Mythic Adventures/Feats/Toughness
+pfsrd://Mythic Adventures/Feats/Trample
+pfsrd://Mythic Adventures/Feats/Tripping Staff
+pfsrd://Mythic Adventures/Feats/Turn Undead
+pfsrd://Mythic Adventures/Feats/Two-Fisted Drinker
+pfsrd://Mythic Adventures/Feats/Two-Weapon Defense
+pfsrd://Mythic Adventures/Feats/Two-Weapon Fighting
+pfsrd://Mythic Adventures/Feats/Two-Weapon Rend
+pfsrd://Mythic Adventures/Feats/Undead Master
+pfsrd://Mythic Adventures/Feats/Unseat
+pfsrd://Mythic Adventures/Feats/Valiant Vault
+pfsrd://Mythic Adventures/Feats/Vital Strike
+pfsrd://Mythic Adventures/Feats/Voice of the Sibyl
+pfsrd://Mythic Adventures/Feats/Warrior Priest
+pfsrd://Mythic Adventures/Feats/Weapon Finesse
+pfsrd://Mythic Adventures/Feats/Weapon Focus
+pfsrd://Mythic Adventures/Feats/Weapon Specialization
+pfsrd://Mythic Adventures/Feats/Witch Knife
+pfsrd://Mythic Adventures/Monsters
+pfsrd://Mythic Adventures/Monsters/Aboleth
+pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Mucus Cloud
+pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Mucus Mist
+pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Slime
+pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Slime Armor
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic Barghest
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities/Goblin King
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities/Improved Bite
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities/Vorpal Bite
+pfsrd://Mythic Adventures/Monsters/Cockatrice
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities/Petrification
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities/Petrification Aura
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities/Stone Plumage
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities/Contemptuous Toss
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities/Earthquake
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities/Flash of Brutality
+pfsrd://Mythic Adventures/Monsters/Demon
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities/Crushing Coils
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities/Greater Infuse Weapon
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities/Poisoned Weapons
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities/Demonic Knowledge
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities/Touch of Chaos
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities/Unholy Nimbus
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities/Entrapping Vines
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities/Greater Stunning Screech
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities/Manic Dance of Ruin
+pfsrd://Mythic Adventures/Monsters/Devil
+pfsrd://Mythic Adventures/Monsters/Devil/Bone
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities/Bone Eruption
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities/Pain Blast
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Devil/Ice
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Cold Logic
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Favored Enemy
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Ice Burrowing
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Ice Shards
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Slow
+pfsrd://Mythic Adventures/Monsters/Dragon
+pfsrd://Mythic Adventures/Monsters/Dragon/Black
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities/Corrupt Water
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities/Swamp Stride
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities/Water Breathing
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Bend Bolt
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Desert Thirst
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Dust Cloud
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Persuasive Whisper
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Sound Imitation
+pfsrd://Mythic Adventures/Monsters/Dragon/Green
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities/Camouflage
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities/Delirious Breath
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities/Water Breathing
+pfsrd://Mythic Adventures/Monsters/Dragon/Red
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities/Fire Aura
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities/Manipulate Flames
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities/Melt Stone
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Young Red Dragon
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Young Red Dragon/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Young Red Dragon/Special Abilities/Smoke Vision
+pfsrd://Mythic Adventures/Monsters/Dragon/White
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Ice Shape
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Ice Slick
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Icewalking
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Power Slide
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Snow Vision
+pfsrd://Mythic Adventures/Monsters/Elemental
+pfsrd://Mythic Adventures/Monsters/Elemental/Air
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Air Mastery
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Create Vacuum
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Elevated Ejection
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Swallow Whole
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Earth Mastery
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Petrify
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Stun
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Trap Weapon
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Blinding Blaze
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Inferno
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Shroud of Flame
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Smoke Cloud
+pfsrd://Mythic Adventures/Monsters/Elemental/Water
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Drench
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Pressure Wave
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Swallow Whole
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Vortex
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Water Mastery
+pfsrd://Mythic Adventures/Monsters/Ettin
+pfsrd://Mythic Adventures/Monsters/Ettin/Ettin
+pfsrd://Mythic Adventures/Monsters/Ettin/Ettin/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Ettin/Ettin/Special Abilities/Two Brains
+pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins
+pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins/Hillblood Ettin (CR 8/MR 3)
+pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins/Orcblood Ettin (CR 8/MR 3)
+pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins/Stoneblood Ettin (CR 8/MR 3)
+pfsrd://Mythic Adventures/Monsters/Gargoyle
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic Kapoacinth
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities/Freeze
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities/Opportunistic Movement
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities/Possess Statue
+pfsrd://Mythic Adventures/Monsters/Giant
+pfsrd://Mythic Adventures/Monsters/Giant/Fire
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities/Choking Ash
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities/Fire Vortex
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities/Lava Weapons
+pfsrd://Mythic Adventures/Monsters/Giant/Hill
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities/Dense Mind
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities/Earth Bond
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities/Ground Pound
+pfsrd://Mythic Adventures/Monsters/Griffon
+pfsrd://Mythic Adventures/Monsters/Griffon/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Griffon/Special Abilities/Power Dive
+pfsrd://Mythic Adventures/Monsters/Hell Hound
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Hell Hound
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Hell Hound/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Hell Hound/Special Abilities/Clinging Flames
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Nessian Warhound
+pfsrd://Mythic Adventures/Monsters/Hydra
+pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities/Fast Healing
+pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities/Hydra Traits
+pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities/Regenerate Head
+pfsrd://Mythic Adventures/Monsters/Lamia
+pfsrd://Mythic Adventures/Monsters/Lamia/Lamia Matriarch
+pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities/Aura of Seduction
+pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities/Spells
+pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities/Wisdom Drain
+pfsrd://Mythic Adventures/Monsters/Lich
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Augmented Spellcasting
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Channel Resistance
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/CR
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Creeping Paralysis
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Enhanced Spellcasting
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Formidable Animation
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Formidable Animation/Mythic Lich Abilities
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Immediate Counterspell
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Mythic Phylactery
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Mythic Potency
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Mythic Spells
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Mythic Subtype
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Spell Perception
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Spell Resistance
+pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Sustained by Magic
+pfsrd://Mythic Adventures/Monsters/Lich/Lich
+pfsrd://Mythic Adventures/Monsters/Manticore
+pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities/Skewer
+pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities/Spikes
+pfsrd://Mythic Adventures/Monsters/Medusa
+pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Petrifying Gaze
+pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Poison Weapons
+pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Summon Snake
+pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Unpetrify
+pfsrd://Mythic Adventures/Monsters/Minotaur
+pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities/Maze Mastery
+pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities/Natural Cunning
+pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities/Oubliette
+pfsrd://Mythic Adventures/Monsters/Mummy
+pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Create Spawn
+pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Desert Mastery
+pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Despair
+pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Mummy Rot
+pfsrd://Mythic Adventures/Monsters/Ogre
+pfsrd://Mythic Adventures/Monsters/Ogre/Ogre Dragonslayer
+pfsrd://Mythic Adventures/Monsters/Ogre/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Ogre/Special Abilities/Iron Resilience
+pfsrd://Mythic Adventures/Monsters/Ogre/Special Abilities/Rising Fury
+pfsrd://Mythic Adventures/Monsters/Owlbear
+pfsrd://Mythic Adventures/Monsters/Owlbear/Owlbear
+pfsrd://Mythic Adventures/Monsters/Owlbear/Owlbear/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Owlbear/Owlbear/Special Abilities/Disorienting Pounce
+pfsrd://Mythic Adventures/Monsters/Owlbear/The First
+pfsrd://Mythic Adventures/Monsters/Phoenix
+pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Death Throes
+pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Incinerate
+pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Self-Resurrection
+pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Shroud of Flame
+pfsrd://Mythic Adventures/Monsters/Rakshasa
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities/Detect Thoughts
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities/Modify Memory
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities/Telepathic Dodge
+pfsrd://Mythic Adventures/Monsters/Skeleton
+pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton
+pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/CR
+pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Hit Dice
+pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Mythic Subtype
+pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Relentless
+pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Superior Two Weapon Fighting
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic Skeletal Champion
+pfsrd://Mythic Adventures/Monsters/Skeleton/Other Mythic Skeletons
+pfsrd://Mythic Adventures/Monsters/Skeleton/Other Mythic Skeletons/Mythic Bloody Skeleton
+pfsrd://Mythic Adventures/Monsters/Skeleton/Other Mythic Skeletons/Mythic Burning Skeleton
+pfsrd://Mythic Adventures/Monsters/Sphinx
+pfsrd://Mythic Adventures/Monsters/Sphinx/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Sphinx/Special Abilities/Riddle
+pfsrd://Mythic Adventures/Monsters/Sphinx/Special Abilities/Sphinxs Curse
+pfsrd://Mythic Adventures/Monsters/Treant
+pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Animate Trees
+pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Double Damage Against Objects
+pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Drink Deep
+pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Druidic Magic
+pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Treespeech
+pfsrd://Mythic Adventures/Monsters/Troll
+pfsrd://Mythic Adventures/Monsters/Troll/Ice Troll (CR 5/MR 2)
+pfsrd://Mythic Adventures/Monsters/Troll/Jotund Troll (CR 18/MR 7)
+pfsrd://Mythic Adventures/Monsters/Troll/Moss Troll (CR 4/MR 1)
+pfsrd://Mythic Adventures/Monsters/Troll/Rock Troll (CR 7/MR 3)
+pfsrd://Mythic Adventures/Monsters/Troll/Scrag (CR 6/MR 2)
+pfsrd://Mythic Adventures/Monsters/Troll/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Troll/Special Abilities/Primal Vigor
+pfsrd://Mythic Adventures/Monsters/Vampire
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Blood Omen
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Channel Resistance
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Children of the Eclipse
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/CR
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Create Mythic Spawn
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Eclipse
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Eclipse/Mythic Vampire Abilities
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Flight
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Mastermind
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Mist Shapes
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Mythic Subtype
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Negative Energy Focus
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Overcome Weakness
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Scabrous Claws
+pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Telekinesis
+pfsrd://Mythic Adventures/Monsters/Vampire/Vampire
+pfsrd://Mythic Adventures/Monsters/Worg
+pfsrd://Mythic Adventures/Monsters/Worg/Winter Wolf
+pfsrd://Mythic Adventures/Monsters/Worg/Worg
+pfsrd://Mythic Adventures/Monsters/Worg/Worg/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Worg/Worg/Special Abilities/Darkness Aura
+pfsrd://Mythic Adventures/Monsters/Wyvern
+pfsrd://Mythic Adventures/Monsters/Wyvern/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Wyvern/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Wyvern/Special Abilities/Power Lift
+pfsrd://Mythic Adventures/Monsters/Wyvern/Variant Mythic Wyverns
+pfsrd://Mythic Adventures/Rules
+pfsrd://Mythic Adventures/Rules/Glossary
+pfsrd://Mythic Adventures/Rules/Glossary/Ascension
+pfsrd://Mythic Adventures/Rules/Glossary/Boon
+pfsrd://Mythic Adventures/Rules/Glossary/DR/Epic
+pfsrd://Mythic Adventures/Rules/Glossary/Mythic
+pfsrd://Mythic Adventures/Rules/Glossary/Mythic Adventures
+pfsrd://Mythic Adventures/Rules/Glossary/Mythic Path
+pfsrd://Mythic Adventures/Rules/Glossary/Mythic Power
+pfsrd://Mythic Adventures/Rules/Glossary/Mythic Rank
+pfsrd://Mythic Adventures/Rules/Glossary/Mythic Tier
+pfsrd://Mythic Adventures/Rules/Glossary/Mythic Trial
+pfsrd://Mythic Adventures/Rules/Glossary/Non-Mythic
+pfsrd://Mythic Adventures/Rules/Glossary/Surge
+pfsrd://Mythic Adventures/Rules/Mythic Feats
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Feat Descriptions
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Feat Descriptions/Benefit
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Feat Descriptions/Feat Name
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Feat Descriptions/Normal
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Feat Descriptions/Prerequisite
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Types of Feats
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Types of Feats/Metamagic Feats
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Types of Feats/Mythic and Metamagic Feats
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Types of Feats/Mythic and Metamagic Feats/Feats
+pfsrd://Mythic Adventures/Rules/Mythic Feats/Types of Feats/Mythic Feats
+pfsrd://Mythic Adventures/Rules/Mythic Game
+pfsrd://Mythic Adventures/Rules/Mythic Game/Designing Encounters
+pfsrd://Mythic Adventures/Rules/Mythic Game/Designing Encounters/Adjusting CR and Level
+pfsrd://Mythic Adventures/Rules/Mythic Game/Designing Encounters/Encounters for Mythic PCs
+pfsrd://Mythic Adventures/Rules/Mythic Game/Designing Encounters/Encounters for Mythic PCs/High CR Experience Point Awards
+pfsrd://Mythic Adventures/Rules/Mythic Game/Designing Encounters/Encounters for Mythic PCs/High CR Treasure per Encounter
+pfsrd://Mythic Adventures/Rules/Mythic Game/Designing Encounters/Encounters for Normal PCs
+pfsrd://Mythic Adventures/Rules/Mythic Game/Designing Encounters/Rewarding Mythic Characters
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/Eternal Gaze
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/Falling Stars
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/For Love of Sport
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/Legacy of Earth
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/Moments of Powerlessness
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/Perilous Peaks
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/The Nascent Sphere
+pfsrd://Mythic Adventures/Rules/Mythic Game/Ideas for Mythic Adventures/Unexpected Travels
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Assassinate
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Behind Me
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Bloodless Victory
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Calm Down
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Cling to Life
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Close Call
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Counter Caster
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Critical Chain
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Deadly Dance
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Deaths Door
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Deep Breath
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Desperate Measures
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Distant Crit
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Final Gift
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/First to Fall
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Indestructible
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Maneuver Display
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Massive Attack
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Massive Swing
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Mass Obliteration
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Master Healer
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Mythic Challenge
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Outrageous Lie
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Overkill
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Performance Victory
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Pinpoint
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Push On
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Resilient Caster
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Return to Sender
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Savant
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/School Display
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Shield Ally
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Skill Supremacy
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Solo Warrior
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Swift Doom
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Swift Victory
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Tumbler
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Undead Bane
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Unstoppable
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Wild Warrior
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Boons/Wrestler
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/Dependency
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/Elemental Vulnerability
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/Furious Rage
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/Hubris
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/Material Weakness
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/Mercurial Mind
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/School Aversion
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Flaws/Weapon Weakness
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Awakening
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Contact
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure/Cunning Foes
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure/Hard Consequences
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure/Impressive Settings
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure/Legendary Creatures
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure/Otherworldly Influence
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure/Powerful Enemies
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Elements of a Mythic Adventure/Supernatural Events
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Journey
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Life Afterward
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Return
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/Starting Off Mythic
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/The Importance of Failure
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/The Monomyth
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Story Structure/The Worlds Reaction
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes/Description
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes/Eldritch Magic
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes/Legendary Encounter
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes/Lost Inheritance
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes/Planar Might
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes/Power of the Gods
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Themes/Stolen Might
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Abyssal Parasite
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Aftermath
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/A Nobles Mind Overthrown
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/First Steps
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/For Those Who Must Follow
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Into the Abyss
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Lost Souls
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Mirror through the Multiverse
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Proving Grounds of the Great Beyond
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Redemption
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Revenge Unyielding
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/The Culling Plague
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/The Giving Rain
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/The Old Guard
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/To Challenge a God
+pfsrd://Mythic Adventures/Rules/Mythic Game/Mythic Trials/Sample Trials/Uniting the Armies
+pfsrd://Mythic Adventures/Rules/Mythic Game/Recurring Mythic Villains
+pfsrd://Mythic Adventures/Rules/Mythic Game/Running a Mythic Game
+pfsrd://Mythic Adventures/Rules/Mythic Game/Running a Mythic Game/Different Scales of Mythic Campaigns
+pfsrd://Mythic Adventures/Rules/Mythic Game/Running a Mythic Game/Different Scales of Mythic Campaigns/Common
+pfsrd://Mythic Adventures/Rules/Mythic Game/Running a Mythic Game/Different Scales of Mythic Campaigns/Limited
+pfsrd://Mythic Adventures/Rules/Mythic Game/Running a Mythic Game/Different Scales of Mythic Campaigns/Rare
+pfsrd://Mythic Adventures/Rules/Mythic Game/Running a Mythic Game/Different Scales of Mythic Campaigns/Uncommon
+pfsrd://Mythic Adventures/Rules/Mythic Game/Running a Mythic Game/Making a Mythic Atmosphere
+pfsrd://Mythic Adventures/Rules/Mythic Heroes
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Builds
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Builds/Arcane Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Builds/Defensive Caster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Builds/Knowledge Master
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Builds/Prepared Archmage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Builds/Spontaneous Archmage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Abundant Casting
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Arcane Endurance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Bloodline Intensity
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Competent Caster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Coupled Arcana
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Crafting Mastery
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Deep Understanding
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Eldritch Breach
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Elemental Bond
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Enduring Armor
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Energy Conversion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Enhance Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Flash of Omniscience
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Flexible Counterspell
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Flexible School
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Greater Familiar Link
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Harmonious Mage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Mythic Bloodline
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Mythic Hexes
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Mythic School
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Perfect Preparation
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Rapid Preparation
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Resilient Arcana
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Sensory Link
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Shifting Mastery
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Speedy Summons
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Spellbane Counterstrike
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Telekinetic Master
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/1st-Tier Archmage Path Abilities/Throw Spell
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Arcane Metamastery
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Arcane Potency
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Bloodline Immunity
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Component Freedom
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Eldritch Flight
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Many Forms
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Mirror Dodge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Mythic Spellpower
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Reverse Scrying
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Spell Sieve
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/3rd-Tier Archmage Path Abilities/Tangible Illusion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/6th-Tier Archmage Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/6th-Tier Archmage Path Abilities/Channel Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/6th-Tier Archmage Path Abilities/Divine Knowledge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/6th-Tier Archmage Path Abilities/Eldritch Reciprocation
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/6th-Tier Archmage Path Abilities/Sanctum
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/Archmage Arcana
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/Archmage Arcana/Arcane Surge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/Archmage Arcana/Mage Strike
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/Archmage Arcana/Wild Arcana
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Archmage Features/True Archmage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Archmage/Bonus Hit Points/Tier
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Bonus Hit Points/Tier
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Builds
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Builds/Armored Warrior
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Builds/Death Dealer
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Builds/Furious Fighter
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Builds/Maneuver Champion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Builds/Nimble Warrior
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Builds/Smasher
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Aerial Assault
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Always a Chance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Always Armed
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Armor Master
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Backlash
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Blowback
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Burst Through
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Clean Blade
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Climbing Master
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Crusader
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Devastating Smash
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Endless Hatred
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Ever Ready
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Flash of Rage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Impossible Speed
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Imprinting Hand
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Lesson Learned
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Limitless Range
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Meat Shield
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Mounted Maniac
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Mythic Ki
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Mythic Rage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Mythic Smite
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Mythic Weapon Training
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Punishing Blow
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Sunder Storm
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Swimming Master
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Tear Apart
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Titans Bane
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Uncanny Grapple
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/1st-Tier Champion Path Abilities/Wall Smasher
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Destroyer
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Elemental Fury
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Fleet Warrior
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Incredible Parry
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Maneuver Expert
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Maximized Critical
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Penetrating Damage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Precision
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Titans Rage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/To the Death
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/3rd-Tier Champion Path Abilities/Unstoppable Shot
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/6th-Tier Champion Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/6th-Tier Champion Path Abilities/Critical Master
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/6th-Tier Champion Path Abilities/Fistful of Daggers
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/6th-Tier Champion Path Abilities/Perfect Strike
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/6th-Tier Champion Path Abilities/Shatter Spells
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/6th-Tier Champion Path Abilities/Sweeping Strike
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/Champions Strike
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/Champions Strike/Distant Barrage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/Champions Strike/Fleet Charge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/Champions Strike/Sudden Attack
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Champion/Champion Features/Legendary Champion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Bonus Hit Points/Tier
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Builds
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Builds/Dangerous Duo
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Builds/Defender
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Builds/Immovable Warrior
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Builds/Invincible Guardian
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Builds/Nature Guardian
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Adamantine Mind
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Additional Call
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Armored Might
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Armor Master
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Avenging Maneuver
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Borrow Elements
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Burst Through
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Draw Fire
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Empathic Healing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Ever Ready
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Fast Healing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Guardians Shout
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Immovable
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Imprinting Hand
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Knowledgeable Guardian
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Lesson Learned
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Mythic Companion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Mythic Mercy
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Pack Wild Shape
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Partial Transformation
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Quick Recovery
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Raise Animal
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Ranged Disarm
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Relentless Healing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Retributive Reach
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Sacrificial Shield
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/1st-Tier Guardian Path Abilities/Supreme Tracker
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Cage Enemy
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Dimensional Grappler
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Drive Back
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Earth Protection
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Impervious Body
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Impervious Companion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Incredible Parry
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Parry Spell
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Possess Companion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Shrug It Off
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/To the Death
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/3rd-Tier Guardian Path Abilities/Turn the Tables
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/6th-Tier Guardian Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/6th-Tier Guardian Path Abilities/Cling to Life
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/6th-Tier Guardian Path Abilities/Companion Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/6th-Tier Guardian Path Abilities/Indomitable
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/6th-Tier Guardian Path Abilities/Invincible Stand
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/6th-Tier Guardian Path Abilities/Mythic Resolve
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/6th-Tier Guardian Path Abilities/Take the Hit
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/Guardians Call
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/Guardians Call/Absorb Blow
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/Guardians Call/Beasts Fury
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/Guardians Call/Sudden Block
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Guardian/Guardian Features/True Defender
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Bonus Hit Points/Tier
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Builds
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Builds/Healer
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Builds/Holy Warrior
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Builds/Nature Servant
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Builds/Sacred Conduit
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Alter Channel
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Bleed Holy Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Channel Shockwave
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Contingent Channel Energy
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Divine Countenance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Divine Guardian
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Eldritch Breach
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Empathic Healing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Enhance Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Faiths Reach
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Flexible Counterspell
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Heathen Slayer
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Instrument of Faith
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Inverted Spontaneous Casting
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Mighty Summons
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Mythic Companion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Mythic Domain
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Mythic Wild Shape
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Overflowing Grace
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Pack Wild Shape
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Plantbringer
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Relentless Healing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Sustained by Faith
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Symbol of the Holy
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Tongue of the Land
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/1st-Tier Hierophant Path Abilities/Water of Life
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Abundant Healing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Alignment Insight
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Animal Friend
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Blessed Companion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Divine Metamastery
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Divine Potency
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Domain Immunity
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Enduring Blessing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Hand of Mercy
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Hurling Vengeance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/3rd-Tier Hierophant Path Abilities/Life Current
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/6th-Tier Hierophant Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/6th-Tier Hierophant Path Abilities/Arcane Knowledge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/6th-Tier Hierophant Path Abilities/Conduit of Divine Will
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/6th-Tier Hierophant Path Abilities/Overcome Curse
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/6th-Tier Hierophant Path Abilities/Servant of Balance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/6th-Tier Hierophant Path Abilities/Undying Healer
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/Divine Surge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/Divine Surge/Beasts Fury
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/Divine Surge/Inspired Spell
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/Divine Surge/Recalled Blessing
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Hierophant/Hierophant Features/Divine Vessel
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Bonus Hit Points/Tier
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Builds
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Builds/Leader
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Builds/Supporter
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Builds/Tactician
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Builds/Tyrant
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Builds/Warmaster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Additional Order
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Assured Skill
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Clarion Call
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Deadly Guidance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Directed Assault
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Distracting Assailant
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Focus
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Granted Stride
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Greater Surge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Helpful Rebuke
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Heroic Block
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Inspired Defense
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Inspire Minions
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Inspiring Surge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Lend Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Lightning Performance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Loyalty
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Menacing Presence
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Mythic Fascination
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Painful Gambit
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Perfect Aid
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Persuasive Countenance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Press the Advantage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Resurging Words
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Rise Up
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Shout of Defiance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Smiting Aura
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Stand Tall
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Tactical Genius
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/1st-Tier Marshal Path Abilities/Unwavering Skill
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Aura of Perseverance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Casters Friend
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Commanding Presence
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Confidence
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Demagogue
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Dispel Fear
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Flexible Confidence
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Glorious Charge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Master of Mercy
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Master of Shadows
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Mythic Bond
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Shared Alertness
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Shatter Resilience
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/3rd-Tier Marshal Path Abilities/Words of Hope
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities/Beacon of Hope
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities/Castigate
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities/Fight On
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities/Inspiring Assault
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities/Surge of Inspiration
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities/Unswerving Loyalty
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/6th-Tier Marshal Path Abilities/Words of Valor (Su
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/Marshals Order
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/Marshals Order/Advance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/Marshals Order/Decisive Strike
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/Marshals Order/Rally
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Marshal/Marshal Features/Visionary Commander
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Ability Score
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Amazing Initiative
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Force of Will
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Hard to Kill
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Immortal
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Legendary Hero
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Mythic Feat
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Mythic Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Mythic Saving Throws
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Recuperation
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Surge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Base Mythic Abilities/Unstoppable
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character/Mythic Ascension
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character/Mythic Ascension/Artifact
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character/Mythic Ascension/Fated
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character/Mythic Ascension/Godling
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character/Mythic Ascension/Granted
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character/Mythic Ascension/Passed On
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Creating a Mythic Character/Selecting a Path
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Gaining Tiers
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Gaining Tiers/Mythic Trials per Tier
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths/Archmage
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths/Champion
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths/Guardian
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths/Hierophant
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths/Marshal
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths/Trickster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Mythic Paths/Trickster/Base Mythic Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Commune with Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Display of Charisma
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Display of Constitution
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Display of Dexterity
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Display of Intelligence
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Display of Strength
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Display of Wisdom
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Extra Mythic Feat
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Extra Mythic Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Legendary Item
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Longevity
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Mythic Craft
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Mythic Spellcasting
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Mythic Sustenance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/1st-Tier Universal Path Abilities/Pierce the Darkness
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Beyond Morality
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Divine Source
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Enhanced Ability
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Fearless
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Pure Body
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Pure Destiny
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Pure Senses
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Sleepless
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Ultimate Versatility
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/3rd-Tier Universal Path Abilities/Unchanging
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/6th-Tier Universal Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/6th-Tier Universal Path Abilities/Farwalker
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/6th-Tier Universal Path Abilities/Mythic Presence
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/6th-Tier Universal Path Abilities/Mythic Sight
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Mythic Heroes/Universal Path Abilities/6th-Tier Universal Path Abilities/Tongues
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Additional Trick
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Assured Drinker
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Assured Skill
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Astounding Disable
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Clown
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Combat Trickery
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Control the Mindless
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Crime Spree
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Deadly Dodge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Defensive Move
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Enhance Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Ghostly Performance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Impeccable Balance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Improbable Prestidigitation
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Inspire Minions
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Master Dilettante
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Master of Escape
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Nimble Glide
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/No One of Consequence
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Path Dabbling
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Persuasive Countenance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Ranged Disable
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Ricochet
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Shadow Stealth
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Subtle Magic
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Supreme Stealth
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/This Might Just Work
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Thwart Detection
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Titans Bane
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Transfer Magic
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Trap Taker
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Treacherous Critical
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Unwavering Skill
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/1st-Tier Trickster Path Abilities/Wall Run
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Combat Saboteur
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Critical Skill
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Fickle Attack
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Menacing Whisper
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Mirror Dodge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Perfect Lie
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Perfect Mimic
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Sardonic Wit
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/3rd-Tier Trickster Path Abilities/Vanishing Move
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Class Mimic
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Enduring Elixir
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Precision Critical
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Slayers Cyclone
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Steal Power
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Trickster Builds
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Trickster Builds/Alchemical Trickster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Trickster Builds/Combat Trickster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Trickster Builds/Fool
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Trickster Builds/Lead Performer
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Trickster Builds/Supreme Thief
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Trickster Builds/Unseen Blade
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/6th-Tier Trickster Path Abilities/Unending Performance
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/Bonus Hit Points/Tier
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/Trickster Features
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/Trickster Features/Supreme Trickster
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/Trickster Features/Trickster Attack
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/Trickster Features/Trickster Attack/Deadly Throw
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/Trickster Features/Trickster Attack/Fleet Charge
+pfsrd://Mythic Adventures/Rules/Mythic Heroes/Trickster/Trickster Features/Trickster Attack/Surprise Strike
+pfsrd://Mythic Adventures/Rules/Mythic Items
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Apocalypse Box
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Apocalypse Box/Destruction/Apocalypse Box Monsters
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Diadem of Nod
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Emperors Mammoth
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Frozen Heart of Cocytus
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Legendsbane
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Legendsbane/Destruction/Legendsbane
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Netherworld Cauldron
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Nimbus of Radiant Truth
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Plaguebringer
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Scepter of the Shining Lord
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Shadowwraith Heart
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Silver Maiden
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Tarnhelm
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Major Artifacts/Trueforge
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Aegis
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Black Iron Axe
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Bullroarers of Outburst
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Bullroarers of Outburst/Blade of Castigation
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Bullroarers of Outburst/Blade of Courage
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Bullroarers of Outburst/Blade of Despair
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Bullroarers of Outburst/Blade of Fear
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Bullroarers of Outburst/Blade of Rage
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Elemental Chain
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Fleshhook of Mythic Sustenance
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Fortunes Arrow
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Fortunes Arrow/Destruction/Fortunes arrow
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Fortunes Arrow/Fortunes arrow
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Glabrezu Claw
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Hermetic Flask
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Nexus Crystal
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Ring of Equilibrium
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Ring of Equilibrium/Destruction/A ring of equilibrium
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Rod of Spell Sundering
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Screaming Spear of the Sun
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Staff of Eldritch Sovereignty
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Sword of the Mists
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Torc of the Heavens
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Witherfang
+pfsrd://Mythic Adventures/Rules/Mythic Items/Artifacts/Minor Artifacts/Witherfang/Destruction/A witherfang
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Base Legendary Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Base Legendary Abilities/Legendary Power
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Base Legendary Abilities/Legendary Surge
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Base Legendary Abilities/Mythic Bond
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Becoming Legendary
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Artifacts
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Artifacts/Difficult to Destroy
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Adroit
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Dedicated Bond
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Eternal Bond
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Everlasting
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Flexible Bond
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Foe-Biting
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Animate
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Blindsense
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Darkvision
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Expanded Senses
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Expanded Senses
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Fly
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Read Languages
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Read Magic
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Shape Change
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Skill Ranks
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Spellcasting
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Telepathy
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Intelligent/Teleport
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Legendary Fortification
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Metamagician
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Perfect Surge
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Powerful
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Rejuvenating
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Returning
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Undetectable
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Unstoppable Strike
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Unyielding
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Item Abilities/Upgradable
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Armor
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Belt
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Body
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Chest
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Eyes
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Feet
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Hands
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Head
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Headband
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Neck
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Ring
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Rod
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Shield
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Shoulders
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Staff
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Weapons
+pfsrd://Mythic Adventures/Rules/Mythic Items/Legendary Items/Legendary Surge/Wrists
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Armor and Shield Special Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Armor and Shield Special Abilities/Deflecting
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Armor and Shield Special Abilities/Denying
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Armor and Shield Special Abilities/Resonating
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Ambrosia
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Anchoring Belt
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Blind Helm
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Book of Banishing
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Book of Perfect Jokes
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Boots of Earth and Wind
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Bountiful Bottle
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Bracers of Might
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Bracers of the Shield Mates
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Canopic Jar
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Cape of Free Will
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Caydens Cup
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Censer of Sanctuary
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Chime of Disillusionment
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Cloak of Quick Reflexes
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Cloak of the Hunt
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Cornucopia of Plenty
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Death Wardens Bandolier
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Death Wardens Bandolier/All Bells At Once
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Death Wardens Bandolier/Channeling Bell
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Death Wardens Bandolier/Dirge Bell
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Death Wardens Bandolier/Undead Ward Bell
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Dolorous Rod
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Everburning Lantern
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Eye Orb
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Figurine of Wondrous Power/Basalt Dragon
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Gallows Rope
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Gloves of Distant Action
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Gloves of Spell Snaring
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Golden Holy Symbol
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Headband of Sealed Thoughts
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Helm of the Serpent King
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Herbs of the Primal Beast
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Immolation Cloak
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Inescapable Gloves
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Laurel Wreath
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Lyre of Storms
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Mantle of the Faithful Vessel
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Mirroring Belt
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Mithral Rose
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Monocle of Unveiled Auras
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Moonstone Cat
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Necklace of Spectral Strikes
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Nectar of the Gods
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Pauldrons of Unflinching Fortitude
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Penitents Robes
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Phoenix Cloak
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Ring of Energy Dampening
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Ring of Transcendent Spells
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Root of the World Tree
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Root of the World Tree/Lesser
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Seven-League Boots
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Stonefist Gloves
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Other Magic Items/Torc of Truespeech
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Armors and Shields
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Armors and Shields/Bastion of the Inheritor
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Armors and Shields/Spiritwalk Armor
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Armors and Shields/Stalwart Breastplate
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Bow of Erastil
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Brutal Axe
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Chaos Hammer
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Dagger of a Thousand Bites
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Dragonbreath Bow
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Fire Goddesss Blade
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Gun With No Name
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Pick of Stonecleaving
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Sacred Avenger
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Shadow Spike
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Shadows Touch
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Skirmishing Spear
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Spellbreaker
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Stormcaller
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Specific Weapons/Sword of Inner Fire
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Weapon Special Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Weapon Special Abilities/Disjoining
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Weapon Special Abilities/Harvesting
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Weapon Special Abilities/Mythic Bane
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Weapon Special Abilities/Potent
+pfsrd://Mythic Adventures/Rules/Mythic Items/Magic Items/Weapon Special Abilities/Sacrosanct
+pfsrd://Mythic Adventures/Rules/Mythic Items/Mythic Items
+pfsrd://Mythic Adventures/Rules/Mythic Items/Mythic Items/Mythic Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Items/Mythic Items/Mythic Magic Items/Artifacts
+pfsrd://Mythic Adventures/Rules/Mythic Items/Mythic Items/Mythic Magic Items/Legendary Items
+pfsrd://Mythic Adventures/Rules/Mythic Items/Mythic Items/Mythic Magic Items/Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Monsters
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster/Step 1-Estimate its final CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster/Step 2-Determine its mythic rank
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster/Step 3-Determine its initial CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster/Step 4-Build a new monster for that initial CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster/Step 5-Add the mythic subtype
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster/Step 6-Add additional mythic abilities
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Create a New Monster/Step 7-Evaluate the monster at its final CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Modify an Existing Monster
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Modify an Existing Monster/Step 1-Determine its mythic rank
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Modify an Existing Monster/Step 2-Add the mythic subtype
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Modify an Existing Monster/Step 3-Add additional mythic abilities
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Building a Mythic Creature/Modify an Existing Monster/Step 4-Evaluate the monster at its final CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Armor Class
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Average Damage
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Good Save
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/High Attack
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Hit Points
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Low Attack
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Poor Save
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Poor Save/Monster Statistics by CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Primary Ability DC
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Evaluating Monster Statistics/Secondary Ability DC
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Agile (MR 1/CR +1)
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Agile (MR 1/CR +1)/Rebuild Rules
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Arcane (MR 1 or 2/CR +1)
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Arcane (MR 1 or 2/CR +1)/Rebuild Rules
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Divine (MR 1 or 2/CR +1)
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Divine (MR 1 or 2/CR +1)/Rebuild Rules
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Invincible (MR 1 or 2/CR +1)
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Invincible (MR 1 or 2/CR +1)/Rebuild Rules
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Invincible (MR 1 or 2/CR +1)/Rebuild Rules/Invincible Template Defenses
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Savage (MR 1 or 2/CR +1)
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Savage (MR 1 or 2/CR +1)/Rebuild Rules
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Simple Templates/Savage (MR 1 or 2/CR +1)/Rebuild Rules/Savage Template Defenses
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Ability Bonus
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Additional Mythic Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/CR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Damage Reduction
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Mythic Bonus Hit Points
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Mythic Feats
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Mythic Power
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Mythic Rank
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Natural Armor Bonus
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/Spell Resistance
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/XP
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/Mythic Subtype/XP/Mythic Subtype Abilities
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Block Attacks
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Dragon Blood
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Dragon Blood/Dragon Blood Damage
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Dragon Cantrips
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Dragon Fury
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Dual Initiative
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Feral Savagery
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Fortification
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Greensight
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Lingering Breath
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Lingering Breath/Lingering Breath Damage
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Mistsight
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Mythic Magic
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Mythic Power
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Poisonous Blood
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Powerful Blows
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Sand Glide
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Second Save
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Simple Arcane Spellcasting
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Simple Divine Spellcasting
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Smother
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Steal
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/Surge
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Advancement/New Universal Monster Rules/X-Ray Vision
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monster Origins
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Monsters
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Mythic Rank
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Description
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Environment
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Feats
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Init and Senses
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Name/CR/and MR
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Organization
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Special Attacks
+pfsrd://Mythic Adventures/Rules/Mythic Monsters/Reading a Mythic Monster Stat Block/Treasure
+pfsrd://Mythic Adventures/Rules/Mythic Spells
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Augmented Mythic Spells
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Augmented Mythic Spells/Example
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Casting Mythic Spells
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Effects of Mythic Spells
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Learning Mythic Spells
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Mythic Spells in Magic Items
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Mythic Spells in Stat Blocks
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Potent
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Resilient
+pfsrd://Mythic Adventures/Rules/Mythic Spells/Tiers in Mythic Spell Descriptions
 pfsrd://NPC Codex
 pfsrd://NPC Codex/Rules
 pfsrd://NPC Codex/Rules/Core Class NPCs

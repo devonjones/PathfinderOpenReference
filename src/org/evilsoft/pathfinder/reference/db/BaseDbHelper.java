@@ -5,7 +5,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.utils.AvailableSpaceHandler;
@@ -270,5 +272,31 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 			retarr[i] = input.get(i);
 		}
 		return retarr;
+	}
+
+	public static String implementProjection(List<String> columns,
+			String[] projection, Map<String, String> translation) {
+		List<String> localColumns = new ArrayList<String>();
+		if (projection == null) {
+			localColumns.addAll(columns);
+		} else {
+			for (int i = 0; i < projection.length; i++) {
+				if (columns.contains(projection[i])) {
+					localColumns.add(projection[i]);
+				}
+			}
+		}
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < localColumns.size(); i++) {
+			if (i > 0) {
+				sb.append(", ");
+			}
+			if (translation.containsKey(localColumns.get(i))) {
+				sb.append(translation.get(localColumns.get(i)));
+			} else {
+				sb.append(localColumns.get(i));
+			}
+		}
+		return sb.toString();
 	}
 }

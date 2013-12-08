@@ -48,8 +48,13 @@
             />
         <provider
             android:exported="true"
-            android:name="org.evilsoft.pathfinder.reference.api.ClassContentProvider"
-            android:authorities="org.evilsoft.pathfinder.reference.api.class"
+            android:name="org.evilsoft.pathfinder.reference.api.SectionContentProvider"
+            android:authorities="org.evilsoft.pathfinder.reference.api.section"
+            />
+        <provider
+            android:exported="true"
+            android:name="org.evilsoft.pathfinder.reference.api.SkillContentProvider"
+            android:authorities="org.evilsoft.pathfinder.reference.api.skill"
             />
         <provider
             android:exported="true"

@@ -37,6 +37,12 @@
 		android:defaultValue="true" />
 		
 	<CheckBoxPreference
+		android:key="source_MA"
+		android:title="Mythic Adventures"
+		android:summary="Supernatural sorcery"
+		android:defaultValue="true" />
+		
+		<CheckBoxPreference
 		android:key="source_B1"
 		android:title="Bestiary"
 		android:summary="Monsters"

@@ -42,7 +42,7 @@ public class IndexGroupAdapter {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
-		sb.append(" WHERE i.indexId = ?");
+		sb.append(" WHERE i.index_id = ?");
 		args.add(id.toString());
 		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
 				"i"));

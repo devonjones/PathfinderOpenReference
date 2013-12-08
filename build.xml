@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PathfinderOpenReferenceApiContracts" default="jar" xmlns:android="antlib:com.googlecode.autoandroid.ant">
+<description>Compiles and packages Pathfinder Open Reference Api Contracts package</description>
+<property name="lib.dir" value="lib"/>
+
+<target name="jar">
+    <jar destfile="bin/pfor-contracts.jar" basedir="bin/classes" includes="org/evilsoft/pathfinder/reference/api/contracts/**"> 
+    </jar>
+</target>
+
+</project>

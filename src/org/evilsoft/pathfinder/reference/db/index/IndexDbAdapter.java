@@ -32,6 +32,30 @@ public class IndexDbAdapter {
 		return closed;
 	}
 
+	public ApiSectionListAdapter getApiClassListAdapter() {
+		return new ApiSectionListAdapter(database, context);
+	}
+
+	public ApiClassSpellListAdapter getApiClassSpellListAdapter() {
+		return new ApiClassSpellListAdapter(database, context);
+	}
+
+	public ApiCreatureListAdapter getApiCreatureListAdapter() {
+		return new ApiCreatureListAdapter(database, context);
+	}
+
+	public ApiFeatListAdapter getApiFeatListAdapter() {
+		return new ApiFeatListAdapter(database, context);
+	}
+
+	public ApiSkillListAdapter getApiSkillListAdapter() {
+		return new ApiSkillListAdapter(database, context);
+	}
+
+	public ApiSpellListAdapter getApiSpellListAdapter() {
+		return new ApiSpellListAdapter(database, context);
+	}
+
 	public MenuAdapter getMenuAdapter() {
 		return new MenuAdapter(database, context);
 	}

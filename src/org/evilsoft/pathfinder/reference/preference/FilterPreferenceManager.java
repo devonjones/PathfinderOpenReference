@@ -46,6 +46,9 @@ public class FilterPreferenceManager {
 		if (preferences.getBoolean("source_UM", true) == false) {
 			sourceList.add("Ultimate Magic");
 		}
+		if (preferences.getBoolean("source_MA", true) == false) {
+			sourceList.add("Mythic Adventures");
+		}
 		if (preferences.getBoolean("source_B1", true) == false) {
 			sourceList.add("Bestiary");
 		}
