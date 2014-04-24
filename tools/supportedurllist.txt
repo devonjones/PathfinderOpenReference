@@ -2626,7 +2626,7 @@ pfsrd://Advanced Race Guide/Races/Aasimars/New Racial Rules/Aasimar Magic Items/
 pfsrd://Advanced Race Guide/Races/Aasimars/New Racial Rules/Aasimar Spells
 pfsrd://Advanced Race Guide/Races/Aasimars/New Racial Rules/Aasimar Spells/Sacred Space
 pfsrd://Advanced Race Guide/Races/Aasimars/New Racial Rules/Aasimar Spells/Truespeak
-pfsrd://Advanced Race Guide/Races/Aasimars/New Racial Rules/Aasimar Spells/Veil of Heaven
+pfsrd://Advanced Race Guide/Races/Aasimars/New Racial Rules/Aasimar Spells/Veil Of Heaven
 pfsrd://Advanced Race Guide/Races/Aasimars/Racial Archetypes/Purifier (Oracle)
 pfsrd://Advanced Race Guide/Races/Aasimars/Racial Archetypes/Purifier (Oracle)/Celestial Master (Su)
 pfsrd://Advanced Race Guide/Races/Aasimars/Racial Archetypes/Purifier (Oracle)/Diminished Spellcasting
@@ -2971,7 +2971,7 @@ pfsrd://Advanced Race Guide/Races/Elves/New Racial Rules/Elven Special Materials
 pfsrd://Advanced Race Guide/Races/Elves/New Racial Rules/Elven Special Materials/Wyroot
 pfsrd://Advanced Race Guide/Races/Elves/New Racial Rules/Elven Spells
 pfsrd://Advanced Race Guide/Races/Elves/New Racial Rules/Elven Spells/Blend
-pfsrd://Advanced Race Guide/Races/Elves/New Racial Rules/Elven Spells/Ward of the Season
+pfsrd://Advanced Race Guide/Races/Elves/New Racial Rules/Elven Spells/Ward Of The Season
 pfsrd://Advanced Race Guide/Races/Elves/New Racial Rules/Elven Spells/Whispering Lore
 pfsrd://Advanced Race Guide/Races/Elves/Racial Archetypes/Ancient Lorekeeper (Oracle)
 pfsrd://Advanced Race Guide/Races/Elves/Racial Archetypes/Ancient Lorekeeper (Oracle)/Elven Arcana (Ex)
@@ -3109,7 +3109,7 @@ pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Magic Items/Boot
 pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Magic Items/Phantasmal Gem
 pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Magic Items/Ring of Craft Magic
 pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Spells
-pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Spells/Death from Below
+pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Spells/Death From Below
 pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Spells/Jitterbugs
 pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Spells/Major Phantom Object
 pfsrd://Advanced Race Guide/Races/Gnomes/New Racial Rules/Gnome Spells/Minor Dream
@@ -3316,8 +3316,8 @@ pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Magic Item
 pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Magic Items/Solidsmoke Pipeweed
 pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Magic Items/Symbol of Luck
 pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells
-pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells/Blessing of Luck and Resolve
-pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells/Blessing of Luck and Resolve/Mass
+pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells/Blessing Of Luck And Resolve
+pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells/Blessing Of Luck And Resolve/Mass
 pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells/Escaping Ward
 pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells/Fearsome Duplicate
 pfsrd://Advanced Race Guide/Races/Halflings/New Racial Rules/Halfling Spells/Village Veil
@@ -3595,13 +3595,13 @@ pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Magic Items
 pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Magic Items/Cloak of Fiery Vanishing
 pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Magic Items/Igniting (weapon special ability)
 pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells
-pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Chains of Fire
+pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Chains Of Fire
 pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Death Candle
 pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Firestream
-pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Fury of the Sun
+pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Fury Of The Sun
 pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Healing Warmth
 pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Scorching Ash Form
-pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Touch of Combustion
+pfsrd://Advanced Race Guide/Races/Ifrits/New Racial Rules/Ifrit Spells/Touch Of Combustion
 pfsrd://Advanced Race Guide/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)
 pfsrd://Advanced Race Guide/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)/Burnt Offering (Su)
 pfsrd://Advanced Race Guide/Races/Ifrits/Racial Archetypes/Immolator (Inquisitor)/Judgment by Fire (Su)
@@ -3692,7 +3692,7 @@ pfsrd://Advanced Race Guide/Races/Merfolk/New Racial Rules/Merfolk Feats/Sea Hun
 pfsrd://Advanced Race Guide/Races/Merfolk/New Racial Rules/Merfolk Magic Items
 pfsrd://Advanced Race Guide/Races/Merfolk/New Racial Rules/Merfolk Magic Items/Seafoam Shawl
 pfsrd://Advanced Race Guide/Races/Merfolk/New Racial Rules/Merfolk Spells
-pfsrd://Advanced Race Guide/Races/Merfolk/New Racial Rules/Merfolk Spells/Fins to Feet
+pfsrd://Advanced Race Guide/Races/Merfolk/New Racial Rules/Merfolk Spells/Fins To Feet
 pfsrd://Advanced Race Guide/Races/Merfolk/Racial Archetypes/Wave Warden (Ranger)
 pfsrd://Advanced Race Guide/Races/Merfolk/Racial Archetypes/Wave Warden (Ranger)/Aquatic Prowess Feat (Ex)
 pfsrd://Advanced Race Guide/Races/Merfolk/Racial Archetypes/Wave Warden (Ranger)/Deep Sentinel (Ex)
@@ -3793,7 +3793,7 @@ pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Magic Items/Mask
 pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Spells
 pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Spells/Binding Earth
 pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Spells/Binding Earth/Mass
-pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Spells/Mighty Fist of the Earth
+pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Spells/Mighty Fist Of The Earth
 pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Spells/Raging Rubble
 pfsrd://Advanced Race Guide/Races/Oreads/New Racial Rules/Oread Spells/Stone Shield
 pfsrd://Advanced Race Guide/Races/Oreads/Oread Racial Traits
@@ -3915,7 +3915,7 @@ pfsrd://Advanced Race Guide/Races/Sulis/New Racial Rules/Suli Feats/Extra Elemen
 pfsrd://Advanced Race Guide/Races/Sulis/New Racial Rules/Suli Feats/Incremental Elemental Assault
 pfsrd://Advanced Race Guide/Races/Sulis/New Racial Rules/Suli Feats/Incremental Elemental Assault/Benefits
 pfsrd://Advanced Race Guide/Races/Sulis/New Racial Rules/Suli Spells
-pfsrd://Advanced Race Guide/Races/Sulis/New Racial Rules/Suli Spells/Imbue with Elemental Might
+pfsrd://Advanced Race Guide/Races/Sulis/New Racial Rules/Suli Spells/Imbue With Elemental Might
 pfsrd://Advanced Race Guide/Races/Sulis/Racial Archetypes/Elemental Knight (Magus)
 pfsrd://Advanced Race Guide/Races/Sulis/Racial Archetypes/Elemental Knight (Magus)/Elemental Arcana (Su)
 pfsrd://Advanced Race Guide/Races/Sulis/Racial Archetypes/Elemental Knight (Magus)/Elemental Matrix (Su)
@@ -3980,7 +3980,7 @@ pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Gusting S
 pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Miasmatic Form
 pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Miasmatic Form/Poisonous cloud
 pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Miasmatic Form/Stinking cloud
-pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Path of the Winds
+pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Path Of The Winds
 pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Wind Blades
 pfsrd://Advanced Race Guide/Races/Sylphs/New Racial Rules/Sylph Spells/Windy Escape
 pfsrd://Advanced Race Guide/Races/Sylphs/Racial Archetypes/Sky Druid (Druid)
@@ -4024,7 +4024,7 @@ pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Magic Items/Blac
 pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Magic Items/Red Feather Fan
 pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Magic Items/Tengu Drinking Jug
 pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Spells
-pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Spells/Commune with Birds
+pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Spells/Commune With Birds
 pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Spells/Theft Ward
 pfsrd://Advanced Race Guide/Races/Tengus/New Racial Rules/Tengu Spells/Winter Feathers
 pfsrd://Advanced Race Guide/Races/Tengus/Racial Archetypes/Shigenjo (Oracle)
@@ -13663,161 +13663,161 @@ pfsrd://Mythic Adventures/Feats/Weapon Focus
 pfsrd://Mythic Adventures/Feats/Weapon Specialization
 pfsrd://Mythic Adventures/Feats/Witch Knife
 pfsrd://Mythic Adventures/Monsters
-pfsrd://Mythic Adventures/Monsters/Aboleth
-pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Mucus Cloud
-pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Mucus Mist
-pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Slime
-pfsrd://Mythic Adventures/Monsters/Aboleth/Special Abilities/Slime Armor
-pfsrd://Mythic Adventures/Monsters/Barghest/Greater
-pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic Barghest
-pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities/Goblin King
-pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities/Improved Bite
-pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Special Abilities/Vorpal Bite
-pfsrd://Mythic Adventures/Monsters/Cockatrice
-pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities/Petrification
-pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities/Petrification Aura
-pfsrd://Mythic Adventures/Monsters/Cockatrice/Special Abilities/Stone Plumage
-pfsrd://Mythic Adventures/Monsters/Cyclops/Great
-pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities/Contemptuous Toss
-pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities/Earthquake
-pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Special Abilities/Flash of Brutality
+pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic
+pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic/Special Abilities/Mucus Cloud
+pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic/Special Abilities/Mucus Mist
+pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic/Special Abilities/Slime
+pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic/Special Abilities/Slime Armor
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic/Mythic Barghest
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic/Special Abilities/Goblin King
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic/Special Abilities/Improved Bite
+pfsrd://Mythic Adventures/Monsters/Barghest/Greater/Mythic/Special Abilities/Vorpal Bite
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Mythic
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Mythic/Special Abilities/Petrification
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Mythic/Special Abilities/Petrification Aura
+pfsrd://Mythic Adventures/Monsters/Cockatrice/Mythic/Special Abilities/Stone Plumage
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Mythic
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Mythic/Special Abilities/Contemptuous Toss
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Mythic/Special Abilities/Earthquake
+pfsrd://Mythic Adventures/Monsters/Cyclops/Great/Mythic/Special Abilities/Flash of Brutality
 pfsrd://Mythic Adventures/Monsters/Demon
-pfsrd://Mythic Adventures/Monsters/Demon/Marilith
-pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities/Crushing Coils
-pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities/Greater Infuse Weapon
-pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Special Abilities/Poisoned Weapons
-pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee
-pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities/Demonic Knowledge
-pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities/Touch of Chaos
-pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Special Abilities/Unholy Nimbus
-pfsrd://Mythic Adventures/Monsters/Demon/Vrock
-pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities/Entrapping Vines
-pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities/Greater Stunning Screech
-pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Special Abilities/Manic Dance of Ruin
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Mythic
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Mythic/Special Abilities/Crushing Coils
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Mythic/Special Abilities/Greater Infuse Weapon
+pfsrd://Mythic Adventures/Monsters/Demon/Marilith/Mythic/Special Abilities/Poisoned Weapons
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Mythic
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Mythic/Special Abilities/Demonic Knowledge
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Mythic/Special Abilities/Touch of Chaos
+pfsrd://Mythic Adventures/Monsters/Demon/Nalfeshnee/Mythic/Special Abilities/Unholy Nimbus
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Mythic
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Mythic/Special Abilities/Entrapping Vines
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Mythic/Special Abilities/Greater Stunning Screech
+pfsrd://Mythic Adventures/Monsters/Demon/Vrock/Mythic/Special Abilities/Manic Dance of Ruin
 pfsrd://Mythic Adventures/Monsters/Devil
-pfsrd://Mythic Adventures/Monsters/Devil/Bone
-pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities/Bone Eruption
-pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities/Pain Blast
-pfsrd://Mythic Adventures/Monsters/Devil/Bone/Special Abilities/Poison
-pfsrd://Mythic Adventures/Monsters/Devil/Ice
-pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Cold Logic
-pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Favored Enemy
-pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Ice Burrowing
-pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Ice Shards
-pfsrd://Mythic Adventures/Monsters/Devil/Ice/Special Abilities/Slow
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Mythic
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Mythic/Special Abilities/Bone Eruption
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Mythic/Special Abilities/Pain Blast
+pfsrd://Mythic Adventures/Monsters/Devil/Bone/Mythic/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Mythic
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Mythic/Special Abilities/Cold Logic
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Mythic/Special Abilities/Favored Enemy
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Mythic/Special Abilities/Ice Burrowing
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Mythic/Special Abilities/Ice Shards
+pfsrd://Mythic Adventures/Monsters/Devil/Ice/Mythic/Special Abilities/Slow
 pfsrd://Mythic Adventures/Monsters/Dragon
-pfsrd://Mythic Adventures/Monsters/Dragon/Black
-pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities/Corrupt Water
-pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities/Swamp Stride
-pfsrd://Mythic Adventures/Monsters/Dragon/Black/Special Abilities/Water Breathing
-pfsrd://Mythic Adventures/Monsters/Dragon/Blue
-pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Bend Bolt
-pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Desert Thirst
-pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Dust Cloud
-pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Persuasive Whisper
-pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Special Abilities/Sound Imitation
-pfsrd://Mythic Adventures/Monsters/Dragon/Green
-pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities/Camouflage
-pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities/Delirious Breath
-pfsrd://Mythic Adventures/Monsters/Dragon/Green/Special Abilities/Water Breathing
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Mythic
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Mythic/Special Abilities/Corrupt Water
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Mythic/Special Abilities/Swamp Stride
+pfsrd://Mythic Adventures/Monsters/Dragon/Black/Mythic/Special Abilities/Water Breathing
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Mythic
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Mythic/Special Abilities/Bend Bolt
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Mythic/Special Abilities/Desert Thirst
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Mythic/Special Abilities/Dust Cloud
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Mythic/Special Abilities/Persuasive Whisper
+pfsrd://Mythic Adventures/Monsters/Dragon/Blue/Mythic/Special Abilities/Sound Imitation
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Mythic
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Mythic/Special Abilities/Camouflage
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Mythic/Special Abilities/Delirious Breath
+pfsrd://Mythic Adventures/Monsters/Dragon/Green/Mythic/Special Abilities/Water Breathing
 pfsrd://Mythic Adventures/Monsters/Dragon/Red
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities/Fire Aura
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities/Manipulate Flames
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Wyrm Red Dragon/Special Abilities/Melt Stone
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Young Red Dragon
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Young Red Dragon/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Dragon/Red/Mythic Young Red Dragon/Special Abilities/Smoke Vision
-pfsrd://Mythic Adventures/Monsters/Dragon/White
-pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Ice Shape
-pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Ice Slick
-pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Icewalking
-pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Power Slide
-pfsrd://Mythic Adventures/Monsters/Dragon/White/Special Abilities/Snow Vision
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Wyrm/Mythic
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Wyrm/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Wyrm/Mythic/Special Abilities/Fire Aura
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Wyrm/Mythic/Special Abilities/Manipulate Flames
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Wyrm/Mythic/Special Abilities/Melt Stone
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Young/Mythic
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Young/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/Red/Red Dragon/Young/Mythic/Special Abilities/Smoke Vision
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Mythic
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Mythic/Special Abilities/Ice Shape
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Mythic/Special Abilities/Ice Slick
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Mythic/Special Abilities/Icewalking
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Mythic/Special Abilities/Power Slide
+pfsrd://Mythic Adventures/Monsters/Dragon/White/Mythic/Special Abilities/Snow Vision
 pfsrd://Mythic Adventures/Monsters/Elemental
-pfsrd://Mythic Adventures/Monsters/Elemental/Air
-pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Air Mastery
-pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Create Vacuum
-pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Elevated Ejection
-pfsrd://Mythic Adventures/Monsters/Elemental/Air/Special Abilities/Swallow Whole
-pfsrd://Mythic Adventures/Monsters/Elemental/Earth
-pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Earth Mastery
-pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Petrify
-pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Stun
-pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Special Abilities/Trap Weapon
-pfsrd://Mythic Adventures/Monsters/Elemental/Fire
-pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Blinding Blaze
-pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Inferno
-pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Shroud of Flame
-pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Special Abilities/Smoke Cloud
-pfsrd://Mythic Adventures/Monsters/Elemental/Water
-pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Drench
-pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Pressure Wave
-pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Swallow Whole
-pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Vortex
-pfsrd://Mythic Adventures/Monsters/Elemental/Water/Special Abilities/Water Mastery
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Mythic
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Mythic/Special Abilities/Air Mastery
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Mythic/Special Abilities/Create Vacuum
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Mythic/Special Abilities/Elevated Ejection
+pfsrd://Mythic Adventures/Monsters/Elemental/Air/Mythic/Special Abilities/Swallow Whole
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Mythic
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Mythic/Special Abilities/Earth Mastery
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Mythic/Special Abilities/Petrify
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Mythic/Special Abilities/Stun
+pfsrd://Mythic Adventures/Monsters/Elemental/Earth/Mythic/Special Abilities/Trap Weapon
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Mythic
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Mythic/Special Abilities/Blinding Blaze
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Mythic/Special Abilities/Inferno
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Mythic/Special Abilities/Shroud of Flame
+pfsrd://Mythic Adventures/Monsters/Elemental/Fire/Mythic/Special Abilities/Smoke Cloud
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Mythic
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Mythic/Special Abilities/Drench
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Mythic/Special Abilities/Pressure Wave
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Mythic/Special Abilities/Swallow Whole
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Mythic/Special Abilities/Vortex
+pfsrd://Mythic Adventures/Monsters/Elemental/Water/Mythic/Special Abilities/Water Mastery
 pfsrd://Mythic Adventures/Monsters/Ettin
-pfsrd://Mythic Adventures/Monsters/Ettin/Ettin
-pfsrd://Mythic Adventures/Monsters/Ettin/Ettin/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Ettin/Ettin/Special Abilities/Two Brains
+pfsrd://Mythic Adventures/Monsters/Ettin/Mythic
+pfsrd://Mythic Adventures/Monsters/Ettin/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Ettin/Mythic/Special Abilities/Two Brains
 pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins
 pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins/Hillblood Ettin (CR 8/MR 3)
 pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins/Orcblood Ettin (CR 8/MR 3)
 pfsrd://Mythic Adventures/Monsters/Ettin/Variant Mythic Ettins/Stoneblood Ettin (CR 8/MR 3)
-pfsrd://Mythic Adventures/Monsters/Gargoyle
-pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic Kapoacinth
-pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities/Freeze
-pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities/Opportunistic Movement
-pfsrd://Mythic Adventures/Monsters/Gargoyle/Special Abilities/Possess Statue
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic/Mythic Kapoacinth
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic/Special Abilities/Freeze
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic/Special Abilities/Opportunistic Movement
+pfsrd://Mythic Adventures/Monsters/Gargoyle/Mythic/Special Abilities/Possess Statue
 pfsrd://Mythic Adventures/Monsters/Giant
-pfsrd://Mythic Adventures/Monsters/Giant/Fire
-pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities/Choking Ash
-pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities/Fire Vortex
-pfsrd://Mythic Adventures/Monsters/Giant/Fire/Special Abilities/Lava Weapons
-pfsrd://Mythic Adventures/Monsters/Giant/Hill
-pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities/Dense Mind
-pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities/Earth Bond
-pfsrd://Mythic Adventures/Monsters/Giant/Hill/Special Abilities/Ground Pound
-pfsrd://Mythic Adventures/Monsters/Griffon
-pfsrd://Mythic Adventures/Monsters/Griffon/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Griffon/Special Abilities/Power Dive
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Mythic
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Mythic/Special Abilities/Choking Ash
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Mythic/Special Abilities/Fire Vortex
+pfsrd://Mythic Adventures/Monsters/Giant/Fire/Mythic/Special Abilities/Lava Weapons
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Mythic
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Mythic/Special Abilities/Dense Mind
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Mythic/Special Abilities/Earth Bond
+pfsrd://Mythic Adventures/Monsters/Giant/Hill/Mythic/Special Abilities/Ground Pound
+pfsrd://Mythic Adventures/Monsters/Griffon/Mythic
+pfsrd://Mythic Adventures/Monsters/Griffon/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Griffon/Mythic/Special Abilities/Power Dive
 pfsrd://Mythic Adventures/Monsters/Hell Hound
-pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Hell Hound
-pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Hell Hound/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Hell Hound/Special Abilities/Clinging Flames
-pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic Nessian Warhound
-pfsrd://Mythic Adventures/Monsters/Hydra
-pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities/Fast Healing
-pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities/Hydra Traits
-pfsrd://Mythic Adventures/Monsters/Hydra/Special Abilities/Regenerate Head
-pfsrd://Mythic Adventures/Monsters/Lamia
-pfsrd://Mythic Adventures/Monsters/Lamia/Lamia Matriarch
-pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities/Aura of Seduction
-pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities/Spells
-pfsrd://Mythic Adventures/Monsters/Lamia/Special Abilities/Wisdom Drain
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Mythic/Special Abilities/Clinging Flames
+pfsrd://Mythic Adventures/Monsters/Hell Hound/Nessian Warhound/Mythic
+pfsrd://Mythic Adventures/Monsters/Hydra/Mythic
+pfsrd://Mythic Adventures/Monsters/Hydra/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Hydra/Mythic/Special Abilities/Fast Healing
+pfsrd://Mythic Adventures/Monsters/Hydra/Mythic/Special Abilities/Hydra Traits
+pfsrd://Mythic Adventures/Monsters/Hydra/Mythic/Special Abilities/Regenerate Head
+pfsrd://Mythic Adventures/Monsters/Lamia/Mythic
+pfsrd://Mythic Adventures/Monsters/Lamia/Mythic/Lamia Matriarch
+pfsrd://Mythic Adventures/Monsters/Lamia/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Lamia/Mythic/Special Abilities/Aura of Seduction
+pfsrd://Mythic Adventures/Monsters/Lamia/Mythic/Special Abilities/Spells
+pfsrd://Mythic Adventures/Monsters/Lamia/Mythic/Special Abilities/Wisdom Drain
 pfsrd://Mythic Adventures/Monsters/Lich
 pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich
 pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Augmented Spellcasting
@@ -13835,81 +13835,81 @@ pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Mythic Subtype
 pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Spell Perception
 pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Spell Resistance
 pfsrd://Mythic Adventures/Monsters/Lich/Creating a Mythic Lich/Sustained by Magic
-pfsrd://Mythic Adventures/Monsters/Lich/Lich
-pfsrd://Mythic Adventures/Monsters/Manticore
-pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities/Poison
-pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities/Skewer
-pfsrd://Mythic Adventures/Monsters/Manticore/Special Abilities/Spikes
-pfsrd://Mythic Adventures/Monsters/Medusa
-pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Petrifying Gaze
-pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Poison
-pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Poison Weapons
-pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Summon Snake
-pfsrd://Mythic Adventures/Monsters/Medusa/Special Abilities/Unpetrify
-pfsrd://Mythic Adventures/Monsters/Minotaur
-pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities/Maze Mastery
-pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities/Natural Cunning
-pfsrd://Mythic Adventures/Monsters/Minotaur/Special Abilities/Oubliette
-pfsrd://Mythic Adventures/Monsters/Mummy
-pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Create Spawn
-pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Desert Mastery
-pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Despair
-pfsrd://Mythic Adventures/Monsters/Mummy/Special Abilities/Mummy Rot
-pfsrd://Mythic Adventures/Monsters/Ogre
-pfsrd://Mythic Adventures/Monsters/Ogre/Ogre Dragonslayer
-pfsrd://Mythic Adventures/Monsters/Ogre/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Ogre/Special Abilities/Iron Resilience
-pfsrd://Mythic Adventures/Monsters/Ogre/Special Abilities/Rising Fury
+pfsrd://Mythic Adventures/Monsters/Lich/Mythic
+pfsrd://Mythic Adventures/Monsters/Manticore/Mythic
+pfsrd://Mythic Adventures/Monsters/Manticore/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Manticore/Mythic/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Manticore/Mythic/Special Abilities/Skewer
+pfsrd://Mythic Adventures/Monsters/Manticore/Mythic/Special Abilities/Spikes
+pfsrd://Mythic Adventures/Monsters/Medusa/Mythic
+pfsrd://Mythic Adventures/Monsters/Medusa/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Medusa/Mythic/Special Abilities/Petrifying Gaze
+pfsrd://Mythic Adventures/Monsters/Medusa/Mythic/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Medusa/Mythic/Special Abilities/Poison Weapons
+pfsrd://Mythic Adventures/Monsters/Medusa/Mythic/Special Abilities/Summon Snake
+pfsrd://Mythic Adventures/Monsters/Medusa/Mythic/Special Abilities/Unpetrify
+pfsrd://Mythic Adventures/Monsters/Minotaur/Mythic
+pfsrd://Mythic Adventures/Monsters/Minotaur/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Minotaur/Mythic/Special Abilities/Maze Mastery
+pfsrd://Mythic Adventures/Monsters/Minotaur/Mythic/Special Abilities/Natural Cunning
+pfsrd://Mythic Adventures/Monsters/Minotaur/Mythic/Special Abilities/Oubliette
+pfsrd://Mythic Adventures/Monsters/Mummy/Mythic
+pfsrd://Mythic Adventures/Monsters/Mummy/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Mummy/Mythic/Special Abilities/Create Spawn
+pfsrd://Mythic Adventures/Monsters/Mummy/Mythic/Special Abilities/Desert Mastery
+pfsrd://Mythic Adventures/Monsters/Mummy/Mythic/Special Abilities/Despair
+pfsrd://Mythic Adventures/Monsters/Mummy/Mythic/Special Abilities/Mummy Rot
+pfsrd://Mythic Adventures/Monsters/Ogre/Mythic
+pfsrd://Mythic Adventures/Monsters/Ogre/Mythic/Ogre Dragonslayer
+pfsrd://Mythic Adventures/Monsters/Ogre/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Ogre/Mythic/Special Abilities/Iron Resilience
+pfsrd://Mythic Adventures/Monsters/Ogre/Mythic/Special Abilities/Rising Fury
 pfsrd://Mythic Adventures/Monsters/Owlbear
-pfsrd://Mythic Adventures/Monsters/Owlbear/Owlbear
-pfsrd://Mythic Adventures/Monsters/Owlbear/Owlbear/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Owlbear/Owlbear/Special Abilities/Disorienting Pounce
-pfsrd://Mythic Adventures/Monsters/Owlbear/The First
-pfsrd://Mythic Adventures/Monsters/Phoenix
-pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Death Throes
-pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Incinerate
-pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Self-Resurrection
-pfsrd://Mythic Adventures/Monsters/Phoenix/Special Abilities/Shroud of Flame
-pfsrd://Mythic Adventures/Monsters/Rakshasa
-pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities/Detect Thoughts
-pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities/Modify Memory
-pfsrd://Mythic Adventures/Monsters/Rakshasa/Special Abilities/Telepathic Dodge
-pfsrd://Mythic Adventures/Monsters/Skeleton
-pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton
-pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/CR
-pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Hit Dice
-pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Mythic Subtype
-pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Relentless
-pfsrd://Mythic Adventures/Monsters/Skeleton/Creating a Mythic Skeleton/Superior Two Weapon Fighting
-pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic Skeletal Champion
-pfsrd://Mythic Adventures/Monsters/Skeleton/Other Mythic Skeletons
-pfsrd://Mythic Adventures/Monsters/Skeleton/Other Mythic Skeletons/Mythic Bloody Skeleton
-pfsrd://Mythic Adventures/Monsters/Skeleton/Other Mythic Skeletons/Mythic Burning Skeleton
-pfsrd://Mythic Adventures/Monsters/Sphinx
-pfsrd://Mythic Adventures/Monsters/Sphinx/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Sphinx/Special Abilities/Riddle
-pfsrd://Mythic Adventures/Monsters/Sphinx/Special Abilities/Sphinxs Curse
-pfsrd://Mythic Adventures/Monsters/Treant
-pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Animate Trees
-pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Double Damage Against Objects
-pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Drink Deep
-pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Druidic Magic
-pfsrd://Mythic Adventures/Monsters/Treant/Special Abilities/Treespeech
-pfsrd://Mythic Adventures/Monsters/Troll
-pfsrd://Mythic Adventures/Monsters/Troll/Ice Troll (CR 5/MR 2)
-pfsrd://Mythic Adventures/Monsters/Troll/Jotund Troll (CR 18/MR 7)
-pfsrd://Mythic Adventures/Monsters/Troll/Moss Troll (CR 4/MR 1)
-pfsrd://Mythic Adventures/Monsters/Troll/Rock Troll (CR 7/MR 3)
-pfsrd://Mythic Adventures/Monsters/Troll/Scrag (CR 6/MR 2)
-pfsrd://Mythic Adventures/Monsters/Troll/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Troll/Special Abilities/Primal Vigor
+pfsrd://Mythic Adventures/Monsters/Owlbear/Mythic
+pfsrd://Mythic Adventures/Monsters/Owlbear/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Owlbear/Mythic/Special Abilities/Disorienting Pounce
+pfsrd://Mythic Adventures/Monsters/Owlbear/The First/Mythic
+pfsrd://Mythic Adventures/Monsters/Phoenix/Mythic
+pfsrd://Mythic Adventures/Monsters/Phoenix/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Phoenix/Mythic/Special Abilities/Death Throes
+pfsrd://Mythic Adventures/Monsters/Phoenix/Mythic/Special Abilities/Incinerate
+pfsrd://Mythic Adventures/Monsters/Phoenix/Mythic/Special Abilities/Self-Resurrection
+pfsrd://Mythic Adventures/Monsters/Phoenix/Mythic/Special Abilities/Shroud of Flame
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Mythic
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Mythic/Special Abilities/Detect Thoughts
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Mythic/Special Abilities/Modify Memory
+pfsrd://Mythic Adventures/Monsters/Rakshasa/Mythic/Special Abilities/Telepathic Dodge
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Creating a Mythic Skeleton
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Creating a Mythic Skeleton/CR
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Creating a Mythic Skeleton/Hit Dice
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Creating a Mythic Skeleton/Mythic Subtype
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Creating a Mythic Skeleton/Relentless
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Creating a Mythic Skeleton/Superior Two Weapon Fighting
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Mythic Skeletal Champion
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Other Mythic Skeletons
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Other Mythic Skeletons/Mythic Bloody Skeleton
+pfsrd://Mythic Adventures/Monsters/Skeleton/Mythic/Other Mythic Skeletons/Mythic Burning Skeleton
+pfsrd://Mythic Adventures/Monsters/Sphinx/Mythic
+pfsrd://Mythic Adventures/Monsters/Sphinx/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Sphinx/Mythic/Special Abilities/Riddle
+pfsrd://Mythic Adventures/Monsters/Sphinx/Mythic/Special Abilities/Sphinxs Curse
+pfsrd://Mythic Adventures/Monsters/Treant/Mythic
+pfsrd://Mythic Adventures/Monsters/Treant/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Treant/Mythic/Special Abilities/Animate Trees
+pfsrd://Mythic Adventures/Monsters/Treant/Mythic/Special Abilities/Double Damage Against Objects
+pfsrd://Mythic Adventures/Monsters/Treant/Mythic/Special Abilities/Drink Deep
+pfsrd://Mythic Adventures/Monsters/Treant/Mythic/Special Abilities/Druidic Magic
+pfsrd://Mythic Adventures/Monsters/Treant/Mythic/Special Abilities/Treespeech
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic/Ice Troll (CR 5/MR 2)
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic/Jotund Troll (CR 18/MR 7)
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic/Moss Troll (CR 4/MR 1)
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic/Rock Troll (CR 7/MR 3)
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic/Scrag (CR 6/MR 2)
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Troll/Mythic/Special Abilities/Primal Vigor
 pfsrd://Mythic Adventures/Monsters/Vampire
 pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire
 pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Blood Omen
@@ -13927,17 +13927,17 @@ pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Negative En
 pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Overcome Weakness
 pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Scabrous Claws
 pfsrd://Mythic Adventures/Monsters/Vampire/Creating a Mythic Vampire/Telekinesis
-pfsrd://Mythic Adventures/Monsters/Vampire/Vampire
+pfsrd://Mythic Adventures/Monsters/Vampire/Mythic
 pfsrd://Mythic Adventures/Monsters/Worg
+pfsrd://Mythic Adventures/Monsters/Worg/Mythic
+pfsrd://Mythic Adventures/Monsters/Worg/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Worg/Mythic/Special Abilities/Darkness Aura
 pfsrd://Mythic Adventures/Monsters/Worg/Winter Wolf
-pfsrd://Mythic Adventures/Monsters/Worg/Worg
-pfsrd://Mythic Adventures/Monsters/Worg/Worg/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Worg/Worg/Special Abilities/Darkness Aura
-pfsrd://Mythic Adventures/Monsters/Wyvern
-pfsrd://Mythic Adventures/Monsters/Wyvern/Special Abilities
-pfsrd://Mythic Adventures/Monsters/Wyvern/Special Abilities/Poison
-pfsrd://Mythic Adventures/Monsters/Wyvern/Special Abilities/Power Lift
-pfsrd://Mythic Adventures/Monsters/Wyvern/Variant Mythic Wyverns
+pfsrd://Mythic Adventures/Monsters/Wyvern/Mythic
+pfsrd://Mythic Adventures/Monsters/Wyvern/Mythic/Special Abilities
+pfsrd://Mythic Adventures/Monsters/Wyvern/Mythic/Special Abilities/Poison
+pfsrd://Mythic Adventures/Monsters/Wyvern/Mythic/Special Abilities/Power Lift
+pfsrd://Mythic Adventures/Monsters/Wyvern/Mythic/Variant Mythic Wyverns
 pfsrd://Mythic Adventures/Rules
 pfsrd://Mythic Adventures/Rules/Glossary
 pfsrd://Mythic Adventures/Rules/Glossary/Ascension
@@ -14824,6 +14824,285 @@ pfsrd://Mythic Adventures/Rules/Mythic Spells/Mythic Spells in Stat Blocks
 pfsrd://Mythic Adventures/Rules/Mythic Spells/Potent
 pfsrd://Mythic Adventures/Rules/Mythic Spells/Resilient
 pfsrd://Mythic Adventures/Rules/Mythic Spells/Tiers in Mythic Spell Descriptions
+pfsrd://Mythic Adventures/Spells
+pfsrd://Mythic Adventures/Spells/Ablative Barrier
+pfsrd://Mythic Adventures/Spells/Animal Aspect
+pfsrd://Mythic Adventures/Spells/Animate Dead
+pfsrd://Mythic Adventures/Spells/Animate Objects
+pfsrd://Mythic Adventures/Spells/Animate Plants
+pfsrd://Mythic Adventures/Spells/Anticipate Peril
+pfsrd://Mythic Adventures/Spells/Antimagic Field
+pfsrd://Mythic Adventures/Spells/Arboreal Hammer
+pfsrd://Mythic Adventures/Spells/Arcane Cannon
+pfsrd://Mythic Adventures/Spells/Ascension
+pfsrd://Mythic Adventures/Spells/Ascension/Mythic
+pfsrd://Mythic Adventures/Spells/Baleful Polymorph
+pfsrd://Mythic Adventures/Spells/Baleful Polymorph/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Bane
+pfsrd://Mythic Adventures/Spells/Barkskin
+pfsrd://Mythic Adventures/Spells/Battlemind Link
+pfsrd://Mythic Adventures/Spells/Battle Trance
+pfsrd://Mythic Adventures/Spells/Beast Shape (All)
+pfsrd://Mythic Adventures/Spells/Black Mark
+pfsrd://Mythic Adventures/Spells/Black Tentacles
+pfsrd://Mythic Adventures/Spells/Blade Barrier
+pfsrd://Mythic Adventures/Spells/Blasphemy
+pfsrd://Mythic Adventures/Spells/Bleed Glory
+pfsrd://Mythic Adventures/Spells/Bless
+pfsrd://Mythic Adventures/Spells/Blessing Of Fervor
+pfsrd://Mythic Adventures/Spells/Blinding Ray
+pfsrd://Mythic Adventures/Spells/Blindness/Deafness
+pfsrd://Mythic Adventures/Spells/Blink
+pfsrd://Mythic Adventures/Spells/Blistering Invective
+pfsrd://Mythic Adventures/Spells/Blood Crow Strike
+pfsrd://Mythic Adventures/Spells/Boiling Blood
+pfsrd://Mythic Adventures/Spells/Break
+pfsrd://Mythic Adventures/Spells/Break Enchantment
+pfsrd://Mythic Adventures/Spells/Breath Of Life
+pfsrd://Mythic Adventures/Spells/Breath Of Life/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Burning Gaze
+pfsrd://Mythic Adventures/Spells/Burning Hands
+pfsrd://Mythic Adventures/Spells/Burrow
+pfsrd://Mythic Adventures/Spells/Call Animal
+pfsrd://Mythic Adventures/Spells/Call Lightning
+pfsrd://Mythic Adventures/Spells/Cape Of Wasps
+pfsrd://Mythic Adventures/Spells/Chain Lightning
+pfsrd://Mythic Adventures/Spells/Changestaff
+pfsrd://Mythic Adventures/Spells/Chaos Hammer
+pfsrd://Mythic Adventures/Spells/Chill Metal
+pfsrd://Mythic Adventures/Spells/Chord Of Shards
+pfsrd://Mythic Adventures/Spells/Circle Of Death
+pfsrd://Mythic Adventures/Spells/Cloudkill
+pfsrd://Mythic Adventures/Spells/Color Spray
+pfsrd://Mythic Adventures/Spells/Command
+pfsrd://Mythic Adventures/Spells/Companion Mind Link
+pfsrd://Mythic Adventures/Spells/Cone Of Cold
+pfsrd://Mythic Adventures/Spells/Confusion
+pfsrd://Mythic Adventures/Spells/Confusion/d%
+pfsrd://Mythic Adventures/Spells/Conjure Black Pudding
+pfsrd://Mythic Adventures/Spells/Consecrate
+pfsrd://Mythic Adventures/Spells/Contagion
+pfsrd://Mythic Adventures/Spells/Contingency
+pfsrd://Mythic Adventures/Spells/Control Weather
+pfsrd://Mythic Adventures/Spells/Cup Of Dust
+pfsrd://Mythic Adventures/Spells/Cure Critical Wounds
+pfsrd://Mythic Adventures/Spells/Cure Light Wounds
+pfsrd://Mythic Adventures/Spells/Cure Moderate Wounds
+pfsrd://Mythic Adventures/Spells/Cure Serious Wounds
+pfsrd://Mythic Adventures/Spells/Damnation Stride
+pfsrd://Mythic Adventures/Spells/Darkness
+pfsrd://Mythic Adventures/Spells/Daybreak Arrow
+pfsrd://Mythic Adventures/Spells/Daylight
+pfsrd://Mythic Adventures/Spells/Death Knell
+pfsrd://Mythic Adventures/Spells/Deathless
+pfsrd://Mythic Adventures/Spells/Deathless/Deathless
+pfsrd://Mythic Adventures/Spells/Deep Slumber
+pfsrd://Mythic Adventures/Spells/Defile Armor
+pfsrd://Mythic Adventures/Spells/Desecrate
+pfsrd://Mythic Adventures/Spells/Detect Scrying
+pfsrd://Mythic Adventures/Spells/Devolution
+pfsrd://Mythic Adventures/Spells/Dictum
+pfsrd://Mythic Adventures/Spells/Dimensional Lock
+pfsrd://Mythic Adventures/Spells/Dimension Door
+pfsrd://Mythic Adventures/Spells/Discordant Blast
+pfsrd://Mythic Adventures/Spells/Disfiguring Touch
+pfsrd://Mythic Adventures/Spells/Disintegrate
+pfsrd://Mythic Adventures/Spells/Dispel Magic
+pfsrd://Mythic Adventures/Spells/Divine Favor
+pfsrd://Mythic Adventures/Spells/Divine Pursuit
+pfsrd://Mythic Adventures/Spells/Dominate Person
+pfsrd://Mythic Adventures/Spells/Draconic Reservoir
+pfsrd://Mythic Adventures/Spells/Dragons Breath
+pfsrd://Mythic Adventures/Spells/Dream
+pfsrd://Mythic Adventures/Spells/Dust Of Twilight
+pfsrd://Mythic Adventures/Spells/Ear-Piercing Scream
+pfsrd://Mythic Adventures/Spells/Earthquake
+pfsrd://Mythic Adventures/Spells/Elemental Body I
+pfsrd://Mythic Adventures/Spells/Elemental Body II
+pfsrd://Mythic Adventures/Spells/Elemental Body III
+pfsrd://Mythic Adventures/Spells/Elemental Body IV
+pfsrd://Mythic Adventures/Spells/Endure Elements
+pfsrd://Mythic Adventures/Spells/Enemy Hammer
+pfsrd://Mythic Adventures/Spells/Enervation
+pfsrd://Mythic Adventures/Spells/Enlarge Person
+pfsrd://Mythic Adventures/Spells/Entangle
+pfsrd://Mythic Adventures/Spells/Entropic Shield
+pfsrd://Mythic Adventures/Spells/Expeditious Retreat
+pfsrd://Mythic Adventures/Spells/Faerie Fire
+pfsrd://Mythic Adventures/Spells/False Life
+pfsrd://Mythic Adventures/Spells/Feast Of Ashes
+pfsrd://Mythic Adventures/Spells/Feather Fall
+pfsrd://Mythic Adventures/Spells/Finger Of Death
+pfsrd://Mythic Adventures/Spells/Fireball
+pfsrd://Mythic Adventures/Spells/Fire Seeds
+pfsrd://Mythic Adventures/Spells/Fire Shield
+pfsrd://Mythic Adventures/Spells/Fire Snake
+pfsrd://Mythic Adventures/Spells/Fire Storm
+pfsrd://Mythic Adventures/Spells/Firestream
+pfsrd://Mythic Adventures/Spells/Flame Blade
+pfsrd://Mythic Adventures/Spells/Flames Of The Faithful
+pfsrd://Mythic Adventures/Spells/Flame Strike
+pfsrd://Mythic Adventures/Spells/Flesh To Stone
+pfsrd://Mythic Adventures/Spells/Flesh To Stone/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Floating Disk
+pfsrd://Mythic Adventures/Spells/Fly
+pfsrd://Mythic Adventures/Spells/Fog Cloud
+pfsrd://Mythic Adventures/Spells/Force Punch
+pfsrd://Mythic Adventures/Spells/Foresight
+pfsrd://Mythic Adventures/Spells/Form Of The Dragon (All)
+pfsrd://Mythic Adventures/Spells/Gaseous Form
+pfsrd://Mythic Adventures/Spells/Giant Vermin
+pfsrd://Mythic Adventures/Spells/Globe Of Invulnerability
+pfsrd://Mythic Adventures/Spells/Glyph Of Warding
+pfsrd://Mythic Adventures/Spells/Goodberry
+pfsrd://Mythic Adventures/Spells/Grease
+pfsrd://Mythic Adventures/Spells/Guards And Wards
+pfsrd://Mythic Adventures/Spells/Gust Of Wind
+pfsrd://Mythic Adventures/Spells/Harm
+pfsrd://Mythic Adventures/Spells/Haste
+pfsrd://Mythic Adventures/Spells/Heal
+pfsrd://Mythic Adventures/Spells/Healing Thief
+pfsrd://Mythic Adventures/Spells/Heat Metal
+pfsrd://Mythic Adventures/Spells/Heroism
+pfsrd://Mythic Adventures/Spells/Hex Ward
+pfsrd://Mythic Adventures/Spells/Hideous Laughter
+pfsrd://Mythic Adventures/Spells/Hold Portal
+pfsrd://Mythic Adventures/Spells/Holy Smite
+pfsrd://Mythic Adventures/Spells/Holy Word
+pfsrd://Mythic Adventures/Spells/Hydraulic Push
+pfsrd://Mythic Adventures/Spells/Hydraulic Torrent
+pfsrd://Mythic Adventures/Spells/Ice Storm
+pfsrd://Mythic Adventures/Spells/Ill Omen
+pfsrd://Mythic Adventures/Spells/Inflict Critical Wounds
+pfsrd://Mythic Adventures/Spells/Inflict Light Wounds
+pfsrd://Mythic Adventures/Spells/Inflict Moderate Wounds
+pfsrd://Mythic Adventures/Spells/Inflict Serious Wounds
+pfsrd://Mythic Adventures/Spells/Invisibility
+pfsrd://Mythic Adventures/Spells/Irresistible Dance
+pfsrd://Mythic Adventures/Spells/Jitterbugs
+pfsrd://Mythic Adventures/Spells/Knock
+pfsrd://Mythic Adventures/Spells/Know The Enemy
+pfsrd://Mythic Adventures/Spells/Lend Path
+pfsrd://Mythic Adventures/Spells/Levitate
+pfsrd://Mythic Adventures/Spells/Lightning Arc
+pfsrd://Mythic Adventures/Spells/Lightning Bolt
+pfsrd://Mythic Adventures/Spells/Limited Wish
+pfsrd://Mythic Adventures/Spells/Mage Armor
+pfsrd://Mythic Adventures/Spells/Mages Disjunction
+pfsrd://Mythic Adventures/Spells/Magic Fang
+pfsrd://Mythic Adventures/Spells/Magic Fang/Greater
+pfsrd://Mythic Adventures/Spells/Magic Missile
+pfsrd://Mythic Adventures/Spells/Magic Vestment
+pfsrd://Mythic Adventures/Spells/Magic Weapon/Greater
+pfsrd://Mythic Adventures/Spells/Make Whole
+pfsrd://Mythic Adventures/Spells/Maze
+pfsrd://Mythic Adventures/Spells/Memory Lapse
+pfsrd://Mythic Adventures/Spells/Meteor Swarm
+pfsrd://Mythic Adventures/Spells/Meteor Swarm/Augmented (10th)
+pfsrd://Mythic Adventures/Spells/Mighty Fist Of The Earth
+pfsrd://Mythic Adventures/Spells/Mirror Image
+pfsrd://Mythic Adventures/Spells/Mislead
+pfsrd://Mythic Adventures/Spells/Modify Memory
+pfsrd://Mythic Adventures/Spells/Monstrous Physique (All)
+pfsrd://Mythic Adventures/Spells/Move Earth
+pfsrd://Mythic Adventures/Spells/Murderous Command
+pfsrd://Mythic Adventures/Spells/Mythic Severance
+pfsrd://Mythic Adventures/Spells/Named Bullet
+pfsrd://Mythic Adventures/Spells/Nightmare
+pfsrd://Mythic Adventures/Spells/Oath Of Peace
+pfsrd://Mythic Adventures/Spells/Obscuring Mist
+pfsrd://Mythic Adventures/Spells/Orb Of The Void
+pfsrd://Mythic Adventures/Spells/Orders Wrath
+pfsrd://Mythic Adventures/Spells/Pernicious Poison
+pfsrd://Mythic Adventures/Spells/Phantasmal Killer
+pfsrd://Mythic Adventures/Spells/Phantom Steed
+pfsrd://Mythic Adventures/Spells/Pillar Of Life
+pfsrd://Mythic Adventures/Spells/Plane Shift
+pfsrd://Mythic Adventures/Spells/Polar Ray
+pfsrd://Mythic Adventures/Spells/Power Word Blind
+pfsrd://Mythic Adventures/Spells/Power Word Kill
+pfsrd://Mythic Adventures/Spells/Power Word Stun
+pfsrd://Mythic Adventures/Spells/Pox Pustules
+pfsrd://Mythic Adventures/Spells/Prayer
+pfsrd://Mythic Adventures/Spells/Prismatic Sphere
+pfsrd://Mythic Adventures/Spells/Prismatic Spray
+pfsrd://Mythic Adventures/Spells/Protection From Arrows
+pfsrd://Mythic Adventures/Spells/Protection From Chaos
+pfsrd://Mythic Adventures/Spells/Protection From Evil
+pfsrd://Mythic Adventures/Spells/Protection From Good
+pfsrd://Mythic Adventures/Spells/Protection From Law
+pfsrd://Mythic Adventures/Spells/Ray Of Enfeeblement
+pfsrd://Mythic Adventures/Spells/Reduce Person
+pfsrd://Mythic Adventures/Spells/Regenerate
+pfsrd://Mythic Adventures/Spells/Repel Wood
+pfsrd://Mythic Adventures/Spells/Resist Energy
+pfsrd://Mythic Adventures/Spells/Resonating Word
+pfsrd://Mythic Adventures/Spells/Restore Mythic Power
+pfsrd://Mythic Adventures/Spells/Reverse Gravity
+pfsrd://Mythic Adventures/Spells/Ricochet Shot
+pfsrd://Mythic Adventures/Spells/Sacred Bond
+pfsrd://Mythic Adventures/Spells/Sanctify Armor
+pfsrd://Mythic Adventures/Spells/Sanctuary
+pfsrd://Mythic Adventures/Spells/Sands Of Time
+pfsrd://Mythic Adventures/Spells/Saving Finale
+pfsrd://Mythic Adventures/Spells/Scorching Ash Form
+pfsrd://Mythic Adventures/Spells/Scorching Ray
+pfsrd://Mythic Adventures/Spells/Scouring Winds
+pfsrd://Mythic Adventures/Spells/Searing Light
+pfsrd://Mythic Adventures/Spells/Sending
+pfsrd://Mythic Adventures/Spells/Shadow Anchor
+pfsrd://Mythic Adventures/Spells/Shadow Weapon
+pfsrd://Mythic Adventures/Spells/Share Glory
+pfsrd://Mythic Adventures/Spells/Shatter
+pfsrd://Mythic Adventures/Spells/Shield Of Faith
+pfsrd://Mythic Adventures/Spells/Shield Other
+pfsrd://Mythic Adventures/Spells/Shocking Grasp
+pfsrd://Mythic Adventures/Spells/Shout
+pfsrd://Mythic Adventures/Spells/Silence
+pfsrd://Mythic Adventures/Spells/Silent Image
+pfsrd://Mythic Adventures/Spells/Sleep
+pfsrd://Mythic Adventures/Spells/Slow
+pfsrd://Mythic Adventures/Spells/Solid Fog
+pfsrd://Mythic Adventures/Spells/Spider Climb
+pfsrd://Mythic Adventures/Spells/Spike Stones
+pfsrd://Mythic Adventures/Spells/Spiritual Weapon
+pfsrd://Mythic Adventures/Spells/Steal Power
+pfsrd://Mythic Adventures/Spells/Stinking Cloud
+pfsrd://Mythic Adventures/Spells/Stone Shape
+pfsrd://Mythic Adventures/Spells/Stoneskin
+pfsrd://Mythic Adventures/Spells/Storm Of Vengeance
+pfsrd://Mythic Adventures/Spells/Strangling Hair
+pfsrd://Mythic Adventures/Spells/Suggestion
+pfsrd://Mythic Adventures/Spells/Summon Swarm
+pfsrd://Mythic Adventures/Spells/Sunbeam
+pfsrd://Mythic Adventures/Spells/Sunbeam/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Sun Metal
+pfsrd://Mythic Adventures/Spells/Surmount Affliction
+pfsrd://Mythic Adventures/Spells/Telekinesis
+pfsrd://Mythic Adventures/Spells/Terraform
+pfsrd://Mythic Adventures/Spells/Theft Ward
+pfsrd://Mythic Adventures/Spells/Time Stop
+pfsrd://Mythic Adventures/Spells/Time Stop/Augmented (10th)
+pfsrd://Mythic Adventures/Spells/Touch Injection
+pfsrd://Mythic Adventures/Spells/Transformation
+pfsrd://Mythic Adventures/Spells/True Form
+pfsrd://Mythic Adventures/Spells/True Strike
+pfsrd://Mythic Adventures/Spells/Tsunami
+pfsrd://Mythic Adventures/Spells/Unholy Blight
+pfsrd://Mythic Adventures/Spells/Unshakable Chill
+pfsrd://Mythic Adventures/Spells/Vampiric Touch
+pfsrd://Mythic Adventures/Spells/Vomit Twin
+pfsrd://Mythic Adventures/Spells/Walk Through Space
+pfsrd://Mythic Adventures/Spells/Wall Of Fire
+pfsrd://Mythic Adventures/Spells/Wall Of Force
+pfsrd://Mythic Adventures/Spells/Wall Of Ice
+pfsrd://Mythic Adventures/Spells/Wall Of Iron
+pfsrd://Mythic Adventures/Spells/Wall Of Stone
+pfsrd://Mythic Adventures/Spells/Wall Of Thorns
+pfsrd://Mythic Adventures/Spells/Web
+pfsrd://Mythic Adventures/Spells/Whirlwind
+pfsrd://Mythic Adventures/Spells/Wish
+pfsrd://Mythic Adventures/Spells/Word Of Chaos
 pfsrd://NPC Codex
 pfsrd://NPC Codex/Rules
 pfsrd://NPC Codex/Rules/Core Class NPCs
@@ -15243,79 +15522,6 @@ pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Tribal Seer
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Tribal Seer/Greshek the Sighted
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Undead Creator
 pfsrd://NPC Codex/Rules/Core Class NPCs/Wizard/Wizards/Undead Creator/Tyrek Glodfer
-pfsrd://NPC Codex/Rules/Iconic NPCs
-pfsrd://NPC Codex/Rules/Iconic NPCs/Amiri
-pfsrd://NPC Codex/Rules/Iconic NPCs/Amiri/Iconic Barbarian
-pfsrd://NPC Codex/Rules/Iconic NPCs/Amiri/Iconic Barbarian/Amiri Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Amiri/Iconic Barbarian/Amiri Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Amiri/Iconic Barbarian/Amiri Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Ezren
-pfsrd://NPC Codex/Rules/Iconic NPCs/Ezren/Iconic Wizard
-pfsrd://NPC Codex/Rules/Iconic NPCs/Ezren/Iconic Wizard/Ezren Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Ezren/Iconic Wizard/Ezren Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Ezren/Iconic Wizard/Ezren Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Harsk
-pfsrd://NPC Codex/Rules/Iconic NPCs/Harsk/Iconic Ranger
-pfsrd://NPC Codex/Rules/Iconic NPCs/Harsk/Iconic Ranger/Harsk Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Harsk/Iconic Ranger/Harsk Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Harsk/Iconic Ranger/Harsk Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Amiri
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Ezren
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Harsk
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Kyra
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Lem
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Lini
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Merisiel
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Sajan
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Seelah
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Seoni
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Iconic Characters/Valeros
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Pathfinder Society Iconics
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Player Characters
-pfsrd://NPC Codex/Rules/Iconic NPCs/Iconic Characters/Powerful NPCs
-pfsrd://NPC Codex/Rules/Iconic NPCs/Kyra
-pfsrd://NPC Codex/Rules/Iconic NPCs/Kyra/Iconic Cleric
-pfsrd://NPC Codex/Rules/Iconic NPCs/Kyra/Iconic Cleric/Kyra Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Kyra/Iconic Cleric/Kyra Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Kyra/Iconic Cleric/Kyra Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lem
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lem/Iconic Bard
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lem/Iconic Bard/Lem Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lem/Iconic Bard/Lem Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lem/Iconic Bard/Lem Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lini
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lini/Iconic Druid
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lini/Iconic Druid/Lini Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lini/Iconic Druid/Lini Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Lini/Iconic Druid/Lini Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Merisiel
-pfsrd://NPC Codex/Rules/Iconic NPCs/Merisiel/Iconic Rogue
-pfsrd://NPC Codex/Rules/Iconic NPCs/Merisiel/Iconic Rogue/Merisiel Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Merisiel/Iconic Rogue/Merisiel Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Merisiel/Iconic Rogue/Merisiel Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan
-pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk
-pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 12/Temple Sword
-pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 12/Temple Sword/Exotic Weapons
-pfsrd://NPC Codex/Rules/Iconic NPCs/Sajan/Iconic Monk/Sajan Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seelah
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seelah/Iconic Paladin
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seelah/Iconic Paladin/Seelah Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seelah/Iconic Paladin/Seelah Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seelah/Iconic Paladin/Seelah Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seoni
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seoni/Iconic Sorcerer
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seoni/Iconic Sorcerer/Seoni Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seoni/Iconic Sorcerer/Seoni Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Seoni/Iconic Sorcerer/Seoni Level 7
-pfsrd://NPC Codex/Rules/Iconic NPCs/Valeros
-pfsrd://NPC Codex/Rules/Iconic NPCs/Valeros/Iconic Fighter
-pfsrd://NPC Codex/Rules/Iconic NPCs/Valeros/Iconic Fighter/Valeros Level 1
-pfsrd://NPC Codex/Rules/Iconic NPCs/Valeros/Iconic Fighter/Valeros Level 12
-pfsrd://NPC Codex/Rules/Iconic NPCs/Valeros/Iconic Fighter/Valeros Level 7
 pfsrd://NPC Codex/Rules/NPC Class NPCs
 pfsrd://NPC Codex/Rules/NPC Class NPCs/Adept
 pfsrd://NPC Codex/Rules/NPC Class NPCs/Adept/Adepts
@@ -18471,7 +18677,7 @@ pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents
 pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Confounding Blades
 pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Familiar
 pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Getaway Master
-pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Hard to Fool
+pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Hard Minded
 pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Hide in Plain Sight
 pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Rumormonger
 pfsrd://Ultimate Combat/Rules/Class Archetypes/Rogue/Advanced Rogue Talents/Rumormonger/Community Size
