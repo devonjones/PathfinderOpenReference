@@ -149,6 +149,10 @@ public class BookDbAdapter {
 		return new LinkAdapter(database, dbName);
 	}
 
+	public MythicSpellDetailAdapter getMythicSpellDetailAdapter() {
+		return new MythicSpellDetailAdapter(database, dbName);
+	}
+
 	public ResourceAdapter getResourceAdapter() {
 		return new ResourceAdapter(database, dbName);
 	}

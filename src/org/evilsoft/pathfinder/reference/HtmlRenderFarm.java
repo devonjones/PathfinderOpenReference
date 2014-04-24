@@ -24,6 +24,7 @@ import org.evilsoft.pathfinder.reference.render.html.HtmlRenderer;
 import org.evilsoft.pathfinder.reference.render.html.ItemRenderer;
 import org.evilsoft.pathfinder.reference.render.html.KingdomResourceRenderer;
 import org.evilsoft.pathfinder.reference.render.html.LinkRenderer;
+import org.evilsoft.pathfinder.reference.render.html.MythicSpellRenderer;
 import org.evilsoft.pathfinder.reference.render.html.RaceRenderer;
 import org.evilsoft.pathfinder.reference.render.html.ResourceRenderer;
 import org.evilsoft.pathfinder.reference.render.html.SectionRenderer;
@@ -88,6 +89,8 @@ public class HtmlRenderFarm {
 			return new KingdomResourceRenderer(bookDbAdapter);
 		} else if (type.equals("link")) {
 			return new LinkRenderer(dbWrangler, bookDbAdapter);
+		} else if (type.equals("mythic_spell")) {
+			return new MythicSpellRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("embed")) {
 			return new EmbedRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("race")) {
@@ -99,7 +102,7 @@ public class HtmlRenderFarm {
 		} else if (type.equals("skill")) {
 			return new SkillRenderer(bookDbAdapter);
 		} else if (type.equals("spell")) {
-			return new SpellRenderer(bookDbAdapter);
+			return new SpellRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("table")) {
 			return new TableRenderer();
 		} else if (type.equals("trap")) {

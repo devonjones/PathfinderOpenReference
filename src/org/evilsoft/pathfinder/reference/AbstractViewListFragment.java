@@ -194,31 +194,30 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 				currentListAdapter = new FeatListAdapter(getActivity()
 						.getApplicationContext(), curs, true);
 			}
-		} else if ("Creatures".equals(name) && "creature".equals(type)
-				&& !"npc".equals(subtype)) {
-			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
-					.fetchByCreatureType(subtype);
-			cursorList.add(curs);
-			if (thin) {
-				currentListAdapter = new DefaultListAdapter(getActivity()
-						.getApplicationContext(), curs);
+		} else if ("Creatures".equals(name) && "creature".equals(type)) {
+			if ("npc".equals(subtype) || "mythic".equals(subtype)) {
+				Cursor curs = dbWrangler.getIndexDbAdapter()
+						.getIndexGroupAdapter().fetchByType(type, subtype);
+				cursorList.add(curs);
+				if (thin) {
+					currentListAdapter = new DefaultListAdapter(getActivity()
+							.getApplicationContext(), curs);
 
+				} else {
+					currentListAdapter = new NpcListAdapter(getActivity()
+							.getApplicationContext(), curs, true);
+				}
 			} else {
-				currentListAdapter = new CreatureListAdapter(getActivity()
-						.getApplicationContext(), curs, true);
-			}
-		} else if ("Creatures".equals(name) && "creature".equals(type)
-				&& "npc".equals(subtype)) {
-			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
-					.fetchByType(type, subtype);
-			cursorList.add(curs);
-			if (thin) {
-				currentListAdapter = new DefaultListAdapter(getActivity()
-						.getApplicationContext(), curs);
-
-			} else {
-				currentListAdapter = new NpcListAdapter(getActivity()
-						.getApplicationContext(), curs, true);
+				Cursor curs = dbWrangler.getIndexDbAdapter()
+						.getIndexGroupAdapter().fetchByCreatureType(subtype);
+				cursorList.add(curs);
+				if (thin) {
+					currentListAdapter = new DefaultListAdapter(getActivity()
+							.getApplicationContext(), curs);
+				} else {
+					currentListAdapter = new CreatureListAdapter(getActivity()
+							.getApplicationContext(), curs, true);
+				}
 			}
 		} else if ("Skills".equals(name)) {
 			Cursor curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
@@ -234,7 +233,11 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 			}
 		} else if ("Spells".equals(name)) {
 			Cursor curs;
-			if (subtype != null) {
+			if (type.equals("*") && subtype != null) {
+				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+						.fetchByType(type, subtype);
+				thin = true;
+			} else if (subtype != null) {
 				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
 						.fetchBySpellClass(subtype);
 			} else {

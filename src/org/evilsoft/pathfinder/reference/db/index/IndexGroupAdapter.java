@@ -27,10 +27,11 @@ public class IndexGroupAdapter {
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT i.index_id, i.section_id, i.parent_id, i.parent_name,");
 		sb.append("  i.database, i.source, i.type, i.subtype, i.name, i.search_name,");
-		sb.append("  i.description, i.url, ");
+		sb.append("  i.description, i.url,");
 		sb.append("  i.feat_type_description, i.feat_prerequisites,");
 		sb.append("  i.skill_attribute, i.skill_armor_check_penalty, i.skill_trained_only,");
-		sb.append("  i.spell_school, i.spell_subschool, i.spell_descriptor_text,");
+		sb.append("  i.spell_school, i.spell_subschool_text, i.spell_descriptor_text,");
+		sb.append("  i.spell_list_text, i.spell_component_text, i.spell_source,");
 		sb.append("  i.creature_type, i.creature_subtype, i.creature_super_race,");
 		sb.append("  i.creature_cr, i.creature_xp, i.creature_size, i.creature_alignment");
 		sb.append(addedColumns);
@@ -78,6 +79,31 @@ public class IndexGroupAdapter {
 	}
 
 	public Cursor fetchByType(String type, String subtype) {
+		if (type != null && type.equals("*")) {
+			type = null;
+		}
+		List<String> args = new ArrayList<String>();
+		StringBuffer sb = new StringBuffer();
+		sb.append(selectStatement());
+		String where = "WHERE";
+		if (type != null) {
+			sb.append(" " + where + " i.type = ?");
+			where = "AND";
+			args.add(type);
+		}
+		if (subtype != null) {
+			sb.append("  " + where + " i.subtype = ?");
+			where = "AND";
+			args.add(subtype);
+		}
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, where,
+				"i"));
+		sb.append(" ORDER BY i.name");
+		String sql = sb.toString();
+		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
+	}
+
+	public Cursor fetchByTypeAndName(String name, String type, String subtype) {
 		if (type.equals("*")) {
 			type = null;
 		}
@@ -85,6 +111,11 @@ public class IndexGroupAdapter {
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
 		String where = "WHERE";
+		if (name != null) {
+			sb.append(" " + where + " i.name = ?");
+			where = "AND";
+			args.add(name);
+		}
 		if (type != null) {
 			sb.append(" " + where + " i.type = ?");
 			where = "AND";
@@ -150,6 +181,19 @@ public class IndexGroupAdapter {
 		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
 				"i"));
 		sb.append(" ORDER BY sl.level, i.name");
+		String sql = sb.toString();
+		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
+	}
+
+	public Cursor fetchBySpellSource(String spellSource) {
+		List<String> args = new ArrayList<String>();
+		StringBuffer sb = new StringBuffer();
+		sb.append(selectStatement());
+		sb.append(" WHERE i.spell_source = ?");
+		args.add(spellSource);
+		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
+				"i"));
+		sb.append(" ORDER BY i.name");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 	}
@@ -251,36 +295,48 @@ public class IndexGroupAdapter {
 			return cursor.getString(19);
 		}
 
-		public static String getCreatureType(Cursor cursor) {
+		public static String getSpellLists(Cursor cursor) {
 			return cursor.getString(20);
 		}
 
-		public static String getCreatureSubtype(Cursor cursor) {
+		public static String getSpellComponents(Cursor cursor) {
 			return cursor.getString(21);
 		}
 
-		public static String getCreatureSuperRace(Cursor cursor) {
+		public static String getSpellSource(Cursor cursor) {
 			return cursor.getString(22);
 		}
 
-		public static String getCreatureCr(Cursor cursor) {
+		public static String getCreatureType(Cursor cursor) {
 			return cursor.getString(23);
 		}
 
-		public static String getCreatureXp(Cursor cursor) {
+		public static String getCreatureSubtype(Cursor cursor) {
 			return cursor.getString(24);
 		}
 
-		public static String getCreatureSize(Cursor cursor) {
+		public static String getCreatureSuperRace(Cursor cursor) {
 			return cursor.getString(25);
 		}
 
-		public static String getCreatureAlign(Cursor cursor) {
+		public static String getCreatureCr(Cursor cursor) {
 			return cursor.getString(26);
 		}
 
+		public static String getCreatureXp(Cursor cursor) {
+			return cursor.getString(27);
+		}
+
+		public static String getCreatureSize(Cursor cursor) {
+			return cursor.getString(28);
+		}
+
+		public static String getCreatureAlign(Cursor cursor) {
+			return cursor.getString(29);
+		}
+
 		public static boolean hasLevel(Cursor cursor) {
-			if (cursor.getColumnCount() > 27) {
+			if (cursor.getColumnCount() > 30) {
 				return true;
 			}
 			return false;
@@ -288,7 +344,7 @@ public class IndexGroupAdapter {
 		}
 
 		public static Integer getSpellLevel(Cursor cursor) {
-			return cursor.getInt(27);
+			return cursor.getInt(30);
 		}
 	}
 }
