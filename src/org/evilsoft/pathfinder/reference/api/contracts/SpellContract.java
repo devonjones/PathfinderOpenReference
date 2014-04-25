@@ -34,6 +34,10 @@ public class SpellContract {
 	public static final Uri SPELL_LIST_URI = Uri.parse("content://" + AUTHORITY
 			+ "/spells");
 
+	/** A content:// style uri to the authority for this table */
+	public static final Uri SPELL_FILTER_LIST_URI = Uri.parse("content://"
+			+ AUTHORITY + "/spells/filtered");
+
 	public static final Uri getSpellHtmlUri(String spellId) {
 		return Uri.parse("content://" + AUTHORITY + "/spells/" + spellId
 				+ ".html");
@@ -47,6 +51,11 @@ public class SpellContract {
 	public static final Uri getClassSpellList(String classId) {
 		return Uri.parse("content://" + AUTHORITY + "/classes/" + classId
 				+ "/spells");
+	}
+
+	public static final Uri getFilteredClassSpellList(String classId) {
+		return Uri.parse("content://" + AUTHORITY + "/classes/" + classId
+				+ "/spells/filtered");
 	}
 
 	/**
@@ -83,7 +92,7 @@ public class SpellContract {
 		public static final String TYPE = "type";
 
 		/**
-		 * Section subtype
+		 * Section subtype, probably null
 		 * <P>
 		 * Type: TEXT
 		 * </P>
@@ -91,7 +100,7 @@ public class SpellContract {
 		public static final String SUBTYPE = "subtype";
 
 		/**
-		 * Class name
+		 * Spell name
 		 * <P>
 		 * Type: TEXT
 		 * </P>
@@ -99,7 +108,7 @@ public class SpellContract {
 		public static final String NAME = "name";
 
 		/**
-		 * class short description, probably null
+		 * spell short description
 		 * <P>
 		 * Type: TEXT
 		 * </P>
@@ -107,7 +116,7 @@ public class SpellContract {
 		public static final String DESCRIPTION = "description";
 
 		/**
-		 * PathfinderOpenReference unique pfsrd:// url for class
+		 * PathfinderOpenReference unique pfsrd:// url for spell
 		 * <P>
 		 * Type: TEXT
 		 * </P>
@@ -123,7 +132,7 @@ public class SpellContract {
 		public static final String SCHOOL = "school";
 
 		/**
-		 * School of the spell
+		 * Subschool(s) of the spell
 		 * <P>
 		 * Type: TEXT
 		 * </P>
@@ -131,12 +140,28 @@ public class SpellContract {
 		public static final String SUBSCHOOL = "subschool";
 
 		/**
-		 * School of the spell
+		 * Spell Descriptor(s)
 		 * <P>
 		 * Type: TEXT
 		 * </P>
 		 */
 		public static final String DESCRIPTOR = "descriptor";
+
+		/**
+		 * Classes/levels of spell
+		 * <P>
+		 * Type: TEXT
+		 * </P>
+		 */
+		public static final String CLASSES = "classes";
+
+		/**
+		 * Component(s) of spell
+		 * <P>
+		 * Type: TEXT
+		 * </P>
+		 */
+		public static final String COMPONENTS = "components";
 	}
 
 	public final class ClassSpellListColumns implements BaseColumns {
@@ -238,5 +263,13 @@ public class SpellContract {
 		 * </P>
 		 */
 		public static final String DESCRIPTOR = "descriptor";
+
+		/**
+		 * Component(s) of spell
+		 * <P>
+		 * Type: TEXT
+		 * </P>
+		 */
+		public static final String COMPONENTS = "components";
 	}
 }

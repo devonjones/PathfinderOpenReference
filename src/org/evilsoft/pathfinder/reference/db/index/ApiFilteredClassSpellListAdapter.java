@@ -12,11 +12,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-public class ApiClassSpellListAdapter {
+public class ApiFilteredClassSpellListAdapter {
 	public SQLiteDatabase database;
 	public Context context;
 
-	public ApiClassSpellListAdapter(SQLiteDatabase database, Context context) {
+	public ApiFilteredClassSpellListAdapter(SQLiteDatabase database,
+			Context context) {
 		this.database = database;
 		this.context = context;
 	}
@@ -63,21 +64,27 @@ public class ApiClassSpellListAdapter {
 		return null;
 	}
 
-	public Cursor getClassSpells(String classId, String[] projection,
+	public Cursor getFilteredClassSpells(String classId, String[] projection,
 			String selection, String[] selectionArgs, String sortOrder) {
 		List<String> args = new ArrayList<String>();
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT DISTINCT ");
+		sb.append("SELECT ");
 		sb.append(BaseDbHelper.implementProjection(columns, projection,
 				translation));
 		sb.append(" FROM central_index i");
-		sb.append("  INNER JOIN spell_list_index s");
-		sb.append("   ON s.index_id = i.index_id");
+		sb.append("  INNER JOIN spell_list_index as spell_lists");
+		sb.append("   ON spell_lists.index_id = i.index_id");
+		sb.append("  INNER JOIN spell_component_index as spell_components");
+		sb.append("   ON spell_components.index_id = i.index_id");
+		sb.append("  INNER JOIN spell_descriptor_index as spell_descriptors");
+		sb.append("   ON spell_descriptors.index_id = i.index_id");
+		sb.append("  INNER JOIN spell_subschool_index as spell_subschools");
+		sb.append("   ON spell_subschools.index_id = i.index_id");
 		sb.append(" WHERE type = 'spell'");
 		if (classId != null) {
 			String className = getClassName(classId);
 			if (className != null) {
-				sb.append("  AND s.class = ?");
+				sb.append("  AND spell_lists.class = ?");
 				args.add(className);
 			}
 		}

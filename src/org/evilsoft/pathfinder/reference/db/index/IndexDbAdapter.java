@@ -40,6 +40,10 @@ public class IndexDbAdapter {
 		return new ApiClassSpellListAdapter(database, context);
 	}
 
+	public ApiFilteredClassSpellListAdapter getApiFilteredClassSpellListAdapter() {
+		return new ApiFilteredClassSpellListAdapter(database, context);
+	}
+
 	public ApiCreatureListAdapter getApiCreatureListAdapter() {
 		return new ApiCreatureListAdapter(database, context);
 	}
@@ -54,6 +58,10 @@ public class IndexDbAdapter {
 
 	public ApiSpellListAdapter getApiSpellListAdapter() {
 		return new ApiSpellListAdapter(database, context);
+	}
+
+	public ApiFilteredSpellListAdapter getApiFilteredSpellListAdapter() {
+		return new ApiFilteredSpellListAdapter(database, context);
 	}
 
 	public MenuAdapter getMenuAdapter() {
