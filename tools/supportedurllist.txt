@@ -13496,172 +13496,172 @@ pfsrd://Game Mastery Guide/Rules/Settlements/Settlements in Play/The Settlement 
 pfsrd://Game Mastery Guide/Rules/Settlements/Settlements in Play/The Settlement Stat Block/Spellcasting
 pfsrd://Mythic Adventures
 pfsrd://Mythic Adventures/Feats
-pfsrd://Mythic Adventures/Feats/Accursed Hex
-pfsrd://Mythic Adventures/Feats/Acrobatic
-pfsrd://Mythic Adventures/Feats/Alertness
-pfsrd://Mythic Adventures/Feats/Alignment Channel
-pfsrd://Mythic Adventures/Feats/Animal Affinity
-pfsrd://Mythic Adventures/Feats/Arcane Armor Training
-pfsrd://Mythic Adventures/Feats/Arcane Blast
-pfsrd://Mythic Adventures/Feats/Arcane Shield
-pfsrd://Mythic Adventures/Feats/Arcane Strike
-pfsrd://Mythic Adventures/Feats/Ascendant Spell
-pfsrd://Mythic Adventures/Feats/Aspect of the Beast
-pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Claws
-pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Instinct
-pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Leap
-pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Benefits/Mythic Senses
-pfsrd://Mythic Adventures/Feats/Athletic
-pfsrd://Mythic Adventures/Feats/Augment Summoning
-pfsrd://Mythic Adventures/Feats/Bleeding Critical
-pfsrd://Mythic Adventures/Feats/Blind-Fight
-pfsrd://Mythic Adventures/Feats/Catch Off-Guard
-pfsrd://Mythic Adventures/Feats/Channel Smite
-pfsrd://Mythic Adventures/Feats/Charge Through
-pfsrd://Mythic Adventures/Feats/Cleave
-pfsrd://Mythic Adventures/Feats/Combat Expertise
-pfsrd://Mythic Adventures/Feats/Combat Reflexes
-pfsrd://Mythic Adventures/Feats/Command Undead
-pfsrd://Mythic Adventures/Feats/Critical Focus
-pfsrd://Mythic Adventures/Feats/Critical Mastery
-pfsrd://Mythic Adventures/Feats/Dastardly Finish
-pfsrd://Mythic Adventures/Feats/Dazzling Display
-pfsrd://Mythic Adventures/Feats/Deadly Aim
-pfsrd://Mythic Adventures/Feats/Deadly Stroke
-pfsrd://Mythic Adventures/Feats/Death from Above
-pfsrd://Mythic Adventures/Feats/Deceitful
-pfsrd://Mythic Adventures/Feats/Deepsight
-pfsrd://Mythic Adventures/Feats/Defensive Combat Training
-pfsrd://Mythic Adventures/Feats/Deflect Arrows
-pfsrd://Mythic Adventures/Feats/Deft Hands
-pfsrd://Mythic Adventures/Feats/Detect Expertise
-pfsrd://Mythic Adventures/Feats/Disruptive
-pfsrd://Mythic Adventures/Feats/Distance Thrower
-pfsrd://Mythic Adventures/Feats/Divine Interference
-pfsrd://Mythic Adventures/Feats/Dodge
-pfsrd://Mythic Adventures/Feats/Dreadful Carnage
-pfsrd://Mythic Adventures/Feats/Drink Is Life
-pfsrd://Mythic Adventures/Feats/Dual Path
-pfsrd://Mythic Adventures/Feats/Eagle Eyes
-pfsrd://Mythic Adventures/Feats/Eldritch Heritage
-pfsrd://Mythic Adventures/Feats/Elemental Channel
-pfsrd://Mythic Adventures/Feats/Elemental Fist
-pfsrd://Mythic Adventures/Feats/Elemental Focus
-pfsrd://Mythic Adventures/Feats/Elven Accuracy
-pfsrd://Mythic Adventures/Feats/Endurance
-pfsrd://Mythic Adventures/Feats/Eschew Materials
-pfsrd://Mythic Adventures/Feats/Extra Mythic Power
-pfsrd://Mythic Adventures/Feats/Extra Path Ability
-pfsrd://Mythic Adventures/Feats/Fabulous Figments
-pfsrd://Mythic Adventures/Feats/Far Shot
-pfsrd://Mythic Adventures/Feats/Fast Empathy
-pfsrd://Mythic Adventures/Feats/Fire Music
-pfsrd://Mythic Adventures/Feats/Fleet
-pfsrd://Mythic Adventures/Feats/Furious Focus
-pfsrd://Mythic Adventures/Feats/Gnome Trickster
-pfsrd://Mythic Adventures/Feats/Gorgons Fist
-pfsrd://Mythic Adventures/Feats/Great Fortitude
-pfsrd://Mythic Adventures/Feats/Guided Hand
-pfsrd://Mythic Adventures/Feats/Heroic Defiance
-pfsrd://Mythic Adventures/Feats/Heroic Recovery
-pfsrd://Mythic Adventures/Feats/Improved Bull Rush
-pfsrd://Mythic Adventures/Feats/Improved Channel
-pfsrd://Mythic Adventures/Feats/Improved Counterspell
-pfsrd://Mythic Adventures/Feats/Improved Critical
-pfsrd://Mythic Adventures/Feats/Improved Dirty Trick
-pfsrd://Mythic Adventures/Feats/Improved Disarm
-pfsrd://Mythic Adventures/Feats/Improved Drag
-pfsrd://Mythic Adventures/Feats/Improved Familiar
-pfsrd://Mythic Adventures/Feats/Improved Grapple
-pfsrd://Mythic Adventures/Feats/Improved Initiative
-pfsrd://Mythic Adventures/Feats/Improved Overrun
-pfsrd://Mythic Adventures/Feats/Improved Reposition
-pfsrd://Mythic Adventures/Feats/Improved Steal
-pfsrd://Mythic Adventures/Feats/Improved Stonecunning
-pfsrd://Mythic Adventures/Feats/Improved Sunder
-pfsrd://Mythic Adventures/Feats/Improved Trip
-pfsrd://Mythic Adventures/Feats/Improved Unarmed Strike
-pfsrd://Mythic Adventures/Feats/Intimidating Prowess
-pfsrd://Mythic Adventures/Feats/Iron Will
-pfsrd://Mythic Adventures/Feats/Knockout Artist
-pfsrd://Mythic Adventures/Feats/Legendary Teamwork
-pfsrd://Mythic Adventures/Feats/Lightning Reflexes
-pfsrd://Mythic Adventures/Feats/Lucky Halfling
-pfsrd://Mythic Adventures/Feats/Lucky Surge
-pfsrd://Mythic Adventures/Feats/Lunge
-pfsrd://Mythic Adventures/Feats/Magical Aptitude
-pfsrd://Mythic Adventures/Feats/Manyshot
-pfsrd://Mythic Adventures/Feats/Marked for Glory
-pfsrd://Mythic Adventures/Feats/Maximize Surge
-pfsrd://Mythic Adventures/Feats/Medusas Wrath
-pfsrd://Mythic Adventures/Feats/Missile Shield
-pfsrd://Mythic Adventures/Feats/Mobility
-pfsrd://Mythic Adventures/Feats/Monastic Legacy
-pfsrd://Mythic Adventures/Feats/Mounted Archery
-pfsrd://Mythic Adventures/Feats/Mounted Combat
-pfsrd://Mythic Adventures/Feats/Mythic Companion
-pfsrd://Mythic Adventures/Feats/Mythic Crafter
-pfsrd://Mythic Adventures/Feats/Mythic Paragon
-pfsrd://Mythic Adventures/Feats/Mythic Spell Lore
-pfsrd://Mythic Adventures/Feats/Natural Spell
-pfsrd://Mythic Adventures/Feats/Nimble Moves
-pfsrd://Mythic Adventures/Feats/Penetrating Strike
-pfsrd://Mythic Adventures/Feats/Persuasive
-pfsrd://Mythic Adventures/Feats/Pinpoint Targeting
-pfsrd://Mythic Adventures/Feats/Point-Blank Shot
-pfsrd://Mythic Adventures/Feats/Potent Surge
-pfsrd://Mythic Adventures/Feats/Power Attack
-pfsrd://Mythic Adventures/Feats/Powerful Shape
-pfsrd://Mythic Adventures/Feats/Prophetic Visionary
-pfsrd://Mythic Adventures/Feats/Quick Draw
-pfsrd://Mythic Adventures/Feats/Racial Heritage
-pfsrd://Mythic Adventures/Feats/Rapid Reload
-pfsrd://Mythic Adventures/Feats/Rapid Shot
-pfsrd://Mythic Adventures/Feats/Rhetorical Flourish
-pfsrd://Mythic Adventures/Feats/Ride-By Attack
-pfsrd://Mythic Adventures/Feats/Run
-pfsrd://Mythic Adventures/Feats/Saving Shield
-pfsrd://Mythic Adventures/Feats/Scorpion Style
-pfsrd://Mythic Adventures/Feats/Selective Channeling
-pfsrd://Mythic Adventures/Feats/Self-sufficient
-pfsrd://Mythic Adventures/Feats/Shatter Defenses
-pfsrd://Mythic Adventures/Feats/Shield Focus
-pfsrd://Mythic Adventures/Feats/Shield Slam
-pfsrd://Mythic Adventures/Feats/Shot on the Run
-pfsrd://Mythic Adventures/Feats/Skill Focus
-pfsrd://Mythic Adventures/Feats/Snatch Arrows
-pfsrd://Mythic Adventures/Feats/Sociable
-pfsrd://Mythic Adventures/Feats/Spellbreaker
-pfsrd://Mythic Adventures/Feats/Spell Focus
-pfsrd://Mythic Adventures/Feats/Spell Mastery
-pfsrd://Mythic Adventures/Feats/Spell Penetration
-pfsrd://Mythic Adventures/Feats/Spirited Charge
-pfsrd://Mythic Adventures/Feats/Spontaneous Metafocus
-pfsrd://Mythic Adventures/Feats/Spring Attack
-pfsrd://Mythic Adventures/Feats/Stealthy
-pfsrd://Mythic Adventures/Feats/Strike Back
-pfsrd://Mythic Adventures/Feats/Strong Comeback
-pfsrd://Mythic Adventures/Feats/Stunning Fist
-pfsrd://Mythic Adventures/Feats/Throw Anything
-pfsrd://Mythic Adventures/Feats/Titan Strike
-pfsrd://Mythic Adventures/Feats/Toughness
-pfsrd://Mythic Adventures/Feats/Trample
-pfsrd://Mythic Adventures/Feats/Tripping Staff
-pfsrd://Mythic Adventures/Feats/Turn Undead
-pfsrd://Mythic Adventures/Feats/Two-Fisted Drinker
-pfsrd://Mythic Adventures/Feats/Two-Weapon Defense
-pfsrd://Mythic Adventures/Feats/Two-Weapon Fighting
-pfsrd://Mythic Adventures/Feats/Two-Weapon Rend
-pfsrd://Mythic Adventures/Feats/Undead Master
-pfsrd://Mythic Adventures/Feats/Unseat
-pfsrd://Mythic Adventures/Feats/Valiant Vault
-pfsrd://Mythic Adventures/Feats/Vital Strike
-pfsrd://Mythic Adventures/Feats/Voice of the Sibyl
-pfsrd://Mythic Adventures/Feats/Warrior Priest
-pfsrd://Mythic Adventures/Feats/Weapon Finesse
-pfsrd://Mythic Adventures/Feats/Weapon Focus
-pfsrd://Mythic Adventures/Feats/Weapon Specialization
-pfsrd://Mythic Adventures/Feats/Witch Knife
+pfsrd://Mythic Adventures/Feats/Accursed Hex/Mythic
+pfsrd://Mythic Adventures/Feats/Acrobatic/Mythic
+pfsrd://Mythic Adventures/Feats/Alertness/Mythic
+pfsrd://Mythic Adventures/Feats/Alignment Channel/Mythic
+pfsrd://Mythic Adventures/Feats/Animal Affinity/Mythic
+pfsrd://Mythic Adventures/Feats/Arcane Armor Training/Mythic
+pfsrd://Mythic Adventures/Feats/Arcane Blast/Mythic
+pfsrd://Mythic Adventures/Feats/Arcane Shield/Mythic
+pfsrd://Mythic Adventures/Feats/Arcane Strike/Mythic
+pfsrd://Mythic Adventures/Feats/Ascendant Spell/Mythic
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Mythic
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Mythic/Benefits/Mythic Claws
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Mythic/Benefits/Mythic Instinct
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Mythic/Benefits/Mythic Leap
+pfsrd://Mythic Adventures/Feats/Aspect of the Beast/Mythic/Benefits/Mythic Senses
+pfsrd://Mythic Adventures/Feats/Athletic/Mythic
+pfsrd://Mythic Adventures/Feats/Augment Summoning/Mythic
+pfsrd://Mythic Adventures/Feats/Bleeding Critical/Mythic
+pfsrd://Mythic Adventures/Feats/Blind-Fight/Mythic
+pfsrd://Mythic Adventures/Feats/Catch Off-Guard/Mythic
+pfsrd://Mythic Adventures/Feats/Channel Smite/Mythic
+pfsrd://Mythic Adventures/Feats/Charge Through/Mythic
+pfsrd://Mythic Adventures/Feats/Cleave/Mythic
+pfsrd://Mythic Adventures/Feats/Combat Expertise/Mythic
+pfsrd://Mythic Adventures/Feats/Combat Reflexes/Mythic
+pfsrd://Mythic Adventures/Feats/Command Undead/Mythic
+pfsrd://Mythic Adventures/Feats/Critical Focus/Mythic
+pfsrd://Mythic Adventures/Feats/Critical Mastery/Mythic
+pfsrd://Mythic Adventures/Feats/Dastardly Finish/Mythic
+pfsrd://Mythic Adventures/Feats/Dazzling Display/Mythic
+pfsrd://Mythic Adventures/Feats/Deadly Aim/Mythic
+pfsrd://Mythic Adventures/Feats/Deadly Stroke/Mythic
+pfsrd://Mythic Adventures/Feats/Death from Above/Mythic
+pfsrd://Mythic Adventures/Feats/Deceitful/Mythic
+pfsrd://Mythic Adventures/Feats/Deepsight/Mythic
+pfsrd://Mythic Adventures/Feats/Defensive Combat Training/Mythic
+pfsrd://Mythic Adventures/Feats/Deflect Arrows/Mythic
+pfsrd://Mythic Adventures/Feats/Deft Hands/Mythic
+pfsrd://Mythic Adventures/Feats/Detect Expertise/Mythic
+pfsrd://Mythic Adventures/Feats/Disruptive/Mythic
+pfsrd://Mythic Adventures/Feats/Distance Thrower/Mythic
+pfsrd://Mythic Adventures/Feats/Divine Interference/Mythic
+pfsrd://Mythic Adventures/Feats/Dodge/Mythic
+pfsrd://Mythic Adventures/Feats/Dreadful Carnage/Mythic
+pfsrd://Mythic Adventures/Feats/Drink Is Life/Mythic
+pfsrd://Mythic Adventures/Feats/Dual Path/Mythic
+pfsrd://Mythic Adventures/Feats/Eagle Eyes/Mythic
+pfsrd://Mythic Adventures/Feats/Eldritch Heritage/Mythic
+pfsrd://Mythic Adventures/Feats/Elemental Channel/Mythic
+pfsrd://Mythic Adventures/Feats/Elemental Fist/Mythic
+pfsrd://Mythic Adventures/Feats/Elemental Focus/Mythic
+pfsrd://Mythic Adventures/Feats/Elven Accuracy/Mythic
+pfsrd://Mythic Adventures/Feats/Endurance/Mythic
+pfsrd://Mythic Adventures/Feats/Eschew Materials/Mythic
+pfsrd://Mythic Adventures/Feats/Extra Mythic Power/Mythic
+pfsrd://Mythic Adventures/Feats/Extra Path Ability/Mythic
+pfsrd://Mythic Adventures/Feats/Fabulous Figments/Mythic
+pfsrd://Mythic Adventures/Feats/Far Shot/Mythic
+pfsrd://Mythic Adventures/Feats/Fast Empathy/Mythic
+pfsrd://Mythic Adventures/Feats/Fire Music/Mythic
+pfsrd://Mythic Adventures/Feats/Fleet/Mythic
+pfsrd://Mythic Adventures/Feats/Furious Focus/Mythic
+pfsrd://Mythic Adventures/Feats/Gnome Trickster/Mythic
+pfsrd://Mythic Adventures/Feats/Gorgons Fist/Mythic
+pfsrd://Mythic Adventures/Feats/Great Fortitude/Mythic
+pfsrd://Mythic Adventures/Feats/Guided Hand/Mythic
+pfsrd://Mythic Adventures/Feats/Heroic Defiance/Mythic
+pfsrd://Mythic Adventures/Feats/Heroic Recovery/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Bull Rush/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Channel/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Counterspell/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Critical/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Dirty Trick/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Disarm/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Drag/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Familiar/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Grapple/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Initiative/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Overrun/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Reposition/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Steal/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Stonecunning/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Sunder/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Trip/Mythic
+pfsrd://Mythic Adventures/Feats/Improved Unarmed Strike/Mythic
+pfsrd://Mythic Adventures/Feats/Intimidating Prowess/Mythic
+pfsrd://Mythic Adventures/Feats/Iron Will/Mythic
+pfsrd://Mythic Adventures/Feats/Knockout Artist/Mythic
+pfsrd://Mythic Adventures/Feats/Legendary Teamwork/Mythic
+pfsrd://Mythic Adventures/Feats/Lightning Reflexes/Mythic
+pfsrd://Mythic Adventures/Feats/Lucky Halfling/Mythic
+pfsrd://Mythic Adventures/Feats/Lucky Surge/Mythic
+pfsrd://Mythic Adventures/Feats/Lunge/Mythic
+pfsrd://Mythic Adventures/Feats/Magical Aptitude/Mythic
+pfsrd://Mythic Adventures/Feats/Manyshot/Mythic
+pfsrd://Mythic Adventures/Feats/Marked for Glory/Mythic
+pfsrd://Mythic Adventures/Feats/Maximize Surge/Mythic
+pfsrd://Mythic Adventures/Feats/Medusas Wrath/Mythic
+pfsrd://Mythic Adventures/Feats/Missile Shield/Mythic
+pfsrd://Mythic Adventures/Feats/Mobility/Mythic
+pfsrd://Mythic Adventures/Feats/Monastic Legacy/Mythic
+pfsrd://Mythic Adventures/Feats/Mounted Archery/Mythic
+pfsrd://Mythic Adventures/Feats/Mounted Combat/Mythic
+pfsrd://Mythic Adventures/Feats/Mythic Companion/Mythic
+pfsrd://Mythic Adventures/Feats/Mythic Crafter/Mythic
+pfsrd://Mythic Adventures/Feats/Mythic Paragon/Mythic
+pfsrd://Mythic Adventures/Feats/Mythic Spell Lore/Mythic
+pfsrd://Mythic Adventures/Feats/Natural Spell/Mythic
+pfsrd://Mythic Adventures/Feats/Nimble Moves/Mythic
+pfsrd://Mythic Adventures/Feats/Penetrating Strike/Mythic
+pfsrd://Mythic Adventures/Feats/Persuasive/Mythic
+pfsrd://Mythic Adventures/Feats/Pinpoint Targeting/Mythic
+pfsrd://Mythic Adventures/Feats/Point-Blank Shot/Mythic
+pfsrd://Mythic Adventures/Feats/Potent Surge/Mythic
+pfsrd://Mythic Adventures/Feats/Power Attack/Mythic
+pfsrd://Mythic Adventures/Feats/Powerful Shape/Mythic
+pfsrd://Mythic Adventures/Feats/Prophetic Visionary/Mythic
+pfsrd://Mythic Adventures/Feats/Quick Draw/Mythic
+pfsrd://Mythic Adventures/Feats/Racial Heritage/Mythic
+pfsrd://Mythic Adventures/Feats/Rapid Reload/Mythic
+pfsrd://Mythic Adventures/Feats/Rapid Shot/Mythic
+pfsrd://Mythic Adventures/Feats/Rhetorical Flourish/Mythic
+pfsrd://Mythic Adventures/Feats/Ride-By Attack/Mythic
+pfsrd://Mythic Adventures/Feats/Run/Mythic
+pfsrd://Mythic Adventures/Feats/Saving Shield/Mythic
+pfsrd://Mythic Adventures/Feats/Scorpion Style/Mythic
+pfsrd://Mythic Adventures/Feats/Selective Channeling/Mythic
+pfsrd://Mythic Adventures/Feats/Self-sufficient/Mythic
+pfsrd://Mythic Adventures/Feats/Shatter Defenses/Mythic
+pfsrd://Mythic Adventures/Feats/Shield Focus/Mythic
+pfsrd://Mythic Adventures/Feats/Shield Slam/Mythic
+pfsrd://Mythic Adventures/Feats/Shot on the Run/Mythic
+pfsrd://Mythic Adventures/Feats/Skill Focus/Mythic
+pfsrd://Mythic Adventures/Feats/Snatch Arrows/Mythic
+pfsrd://Mythic Adventures/Feats/Sociable/Mythic
+pfsrd://Mythic Adventures/Feats/Spellbreaker/Mythic
+pfsrd://Mythic Adventures/Feats/Spell Focus/Mythic
+pfsrd://Mythic Adventures/Feats/Spell Mastery/Mythic
+pfsrd://Mythic Adventures/Feats/Spell Penetration/Mythic
+pfsrd://Mythic Adventures/Feats/Spirited Charge/Mythic
+pfsrd://Mythic Adventures/Feats/Spontaneous Metafocus/Mythic
+pfsrd://Mythic Adventures/Feats/Spring Attack/Mythic
+pfsrd://Mythic Adventures/Feats/Stealthy/Mythic
+pfsrd://Mythic Adventures/Feats/Strike Back/Mythic
+pfsrd://Mythic Adventures/Feats/Strong Comeback/Mythic
+pfsrd://Mythic Adventures/Feats/Stunning Fist/Mythic
+pfsrd://Mythic Adventures/Feats/Throw Anything/Mythic
+pfsrd://Mythic Adventures/Feats/Titan Strike/Mythic
+pfsrd://Mythic Adventures/Feats/Toughness/Mythic
+pfsrd://Mythic Adventures/Feats/Trample/Mythic
+pfsrd://Mythic Adventures/Feats/Tripping Staff/Mythic
+pfsrd://Mythic Adventures/Feats/Turn Undead/Mythic
+pfsrd://Mythic Adventures/Feats/Two-Fisted Drinker/Mythic
+pfsrd://Mythic Adventures/Feats/Two-Weapon Defense/Mythic
+pfsrd://Mythic Adventures/Feats/Two-Weapon Fighting/Mythic
+pfsrd://Mythic Adventures/Feats/Two-Weapon Rend/Mythic
+pfsrd://Mythic Adventures/Feats/Undead Master/Mythic
+pfsrd://Mythic Adventures/Feats/Unseat/Mythic
+pfsrd://Mythic Adventures/Feats/Valiant Vault/Mythic
+pfsrd://Mythic Adventures/Feats/Vital Strike/Mythic
+pfsrd://Mythic Adventures/Feats/Voice of the Sibyl/Mythic
+pfsrd://Mythic Adventures/Feats/Warrior Priest/Mythic
+pfsrd://Mythic Adventures/Feats/Weapon Finesse/Mythic
+pfsrd://Mythic Adventures/Feats/Weapon Focus/Mythic
+pfsrd://Mythic Adventures/Feats/Weapon Specialization/Mythic
+pfsrd://Mythic Adventures/Feats/Witch Knife/Mythic
 pfsrd://Mythic Adventures/Monsters
 pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic
 pfsrd://Mythic Adventures/Monsters/Aboleth/Mythic/Special Abilities
@@ -14825,284 +14825,292 @@ pfsrd://Mythic Adventures/Rules/Mythic Spells/Potent
 pfsrd://Mythic Adventures/Rules/Mythic Spells/Resilient
 pfsrd://Mythic Adventures/Rules/Mythic Spells/Tiers in Mythic Spell Descriptions
 pfsrd://Mythic Adventures/Spells
-pfsrd://Mythic Adventures/Spells/Ablative Barrier
-pfsrd://Mythic Adventures/Spells/Animal Aspect
-pfsrd://Mythic Adventures/Spells/Animate Dead
-pfsrd://Mythic Adventures/Spells/Animate Objects
-pfsrd://Mythic Adventures/Spells/Animate Plants
-pfsrd://Mythic Adventures/Spells/Anticipate Peril
-pfsrd://Mythic Adventures/Spells/Antimagic Field
-pfsrd://Mythic Adventures/Spells/Arboreal Hammer
-pfsrd://Mythic Adventures/Spells/Arcane Cannon
+pfsrd://Mythic Adventures/Spells/Ablative Barrier/Mythic
+pfsrd://Mythic Adventures/Spells/Animal Aspect/Mythic
+pfsrd://Mythic Adventures/Spells/Animate Dead/Mythic
+pfsrd://Mythic Adventures/Spells/Animate Objects/Mythic
+pfsrd://Mythic Adventures/Spells/Animate Plants/Mythic
+pfsrd://Mythic Adventures/Spells/Anticipate Peril/Mythic
+pfsrd://Mythic Adventures/Spells/Antimagic Field/Mythic
+pfsrd://Mythic Adventures/Spells/Arboreal Hammer/Mythic
+pfsrd://Mythic Adventures/Spells/Arcane Cannon/Mythic
 pfsrd://Mythic Adventures/Spells/Ascension
 pfsrd://Mythic Adventures/Spells/Ascension/Mythic
-pfsrd://Mythic Adventures/Spells/Baleful Polymorph
-pfsrd://Mythic Adventures/Spells/Baleful Polymorph/Augmented (9th)
-pfsrd://Mythic Adventures/Spells/Bane
-pfsrd://Mythic Adventures/Spells/Barkskin
-pfsrd://Mythic Adventures/Spells/Battlemind Link
-pfsrd://Mythic Adventures/Spells/Battle Trance
-pfsrd://Mythic Adventures/Spells/Beast Shape (All)
-pfsrd://Mythic Adventures/Spells/Black Mark
-pfsrd://Mythic Adventures/Spells/Black Tentacles
-pfsrd://Mythic Adventures/Spells/Blade Barrier
-pfsrd://Mythic Adventures/Spells/Blasphemy
+pfsrd://Mythic Adventures/Spells/Baleful Polymorph/Mythic
+pfsrd://Mythic Adventures/Spells/Baleful Polymorph/Mythic/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Bane/Mythic
+pfsrd://Mythic Adventures/Spells/Barkskin/Mythic
+pfsrd://Mythic Adventures/Spells/Battlemind Link/Mythic
+pfsrd://Mythic Adventures/Spells/Battle Trance/Mythic
+pfsrd://Mythic Adventures/Spells/Beast Shape III/Mythic
+pfsrd://Mythic Adventures/Spells/Beast Shape II/Mythic
+pfsrd://Mythic Adventures/Spells/Beast Shape I/Mythic
+pfsrd://Mythic Adventures/Spells/Beast Shape IV/Mythic
+pfsrd://Mythic Adventures/Spells/Black Mark/Mythic
+pfsrd://Mythic Adventures/Spells/Black Tentacles/Mythic
+pfsrd://Mythic Adventures/Spells/Blade Barrier/Mythic
+pfsrd://Mythic Adventures/Spells/Blasphemy/Mythic
 pfsrd://Mythic Adventures/Spells/Bleed Glory
-pfsrd://Mythic Adventures/Spells/Bless
-pfsrd://Mythic Adventures/Spells/Blessing Of Fervor
-pfsrd://Mythic Adventures/Spells/Blinding Ray
-pfsrd://Mythic Adventures/Spells/Blindness/Deafness
-pfsrd://Mythic Adventures/Spells/Blink
-pfsrd://Mythic Adventures/Spells/Blistering Invective
-pfsrd://Mythic Adventures/Spells/Blood Crow Strike
-pfsrd://Mythic Adventures/Spells/Boiling Blood
-pfsrd://Mythic Adventures/Spells/Break
-pfsrd://Mythic Adventures/Spells/Break Enchantment
-pfsrd://Mythic Adventures/Spells/Breath Of Life
-pfsrd://Mythic Adventures/Spells/Breath Of Life/Augmented (9th)
-pfsrd://Mythic Adventures/Spells/Burning Gaze
-pfsrd://Mythic Adventures/Spells/Burning Hands
-pfsrd://Mythic Adventures/Spells/Burrow
-pfsrd://Mythic Adventures/Spells/Call Animal
-pfsrd://Mythic Adventures/Spells/Call Lightning
-pfsrd://Mythic Adventures/Spells/Cape Of Wasps
-pfsrd://Mythic Adventures/Spells/Chain Lightning
-pfsrd://Mythic Adventures/Spells/Changestaff
-pfsrd://Mythic Adventures/Spells/Chaos Hammer
-pfsrd://Mythic Adventures/Spells/Chill Metal
-pfsrd://Mythic Adventures/Spells/Chord Of Shards
-pfsrd://Mythic Adventures/Spells/Circle Of Death
-pfsrd://Mythic Adventures/Spells/Cloudkill
-pfsrd://Mythic Adventures/Spells/Color Spray
-pfsrd://Mythic Adventures/Spells/Command
-pfsrd://Mythic Adventures/Spells/Companion Mind Link
-pfsrd://Mythic Adventures/Spells/Cone Of Cold
-pfsrd://Mythic Adventures/Spells/Confusion
-pfsrd://Mythic Adventures/Spells/Confusion/d%
-pfsrd://Mythic Adventures/Spells/Conjure Black Pudding
-pfsrd://Mythic Adventures/Spells/Consecrate
-pfsrd://Mythic Adventures/Spells/Contagion
-pfsrd://Mythic Adventures/Spells/Contingency
-pfsrd://Mythic Adventures/Spells/Control Weather
-pfsrd://Mythic Adventures/Spells/Cup Of Dust
-pfsrd://Mythic Adventures/Spells/Cure Critical Wounds
-pfsrd://Mythic Adventures/Spells/Cure Light Wounds
-pfsrd://Mythic Adventures/Spells/Cure Moderate Wounds
-pfsrd://Mythic Adventures/Spells/Cure Serious Wounds
-pfsrd://Mythic Adventures/Spells/Damnation Stride
-pfsrd://Mythic Adventures/Spells/Darkness
-pfsrd://Mythic Adventures/Spells/Daybreak Arrow
-pfsrd://Mythic Adventures/Spells/Daylight
-pfsrd://Mythic Adventures/Spells/Death Knell
+pfsrd://Mythic Adventures/Spells/Blessing Of Fervor/Mythic
+pfsrd://Mythic Adventures/Spells/Bless/Mythic
+pfsrd://Mythic Adventures/Spells/Blinding Ray/Mythic
+pfsrd://Mythic Adventures/Spells/Blindness/Deafness/Mythic
+pfsrd://Mythic Adventures/Spells/Blink/Mythic
+pfsrd://Mythic Adventures/Spells/Blistering Invective/Mythic
+pfsrd://Mythic Adventures/Spells/Blood Crow Strike/Mythic
+pfsrd://Mythic Adventures/Spells/Boiling Blood/Mythic
+pfsrd://Mythic Adventures/Spells/Break Enchantment/Mythic
+pfsrd://Mythic Adventures/Spells/Break/Mythic
+pfsrd://Mythic Adventures/Spells/Breath Of Life/Mythic
+pfsrd://Mythic Adventures/Spells/Breath Of Life/Mythic/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Burning Gaze/Mythic
+pfsrd://Mythic Adventures/Spells/Burning Hands/Mythic
+pfsrd://Mythic Adventures/Spells/Burrow/Mythic
+pfsrd://Mythic Adventures/Spells/Call Animal/Mythic
+pfsrd://Mythic Adventures/Spells/Call Lightning/Mythic
+pfsrd://Mythic Adventures/Spells/Cape Of Wasps/Mythic
+pfsrd://Mythic Adventures/Spells/Chain Lightning/Mythic
+pfsrd://Mythic Adventures/Spells/Changestaff/Mythic
+pfsrd://Mythic Adventures/Spells/Chaos Hammer/Mythic
+pfsrd://Mythic Adventures/Spells/Chill Metal/Mythic
+pfsrd://Mythic Adventures/Spells/Chord Of Shards/Mythic
+pfsrd://Mythic Adventures/Spells/Circle Of Death/Mythic
+pfsrd://Mythic Adventures/Spells/Cloudkill/Mythic
+pfsrd://Mythic Adventures/Spells/Color Spray/Mythic
+pfsrd://Mythic Adventures/Spells/Command/Mythic
+pfsrd://Mythic Adventures/Spells/Companion Mind Link/Mythic
+pfsrd://Mythic Adventures/Spells/Cone Of Cold/Mythic
+pfsrd://Mythic Adventures/Spells/Confusion/Mythic
+pfsrd://Mythic Adventures/Spells/Confusion/Mythic/d%
+pfsrd://Mythic Adventures/Spells/Conjure Black Pudding/Mythic
+pfsrd://Mythic Adventures/Spells/Consecrate/Mythic
+pfsrd://Mythic Adventures/Spells/Contagion/Mythic
+pfsrd://Mythic Adventures/Spells/Contingency/Mythic
+pfsrd://Mythic Adventures/Spells/Control Weather/Mythic
+pfsrd://Mythic Adventures/Spells/Cup Of Dust/Mythic
+pfsrd://Mythic Adventures/Spells/Cure Critical Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Cure Light Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Cure Moderate Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Cure Serious Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Damnation Stride/Mythic
+pfsrd://Mythic Adventures/Spells/Darkness/Mythic
+pfsrd://Mythic Adventures/Spells/Daybreak Arrow/Mythic
+pfsrd://Mythic Adventures/Spells/Daylight/Mythic
+pfsrd://Mythic Adventures/Spells/Death Knell/Mythic
 pfsrd://Mythic Adventures/Spells/Deathless
 pfsrd://Mythic Adventures/Spells/Deathless/Deathless
-pfsrd://Mythic Adventures/Spells/Deep Slumber
-pfsrd://Mythic Adventures/Spells/Defile Armor
-pfsrd://Mythic Adventures/Spells/Desecrate
-pfsrd://Mythic Adventures/Spells/Detect Scrying
-pfsrd://Mythic Adventures/Spells/Devolution
-pfsrd://Mythic Adventures/Spells/Dictum
-pfsrd://Mythic Adventures/Spells/Dimensional Lock
-pfsrd://Mythic Adventures/Spells/Dimension Door
-pfsrd://Mythic Adventures/Spells/Discordant Blast
-pfsrd://Mythic Adventures/Spells/Disfiguring Touch
-pfsrd://Mythic Adventures/Spells/Disintegrate
-pfsrd://Mythic Adventures/Spells/Dispel Magic
-pfsrd://Mythic Adventures/Spells/Divine Favor
-pfsrd://Mythic Adventures/Spells/Divine Pursuit
-pfsrd://Mythic Adventures/Spells/Dominate Person
-pfsrd://Mythic Adventures/Spells/Draconic Reservoir
-pfsrd://Mythic Adventures/Spells/Dragons Breath
-pfsrd://Mythic Adventures/Spells/Dream
-pfsrd://Mythic Adventures/Spells/Dust Of Twilight
-pfsrd://Mythic Adventures/Spells/Ear-Piercing Scream
-pfsrd://Mythic Adventures/Spells/Earthquake
-pfsrd://Mythic Adventures/Spells/Elemental Body I
-pfsrd://Mythic Adventures/Spells/Elemental Body II
-pfsrd://Mythic Adventures/Spells/Elemental Body III
-pfsrd://Mythic Adventures/Spells/Elemental Body IV
-pfsrd://Mythic Adventures/Spells/Endure Elements
-pfsrd://Mythic Adventures/Spells/Enemy Hammer
-pfsrd://Mythic Adventures/Spells/Enervation
-pfsrd://Mythic Adventures/Spells/Enlarge Person
-pfsrd://Mythic Adventures/Spells/Entangle
-pfsrd://Mythic Adventures/Spells/Entropic Shield
-pfsrd://Mythic Adventures/Spells/Expeditious Retreat
-pfsrd://Mythic Adventures/Spells/Faerie Fire
-pfsrd://Mythic Adventures/Spells/False Life
-pfsrd://Mythic Adventures/Spells/Feast Of Ashes
-pfsrd://Mythic Adventures/Spells/Feather Fall
-pfsrd://Mythic Adventures/Spells/Finger Of Death
-pfsrd://Mythic Adventures/Spells/Fireball
-pfsrd://Mythic Adventures/Spells/Fire Seeds
-pfsrd://Mythic Adventures/Spells/Fire Shield
-pfsrd://Mythic Adventures/Spells/Fire Snake
-pfsrd://Mythic Adventures/Spells/Fire Storm
-pfsrd://Mythic Adventures/Spells/Firestream
-pfsrd://Mythic Adventures/Spells/Flame Blade
-pfsrd://Mythic Adventures/Spells/Flames Of The Faithful
-pfsrd://Mythic Adventures/Spells/Flame Strike
-pfsrd://Mythic Adventures/Spells/Flesh To Stone
-pfsrd://Mythic Adventures/Spells/Flesh To Stone/Augmented (9th)
-pfsrd://Mythic Adventures/Spells/Floating Disk
-pfsrd://Mythic Adventures/Spells/Fly
-pfsrd://Mythic Adventures/Spells/Fog Cloud
-pfsrd://Mythic Adventures/Spells/Force Punch
-pfsrd://Mythic Adventures/Spells/Foresight
-pfsrd://Mythic Adventures/Spells/Form Of The Dragon (All)
-pfsrd://Mythic Adventures/Spells/Gaseous Form
-pfsrd://Mythic Adventures/Spells/Giant Vermin
-pfsrd://Mythic Adventures/Spells/Globe Of Invulnerability
-pfsrd://Mythic Adventures/Spells/Glyph Of Warding
-pfsrd://Mythic Adventures/Spells/Goodberry
-pfsrd://Mythic Adventures/Spells/Grease
-pfsrd://Mythic Adventures/Spells/Guards And Wards
-pfsrd://Mythic Adventures/Spells/Gust Of Wind
-pfsrd://Mythic Adventures/Spells/Harm
-pfsrd://Mythic Adventures/Spells/Haste
-pfsrd://Mythic Adventures/Spells/Heal
-pfsrd://Mythic Adventures/Spells/Healing Thief
-pfsrd://Mythic Adventures/Spells/Heat Metal
-pfsrd://Mythic Adventures/Spells/Heroism
-pfsrd://Mythic Adventures/Spells/Hex Ward
-pfsrd://Mythic Adventures/Spells/Hideous Laughter
-pfsrd://Mythic Adventures/Spells/Hold Portal
-pfsrd://Mythic Adventures/Spells/Holy Smite
-pfsrd://Mythic Adventures/Spells/Holy Word
-pfsrd://Mythic Adventures/Spells/Hydraulic Push
-pfsrd://Mythic Adventures/Spells/Hydraulic Torrent
-pfsrd://Mythic Adventures/Spells/Ice Storm
-pfsrd://Mythic Adventures/Spells/Ill Omen
-pfsrd://Mythic Adventures/Spells/Inflict Critical Wounds
-pfsrd://Mythic Adventures/Spells/Inflict Light Wounds
-pfsrd://Mythic Adventures/Spells/Inflict Moderate Wounds
-pfsrd://Mythic Adventures/Spells/Inflict Serious Wounds
-pfsrd://Mythic Adventures/Spells/Invisibility
-pfsrd://Mythic Adventures/Spells/Irresistible Dance
-pfsrd://Mythic Adventures/Spells/Jitterbugs
-pfsrd://Mythic Adventures/Spells/Knock
-pfsrd://Mythic Adventures/Spells/Know The Enemy
+pfsrd://Mythic Adventures/Spells/Deep Slumber/Mythic
+pfsrd://Mythic Adventures/Spells/Defile Armor/Mythic
+pfsrd://Mythic Adventures/Spells/Desecrate/Mythic
+pfsrd://Mythic Adventures/Spells/Detect Scrying/Mythic
+pfsrd://Mythic Adventures/Spells/Devolution/Mythic
+pfsrd://Mythic Adventures/Spells/Dictum/Mythic
+pfsrd://Mythic Adventures/Spells/Dimensional Lock/Mythic
+pfsrd://Mythic Adventures/Spells/Dimension Door/Mythic
+pfsrd://Mythic Adventures/Spells/Discordant Blast/Mythic
+pfsrd://Mythic Adventures/Spells/Disfiguring Touch/Mythic
+pfsrd://Mythic Adventures/Spells/Disintegrate/Mythic
+pfsrd://Mythic Adventures/Spells/Dispel Magic/Mythic
+pfsrd://Mythic Adventures/Spells/Divine Favor/Mythic
+pfsrd://Mythic Adventures/Spells/Divine Pursuit/Mythic
+pfsrd://Mythic Adventures/Spells/Dominate Person/Mythic
+pfsrd://Mythic Adventures/Spells/Draconic Reservoir/Mythic
+pfsrd://Mythic Adventures/Spells/Dragons Breath/Mythic
+pfsrd://Mythic Adventures/Spells/Dream/Mythic
+pfsrd://Mythic Adventures/Spells/Dust Of Twilight/Mythic
+pfsrd://Mythic Adventures/Spells/Ear-Piercing Scream/Mythic
+pfsrd://Mythic Adventures/Spells/Earthquake/Mythic
+pfsrd://Mythic Adventures/Spells/Elemental Body III/Mythic
+pfsrd://Mythic Adventures/Spells/Elemental Body II/Mythic
+pfsrd://Mythic Adventures/Spells/Elemental Body I/Mythic
+pfsrd://Mythic Adventures/Spells/Elemental Body IV/Mythic
+pfsrd://Mythic Adventures/Spells/Endure Elements/Mythic
+pfsrd://Mythic Adventures/Spells/Enemy Hammer/Mythic
+pfsrd://Mythic Adventures/Spells/Enervation/Mythic
+pfsrd://Mythic Adventures/Spells/Enlarge Person/Mythic
+pfsrd://Mythic Adventures/Spells/Entangle/Mythic
+pfsrd://Mythic Adventures/Spells/Entropic Shield/Mythic
+pfsrd://Mythic Adventures/Spells/Expeditious Retreat/Mythic
+pfsrd://Mythic Adventures/Spells/Faerie Fire/Mythic
+pfsrd://Mythic Adventures/Spells/False Life/Mythic
+pfsrd://Mythic Adventures/Spells/Feast Of Ashes/Mythic
+pfsrd://Mythic Adventures/Spells/Feather Fall/Mythic
+pfsrd://Mythic Adventures/Spells/Finger Of Death/Mythic
+pfsrd://Mythic Adventures/Spells/Fireball/Mythic
+pfsrd://Mythic Adventures/Spells/Fire Seeds/Mythic
+pfsrd://Mythic Adventures/Spells/Fire Shield/Mythic
+pfsrd://Mythic Adventures/Spells/Fire Snake/Mythic
+pfsrd://Mythic Adventures/Spells/Fire Storm/Mythic
+pfsrd://Mythic Adventures/Spells/Firestream/Mythic
+pfsrd://Mythic Adventures/Spells/Flame Blade/Mythic
+pfsrd://Mythic Adventures/Spells/Flames Of The Faithful/Mythic
+pfsrd://Mythic Adventures/Spells/Flame Strike/Mythic
+pfsrd://Mythic Adventures/Spells/Flesh To Stone/Mythic
+pfsrd://Mythic Adventures/Spells/Flesh To Stone/Mythic/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Floating Disk/Mythic
+pfsrd://Mythic Adventures/Spells/Fly/Mythic
+pfsrd://Mythic Adventures/Spells/Fog Cloud/Mythic
+pfsrd://Mythic Adventures/Spells/Force Punch/Mythic
+pfsrd://Mythic Adventures/Spells/Foresight/Mythic
+pfsrd://Mythic Adventures/Spells/Form Of The Dragon III/Mythic
+pfsrd://Mythic Adventures/Spells/Form Of The Dragon II/Mythic
+pfsrd://Mythic Adventures/Spells/Form Of The Dragon I/Mythic
+pfsrd://Mythic Adventures/Spells/Gaseous Form/Mythic
+pfsrd://Mythic Adventures/Spells/Giant Vermin/Mythic
+pfsrd://Mythic Adventures/Spells/Globe Of Invulnerability/Mythic
+pfsrd://Mythic Adventures/Spells/Glyph Of Warding/Mythic
+pfsrd://Mythic Adventures/Spells/Goodberry/Mythic
+pfsrd://Mythic Adventures/Spells/Grease/Mythic
+pfsrd://Mythic Adventures/Spells/Guards And Wards/Mythic
+pfsrd://Mythic Adventures/Spells/Gust Of Wind/Mythic
+pfsrd://Mythic Adventures/Spells/Harm/Mythic
+pfsrd://Mythic Adventures/Spells/Haste/Mythic
+pfsrd://Mythic Adventures/Spells/Healing Thief/Mythic
+pfsrd://Mythic Adventures/Spells/Heal/Mythic
+pfsrd://Mythic Adventures/Spells/Heat Metal/Mythic
+pfsrd://Mythic Adventures/Spells/Heroism/Mythic
+pfsrd://Mythic Adventures/Spells/Hex Ward/Mythic
+pfsrd://Mythic Adventures/Spells/Hideous Laughter/Mythic
+pfsrd://Mythic Adventures/Spells/Hold Portal/Mythic
+pfsrd://Mythic Adventures/Spells/Holy Smite/Mythic
+pfsrd://Mythic Adventures/Spells/Holy Word/Mythic
+pfsrd://Mythic Adventures/Spells/Hydraulic Push/Mythic
+pfsrd://Mythic Adventures/Spells/Hydraulic Torrent/Mythic
+pfsrd://Mythic Adventures/Spells/Ice Storm/Mythic
+pfsrd://Mythic Adventures/Spells/Ill Omen/Mythic
+pfsrd://Mythic Adventures/Spells/Inflict Critical Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Inflict Light Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Inflict Moderate Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Inflict Serious Wounds/Mythic
+pfsrd://Mythic Adventures/Spells/Invisibility/Mythic
+pfsrd://Mythic Adventures/Spells/Irresistible Dance/Mythic
+pfsrd://Mythic Adventures/Spells/Jitterbugs/Mythic
+pfsrd://Mythic Adventures/Spells/Knock/Mythic
+pfsrd://Mythic Adventures/Spells/Know The Enemy/Mythic
 pfsrd://Mythic Adventures/Spells/Lend Path
-pfsrd://Mythic Adventures/Spells/Levitate
-pfsrd://Mythic Adventures/Spells/Lightning Arc
-pfsrd://Mythic Adventures/Spells/Lightning Bolt
-pfsrd://Mythic Adventures/Spells/Limited Wish
-pfsrd://Mythic Adventures/Spells/Mage Armor
-pfsrd://Mythic Adventures/Spells/Mages Disjunction
-pfsrd://Mythic Adventures/Spells/Magic Fang
-pfsrd://Mythic Adventures/Spells/Magic Fang/Greater
-pfsrd://Mythic Adventures/Spells/Magic Missile
-pfsrd://Mythic Adventures/Spells/Magic Vestment
-pfsrd://Mythic Adventures/Spells/Magic Weapon/Greater
-pfsrd://Mythic Adventures/Spells/Make Whole
-pfsrd://Mythic Adventures/Spells/Maze
-pfsrd://Mythic Adventures/Spells/Memory Lapse
-pfsrd://Mythic Adventures/Spells/Meteor Swarm
-pfsrd://Mythic Adventures/Spells/Meteor Swarm/Augmented (10th)
-pfsrd://Mythic Adventures/Spells/Mighty Fist Of The Earth
-pfsrd://Mythic Adventures/Spells/Mirror Image
-pfsrd://Mythic Adventures/Spells/Mislead
-pfsrd://Mythic Adventures/Spells/Modify Memory
-pfsrd://Mythic Adventures/Spells/Monstrous Physique (All)
-pfsrd://Mythic Adventures/Spells/Move Earth
-pfsrd://Mythic Adventures/Spells/Murderous Command
+pfsrd://Mythic Adventures/Spells/Levitate/Mythic
+pfsrd://Mythic Adventures/Spells/Lightning Arc/Mythic
+pfsrd://Mythic Adventures/Spells/Lightning Bolt/Mythic
+pfsrd://Mythic Adventures/Spells/Limited Wish/Mythic
+pfsrd://Mythic Adventures/Spells/Mage Armor/Mythic
+pfsrd://Mythic Adventures/Spells/Mages Disjunction/Mythic
+pfsrd://Mythic Adventures/Spells/Magic Fang/Greater/Mythic
+pfsrd://Mythic Adventures/Spells/Magic Fang/Mythic
+pfsrd://Mythic Adventures/Spells/Magic Missile/Mythic
+pfsrd://Mythic Adventures/Spells/Magic Vestment/Mythic
+pfsrd://Mythic Adventures/Spells/Magic Weapon/Greater/Mythic
+pfsrd://Mythic Adventures/Spells/Make Whole/Mythic
+pfsrd://Mythic Adventures/Spells/Maze/Mythic
+pfsrd://Mythic Adventures/Spells/Memory Lapse/Mythic
+pfsrd://Mythic Adventures/Spells/Meteor Swarm/Mythic
+pfsrd://Mythic Adventures/Spells/Meteor Swarm/Mythic/Augmented (10th)
+pfsrd://Mythic Adventures/Spells/Mighty Fist Of The Earth/Mythic
+pfsrd://Mythic Adventures/Spells/Mirror Image/Mythic
+pfsrd://Mythic Adventures/Spells/Mislead/Mythic
+pfsrd://Mythic Adventures/Spells/Modify Memory/Mythic
+pfsrd://Mythic Adventures/Spells/Monstrous Physique III/Mythic
+pfsrd://Mythic Adventures/Spells/Monstrous Physique II/Mythic
+pfsrd://Mythic Adventures/Spells/Monstrous Physique I/Mythic
+pfsrd://Mythic Adventures/Spells/Monstrous Physique IV/Mythic
+pfsrd://Mythic Adventures/Spells/Move Earth/Mythic
+pfsrd://Mythic Adventures/Spells/Murderous Command/Mythic
 pfsrd://Mythic Adventures/Spells/Mythic Severance
-pfsrd://Mythic Adventures/Spells/Named Bullet
-pfsrd://Mythic Adventures/Spells/Nightmare
-pfsrd://Mythic Adventures/Spells/Oath Of Peace
-pfsrd://Mythic Adventures/Spells/Obscuring Mist
-pfsrd://Mythic Adventures/Spells/Orb Of The Void
-pfsrd://Mythic Adventures/Spells/Orders Wrath
-pfsrd://Mythic Adventures/Spells/Pernicious Poison
-pfsrd://Mythic Adventures/Spells/Phantasmal Killer
-pfsrd://Mythic Adventures/Spells/Phantom Steed
-pfsrd://Mythic Adventures/Spells/Pillar Of Life
-pfsrd://Mythic Adventures/Spells/Plane Shift
-pfsrd://Mythic Adventures/Spells/Polar Ray
-pfsrd://Mythic Adventures/Spells/Power Word Blind
-pfsrd://Mythic Adventures/Spells/Power Word Kill
-pfsrd://Mythic Adventures/Spells/Power Word Stun
-pfsrd://Mythic Adventures/Spells/Pox Pustules
-pfsrd://Mythic Adventures/Spells/Prayer
-pfsrd://Mythic Adventures/Spells/Prismatic Sphere
-pfsrd://Mythic Adventures/Spells/Prismatic Spray
-pfsrd://Mythic Adventures/Spells/Protection From Arrows
-pfsrd://Mythic Adventures/Spells/Protection From Chaos
-pfsrd://Mythic Adventures/Spells/Protection From Evil
-pfsrd://Mythic Adventures/Spells/Protection From Good
-pfsrd://Mythic Adventures/Spells/Protection From Law
-pfsrd://Mythic Adventures/Spells/Ray Of Enfeeblement
-pfsrd://Mythic Adventures/Spells/Reduce Person
-pfsrd://Mythic Adventures/Spells/Regenerate
-pfsrd://Mythic Adventures/Spells/Repel Wood
-pfsrd://Mythic Adventures/Spells/Resist Energy
-pfsrd://Mythic Adventures/Spells/Resonating Word
+pfsrd://Mythic Adventures/Spells/Named Bullet/Mythic
+pfsrd://Mythic Adventures/Spells/Nightmare/Mythic
+pfsrd://Mythic Adventures/Spells/Oath Of Peace/Mythic
+pfsrd://Mythic Adventures/Spells/Obscuring Mist/Mythic
+pfsrd://Mythic Adventures/Spells/Orb Of The Void/Mythic
+pfsrd://Mythic Adventures/Spells/Orders Wrath/Mythic
+pfsrd://Mythic Adventures/Spells/Pernicious Poison/Mythic
+pfsrd://Mythic Adventures/Spells/Phantasmal Killer/Mythic
+pfsrd://Mythic Adventures/Spells/Phantom Steed/Mythic
+pfsrd://Mythic Adventures/Spells/Pillar Of Life/Mythic
+pfsrd://Mythic Adventures/Spells/Plane Shift/Mythic
+pfsrd://Mythic Adventures/Spells/Polar Ray/Mythic
+pfsrd://Mythic Adventures/Spells/Power Word Blind/Mythic
+pfsrd://Mythic Adventures/Spells/Power Word Kill/Mythic
+pfsrd://Mythic Adventures/Spells/Power Word Stun/Mythic
+pfsrd://Mythic Adventures/Spells/Pox Pustules/Mythic
+pfsrd://Mythic Adventures/Spells/Prayer/Mythic
+pfsrd://Mythic Adventures/Spells/Prismatic Sphere/Mythic
+pfsrd://Mythic Adventures/Spells/Prismatic Spray/Mythic
+pfsrd://Mythic Adventures/Spells/Protection From Arrows/Mythic
+pfsrd://Mythic Adventures/Spells/Protection From Chaos/Mythic
+pfsrd://Mythic Adventures/Spells/Protection From Evil/Mythic
+pfsrd://Mythic Adventures/Spells/Protection From Good/Mythic
+pfsrd://Mythic Adventures/Spells/Protection From Law/Mythic
+pfsrd://Mythic Adventures/Spells/Ray Of Enfeeblement/Mythic
+pfsrd://Mythic Adventures/Spells/Reduce Person/Mythic
+pfsrd://Mythic Adventures/Spells/Regenerate/Mythic
+pfsrd://Mythic Adventures/Spells/Repel Wood/Mythic
+pfsrd://Mythic Adventures/Spells/Resist Energy/Mythic
+pfsrd://Mythic Adventures/Spells/Resonating Word/Mythic
 pfsrd://Mythic Adventures/Spells/Restore Mythic Power
-pfsrd://Mythic Adventures/Spells/Reverse Gravity
-pfsrd://Mythic Adventures/Spells/Ricochet Shot
-pfsrd://Mythic Adventures/Spells/Sacred Bond
-pfsrd://Mythic Adventures/Spells/Sanctify Armor
-pfsrd://Mythic Adventures/Spells/Sanctuary
-pfsrd://Mythic Adventures/Spells/Sands Of Time
-pfsrd://Mythic Adventures/Spells/Saving Finale
-pfsrd://Mythic Adventures/Spells/Scorching Ash Form
-pfsrd://Mythic Adventures/Spells/Scorching Ray
-pfsrd://Mythic Adventures/Spells/Scouring Winds
-pfsrd://Mythic Adventures/Spells/Searing Light
-pfsrd://Mythic Adventures/Spells/Sending
-pfsrd://Mythic Adventures/Spells/Shadow Anchor
-pfsrd://Mythic Adventures/Spells/Shadow Weapon
+pfsrd://Mythic Adventures/Spells/Reverse Gravity/Mythic
+pfsrd://Mythic Adventures/Spells/Ricochet Shot/Mythic
+pfsrd://Mythic Adventures/Spells/Sacred Bond/Mythic
+pfsrd://Mythic Adventures/Spells/Sanctify Armor/Mythic
+pfsrd://Mythic Adventures/Spells/Sanctuary/Mythic
+pfsrd://Mythic Adventures/Spells/Sands Of Time/Mythic
+pfsrd://Mythic Adventures/Spells/Saving Finale/Mythic
+pfsrd://Mythic Adventures/Spells/Scorching Ash Form/Mythic
+pfsrd://Mythic Adventures/Spells/Scorching Ray/Mythic
+pfsrd://Mythic Adventures/Spells/Scouring Winds/Mythic
+pfsrd://Mythic Adventures/Spells/Searing Light/Mythic
+pfsrd://Mythic Adventures/Spells/Sending/Mythic
+pfsrd://Mythic Adventures/Spells/Shadow Anchor/Mythic
+pfsrd://Mythic Adventures/Spells/Shadow Weapon/Mythic
 pfsrd://Mythic Adventures/Spells/Share Glory
-pfsrd://Mythic Adventures/Spells/Shatter
-pfsrd://Mythic Adventures/Spells/Shield Of Faith
-pfsrd://Mythic Adventures/Spells/Shield Other
-pfsrd://Mythic Adventures/Spells/Shocking Grasp
-pfsrd://Mythic Adventures/Spells/Shout
-pfsrd://Mythic Adventures/Spells/Silence
-pfsrd://Mythic Adventures/Spells/Silent Image
-pfsrd://Mythic Adventures/Spells/Sleep
-pfsrd://Mythic Adventures/Spells/Slow
-pfsrd://Mythic Adventures/Spells/Solid Fog
-pfsrd://Mythic Adventures/Spells/Spider Climb
-pfsrd://Mythic Adventures/Spells/Spike Stones
-pfsrd://Mythic Adventures/Spells/Spiritual Weapon
+pfsrd://Mythic Adventures/Spells/Shatter/Mythic
+pfsrd://Mythic Adventures/Spells/Shield Of Faith/Mythic
+pfsrd://Mythic Adventures/Spells/Shield Other/Mythic
+pfsrd://Mythic Adventures/Spells/Shocking Grasp/Mythic
+pfsrd://Mythic Adventures/Spells/Shout/Mythic
+pfsrd://Mythic Adventures/Spells/Silence/Mythic
+pfsrd://Mythic Adventures/Spells/Silent Image/Mythic
+pfsrd://Mythic Adventures/Spells/Sleep/Mythic
+pfsrd://Mythic Adventures/Spells/Slow/Mythic
+pfsrd://Mythic Adventures/Spells/Solid Fog/Mythic
+pfsrd://Mythic Adventures/Spells/Spider Climb/Mythic
+pfsrd://Mythic Adventures/Spells/Spike Stones/Mythic
+pfsrd://Mythic Adventures/Spells/Spiritual Weapon/Mythic
 pfsrd://Mythic Adventures/Spells/Steal Power
-pfsrd://Mythic Adventures/Spells/Stinking Cloud
-pfsrd://Mythic Adventures/Spells/Stone Shape
-pfsrd://Mythic Adventures/Spells/Stoneskin
-pfsrd://Mythic Adventures/Spells/Storm Of Vengeance
-pfsrd://Mythic Adventures/Spells/Strangling Hair
-pfsrd://Mythic Adventures/Spells/Suggestion
-pfsrd://Mythic Adventures/Spells/Summon Swarm
-pfsrd://Mythic Adventures/Spells/Sunbeam
-pfsrd://Mythic Adventures/Spells/Sunbeam/Augmented (9th)
-pfsrd://Mythic Adventures/Spells/Sun Metal
-pfsrd://Mythic Adventures/Spells/Surmount Affliction
-pfsrd://Mythic Adventures/Spells/Telekinesis
+pfsrd://Mythic Adventures/Spells/Stinking Cloud/Mythic
+pfsrd://Mythic Adventures/Spells/Stone Shape/Mythic
+pfsrd://Mythic Adventures/Spells/Stoneskin/Mythic
+pfsrd://Mythic Adventures/Spells/Storm Of Vengeance/Mythic
+pfsrd://Mythic Adventures/Spells/Strangling Hair/Mythic
+pfsrd://Mythic Adventures/Spells/Suggestion/Mythic
+pfsrd://Mythic Adventures/Spells/Summon Swarm/Mythic
+pfsrd://Mythic Adventures/Spells/Sunbeam/Mythic
+pfsrd://Mythic Adventures/Spells/Sunbeam/Mythic/Augmented (9th)
+pfsrd://Mythic Adventures/Spells/Sun Metal/Mythic
+pfsrd://Mythic Adventures/Spells/Surmount Affliction/Mythic
+pfsrd://Mythic Adventures/Spells/Telekinesis/Mythic
 pfsrd://Mythic Adventures/Spells/Terraform
-pfsrd://Mythic Adventures/Spells/Theft Ward
-pfsrd://Mythic Adventures/Spells/Time Stop
-pfsrd://Mythic Adventures/Spells/Time Stop/Augmented (10th)
-pfsrd://Mythic Adventures/Spells/Touch Injection
-pfsrd://Mythic Adventures/Spells/Transformation
-pfsrd://Mythic Adventures/Spells/True Form
-pfsrd://Mythic Adventures/Spells/True Strike
-pfsrd://Mythic Adventures/Spells/Tsunami
-pfsrd://Mythic Adventures/Spells/Unholy Blight
-pfsrd://Mythic Adventures/Spells/Unshakable Chill
-pfsrd://Mythic Adventures/Spells/Vampiric Touch
-pfsrd://Mythic Adventures/Spells/Vomit Twin
-pfsrd://Mythic Adventures/Spells/Walk Through Space
-pfsrd://Mythic Adventures/Spells/Wall Of Fire
-pfsrd://Mythic Adventures/Spells/Wall Of Force
-pfsrd://Mythic Adventures/Spells/Wall Of Ice
-pfsrd://Mythic Adventures/Spells/Wall Of Iron
-pfsrd://Mythic Adventures/Spells/Wall Of Stone
-pfsrd://Mythic Adventures/Spells/Wall Of Thorns
-pfsrd://Mythic Adventures/Spells/Web
-pfsrd://Mythic Adventures/Spells/Whirlwind
-pfsrd://Mythic Adventures/Spells/Wish
-pfsrd://Mythic Adventures/Spells/Word Of Chaos
+pfsrd://Mythic Adventures/Spells/Theft Ward/Mythic
+pfsrd://Mythic Adventures/Spells/Time Stop/Mythic
+pfsrd://Mythic Adventures/Spells/Time Stop/Mythic/Augmented (10th)
+pfsrd://Mythic Adventures/Spells/Touch Injection/Mythic
+pfsrd://Mythic Adventures/Spells/Transformation/Mythic
+pfsrd://Mythic Adventures/Spells/True Form/Mythic
+pfsrd://Mythic Adventures/Spells/True Strike/Mythic
+pfsrd://Mythic Adventures/Spells/Tsunami/Mythic
+pfsrd://Mythic Adventures/Spells/Unholy Blight/Mythic
+pfsrd://Mythic Adventures/Spells/Unshakable Chill/Mythic
+pfsrd://Mythic Adventures/Spells/Vampiric Touch/Mythic
+pfsrd://Mythic Adventures/Spells/Vomit Twin/Mythic
+pfsrd://Mythic Adventures/Spells/Walk Through Space/Mythic
+pfsrd://Mythic Adventures/Spells/Wall Of Fire/Mythic
+pfsrd://Mythic Adventures/Spells/Wall Of Force/Mythic
+pfsrd://Mythic Adventures/Spells/Wall Of Ice/Mythic
+pfsrd://Mythic Adventures/Spells/Wall Of Iron/Mythic
+pfsrd://Mythic Adventures/Spells/Wall Of Stone/Mythic
+pfsrd://Mythic Adventures/Spells/Wall Of Thorns/Mythic
+pfsrd://Mythic Adventures/Spells/Web/Mythic
+pfsrd://Mythic Adventures/Spells/Whirlwind/Mythic
+pfsrd://Mythic Adventures/Spells/Wish/Mythic
+pfsrd://Mythic Adventures/Spells/Word Of Chaos/Mythic
 pfsrd://NPC Codex
 pfsrd://NPC Codex/Rules
 pfsrd://NPC Codex/Rules/Core Class NPCs
