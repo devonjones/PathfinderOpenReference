@@ -39,7 +39,7 @@
 	<CheckBoxPreference
 		android:key="source_MA"
 		android:title="Mythic Adventures"
-		android:summary="Supernatural sorcery"
+		android:summary="Phenomenal cosmic powers"
 		android:defaultValue="true" />
 		
 		<CheckBoxPreference
