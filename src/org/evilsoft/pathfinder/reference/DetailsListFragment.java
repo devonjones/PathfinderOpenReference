@@ -31,19 +31,21 @@ public class DetailsListFragment extends AbstractViewListFragment {
 			return;
 		}
 		String uri = getNextUrl(position);
-		Log.d(TAG, uri);
-		if (PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
-			DetailsViewFragment viewer = (DetailsViewFragment) this
-					.getActivity().getSupportFragmentManager()
-					.findFragmentById(R.id.details_view_fragment);
-			viewer.updateUrl(uri, currentUrl);
-			DetailsActivity da = (DetailsActivity) getActivity();
-			da.historyManager.refreshDrawer();
-		} else {
-			Intent showContent = new Intent(this.getActivity()
-					.getApplicationContext(), DetailsActivity.class);
-			showContent.setData(Uri.parse(uri));
-			startActivity(showContent);
+		if (uri != null) {
+			Log.d(TAG, uri);
+			if (PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
+				DetailsViewFragment viewer = (DetailsViewFragment) this
+						.getActivity().getSupportFragmentManager()
+						.findFragmentById(R.id.details_view_fragment);
+				viewer.updateUrl(uri, currentUrl);
+				DetailsActivity da = (DetailsActivity) getActivity();
+				da.historyManager.refreshDrawer();
+			} else {
+				Intent showContent = new Intent(this.getActivity()
+						.getApplicationContext(), DetailsActivity.class);
+				showContent.setData(Uri.parse(uri));
+				startActivity(showContent);
+			}
 		}
 	}
 
