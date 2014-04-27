@@ -11,9 +11,9 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:paddingLeft="6dp"
-		android:textSize="20dp"
+		android:textSize="20sp"
 		android:textStyle="bold"
-		android:background="@color/white"
+		android:background="@android:color/transparent"
 		android:textColor="@color/black"
 		/>
 	<TextView
@@ -21,8 +21,8 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:paddingLeft="6dp"
-		android:textSize="14dp"
-		android:background="@color/white"
+		android:textSize="14sp"
+		android:background="@android:color/transparent"
 		android:textColor="@color/black"
 		/>
 </LinearLayout>

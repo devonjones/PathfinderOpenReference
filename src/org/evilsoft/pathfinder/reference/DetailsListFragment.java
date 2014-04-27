@@ -37,6 +37,8 @@ public class DetailsListFragment extends AbstractViewListFragment {
 					.getActivity().getSupportFragmentManager()
 					.findFragmentById(R.id.details_view_fragment);
 			viewer.updateUrl(uri, currentUrl);
+			DetailsActivity da = (DetailsActivity) getActivity();
+			da.historyManager.refreshDrawer();
 		} else {
 			Intent showContent = new Intent(this.getActivity()
 					.getApplicationContext(), DetailsActivity.class);

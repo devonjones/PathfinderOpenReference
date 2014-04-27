@@ -35,5 +35,9 @@ public abstract class DisplayListAdapter extends BaseAdapter {
 		c.moveToPosition(index);
 	}
 
+	public void swapCursor(Cursor curs) {
+		c = curs;
+	}
+
 	public abstract Object buildItem(Cursor c);
 }

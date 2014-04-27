@@ -10,6 +10,7 @@ import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
+import org.evilsoft.pathfinder.reference.db.user.HistoryAdapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -214,11 +215,15 @@ public class DetailsWebViewClient extends WebViewClient {
 		String html = null;
 		StringBuffer htmlparts = new StringBuffer();
 		try {
-			boolean has_next = cursor.moveToFirst();
-			while (has_next) {
+			boolean hasNext = cursor.moveToFirst();
+			while (hasNext) {
+				HistoryAdapter ha = new HistoryAdapter(
+						dbWrangler.getUserDbAdapter());
+				ha.addHistory(SectionAdapter.SectionUtils.getName(cursor),
+						newUrl);
 				htmlparts.append(sa.render(SectionAdapter.SectionUtils
 						.getSectionId(cursor).toString(), newUrl));
-				has_next = cursor.moveToNext();
+				hasNext = cursor.moveToNext();
 			}
 		} finally {
 			html = htmlparts.toString();

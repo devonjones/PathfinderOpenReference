@@ -12,4 +12,6 @@
           android:title="@string/menu_cul"/>
     <item android:id="@+id/menu_toggle_toc"
           android:title="@string/menu_toggle_toc"/>
+    <item android:id="@+id/menu_history"
+          android:title="@string/menu_history"/>
 </menu>

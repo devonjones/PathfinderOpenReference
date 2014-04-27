@@ -6,6 +6,7 @@
     <string name="menu_ogl">OGL</string>
     <string name="menu_cul">Community Use License</string>
     <string name="menu_prefs">Preferences</string>
+    <string name="menu_history">History</string>
     <string name="menu_toggle_toc">Toggle Find/ToC</string>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>

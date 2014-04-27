@@ -32,6 +32,7 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	private DbWrangler dbWrangler;
 	public static final String PREFS_NAME = "psrd.prefs";
 	private List<Cursor> cursorList = new ArrayList<Cursor>();
+	protected HistoryManager historyManager;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -90,6 +91,8 @@ public class DetailsActivity extends SherlockFragmentActivity {
 		if (collectionId != null) {
 			action.setSelectedNavigationItem(collectionId);
 		}
+		historyManager = new HistoryManager(this, dbWrangler, cursorList);
+		historyManager.setupDrawer();
 	}
 
 	private Integer getCurrentCollection(List<Integer> collectionList) {
@@ -200,6 +203,14 @@ public class DetailsActivity extends SherlockFragmentActivity {
 	}
 
 	@Override
+	protected void onResume() {
+		super.onResume();
+		if (historyManager != null) {
+			historyManager.refreshDrawer();
+		}
+	}
+
+	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 		for (Cursor curs : cursorList) {
@@ -257,6 +268,9 @@ public class DetailsActivity extends SherlockFragmentActivity {
 			return true;
 		case R.id.menu_search:
 			this.onSearchRequested();
+			return true;
+		case R.id.menu_history:
+			historyManager.openDrawer();
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
