@@ -138,6 +138,11 @@ public class PathfinderOpenReferenceActivity extends SherlockFragmentActivity {
 					PathfinderPreferenceActivity.class);
 			startActivity(showContent);
 			return true;
+		case R.id.menu_community:
+			startActivity(new Intent(
+					Intent.ACTION_VIEW,
+					Uri.parse("https://plus.google.com/u/0/communities/115367918448287661404")));
+			return true;
 		case R.id.menu_history:
 			historyManager.openDrawer();
 			return true;

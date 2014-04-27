@@ -14,4 +14,6 @@
           android:title="@string/menu_prefs"/>
     <item android:id="@+id/menu_history"
           android:title="@string/menu_history"/>
+    <item android:id="@+id/menu_community"
+          android:title="@string/menu_community"/>
 </menu>
