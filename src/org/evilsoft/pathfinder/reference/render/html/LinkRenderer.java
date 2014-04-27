@@ -2,7 +2,9 @@ package org.evilsoft.pathfinder.reference.render.html;
 
 import java.util.HashMap;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
+import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
@@ -10,8 +12,10 @@ import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
 import org.evilsoft.pathfinder.reference.db.index.CountAdapter;
 
 import android.database.Cursor;
+import android.util.Log;
 
 public class LinkRenderer extends HtmlRenderer {
+	public static final String TAG = "LinkRenderer";
 	private BookDbAdapter bookDbAdapter;
 	private DbWrangler dbWrangler;
 	private boolean render = true;
@@ -94,33 +98,45 @@ public class LinkRenderer extends HtmlRenderer {
 			HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 			int localdepth = depth;
 			boolean showTitle = true;
-			BookDbAdapter linkBookDbAdapter = dbWrangler
-					.getBookDbAdapterByUrl(linkUrl);
-			Integer sectionId = getLinkSectionId(linkBookDbAdapter);
-			if (sectionId != null) {
-				Cursor cursor = linkBookDbAdapter.getFullSectionAdapter()
-						.fetchFullSection(sectionId.toString());
-				try {
-					boolean has_next = cursor.moveToFirst();
-					while (has_next) {
-						String type = FullSectionAdapter.SectionUtils
-								.getType(cursor);
-						Integer secId = FullSectionAdapter.SectionUtils
-								.getSectionId(cursor);
-						Integer parentId = FullSectionAdapter.SectionUtils
-								.getParentId(cursor);
-						HtmlRenderer renderer = HtmlRenderFarm.getRenderer(type,
-								dbWrangler, linkBookDbAdapter);
-						localdepth = HtmlRenderFarm.getDepth(depthMap, secId,
-								parentId, depth);
-						sb.append(renderer.render(cursor, linkUrl, localdepth,
-								top, showTitle, isTablet));
-						has_next = cursor.moveToNext();
-						showTitle = false;
+			BookDbAdapter linkBookDbAdapter;
+			try {
+				linkBookDbAdapter = dbWrangler.getBookDbAdapterByUrl(linkUrl);
+				if (linkBookDbAdapter != null) {
+					Integer sectionId = getLinkSectionId(linkBookDbAdapter);
+					if (sectionId != null) {
+						Cursor cursor = linkBookDbAdapter
+								.getFullSectionAdapter().fetchFullSection(
+										sectionId.toString());
+						try {
+							boolean has_next = cursor.moveToFirst();
+							while (has_next) {
+								String type = FullSectionAdapter.SectionUtils
+										.getType(cursor);
+								Integer secId = FullSectionAdapter.SectionUtils
+										.getSectionId(cursor);
+								Integer parentId = FullSectionAdapter.SectionUtils
+										.getParentId(cursor);
+								HtmlRenderer renderer = HtmlRenderFarm
+										.getRenderer(type, dbWrangler,
+												linkBookDbAdapter);
+								localdepth = HtmlRenderFarm.getDepth(depthMap,
+										secId, parentId, depth);
+								sb.append(renderer.render(cursor, linkUrl,
+										localdepth, top, showTitle, isTablet));
+								has_next = cursor.moveToNext();
+								showTitle = false;
+							}
+						} finally {
+							cursor.close();
+						}
 					}
-				} finally {
-					cursor.close();
 				}
+			} catch (BookNotFoundException bnfe) {
+				Log.e(TAG, "Book not found: " + bnfe.getMessage());
+				ErrorReporter e = ErrorReporter.getInstance();
+				ErrorReporter.getInstance().putCustomData("FailedURI", linkUrl);
+				ErrorReporter.getInstance().handleException(bnfe);
+				e.handleException(null);
 			}
 		}
 		return sb.toString();

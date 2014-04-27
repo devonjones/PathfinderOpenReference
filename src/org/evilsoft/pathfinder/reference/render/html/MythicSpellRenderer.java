@@ -2,7 +2,9 @@ package org.evilsoft.pathfinder.reference.render.html;
 
 import java.util.HashMap;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
+import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
@@ -10,8 +12,10 @@ import org.evilsoft.pathfinder.reference.db.book.MythicSpellDetailAdapter;
 import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
 
 import android.database.Cursor;
+import android.util.Log;
 
 public class MythicSpellRenderer extends HtmlRenderer {
+	public static final String TAG = "MythicSpellRenderer";
 	private BookDbAdapter bookDbAdapter;
 	private DbWrangler dbWrangler;
 	private boolean exists = false;
@@ -88,30 +92,40 @@ public class MythicSpellRenderer extends HtmlRenderer {
 		int localdepth = depth;
 		boolean showTitle = true;
 		if (spellId != null) {
-			BookDbAdapter mythicSpellDbAdapter = dbWrangler
-					.getBookDbAdapterByUrl(spellUrl);
-			Cursor cursor = mythicSpellDbAdapter.getFullSectionAdapter()
-					.fetchFullSection(spellId.toString());
+			BookDbAdapter mythicSpellDbAdapter;
 			try {
-				boolean has_next = cursor.moveToFirst();
-				while (has_next) {
-					String type = FullSectionAdapter.SectionUtils
-							.getType(cursor);
-					Integer secId = FullSectionAdapter.SectionUtils
-							.getSectionId(cursor);
-					Integer parentId = FullSectionAdapter.SectionUtils
-							.getParentId(cursor);
-					HtmlRenderer renderer = HtmlRenderFarm.getRenderer(type,
-							dbWrangler, mythicSpellDbAdapter);
-					localdepth = HtmlRenderFarm.getDepth(depthMap, secId,
-							parentId, depth);
-					sb.append(renderer.render(cursor, spellUrl, localdepth,
-							top, showTitle, isTablet));
-					has_next = cursor.moveToNext();
-					showTitle = false;
+				mythicSpellDbAdapter = dbWrangler
+						.getBookDbAdapterByUrl(spellUrl);
+				Cursor cursor = mythicSpellDbAdapter.getFullSectionAdapter()
+						.fetchFullSection(spellId.toString());
+				try {
+					boolean has_next = cursor.moveToFirst();
+					while (has_next) {
+						String type = FullSectionAdapter.SectionUtils
+								.getType(cursor);
+						Integer secId = FullSectionAdapter.SectionUtils
+								.getSectionId(cursor);
+						Integer parentId = FullSectionAdapter.SectionUtils
+								.getParentId(cursor);
+						HtmlRenderer renderer = HtmlRenderFarm.getRenderer(
+								type, dbWrangler, mythicSpellDbAdapter);
+						localdepth = HtmlRenderFarm.getDepth(depthMap, secId,
+								parentId, depth);
+						sb.append(renderer.render(cursor, spellUrl, localdepth,
+								top, showTitle, isTablet));
+						has_next = cursor.moveToNext();
+						showTitle = false;
+					}
+				} finally {
+					cursor.close();
 				}
-			} finally {
-				cursor.close();
+			} catch (BookNotFoundException bnfe) {
+				Log.e(TAG, "Book not found: " + bnfe.getMessage());
+				ErrorReporter e = ErrorReporter.getInstance();
+				ErrorReporter.getInstance()
+						.putCustomData("FailedURI", spellUrl);
+				ErrorReporter.getInstance().handleException(bnfe);
+				e.handleException(null);
 			}
 		}
 		return sb.toString();

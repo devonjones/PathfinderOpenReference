@@ -26,10 +26,10 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 	protected SQLiteDatabase db;
 	protected final Context context;
 
-	public BaseDbHelper(Context context, String DB_NAME) {
-		super(context, DB_NAME, null, 1);
+	public BaseDbHelper(Context context, String dbName) {
+		super(context, dbName, null, 1);
 		this.context = context;
-		this.dbName = DB_NAME;
+		this.dbName = dbName;
 
 		File db = manageDatabase();
 

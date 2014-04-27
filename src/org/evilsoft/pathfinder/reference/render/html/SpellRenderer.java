@@ -2,7 +2,9 @@ package org.evilsoft.pathfinder.reference.render.html;
 
 import java.util.HashMap;
 
+import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
+import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellComponentAdapter;
@@ -11,8 +13,10 @@ import org.evilsoft.pathfinder.reference.db.book.SpellEffectAdapter;
 import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
 
 import android.database.Cursor;
+import android.util.Log;
 
 public class SpellRenderer extends HtmlRenderer {
+	public static final String TAG = "SpellRenderer";
 	private BookDbAdapter bookDbAdapter;
 	private DbWrangler dbWrangler;
 
@@ -187,23 +191,35 @@ public class SpellRenderer extends HtmlRenderer {
 				Integer parentId = IndexGroupAdapter.IndexGroupUtils
 						.getParentId(cursor);
 				String msUrl = IndexGroupAdapter.IndexGroupUtils.getUrl(cursor);
-				BookDbAdapter mythicSpellDbAdapter = dbWrangler
-						.getBookDbAdapterByUrl(msUrl);
-				HtmlRenderer renderer = HtmlRenderFarm.getRenderer("section",
-						dbWrangler, mythicSpellDbAdapter);
-				HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
-				int localdepth = HtmlRenderFarm.getDepth(depthMap, msId,
-						parentId, depth) + 1;
-				sb.append(renderTitle("Mythic", null, null, localdepth, false));
-				Cursor msCurs = mythicSpellDbAdapter.getFullSectionAdapter()
-						.fetchFullSection(msId.toString());
+				BookDbAdapter mythicSpellDbAdapter;
 				try {
-					if (msCurs.moveToFirst()) {
-						sb.append(renderer.render(msCurs, msUrl, localdepth,
-								top, false, isTablet));
+					mythicSpellDbAdapter = dbWrangler
+							.getBookDbAdapterByUrl(msUrl);
+					HtmlRenderer renderer = HtmlRenderFarm.getRenderer(
+							"section", dbWrangler, mythicSpellDbAdapter);
+					HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
+					int localdepth = HtmlRenderFarm.getDepth(depthMap, msId,
+							parentId, depth) + 1;
+					sb.append(renderTitle("Mythic", null, null, localdepth,
+							false));
+					Cursor msCurs = mythicSpellDbAdapter
+							.getFullSectionAdapter().fetchFullSection(
+									msId.toString());
+					try {
+						if (msCurs.moveToFirst()) {
+							sb.append(renderer.render(msCurs, msUrl,
+									localdepth, top, false, isTablet));
+						}
+					} finally {
+						msCurs.close();
 					}
-				} finally {
-					msCurs.close();
+				} catch (BookNotFoundException bnfe) {
+					Log.e(TAG, "Book not found: " + bnfe.getMessage());
+					ErrorReporter e = ErrorReporter.getInstance();
+					ErrorReporter.getInstance().putCustomData("FailedURI",
+							msUrl);
+					ErrorReporter.getInstance().handleException(bnfe);
+					e.handleException(null);
 				}
 			}
 		} finally {

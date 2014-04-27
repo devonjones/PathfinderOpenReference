@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.acra.ErrorReporter;
+import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SectionAdapter;
@@ -107,10 +108,19 @@ public class DetailsWebViewClient extends WebViewClient {
 			if (parts[0].toLowerCase().equals("pfsrd:")) {
 				this.url = newUrl;
 				Log.d(TAG, parts[parts.length - 1]);
-				path = dbWrangler.getBookDbAdapterByUrl(newUrl).getPathByUrl(
-						newUrl);
-				setBackVisibility(newUrl, contextUrl);
-				return renderPfsrd(view, newUrl);
+				try {
+					path = dbWrangler.getBookDbAdapterByUrl(newUrl)
+							.getPathByUrl(newUrl);
+					setBackVisibility(newUrl, contextUrl);
+					return renderPfsrd(view, newUrl);
+				} catch (BookNotFoundException bnfe) {
+					Log.e(TAG, "Book not found: " + bnfe.getMessage());
+					ErrorReporter e = ErrorReporter.getInstance();
+					ErrorReporter.getInstance().putCustomData("FailedURI",
+							newUrl);
+					ErrorReporter.getInstance().handleException(bnfe);
+					e.handleException(null);
+				}
 			}
 		}
 		return false;
@@ -210,29 +220,39 @@ public class DetailsWebViewClient extends WebViewClient {
 	}
 
 	public String renderByUrl(HtmlRenderFarm sa, String newUrl) {
-		Cursor cursor = dbWrangler.getBookDbAdapterByUrl(newUrl)
-				.getSectionAdapter().fetchSectionByUrl(newUrl);
-		String html = null;
-		StringBuffer htmlparts = new StringBuffer();
+		Cursor cursor;
 		try {
-			boolean hasNext = cursor.moveToFirst();
-			while (hasNext) {
-				HistoryAdapter ha = new HistoryAdapter(
-						dbWrangler.getUserDbAdapter());
-				ha.addHistory(SectionAdapter.SectionUtils.getName(cursor),
-						newUrl);
-				htmlparts.append(sa.render(SectionAdapter.SectionUtils
-						.getSectionId(cursor).toString(), newUrl));
-				hasNext = cursor.moveToNext();
+			cursor = dbWrangler.getBookDbAdapterByUrl(newUrl)
+					.getSectionAdapter().fetchSectionByUrl(newUrl);
+			String html = null;
+			StringBuffer htmlparts = new StringBuffer();
+			try {
+				boolean hasNext = cursor.moveToFirst();
+				while (hasNext) {
+					HistoryAdapter ha = new HistoryAdapter(
+							dbWrangler.getUserDbAdapter());
+					ha.addHistory(SectionAdapter.SectionUtils.getName(cursor),
+							newUrl);
+					htmlparts.append(sa.render(SectionAdapter.SectionUtils
+							.getSectionId(cursor).toString(), newUrl));
+					hasNext = cursor.moveToNext();
+				}
+			} finally {
+				html = htmlparts.toString();
+				if (html.equals("")) {
+					html = null;
+				}
+				cursor.close();
 			}
-		} finally {
-			html = htmlparts.toString();
-			if (html.equals("")) {
-				html = null;
-			}
-			cursor.close();
+			return html;
+		} catch (BookNotFoundException bnfe) {
+			Log.e(TAG, "Book not found: " + bnfe.getMessage());
+			ErrorReporter e = ErrorReporter.getInstance();
+			ErrorReporter.getInstance().putCustomData("FailedURI", url);
+			ErrorReporter.getInstance().handleException(bnfe);
+			e.handleException(null);
 		}
-		return html;
+		return "";
 	}
 
 	public boolean renderPfsrd(WebView view, String newUrl) {
@@ -243,56 +263,66 @@ public class DetailsWebViewClient extends WebViewClient {
 		String html;
 		SharedPreferences settings = act.getSharedPreferences(PREFS_NAME, 0);
 		boolean showToc = settings.getBoolean("showToc", true);
-		BookDbAdapter bookDbAdapter = dbWrangler.getBookDbAdapterByUrl(newUrl);
-		HtmlRenderFarm sa = new HtmlRenderFarm(dbWrangler, bookDbAdapter,
-				title, isTablet, showToc);
-		html = renderByUrl(sa, newUrl);
-		if (html == null) {
-			if (parts[2].equals("Classes")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Feats")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Monsters")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].startsWith("Rules")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Races")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Bookmarks")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Search")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Skills")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Spells")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else if (parts[2].equals("Ogl")) {
-				html = sa.render(parts[parts.length - 1], newUrl);
-			} else {
-				html = "<H1>" + newUrl + "</H1>";
+		BookDbAdapter bookDbAdapter;
+		try {
+			bookDbAdapter = dbWrangler.getBookDbAdapterByUrl(newUrl);
+			HtmlRenderFarm sa = new HtmlRenderFarm(dbWrangler, bookDbAdapter,
+					title, isTablet, showToc);
+			html = renderByUrl(sa, newUrl);
+			if (html == null) {
+				if (parts[2].equals("Classes")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Feats")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Monsters")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].startsWith("Rules")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Races")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Bookmarks")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Search")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Skills")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Spells")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else if (parts[2].equals("Ogl")) {
+					html = sa.render(parts[parts.length - 1], newUrl);
+				} else {
+					html = "<H1>" + newUrl + "</H1>";
+				}
 			}
-		}
-		html = urlFilter(html);
-		view.loadDataWithBaseURL(encodeUrl(newUrl), html, "text/html", "UTF-8",
-				this.oldUrl);
-		view.setWebViewClient(this);
-		view.scrollTo(0, 0);
+			html = urlFilter(html);
+			view.loadDataWithBaseURL(encodeUrl(newUrl), html, "text/html",
+					"UTF-8", this.oldUrl);
+			view.setWebViewClient(this);
+			view.scrollTo(0, 0);
 
-		refreshStarButtonState();
-		star.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				CollectionAdapter ca = new CollectionAdapter(dbWrangler
-						.getUserDbAdapter());
-				ca.toggleEntryStar(currentCollection, url, title.getText()
-						.toString());
-				refreshStarButtonState();
-			}
-		});
-		contentError.setOnClickListener(new ContentErrorReporter(this.act,
-				path, title.getText().toString()));
-		this.oldUrl = newUrl;
-		return true;
+			refreshStarButtonState();
+			star.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					CollectionAdapter ca = new CollectionAdapter(dbWrangler
+							.getUserDbAdapter());
+					ca.toggleEntryStar(currentCollection, url, title.getText()
+							.toString());
+					refreshStarButtonState();
+				}
+			});
+			contentError.setOnClickListener(new ContentErrorReporter(this.act,
+					path, title.getText().toString()));
+			this.oldUrl = newUrl;
+			return true;
+		} catch (BookNotFoundException bnfe) {
+			Log.e(TAG, "Book not found: " + bnfe.getMessage());
+			ErrorReporter e = ErrorReporter.getInstance();
+			ErrorReporter.getInstance().putCustomData("FailedURI", url);
+			ErrorReporter.getInstance().handleException(bnfe);
+			e.handleException(null);
+		}
+		return false;
 	}
 
 	private String encodeUrl(String url) {

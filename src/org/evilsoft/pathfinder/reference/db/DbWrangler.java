@@ -127,7 +127,8 @@ public class DbWrangler {
 		return adapter;
 	}
 
-	public BookDbAdapter getBookDbAdapterByName(String source) {
+	public BookDbAdapter getBookDbAdapterByName(String source)
+			throws BookNotFoundException {
 		source = source.replaceAll("'", "");
 		Cursor curs = getIndexDbAdapter().getBooksAdapter().fetchBook(source);
 		String bookDb;
@@ -136,6 +137,9 @@ public class DbWrangler {
 		} else {
 			try {
 				bookDb = BooksAdapter.BookUtils.getBookDb(curs);
+				if (bookDb == null) {
+					throw new BookNotFoundException(source);
+				}
 			} finally {
 				curs.close();
 			}
@@ -143,7 +147,8 @@ public class DbWrangler {
 		return getBookDbAdapter(bookDb);
 	}
 
-	public BookDbAdapter getBookDbAdapterByUrl(String url) {
+	public BookDbAdapter getBookDbAdapterByUrl(String url)
+			throws BookNotFoundException {
 		String[] parts = url.split("\\/");
 		return getBookDbAdapterByName(parts[2]);
 	}

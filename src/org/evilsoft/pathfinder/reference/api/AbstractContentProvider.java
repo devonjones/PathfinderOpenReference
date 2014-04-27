@@ -6,8 +6,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
 
+import org.acra.ErrorReporter;
 import org.apache.commons.io.IOUtils;
 import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
+import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
@@ -23,6 +25,7 @@ import android.os.ParcelFileDescriptor.AutoCloseOutputStream;
 import android.util.Log;
 
 public abstract class AbstractContentProvider extends ContentProvider {
+	public static final String TAG = "AbstractContentProvider";
 	protected DbWrangler dbWrangler;
 	protected static final UriMatcher uriMatcher = new UriMatcher(
 			UriMatcher.NO_MATCH);
@@ -106,12 +109,21 @@ public abstract class AbstractContentProvider extends ContentProvider {
 						.getUrl(cursor);
 				Integer sectionId = IndexGroupAdapter.IndexGroupUtils
 						.getSectionId(cursor);
-				BookDbAdapter bookDbAdapter = dbWrangler
-						.getBookDbAdapterByName(source);
-				HtmlRenderFarm hrf = new HtmlRenderFarm(dbWrangler,
-						bookDbAdapter, false, false);
-				htmlparts
-						.append(hrf.render(sectionId.toString(), newUrl, false));
+				BookDbAdapter bookDbAdapter;
+				try {
+					bookDbAdapter = dbWrangler.getBookDbAdapterByName(source);
+					HtmlRenderFarm hrf = new HtmlRenderFarm(dbWrangler,
+							bookDbAdapter, false, false);
+					htmlparts.append(hrf.render(sectionId.toString(), newUrl,
+							false));
+				} catch (BookNotFoundException bnfe) {
+					Log.e(TAG, "Book not found: " + bnfe.getMessage());
+					ErrorReporter e = ErrorReporter.getInstance();
+					ErrorReporter.getInstance().putCustomData("FailedURI",
+							newUrl);
+					ErrorReporter.getInstance().handleException(bnfe);
+					e.handleException(null);
+				}
 			}
 		} finally {
 			html = htmlparts.toString();

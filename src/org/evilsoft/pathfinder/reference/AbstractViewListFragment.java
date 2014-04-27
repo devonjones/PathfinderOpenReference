@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.acra.ErrorReporter;
+import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
 import org.evilsoft.pathfinder.reference.list.CollectionItemListAdapter;
@@ -173,11 +174,19 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 		currentType = name;
 		Cursor curs = dbWrangler.getIndexDbAdapter().getBooksAdapter()
 				.fetchBook(source);
-		curs = dbWrangler.getBookDbAdapterByName(source)
-				.getSectionIndexGroupAdapter().fetchSectionByParentUrl(url);
-		cursorList.add(curs);
-		currentListAdapter = new SectionListAdapter(getActivity()
-				.getApplicationContext(), curs);
+		try {
+			curs = dbWrangler.getBookDbAdapterByName(source)
+					.getSectionIndexGroupAdapter().fetchSectionByParentUrl(url);
+			cursorList.add(curs);
+			currentListAdapter = new SectionListAdapter(getActivity()
+					.getApplicationContext(), curs);
+		} catch (BookNotFoundException bnfe) {
+			Log.e(TAG, "Book not found: " + bnfe.getMessage());
+			ErrorReporter e = ErrorReporter.getInstance();
+			ErrorReporter.getInstance().putCustomData("FailedURI", url);
+			ErrorReporter.getInstance().handleException(bnfe);
+			e.handleException(null);
+		}
 	}
 
 	public void getListAdapter(String name, String type, String subtype) {
