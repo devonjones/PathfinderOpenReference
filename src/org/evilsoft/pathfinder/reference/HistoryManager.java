@@ -35,15 +35,19 @@ public class HistoryManager {
 
 	public void setupDrawer() {
 		drawerLayout = (DrawerLayout) activity.findViewById(R.id.drawer_layout);
-		drawer = activity.findViewById(R.id.history_drawer);
-		drawerList = (ListView) activity.findViewById(R.id.history_drawer_list);
-		HistoryAdapter ha = new HistoryAdapter(dbWrangler.getUserDbAdapter());
-		Cursor curs = ha.fetchHistory();
-		cursorList.add(curs);
-		drawerList.setAdapter(new HistoryListAdapter(activity
-				.getApplicationContext(), curs));
-		drawerList.setOnItemClickListener(new DrawerItemClickListener());
-		drawerLayout.setDrawerListener(new DrawerListener());
+		if (drawerLayout != null) {
+			drawer = activity.findViewById(R.id.history_drawer);
+			drawerList = (ListView) activity
+					.findViewById(R.id.history_drawer_list);
+			HistoryAdapter ha = new HistoryAdapter(
+					dbWrangler.getUserDbAdapter());
+			Cursor curs = ha.fetchHistory();
+			cursorList.add(curs);
+			drawerList.setAdapter(new HistoryListAdapter(activity
+					.getApplicationContext(), curs));
+			drawerList.setOnItemClickListener(new DrawerItemClickListener());
+			drawerLayout.setDrawerListener(new DrawerListener());
+		}
 	}
 
 	public void refreshDrawer() {
