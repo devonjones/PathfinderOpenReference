@@ -7,6 +7,7 @@ import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
 import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
+import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellComponentAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellDetailAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellEffectAdapter;
@@ -195,20 +196,35 @@ public class SpellRenderer extends HtmlRenderer {
 				try {
 					mythicSpellDbAdapter = dbWrangler
 							.getBookDbAdapterByUrl(msUrl);
-					HtmlRenderer renderer = HtmlRenderFarm.getRenderer(
-							"section", dbWrangler, mythicSpellDbAdapter);
 					HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 					int localdepth = HtmlRenderFarm.getDepth(depthMap, msId,
 							parentId, depth) + 1;
-					sb.append(renderTitle("Mythic", null, null, localdepth,
-							false));
+					HtmlRenderer renderer = HtmlRenderFarm.getRenderer(
+							"section", dbWrangler, mythicSpellDbAdapter);
+					boolean first = true;
 					Cursor msCurs = mythicSpellDbAdapter
 							.getFullSectionAdapter().fetchFullSection(
 									msId.toString());
 					try {
-						if (msCurs.moveToFirst()) {
+						boolean has_next = msCurs.moveToFirst();
+						while (has_next) {
+							String type = FullSectionAdapter.SectionUtils
+									.getType(msCurs);
+							Integer secId = FullSectionAdapter.SectionUtils
+									.getSectionId(msCurs);
+							parentId = FullSectionAdapter.SectionUtils
+									.getParentId(msCurs);
+							if (first) {
+								first = false;
+							} else {
+								renderer = HtmlRenderFarm.getRenderer(type,
+										dbWrangler, mythicSpellDbAdapter);
+							}
+							localdepth = HtmlRenderFarm.getDepth(depthMap,
+									secId, parentId, depth) + 1;
 							sb.append(renderer.render(msCurs, msUrl,
-									localdepth, top, false, isTablet));
+									localdepth, false, first, isTablet));
+							has_next = msCurs.moveToNext();
 						}
 					} finally {
 						msCurs.close();

@@ -46,6 +46,7 @@ public class HtmlRenderFarm {
 	private List<HtmlRenderer> renderPath;
 	private boolean isTablet;
 	private boolean showToc;
+	private Integer noRender = null;
 
 	public HtmlRenderFarm(DbWrangler dbWrangler, BookDbAdapter bookDbAdapter,
 			TextView title, boolean isTablet, boolean showToc) {
@@ -158,8 +159,13 @@ public class HtmlRenderFarm {
 						.getParentId(cursor);
 				String name = FullSectionAdapter.SectionUtils.getName(cursor);
 				depth = getDepth(depthMap, sectionId, parentId, depth);
-				titleMap.put(sectionId, name);
-				sb.append(renderSectionText(cursor, depth, top));
+				if (noRender != null && depth <= noRender) {
+					noRender = null;
+				}
+				if (noRender == null) {
+					titleMap.put(sectionId, name);
+					sb.append(renderSectionText(cursor, depth, top));
+				}
 				has_next = cursor.moveToNext();
 				top = false;
 			}
@@ -191,6 +197,9 @@ public class HtmlRenderFarm {
 		HtmlRenderer renderer = getRenderer(type, dbWrangler, bookDbAdapter);
 		String text = renderer.render(cursor, url, depth, top, suppressTitle(),
 				isTablet);
+		if (noRender == null && !renderer.renderBelow()) {
+			noRender = depth;
+		}
 		renderPath.add(renderer);
 		return text;
 	}

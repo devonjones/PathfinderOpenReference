@@ -31,6 +31,10 @@ public abstract class HtmlRenderer {
 
 	public abstract String renderHeader();
 
+	public boolean renderBelow() {
+		return true;
+	}
+
 	public String render(Cursor cursor, String newUri, int depth, boolean top,
 			boolean suppressTitle, boolean isTablet) {
 		this.newUri = newUri;
@@ -155,8 +159,8 @@ public abstract class HtmlRenderer {
 		return sb.toString();
 	}
 
-	public String renderTitle(String title, String abbrev, String newUri, int depth,
-			boolean top) {
+	public String renderTitle(String title, String abbrev, String newUri,
+			int depth, boolean top) {
 		if (top) {
 			return "";
 		}
@@ -220,8 +224,8 @@ public abstract class HtmlRenderer {
 			if (!found && Character.isLetter(chars[i])) {
 				chars[i] = Character.toUpperCase(chars[i]);
 				found = true;
-			} else if (Character.isWhitespace(chars[i])
-					|| chars[i] == '.' || chars[i] == '\'' || chars[i] == '-') {
+			} else if (Character.isWhitespace(chars[i]) || chars[i] == '.'
+					|| chars[i] == '\'' || chars[i] == '-') {
 				// You can add other chars here
 				found = false;
 			}

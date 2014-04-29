@@ -29,6 +29,10 @@ public class MythicSpellRenderer extends HtmlRenderer {
 		this.dbWrangler = dbWrangler;
 	}
 
+	public boolean renderBelow() {
+		return false;
+	}
+
 	@Override
 	public void localSetValues() {
 		Cursor lcurs = bookDbAdapter.getMythicSpellDetailAdapter()
