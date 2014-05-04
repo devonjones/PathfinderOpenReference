@@ -8,7 +8,6 @@ import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
-import org.evilsoft.pathfinder.reference.db.book.SpellComponentAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellDetailAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellEffectAdapter;
 import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
@@ -56,7 +55,7 @@ public class SpellRenderer extends HtmlRenderer {
 				String school = SpellDetailAdapter.SpellDetailUtils
 						.getSchool(cursor);
 				String subschool = SpellDetailAdapter.SpellDetailUtils
-						.getSubschool(cursor);
+						.getSubschoolText(cursor);
 				String descriptor = SpellDetailAdapter.SpellDetailUtils
 						.getDescriptorText(cursor);
 				sb.append(fieldTitle("School"));
@@ -81,7 +80,9 @@ public class SpellRenderer extends HtmlRenderer {
 				String preparation_time = SpellDetailAdapter.SpellDetailUtils
 						.getPreparationTime(cursor);
 				sb.append(addField("Preparation Time", preparation_time));
-				sb.append(renderComponents(sectionId));
+				sb.append(addField("Components",
+						SpellDetailAdapter.SpellDetailUtils
+								.getComponentText(cursor)));
 				String range = SpellDetailAdapter.SpellDetailUtils
 						.getRange(cursor);
 				sb.append(addField("Range", range));
@@ -108,46 +109,6 @@ public class SpellRenderer extends HtmlRenderer {
 						mcurs.close();
 					}
 				}
-			}
-			return sb.toString();
-		} finally {
-			cursor.close();
-		}
-	}
-
-	public String renderComponents(Integer sectionId) {
-		Cursor cursor = bookDbAdapter.getSpellComponentAdapter()
-				.fetchSpellComponents(sectionId);
-		try {
-			StringBuffer sb = new StringBuffer();
-			boolean has_next = cursor.moveToFirst();
-			boolean has_field = false;
-			if (has_next) {
-				sb.append(fieldTitle("Components"));
-				has_field = true;
-			}
-			String comma = "";
-			while (has_next) {
-				String type = SpellComponentAdapter.SpellComponentUtils
-						.getComponentType(cursor);
-				String desc = SpellComponentAdapter.SpellComponentUtils
-						.getDescription(cursor);
-				if (type != null) {
-					sb.append(comma);
-					sb.append(type);
-					if (desc != null) {
-						sb.append(" (");
-						sb.append(desc);
-						sb.append(")");
-					}
-				} else {
-					sb.append(desc);
-				}
-				comma = ", ";
-				has_next = cursor.moveToNext();
-			}
-			if (has_field) {
-				sb.append("<br>\n");
 			}
 			return sb.toString();
 		} finally {
