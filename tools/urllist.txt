@@ -23715,6 +23715,8 @@ pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channelin
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Nightmares
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Ocean/Sea/Water
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Pain
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Poison
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Protection
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Revenge/Vengeance
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Rulership
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Cleric/Variant Channeling/Secrets
@@ -23825,27 +23827,27 @@ pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Druid Archetypes/S
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Druid Archetypes/Storm Druid/Windwalker
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Ant/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Ant/Giant/4th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Ant/Giant/Ant/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Beetle/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Beetle/Giant/4th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Beetle/Giant/Beetle/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Centipede/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Centipede/Giant/4th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Centipede/Giant/Centipede/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Crab/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Crab/Giant/4th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Crab/Giant/Crab/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Leech/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Leech/Giant/7th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Leech/Giant/Leech/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Mantis/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Mantis/Giant/7th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Mantis/Giant/Mantis/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Mindless
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Scorpion/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Scorpion/Giant/7th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Scorpion/Giant/Scorpion/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Slug/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Slug/Giant/7th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Slug/Giant/Slug/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Spider/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Spider/Giant/4th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Spider/Giant/Spider/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Trip
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Wasp/Giant
-pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Wasp/Giant/7th-Level Advancement
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Druid/Vermin Companions/Wasp/Giant/Wasp/Giant
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Inquisitor
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Inquisitor/Inquisitions
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Inquisitor/Inquisitions/Anger Inquisition
@@ -24257,6 +24259,7 @@ pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Spellcasting Class Optio
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Summoner
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Summoner/Aquatic Base Form
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Summoner/Aquatic Base Form/Aquatic
+pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Summoner/Aquatic Base Form/Aquatic/Starting Statistics
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Summoner/Eidolon Models
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Summoner/Eidolon Models/Aboleth
 pfsrd://Ultimate Magic/Rules/Spellcasting Class Options/Summoner/Eidolon Models/Aboleth/25 points
