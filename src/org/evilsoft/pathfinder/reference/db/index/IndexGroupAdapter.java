@@ -190,6 +190,7 @@ public class IndexGroupAdapter {
 		StringBuffer sb = new StringBuffer();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.spell_source = ?");
+		sb.append("  AND i.type = 'mythic_spell'");
 		args.add(spellSource);
 		sb.append(FilterPreferenceManager.getSourceFilter(context, args, "AND",
 				"i"));
