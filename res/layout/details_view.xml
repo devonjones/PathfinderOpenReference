@@ -5,7 +5,7 @@
 	android:orientation="vertical"
 	android:background="@color/white"
 	>
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	<RelativeLayout
 		android:id="@+id/relativeLayout1"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
@@ -40,16 +40,6 @@
 			android:layout_toLeftOf="@+id/display_star"
 			android:layout_marginRight="20dip"
 			android:src="@android:drawable/stat_notify_error"
-			android:background="@android:color/transparent"
-			/>
-		<ImageButton
-			android:id="@+id/display_back"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_centerVertical="true"
-			android:layout_toLeftOf="@+id/content_error"
-			android:layout_marginRight="20dip"
-			android:src="@drawable/ic_btn_find_prev"
 			android:background="@android:color/transparent"
 			/>
 		</RelativeLayout>

@@ -3,8 +3,11 @@ package org.evilsoft.pathfinder.reference;
 import org.acra.ErrorReporter;
 
 import android.annotation.SuppressLint;
+import android.graphics.Paint;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -17,7 +20,7 @@ import com.actionbarsherlock.app.SherlockFragment;
 
 public class DetailsViewFragment extends SherlockFragment {
 	private WebView viewer;
-	private DetailsWebViewClient client;
+	protected DetailsWebViewClient client;
 
 	@SuppressLint({ "NewApi", "SetJavaScriptEnabled" })
 	@Override
@@ -25,7 +28,16 @@ public class DetailsViewFragment extends SherlockFragment {
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.details_view, container, false);
 		TextView title = (TextView) v.findViewById(R.id.display_title);
-		ImageButton back = (ImageButton) v.findViewById(R.id.display_back);
+		title.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
+		registerForContextMenu(title);
+		title.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				ErrorReporter e = ErrorReporter.getInstance();
+				e.putCustomData("LastClick",
+						"DetailsViewFragment.onCreateView.onClick");
+				DetailsViewFragment.this.getActivity().openContextMenu(v);
+			}
+		});
 		ImageButton star = (ImageButton) v.findViewById(R.id.display_star);
 		ImageButton contentError = (ImageButton) v
 				.findViewById(R.id.content_error);
@@ -37,7 +49,7 @@ public class DetailsViewFragment extends SherlockFragment {
 			// the actual webview.
 			viewer.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 		}
-		client = new DetailsWebViewClient(getActivity(), title, back, star,
+		client = new DetailsWebViewClient(getActivity(), title, star,
 				contentError);
 		if (savedInstanceState != null
 				&& savedInstanceState.containsKey("progression")) {
@@ -45,20 +57,24 @@ public class DetailsViewFragment extends SherlockFragment {
 					.getFloat("progression"));
 		}
 		viewer.setWebViewClient(client);
-		back.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				ErrorReporter e = ErrorReporter.getInstance();
-				e.putCustomData("LastClick",
-						"DetailsViewFragment.onCreateView.onClick");
-				client.back(viewer);
-			}
-		});
 		viewer.getSettings().setSupportZoom(true);
 		viewer.getSettings().setBuiltInZoomControls(true);
 		if (Build.VERSION.SDK_INT >= 11) {
 			viewer.getSettings().setDisplayZoomControls(false);
 		}
 		return v;
+	}
+
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v,
+			ContextMenuInfo menuInfo) {
+		super.onCreateContextMenu(menu, v, menuInfo);
+		client.contextMenu(menu, menuInfo);
+	}
+
+	@Override
+	public boolean onContextItemSelected(android.view.MenuItem item) {
+		return client.contextMenuSelected(item);
 	}
 
 	public WebView getWebView() {

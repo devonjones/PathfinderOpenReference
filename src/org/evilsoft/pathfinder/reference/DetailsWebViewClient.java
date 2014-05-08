@@ -21,6 +21,8 @@ import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -35,7 +37,6 @@ public class DetailsWebViewClient extends WebViewClient {
 	private TextView title;
 	private ImageButton contentError;
 	private ImageButton star;
-	private ImageButton back;
 	private String url;
 	private String oldUrl;
 	private boolean isTablet;
@@ -44,11 +45,10 @@ public class DetailsWebViewClient extends WebViewClient {
 	private WebView mWebView;
 	ArrayList<HashMap<String, String>> path;
 
-	public DetailsWebViewClient(Activity act, TextView title, ImageButton back,
-			ImageButton star, ImageButton contentError) {
+	public DetailsWebViewClient(Activity act, TextView title, ImageButton star,
+			ImageButton contentError) {
 		this.act = (FragmentActivity) act;
 		this.title = title;
-		this.back = back;
 		this.star = star;
 		this.contentError = contentError;
 		this.isTablet = PathfinderOpenReferenceActivity.isTabletLayout(act);
@@ -111,7 +111,6 @@ public class DetailsWebViewClient extends WebViewClient {
 				try {
 					path = dbWrangler.getBookDbAdapterByUrl(newUrl)
 							.getPathByUrl(newUrl);
-					setBackVisibility(newUrl, contextUrl);
 					return renderPfsrd(view, newUrl);
 				} catch (BookNotFoundException bnfe) {
 					Log.e(TAG, "Book not found: " + bnfe.getMessage());
@@ -141,21 +140,6 @@ public class DetailsWebViewClient extends WebViewClient {
 			}
 		}
 		return false;
-	}
-
-	public void setBackVisibility(String newUrl, String contextUrl) {
-		if (path != null && path.size() > 1) {
-			if (contextUrl != null) {
-				reloadList(contextUrl);
-			} else {
-				reloadList(newUrl);
-			}
-			if (!path.get(1).get("type").equals("list")) {
-				this.back.setVisibility(View.VISIBLE);
-				return;
-			}
-		}
-		this.back.setVisibility(View.INVISIBLE);
 	}
 
 	private String up(String uri) {
@@ -373,5 +357,43 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	public void setProgressToRestore(float progressToRestore) {
 		this.progressToRestore = progressToRestore;
+	}
+
+	public void contextMenu(ContextMenu menu, ContextMenuInfo menuInfo) {
+		try {
+			if (path.size() > 0) {
+				menu.setHeaderTitle("Article Context");
+				String start = "";
+				String end = "";
+				int reverse = 0;
+				for (int i = path.size() - 1; i >= 0; i--) {
+					if (i == 0) {
+						end = " (current)";
+					}
+					menu.add(i, i, 0, start + path.get(i).get("name") + end);
+					start += "\u2022 ";
+					if (reverse < 2 || path.get(i).get("type").equals("list")) {
+						menu.getItem(reverse).setEnabled(false);
+					}
+					reverse += 1;
+				}
+			}
+		} catch (Exception e) {
+			ErrorReporter.getInstance().putCustomData("Situation",
+					"Back button failed");
+			ErrorReporter.getInstance().handleException(e);
+		}
+	}
+
+	public boolean contextMenuSelected(android.view.MenuItem item) {
+		if (path.size() > item.getGroupId()) {
+			ErrorReporter e = ErrorReporter.getInstance();
+			e.putCustomData("LastClick",
+					"DetailsWebViewClient.contextMenuSelected");
+			shouldOverrideUrlLoading(mWebView,
+					path.get(item.getGroupId()).get("url"));
+			return true;
+		}
+		return false;
 	}
 }
