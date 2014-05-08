@@ -72,7 +72,7 @@ public class StartActivity extends Activity {
 		}
 
 		protected void onPostExecute(AsyncTaskResult<Boolean> result) {
-			if (result.getResult()) {
+			if (result != null && result.getResult()) {
 				Intent showContent = new Intent(
 						StartActivity.this.getApplicationContext(),
 						PathfinderOpenReferenceActivity.class);
