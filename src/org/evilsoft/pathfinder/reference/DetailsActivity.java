@@ -72,9 +72,8 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				DetailsListFragment list = (DetailsListFragment) getSupportFragmentManager()
 						.findFragmentById(R.id.details_list_fragment);
 				list.updateUrl(newUrl);
-			} else {
-				collectionList = setUpViewer(newUrl, contextUrl, action);
 			}
+			collectionList = setUpViewer(newUrl, contextUrl, action);
 		} else {
 			if (showList) {
 				setContentView(R.layout.details_phone_list);
