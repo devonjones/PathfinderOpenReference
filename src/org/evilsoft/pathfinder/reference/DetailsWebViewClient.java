@@ -370,12 +370,15 @@ public class DetailsWebViewClient extends WebViewClient {
 					if (i == 0) {
 						end = " (current)";
 					}
-					menu.add(i, i, 0, start + path.get(i).get("name") + end);
-					start += "\u2022 ";
-					if (reverse < 2 || path.get(i).get("type").equals("list")) {
-						menu.getItem(reverse).setEnabled(false);
+					if (path.get(i).get("url") != null) {
+						menu.add(i, i, 0, start + path.get(i).get("name") + end);
+						start += "\u2022 ";
+						if (reverse < 2
+								|| path.get(i).get("type").equals("list")) {
+							menu.getItem(reverse).setEnabled(false);
+						}
+						reverse += 1;
 					}
-					reverse += 1;
 				}
 			}
 		} catch (Exception e) {
