@@ -65,8 +65,7 @@ public class SpellListItem extends BaseListItem {
 
 	public static String shortDescription(String desc) {
 		if (desc != null) {
-			String[] parts = desc.split("\\.");
-			return parts[0] + ".";
+			return desc;
 		}
 		return "";
 	}
