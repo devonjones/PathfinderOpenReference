@@ -44,6 +44,10 @@ public class IndexDbAdapter {
 		return new ApiFilteredClassSpellListAdapter(database, context);
 	}
 
+	public ApiCasterListAdapter getApiCasterListAdapter() {
+		return new ApiCasterListAdapter(database, context);
+	}
+
 	public ApiCreatureListAdapter getApiCreatureListAdapter() {
 		return new ApiCreatureListAdapter(database, context);
 	}

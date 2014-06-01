@@ -1,5 +1,6 @@
 package org.evilsoft.pathfinder.reference.api.contracts;
 
+import android.database.Cursor;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
@@ -104,5 +105,35 @@ public final class SectionContract {
 		 * </P>
 		 */
 		public static final String CONTENT_URL = "content_url";
+	}
+
+	public static class SectionContractUtils {
+		public static Integer getId(Cursor cursor) {
+			return cursor.getInt(0);
+		}
+
+		public static String getSource(Cursor cursor) {
+			return cursor.getString(1);
+		}
+
+		public static String getType(Cursor cursor) {
+			return cursor.getString(2);
+		}
+
+		public static String getSubType(Cursor cursor) {
+			return cursor.getString(3);
+		}
+
+		public static String getName(Cursor cursor) {
+			return cursor.getString(4);
+		}
+
+		public static String getDescription(Cursor cursor) {
+			return cursor.getString(5);
+		}
+
+		public static String getContentUrl(Cursor cursor) {
+			return cursor.getString(6);
+		}
 	}
 }

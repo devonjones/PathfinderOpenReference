@@ -15,7 +15,7 @@ public class SpellContentProvider extends AbstractContentProvider {
 		uriMatcher.addURI("org.evilsoft.pathfinder.reference.api.spell",
 				"classes/#/spells", 3);
 		uriMatcher.addURI("org.evilsoft.pathfinder.reference.api.spell",
-				"classes/#/spells", 4);
+				"classes/#/spells/filtered", 4);
 		uriMatcher.addURI("org.evilsoft.pathfinder.reference.api.spell",
 				"spells/#", 1000);
 	}

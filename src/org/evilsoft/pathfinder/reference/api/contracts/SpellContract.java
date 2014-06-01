@@ -1,5 +1,6 @@
 package org.evilsoft.pathfinder.reference.api.contracts;
 
+import android.database.Cursor;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
@@ -271,5 +272,59 @@ public class SpellContract {
 		 * </P>
 		 */
 		public static final String COMPONENTS = "components";
+	}
+
+	public static class SpellContractUtils extends
+			SectionContract.SectionContractUtils {
+		public static String getSchool(Cursor cursor) {
+			return cursor.getString(7);
+		}
+
+		public static String getSubschool(Cursor cursor) {
+			return cursor.getString(8);
+		}
+
+		public static String getDescriptor(Cursor cursor) {
+			return cursor.getString(9);
+		}
+
+		public static String getClasses(Cursor cursor) {
+			return cursor.getString(10);
+		}
+
+		public static String getComponents(Cursor cursor) {
+			return cursor.getString(11);
+		}
+	}
+
+	public static class SpellListContractUtils extends
+			SectionContract.SectionContractUtils {
+		public static String getClass(Cursor cursor) {
+			return cursor.getString(7);
+		}
+
+		public static Integer getLevel(Cursor cursor) {
+			return cursor.getInt(8);
+		}
+
+		public static String getMagicType(Cursor cursor) {
+			return cursor.getString(9);
+		}
+
+		public static String getSchool(Cursor cursor) {
+			return cursor.getString(10);
+		}
+
+		public static String getSubschool(Cursor cursor) {
+			return cursor.getString(11);
+		}
+
+		public static String getDescriptor(Cursor cursor) {
+			return cursor.getString(12);
+		}
+
+		public static String getComponents(Cursor cursor) {
+			return cursor.getString(13);
+		}
 	}
 }

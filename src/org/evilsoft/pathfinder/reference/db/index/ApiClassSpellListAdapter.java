@@ -38,6 +38,7 @@ public class ApiClassSpellListAdapter {
 		columns.add("school");
 		columns.add("subschool");
 		columns.add("descriptor");
+		columns.add("components");
 		translation.put("_id", "i.index_id as _id");
 		translation.put("content_url", "i.url as content_url");
 		translation.put("school", "spell_school as school");
