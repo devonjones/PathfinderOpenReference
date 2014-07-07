@@ -43,4 +43,22 @@ public class FeatAdapter {
 			curs.close();
 		}
 	}
+
+	public Cursor getFeatTypes(Integer sectionId) {
+		List<String> args = new ArrayList<String>();
+		args.add(sectionId.toString());
+		StringBuffer sb = new StringBuffer();
+		sb.append("SELECT feat_type");
+		sb.append(" FROM feat_types");
+		sb.append(" WHERE section_id = ?");
+		sb.append(" ORDER BY feat_type");
+		String sql = sb.toString();
+		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
+	}
+
+	public static class FeatTypeUtils {
+		public static String getFeatType(Cursor cursor) {
+			return cursor.getString(0);
+		}
+	}
 }

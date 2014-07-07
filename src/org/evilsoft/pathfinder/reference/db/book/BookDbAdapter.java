@@ -185,8 +185,20 @@ public class BookDbAdapter {
 		return new SpellDetailAdapter(database, dbName);
 	}
 
+	public SpellDescriptorAdapter getSpellDescriptorAdapter() {
+		return new SpellDescriptorAdapter(database, dbName);
+	}
+
 	public SpellEffectAdapter getSpellEffectAdapter() {
 		return new SpellEffectAdapter(database, dbName);
+	}
+
+	public SpellListAdapter getSpellListAdapter() {
+		return new SpellListAdapter(database, dbName);
+	}
+
+	public SpellSubschoolAdapter getSpellSubschoolAdapter() {
+		return new SpellSubschoolAdapter(database, dbName);
 	}
 
 	public TrapAdapter getTrapAdapter() {

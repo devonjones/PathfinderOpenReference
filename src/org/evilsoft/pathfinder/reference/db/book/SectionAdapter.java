@@ -21,7 +21,8 @@ public class SectionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, parent_id, name, type, subtype, url");
+		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
+		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
@@ -32,7 +33,8 @@ public class SectionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(parentId.toString());
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, parent_id, name, type, subtype, url");
+		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
+		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
 		String sql = sb.toString();
@@ -44,7 +46,8 @@ public class SectionAdapter {
 		args.add(parentId);
 		args.add(name);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, parent_id, name, type, subtype, url");
+		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
+		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
 		sb.append(" WHERE parent_id = ?");
 		sb.append("  AND name = ?");
@@ -56,7 +59,8 @@ public class SectionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT p.section_id, p.parent_id, p.name, p.type, p.subtype, p.url");
+		sb.append("SELECT p.section_id, p.parent_id, p.name, p.type, p.subtype, p.url,");
+		sb.append("  p.abbrev, p.source, p.description, p.body, p.image, p.alt");
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN sections p");
 		sb.append("   ON s.parent_id = p.section_id");
@@ -69,7 +73,8 @@ public class SectionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(parentUrl);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT s.section_id, s.parent_id, s.name, s.type, s.subtype, s.url");
+		sb.append("SELECT s.section_id, s.parent_id, s.name, s.type, s.subtype, s.url,");
+		sb.append("  s.abbrev, s.source, s.description, s.body, s.image, s.alt");
 		sb.append(" FROM sections s");
 		sb.append("  INNER JOIN sections p");
 		sb.append("   ON s.parent_id = p.section_id");
@@ -82,7 +87,8 @@ public class SectionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(url);
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT section_id, parent_id, name, type, subtype, url");
+		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
+		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
 		sb.append(" WHERE url = ?");
 		String sql = sb.toString();
@@ -90,7 +96,8 @@ public class SectionAdapter {
 		if (curs.getCount() == 0) {
 			curs.close();
 			sb = new StringBuffer();
-			sb.append("SELECT s.section_id, s.parent_id, s.name, s.type, s.subtype, s.url");
+			sb.append("SELECT s.section_id, s.parent_id, s.name, s.type, s.subtype, s.url,");
+			sb.append("  s.abbrev, s.source, s.description, s.body, s.image, s.alt");
 			sb.append(" FROM sections s");
 			sb.append("  INNER JOIN url_references u");
 			sb.append("   ON s.section_id = u.section_id");
@@ -124,6 +131,30 @@ public class SectionAdapter {
 
 		public static String getUrl(Cursor cursor) {
 			return cursor.getString(5);
+		}
+
+		public static String getAbbrev(Cursor cursor) {
+			return cursor.getString(6);
+		}
+
+		public static String getSource(Cursor cursor) {
+			return cursor.getString(7);
+		}
+
+		public static String getDescription(Cursor cursor) {
+			return cursor.getString(8);
+		}
+
+		public static String getBody(Cursor cursor) {
+			return cursor.getString(9);
+		}
+
+		public static String getImage(Cursor cursor) {
+			return cursor.getString(10);
+		}
+
+		public static String getAlt(Cursor cursor) {
+			return cursor.getString(11);
 		}
 	}
 }

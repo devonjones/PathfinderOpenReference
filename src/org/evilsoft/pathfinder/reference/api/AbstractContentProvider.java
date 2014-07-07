@@ -13,7 +13,10 @@ import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
+import org.evilsoft.pathfinder.reference.render.json.SectionRenderer;
 import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -95,7 +98,7 @@ public abstract class AbstractContentProvider extends ContentProvider {
 		return (null);
 	}
 
-	public String renderByIndexId(String indexId) {
+	public String renderHtmlByIndexId(String indexId) {
 		String html = null;
 		StringBuffer htmlparts = new StringBuffer();
 		Cursor cursor = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
@@ -135,13 +138,63 @@ public abstract class AbstractContentProvider extends ContentProvider {
 		return html;
 	}
 
+	public JSONObject renderJsonByIndexId(String indexId) {
+		JSONObject section = null;
+		Cursor cursor = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
+				.fetchById(Integer.valueOf(indexId));
+		try {
+			boolean hasNext = cursor.moveToFirst();
+			if (hasNext) {
+				String source = IndexGroupAdapter.IndexGroupUtils
+						.getSource(cursor);
+				String newUrl = IndexGroupAdapter.IndexGroupUtils
+						.getUrl(cursor);
+				Integer sectionId = IndexGroupAdapter.IndexGroupUtils
+						.getSectionId(cursor);
+				BookDbAdapter bookDbAdapter;
+				try {
+					bookDbAdapter = dbWrangler.getBookDbAdapterByName(source);
+					Cursor bookcurs = bookDbAdapter.getSectionAdapter()
+							.fetchSectionBySectionId(sectionId);
+					SectionRenderer renderer = new SectionRenderer(dbWrangler,
+							bookDbAdapter);
+					hasNext = bookcurs.moveToFirst();
+					if (hasNext) {
+						section = renderer.render(bookcurs);
+					}
+				} catch (BookNotFoundException bnfe) {
+					Log.e(TAG, "Book not found: " + bnfe.getMessage());
+					ErrorReporter e = ErrorReporter.getInstance();
+					ErrorReporter.getInstance().putCustomData("FailedURI",
+							newUrl);
+					ErrorReporter.getInstance().handleException(bnfe);
+					e.handleException(null);
+				} catch (JSONException je) {
+					// TODO Auto-generated catch block
+					Log.e(TAG,
+							"Section failed to render as JSON "
+									+ je.getMessage());
+					ErrorReporter e = ErrorReporter.getInstance();
+					ErrorReporter.getInstance().putCustomData("FailedURI",
+							newUrl);
+					ErrorReporter.getInstance().handleException(je);
+					e.handleException(null);
+				}
+			}
+		} finally {
+			cursor.close();
+		}
+		return section;
+	}
+
 	public InputStream getHtml(String id) {
-		String html = renderByIndexId(id);
+		String html = renderHtmlByIndexId(id);
 		return IOUtils.toInputStream(html);
 	}
 
 	public InputStream getJson(String id) {
-		return IOUtils.toInputStream("");
+		JSONObject section = renderJsonByIndexId(id);
+		return IOUtils.toInputStream(section.toString());
 	}
 
 	public abstract String getFileId(Uri uri);
