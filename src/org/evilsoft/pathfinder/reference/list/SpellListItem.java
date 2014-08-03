@@ -6,6 +6,7 @@ public class SpellListItem extends BaseListItem {
 	private String subschool;
 	private String descriptor;
 	private int level;
+	private String classes;
 
 	public String getDescription() {
 		return description;
@@ -18,7 +19,13 @@ public class SpellListItem extends BaseListItem {
 	public String getSchool() {
 		return school;
 	}
+	public String getClasses() {
+		return classes;
+	}
 
+	public void setClasses(String classes) {
+		this.classes = classes;
+	}
 	public void setSchool(String school) {
 		this.school = school;
 	}

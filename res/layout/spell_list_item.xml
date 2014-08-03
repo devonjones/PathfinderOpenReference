@@ -6,7 +6,7 @@
 	android:layout_weight=".70"
 	android:background="@color/white"
 	>
-	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	<TextView
 		android:id="@+id/spell_list_name"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
@@ -16,13 +16,13 @@
 		android:background="@color/white"
 		android:textColor="@color/black"
 		/>
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:orientation="horizontal"
 		android:background="@color/white"
 		>
-		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		<TextView
 			android:id="@+id/spell_list_school"
 			android:layout_width="wrap_content"
 			android:layout_height="fill_parent"
@@ -31,7 +31,7 @@
 			android:background="@color/white"
 			android:textColor="@color/black"
 			/>
-		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		<TextView
 			android:id="@+id/spell_list_qualities"
 			android:layout_width="wrap_content"
 			android:layout_height="fill_parent"

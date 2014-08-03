@@ -6,6 +6,7 @@ import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,12 +47,20 @@ public class SpellListAdapter extends DisplayListAdapter {
 			String descriptor = IndexGroupAdapter.IndexGroupUtils.getSpellDescriptor(c);
 			schoolV.setText(SpellListItem.buildSchoolLine(school, subschool, descriptor));
 			TextView description = (TextView) V.findViewById(R.id.spell_list_description);
-			String desc = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
-			description.setText(SpellListItem.shortDescription(desc));
+			
+			if (description != null) {
+				description.setText(Html.fromHtml("<B>Description:</B> "
+						+ IndexGroupAdapter.IndexGroupUtils.getDescription(c)));
+			}
+			
 			if (IndexGroupAdapter.IndexGroupUtils.hasLevel(c)) {
 				Integer level = IndexGroupAdapter.IndexGroupUtils.getSpellLevel(c);
 				TextView qualities = (TextView) V.findViewById(R.id.spell_list_qualities);
 				qualities.setText("Level " + level);
+			} else {
+				String classes = IndexGroupAdapter.IndexGroupUtils.getSpellLists(c);
+				TextView qualities = (TextView) V.findViewById(R.id.spell_list_qualities);
+				qualities.setText(classes);
 			}
 		} else {
 			if (IndexGroupAdapter.IndexGroupUtils.hasLevel(c)) {
@@ -79,6 +88,7 @@ public class SpellListAdapter extends DisplayListAdapter {
 		String school = IndexGroupAdapter.IndexGroupUtils.getSpellSchool(c);
 		String subschool = IndexGroupAdapter.IndexGroupUtils.getSpellSubschool(c);
 		String descriptor = IndexGroupAdapter.IndexGroupUtils.getSpellDescriptor(c);
+		
 		if (IndexGroupAdapter.IndexGroupUtils.hasLevel(c)) {
 			Integer level = IndexGroupAdapter.IndexGroupUtils.getSpellLevel(c);
 			return buildSpell(sectionId, database, name, url, description, school, subschool, descriptor, level);
