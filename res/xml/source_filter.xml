@@ -24,7 +24,7 @@
 		android:summary="Physical fighting"
 		android:defaultValue="true" />
 	
-		<CheckBoxPreference
+	<CheckBoxPreference
 		android:key="source_UE"
 		android:title="Ultimate Equipment"
 		android:summary="Phat loot"
@@ -42,7 +42,13 @@
 		android:summary="Phenomenal cosmic powers"
 		android:defaultValue="true" />
 		
-		<CheckBoxPreference
+	<CheckBoxPreference
+		android:key="source_TG"
+		android:title="Technology Guide"
+		android:summary="Lasers"
+		android:defaultValue="true" />
+		
+	<CheckBoxPreference
 		android:key="source_B1"
 		android:title="Bestiary"
 		android:summary="Monsters"
@@ -58,6 +64,12 @@
 		android:key="source_B3"
 		android:title="Bestiary 3"
 		android:summary="More more monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_B4"
+		android:title="Bestiary 4"
+		android:summary="More more *more* monsters"
 		android:defaultValue="true" />
 	
 	<CheckBoxPreference

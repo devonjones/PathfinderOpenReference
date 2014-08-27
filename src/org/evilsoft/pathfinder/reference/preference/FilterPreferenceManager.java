@@ -49,6 +49,9 @@ public class FilterPreferenceManager {
 		if (preferences.getBoolean("source_MA", true) == false) {
 			sourceList.add("Mythic Adventures");
 		}
+		if (preferences.getBoolean("source_TG", true) == false) {
+			sourceList.add("Technology Guide");
+		}
 		if (preferences.getBoolean("source_B1", true) == false) {
 			sourceList.add("Bestiary");
 		}
@@ -57,6 +60,9 @@ public class FilterPreferenceManager {
 		}
 		if (preferences.getBoolean("source_B3", true) == false) {
 			sourceList.add("Bestiary 3");
+		}
+		if (preferences.getBoolean("source_B4", true) == false) {
+			sourceList.add("Bestiary 4");
 		}
 		if (preferences.getBoolean("source_GMG", true) == false) {
 			sourceList.add("Game Mastery Guide");
