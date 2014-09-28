@@ -43,9 +43,13 @@ public class SectionViewFragment extends AbstractViewListFragment {
 			CollectionAdapter ca = new CollectionAdapter(
 					dbWrangler.getUserDbAdapter());
 			Cursor curs = ca.fetchCollectionValue(id.toString());
-			boolean has_next = curs.moveToNext();
-			if (has_next) {
-				uri = curs.getString(2);
+			try {
+				boolean has_next = curs.moveToNext();
+				if (has_next) {
+					uri = curs.getString(2);
+				}
+			} finally {
+				curs.close();
 			}
 			return uri;
 		} else {
@@ -56,8 +60,12 @@ public class SectionViewFragment extends AbstractViewListFragment {
 				SectionAdapter sa = dbWrangler.getBookDbAdapter(
 						item.getDatabase()).getSectionAdapter();
 				Cursor cursor = sa.fetchParentBySectionId(item.getSectionId());
-				if (cursor.moveToFirst()) {
-					return SectionAdapter.SectionUtils.getUrl(cursor);
+				try {
+					if (cursor.moveToFirst()) {
+						return SectionAdapter.SectionUtils.getUrl(cursor);
+					}
+				} finally {
+					cursor.close();
 				}
 			}
 			return item.getUrl();

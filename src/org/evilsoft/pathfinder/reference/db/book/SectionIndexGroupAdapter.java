@@ -36,30 +36,39 @@ public class SectionIndexGroupAdapter {
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}
+
 		public static String getDatabase(Cursor cursor) {
 			return cursor.getString(1);
 		}
+
 		public static String getName(Cursor cursor) {
 			return cursor.getString(2);
 		}
+
 		public static Integer getParentId(Cursor cursor) {
 			return cursor.getInt(3);
 		}
+
 		public static String getParentName(Cursor cursor) {
 			return cursor.getString(4);
 		}
+
 		public static String getSource(Cursor cursor) {
 			return cursor.getString(5);
 		}
+
 		public static String getType(Cursor cursor) {
 			return cursor.getString(6);
 		}
+
 		public static String getSubtype(Cursor cursor) {
 			return cursor.getString(7);
 		}
+
 		public static String getDescription(Cursor cursor) {
 			return cursor.getString(8);
 		}
+
 		public static String getUrl(Cursor cursor) {
 			return cursor.getString(9);
 		}

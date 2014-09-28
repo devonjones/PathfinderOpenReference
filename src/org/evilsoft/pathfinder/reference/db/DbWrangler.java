@@ -132,17 +132,17 @@ public class DbWrangler {
 		source = source.replaceAll("'", "");
 		Cursor curs = getIndexDbAdapter().getBooksAdapter().fetchBook(source);
 		String bookDb;
-		if (source.equals("Open Game License")) {
-			bookDb = "book-ogl.db";
-		} else {
-			try {
+		try {
+			if (source.equals("Open Game License")) {
+				bookDb = "book-ogl.db";
+			} else {
 				bookDb = BooksAdapter.BookUtils.getBookDb(curs);
 				if (bookDb == null) {
 					throw new BookNotFoundException(source);
 				}
-			} finally {
-				curs.close();
 			}
+		} finally {
+			curs.close();
 		}
 		return getBookDbAdapter(bookDb);
 	}

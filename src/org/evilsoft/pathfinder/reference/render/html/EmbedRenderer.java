@@ -54,44 +54,49 @@ public class EmbedRenderer extends HtmlRenderer {
 		SpellListAdapter sla = dbWrangler.getIndexDbAdapter()
 				.getSpellListAdapter();
 		Cursor cursor = sla.fetchClassSpells(capitalizeString(this.desc));
-		boolean has_next = cursor.moveToFirst();
-		int level = -1;
-		String comma = "";
-		while (has_next) {
-			String name = SpellListAdapter.SpellListUtils.getSpellName(cursor);
-			String url = SpellListAdapter.SpellListUtils.getUrl(cursor);
-			int spell_level = SpellListAdapter.SpellListUtils
-					.getSpellLevel(cursor);
-			if (spell_level != level) {
-				level = spell_level;
-				if (!comma.equals("")) {
-					sb.append("</p>\n");
+		try {
+			boolean has_next = cursor.moveToFirst();
+			int level = -1;
+			String comma = "";
+			while (has_next) {
+				String name = SpellListAdapter.SpellListUtils
+						.getSpellName(cursor);
+				String url = SpellListAdapter.SpellListUtils.getUrl(cursor);
+				int spell_level = SpellListAdapter.SpellListUtils
+						.getSpellLevel(cursor);
+				if (spell_level != level) {
+					level = spell_level;
+					if (!comma.equals("")) {
+						sb.append("</p>\n");
+					}
+					sb.append("<strong>");
+					sb.append(level);
+					if (level == 1) {
+						sb.append("st");
+					} else if (level == 2) {
+						sb.append("nd");
+					} else if (level == 3) {
+						sb.append("rd");
+					} else {
+						sb.append("th");
+					}
+					sb.append("-Level ");
+					sb.append(capitalizeString(this.desc));
+					sb.append(" Spells</strong><br>\n");
+					comma = "";
+					sb.append("<p>");
 				}
-				sb.append("<strong>");
-				sb.append(level);
-				if (level == 1) {
-					sb.append("st");
-				} else if (level == 2) {
-					sb.append("nd");
-				} else if (level == 3) {
-					sb.append("rd");
-				} else {
-					sb.append("th");
-				}
-				sb.append("-Level ");
-				sb.append(capitalizeString(this.desc));
-				sb.append(" Spells</strong><br>\n");
-				comma = "";
-				sb.append("<p>");
+				sb.append(comma);
+				sb.append("<a href=\"");
+				sb.append(url);
+				sb.append("\">");
+				sb.append(name);
+				sb.append("</a>");
+				comma = ", ";
+				has_next = cursor.moveToNext();
 			}
-			sb.append(comma);
-			sb.append("<a href=\"");
-			sb.append(url);
-			sb.append("\">");
-			sb.append(name);
-			sb.append("</a>");
-			comma = ", ";
-			has_next = cursor.moveToNext();
+		} finally {
+			cursor.close();
 		}
 		return sb.toString();
 	}

@@ -9,7 +9,10 @@ import android.app.Application;
 public class PathfinderOpenReferenceApplication extends Application {
 	@Override
 	public void onCreate() {
-		ACRA.init(this);
+		try {
+			ACRA.init(this);
+		} catch (Exception e) {
+		}
 		super.onCreate();
 	}
 }

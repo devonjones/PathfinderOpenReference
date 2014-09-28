@@ -58,9 +58,13 @@ public class ApiFilteredClassSpellListAdapter {
 		sb.append("  AND index_id = ?");
 		String sql = sb.toString();
 		Cursor curs = database.rawQuery(sql, BaseDbHelper.toStringArray(args));
-		boolean hasRecord = curs.moveToFirst();
-		if (hasRecord) {
-			return curs.getString(0);
+		try {
+			boolean hasRecord = curs.moveToFirst();
+			if (hasRecord) {
+				return curs.getString(0);
+			}
+		} finally {
+			curs.close();
 		}
 		return null;
 	}

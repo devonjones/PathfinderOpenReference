@@ -64,6 +64,9 @@ public class ItemRenderer extends StatBlockRenderer {
 			while (has_next) {
 				String currentSection = ItemAdapter.ItemMiscUtils
 						.getSubsection(cursor);
+				if (currentSection == null) {
+					currentSection = "";
+				}
 				if (currentSection.toLowerCase().equals(name.toLowerCase())) {
 					titleSb.append(addField(
 							ItemAdapter.ItemMiscUtils.getField(cursor),

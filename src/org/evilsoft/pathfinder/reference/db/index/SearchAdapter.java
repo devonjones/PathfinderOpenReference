@@ -58,6 +58,7 @@ public class SearchAdapter {
 				"si"));
 		sb.append(" GROUP BY si.search_name");
 		sb.append(" ORDER BY ss.section_sort_id, si.search_name");
+		sb.append(" LIMIT 50");
 		String sql = sb.toString();
 		return database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 	}

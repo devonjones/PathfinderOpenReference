@@ -156,11 +156,15 @@ public abstract class AbstractContentProvider extends ContentProvider {
 					bookDbAdapter = dbWrangler.getBookDbAdapterByName(source);
 					Cursor bookcurs = bookDbAdapter.getSectionAdapter()
 							.fetchSectionBySectionId(sectionId);
-					SectionRenderer renderer = new SectionRenderer(dbWrangler,
-							bookDbAdapter);
-					hasNext = bookcurs.moveToFirst();
-					if (hasNext) {
-						section = renderer.render(bookcurs);
+					try {
+						SectionRenderer renderer = new SectionRenderer(
+								dbWrangler, bookDbAdapter);
+						hasNext = bookcurs.moveToFirst();
+						if (hasNext) {
+							section = renderer.render(bookcurs);
+						}
+					} finally {
+						bookcurs.close();
 					}
 				} catch (BookNotFoundException bnfe) {
 					Log.e(TAG, "Book not found: " + bnfe.getMessage());

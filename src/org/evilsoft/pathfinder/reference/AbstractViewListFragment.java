@@ -115,7 +115,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 		this.getListView().setCacheColorHint(Color.WHITE);
 		currentUrl = newUrl;
 		String[] parts = newUrl.split("\\/");
-		if (parts[2].equals("Search")) {
+		if (parts.length > 2 && "Search".equals(parts[2])) {
 			if (parts.length == 4) {
 				Cursor searchcurs = dbWrangler.getIndexDbAdapter()
 						.getSearchAdapter().search(parts[3].trim());
@@ -130,7 +130,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 							.getApplicationContext(), R.layout.list_item, list);
 				}
 			}
-		} else if (parts[3].equals("Bookmarks")) {
+		} else if (parts.length > 3 && "Bookmarks".equals(parts[3])) {
 			currentType = "Bookmarks";
 			if (parts.length > 3) {
 				// I believe it's safe to test against the name because the
@@ -152,7 +152,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 							getActivity(), curs2);
 				}
 			}
-		} else if (parts[2].equals("Menu")) {
+		} else if (parts.length > 2 && "Menu".equals(parts[2])) {
 			Log.i(TAG, parts[2]);
 			String name = parts[3];
 			String type = parts[4];
@@ -172,10 +172,8 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 
 	public void getContentListAdapter(String source, String name, String url) {
 		currentType = name;
-		Cursor curs = dbWrangler.getIndexDbAdapter().getBooksAdapter()
-				.fetchBook(source);
 		try {
-			curs = dbWrangler.getBookDbAdapterByName(source)
+			Cursor curs = dbWrangler.getBookDbAdapterByName(source)
 					.getSectionIndexGroupAdapter().fetchSectionByParentUrl(url);
 			cursorList.add(curs);
 			currentListAdapter = new SectionListAdapter(getActivity()
@@ -242,7 +240,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 			}
 		} else if ("Spells".equals(name)) {
 			Cursor curs;
-			if (type.equals("*") && subtype != null) {
+			if ("*".equals(type) && subtype != null) {
 				curs = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
 						.fetchByType(type, subtype);
 				thin = true;

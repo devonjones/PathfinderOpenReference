@@ -27,24 +27,32 @@ public class UserDbAdapter {
 
 	public void updateBookmarks(DbWrangler dbWrangler) {
 		Cursor curs = fetchAllBookmarks();
-		boolean hasNext = curs.moveToFirst();
-		while (hasNext) {
-			String id = curs.getString(0);
-			String url = curs.getString(2);
-			if (url.indexOf("?") > -1) {
-				url = TextUtils.split(url, "\\?")[0];
+		try {
+			boolean hasNext = curs.moveToFirst();
+			while (hasNext) {
+				String id = curs.getString(0);
+				String url = curs.getString(2);
+				if (url.indexOf("?") > -1) {
+					url = TextUtils.split(url, "\\?")[0];
+				}
+				String aliasedUrl = UrlAliaser.aliasUrl(dbWrangler, url);
+				Cursor cursor = dbWrangler.getIndexDbAdapter()
+						.getIndexGroupAdapter().fetchByUrl(aliasedUrl);
+				try {
+					if (cursor.getCount() == 0) {
+						ErrorReporter.getInstance().putCustomData("Situation",
+								"URL does not exist: " + url);
+						ErrorReporter.getInstance().handleException(null);
+					} else if (!aliasedUrl.equals(url)) {
+						updateBookmarkUrl(id, aliasedUrl);
+					}
+				} finally {
+					cursor.close();
+				}
+				hasNext = curs.moveToNext();
 			}
-			String aliasedUrl = UrlAliaser.aliasUrl(dbWrangler, url);
-			Cursor cursor = dbWrangler.getIndexDbAdapter()
-					.getIndexGroupAdapter().fetchByUrl(aliasedUrl);
-			if (cursor.getCount() == 0) {
-				ErrorReporter.getInstance().putCustomData("Situation",
-						"URL does not exist: " + url);
-				ErrorReporter.getInstance().handleException(null);
-			} else if (!aliasedUrl.equals(url)) {
-				updateBookmarkUrl(id, aliasedUrl);
-			}
-			hasNext = curs.moveToNext();
+		} finally {
+			curs.close();
 		}
 	}
 

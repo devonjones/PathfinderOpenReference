@@ -209,9 +209,13 @@ public class SectionExpandableListAdapter extends BaseExpandableListAdapter {
 		if (type != null || subtype != null) {
 			Cursor countCurs = dbWrangler.getIndexDbAdapter().getCountAdapter()
 					.countByType(type, subtype);
-			countCurs.moveToFirst();
-			if (CountAdapter.CountUtils.getCount(countCurs) == 0) {
-				return false;
+			try {
+				countCurs.moveToFirst();
+				if (CountAdapter.CountUtils.getCount(countCurs) == 0) {
+					return false;
+				}
+			} finally {
+				countCurs.close();
 			}
 		}
 		return true;
