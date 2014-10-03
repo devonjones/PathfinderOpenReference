@@ -42,9 +42,9 @@ While this application is under the GPLv3, I grant an exception for access to th
 
 My usage of the data is under the [Open Gaming Licence](http://paizo.com/PRD/openGameLicense.html) and for images and use of the Pathfinder name under the [Paizo Community Use Policy](http://paizo.com/PRD/openGameLicense.html).  Please ensure your application meets the Paizo licenses and policies applicable to your application.
 
-Advertizing
+Advertising
 -----------
-I am trying to create a community of applications via this app and api.  If your app creates a link to Pathfinder Open Reference in the google play store and you inform me by mailing me at devon.jones@gmail.com, I will review your app and if appropriate, I will do the same by linking to your app in the google play store.  I don't promise that all apps will meet my review, but if the app positively provides good quality functionality and follows appropriate paizo licenses, I'll be happy to return the favor.
+I am trying to create a community of Pathfinder applications via this app and api.  If your app creates a link to Pathfinder Open Reference via the google play store and you inform me by mailing me at devon.jones@gmail.com, I will review your app and if appropriate, I will do the same by linking to your app in the google play store.  I don't promise that all apps will meet my review, but if the app positively provides good quality functionality and follows appropriate paizo licenses, I'll be happy to return the favor.
 
 Intents
 =======
