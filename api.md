@@ -11,7 +11,7 @@ Note: I intend in the next release of Pathfinder Open Reference to provide a Con
 
 License
 =======
-While this application is under the GPLv3, I grant an exception for access to these apis under the 2 clause BSD license:
+This application is under the GPLv3.  My interpretation of the GPLv3 is that use of it via the android intent and content provider framework does not cause the using code to fall under any of the requirements of the GPLv3.  However, in case you are concerned with that interpretation, I grant an exception for access to these apis under the 2 clause BSD license:
 
 > Copyright (c) 2014, Devon Jones
 > All rights reserved.
