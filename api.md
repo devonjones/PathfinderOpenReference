@@ -33,6 +33,8 @@ Do a search:
 Content Providers
 =================
 
+These content providers have been tested for use both via raw access through a cursor as well as through cursor loaders.
+
 SectionContentProvider
 ----------------------
 
