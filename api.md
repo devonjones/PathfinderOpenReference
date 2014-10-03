@@ -1,3 +1,13 @@
+Intro
+=====
+
+Pathfinder Open Reference provides an android API that can be used from other android projects.  The bulk of the api is in the form of Intents and Content Providers.  To use the Content Providers, you need to add the [contracts jar](https://github.com/devonjones/PathfinderOpenReference/raw/master/tools/pfor-contracts.jar) to your project.
+
+I have also created a [sample toy app](https://github.com/devonjones/PathfinderOpenReferenceApiTest) that can use the api as an example.
+
+Note: I intend in the next release of Pathfinder Open Reference to provide a Content Provider that will inform you of the api version.  I strongly suggest not releasing any application until that is in place and integrated with your app so you can be certain the user has a version of Pathfinder Open Reference that works with your application.
+
+
 Intents
 =======
 
