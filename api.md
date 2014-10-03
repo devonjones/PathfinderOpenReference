@@ -5,6 +5,7 @@ Pathfinder Open Reference provides an android API that can be used from other an
 
 I have also created a [sample toy app](https://github.com/devonjones/PathfinderOpenReferenceApiTest) that can use the api as an example.
 
+If you would prefer to have access to the raw data used in Pathfinder Open Reference in json or sqlite3 format, you can access that from my [PSRD-Data](https://github.com/devonjones/PSRD-Data) project.
 Note: I intend in the next release of Pathfinder Open Reference to provide a Content Provider that will inform you of the api version.  I strongly suggest not releasing any application until that is in place and integrated with your app so you can be certain the user has a version of Pathfinder Open Reference that works with your application.
 
 
