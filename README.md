@@ -13,3 +13,6 @@ Pathfinder Open Reference is free software: you can redistribute it and/or modif
 Pathfinder Open Reference is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with Pathfinder Open Reference.  If not, see <http://www.gnu.org/licenses/>.
+
+## API
+Pathfinder Open Reference has an API you can use in your gaming application.  Check out the [documentation](https://github.com/devonjones/PathfinderOpenReference/blob/master/api.md).

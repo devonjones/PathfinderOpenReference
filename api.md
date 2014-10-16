@@ -1,3 +1,51 @@
+Intro
+=====
+
+Pathfinder Open Reference provides an android API that can be used from other android projects.  The bulk of the api is in the form of Intents and Content Providers.  To use the Content Providers, you need to add the [contracts jar](https://github.com/devonjones/PathfinderOpenReference/raw/master/tools/pfor-contracts.jar) to your project.
+
+I have also created a [sample toy app](https://github.com/devonjones/PathfinderOpenReferenceApiTest) that can use the api as an example.
+
+If you would prefer to have access to the raw data used in Pathfinder Open Reference in json or sqlite3 format, you can access that from my [PSRD-Data](https://github.com/devonjones/PSRD-Data) project.
+
+Note: I intend in the next release of Pathfinder Open Reference to provide a Content Provider that will inform you of the api version.  I strongly suggest not releasing any application until that is in place and integrated with your app so you can be certain the user has a version of Pathfinder Open Reference that works with your application.
+
+License
+=======
+This application is under the GPLv3.  My interpretation of the GPLv3 is that use of it via the android intent and content provider framework does not cause the using code to fall under any of the requirements of the GPLv3.  However, in case you are concerned with that interpretation, I grant an exception for access to these apis under the 2 clause BSD license:
+
+> Copyright (c) 2014, Devon Jones
+> All rights reserved.
+> 
+> Redistribution and use in source and binary forms, with or without
+> modification, are permitted provided that the following conditions are met:
+> 
+> 1. Redistributions of source code must retain the above copyright notice, this
+>    list of conditions and the following disclaimer. 
+> 2. Redistributions in binary form must reproduce the above copyright notice,
+>    this list of conditions and the following disclaimer in the documentation
+>    and/or other materials provided with the distribution.
+> 
+> THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+> ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+> WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+> DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+> ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+> (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+> LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+> ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+> (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+> SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+> 
+> The views and conclusions contained in the software and documentation are those
+> of the authors and should not be interpreted as representing official policies, 
+> either expressed or implied, of the FreeBSD Project.
+
+My usage of the data is under the [Open Gaming Licence](http://paizo.com/PRD/openGameLicense.html) and for images and use of the Pathfinder name under the [Paizo Community Use Policy](http://paizo.com/PRD/openGameLicense.html).  Please ensure your application meets the Paizo licenses and policies applicable to your application.
+
+Advertising
+-----------
+I am trying to create a community of Pathfinder applications via this app and api.  If your app creates a link to Pathfinder Open Reference via the google play store and you inform me by mailing me at devon.jones@gmail.com, I will review your app and if appropriate, I will do the same by linking to your app in the google play store.  I don't promise that all apps will meet my review, but if the app positively provides good quality functionality and follows appropriate paizo licenses, I'll be happy to return the favor.
+
 Intents
 =======
 
@@ -21,6 +69,8 @@ Do a search:
 
 Content Providers
 =================
+
+These content providers have been tested for use both via raw access through a cursor as well as through cursor loaders.
 
 SectionContentProvider
 ----------------------
