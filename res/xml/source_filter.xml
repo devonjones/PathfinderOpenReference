@@ -7,12 +7,18 @@
 		android:defaultValue="true" />
 	
 	<CheckBoxPreference
+		android:key="source_ACG"
+		android:title="Advanced Class Guide"
+		android:summary="More classes"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
 		android:key="source_ARG"
 		android:title="Advanced Race Guide"
 		android:summary="More races"
 		android:defaultValue="true" />
 	
-	<CheckBoxPreference
+		<CheckBoxPreference
 		android:key="source_UCA"
 		android:title="Ultimate Campaign"
 		android:summary="Stuff to do when not in dungeons"
@@ -21,7 +27,7 @@
 	<CheckBoxPreference
 		android:key="source_UC"
 		android:title="Ultimate Combat"
-		android:summary="Physical fighting"
+		android:summary="For meat shields"
 		android:defaultValue="true" />
 	
 	<CheckBoxPreference
@@ -82,6 +88,12 @@
 		android:key="source_NPC"
 		android:title="NPC Codex"
 		android:summary="Sock puppets"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_MC"
+		android:title="Monster Codex"
+		android:summary="Those orc babies aren't worth any experience alive"
 		android:defaultValue="true" />
 	
 </PreferenceScreen>

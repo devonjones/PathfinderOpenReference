@@ -31,6 +31,9 @@ public class FilterPreferenceManager {
 		if (preferences.getBoolean("source_APG", true) == false) {
 			sourceList.add("Advanced Player's Guide");
 		}
+		if (preferences.getBoolean("source_ACG", true) == false) {
+			sourceList.add("Advanced Class Guide");
+		}
 		if (preferences.getBoolean("source_ARG", true) == false) {
 			sourceList.add("Advanced Race Guide");
 		}
@@ -69,6 +72,9 @@ public class FilterPreferenceManager {
 		}
 		if (preferences.getBoolean("source_NPC", true) == false) {
 			sourceList.add("NPC Codex");
+		}
+		if (preferences.getBoolean("source_MC", true) == false) {
+			sourceList.add("Monster Codex");
 		}
 		if (sourceList.size() > 0) {
 			// Create the start of the WHERE/AND clause
