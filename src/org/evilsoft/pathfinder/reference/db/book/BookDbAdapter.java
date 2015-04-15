@@ -24,9 +24,11 @@ public class BookDbAdapter {
 	}
 
 	public BookDbAdapter open() throws SQLException {
-		dbHelper = new BookDbHelper(context, dbName);
-		database = dbHelper.openDatabase();
-		closed = false;
+		if (closed) {
+			dbHelper = new BookDbHelper(context, dbName);
+			database = dbHelper.openDatabase();
+			closed = false;
+		}
 		return this;
 	}
 
@@ -106,106 +108,132 @@ public class BookDbAdapter {
 	}
 
 	public AbilityAdapter getAbilityAdapter() {
+		open();
 		return new AbilityAdapter(database, dbName);
 	}
 
 	public AfflictionAdapter getAfflictionAdapter() {
+		open();
 		return new AfflictionAdapter(database, dbName);
 	}
 
 	public AnimalCompanionAdapter getAnimalCompanionAdapter() {
+		open();
 		return new AnimalCompanionAdapter(database, dbName);
 	}
 
 	public ArmyAdapter getArmyAdapter() {
+		open();
 		return new ArmyAdapter(database, dbName);
 	}
 
 	public ClassAdapter getClassAdapter() {
+		open();
 		return new ClassAdapter(database, dbName);
 	}
 
 	public CreatureAdapter getCreatureAdapter() {
+		open();
 		return new CreatureAdapter(database, dbName);
 	}
 
 	public FeatAdapter getFeatAdapter() {
+		open();
 		return new FeatAdapter(database, dbName);
 	}
 
 	public HauntAdapter getHauntAdapter() {
+		open();
 		return new HauntAdapter(database, dbName);
 	}
 
 	public ItemAdapter getItemAdapter() {
+		open();
 		return new ItemAdapter(database, dbName);
 	}
 
 	public KingdomResourceAdapter getKingdomResourceAdapter() {
+		open();
 		return new KingdomResourceAdapter(database, dbName);
 	}
 
 	public LinkAdapter getLinkAdapter() {
+		open();
 		return new LinkAdapter(database, dbName);
 	}
 
 	public MythicSpellDetailAdapter getMythicSpellDetailAdapter() {
+		open();
 		return new MythicSpellDetailAdapter(database, dbName);
 	}
 
 	public ResourceAdapter getResourceAdapter() {
+		open();
 		return new ResourceAdapter(database, dbName);
 	}
 
 	public SectionAdapter getSectionAdapter() {
+		open();
 		return new SectionAdapter(database, dbName);
 	}
 
 	public FullSectionAdapter getFullSectionAdapter() {
+		open();
 		return new FullSectionAdapter(database, dbName);
 	}
 
 	public SectionIndexGroupAdapter getSectionIndexGroupAdapter() {
+		open();
 		return new SectionIndexGroupAdapter(database, dbName);
 	}
 
 	public SettlementAdapter getSettlementAdapter() {
+		open();
 		return new SettlementAdapter(database, dbName);
 	}
 
 	public SkillAdapter getSkillAdapter() {
+		open();
 		return new SkillAdapter(database, dbName);
 	}
 
 	public SpellComponentAdapter getSpellComponentAdapter() {
+		open();
 		return new SpellComponentAdapter(database, dbName);
 	}
 
 	public SpellDetailAdapter getSpellDetailAdapter() {
+		open();
 		return new SpellDetailAdapter(database, dbName);
 	}
 
 	public SpellDescriptorAdapter getSpellDescriptorAdapter() {
+		open();
 		return new SpellDescriptorAdapter(database, dbName);
 	}
 
 	public SpellEffectAdapter getSpellEffectAdapter() {
+		open();
 		return new SpellEffectAdapter(database, dbName);
 	}
 
 	public SpellListAdapter getSpellListAdapter() {
+		open();
 		return new SpellListAdapter(database, dbName);
 	}
 
 	public SpellSubschoolAdapter getSpellSubschoolAdapter() {
+		open();
 		return new SpellSubschoolAdapter(database, dbName);
 	}
 
 	public TrapAdapter getTrapAdapter() {
+		open();
 		return new TrapAdapter(database, dbName);
 	}
 
 	public VehicleAdapter getVehicleAdapter() {
+		open();
 		return new VehicleAdapter(database, dbName);
 	}
 }

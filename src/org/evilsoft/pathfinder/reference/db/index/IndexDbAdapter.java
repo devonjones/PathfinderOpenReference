@@ -15,9 +15,11 @@ public class IndexDbAdapter {
 	}
 
 	public IndexDbAdapter open() throws SQLException {
-		dbHelper = new IndexDbHelper(context);
-		database = dbHelper.openDatabase();
-		closed = false;
+		if (closed) {
+			dbHelper = new IndexDbHelper(context);
+			database = dbHelper.openDatabase();
+			closed = false;
+		}
 		return this;
 	}
 
@@ -33,38 +35,47 @@ public class IndexDbAdapter {
 	}
 
 	public ApiSectionListAdapter getApiClassListAdapter() {
+		open();
 		return new ApiSectionListAdapter(database, context);
 	}
 
 	public ApiClassSpellListAdapter getApiClassSpellListAdapter() {
+		open();
 		return new ApiClassSpellListAdapter(database, context);
 	}
 
 	public ApiFilteredClassSpellListAdapter getApiFilteredClassSpellListAdapter() {
+		open();
 		return new ApiFilteredClassSpellListAdapter(database, context);
 	}
 
 	public ApiCasterListAdapter getApiCasterListAdapter() {
+		open();
 		return new ApiCasterListAdapter(database, context);
 	}
 
 	public ApiCreatureListAdapter getApiCreatureListAdapter() {
+		open();
 		return new ApiCreatureListAdapter(database, context);
 	}
 
 	public ApiFeatListAdapter getApiFeatListAdapter() {
+		open();
 		return new ApiFeatListAdapter(database, context);
 	}
 
 	public ApiSkillListAdapter getApiSkillListAdapter() {
+		open();
 		return new ApiSkillListAdapter(database, context);
 	}
 
 	public ApiSpellListAdapter getApiSpellListAdapter() {
+		open();
 		return new ApiSpellListAdapter(database, context);
 	}
 
 	public ApiFilteredSpellListAdapter getApiFilteredSpellListAdapter() {
+		open();
 		return new ApiFilteredSpellListAdapter(database, context);
 	}
 
