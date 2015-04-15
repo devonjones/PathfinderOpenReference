@@ -42,12 +42,18 @@ public class AnimalCompanionRenderer extends JsonRenderer {
 				addField(section, "special_attacks",
 						AnimalCompanionAdapter.AnimalCompanionUtils
 								.getSpecialAttacks(cursor));
+				addField(section, "special_abilities",
+						AnimalCompanionAdapter.AnimalCompanionUtils
+								.getSpecialAbilities(cursor));
 				addField(section, "special_qualities",
 						AnimalCompanionAdapter.AnimalCompanionUtils
 								.getSpecialQualities(cursor));
 				addField(section, "speed",
 						AnimalCompanionAdapter.AnimalCompanionUtils
 								.getSpeed(cursor));
+				addField(section, "bonus_feat",
+						AnimalCompanionAdapter.AnimalCompanionUtils
+								.getBonusFeat(cursor));
 			}
 		} finally {
 			cursor.close();

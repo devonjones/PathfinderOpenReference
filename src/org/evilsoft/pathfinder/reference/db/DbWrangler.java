@@ -31,7 +31,7 @@ public class DbWrangler {
 	public static final String PREFS_NAME = "psrd.prefs";
 	public static final String TAG = "DbWrangler";
 	private Context context;
-	private static final Integer VERSION = 81;
+	private static final Integer VERSION = 90;
 	private HashMap<String, BookDbAdapter> bookDbAdapters;
 	private IndexDbAdapter indexDbAdapter;
 	private UserDbAdapter userDbAdapter;

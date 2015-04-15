@@ -21,8 +21,9 @@ public class AnimalCompanionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT ac, attack, cmd, ability_scores, special_qualities, special_attacks,");
-		sb.append("  size, speed, level");
+		sb.append("SELECT ac, attack, cmd, ability_scores, special_abilities,");
+		sb.append("  special_qualities, special_attacks, size, speed,");
+		sb.append("  bonus_feat, level");
 		sb.append(" FROM animal_companion_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
@@ -46,24 +47,32 @@ public class AnimalCompanionAdapter {
 			return cursor.getString(3);
 		}
 
-		public static String getSpecialQualities(Cursor cursor) {
+		public static String getSpecialAbilities(Cursor cursor) {
 			return cursor.getString(4);
 		}
 
-		public static String getSpecialAttacks(Cursor cursor) {
+		public static String getSpecialQualities(Cursor cursor) {
 			return cursor.getString(5);
 		}
 
-		public static String getSize(Cursor cursor) {
+		public static String getSpecialAttacks(Cursor cursor) {
 			return cursor.getString(6);
 		}
 
-		public static String getSpeed(Cursor cursor) {
+		public static String getSize(Cursor cursor) {
 			return cursor.getString(7);
 		}
 
-		public static String getLevel(Cursor cursor) {
+		public static String getSpeed(Cursor cursor) {
 			return cursor.getString(8);
+		}
+
+		public static String getBonusFeat(Cursor cursor) {
+			return cursor.getString(9);
+		}
+
+		public static String getLevel(Cursor cursor) {
+			return cursor.getString(10);
 		}
 	}
 }

@@ -62,6 +62,9 @@ public class AnimalCompanionRenderer extends StatBlockRenderer {
 				sb.append(addField("Ability Scores",
 						AnimalCompanionAdapter.AnimalCompanionUtils
 								.getAbilityScores(cursor)));
+				sb.append(addField("Special Abilities",
+						AnimalCompanionAdapter.AnimalCompanionUtils
+								.getSpecialAbilities(cursor)));
 				sb.append(addField("Special Qualities",
 						AnimalCompanionAdapter.AnimalCompanionUtils
 								.getSpecialQualities(cursor)));
