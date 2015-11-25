@@ -1,0 +1,329 @@
+/** BODY **/
+body {
+	padding: 0 0 0 0;
+	margin: 2;
+	border-width: 0px;
+    position: relative;
+}
+
+#body-scroller {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#body-wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+#body {
+	position: relative;
+    padding-right: 30px;
+	padding-left: 255px;
+	display: block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .75em;
+    margin: 0;
+    z-index: 1;
+}
+
+/** TEXT AND LINKS **/
+p.body {
+	line-height: 1.2em;
+	text-align: left;
+}
+
+h1 {
+	font-size: 2.0em;
+	margin-bottom: 0.2em;
+	margin-top: 1.00em;
+	text-indent: 0.00em;
+	text-align: left;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: small-caps;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+	
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 0.2em;
+	margin-top: 1.00em;
+	text-indent: 0.00em;
+	margin-right: 0.00em;
+	margin-left: 0.00em;
+	text-align: left;
+	font-style: normal;
+	font-weight: bold;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin-bottom: 0.00em;
+	margin-top: 1.09em;
+	text-indent: 0.00em;
+	margin-right: 0.00em;
+	margin-left: 0.00em;
+	text-align: left;
+	font-weight: bold;
+	font-style: normal;
+}
+
+a:link {
+	color: #222222;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #222222;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #666697;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #666697;
+	text-decoration: underline;
+}
+
+a.no-under {
+	text-decoration: none;
+	color: black;
+}
+	
+span.nowrap { white-space: nowrap; }
+
+/** STAT BLOCKS **/
+
+div.stat-block {
+	margin-top: .1em;
+	margin-bottom: .1em;
+	font-family: 'Droid Sans', Thonburi, TrebuchetMS, sans-serif;
+	font-size: 1.1em;
+	padding-left: 1em;
+	text-align: left;
+}
+
+div.stat-block li {
+	margin-top: .1em;
+	margin-bottom: .1em;
+	padding: 0;
+}
+
+div.stat-block ul {
+	margin-top: 0;
+	padding: 0 0 0 2.4em;
+}
+
+p.stat-block-indent {
+	text-indent: 1em;
+	margin-top: .15em;
+	margin-bottom: .15em;
+	padding-left: 1em;
+}
+
+p.stat-block-1 {
+	margin-top: .1em;
+	margin-bottom: .1em;
+	font-family: 'Droid Sans', Thonburi, TrebuchetMS, sans-serif;
+	font-size: 1em;
+	padding-left: 1em;
+	text-indent: -1em;
+   	text-align: left;
+}
+   	
+p.stat-block-2 {
+	margin-top: .1em;
+	margin-bottom: .1em;
+	font-family: 'Droid Sans', Thonburi, TrebuchetMS, sans-serif;
+	font-size: 1em;
+	padding-left: 2em;
+	text-indent: -1em;
+	text-align: left;
+}
+
+p.stat-block-xp {
+	font-family: 'Droid Sans', Thonburi, TrebuchetMS, sans-serif;
+	font-size: 1.15em;
+	margin-top: 0.4em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+	
+p.stat-block-breaker {
+	font-size: 1.15em;
+	font-family: 'Droid Sans', Thonburi, TrebuchetMS, sans-serif;
+	font-weight: 300;
+	margin-bottom: .2em;
+	margin-top: .8em;
+	text-transform: uppercase;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+p.stat-block-title {
+	font-family: 'Droid Sans', Thonburi, TrebuchetMS, sans-serif;
+	font-size: 1.25em;
+	font-variant: small-caps;
+	background-color: black;
+	color: white;
+	padding-left: .5em;
+	margin-bottom: 0;
+	margin-top: .64em;
+	font-weight: bold;
+}
+	
+div.stat-block {
+	width: 95%;
+	position: relative;
+	padding-bottom: 1.5em;
+}
+
+span.stat-block-cr { float: right; padding-right:1em; }
+
+#feats-text,.feats-text p {
+	margin-top: .1em;
+	margin-bottom: .1em;
+	text-indent: 0;
+}
+
+#feats-text,.feats-text .stat-block-1 {
+	font-size: 1em;
+	text-indent: 0;
+	padding-left: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+		
+#feats-text,.feats-text .stat-block-2 {
+	font-size: 1em;
+	padding-left: 0;
+	text-indent: 1em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+		
+#feats-text,.feats-text h2 { margin-bottom: 0; padding-bottom: 0; }
+
+/** LISTS **/
+
+li.tree {
+	padding-left: 13px;
+}
+
+
+/** TABLES **/
+
+table {
+	border: 1px solid #888888;
+	border-collapse: collapse;
+	font-size: 1em;
+	white-space: nowrap;
+	margin-bottom: 1em;
+}
+
+caption {
+	font-size: 1.2em;
+	margin-bottom: 0.00em;
+	margin-top: 1.00em;
+	text-indent: 0.00em;
+	margin-right: 0.00em;
+	margin-left: 0.00em;
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+td { vertical-align: top; }
+
+td, th {
+	border: 1px solid #585858;
+	padding: 1px 5px 1px 5px;	
+	margin: 0;	
+	text-align: left;
+}
+
+td:first-child { text-align: left; }
+
+td.indent { text-indent: 1em; }
+
+td.indent2 { text-indent: 2em; }
+
+td.indent3 { text-indent: 3em; }
+
+th {
+	border-color:  #585858;
+	background-color: #999999;
+	color: #F4FAFF;
+	white-space: normal;
+	vertical-align: bottom;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1.1em;
+}
+
+tr.odd {
+	background-color: #F3F3F3;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+tr.even {
+	background-color: #D8D8D8;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+tr.td {
+	background-color: #585858;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+tfoot td {
+	border-style: none;
+	white-space: normal;
+	background-color: #F4FAFF;
+	font-family: 'Droid Sans', Thonburi, TrebuchetMS, sans-serif;
+	font-size: .8em;
+	padding: .3em;
+	text-align: left;
+}
+
+.diagram td { border-style: none; }
+
+tr.th td {
+	border-color:  #585858;
+	background-color: #999999;
+	color: #F4FAFF;
+	white-space: normal;
+	vertical-align: bottom;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1em;
+}
+	
+/** MISC **/
+
+img { border-style: none; }
+
+div + h1, div + h2, div + h3, div + p,h1 + p, h2 + p, h3 + p, h1 + h2, :first-child, p:first-child { margin-top: 0; }
+
+hr {
+	display: block;
+	height: 1px;
+	border-left: 0 none;
+	border-right: 0 none;
+	border-bottom: 0 none;
+}

@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 15
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "org.evilsoft.pathfinder.reference"
+        minSdkVersion 10
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/acra-4.2.3.jar')
+    compile files('libs/android-ant.jar')
+    compile files('libs/android-support-v13.jar')
+    compile files('libs/commons-io-2.4.jar')
+    compile files('libs/libspen23_multiwindow.jar')
+}
