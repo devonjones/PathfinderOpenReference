@@ -1,0 +1,111 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<CheckBoxPreference
+		android:key="source_APG"
+		android:title="Advanced Player's Guide"
+		android:summary="More core rules"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_ACG"
+		android:title="Advanced Class Guide"
+		android:summary="More classes"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_ARG"
+		android:title="Advanced Race Guide"
+		android:summary="More races"
+		android:defaultValue="true" />
+	
+		<CheckBoxPreference
+		android:key="source_UCA"
+		android:title="Ultimate Campaign"
+		android:summary="Stuff to do when not in dungeons"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_UC"
+		android:title="Ultimate Combat"
+		android:summary="For meat shields"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_UE"
+		android:title="Ultimate Equipment"
+		android:summary="Phat loot"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_UM"
+		android:title="Ultimate Magic"
+		android:summary="Supernatural sorcery"
+		android:defaultValue="true" />
+
+	<CheckBoxPreference
+		android:key="source_MA"
+		android:title="Mythic Adventures"
+		android:summary="Phenomenal cosmic powers"
+		android:defaultValue="true" />
+
+    <CheckBoxPreference
+		android:key="source_OA"
+		android:title="Occult Adventures"
+		android:summary="Creepy powers of the mind"
+		android:defaultValue="true" />
+
+    <CheckBoxPreference
+		android:key="source_TG"
+		android:title="Technology Guide"
+		android:summary="Lasers"
+		android:defaultValue="true" />
+		
+	<CheckBoxPreference
+		android:key="source_B1"
+		android:title="Bestiary"
+		android:summary="Monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_B2"
+		android:title="Bestiary 2"
+		android:summary="More monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_B3"
+		android:title="Bestiary 3"
+		android:summary="More more monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_B4"
+		android:title="Bestiary 4"
+		android:summary="More more *more* monsters"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_GMG"
+		android:title="Game Mastery Guide"
+		android:summary="A guide for master gamers"
+		android:defaultValue="true" />
+
+	<CheckBoxPreference
+		android:key="source_PFU"
+		android:title="Pathfinder Unchained"
+		android:summary="Break all the limits"
+		android:defaultValue="true" />
+
+	<CheckBoxPreference
+		android:key="source_NPC"
+		android:title="NPC Codex"
+		android:summary="Sock puppets"
+		android:defaultValue="true" />
+	
+	<CheckBoxPreference
+		android:key="source_MC"
+		android:title="Monster Codex"
+		android:summary="Those orc babies aren't worth any experience alive"
+		android:defaultValue="true" />
+	
+</PreferenceScreen>
