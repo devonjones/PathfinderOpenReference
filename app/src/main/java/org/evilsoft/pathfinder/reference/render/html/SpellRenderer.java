@@ -2,7 +2,6 @@ package org.evilsoft.pathfinder.reference.render.html;
 
 import java.util.HashMap;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
 import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
@@ -12,9 +11,6 @@ import org.evilsoft.pathfinder.reference.db.book.SpellDetailAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellEffectAdapter;
 import org.evilsoft.pathfinder.reference.db.book.SpellListAdapter;
 import org.evilsoft.pathfinder.reference.db.index.IndexGroupAdapter;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import android.database.Cursor;
 import android.util.Log;
@@ -217,11 +213,6 @@ public class SpellRenderer extends HtmlRenderer {
 					}
 				} catch (BookNotFoundException bnfe) {
 					Log.e(TAG, "Book not found: " + bnfe.getMessage());
-					ErrorReporter e = ErrorReporter.getInstance();
-					ErrorReporter.getInstance().putCustomData("FailedURI",
-							msUrl);
-					ErrorReporter.getInstance().handleException(bnfe);
-					e.handleException(null);
 				}
 			}
 		} finally {

@@ -203,6 +203,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 		sb.append(addField("CMB", CreatureAdapter.CreatureUtils.getCMB(cursor),
 				false));
 		sb.append(addField("CMD", CreatureAdapter.CreatureUtils.getCMD(cursor)));
+		sb.append(addField("Concentration", CreatureAdapter.CreatureUtils.getConcentration(cursor)));
 		sb.append(addField("Feats",
 				CreatureAdapter.CreatureUtils.getFeats(cursor)));
 		boolean rmExists = CreatureAdapter.CreatureUtils

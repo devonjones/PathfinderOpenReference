@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.utils.AvailableSpaceHandler;
 import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
 
@@ -211,10 +210,6 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 				}
 			}
 		} catch (Exception e) {
-			// Trying SD broke, move to using internal
-			ErrorReporter.getInstance().putCustomData("Situation",
-					"Failed to write to SD");
-			ErrorReporter.getInstance().handleException(e);
 		}
 
 		// check internal storage
@@ -237,11 +232,6 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 				retFile = tmpFile;
 			}
 		} catch (NullPointerException npe) {
-			ErrorReporter.getInstance().putCustomData("Situation",
-					"DB failed to open: " + dbName.toString());
-			ErrorReporter.getInstance().putCustomData("path",
-					context.getFilesDir().getAbsolutePath());
-			ErrorReporter.getInstance().handleException(npe);
 			throw npe;
 		}
 

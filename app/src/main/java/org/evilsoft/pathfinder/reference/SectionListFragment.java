@@ -1,6 +1,5 @@
 package org.evilsoft.pathfinder.reference;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 
 import android.app.Activity;
@@ -72,15 +71,6 @@ public class SectionListFragment extends ExpandableListFragment implements
 
 	@Override
 	public boolean onChildClick(ExpandableListView elv, View v, int groupPosition, int childPosition, long id) {
-		StringBuffer sb = new StringBuffer();
-		sb.append("SectionListFragment.onChildClick: groupPosition:");
-		sb.append(groupPosition);
-		sb.append(", childPosition:");
-		sb.append(childPosition);
-		sb.append(", id:");
-		sb.append(id);
-		ErrorReporter e = ErrorReporter.getInstance();
-		e.putCustomData("LastClick", sb.toString());
 		String uri = getUri(groupPosition, childPosition);
 		if(PathfinderOpenReferenceActivity.isTabletLayout(getActivity())) {
 			updateFragment(uri);
@@ -94,13 +84,6 @@ public class SectionListFragment extends ExpandableListFragment implements
 
 	@Override
 	public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
-		StringBuffer sb = new StringBuffer();
-		sb.append("SectionListFragment.onGroupClick: groupPosition:");
-		sb.append(groupPosition);
-		sb.append(", id:");
-		sb.append(id);
-		ErrorReporter e = ErrorReporter.getInstance();
-		e.putCustomData("LastClick", sb.toString());
 		if(expListAdapter.getChildrenCount(groupPosition) != 0) {
 			return false;
 		}

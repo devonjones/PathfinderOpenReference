@@ -3,7 +3,6 @@ package org.evilsoft.pathfinder.reference;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.index.SearchAdapter;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
@@ -138,13 +137,6 @@ public class DetailsActivity extends SherlockFragmentActivity {
 				new ActionBar.OnNavigationListener() {
 					public boolean onNavigationItemSelected(int itemPosition,
 							long itemId) {
-						StringBuffer sb = new StringBuffer();
-						sb.append("DetailsActivity.setUpViewer.onNavigationItemSelected: itemPosition:");
-						sb.append(itemPosition);
-						sb.append(", itemId:");
-						sb.append(itemId);
-						ErrorReporter e = ErrorReporter.getInstance();
-						e.putCustomData("LastClick", sb.toString());
 						viewer.setCharacter(itemId);
 						SharedPreferences settings = getSharedPreferences(
 								PREFS_NAME, 0);

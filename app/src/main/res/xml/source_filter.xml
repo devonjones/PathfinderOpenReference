@@ -41,14 +41,20 @@
 		android:title="Ultimate Magic"
 		android:summary="Supernatural sorcery"
 		android:defaultValue="true" />
-		
+
 	<CheckBoxPreference
 		android:key="source_MA"
 		android:title="Mythic Adventures"
 		android:summary="Phenomenal cosmic powers"
 		android:defaultValue="true" />
-		
-	<CheckBoxPreference
+
+    <CheckBoxPreference
+		android:key="source_OA"
+		android:title="Occult Adventures"
+		android:summary="Creepy powers of the mind"
+		android:defaultValue="true" />
+
+    <CheckBoxPreference
 		android:key="source_TG"
 		android:title="Technology Guide"
 		android:summary="Lasers"
@@ -82,6 +88,12 @@
 		android:key="source_GMG"
 		android:title="Game Mastery Guide"
 		android:summary="A guide for master gamers"
+		android:defaultValue="true" />
+
+	<CheckBoxPreference
+		android:key="source_PFU"
+		android:title="Pathfinder Unchained"
+		android:summary="Break all the limits"
 		android:defaultValue="true" />
 
 	<CheckBoxPreference

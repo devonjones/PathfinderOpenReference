@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PathfinderOpenReference1.iml" filepath="$PROJECT_DIR$/PathfinderOpenReference1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acra-4.8.5/acra-4.8.5.iml" filepath="$PROJECT_DIR$/acra-4.8.5/acra-4.8.5.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

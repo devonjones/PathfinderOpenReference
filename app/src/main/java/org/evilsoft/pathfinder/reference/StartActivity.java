@@ -3,7 +3,6 @@ package org.evilsoft.pathfinder.reference;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.utils.LimitedSpaceException;
 
@@ -82,9 +81,6 @@ public class StartActivity extends Activity {
 						(LimitedSpaceException) result.getError(),
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
-								ErrorReporter e = ErrorReporter.getInstance();
-								e.putCustomData("LastClick",
-										"StartActivity.onCreate.onClick: Ok");
 								StartActivity.this.finish();
 							}
 						});

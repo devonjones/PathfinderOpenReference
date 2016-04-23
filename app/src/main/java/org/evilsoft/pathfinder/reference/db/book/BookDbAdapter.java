@@ -227,6 +227,11 @@ public class BookDbAdapter {
 		return new SpellSubschoolAdapter(database, dbName);
 	}
 
+	public TalentAdapter getTalentAdapter() {
+		open();
+		return new TalentAdapter(database, dbName);
+	}
+
 	public TrapAdapter getTrapAdapter() {
 		open();
 		return new TrapAdapter(database, dbName);

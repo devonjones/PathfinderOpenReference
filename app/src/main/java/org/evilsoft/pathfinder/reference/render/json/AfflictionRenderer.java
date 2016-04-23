@@ -23,6 +23,8 @@ public class AfflictionRenderer extends JsonRenderer {
 			if (has_next) {
 				addField(section, "contracted",
 						AfflictionAdapter.AfflictionUtils.getContracted(cursor));
+				addField(section, "addiction",
+						AfflictionAdapter.AfflictionUtils.getAddiction(cursor));
 				addField(section, "save",
 						AfflictionAdapter.AfflictionUtils.getSave(cursor));
 				addField(section, "onset",
@@ -37,6 +39,7 @@ public class AfflictionRenderer extends JsonRenderer {
 				addField(section, "secondary_effect",
 						AfflictionAdapter.AfflictionUtils
 								.getSecondaryEffect(cursor));
+				addField(section, "damage", AfflictionAdapter.AfflictionUtils.getDamage(cursor));
 				addField(section, "cure",
 						AfflictionAdapter.AfflictionUtils.getCure(cursor));
 				addField(section, "cost",

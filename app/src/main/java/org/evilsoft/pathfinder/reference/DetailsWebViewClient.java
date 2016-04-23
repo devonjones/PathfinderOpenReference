@@ -5,7 +5,6 @@ import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
@@ -35,7 +34,6 @@ public class DetailsWebViewClient extends WebViewClient {
 	private FragmentActivity act;
 	private DbWrangler dbWrangler;
 	private TextView title;
-	private ImageButton contentError;
 	private ImageButton star;
 	private String url;
 	private String oldUrl;
@@ -45,12 +43,10 @@ public class DetailsWebViewClient extends WebViewClient {
 	private WebView mWebView;
 	ArrayList<HashMap<String, String>> path;
 
-	public DetailsWebViewClient(Activity act, TextView title, ImageButton star,
-			ImageButton contentError) {
+	public DetailsWebViewClient(Activity act, TextView title, ImageButton star) {
 		this.act = (FragmentActivity) act;
 		this.title = title;
 		this.star = star;
-		this.contentError = contentError;
 		this.isTablet = PathfinderOpenReferenceActivity.isTabletLayout(act);
 		openDb();
 	}
@@ -77,20 +73,16 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	public String mungeUrl(String newUrl) {
 		Log.i(TAG, newUrl);
-		ErrorReporter e = ErrorReporter.getInstance();
 		if (newUrl == null) {
 			return null;
 		}
-		e.putCustomData("LastWebViewUrl", newUrl);
 		if (newUrl.startsWith("http://")) {
 			newUrl = newUrl.replace("http://pfsrd://", "pfsrd://"); // Gingerbread-
 			newUrl = newUrl.replace("http://pfsrd//", "pfsrd://"); // Honeycomb+
 			try {
 				newUrl = URLDecoder.decode(newUrl, "UTF-8");
 			} catch (UnsupportedEncodingException uee) {
-				ErrorReporter.getInstance().putCustomData("Situation",
-						"Unable to decode url: " + newUrl);
-				ErrorReporter.getInstance().handleException(uee);
+				Log.e(TAG, "Unable to decode url: " + newUrl);
 			}
 		}
 		String[] parts = newUrl.split("\\/");
@@ -114,11 +106,6 @@ public class DetailsWebViewClient extends WebViewClient {
 					return renderPfsrd(view, newUrl);
 				} catch (BookNotFoundException bnfe) {
 					Log.e(TAG, "Book not found: " + bnfe.getMessage());
-					ErrorReporter e = ErrorReporter.getInstance();
-					ErrorReporter.getInstance().putCustomData("FailedURI",
-							newUrl);
-					ErrorReporter.getInstance().handleException(bnfe);
-					e.handleException(null);
 				}
 			}
 		}
@@ -179,9 +166,7 @@ public class DetailsWebViewClient extends WebViewClient {
 				}
 			}
 		} catch (Exception e) {
-			ErrorReporter.getInstance().putCustomData("Situation",
-					"Back button failed");
-			ErrorReporter.getInstance().handleException(e);
+			Log.e(TAG, "Back button failed");
 		}
 	}
 
@@ -231,10 +216,6 @@ public class DetailsWebViewClient extends WebViewClient {
 			return html;
 		} catch (BookNotFoundException bnfe) {
 			Log.e(TAG, "Book not found: " + bnfe.getMessage());
-			ErrorReporter e = ErrorReporter.getInstance();
-			ErrorReporter.getInstance().putCustomData("FailedURI", url);
-			ErrorReporter.getInstance().handleException(bnfe);
-			e.handleException(null);
 		}
 		return "";
 	}
@@ -295,16 +276,10 @@ public class DetailsWebViewClient extends WebViewClient {
 					refreshStarButtonState();
 				}
 			});
-			contentError.setOnClickListener(new ContentErrorReporter(this.act,
-					path, title.getText().toString()));
 			this.oldUrl = newUrl;
 			return true;
 		} catch (BookNotFoundException bnfe) {
 			Log.e(TAG, "Book not found: " + bnfe.getMessage());
-			ErrorReporter e = ErrorReporter.getInstance();
-			ErrorReporter.getInstance().putCustomData("FailedURI", url);
-			ErrorReporter.getInstance().handleException(bnfe);
-			e.handleException(null);
 		}
 		return false;
 	}
@@ -382,17 +357,12 @@ public class DetailsWebViewClient extends WebViewClient {
 				}
 			}
 		} catch (Exception e) {
-			ErrorReporter.getInstance().putCustomData("Situation",
-					"Back button failed");
-			ErrorReporter.getInstance().handleException(e);
+			Log.e(TAG, "Back button failed");
 		}
 	}
 
 	public boolean contextMenuSelected(android.view.MenuItem item) {
 		if (path.size() > item.getGroupId()) {
-			ErrorReporter e = ErrorReporter.getInstance();
-			e.putCustomData("LastClick",
-					"DetailsWebViewClient.contextMenuSelected");
 			shouldOverrideUrlLoading(mWebView,
 					path.get(item.getGroupId()).get("url"));
 			return true;

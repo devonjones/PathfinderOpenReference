@@ -33,12 +33,14 @@ public class AfflictionRenderer extends StatBlockRenderer {
 					contracted = subtype;
 				}
 				sb.append(addField("Type", contracted, false));
+				sb.append(addField("Addiction", AfflictionAdapter.AfflictionUtils.getAddiction(cursor)));
 				sb.append(addField("Save", AfflictionAdapter.AfflictionUtils.getSave(cursor)));
 				sb.append(addField("Onset", AfflictionAdapter.AfflictionUtils.getOnset(cursor), false));
 				sb.append(addField("Frequency", AfflictionAdapter.AfflictionUtils.getFrequency(cursor)));
 				sb.append(addField("Effect", AfflictionAdapter.AfflictionUtils.getEffect(cursor)));
 				sb.append(addField("Initial Effect", AfflictionAdapter.AfflictionUtils.getInitialEffect(cursor)));
 				sb.append(addField("Secondary Effect", AfflictionAdapter.AfflictionUtils.getSecondaryEffect(cursor)));
+				sb.append(addField("Damage", AfflictionAdapter.AfflictionUtils.getDamage(cursor)));
 				sb.append(addField("Cure", AfflictionAdapter.AfflictionUtils.getCure(cursor)));
 				sb.append(addField("Cost", AfflictionAdapter.AfflictionUtils.getCost(cursor)));
 			}

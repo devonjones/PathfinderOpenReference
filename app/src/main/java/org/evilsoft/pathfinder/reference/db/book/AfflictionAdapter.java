@@ -21,8 +21,8 @@ public class AfflictionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
 		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT contracted, save, onset, frequency, effect, initial_effect, ");
-		sb.append("  secondary_effect, cure, cost");
+		sb.append("SELECT contracted, addiction, save, onset, frequency, effect, initial_effect, ");
+		sb.append("  secondary_effect, damage, cure, cost");
 		sb.append(" FROM affliction_details");
 		sb.append(" WHERE section_id = ?");
 		String sql = sb.toString();
@@ -30,32 +30,30 @@ public class AfflictionAdapter {
 	}
 
 	public static class AfflictionUtils {
-		public static String getContracted(Cursor cursor) {
-			return cursor.getString(0);
-		}
-		public static String getSave(Cursor cursor) {
-			return cursor.getString(1);
-		}
+		public static String getContracted(Cursor cursor) { return cursor.getString(0); }
+		public static String getAddiction(Cursor cursor) { return cursor.getString(1); }
+		public static String getSave(Cursor cursor) { return cursor.getString(2); }
 		public static String getOnset(Cursor cursor) {
-			return cursor.getString(2);
-		}
-		public static String getFrequency(Cursor cursor) {
 			return cursor.getString(3);
 		}
-		public static String getEffect(Cursor cursor) {
+		public static String getFrequency(Cursor cursor) {
 			return cursor.getString(4);
 		}
+		public static String getEffect(Cursor cursor) { return cursor.getString(5); }
 		public static String getInitialEffect(Cursor cursor) {
-			return cursor.getString(5);
-		}
-		public static String getSecondaryEffect(Cursor cursor) {
 			return cursor.getString(6);
 		}
-		public static String getCure(Cursor cursor) {
+		public static String getSecondaryEffect(Cursor cursor) {
 			return cursor.getString(7);
 		}
-		public static String getCost(Cursor cursor) {
+		public static String getDamage(Cursor cursor) {
 			return cursor.getString(8);
+		}
+		public static String getCure(Cursor cursor) {
+			return cursor.getString(9);
+		}
+		public static String getCost(Cursor cursor) {
+			return cursor.getString(10);
 		}
 	}
 }

@@ -71,6 +71,8 @@ public class CreatureRenderer extends JsonRenderer {
 						CreatureAdapter.CreatureUtils.getHP(cursor));
 				addField(section, "immune",
 						CreatureAdapter.CreatureUtils.getImmune(cursor));
+				addField(section, "concentration",
+						CreatureAdapter.CreatureUtils.getConcentration(cursor));
 				addField(section, "init",
 						CreatureAdapter.CreatureUtils.getInit(cursor));
 				addField(section, "intelligence",

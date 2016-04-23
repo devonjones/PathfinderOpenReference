@@ -1,7 +1,5 @@
 package org.evilsoft.pathfinder.reference;
 
-import org.acra.ErrorReporter;
-
 import android.annotation.SuppressLint;
 import android.graphics.Paint;
 import android.os.Build;
@@ -32,15 +30,10 @@ public class DetailsViewFragment extends SherlockFragment {
 		registerForContextMenu(title);
 		title.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				ErrorReporter e = ErrorReporter.getInstance();
-				e.putCustomData("LastClick",
-						"DetailsViewFragment.onCreateView.onClick");
 				DetailsViewFragment.this.getActivity().openContextMenu(v);
 			}
 		});
 		ImageButton star = (ImageButton) v.findViewById(R.id.display_star);
-		ImageButton contentError = (ImageButton) v
-				.findViewById(R.id.content_error);
 		viewer = (WebView) v.findViewById(R.id.display_webview);
 		viewer.getSettings().setJavaScriptEnabled(true);
 		if (Build.VERSION.SDK_INT >= 11 && Build.VERSION.SDK_INT < 16) {
@@ -49,8 +42,7 @@ public class DetailsViewFragment extends SherlockFragment {
 			// the actual webview.
 			viewer.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 		}
-		client = new DetailsWebViewClient(getActivity(), title, star,
-				contentError);
+		client = new DetailsWebViewClient(getActivity(), title, star);
 		if (savedInstanceState != null
 				&& savedInstanceState.containsKey("progression")) {
 			client.setProgressToRestore(savedInstanceState

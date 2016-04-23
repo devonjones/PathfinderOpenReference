@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.book.BookDbAdapter;
 import org.evilsoft.pathfinder.reference.db.book.FullSectionAdapter;
@@ -32,11 +31,13 @@ import org.evilsoft.pathfinder.reference.render.html.SettlementRenderer;
 import org.evilsoft.pathfinder.reference.render.html.SkillRenderer;
 import org.evilsoft.pathfinder.reference.render.html.SpellRenderer;
 import org.evilsoft.pathfinder.reference.render.html.TableRenderer;
+import org.evilsoft.pathfinder.reference.render.html.TalentRenderer;
 import org.evilsoft.pathfinder.reference.render.html.TrapRenderer;
 import org.evilsoft.pathfinder.reference.render.html.VehicleRenderer;
 
 import android.database.Cursor;
 import android.database.CursorIndexOutOfBoundsException;
+import android.util.Log;
 import android.widget.TextView;
 
 public class HtmlRenderFarm {
@@ -47,6 +48,7 @@ public class HtmlRenderFarm {
 	private boolean isTablet;
 	private boolean showToc;
 	private Integer noRender = null;
+	private static final String TAG = "HtmlRenderFarm";
 
 	public HtmlRenderFarm(DbWrangler dbWrangler, BookDbAdapter bookDbAdapter,
 			TextView title, boolean isTablet, boolean showToc) {
@@ -106,6 +108,8 @@ public class HtmlRenderFarm {
 			return new SpellRenderer(dbWrangler, bookDbAdapter);
 		} else if (type.equals("table")) {
 			return new TableRenderer();
+		} else if (type.equals("talent")) {
+			return new TalentRenderer(bookDbAdapter);
 		} else if (type.equals("trap")) {
 			return new TrapRenderer(bookDbAdapter);
 		} else if (type.equals("vehicle")) {
@@ -170,8 +174,7 @@ public class HtmlRenderFarm {
 				top = false;
 			}
 		} catch (CursorIndexOutOfBoundsException cioobe) {
-			ErrorReporter.getInstance().putCustomData("FailedURI", inUrl);
-			ErrorReporter.getInstance().handleException(cioobe);
+			Log.i(TAG, "FailedURI " + inUrl);
 		}
 		sb.append("</body>");
 		if (wrapHeaderFooter) {

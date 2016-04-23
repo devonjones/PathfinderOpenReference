@@ -23,7 +23,7 @@ public class CreatureAdapter {
 		StringBuffer sb = new StringBuffer();
 		sb.append("SELECT sex, super_race, level, cr, xp, alignment, size, creature_type, creature_subtype, init,");
 		sb.append("  senses, aura,");
-		sb.append("  ac, hp, fortitude, reflex, will, defensive_abilities, dr, resist, immune, sr, weaknesses,");
+		sb.append("  ac, hp, fortitude, reflex, will, defensive_abilities, dr, resist, immune, concentration, sr, weaknesses,");
 		sb.append("  speed, melee, ranged, space, reach, special_attacks,");
 		sb.append("  strength, dexterity, constitution, intelligence, wisdom, charisma,");
 		sb.append("  base_attack, cmb, cmd, feats, skills, racial_modifiers, languages, special_qualities,");
@@ -121,128 +121,132 @@ public class CreatureAdapter {
 			return cursor.getString(20);
 		}
 
-		public static String getSR(Cursor cursor) {
+		public static String getConcentration(Cursor cursor) {
 			return cursor.getString(21);
 		}
 
-		public static String getWeaknesses(Cursor cursor) {
+		public static String getSR(Cursor cursor) {
 			return cursor.getString(22);
 		}
 
-		public static String getSpeed(Cursor cursor) {
+		public static String getWeaknesses(Cursor cursor) {
 			return cursor.getString(23);
 		}
 
-		public static String getMelee(Cursor cursor) {
+		public static String getSpeed(Cursor cursor) {
 			return cursor.getString(24);
 		}
 
-		public static String getRanged(Cursor cursor) {
+		public static String getMelee(Cursor cursor) {
 			return cursor.getString(25);
 		}
 
-		public static String getSpace(Cursor cursor) {
+		public static String getRanged(Cursor cursor) {
 			return cursor.getString(26);
 		}
 
-		public static String getReach(Cursor cursor) {
+		public static String getSpace(Cursor cursor) {
 			return cursor.getString(27);
 		}
 
-		public static String getSpecialAttacks(Cursor cursor) {
+		public static String getReach(Cursor cursor) {
 			return cursor.getString(28);
 		}
 
-		public static String getStrength(Cursor cursor) {
+		public static String getSpecialAttacks(Cursor cursor) {
 			return cursor.getString(29);
 		}
 
-		public static String getDexterity(Cursor cursor) {
+		public static String getStrength(Cursor cursor) {
 			return cursor.getString(30);
 		}
 
-		public static String getConstitution(Cursor cursor) {
+		public static String getDexterity(Cursor cursor) {
 			return cursor.getString(31);
 		}
 
-		public static String getIntelligence(Cursor cursor) {
+		public static String getConstitution(Cursor cursor) {
 			return cursor.getString(32);
 		}
 
-		public static String getWisdom(Cursor cursor) {
+		public static String getIntelligence(Cursor cursor) {
 			return cursor.getString(33);
 		}
 
-		public static String getCharisma(Cursor cursor) {
+		public static String getWisdom(Cursor cursor) {
 			return cursor.getString(34);
 		}
 
-		public static String getBaseAttack(Cursor cursor) {
+		public static String getCharisma(Cursor cursor) {
 			return cursor.getString(35);
 		}
 
-		public static String getCMB(Cursor cursor) {
+		public static String getBaseAttack(Cursor cursor) {
 			return cursor.getString(36);
 		}
 
-		public static String getCMD(Cursor cursor) {
+		public static String getCMB(Cursor cursor) {
 			return cursor.getString(37);
 		}
 
-		public static String getFeats(Cursor cursor) {
+		public static String getCMD(Cursor cursor) {
 			return cursor.getString(38);
 		}
 
-		public static String getSkills(Cursor cursor) {
+		public static String getFeats(Cursor cursor) {
 			return cursor.getString(39);
 		}
 
-		public static String getRacialModifiers(Cursor cursor) {
+		public static String getSkills(Cursor cursor) {
 			return cursor.getString(40);
 		}
 
-		public static String getLanguages(Cursor cursor) {
+		public static String getRacialModifiers(Cursor cursor) {
 			return cursor.getString(41);
 		}
 
-		public static String getSpecialQualities(Cursor cursor) {
+		public static String getLanguages(Cursor cursor) {
 			return cursor.getString(42);
 		}
 
-		public static String getGear(Cursor cursor) {
+		public static String getSpecialQualities(Cursor cursor) {
 			return cursor.getString(43);
 		}
 
-		public static String getCombatGear(Cursor cursor) {
+		public static String getGear(Cursor cursor) {
 			return cursor.getString(44);
 		}
 
-		public static String getOtherGear(Cursor cursor) {
+		public static String getCombatGear(Cursor cursor) {
 			return cursor.getString(45);
 		}
 
-		public static String getBoon(Cursor cursor) {
+		public static String getOtherGear(Cursor cursor) {
 			return cursor.getString(46);
 		}
 
-		public static String getEnvironment(Cursor cursor) {
+		public static String getBoon(Cursor cursor) {
 			return cursor.getString(47);
 		}
 
-		public static String getOrganization(Cursor cursor) {
+		public static String getEnvironment(Cursor cursor) {
 			return cursor.getString(48);
 		}
 
-		public static String getTreasure(Cursor cursor) {
+		public static String getOrganization(Cursor cursor) {
 			return cursor.getString(49);
 		}
 
-		public static String getHitDice(Cursor cursor) {
+		public static String getTreasure(Cursor cursor) {
 			return cursor.getString(50);
 		}
 
-		public static String getNaturalArmor(Cursor cursor) {
+		public static String getHitDice(Cursor cursor) {
 			return cursor.getString(51);
+		}
+
+		public static String getNaturalArmor(Cursor cursor) {
+			return cursor.getString(52);
 		}
 
 		public static String getBreathWeapon(Cursor cursor) {

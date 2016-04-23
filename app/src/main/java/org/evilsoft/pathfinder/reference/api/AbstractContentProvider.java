@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
 
-import org.acra.ErrorReporter;
 import org.apache.commons.io.IOUtils;
 import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
 import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
@@ -121,11 +120,6 @@ public abstract class AbstractContentProvider extends ContentProvider {
 							false));
 				} catch (BookNotFoundException bnfe) {
 					Log.e(TAG, "Book not found: " + bnfe.getMessage());
-					ErrorReporter e = ErrorReporter.getInstance();
-					ErrorReporter.getInstance().putCustomData("FailedURI",
-							newUrl);
-					ErrorReporter.getInstance().handleException(bnfe);
-					e.handleException(null);
 				}
 			}
 		} finally {
@@ -168,21 +162,11 @@ public abstract class AbstractContentProvider extends ContentProvider {
 					}
 				} catch (BookNotFoundException bnfe) {
 					Log.e(TAG, "Book not found: " + bnfe.getMessage());
-					ErrorReporter e = ErrorReporter.getInstance();
-					ErrorReporter.getInstance().putCustomData("FailedURI",
-							newUrl);
-					ErrorReporter.getInstance().handleException(bnfe);
-					e.handleException(null);
 				} catch (JSONException je) {
 					// TODO Auto-generated catch block
 					Log.e(TAG,
 							"Section failed to render as JSON "
 									+ je.getMessage());
-					ErrorReporter e = ErrorReporter.getInstance();
-					ErrorReporter.getInstance().putCustomData("FailedURI",
-							newUrl);
-					ErrorReporter.getInstance().handleException(je);
-					e.handleException(null);
 				}
 			}
 		} finally {

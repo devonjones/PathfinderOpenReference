@@ -1,6 +1,5 @@
 package org.evilsoft.pathfinder.reference;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.list.UrlListItem;
 
 import android.content.Intent;
@@ -20,13 +19,6 @@ public class DetailsListFragment extends AbstractViewListFragment {
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-		StringBuffer sb = new StringBuffer();
-		sb.append("DetailsListFragment.onItemClick: position:");
-		sb.append(position);
-		sb.append(", id:");
-		sb.append(id);
-		ErrorReporter e = ErrorReporter.getInstance();
-		e.putCustomData("LastClick", sb.toString());
 		if (empty) {
 			return;
 		}

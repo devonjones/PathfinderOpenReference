@@ -52,6 +52,9 @@ public class FilterPreferenceManager {
 		if (preferences.getBoolean("source_MA", true) == false) {
 			sourceList.add("Mythic Adventures");
 		}
+		if (preferences.getBoolean("source_OA", true) == false) {
+			sourceList.add("Occult Adventures");
+		}
 		if (preferences.getBoolean("source_TG", true) == false) {
 			sourceList.add("Technology Guide");
 		}
@@ -69,6 +72,9 @@ public class FilterPreferenceManager {
 		}
 		if (preferences.getBoolean("source_GMG", true) == false) {
 			sourceList.add("Game Mastery Guide");
+		}
+		if (preferences.getBoolean("source_PFU", true) == false) {
+			sourceList.add("Pathfinder Unchained");
 		}
 		if (preferences.getBoolean("source_NPC", true) == false) {
 			sourceList.add("NPC Codex");

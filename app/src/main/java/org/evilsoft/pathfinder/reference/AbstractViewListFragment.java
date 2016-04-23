@@ -3,7 +3,6 @@ package org.evilsoft.pathfinder.reference;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.db.user.CollectionAdapter;
@@ -109,8 +108,6 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 			return;
 		}
 		Log.i(TAG, newUrl);
-		ErrorReporter e = ErrorReporter.getInstance();
-		e.putCustomData("LastSectionViewUrl", newUrl);
 		this.getListView().setOnItemClickListener(this);
 		this.getListView().setCacheColorHint(Color.WHITE);
 		currentUrl = newUrl;
@@ -180,10 +177,6 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 					.getApplicationContext(), curs);
 		} catch (BookNotFoundException bnfe) {
 			Log.e(TAG, "Book not found: " + bnfe.getMessage());
-			ErrorReporter e = ErrorReporter.getInstance();
-			ErrorReporter.getInstance().putCustomData("FailedURI", url);
-			ErrorReporter.getInstance().handleException(bnfe);
-			e.handleException(null);
 		}
 	}
 
@@ -287,8 +280,6 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 						StringBuffer sb = new StringBuffer();
 						sb.append("SectionViewFragment.showNewCollectionDialog.onClick: OK: which:");
 						sb.append(which);
-						ErrorReporter e = ErrorReporter.getInstance();
-						e.putCustomData("LastClick", sb.toString());
 						CollectionAdapter ca = new CollectionAdapter(dbWrangler
 								.getUserDbAdapter());
 						if (ca.addCollection(edit.getText().toString())) {
@@ -307,9 +298,6 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog,
 									int which) {
-								ErrorReporter e = ErrorReporter.getInstance();
-								e.putCustomData("LastClick",
-										"SectionViewFragment.showNewCollectionDialog.onClick: Cancel");
 								refreshCollection();
 							}
 						}).show();

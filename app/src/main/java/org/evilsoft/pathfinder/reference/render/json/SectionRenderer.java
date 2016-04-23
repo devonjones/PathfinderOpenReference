@@ -98,6 +98,8 @@ public class SectionRenderer {
 			return new SkillRenderer(bookDbAdapter);
 		} else if (type.equals("spell")) {
 			return new SpellRenderer(bookDbAdapter);
+		} else if (type.equals("talent")) {
+			return new TalentRenderer(bookDbAdapter);
 		} else if (type.equals("trap")) {
 			return new TrapRenderer(bookDbAdapter);
 		} else if (type.equals("vehicle")) {

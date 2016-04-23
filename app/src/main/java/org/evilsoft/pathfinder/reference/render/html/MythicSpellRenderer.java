@@ -2,7 +2,6 @@ package org.evilsoft.pathfinder.reference.render.html;
 
 import java.util.HashMap;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.HtmlRenderFarm;
 import org.evilsoft.pathfinder.reference.db.BookNotFoundException;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
@@ -125,11 +124,6 @@ public class MythicSpellRenderer extends HtmlRenderer {
 				}
 			} catch (BookNotFoundException bnfe) {
 				Log.e(TAG, "Book not found: " + bnfe.getMessage());
-				ErrorReporter e = ErrorReporter.getInstance();
-				ErrorReporter.getInstance()
-						.putCustomData("FailedURI", spellUrl);
-				ErrorReporter.getInstance().handleException(bnfe);
-				e.handleException(null);
 			}
 		}
 		return sb.toString();

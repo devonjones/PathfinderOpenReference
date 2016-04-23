@@ -3,7 +3,6 @@ package org.evilsoft.pathfinder.reference.db.user;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.acra.ErrorReporter;
 import org.evilsoft.pathfinder.reference.db.BaseDbHelper;
 import org.evilsoft.pathfinder.reference.db.DbWrangler;
 import org.evilsoft.pathfinder.reference.utils.UrlAliaser;
@@ -40,9 +39,6 @@ public class UserDbAdapter {
 						.getIndexGroupAdapter().fetchByUrl(aliasedUrl);
 				try {
 					if (cursor.getCount() == 0) {
-						ErrorReporter.getInstance().putCustomData("Situation",
-								"URL does not exist: " + url);
-						ErrorReporter.getInstance().handleException(null);
 					} else if (!aliasedUrl.equals(url)) {
 						updateBookmarkUrl(id, aliasedUrl);
 					}
