@@ -212,7 +212,7 @@ public class HtmlRenderFarm {
 			return true;
 		}
 		HtmlRenderer prev = renderPath.get(renderPath.size() - 1);
-		return prev.suppressNextTitle == true;
+		return prev.suppressNextTitle;
 	}
 
 	public String renderFooter() {

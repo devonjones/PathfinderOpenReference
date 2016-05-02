@@ -53,7 +53,7 @@ public class DbWrangler {
 		}
 		checkIndexDb(current);
 		checkBookDbs(current);
-		if (current == false) {
+		if (!current) {
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putInt(CURRENT_VERSION, VERSION);
 			editor.commit();

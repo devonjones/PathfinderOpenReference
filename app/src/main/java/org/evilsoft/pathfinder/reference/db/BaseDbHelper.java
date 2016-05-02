@@ -75,7 +75,7 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 		}
 		if (retry) {
 			boolean dbExists = checkDatabase();
-			if (dbExists == false) {
+			if (!dbExists) {
 				buildDatabase(false);
 			}
 		}

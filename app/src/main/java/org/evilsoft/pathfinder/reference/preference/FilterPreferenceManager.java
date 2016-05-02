@@ -28,58 +28,58 @@ public class FilterPreferenceManager {
 		SharedPreferences preferences = PreferenceManager
 				.getDefaultSharedPreferences(context);
 
-		if (preferences.getBoolean("source_APG", true) == false) {
+		if (!preferences.getBoolean("source_APG", true)) {
 			sourceList.add("Advanced Player's Guide");
 		}
-		if (preferences.getBoolean("source_ACG", true) == false) {
+		if (!preferences.getBoolean("source_ACG", true)) {
 			sourceList.add("Advanced Class Guide");
 		}
-		if (preferences.getBoolean("source_ARG", true) == false) {
+		if (!preferences.getBoolean("source_ARG", true)) {
 			sourceList.add("Advanced Race Guide");
 		}
-		if (preferences.getBoolean("source_UCA", true) == false) {
+		if (!preferences.getBoolean("source_UCA", true)) {
 			sourceList.add("Ultimate Campaign");
 		}
-		if (preferences.getBoolean("source_UC", true) == false) {
+		if (!preferences.getBoolean("source_UC", true)) {
 			sourceList.add("Ultimate Combat");
 		}
-		if (preferences.getBoolean("source_UE", true) == false) {
+		if (!preferences.getBoolean("source_UE", true)) {
 			sourceList.add("Ultimate Equipment");
 		}
-		if (preferences.getBoolean("source_UM", true) == false) {
+		if (!preferences.getBoolean("source_UM", true)) {
 			sourceList.add("Ultimate Magic");
 		}
-		if (preferences.getBoolean("source_MA", true) == false) {
+		if (!preferences.getBoolean("source_MA", true)) {
 			sourceList.add("Mythic Adventures");
 		}
-		if (preferences.getBoolean("source_OA", true) == false) {
+		if (!preferences.getBoolean("source_OA", true)) {
 			sourceList.add("Occult Adventures");
 		}
-		if (preferences.getBoolean("source_TG", true) == false) {
+		if (!preferences.getBoolean("source_TG", true)) {
 			sourceList.add("Technology Guide");
 		}
-		if (preferences.getBoolean("source_B1", true) == false) {
+		if (!preferences.getBoolean("source_B1", true)) {
 			sourceList.add("Bestiary");
 		}
-		if (preferences.getBoolean("source_B2", true) == false) {
+		if (!preferences.getBoolean("source_B2", true)) {
 			sourceList.add("Bestiary 2");
 		}
-		if (preferences.getBoolean("source_B3", true) == false) {
+		if (!preferences.getBoolean("source_B3", true)) {
 			sourceList.add("Bestiary 3");
 		}
-		if (preferences.getBoolean("source_B4", true) == false) {
+		if (!preferences.getBoolean("source_B4", true)) {
 			sourceList.add("Bestiary 4");
 		}
-		if (preferences.getBoolean("source_GMG", true) == false) {
+		if (!preferences.getBoolean("source_GMG", true)) {
 			sourceList.add("Game Mastery Guide");
 		}
-		if (preferences.getBoolean("source_PFU", true) == false) {
+		if (!preferences.getBoolean("source_PFU", true)) {
 			sourceList.add("Pathfinder Unchained");
 		}
-		if (preferences.getBoolean("source_NPC", true) == false) {
+		if (!preferences.getBoolean("source_NPC", true)) {
 			sourceList.add("NPC Codex");
 		}
-		if (preferences.getBoolean("source_MC", true) == false) {
+		if (!preferences.getBoolean("source_MC", true)) {
 			sourceList.add("Monster Codex");
 		}
 		if (sourceList.size() > 0) {
