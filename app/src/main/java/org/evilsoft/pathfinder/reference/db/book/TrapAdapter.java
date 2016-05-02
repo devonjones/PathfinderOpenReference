@@ -29,6 +29,9 @@ public class TrapAdapter {
 	}
 
 	public static class TrapUtils {
+		private TrapUtils() {
+		}
+
 		public static String getCr(Cursor cursor) {
 			return cursor.getString(0);
 		}

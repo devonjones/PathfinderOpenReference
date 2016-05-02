@@ -29,6 +29,9 @@ public class SpellDescriptorAdapter {
 	}
 
 	public static class SpellDescriptorUtils {
+		private SpellDescriptorUtils() {
+		}
+
 		public static String getDescriptor(Cursor cursor) {
 			return cursor.getString(0);
 		}

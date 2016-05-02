@@ -29,6 +29,9 @@ public class AbilityAdapter {
 	}
 
 	public static class AbilityUtils {
+		private AbilityUtils() {
+		}
+
 		public static String getAbilityType(Cursor cursor) {
 			return cursor.getString(0);
 		}

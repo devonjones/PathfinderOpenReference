@@ -29,6 +29,9 @@ public class ItemAdapter {
 	}
 
 	public static class ItemUtils {
+		private ItemUtils() {
+		}
+
 		public static String getAura(Cursor cursor) {
 			return cursor.getString(0);
 		}
@@ -63,6 +66,9 @@ public class ItemAdapter {
 	}
 
 	public static class ItemMiscUtils {
+		private ItemMiscUtils() {
+		}
+
 		public static String getField(Cursor cursor) {
 			return cursor.getString(0);
 		}

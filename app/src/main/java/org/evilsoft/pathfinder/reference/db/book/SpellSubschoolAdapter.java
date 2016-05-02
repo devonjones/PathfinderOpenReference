@@ -29,6 +29,9 @@ public class SpellSubschoolAdapter {
 	}
 
 	public static class SpellSubschoolUtils {
+		private SpellSubschoolUtils() {
+		}
+
 		public static String getSubschool(Cursor cursor) {
 			return cursor.getString(0);
 		}

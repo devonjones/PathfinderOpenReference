@@ -30,6 +30,9 @@ public class AfflictionAdapter {
 	}
 
 	public static class AfflictionUtils {
+		private AfflictionUtils() {
+		}
+
 		public static String getContracted(Cursor cursor) { return cursor.getString(0); }
 		public static String getAddiction(Cursor cursor) { return cursor.getString(1); }
 		public static String getSave(Cursor cursor) { return cursor.getString(2); }

@@ -48,6 +48,9 @@ public class MenuAdapter {
 	}
 	
 	public static class MenuUtils {
+		private MenuUtils() {
+		}
+
 		public static MenuItem genMenuItem(Cursor cursor) {
 			MenuItem item = new MenuItem();
 			item.setId(getMenuId(cursor));

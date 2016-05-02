@@ -33,6 +33,9 @@ public class BooksAdapter {
 	}
 
 	public static class BookUtils {
+		private BookUtils() {
+		}
+
 		public static String getBookDb(Cursor cursor) {
 			boolean hasnext = cursor.moveToFirst();
 			if(hasnext) {

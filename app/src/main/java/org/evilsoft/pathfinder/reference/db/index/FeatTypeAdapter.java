@@ -33,6 +33,9 @@ public class FeatTypeAdapter {
 	}
 	
 	public static class FeatTypeUtils {
+		private FeatTypeUtils() {
+		}
+
 		public static String getFeatType(Cursor cursor) {
 			return cursor.getString(0);
 		}

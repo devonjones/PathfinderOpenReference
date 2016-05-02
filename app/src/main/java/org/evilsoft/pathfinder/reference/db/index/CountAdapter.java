@@ -58,6 +58,9 @@ public class CountAdapter {
 	}
 
 	public static class CountUtils {
+		private CountUtils() {
+		}
+
 		public static Integer getCount(Cursor cursor) {
 			return cursor.getInt(0);
 		}

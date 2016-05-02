@@ -31,6 +31,9 @@ public class KingdomResourceAdapter {
 	}
 
 	public static class KingdomResourceUtils {
+		private KingdomResourceUtils() {
+		}
+
 		public static String getBp(Cursor cursor) {
 			return cursor.getString(0);
 		}

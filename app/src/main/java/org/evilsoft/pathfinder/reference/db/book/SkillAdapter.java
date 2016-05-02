@@ -29,6 +29,9 @@ public class SkillAdapter {
 	}
 
 	public static class SkillUtils {
+		private SkillUtils() {
+		}
+
 		public static String getAttribute(Cursor cursor) {
 			return cursor.getString(0);
 		}

@@ -31,6 +31,9 @@ public class AnimalCompanionAdapter {
 	}
 
 	public static class AnimalCompanionUtils {
+		private AnimalCompanionUtils() {
+		}
+
 		public static String getAc(Cursor cursor) {
 			return cursor.getString(0);
 		}

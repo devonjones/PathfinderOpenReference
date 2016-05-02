@@ -32,6 +32,9 @@ public class FullSectionAdapter {
 	}
 
 	public static class SectionUtils {
+		private SectionUtils() {
+		}
+
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}

@@ -32,6 +32,9 @@ public class SettlementAdapter {
 	}
 
 	public static class SettlementUtils {
+		private SettlementUtils() {
+		}
+
 		public static String getAlignment(Cursor cursor) {
 			return cursor.getString(0);
 		}

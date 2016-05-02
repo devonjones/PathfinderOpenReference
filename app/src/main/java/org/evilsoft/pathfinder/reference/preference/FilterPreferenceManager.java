@@ -11,8 +11,11 @@ import android.preference.PreferenceManager;
 
 public class FilterPreferenceManager {
 
+	private FilterPreferenceManager() {
+	}
+
 	public static String getSourceFilter(Context context, List<String> args,
-			String conjunction) {
+					String conjunction) {
 		return getSourceFilter(context, args, conjunction, null);
 	}
 

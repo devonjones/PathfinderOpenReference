@@ -108,6 +108,9 @@ public class SearchAdapter {
 	}
 
 	public static class SearchUtils {
+		private SearchUtils() {
+		}
+
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}

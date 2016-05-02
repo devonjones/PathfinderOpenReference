@@ -30,6 +30,9 @@ public class ResourceAdapter {
 	}
 
 	public static class ResourceUtils {
+		private ResourceUtils() {
+		}
+
 		public static String getBenefit(Cursor cursor) {
 			return cursor.getString(0);
 		}

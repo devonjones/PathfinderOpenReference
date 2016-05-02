@@ -33,6 +33,9 @@ public class SectionIndexGroupAdapter {
 	}
 
 	public static class SectionGroupIndexUtils {
+		private SectionGroupIndexUtils() {
+		}
+
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}

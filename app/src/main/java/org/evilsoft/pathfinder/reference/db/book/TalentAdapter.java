@@ -30,6 +30,9 @@ public class TalentAdapter {
 	}
 
 	public static class TalentUtils {
+		private TalentUtils() {
+		}
+
 		public static String getElement(Cursor cursor) { return cursor.getString(0); }
 		public static String getTalentType(Cursor cursor) { return cursor.getString(1); }
 		public static String getBlastType(Cursor cursor) { return cursor.getString(2); }
