@@ -32,7 +32,7 @@ public class SpellRenderer extends HtmlRenderer {
 
 	@Override
 	public String renderDetails() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(renderSpellDetails(sectionId));
 		sb.append("<B>Source: </B>");
 		sb.append(source);
@@ -48,7 +48,7 @@ public class SpellRenderer extends HtmlRenderer {
 	private String renderSpellLevels(Integer sectionId) {
 		Cursor cursor = bookDbAdapter.getSpellListAdapter().getSpellLists(
 				sectionId);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		try {
 			boolean has_next = cursor.moveToFirst();
 			String semi = "";
@@ -71,7 +71,7 @@ public class SpellRenderer extends HtmlRenderer {
 		Cursor cursor = bookDbAdapter.getSpellDetailAdapter()
 				.fetchSpellDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				String school = SpellDetailAdapter.SpellDetailUtils
@@ -141,7 +141,7 @@ public class SpellRenderer extends HtmlRenderer {
 		Cursor cursor = bookDbAdapter.getSpellEffectAdapter()
 				.fetchSpellEffects(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			while (has_next) {
 				String name = SpellEffectAdapter.SpellEffectUtils
@@ -164,7 +164,7 @@ public class SpellRenderer extends HtmlRenderer {
 
 	@Override
 	public String renderFooter() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		Cursor cursor = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
 				.fetchBySpellSource(name);
 		try {

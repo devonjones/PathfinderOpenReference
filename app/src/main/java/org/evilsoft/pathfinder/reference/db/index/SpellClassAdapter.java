@@ -21,7 +21,7 @@ public class SpellClassAdapter {
 
 	public Cursor fetchSpellClasses() {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT DISTINCT sli.name");
 		sb.append(" FROM spell_list_index sli");
 		sb.append("  INNER JOIN central_index ci");

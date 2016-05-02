@@ -21,7 +21,7 @@ public class TalentRenderer extends StatBlockRenderer {
 	public String renderDetails() {
 		Cursor cursor = bookDbAdapter.getTalentAdapter().getTalentDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append(addField("Element", TalentAdapter.TalentUtils.getElement(cursor), false));

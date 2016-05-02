@@ -24,7 +24,7 @@ public class IndexGroupAdapter {
 	}
 
 	private String selectStatement(String addedColumns) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT i.index_id, i.section_id, i.parent_id, i.parent_name,");
 		sb.append("  i.database, i.source, i.type, i.subtype, i.name, i.search_name,");
 		sb.append("  i.description, i.url,");
@@ -41,7 +41,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchById(Integer id) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.index_id = ?");
 		args.add(id.toString());
@@ -54,7 +54,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchByUrl(String url) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url = ?");
 		args.add(url);
@@ -67,7 +67,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchByMatchUrl(String url) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.url LIKE ?");
 		args.add(url);
@@ -83,7 +83,7 @@ public class IndexGroupAdapter {
 			type = null;
 		}
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		String where = "WHERE";
 		if (type != null) {
@@ -108,7 +108,7 @@ public class IndexGroupAdapter {
 			type = null;
 		}
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		String where = "WHERE";
 		if (name != null) {
@@ -135,7 +135,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchByCreatureType(String creatureType) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.type = 'creature'");
 		sb.append("  AND (i.subtype != 'npc'");
@@ -153,7 +153,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchByFeatType(String featType) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		if (featType != null) {
 			sb.append("  INNER JOIN feat_type_index fti");
@@ -171,7 +171,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchBySpellClass(String spellClass) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement(", sl.level, sl.name"));
 		sb.append("  INNER JOIN spell_list_index sl");
 		sb.append("   ON i.index_id = sl.index_id");
@@ -187,7 +187,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchBySpellSource(String spellSource) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		sb.append(" WHERE i.spell_source = ?");
 		sb.append("  AND i.type = 'mythic_spell'");
@@ -201,7 +201,7 @@ public class IndexGroupAdapter {
 
 	public Cursor fetchByParentUrl(String parentUrl) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(selectStatement());
 		sb.append("  INNER JOIN central_index p");
 		sb.append("   ON i.parent_id = p.section_id");

@@ -32,7 +32,7 @@ public class SearchListAdapter extends DisplayListAdapter {
 		TextView parent_name = (TextView) V.findViewById(R.id.search_list_parent);
 		parent_name.setText("From: " + SearchAdapter.SearchUtils.getParentName(c));
 		TextView type = (TextView) V.findViewById(R.id.search_list_misc);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		String sectionType = SearchAdapter.SearchUtils.getType(c);
 		String sectionSubtype = SearchAdapter.SearchUtils.getSubtype(c);
 		sb.append("(");

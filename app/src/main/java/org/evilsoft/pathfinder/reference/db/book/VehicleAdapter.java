@@ -20,7 +20,7 @@ public class VehicleAdapter {
 	public Cursor getVehicleDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT size, vehicle_type, squares, cost, ac, hardness, hp, base_save,");
 		sb.append("  maximum_speed, acceleration, cmb, cmd, ramming_damage, propulsion,");
 		sb.append("  driving_check, forward_facing, driving_device, driving_space, decks,");

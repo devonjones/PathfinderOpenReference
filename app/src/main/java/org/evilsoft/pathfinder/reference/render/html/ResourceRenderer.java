@@ -34,7 +34,7 @@ public class ResourceRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getResourceAdapter().getResourceDetails(
 				sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append(addField("Wage",
@@ -52,7 +52,7 @@ public class ResourceRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getResourceAdapter().getResourceDetails(
 				sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append(addField("Create",
@@ -70,7 +70,7 @@ public class ResourceRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getResourceAdapter().getResourceDetails(
 				sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append(addField("Create",
@@ -88,7 +88,7 @@ public class ResourceRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getResourceAdapter().getResourceDetails(
 				sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append(addField("Earnings",

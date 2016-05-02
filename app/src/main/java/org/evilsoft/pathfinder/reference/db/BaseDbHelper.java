@@ -276,7 +276,7 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 				}
 			}
 		}
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < localColumns.size(); i++) {
 			if (i > 0) {
 				sb.append(", ");

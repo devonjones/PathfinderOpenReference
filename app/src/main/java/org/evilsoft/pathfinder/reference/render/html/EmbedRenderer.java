@@ -42,7 +42,7 @@ public class EmbedRenderer extends HtmlRenderer {
 
 	@Override
 	public String renderBody() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if ("spell_list".equals(this.subtype)) {
 			sb.append(renderSpellList());
 		}
@@ -50,7 +50,7 @@ public class EmbedRenderer extends HtmlRenderer {
 	}
 
 	public String renderSpellList() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		SpellListAdapter sla = dbWrangler.getIndexDbAdapter()
 				.getSpellListAdapter();
 		Cursor cursor = sla.fetchClassSpells(capitalizeString(this.desc));

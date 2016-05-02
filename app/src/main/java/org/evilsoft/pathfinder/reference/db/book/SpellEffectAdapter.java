@@ -20,7 +20,7 @@ public class SpellEffectAdapter {
 	public Cursor fetchSpellEffects(Integer section_id) {
 		List<String> args = new ArrayList<String>();
 		args.add(section_id.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT name, description");
 		sb.append(" FROM spell_effects");
 		sb.append(" WHERE section_id = ?");

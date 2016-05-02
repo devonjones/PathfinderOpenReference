@@ -6,7 +6,7 @@ public abstract class StatBlockRenderer extends HtmlRenderer {
 			return "";
 		}
 
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (title != null) {
 			sb.append("\n<p class='stat-block-title'><a href='");
 			sb.append(newUri);
@@ -18,7 +18,7 @@ public abstract class StatBlockRenderer extends HtmlRenderer {
 	}
 
 	public String renderStatBlockBreaker(String title) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (title != null) {
 			sb.append("\n<p class='stat-block-breaker'>");
 			sb.append(title);

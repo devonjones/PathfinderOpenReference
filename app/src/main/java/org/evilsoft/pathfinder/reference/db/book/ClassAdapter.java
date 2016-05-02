@@ -20,7 +20,7 @@ public class ClassAdapter {
 	public Cursor fetchClassDetails(Integer section_id) {
 		List<String> args = new ArrayList<String>();
 		args.add(section_id.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT alignment, hit_die");
 		sb.append(" FROM class_details");
 		sb.append(" WHERE section_id = ?");

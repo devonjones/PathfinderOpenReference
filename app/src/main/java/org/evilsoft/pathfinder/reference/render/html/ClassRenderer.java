@@ -19,7 +19,7 @@ public class ClassRenderer extends HtmlRenderer {
 
 	@Override
 	public String renderFooter() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		Cursor cursor = bookDbAdapter.getClassAdapter().fetchClassDetails(sectionId);
 		try {
 			sb.append("<B>Source: </B>");

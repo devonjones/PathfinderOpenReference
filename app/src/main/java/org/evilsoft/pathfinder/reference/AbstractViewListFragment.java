@@ -277,7 +277,7 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 				.setView(edit)
 				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
-						StringBuffer sb = new StringBuffer();
+						StringBuilder sb = new StringBuilder();
 						sb.append("SectionViewFragment.showNewCollectionDialog.onClick: OK: which:");
 						sb.append(which);
 						CollectionAdapter ca = new CollectionAdapter(dbWrangler

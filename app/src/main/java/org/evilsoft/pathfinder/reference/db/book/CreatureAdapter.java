@@ -20,7 +20,7 @@ public class CreatureAdapter {
 	public Cursor getCreatureDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT sex, super_race, level, cr, xp, alignment, size, creature_type, creature_subtype, init,");
 		sb.append("  senses, aura,");
 		sb.append("  ac, hp, fortitude, reflex, will, defensive_abilities, dr, resist, immune, concentration, sr, weaknesses,");
@@ -257,7 +257,7 @@ public class CreatureAdapter {
 	public Cursor getCreatureSpells(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT name, body");
 		sb.append(" FROM creature_spells");
 		sb.append(" WHERE section_id = ?");

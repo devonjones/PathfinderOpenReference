@@ -36,7 +36,7 @@ public class HistoryAdapter {
 	public Integer selectHistoryId(String url) {
 		List<String> args = new ArrayList<String>();
 		args.add(url);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT history_id");
 		sb.append(" FROM history");
 		sb.append(" WHERE url = ?");
@@ -56,7 +56,7 @@ public class HistoryAdapter {
 
 	public Cursor fetchHistory() {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT history_id as _id, name, url");
 		sql.append(" FROM history");
 		sql.append(" ORDER BY history_id DESC");

@@ -148,7 +148,7 @@ public class DetailsWebViewClient extends WebViewClient {
 		if (newUrl == null) {
 			return uri;
 		}
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(newUrl);
 		if (subtype != null) {
 			sb.append("?subtype=");
@@ -194,7 +194,7 @@ public class DetailsWebViewClient extends WebViewClient {
 			cursor = dbWrangler.getBookDbAdapterByUrl(newUrl)
 					.getSectionAdapter().fetchSectionByUrl(newUrl);
 			String html = null;
-			StringBuffer htmlparts = new StringBuffer();
+			StringBuilder htmlparts = new StringBuilder();
 			try {
 				boolean hasNext = cursor.moveToFirst();
 				while (hasNext) {
@@ -286,7 +286,7 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	private String encodeUrl(String url) {
 		String[] parts = url.split("\\/");
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(parts[0]);
 		for (int i = 1; i < parts.length; i++) {
 			sb.append("/");

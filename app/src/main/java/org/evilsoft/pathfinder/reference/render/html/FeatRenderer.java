@@ -16,7 +16,7 @@ public class FeatRenderer extends HtmlRenderer {
 
 	@Override
 	public String renderDetails() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("<B>");
 		sb.append(bookDbAdapter.getFeatAdapter().renderFeatTypeDescription(sectionId));
 		sb.append("</B><BR>\n");

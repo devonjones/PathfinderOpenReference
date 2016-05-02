@@ -62,7 +62,7 @@ public class CreatureListAdapter extends DisplayListAdapter {
 
 	private String createTypeLine(Cursor curs) {
 		// cd.size cd.alignment cd.creature_type (cd.creature_subtype)
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		String size = IndexGroupAdapter.IndexGroupUtils.getCreatureSize(c);
 		String space = "";
 		if (size != null) {

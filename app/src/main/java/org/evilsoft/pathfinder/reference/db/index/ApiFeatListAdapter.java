@@ -40,7 +40,7 @@ public class ApiFeatListAdapter {
 
 	public Cursor getFeats(String[] projection, String selection,
 			String[] selectionArgs, String sortOrder) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT ");
 		sb.append(BaseDbHelper.implementProjection(columns, projection,
 				translation));

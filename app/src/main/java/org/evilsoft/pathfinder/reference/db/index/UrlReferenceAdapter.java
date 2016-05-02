@@ -22,7 +22,7 @@ public class UrlReferenceAdapter {
 	public String getDereferencedUrl(String url) {
 		List<String> args = new ArrayList<String>();
 		args.add(url);
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT *");
 		sql.append(" FROM central_index");
 		sql.append(" WHERE url = ?");
@@ -43,7 +43,7 @@ public class UrlReferenceAdapter {
 	private String fetchUrlReference(String url) {
 		List<String> args = new ArrayList<String>();
 		args.add(url);
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT c.url");
 		sql.append(" FROM central_index c");
 		sql.append("  INNER JOIN url_references u");
@@ -64,7 +64,7 @@ public class UrlReferenceAdapter {
 
 	public Cursor fetchBook(String source) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT book_id, source, db");
 		sb.append(" FROM books");
 		sb.append(" WHERE source = ?");

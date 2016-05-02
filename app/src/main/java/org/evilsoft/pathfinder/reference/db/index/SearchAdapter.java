@@ -23,7 +23,7 @@ public class SearchAdapter {
 	public Integer countSearchArticles(String constraint) {
 		constraint = constraint.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT count(DISTINCT i.index_id)");
 		sb.append(" FROM central_index i");
 		if (constraint != null) {
@@ -46,7 +46,7 @@ public class SearchAdapter {
 	public Cursor autocomplete(String constraint) {
 		constraint = constraint.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT i.section_id as _id,");
 		sb.append("  i.search_name AS " + SearchManager.SUGGEST_COLUMN_TEXT_1
 				+ ",");
@@ -72,7 +72,7 @@ public class SearchAdapter {
 	public Cursor getSingleSearchArticle(String constraint) {
 		constraint = constraint.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT DISTINCT i.section_id, i.database, i.name, i.type, i.subtype, i.url, i.parent_id, i.parent_name");
 		sb.append(" FROM central_index i");
 		sb.append("  INNER JOIN search_alternatives sa");
@@ -89,7 +89,7 @@ public class SearchAdapter {
 	public Cursor search(String constraint) {
 		constraint = constraint.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT DISTINCT i.section_id, i.database, i.name, i.type, i.subtype, i.url, i.parent_id, i.parent_name");
 		sb.append(" FROM central_index i");
 		sb.append("  INNER JOIN section_sort ss");

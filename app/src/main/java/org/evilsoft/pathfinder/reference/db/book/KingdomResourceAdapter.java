@@ -20,7 +20,7 @@ public class KingdomResourceAdapter {
 	public Cursor getKingdomResourceDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT bp, lot, kingdom, discount, magic_items,");
 		sb.append("  settlement, special, resource_limit, upgrade_from,");
 		sb.append("  upgrade_to");

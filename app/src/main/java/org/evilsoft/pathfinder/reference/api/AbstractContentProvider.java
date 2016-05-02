@@ -99,7 +99,7 @@ public abstract class AbstractContentProvider extends ContentProvider {
 
 	public String renderHtmlByIndexId(String indexId) {
 		String html = null;
-		StringBuffer htmlparts = new StringBuffer();
+		StringBuilder htmlparts = new StringBuilder();
 		Cursor cursor = dbWrangler.getIndexDbAdapter().getIndexGroupAdapter()
 				.fetchById(Integer.valueOf(indexId));
 		try {

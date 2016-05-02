@@ -13,7 +13,7 @@ public class BookDbHelper extends BaseDbHelper {
 	}
 
 	public boolean testDb(SQLiteDatabase database) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT count(*)");
 		sb.append(" FROM section_index");
 		String sql = sb.toString();

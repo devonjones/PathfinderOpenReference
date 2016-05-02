@@ -22,7 +22,7 @@ public class SpellListAdapter {
 	public Cursor fetchClassSpells(String class_name) {
 		List<String> args = new ArrayList<String>();
 		args.add(class_name);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT i.name, i.url, sl.name, sl.level");
 		sb.append(" FROM spell_list_index sl");
 		sb.append("  INNER JOIN central_index i");

@@ -20,7 +20,7 @@ public class SpellSubschoolAdapter {
 	public Cursor getSpellSubschools(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT subschool");
 		sb.append(" FROM spell_subschools");
 		sb.append(" WHERE section_id = ?");

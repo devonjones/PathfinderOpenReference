@@ -20,7 +20,7 @@ public class HauntAdapter {
 	public Cursor getHauntDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT cr, xp, haunt_type, notice, area, hp, destruction, alignment, caster_level, effect, trigger, reset");
 		sb.append(" FROM haunt_details");
 		sb.append(" WHERE section_id = ?");

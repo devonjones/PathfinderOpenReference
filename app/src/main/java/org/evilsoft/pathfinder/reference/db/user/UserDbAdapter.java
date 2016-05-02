@@ -61,7 +61,7 @@ public class UserDbAdapter {
 
 	private Cursor fetchAllBookmarks() {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT collection_entry_id, name, url");
 		sql.append(" FROM collection_values");
 		return database.rawQuery(sql.toString(),

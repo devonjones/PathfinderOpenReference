@@ -20,7 +20,7 @@ public class AbilityAdapter {
 	public Cursor getAbilityTypes(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT ability_type");
 		sb.append(" FROM ability_types");
 		sb.append(" WHERE section_id = ?");

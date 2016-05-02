@@ -20,7 +20,7 @@ public class SpellDetailAdapter {
 	public Cursor fetchSpellDetails(Integer section_id) {
 		List<String> args = new ArrayList<String>();
 		args.add(section_id.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT school, subschool_text, descriptor_text, level_text, component_text,");
 		sb.append("  casting_time, preparation_time, range, duration, saving_throw, spell_resistance, as_spell_id");
 		sb.append(" FROM spell_details");

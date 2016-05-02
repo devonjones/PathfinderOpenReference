@@ -18,7 +18,7 @@ public class FilterPreferenceManager {
 
 	public static String getSourceFilter(Context context, List<String> args,
 			String conjunction, String tableName) {
-		StringBuffer filter = new StringBuffer();
+		StringBuilder filter = new StringBuilder();
 		ArrayList<String> sourceList = new ArrayList<String>();
 
 		// The default values must be set here to bypass a bug in Android

@@ -86,7 +86,7 @@ public class LinkRenderer extends HtmlRenderer {
 		if (!exists) {
 			return "";
 		}
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (render) {
 			sb.append("<a href='");
 			sb.append(linkUrl);

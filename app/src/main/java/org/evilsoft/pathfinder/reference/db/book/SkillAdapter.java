@@ -20,7 +20,7 @@ public class SkillAdapter {
 	public Cursor fetchSkillAttr(Integer section_id) {
 		List<String> args = new ArrayList<String>();
 		args.add(section_id.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT attribute, armor_check_penalty, trained_only");
 		sb.append(" FROM skill_attributes");
 		sb.append(" WHERE section_id = ?");

@@ -52,7 +52,7 @@ public abstract class HtmlRenderer {
 		this.image = FullSectionAdapter.SectionUtils.getImage(cursor);
 		this.alt = FullSectionAdapter.SectionUtils.getAlt(cursor);
 		localSetValues();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (suppressTitle == false) {
 			sb.append(renderTitle());
 		}
@@ -69,7 +69,7 @@ public abstract class HtmlRenderer {
 	}
 
 	public String renderImage() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (image != null) {
 			if (isTablet) {
 				sb.append("<img style='float: left' src='file:///android_asset/");
@@ -89,7 +89,7 @@ public abstract class HtmlRenderer {
 	}
 
 	public String renderDescription() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (desc != null) {
 			sb.append("<p>");
 			sb.append(desc);
@@ -99,7 +99,7 @@ public abstract class HtmlRenderer {
 	}
 
 	public String renderBody() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (body != null) {
 			int index = body.indexOf("img src=");
 			if (index > 0) {
@@ -123,7 +123,7 @@ public abstract class HtmlRenderer {
 	}
 
 	protected String displayLine(List<String> elements) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		boolean space = false;
 		for (int i = 0; i < elements.size(); i++) {
 			String elem = elements.get(i);
@@ -146,7 +146,7 @@ public abstract class HtmlRenderer {
 	}
 
 	public String addField(String field, String value, boolean lineEnd) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (value != null) {
 			sb.append(fieldTitle(field));
 			sb.append(value);
@@ -165,7 +165,7 @@ public abstract class HtmlRenderer {
 			return "";
 		}
 
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		String[] tags = getDepthTag(depth);
 		if (title != null) {
 			sb.append("\n");

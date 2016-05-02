@@ -20,7 +20,7 @@ public class SettlementAdapter {
 	public Cursor getSettlementDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT alignment, settlement_type, size, corruption, crime, economy, law,");
 		sb.append("  lore, society, qualities, danger, disadvantages, government,");
 		sb.append("  population, base_value, purchase_limit, spellcasting,");

@@ -90,7 +90,7 @@ public class MythicSpellRenderer extends HtmlRenderer {
 		if (!exists) {
 			return "";
 		}
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 		int localdepth = depth;
 		boolean showTitle = true;

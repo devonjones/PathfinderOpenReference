@@ -20,7 +20,7 @@ public class ItemAdapter {
 	public Cursor getItemDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT aura, slot, cl, price, weight");
 		sb.append(" FROM item_details");
 		sb.append(" WHERE section_id = ?");
@@ -53,7 +53,7 @@ public class ItemAdapter {
 	public Cursor getItemMisc(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT field, subsection, value");
 		sb.append(" FROM item_misc");
 		sb.append(" WHERE section_id = ?");

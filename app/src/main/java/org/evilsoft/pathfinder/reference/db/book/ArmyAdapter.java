@@ -20,7 +20,7 @@ public class ArmyAdapter {
 	public Cursor getArmyDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT xp, creature_type, alignment, size, hp, acr, dv,");
 		sb.append("  om, special, speed, consumption, tactics,");
 		sb.append("  resources, note");
