@@ -45,7 +45,7 @@ public abstract class AbstractContentProvider extends ContentProvider {
 	}
 
 	public boolean initializeDatabase() {
-		if (dbWrangler != null && dbWrangler.isClosed() == false) {
+		if (dbWrangler != null && !dbWrangler.isClosed()) {
 			return true;
 		}
 		boolean cont = true;

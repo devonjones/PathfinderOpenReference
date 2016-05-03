@@ -53,7 +53,7 @@ public abstract class HtmlRenderer {
 		this.alt = FullSectionAdapter.SectionUtils.getAlt(cursor);
 		localSetValues();
 		StringBuffer sb = new StringBuffer();
-		if (suppressTitle == false) {
+		if (!suppressTitle) {
 			sb.append(renderTitle());
 		}
 		sb.append(renderImage());
