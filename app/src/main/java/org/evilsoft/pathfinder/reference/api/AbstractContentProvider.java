@@ -90,11 +90,11 @@ public abstract class AbstractContentProvider extends ContentProvider {
 
 		for (String extension : MIME_TYPES.keySet()) {
 			if (path.endsWith(extension)) {
-				return (MIME_TYPES.get(extension));
+				return MIME_TYPES.get(extension);
 			}
 		}
 
-		return (null);
+		return null;
 	}
 
 	public String renderHtmlByIndexId(String indexId) {
@@ -206,7 +206,7 @@ public abstract class AbstractContentProvider extends ContentProvider {
 			throw new FileNotFoundException("Could not open pipe for: "
 					+ uri.toString());
 		}
-		return (pipe[0]);
+		return pipe[0];
 	}
 
 	@Override
