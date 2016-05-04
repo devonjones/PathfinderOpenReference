@@ -36,7 +36,7 @@ public class ArmyRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getArmyAdapter()
 				.getArmyDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				String xp = ArmyAdapter.ArmyUtils.getXp(cursor);

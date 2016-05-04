@@ -55,7 +55,7 @@ public class SpellListItem extends BaseListItem {
 	}
 
 	public static String buildSchoolLine(String school, String subschool, String descriptor) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(school);
 		if (subschool != null) {
 			sb.append(" (");

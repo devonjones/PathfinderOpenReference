@@ -20,7 +20,7 @@ public class AnimalCompanionAdapter {
 	public Cursor getAnimalCompanionDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT ac, attack, cmd, ability_scores, special_abilities,");
 		sb.append("  special_qualities, special_attacks, size, speed,");
 		sb.append("  bonus_feat, level");

@@ -31,7 +31,7 @@ public class UserDbHelper extends SQLiteOpenHelper {
 	}
 
 	private String createCollectionTable() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("CREATE TABLE collections(");
 		sb.append(" collection_id INTEGER PRIMARY KEY,");
 		sb.append(" name TEXT");
@@ -40,14 +40,14 @@ public class UserDbHelper extends SQLiteOpenHelper {
 	}
 
 	public String addDefaultCollection() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO collections");
 		sb.append(" (name) VALUES ('default')");
 		return sb.toString();
 	}
 
 	private String createCollectionValuesTable() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("CREATE TABLE collection_values (");
 		sb.append(" collection_entry_id INTEGER PRIMARY KEY,");
 		sb.append(" collection_id INTEGER,");
@@ -58,7 +58,7 @@ public class UserDbHelper extends SQLiteOpenHelper {
 	}
 
 	private String createPsrdDbVersionTable() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("CREATE TABLE psrd_db_version (");
 		sb.append(" version INTEGER");
 		sb.append(")");
@@ -66,7 +66,7 @@ public class UserDbHelper extends SQLiteOpenHelper {
 	}
 
 	private String createHistoryTable() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("CREATE TABLE history (");
 		sb.append(" history_id INTEGER PRIMARY KEY,");
 		sb.append(" name TEXT,");

@@ -21,7 +21,7 @@ public class CreatureTypeAdapter {
 
 	public Cursor fetchCreatureTypes() {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT DISTINCT creature_type");
 		sb.append(" FROM central_index");
 		sb.append("  WHERE creature_type IS NOT NULL");

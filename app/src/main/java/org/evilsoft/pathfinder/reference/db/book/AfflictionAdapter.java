@@ -20,7 +20,7 @@ public class AfflictionAdapter {
 	public Cursor getAfflictionDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT contracted, addiction, save, onset, frequency, effect, initial_effect, ");
 		sb.append("  secondary_effect, damage, cure, cost");
 		sb.append(" FROM affliction_details");

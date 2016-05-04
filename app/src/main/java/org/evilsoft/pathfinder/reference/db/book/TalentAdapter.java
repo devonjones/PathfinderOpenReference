@@ -20,7 +20,7 @@ public class TalentAdapter {
 	public Cursor getTalentDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT element, talent_type, blast_type, level, burn, damage, prerequisite, ");
 		sb.append("  associated_blasts, saving_throw, spell_resistance");
 		sb.append(" FROM talent_details");

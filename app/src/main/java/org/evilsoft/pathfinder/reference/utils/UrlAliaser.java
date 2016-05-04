@@ -30,7 +30,7 @@ public class UrlAliaser {
 	protected static String aliasRulesUrl(String[] parts) {
 		// pfsrd://PFSRD/Rules Ultimate Combat/Class Archetypes/Class Archetypes
 		String book = parts[3].substring(6);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("pfsrd://");
 		sb.append(book);
 		sb.append("/Rules");
@@ -62,7 +62,7 @@ public class UrlAliaser {
 	}
 
 	protected static String createTestUrl(String[] parts, int sub) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("pfsrd://%");
 		for (int i = 3; i < parts.length - sub; i++) {
 			sb.append("/");

@@ -34,7 +34,7 @@ public class TrapRenderer extends StatBlockRenderer {
 	public String abilityName(String name, Integer sectionId) {
 		Cursor cursor = bookDbAdapter.getAbilityAdapter().getAbilityTypes(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			sb.append(name);
 			boolean fields = false;
 			boolean has_next = cursor.moveToFirst();
@@ -69,7 +69,7 @@ public class TrapRenderer extends StatBlockRenderer {
 	public String renderDetails() {
 		Cursor cursor = bookDbAdapter.getTrapAdapter().getTrapDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				String cr = TrapAdapter.TrapUtils.getCr(cursor);

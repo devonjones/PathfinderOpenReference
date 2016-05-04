@@ -140,7 +140,7 @@ public class HtmlRenderFarm {
 		HashMap<Integer, Integer> depthMap = new HashMap<Integer, Integer>();
 		HashMap<Integer, String> titleMap = new HashMap<Integer, String>();
 		int depth = 0;
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		boolean has_next = cursor.moveToFirst();
 		try {
 			boolean top = true;
@@ -216,7 +216,7 @@ public class HtmlRenderFarm {
 	}
 
 	public String renderFooter() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("<script type=\"text/javascript\" src=\"file:///android_asset/application.min.js\"></script>");
 		if (showToc) {
 			if (isTablet) {
@@ -231,7 +231,7 @@ public class HtmlRenderFarm {
 	}
 
 	public String renderHeader() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("<html>");
 		sb.append("<head>");
 		sb.append("<meta name=\"viewport\" content=\"width=device-width; initial-scale=1; maximum-sale=1; minimum-scale=1; user-scalable=n;\" />");

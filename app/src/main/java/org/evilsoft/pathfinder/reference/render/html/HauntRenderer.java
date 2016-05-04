@@ -34,7 +34,7 @@ public class HauntRenderer extends StatBlockRenderer {
 	public String renderDetails() {
 		Cursor cursor = bookDbAdapter.getHauntAdapter().getHauntDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				String cr = HauntAdapter.HauntUtils.getCr(cursor);

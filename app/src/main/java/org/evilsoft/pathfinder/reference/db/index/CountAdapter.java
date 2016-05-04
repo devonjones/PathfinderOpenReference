@@ -24,7 +24,7 @@ public class CountAdapter {
 			type = null;
 		}
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT count(*) AS cnt");
 		sb.append(" FROM central_index i");
 		String where = "WHERE";
@@ -46,7 +46,7 @@ public class CountAdapter {
 
 	public Cursor fetchByUrl(String url) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT count(*) AS cnt");
 		sb.append(" FROM central_index i");
 		sb.append(" WHERE i.url = ?");

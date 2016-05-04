@@ -14,7 +14,7 @@ public class IndexDbHelper extends BaseDbHelper {
 	}
 
 	public boolean testDb(SQLiteDatabase database) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT count(*)");
 		sb.append(" FROM central_index");
 		String sql = sb.toString();

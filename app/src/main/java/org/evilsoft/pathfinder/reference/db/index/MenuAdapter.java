@@ -22,7 +22,7 @@ public class MenuAdapter {
 
 	public Cursor fetchMenu() {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT menu_id, parent_menu_id, name, NULL AS parent_name, type, subtype, url, db, grouping, priority");
 		sb.append(" FROM menu");
 		sb.append(" WHERE parent_menu_id IS NULL");
@@ -35,7 +35,7 @@ public class MenuAdapter {
 	public Cursor fetchMenu(String parentMenuId) {
 		List<String> args = new ArrayList<String>();
 		args.add(parentMenuId);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT m.menu_id, m.parent_menu_id, m.name, p.name AS parent_name,");
 		sb.append("  m.type, m.subtype, m.url, m.db, m.grouping, m.priority");
 		sb.append(" FROM menu m");
@@ -52,7 +52,7 @@ public class MenuAdapter {
 			MenuItem item = new MenuItem();
 			item.setId(getMenuId(cursor));
 			item.setName(getName(cursor));
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			sb.append("pfsrd://Menu/");
 			String parentName = getParentName(cursor);
 			if(parentName == null) {

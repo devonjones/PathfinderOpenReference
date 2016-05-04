@@ -39,7 +39,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 		Cursor curs = bookDbAdapter.getCreatureAdapter().getCreatureDetails(
 				sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = curs.moveToFirst();
 			if (has_next) {
 				sb.append(renderCreatureHeader(curs, desc, source, newUri, top));
@@ -61,7 +61,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 
 	private String renderCreatureHeader(Cursor cursor, String desc,
 			String source, String newUri, boolean top) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (desc != null) {
 			sb.append("<p>");
 			sb.append(desc);
@@ -104,7 +104,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 	}
 
 	private String renderCreatureDefense(Cursor cursor) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(renderStatBlockBreaker("Defense"));
 		sb.append(addField("Natural Armor",
 				CreatureAdapter.CreatureUtils.getNaturalArmor(cursor), false));
@@ -140,7 +140,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 	}
 
 	private String renderCreatureOffense(Cursor cursor) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(renderStatBlockBreaker("Offense"));
 		sb.append(addField("Speed",
 				CreatureAdapter.CreatureUtils.getSpeed(cursor)));
@@ -168,7 +168,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 				sectionId);
 		// 0:name, 1:body
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			while (has_next) {
 				String name = capitalizeString(CreatureAdapter.CreatureSpellsUtils
@@ -184,7 +184,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 	}
 
 	private String renderCreatureStatistics(Cursor cursor) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(renderStatBlockBreaker("Statistics"));
 		sb.append(addField("Str",
 				CreatureAdapter.CreatureUtils.getStrength(cursor), false));
@@ -232,7 +232,7 @@ public class CreatureRenderer extends StatBlockRenderer {
 	}
 
 	private String renderCreatureEcology(Cursor cursor) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		// 47:environment, 48:organization, 49:treasure
 		sb.append(renderStatBlockBreaker("Ecology"));
 		sb.append(addField("Environment",

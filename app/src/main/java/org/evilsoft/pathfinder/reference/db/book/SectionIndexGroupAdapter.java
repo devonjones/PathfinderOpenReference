@@ -20,7 +20,7 @@ public class SectionIndexGroupAdapter {
 	public Cursor fetchSectionByParentUrl(String parentUrl) {
 		List<String> args = new ArrayList<String>();
 		args.add(parentUrl);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT s.section_id, '" + dbName + "' as database, ");
 		sb.append("  s.name, s.parent_id, p.name as parent_name, s.source,");
 		sb.append("  s.type, s.subtype, s.description, s.url");

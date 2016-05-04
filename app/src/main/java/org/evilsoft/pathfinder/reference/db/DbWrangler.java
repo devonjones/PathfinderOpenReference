@@ -200,7 +200,7 @@ public class DbWrangler {
 	public static void showLowSpaceError(Activity runningActivity,
 			LimitedSpaceException e,
 			DialogInterface.OnClickListener clickListener) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("Error creating database.  This app requires at least ");
 		sb.append(e.getSize() / AvailableSpaceHandler.SIZE_MB + 1);
 		sb.append(" megs free in order to store articles.  Exiting.");

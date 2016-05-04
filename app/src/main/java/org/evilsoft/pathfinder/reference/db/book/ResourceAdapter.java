@@ -20,7 +20,7 @@ public class ResourceAdapter {
 	public Cursor getResourceDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT benefit, resource_create, earnings, rooms, size, ");
 		sb.append("  skills, teams, time, upgrade_from, upgrade_to, wage");
 		sb.append(" FROM resource_details");

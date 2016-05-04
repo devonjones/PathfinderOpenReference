@@ -20,7 +20,7 @@ public class SectionAdapter {
 	public Cursor fetchSectionBySectionId(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
 		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
@@ -32,7 +32,7 @@ public class SectionAdapter {
 	public Cursor fetchSectionByParentId(Integer parentId) {
 		List<String> args = new ArrayList<String>();
 		args.add(parentId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
 		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
@@ -45,7 +45,7 @@ public class SectionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(parentId);
 		args.add(name);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
 		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
@@ -58,7 +58,7 @@ public class SectionAdapter {
 	public Cursor fetchParentBySectionId(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT p.section_id, p.parent_id, p.name, p.type, p.subtype, p.url,");
 		sb.append("  p.abbrev, p.source, p.description, p.body, p.image, p.alt");
 		sb.append(" FROM sections s");
@@ -72,7 +72,7 @@ public class SectionAdapter {
 	public Cursor fetchSectionByParentUrl(String parentUrl) {
 		List<String> args = new ArrayList<String>();
 		args.add(parentUrl);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT s.section_id, s.parent_id, s.name, s.type, s.subtype, s.url,");
 		sb.append("  s.abbrev, s.source, s.description, s.body, s.image, s.alt");
 		sb.append(" FROM sections s");
@@ -86,7 +86,7 @@ public class SectionAdapter {
 	public Cursor fetchSectionByUrl(String url) {
 		List<String> args = new ArrayList<String>();
 		args.add(url);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT section_id, parent_id, name, type, subtype, url,");
 		sb.append("  abbrev, source, description, body, image, alt");
 		sb.append(" FROM sections");
@@ -95,7 +95,7 @@ public class SectionAdapter {
 		Cursor curs = database.rawQuery(sql, BaseDbHelper.toStringArray(args));
 		if (curs.getCount() == 0) {
 			curs.close();
-			sb = new StringBuffer();
+			sb = new StringBuilder();
 			sb.append("SELECT s.section_id, s.parent_id, s.name, s.type, s.subtype, s.url,");
 			sb.append("  s.abbrev, s.source, s.description, s.body, s.image, s.alt");
 			sb.append(" FROM sections s");

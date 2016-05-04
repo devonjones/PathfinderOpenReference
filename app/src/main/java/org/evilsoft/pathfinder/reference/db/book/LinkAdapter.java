@@ -20,7 +20,7 @@ public class LinkAdapter {
 	public Cursor getLinkDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT section_id, url, display");
 		sb.append(" FROM link_details");
 		sb.append(" WHERE section_id = ?");

@@ -51,7 +51,7 @@ public class ApiFilteredClassSpellListAdapter {
 	public String getClassName(String classId) {
 		List<String> args = new ArrayList<String>();
 		args.add(classId);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT name");
 		sb.append(" FROM central_index");
 		sb.append(" WHERE type = 'class'");
@@ -72,7 +72,7 @@ public class ApiFilteredClassSpellListAdapter {
 	public Cursor getFilteredClassSpells(String classId, String[] projection,
 			String selection, String[] selectionArgs, String sortOrder) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT ");
 		sb.append(BaseDbHelper.implementProjection(columns, projection,
 				translation));

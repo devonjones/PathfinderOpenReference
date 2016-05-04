@@ -23,7 +23,7 @@ public class AfflictionRenderer extends StatBlockRenderer {
 		// 0:contracted, 1:save, 2:onset, 3:frequency, 4:effect,
 		// 5:initial_effect, 6:secondary_effect, 7:cure
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				String contracted = AfflictionAdapter.AfflictionUtils.getContracted(cursor);

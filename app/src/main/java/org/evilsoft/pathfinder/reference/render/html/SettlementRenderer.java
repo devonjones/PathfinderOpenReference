@@ -21,7 +21,7 @@ public class SettlementRenderer extends StatBlockRenderer {
 	public String renderDetails() {
 		Cursor cursor = bookDbAdapter.getSettlementAdapter().getSettlementDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				String align = SettlementAdapter.SettlementUtils.getAlignment(cursor);

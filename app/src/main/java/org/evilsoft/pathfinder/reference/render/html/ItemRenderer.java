@@ -20,7 +20,7 @@ public class ItemRenderer extends StatBlockRenderer {
 
 	@Override
 	public String renderDetails() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(renderItemDetails());
 		return sb.toString();
 	}
@@ -29,7 +29,7 @@ public class ItemRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getItemAdapter()
 				.getItemDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append(addField("Aura",
@@ -57,8 +57,8 @@ public class ItemRenderer extends StatBlockRenderer {
 	public String renderItemMisc() {
 		Cursor cursor = bookDbAdapter.getItemAdapter().getItemMisc(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
-			StringBuffer titleSb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
+			StringBuilder titleSb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			String lastSection = "";
 			while (has_next) {

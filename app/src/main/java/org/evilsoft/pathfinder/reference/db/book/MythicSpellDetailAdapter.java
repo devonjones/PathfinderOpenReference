@@ -20,7 +20,7 @@ public class MythicSpellDetailAdapter {
 	public Cursor fetchMythicSpellDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT section_id, spell_source");
 		sb.append(" FROM mythic_spell_details");
 		sb.append(" WHERE section_id = ?");
@@ -31,7 +31,7 @@ public class MythicSpellDetailAdapter {
 	public Cursor fetchMythicSpellDetailsByName(String spellName) {
 		List<String> args = new ArrayList<String>();
 		args.add(spellName);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT section_id, spell_source");
 		sb.append(" FROM mythic_spell_details");
 		sb.append(" WHERE spell_source = ?");

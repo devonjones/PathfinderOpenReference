@@ -55,7 +55,7 @@ public class KingdomResourceRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getKingdomResourceAdapter()
 				.getKingdomResourceDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				if (top) {

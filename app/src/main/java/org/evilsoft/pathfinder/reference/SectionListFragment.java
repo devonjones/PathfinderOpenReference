@@ -104,7 +104,7 @@ public class SectionListFragment extends ExpandableListFragment implements
 		if(group.equals("Bookmarks")) {
 			String sectionUrl = expListAdapter.getPfGroupUrl(groupPosition);
 			String specificName = (String) expListAdapter.getChild(groupPosition, childPosition);
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			sb.append(sectionUrl);
 			sb.append("/");
 			sb.append(specificName);

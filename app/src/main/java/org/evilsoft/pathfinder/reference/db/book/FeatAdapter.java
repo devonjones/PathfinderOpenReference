@@ -20,7 +20,7 @@ public class FeatAdapter {
 	public Cursor fetchFeatTypeDescriptionForSection(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT feat_type_description");
 		sb.append(" FROM feat_type_descriptions");
 		sb.append(" WHERE section_id = ?");
@@ -32,7 +32,7 @@ public class FeatAdapter {
 	public String renderFeatTypeDescription(Integer sectionId) {
 		Cursor curs = fetchFeatTypeDescriptionForSection(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = curs.moveToFirst();
 			while (has_next) {
 				sb.append(curs.getString(0));
@@ -47,7 +47,7 @@ public class FeatAdapter {
 	public Cursor getFeatTypes(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT feat_type");
 		sb.append(" FROM feat_types");
 		sb.append(" WHERE section_id = ?");

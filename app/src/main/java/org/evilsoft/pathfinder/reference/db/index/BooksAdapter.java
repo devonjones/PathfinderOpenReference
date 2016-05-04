@@ -21,7 +21,7 @@ public class BooksAdapter {
 
 	public Cursor fetchBook(String source) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT book_id, source, db");
 		sb.append(" FROM books");
 		sb.append(" WHERE source = ?");

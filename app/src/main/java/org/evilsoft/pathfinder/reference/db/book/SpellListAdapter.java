@@ -20,7 +20,7 @@ public class SpellListAdapter {
 	public Cursor getSpellLists(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT level, type, name, notes, magic_type");
 		sb.append(" FROM spell_lists");
 		sb.append(" WHERE section_id = ?");

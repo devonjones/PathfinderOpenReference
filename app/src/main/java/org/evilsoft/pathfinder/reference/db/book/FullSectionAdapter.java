@@ -20,7 +20,7 @@ public class FullSectionAdapter {
 	public Cursor fetchFullSection(String sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT node.section_id, node.lft, node.rgt, node.parent_id, node.type,");
 		sb.append("  node.subtype, node.name, node.abbrev, node.source, node.description, node.body,");
 		sb.append("  node.image, node.alt, node.create_index, node.url");

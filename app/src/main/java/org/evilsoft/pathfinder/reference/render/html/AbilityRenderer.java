@@ -25,7 +25,7 @@ public class AbilityRenderer extends HtmlRenderer {
 	public String abilityName(String name, Integer sectionId) {
 		Cursor cursor = bookDbAdapter.getAbilityAdapter().getAbilityTypes(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			sb.append(name);
 			boolean fields = false;
 			boolean has_next = cursor.moveToFirst();

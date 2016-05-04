@@ -21,7 +21,7 @@ public class FeatTypeAdapter {
 
 	public Cursor fetchFeatTypes() {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT DISTINCT ft.feat_type");
 		sb.append(" FROM feat_type_index ft");
 		sb.append("  INNER JOIN central_index ci");

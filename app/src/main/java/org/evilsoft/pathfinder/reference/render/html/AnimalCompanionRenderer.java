@@ -17,7 +17,7 @@ public class AnimalCompanionRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getAnimalCompanionAdapter()
 				.getAnimalCompanionDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				String level = AnimalCompanionAdapter.AnimalCompanionUtils
@@ -41,7 +41,7 @@ public class AnimalCompanionRenderer extends StatBlockRenderer {
 		Cursor cursor = bookDbAdapter.getAnimalCompanionAdapter()
 				.getAnimalCompanionDetails(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append(addField("Size",

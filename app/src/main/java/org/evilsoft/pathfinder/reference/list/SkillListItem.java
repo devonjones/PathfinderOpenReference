@@ -43,7 +43,7 @@ public class SkillListItem extends BaseListItem {
 	}
 
 	public static String buildQualitiesDisplay(boolean armorCheckPenalty, boolean trainedOnly) {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		String spacer = " (";
 		String end = "";
 		if (armorCheckPenalty) {

@@ -20,7 +20,7 @@ public class TrapAdapter {
 	public Cursor getTrapDetails(Integer sectionId) {
 		List<String> args = new ArrayList<String>();
 		args.add(sectionId.toString());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT cr, trap_type, perception, disable_device, duration, effect, trigger, reset");
 		sb.append(" FROM trap_details");
 		sb.append(" WHERE section_id = ?");

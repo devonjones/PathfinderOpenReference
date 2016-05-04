@@ -19,7 +19,7 @@ public class SkillRenderer extends HtmlRenderer {
 
 	@Override
 	public String renderDetails() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append(renderSkillDetails(sectionId));
 		sb.append("<B>Source: </B>");
 		sb.append(source);
@@ -30,7 +30,7 @@ public class SkillRenderer extends HtmlRenderer {
 	public String renderSkillDetails(Integer sectionId) {
 		Cursor cursor = bookDbAdapter.getSkillAdapter().fetchSkillAttr(sectionId);
 		try {
-			StringBuffer sb = new StringBuffer();
+			StringBuilder sb = new StringBuilder();
 			boolean has_next = cursor.moveToFirst();
 			if (has_next) {
 				sb.append("<H2>(");

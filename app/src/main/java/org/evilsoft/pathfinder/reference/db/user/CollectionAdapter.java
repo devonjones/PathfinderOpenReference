@@ -90,7 +90,7 @@ public class CollectionAdapter {
 	public Integer selectCollectionId(String name) {
 		List<String> args = new ArrayList<String>();
 		args.add(name);
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT collection_id");
 		sb.append(" FROM collections");
 		sb.append(" WHERE name = ?");
@@ -109,7 +109,7 @@ public class CollectionAdapter {
 	}
 
 	public Cursor fetchCollectionList() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("SELECT collection_id AS _id, name");
 		sb.append(" FROM collections");
 		String sql = sb.toString();
@@ -118,7 +118,7 @@ public class CollectionAdapter {
 
 	public Cursor fetchCollection(String collectionId) {
 		List<String> args = new ArrayList<String>();
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT collections.*");
 		sql.append(" FROM collections");
 		sql.append(" WHERE collections.collection_id = ?");
@@ -128,7 +128,7 @@ public class CollectionAdapter {
 	}
 
 	public Cursor fetchFirstCollection() {
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT collections.*");
 		sql.append(" FROM collections");
 		sql.append(" ORDER BY collection_id");
@@ -142,7 +142,7 @@ public class CollectionAdapter {
 		List<String> args = new ArrayList<String>();
 		args.add(Long.toString(collectionId));
 		args.add(url);
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT 1 FROM collection_values");
 		sql.append(" WHERE collection_id = ?");
 		sql.append("  AND url = ?");
@@ -198,7 +198,7 @@ public class CollectionAdapter {
 	public Cursor fetchCollectionValues(String collectionName) {
 		List<String> args = new ArrayList<String>();
 		args.add(collectionName);
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT cv.collection_entry_id, cv.name, cv.url");
 		sql.append(" FROM collection_values cv");
 		sql.append("  INNER JOIN collections");
@@ -211,7 +211,7 @@ public class CollectionAdapter {
 	public Cursor fetchCollectionValue(String collectionValueId) {
 		List<String> args = new ArrayList<String>();
 		args.add(collectionValueId);
-		StringBuffer sql = new StringBuffer();
+		StringBuilder sql = new StringBuilder();
 		sql.append("SELECT collection_entry_id, name, url");
 		sql.append(" FROM collection_values cv");
 		sql.append(" WHERE collection_entry_id = ?");
