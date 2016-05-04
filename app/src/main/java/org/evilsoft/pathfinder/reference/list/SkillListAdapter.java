@@ -45,8 +45,8 @@ public class SkillListAdapter extends DisplayListAdapter {
 			TextView description = (TextView) V.findViewById(R.id.skill_list_description);
 			String desc = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
 			description.setText(SkillListItem.shortDescription(desc));
-			boolean armorCheckPenalty = (IndexGroupAdapter.IndexGroupUtils.getSkillArmor(c) != 0);
-			boolean trainedOnly = (IndexGroupAdapter.IndexGroupUtils.getSkillTrained(c) != 0);
+			boolean armorCheckPenalty = IndexGroupAdapter.IndexGroupUtils.getSkillArmor(c) != 0;
+			boolean trainedOnly = IndexGroupAdapter.IndexGroupUtils.getSkillTrained(c) != 0;
 			TextView qualities = (TextView) V.findViewById(R.id.skill_list_qualities);
 			qualities.setText(SkillListItem.buildQualitiesDisplay(armorCheckPenalty, trainedOnly));
 		}
@@ -61,8 +61,8 @@ public class SkillListAdapter extends DisplayListAdapter {
 		String url = IndexGroupAdapter.IndexGroupUtils.getUrl(c);
 		String description = IndexGroupAdapter.IndexGroupUtils.getDescription(c);
 		String attribute = IndexGroupAdapter.IndexGroupUtils.getSkillAttr(c);
-		boolean armorCheckPenalty = (IndexGroupAdapter.IndexGroupUtils.getSkillArmor(c) != 0);
-		boolean trainedOnly = (IndexGroupAdapter.IndexGroupUtils.getSkillTrained(c) != 0);
+		boolean armorCheckPenalty = IndexGroupAdapter.IndexGroupUtils.getSkillArmor(c) != 0;
+		boolean trainedOnly = IndexGroupAdapter.IndexGroupUtils.getSkillTrained(c) != 0;
 		return buildSkill(sectionId, database, name, url, description,
 				attribute, armorCheckPenalty, trainedOnly);
 	}

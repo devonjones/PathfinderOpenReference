@@ -35,11 +35,11 @@ public class SkillRenderer extends HtmlRenderer {
 			if (has_next) {
 				sb.append("<H2>(");
 				sb.append(SkillAdapter.SkillUtils.getAttribute(cursor));
-				boolean armorCheckPenalty = (SkillAdapter.SkillUtils.getArmorCheckPenalty(cursor) != 0);
+				boolean armorCheckPenalty = SkillAdapter.SkillUtils.getArmorCheckPenalty(cursor) != 0;
 				if (armorCheckPenalty) {
 					sb.append("; Armor Check Penalty");
 				}
-				boolean trainedOnly = (SkillAdapter.SkillUtils.getTrainedOnly(cursor) != 0);
+				boolean trainedOnly = SkillAdapter.SkillUtils.getTrainedOnly(cursor) != 0;
 				if (trainedOnly) {
 					sb.append("; Trained Only");
 				}
