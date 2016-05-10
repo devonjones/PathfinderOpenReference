@@ -37,6 +37,9 @@ public class CreatureAdapter {
 	}
 
 	public static class CreatureUtils {
+		private CreatureUtils() {
+		}
+
 		public static String getSex(Cursor cursor) {
 			return cursor.getString(0);
 		}
@@ -266,6 +269,9 @@ public class CreatureAdapter {
 	}
 
 	public static class CreatureSpellsUtils {
+		private CreatureSpellsUtils() {
+		}
+
 		public static String getName(Cursor cursor) {
 			return cursor.getString(0);
 		}

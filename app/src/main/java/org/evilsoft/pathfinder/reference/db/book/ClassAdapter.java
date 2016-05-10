@@ -29,6 +29,9 @@ public class ClassAdapter {
 	}
 
 	public static class ClassUtils {
+		private ClassUtils() {
+		}
+
 		public static String getAlignment(Cursor cursor) {
 			return cursor.getString(0);
 		}

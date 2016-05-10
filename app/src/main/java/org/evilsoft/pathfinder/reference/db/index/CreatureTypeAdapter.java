@@ -32,6 +32,9 @@ public class CreatureTypeAdapter {
 	}
 	
 	public static class CreatureTypeUtils {
+		private CreatureTypeUtils() {
+		}
+
 		public static String getCreatureType(Cursor cursor) {
 			return cursor.getString(0);
 		}

@@ -32,6 +32,9 @@ public class VehicleAdapter {
 	}
 
 	public static class VehicleUtils {
+		private VehicleUtils() {
+		}
+
 		public static String getSize(Cursor cursor) {
 			return cursor.getString(0);
 		}

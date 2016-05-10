@@ -216,6 +216,9 @@ public class IndexGroupAdapter {
 	}
 
 	public static class IndexGroupUtils {
+		private IndexGroupUtils() {
+		}
+
 		public static Integer getIndexId(Cursor cursor) {
 			return cursor.getInt(0);
 		}

@@ -29,6 +29,9 @@ public class HauntAdapter {
 	}
 
 	public static class HauntUtils {
+		private HauntUtils() {
+		}
+
 		public static String getCr(Cursor cursor) {
 			return cursor.getString(0);
 		}

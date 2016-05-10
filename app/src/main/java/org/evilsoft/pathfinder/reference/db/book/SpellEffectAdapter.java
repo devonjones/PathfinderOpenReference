@@ -29,6 +29,9 @@ public class SpellEffectAdapter {
 	}
 
 	public static class SpellEffectUtils {
+		private SpellEffectUtils() {
+		}
+
 		public static String getName(Cursor cursor) {
 			return cursor.getString(0);
 		}

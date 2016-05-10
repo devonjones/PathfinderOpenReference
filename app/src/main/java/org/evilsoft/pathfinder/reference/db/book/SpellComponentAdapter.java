@@ -29,6 +29,9 @@ public class SpellComponentAdapter {
 	}
 
 	public static class SpellComponentUtils {
+		private SpellComponentUtils() {
+		}
+
 		public static String getComponentType(Cursor cursor) {
 			return cursor.getString(0);
 		}

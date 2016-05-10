@@ -8,6 +8,9 @@ import android.database.Cursor;
 
 public class UrlAliaser {
 
+	private UrlAliaser() {
+	}
+
 	public static String aliasUrl(DbWrangler dbWrangler, String url) {
 		String[] parts = url.split("\\/");
 		if (parts[2].equals("PFSRD")) {

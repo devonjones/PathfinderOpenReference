@@ -31,6 +31,9 @@ public class ArmyAdapter {
 	}
 
 	public static class ArmyUtils {
+		private ArmyUtils() {
+		}
+
 		public static String getXp(Cursor cursor) {
 			return cursor.getString(0);
 		}

@@ -35,6 +35,9 @@ public class SpellListAdapter {
 	}
 
 	public static class SpellListUtils {
+		private SpellListUtils() {
+		}
+
 		public static String getSpellName(Cursor cursor) {
 			return cursor.getString(0);
 		}

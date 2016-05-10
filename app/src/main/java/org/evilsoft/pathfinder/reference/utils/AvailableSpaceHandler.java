@@ -28,6 +28,9 @@ public class AvailableSpaceHandler {
 	 */
 	public final static long SIZE_GB = SIZE_KB * SIZE_KB * SIZE_KB;
 
+	private AvailableSpaceHandler() {
+	}
+
 	/**
 	 * @return Number of bytes available on external storage
 	 */

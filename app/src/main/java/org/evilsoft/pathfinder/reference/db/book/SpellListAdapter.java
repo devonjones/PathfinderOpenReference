@@ -29,6 +29,9 @@ public class SpellListAdapter {
 	}
 
 	public static class SpellListUtils {
+		private SpellListUtils() {
+		}
+
 		public static Integer getLevel(Cursor cursor) {
 			return cursor.getInt(0);
 		}

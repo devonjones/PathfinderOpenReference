@@ -66,6 +66,9 @@ public class HistoryAdapter {
 	}
 
 	public static class HistoryUtils {
+		private HistoryUtils() {
+		}
+
 		public static Integer getHistoryId(Cursor cursor) {
 			return cursor.getInt(0);
 		}

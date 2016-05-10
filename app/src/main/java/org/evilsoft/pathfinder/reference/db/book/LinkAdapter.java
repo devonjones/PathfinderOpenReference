@@ -30,6 +30,9 @@ public class LinkAdapter {
 	}
 
 	public static class LinkUtils {
+		private LinkUtils() {
+		}
+
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}

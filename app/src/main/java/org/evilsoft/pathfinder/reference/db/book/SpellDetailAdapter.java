@@ -30,6 +30,9 @@ public class SpellDetailAdapter {
 	}
 
 	public static class SpellDetailUtils {
+		private SpellDetailUtils() {
+		}
+
 		public static String getSchool(Cursor cursor) {
 			return cursor.getString(0);
 		}

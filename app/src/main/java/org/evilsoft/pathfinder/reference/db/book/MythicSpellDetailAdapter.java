@@ -40,6 +40,9 @@ public class MythicSpellDetailAdapter {
 	}
 
 	public static class MythicSpellDetailUtils {
+		private MythicSpellDetailUtils() {
+		}
+
 		public static Integer getSectionId(Cursor cursor) {
 			return cursor.getInt(0);
 		}
