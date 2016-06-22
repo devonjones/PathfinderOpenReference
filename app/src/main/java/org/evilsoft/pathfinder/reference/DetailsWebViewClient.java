@@ -159,11 +159,9 @@ public class DetailsWebViewClient extends WebViewClient {
 
 	public void back(WebView view) {
 		try {
-			if (path.size() > 1) {
-				if (!path.get(1).get("type").equals("list")) {
-					String newUrl = up(url);
-					shouldOverrideUrlLoading(view, newUrl);
-				}
+			if (path.size() > 1 && !path.get(1).get("type").equals("list")) {
+				String newUrl = up(url);					
+				shouldOverrideUrlLoading(view, newUrl);
 			}
 		} catch (Exception e) {
 			Log.e(TAG, "Back button failed");

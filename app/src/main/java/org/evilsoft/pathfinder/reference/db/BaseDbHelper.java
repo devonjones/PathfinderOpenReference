@@ -216,13 +216,11 @@ public abstract class BaseDbHelper extends SQLiteOpenHelper {
 		try {
 			tmpFile = new File(context.getFilesDir().getAbsolutePath(), dbName);
 			// see if the db exists on internal storage
-			if (tmpFile.exists()) {
-				if (null != retFile) {
-					// if the db is on internal *and* external storage, delete
-					// the
-					// internal storage copy
-					tmpFile.delete();
-				}
+			if (tmpFile.exists() && null != retFile) {
+				// if the db is on internal *and* external storage, delete
+				// the
+				// internal storage copy
+				tmpFile.delete();
 			}
 
 			// if we got this far with retFile undefined, there either isn't

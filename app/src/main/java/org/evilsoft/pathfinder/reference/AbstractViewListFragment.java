@@ -58,10 +58,8 @@ public abstract class AbstractViewListFragment extends SherlockListFragment
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		Bundle bundle = getArguments();
-		if (bundle != null) {
-			if (bundle.containsKey("url")) {
-				startUrl = bundle.getString("url");
-			}
+		if (bundle != null && bundle.containsKey("url")) {
+			startUrl = bundle.getString("url");
 		}
 		if (startUrl != null) {
 			updateUrl(startUrl);

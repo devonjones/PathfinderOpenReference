@@ -249,13 +249,12 @@ public abstract class AbstractContentProvider extends ContentProvider {
 	}
 
 	public Uri stripExtension(Uri uri) {
-		if (uri.getLastPathSegment() != null) {
-			if (uri.getLastPathSegment().endsWith(".html")
-					|| uri.getLastPathSegment().endsWith(".json")) {
+		if (uri.getLastPathSegment() != null 
+			&& (uri.getLastPathSegment().endsWith(".html") 
+			|| uri.getLastPathSegment().endsWith(".json"))) {
 				String url = uri.toString();
 				Uri newUri = Uri.parse(url.substring(0, url.lastIndexOf(".")));
 				return newUri;
-			}
 		}
 		return uri;
 	}
